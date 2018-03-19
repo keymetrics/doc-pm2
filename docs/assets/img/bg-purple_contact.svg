@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="1089px" viewBox="0 0 1920 1089" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>bg-purple_contact</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#7F86F5" offset="0%"></stop>
+            <stop stop-color="#21223A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Enterprise" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -6445.000000)">
+        <g id="contact" transform="translate(-457.000000, 6329.000000)" fill="url(#linearGradient-1)">
+            <g id="bg-purple_contact" transform="translate(0.000000, 116.000000)">
+                <rect id="Rectangle-5" transform="translate(518.662824, 518.662824) rotate(-315.000000) translate(-518.662824, -518.662824) " x="355.162824" y="-51.337176" width="327" height="1140"></rect>
+                <rect id="Rectangle-5-Copy" transform="translate(980.662824, 518.662824) rotate(-315.000000) translate(-980.662824, -518.662824) " x="817.162824" y="-51.337176" width="327" height="1140"></rect>
+                <rect id="Rectangle-5-Copy-2" transform="translate(1442.662824, 518.662824) rotate(-315.000000) translate(-1442.662824, -518.662824) " x="1279.16282" y="-51.337176" width="327" height="1140"></rect>
+                <rect id="Rectangle-5-Copy-3" transform="translate(1853.662824, 569.662824) rotate(-315.000000) translate(-1853.662824, -569.662824) " x="1690.16282" y="-0.337176" width="327" height="1140"></rect>
+                <rect id="Rectangle-5-Copy-4" transform="translate(2315.662824, 569.662824) rotate(-315.000000) translate(-2315.662824, -569.662824) " x="2152.16282" y="-0.337176" width="327" height="1140"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

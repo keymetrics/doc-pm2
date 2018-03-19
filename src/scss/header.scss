@@ -1,0 +1,224 @@
+@import './variables';
+
+
+.link:hover{
+    cusor:pointer;
+}
+
+.logo {
+    font-size: 1.2em;
+}
+
+.header-section .header-container,
+.header-container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.app-nav,
+.app-nav.no-badge,
+.header-section {
+    margin: 0px;
+    position: fixed!important;
+    width: 100%;
+    min-height: 76px;
+}
+
+
+.PM2_logo_wrapper {
+    margin-top: 15.5px;
+    margin-left: 35px;
+    @media screen and (min-width: 480px) {
+        display: inline-block;
+        max-width: 200px;
+        float: left;
+    }
+    @media screen and (min-width: 768px) {
+        margin-left: 158px;
+    }
+}
+
+.PM2 {
+    width: 140px;
+    height: 23px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 41px;
+    /* background: yellowgreen;*/
+}
+
+.PM2_logo {
+    background: url(/docs/assets/img/pm2-docs.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 140px;
+    min-height: 23px;
+    margin: 20px auto;
+    display: block;
+    position: relative;
+    left: 8px;
+}
+
+
+.user-nav a {
+    font-size: 24px;
+    font-family: Blender, Sans-Serif;
+    font-weight: 100;
+}
+
+
+.PM2_search_icon,
+.search {
+    display: none;
+}
+
+.algolia-results {
+    position: absolute;
+    z-index: 5;
+    top: 52px;
+    background: #202a37;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+.algolia-results a, .algolia-results a:visited{
+    color:white;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+.algolia-results a em {
+    background-color:#3eb1f3;
+}
+
+.PM2_search {
+    max-width: 280px;
+    margin: 20px auto;
+
+
+    @media screen and (min-width: 480px) {
+        display: inline-block;
+        float: right;
+        margin-right: 40px;
+        position: relative;
+    }
+}
+
+.PM2_search_icon {
+    position: absolute;
+    left: 32px;
+    top: 10px;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+
+.search-wrapper input {
+    text-align: center;
+    padding: 0 40px 0 39px;
+    padding-left: 55px!important;
+
+
+  width: 310px;
+  height: 47px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+
+}
+.search-wrapper input:hover,.search-wrapper input:active,.search-wrapper input:focus{
+    outline:none;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+.search {
+    margin: 0 auto;
+    border-bottom: 0!important;
+    margin-bottom: 0px!important;
+    padding: 0px!important;
+}
+
+.search .results-panel h1,
+.search .results-panel p,
+.search .results-panel a,
+.matching-post a h2 {
+    color: white!important;
+    padding: 10px;
+}
+
+.search .results-panel {
+    position: absolute!important;
+    z-index: 222;
+    top: 0px;
+    left: 0px;
+    background: #202a37;
+    margin-top: 56px;
+    display: none!important;
+    max-height: 350px;
+    overflow-y: auto;
+    border-radius: 0 0 5px 5px;
+}
+
+.matching-post {
+    border-bottom: 0px;
+}
+
+.search .results-panel.show {
+    display: inline-block!important;
+    width: 310px;
+    @media screen and (min-width: 768px) {
+        width: 610px;
+        float: right;
+        margin-top: 56px;
+        right: -60px;
+        left: unset;
+        margin-top: 71px;
+    }
+    @media screen and (min-height: 768px) {
+        /*max-height: 450px;*/
+    }
+    @media screen and (min-height: 816px) {
+        max-height: 650px;
+    }
+}
+
+.search .input-wrap {
+    position: relative;
+    padding: 0px!important;
+}
+
+.search-wrapper input {
+    font-size: 18px!important;
+    color: #979797;
+    font-family: Blender, Sans-Serif;
+    font-weight: 400;
+
+    margin: 0px!important;
+    max-width: 100%;
+    border-radius: 20px;
+    margin: 20px;
+    padding-left: 45px!important;
+    padding-right: 40px!important;
+    @media screen and (min-width: 480px) {
+        min-width: 310px;
+    }
+}
+
+.search .clear-button {
+    position: absolute!important;
+    right: -17px;
+    top: 7px;
+    display: none!important;
+}
+
+.search .clear-button.show {
+    display: block!important;
+}
+
+.search .clear-button:hover {
+    background: transparent!important;
+    cursor: pointer;
+}

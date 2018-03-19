@@ -1,0 +1,180 @@
+@import './variables';
+
+/* Title: Quick Start */
+
+h1 a span {
+    font-family: Blender, sans-serif;
+    font-weight: 500;
+    color: #202a37;
+    font-size: 36px;
+}
+
+
+
+/* Normal text: In seconds, this Quick Start tutorial */
+
+
+p {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+p.warn{
+    border-radius: 2px;
+    background-color: rgba(206, 183, 1, 0.08)!important;
+    border: solid 1px #ceb701;
+    font-family: Roboto;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    text-align: left;
+    color: #ceab01;
+}
+
+/* Colored subtitle: Installation*/
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+h2 a span {
+    font-family: Blender, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+h2 a:before{
+    content: '';
+    background-repeat: no-repeat;
+    height: 10px;
+    width: 15px;
+    background-size: contain;
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    margin-top: 13px;
+}
+.runtime-page h2 a:before{
+    background-image: url(/docs/assets/img/rect-r.png);
+}
+.monitoring-page h2 a:before{
+    background-image: url(/docs/assets/img/rect-m.png);
+}
+.enterprise-page h2 a:before{
+    background-image: url(/docs/assets/img/rect-e.png);
+}
+
+.runtime-page h2 a span {
+    color: #3eb1f3;
+}
+
+.monitoring-page h2 a span {
+    color: #01cea2;
+}
+
+.enterprise-page h2 a span {
+    color: #7f86f5;
+}
+
+/**/
+h3 {
+    
+}
+
+h3 a span {
+    font-family: Blender, sans-serif;
+    font-weight: 500;
+    font-size:28px;
+}
+
+
+/* Highlight word: pm2 (surrounded by box) */
+
+p code,
+.markdown-section p code {
+    width: 43px;
+    height: 22px;
+    border-radius: 2px;
+    background-color: #d3e0f0;
+}
+
+.markdown-section pre{
+    padding:0px!important;
+}
+
+
+/* Simulate page jump */
+
+hr:before {
+    content: '';
+    height: 5px;
+    background-color: #01cea2;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.runtime-page hr:before {
+    background-color: $color_runtime;
+}
+
+.monitoring-page hr:before {
+    background-color: $color_monitoring;
+}
+
+.enterprise-page hr:before {
+    background-color: $color_enterprise;
+}
+
+hr,
+.markdown-section hr {
+    background: #D2DFEE;
+    height: 45px;
+    margin-left: -40px;
+    margin-right: -40px;
+    position: relative;
+    border: 0px;
+}
+
+/* Code blocks*/
+.markdown-section pre code{
+    border-radius: 2px;
+    background-color: #171e27;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+
+/*Copy plugin*/
+button.docsify-copy-code-button{
+    
+    height: 36px;
+    background-color: #3eb1f3;
+    border-radius: 5px;
+    z-index: 99999;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: center;
+    padding: 5px;
+}
+.docsify-copy-code-button::after{
+    display: none;
+}
+/*
+button.docsify-copy-code-button:before{
+    content: '';
+    display: absolute;
+    width: 20px;
+    height: 0;
+    position: absolute;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #3eb1f3;
+    left: 43px;
+    top: 38px;
+    z-index: 999;
+    transform: rotate(-90deg);
+}*/
