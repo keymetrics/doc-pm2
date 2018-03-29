@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {% if page.canonical %}
+  <link rel="canonical" href="{{ page.canonical | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  {% else %}
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  {% endif %}
+  {% if page.robots %}<meta name="robots" content="{{ page.robots }}" />{% endif %}
+
+
+
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png"> -->
+  <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
+  <!-- <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16"> -->
+  <!-- <link rel="manifest" href="/images/manifest.json"> -->
+  <!-- <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5"> -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <link rel="stylesheet" href="{{ "/assets/css/bundle.css" | relative_url }}">
+</head>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html amp>
+
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+
+{% if page.group %}
+<div class="container-fluid mt-3 d-xs-block d-sm-block d-md-none">
+  <ul class="nav nav-tabs justify-content-center nav-fill" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link" id="transaction-tab" data-toggle="tab" href="#transaction" role="tab" aria-controls="Transaction Practice" aria-selected="false">Transaction Practice</a>
+    <li class="nav-item">
+      <a class="nav-link" id="litigation-tab" data-toggle="tab" href="#litigation" role="tab" aria-controls="Litigation Practice" aria-selected="false">Litigation Practice</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active show" id="church-tab" data-toggle="tab" href="#church" role="tab" aria-controls="Church Practice" aria-selected="true">Church Practice</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade" id="transaction" role="tabpanel" aria-labelledby="transaction-tab">
+       <!-- TAB LINKS for Transaction Practice -->
+        <ul class="mb-2 text-left pl-3 text-size-90 j-square clearfix">
+            {% for item in site.practiceTransaction %}
+                <li {% if item.title == page.title %} class="font-weight-bold"{% endif %}><a href="{{ item.url | relative_url | append: ".html" }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="tab-pane fade" id="litigation" role="tabpanel" aria-labelledby="litigation-tab">
+      <!-- TAB LINKS for Litigation Practice -->
+            <ul class="mb-2 text-left pl-3 text-size-90 j-square clearfix">
+                {% for item in site.practiceLitigation %}
+                    <li {% if item.title == page.title %} class="font-weight-bold"{% endif %}><a href="{{ item.url | relative_url | append: ".html" }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+    </div>
+    <div class="tab-pane fade active show" id="church" role="tabpanel" aria-labelledby="church-tab">
+       <!-- SIDEBAR LINKS for Church Practice -->
+            <ul class="mb-2 text-left pl-3 text-size-80 j-square clearfix">
+                {% for item in site.practiceChurch %}
+                    <li {% if item.title == page.title %} class="font-weight-bold"{% endif %}><a href="{{ item.url | relative_url | append: ".html" }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="container-fluid">
+    <div class="row flex-xl-nowrap">
+        <!-- SIDEBAR -->
+        <div id="sidebar" class="d-none d-md-block col-md-3 col-xl-2 text-center sidebar j-sidebar" {% if page.group %} style="overflow: auto;" {% endif %}>
+
+            {% if page.sidebar-img %}
+            <img class="mt-4" src={{ "assets/photos/" | relative_url }}{{ page.sidebar-img}}>
+            {% endif %}
+
+            <!-- SIDEBAR HEADER -->
+            {% if page.group %}
+                <h6 class="mt-3 text-left font-weight-bold">Transaction Practice</h6>
+                <!-- SIDEBAR LINKS for Transaction Practice -->
+                <ul class="mb-2 text-left pl-3 text-size-90 j-square">
+                    {% for item in site.practiceTransaction %}
+                        <li {% if item.title == page.title %} class="font-weight-bold"{% endif %}><a href="{{ item.url | relative_url | append: ".html" }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+
+                <hr class="my-1">
+
+                <h6 class="mt-1 text-left font-weight-bold">Litigation Practice</h6>
+                <!-- SIDEBAR LINKS for Litigation Practice -->
+                <ul class="mb-2 text-left pl-3 text-size-90 j-square">
+                    {% for item in site.practiceLitigation %}
+                        <li {% if item.title == page.title %} class="font-weight-bold"{% endif %}><a href="{{ item.url | relative_url | append: ".html" }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+
+                <hr class="my-1">
+
+                <h6 class="mt-1 text-left font-weight-bold">Church Practice</h6>
+                <!-- SIDEBAR LINKS for Church Practice -->
+                <ul class="mb-2 text-left pl-3 text-size-80 j-square">
+                    {% for item in site.practiceChurch %}
+                        <li {% if item.title == page.title %} class="font-weight-bold"{% endif %}><a href="{{ item.url | relative_url | append: ".html" }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+
+
+            {% endif %}
+
+        </div><!-- SIDEBAR END -->
+
+        <!-- MAIN-CONTENT AREA -->
+        <main class="col-12 col-md-9 col-xl-8 pt-md-3 pl-md-5" role="main">
+
+            <article {% if page.title == "Contact Us" %} class="text-size-80" {% endif %}>
+
+                <!-- HEADER FOR PRACTICE AREAS -->
+                {% if page.group and page.key %}
+                <h3 class="mb-0 d-inline">{{ page.group }}</h3><h5 class="mb-0 d-inline"> - {{ page.title }}</h3>
+                {% elsif page.states %}
+                <h3 class="mb-0">Attorneys</h3>
+                {% else %}
+                    {% if page.title %}<h3 class="mb-0">{{ page.title }}</h3>{% endif %}
+                    {% if page.subtitle %}<h5 class="mb-0">{{ page.subtitle }}</h5>{% endif %}
+                {% endif %}  <!-- HEADER FOR PRACTICE AREAS END -->
+                <hr class="mt-1 black-divider">
+
+
+                {% if page.content-img %}
+                <img class="float-right mt-2 pl-3" src={{ "assets/photos/" | relative_url }}{{ page.content-img}}  {% if page.name == 'Spring Rowell' %} height="263" width="212"{% endif %}>
+                {% endif %}
+
+                {% if page.states %}
+                <strong class="text-uppercase d-inline-block mb-2"> {{ page.name }} <br> {{ page.title }} </strong> <br>
+                <strong class="j-practice mb-2 d-inline">Practice Group: {{ page.practiceAreas }}</strong><br>
+                <strong class="d-inline-block my-2"> Licensed In: {{ page.states }} </strong>
+                <br>
+                <hr class="d-flex mt-1 black-divider">
+                {% endif %}
+
+                {{ content }}
+
+                {% if page.key %}
+                    <a class="text-size-90 badge badge-dark" href="javascript:history.back()"> <img src={{ "assets/img/ic_chevron_left_white_24px.svg" | relative_url }} alt="Previous icon">Back to previous </a>
+                {% endif %}
+            </article>
+
+            {% include footer.html %}
+        </main>
+
+    </div>
+
+</div>
+
+</body>
+</html>

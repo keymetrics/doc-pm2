@@ -1,34 +1,29 @@
 {
-  "name": "my-project",
+  "name": "doc-pm2",
+  "version": "1.0.0",
+  "description": "```bash\r npm i docsify-cli -g\r yarn dev\r ```\r #### Phase 1\r Getting to know how things implemented in docsify (header, sidebar, navigation)",
+  "main": "gulpfile.js",
   "scripts": {
-    "start": "npx run-p server:prod css:prod",
-    "dev": "npx run-p server:dev css:dev",
-    "server:prod": "cross-env NODE_ENV=production npx docsify start . -c docs/ssr.config.js --port 3000",
-    "server:dev": "npx nodemon --exec 'npx docsify start . -c docs/ssr.config.js --port 3000' --watch docs -e html,js,css,svg",
-    "css:prod": "npx gulp css",
-    "css:dev": "npx nodemon --exec 'npx gulp css' --watch src/scss -e scss"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": [
-    "docs"
-  ],
-  "docsify": {
-    "config": {
-      "basePath": "https://docsify.js.org/",
-      "loadSidebar": true,
-      "loadNavbar": true,
-      "coverpage": true,
-      "name": "docsify"
-    }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keymetrics/doc-pm2.git"
   },
-  "dependencies": {
-    "cross-env": "^5.1.4",
-    "docsify": "^4.6.8",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keymetrics/doc-pm2/issues"
+  },
+  "homepage": "https://github.com/keymetrics/doc-pm2#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "child_process": "^1.0.2",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.4",
-    "nodemon": "^1.15.1",
-    "npm-run-all": "^4.1.2"
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^2.6.4"
   }
 }

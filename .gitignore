@@ -3,3 +3,7 @@ docs/bundle.css
 */**/.DS_Store
 .DS_Store
 uru*
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata

@@ -1,0 +1,40 @@
+name: PM2 DOCS
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+ auto_ids: true
+ # parse_block_html: true
+repository: 'keymetrics/doc-pm2'
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+# keep_files: [images]
+exclude: ["node_modules", "gulpfile.js", "package.json", "package-lock.json", ".jekyll-metadata", "source-code","fonts","uru*","_site/assets/javascript/anchor-js/","assets/scss-temp/"]
+
+
+# collections:
+#   practiceLitigation:
+#     output: true
+#     permalink: /practice_areas/litigation/:name
+#   practiceTransaction:
+#     output: true
+#     permalink: /practice_areas/transaction/:name
+
+
+
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "practiceLitigation"
+#     values:
+#       layout: "default"
+#       nav-current: practice_areas/
+#   - scope:
+#       path: ""
+#       type: "practiceTransaction"
+#     values:
+#       layout: "default"
+#       nav-current: practice_areas/
