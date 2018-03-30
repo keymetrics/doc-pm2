@@ -5,18 +5,13 @@
 
 <body>
 
-    <!-- MAIN-CONTENT AREA -->
-    <main>
     {% include header.html %}
 
-        <article>
+    <!-- MAIN-CONTENT AREA -->
+    <main>
+        {% include sidebar.html %}
 
-
-
-            {{ content }}
-
-
-        </article>
+        {{ content }}
 
         {% include footer.html %}
     </main>
