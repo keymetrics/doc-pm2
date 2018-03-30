@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="355px" viewBox="0 0 1920 355" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>bg-green_signup</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="2.36567283%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#01CEA2" offset="0%"></stop>
+            <stop stop-color="#011F19" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Monitoring" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -1079.000000)" opacity="0.600600091">
+        <g id="sign-up" transform="translate(0.000000, 1079.000000)" fill="url(#linearGradient-1)">
+            <g id="bg-green_signup" transform="translate(-98.000000, -145.000000)">
+                <polygon id="Path-5" points="457.861478 461.209442 0 145 730.634624 145"></polygon>
+                <polyline id="Path-3" points="1532.20997 529.469576 2064.07323 12.2391479 2064.07323 530.398962"></polyline>
+                <polygon id="Path-4" points="1869.29487 505.415351 795.909811 0.666579112 249.206626 553.29541"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

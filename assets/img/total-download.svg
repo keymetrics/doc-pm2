@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="60px" viewBox="0 0 72 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>total-download</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Runtime" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-757.000000, -3926.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="downloads" transform="translate(0.000000, 3789.000000)" stroke="#3EB1F3" stroke-width="2">
+            <g id="Group-43" transform="translate(289.000000, 130.000000)">
+                <g id="Group-74">
+                    <g id="Group-71" transform="translate(365.000000, 8.000000)">
+                        <g id="Group-42" transform="translate(104.000000, 0.000000)">
+                            <g id="Group-70">
+                                <g id="total-download">
+                                    <path d="M35,41.3636364 L35,0" id="Shape"></path>
+                                    <polyline id="Shape" points="50.9090909 0 70 0 70 57.2727273 0 57.2727273 0 0 19.0909091 0"></polyline>
+                                    <polyline id="Shape" points="50.9090909 25.4545455 35 41.3636364 19.0909091 25.4545455"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
