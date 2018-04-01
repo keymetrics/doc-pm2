@@ -16,7 +16,7 @@ var container = document.createElement('div');
 container.id = 'gittalk';
 wrapper.appendChild(container);
 document.querySelector('section.content').appendChild(wrapper)
-$(document).ready(function() { 
+$(document).ready(function() {
   gitalk.render('gittalk');
 });
 

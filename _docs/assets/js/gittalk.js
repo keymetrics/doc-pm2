@@ -7,7 +7,7 @@ const gitalk = new Gitalk({
     id: md5(window.location.pathname),
     // facebook-like distraction free mode
     distractionFreeMode: false
-})
+});
 
 var wrapper = document.createElement('div');
 wrapper.className = "markdown-section";
@@ -15,8 +15,8 @@ wrapper.appendChild(document.createElement('hr'));
 var container = document.createElement('div');
 container.id = 'gittalk';
 wrapper.appendChild(container);
-document.querySelector('section.content').appendChild(wrapper)
-$(document).ready(function() { 
+document.querySelector('section.content').appendChild(wrapper);
+$(document).ready(function() {
   gitalk.render('gittalk');
 });
 

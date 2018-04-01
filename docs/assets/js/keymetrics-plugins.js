@@ -118,8 +118,8 @@ var KeymetricsPlugin = (function() {
                 container: '#hits',
                 templates: {
                     empty: 'No results',
-                    item: `<a 
-                href="{{{href}}}" 
+                    item: `<a
+                href="{{{href}}}"
                 onclick="onHitClick('{{{dataId}}}')"
                 >{{{_highlightResult.label.value}}}</a>`
                 },
@@ -288,7 +288,7 @@ var KeymetricsPlugin = (function() {
     function getTopBlock() {
         const topBlock = `<div class="markdown-section gettings_started_block topBlock">
         <p>
-        Getting started with PM2 
+        Getting started with PM2
         <span class="runtime_block gettings_started_block_span">Runtime</span>
         <span class="monitoring_block gettings_started_block_span">Monitoring</span>
         <span class="enterprise_block gettings_started_block_span">Enterprise</span>
@@ -354,5 +354,4 @@ var KeymetricsPlugin = (function() {
         });
     }
 })();
-
 $docsify.plugins.push(KeymetricsPlugin);
