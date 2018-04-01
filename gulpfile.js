@@ -20,9 +20,15 @@ gulp.task('css', function () {
     .pipe(concat('bundle.css'))
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./assets/css'))
-    .pipe(gulp.dest('_site/assets/css'))
+    .pipe(gulp.dest('./docs/assets/css'))
+    .pipe(gulp.dest('_site/docs/assets/css'))
     .pipe(browserSync.reload({stream:true}));
+});
+
+gulp.task('js', function() {
+    return gulp.src(["docs/assets/js/**/*.js"])
+        .pipe(gulp.dest("_site/docs/assets/js"))
+        .pipe(browserSync.reload({stream:true}));
 });
 
 
@@ -42,7 +48,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 });
 
 // Wait for jekyll-build, then launch the Server
-gulp.task('browser-sync', ['css','jekyll-build'], function() {
+gulp.task('browser-sync', ['css', 'js', 'jekyll-build'], function() {
     browserSync({
         open: false,
         logPrefix: 'PM2',
@@ -61,7 +67,7 @@ gulp.task('browser-sync', ['css','jekyll-build'], function() {
 gulp.task('watch', function () {
     gulp.watch('./_src/scss/**/*.scss', ['css']);
     // gulp.watch('./_src/scss/**/*.scss', ['css']);
-    // gulp.watch('assets/js/*.js', ['jekyll-rebuild']);
+    gulp.watch('./docs/assets/js/*.js', ['js']);
     gulp.watch(['*.md','*/*.md'], ['jekyll-rebuild']);
     gulp.watch(['*.yml','_data/*.yml'], ['jekyll-rebuild']);
     gulp.watch(['*.index.html', '_layouts/*.html', '_includes/*.html',

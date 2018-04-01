@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<body>
+<body class="ready sticky">
 
     {% include header.html %}
 
@@ -11,7 +11,11 @@
     <main>
         {% include sidebar.html %}
 
-        {{ content }}
+        <section class="content">
+            <article id="main" class="markdown-section">
+                {{ content }}
+            </article>
+        </section>
 
         {% include footer.html %}
     </main>
