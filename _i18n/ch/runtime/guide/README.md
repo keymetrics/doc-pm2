@@ -17,5 +17,5 @@ The **process list** is where all your applications along with options and envir
 **process list** 即进程列表，是注册您所有应用以及选项和环境的地方。该列表仅包含pm2已启动的所有进程。
 
 <div>
-  <p align="center">[Let's start 即刻开始](/runtime/guide/installation/</p>
+  <p align="center">[Let's start 即刻开始](/runtime/guide/installation/)</p>
 </div>
