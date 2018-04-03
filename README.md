@@ -20,3 +20,8 @@ Simplified structure how current translation works.
 ├ runtime/
      └ overview.html
 ```
+---
+For development purpose, I usually use gulp (to concat *.scss to bundle.css, etc),
+If for some good reason, you want to start the site with gulp, follow these steps :
+1. Run `npm i` this will install all npm package in package.json
+2. Run `gulp` to execute default task, which build the site and watch for changes on certain folder.
