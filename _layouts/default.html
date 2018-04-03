@@ -12,6 +12,9 @@
         {% include sidebar.html %}
 
         <section class="content">
+            {% if page.url contains 'runtime' %}
+            {% include runtime-topblock.html %}
+            {% endif %}
             <article id="main" class="markdown-section">
                 {{ content }}
             </article>
