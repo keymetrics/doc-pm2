@@ -83,7 +83,7 @@
             </li>
         </ul> -->
 
-    {% capture my_include %}{% include runtime_sidebar.md %}{% endcapture %}
+    {% capture my_include %}{% tf runtime/runtime_sidebar.md %}{% endcapture %}
     {{ my_include | markdownify }}
     </div>
 </aside>
