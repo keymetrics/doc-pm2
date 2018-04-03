@@ -70,7 +70,7 @@ gulp.task('watch', function () {
     gulp.watch('./docs/assets/js/*.js', ['js']);
     gulp.watch(['*.md','*/*.md'], ['jekyll-rebuild']);
     gulp.watch(['*.yml','_data/*.yml'], ['jekyll-rebuild']);
-    gulp.watch(['*.index.html', '_layouts/*.html', '_includes/*.html',
+    gulp.watch(['*.index.html', '_layouts/*.html', '_includes/*.html', '_includes/*.md',
     '_posts/*'], ['jekyll-rebuild']);
 });
 

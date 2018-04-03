@@ -21,6 +21,7 @@ gem "jekyll", "~> 3.6.2"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-paginate", "~> 1.1.0"
+  gem "jekyll-multiple-languages-plugin"
 end
 
 gem "github-pages", "~>175", group: :jekyll_plugins

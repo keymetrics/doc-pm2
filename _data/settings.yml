@@ -1,8 +1,0 @@
-navlinks:
-- {name: Home, url: '/'}
-- {name: Practice Areas, url: 'practice_areas/'}
-- {name: Attorneys, url: 'attorneys/'}
-- {name: News, url: 'news/'}
-- {name: Locations, url: 'locations/'}
-- {name: Contact us, url: 'contact_us/'}
-- {name: Careers, url: 'careers/'}

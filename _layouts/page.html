@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="ready sticky">
+
+    {% include header.html %}
+
+    <!-- MAIN-CONTENT AREA -->
+    <main>
+        {% include sidebar.html %}
+
+        <section class="content">
+            <article id="main" class="markdown-section">
+                {{ content }}
+            </article>
+        </section>
+
+        {% include footer.html %}
+    </main>
+
+</body>
+    {% include scripts_footer.html %}
+</html>

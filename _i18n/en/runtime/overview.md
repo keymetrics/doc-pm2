@@ -1,6 +1,3 @@
----
-layout: default
----
 # Overview
 
 Why use pm2 ? At the end of this overview, you will better understand the benefits of using pm2 as a process manager.
@@ -38,7 +35,7 @@ Once added to your process list, manage a process with `pm2 start`, `pm2 stop`, 
 
 ## Logs Management
 
-All app logs are saved in the hard disk of your servers into `~/.pm2/logs/`.
+All app logs are saved in the hard disk of your servers into `~/.pm2/logs/`. 
 
 ```bash
 pm2 logs
