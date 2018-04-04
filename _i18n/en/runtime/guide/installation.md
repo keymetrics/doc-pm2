@@ -19,7 +19,7 @@ With debian, use the install script:
 apt update && apt install sudo curl && curl -sL https://raw.githubusercontent.com/Unitech/pm2/master/packager/setup.deb.sh | sudo -E bash -
 ```
 
-With docker, follow this [tutorial](/runtime/integration/docker.md).
+With docker, follow this [tutorial](/runtime/integration/docker/).
 
 ### CLI autocompletion
 
@@ -51,7 +51,7 @@ npm install pm2 -g && pm2 update
 
 ## Next step
 
-[Ecosystem File](/runtime/guide/ecosystem-file.md)
+[Ecosystem File](/runtime/guide/ecosystem-file/)
 
 ---
 

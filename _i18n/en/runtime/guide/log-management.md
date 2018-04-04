@@ -149,7 +149,7 @@ The format must follow a moment.js format, list [here](https://momentjs.com/docs
 
 ## Next step
 
-[Startup Hook](/runtime/guide/startup-hook.md)
+[Startup Hook](/runtime/guide/startup-hook/)
 
 ---
 

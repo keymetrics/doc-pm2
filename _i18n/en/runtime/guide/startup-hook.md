@@ -106,7 +106,7 @@ There are some external libraries to generate a Windows compatible startup scrip
 
 ## Next step
 
-[Load-balancing (cluster mode)](/runtime/guide/cluster.md)
+[Load-balancing (cluster mode)](/runtime/guide/load-balancing/)
 
 ---
 

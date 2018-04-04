@@ -35,7 +35,7 @@ Once added to your process list, manage a process with `pm2 start`, `pm2 stop`, 
 
 ## Logs Management
 
-All app logs are saved in the hard disk of your servers into `~/.pm2/logs/`. 
+All app logs are saved in the hard disk of your servers into `~/.pm2/logs/`.
 
 ```bash
 pm2 logs
@@ -78,7 +78,7 @@ pm2 deploy
 
 ## Next steps
 
-[Quick Start](/runtime/quickstart.md)
+[Quick Start](/runtime/quickstart/)
 
 ---
 

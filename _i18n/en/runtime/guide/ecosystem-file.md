@@ -31,7 +31,7 @@ module.exports = {
 }
 ```
 
-For more information about available properties, check the [ecosystem file reference](/runtime/references/ecosystem-file.md).
+For more information about available properties, check the [ecosystem file reference](/runtime/references/ecosystem-file/).
 
 ---
 
@@ -105,7 +105,7 @@ This behavior has been made to ensure consistency across restarts of your app.
 
 ### Updating the environment
 
-If you want to force an update, you must use `--update-env` : 
+If you want to force an update, you must use `--update-env` :
 
 ```bash
 # refresh the environment
@@ -119,7 +119,7 @@ pm2 restart ecosystem.config.js --env production --update-env
 
 ## Next step
 
-[Process Management](/runtime/guide/process-management.md)
+[Process Management](/runtime/guide/process-management/)
 
 ---
 

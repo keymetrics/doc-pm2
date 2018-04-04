@@ -38,7 +38,7 @@ module.exports = {
       user: "ubuntu",
       // SSH host
       host: ["192.168.0.13"],
-      // SSH options with no command-line flag, see 'man ssh' 
+      // SSH options with no command-line flag, see 'man ssh'
       // can be either a single string or an array of strings
       ssh_options: "StrictHostKeyChecking=no",
       // GIT remote/branch
@@ -187,7 +187,7 @@ Host alias
     HostName myserver.com
     User username
     IdentityFile ~/.ssh/mykey
-# Usage: `ssh alias` 
+# Usage: `ssh alias`
 # Alternative: `ssh -i ~/.ssh/mykey username@myserver.com`
 
 Host deployment
@@ -195,7 +195,7 @@ Host deployment
     User username
     IdentityFile ~/.ssh/github_rsa
 # Usage:
-# git@deployment:username/anyrepo.git 
+# git@deployment:username/anyrepo.git
 # This is for cloning any repo that uses that IdentityFile. This is a good way to make sure that your remote cloning commands use the appropriate key
 ```
 
@@ -209,7 +209,7 @@ To run the deploy script under Windows, you need to use a unix shell like bash, 
 
 ## Contributing
 
-This tool is a separate module of pm2. You can contribute to it [here](https://github.com/Unitech/pm2-deploy">https://github.com/Unitech/pm2-deploy).
+This tool is a separate module of pm2. You can contribute to it [here](https://github.com/Unitech/pm2-deploy).
 
 ---
 

@@ -24,7 +24,7 @@ module.exports = {
 
 ### Watch options
 
-You can use advanced options to specify path to watch or path to ignore. 
+You can use advanced options to specify path to watch or path to ignore.
 
 ```javascript
 module.exports = {
@@ -95,7 +95,7 @@ pm2 start ecosystem.config.js
 
 ## Next step
 
-[Easy Deploy with SSH](/runtime/guide/deploy.md)
+[Easy Deploy with SSH](/runtime/guide/easy-deploy-with-ssh/)
 
 ---
 

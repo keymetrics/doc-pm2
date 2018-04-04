@@ -122,7 +122,7 @@ Use `--help`to get more information on a command:
 
 ## Next steps
 
-[Ecosystem File](/runtime/guide/ecosystem-file.md)
+[Ecosystem File](/runtime/guide/ecosystem-file/)
 
 ---
 

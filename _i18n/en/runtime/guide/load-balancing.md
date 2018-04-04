@@ -42,7 +42,7 @@ In the context of clustering, you first need to be sure that your application ha
 
 An internal state is typically some local data stored into its processes. It can be an array of websocket connections or a local session-memory for example. Use Redis or other databases instead to share the states between processes.
 
-Follow our [tutorial](/runtime/production-best-practices/stateless-application.md) to make your app stateless.
+Follow our [tutorial](/runtime/production-best-practices/stateless-application/) to make your app stateless.
 
 ---
 
@@ -72,7 +72,7 @@ To be sure that all requests are properly handled in a reload, you need to be su
 
 A graceful shutdown makes sure to handle all remaining queries before exiting the application and closes all external connections.
 
-Get help to setup graceful shutdown with our [tutorial](/runtime/production-best-practices/graceful.md).
+Get help to setup graceful shutdown with our [tutorial](/runtime/production-best-practices/graceful/).
 
 ---
 
@@ -80,9 +80,9 @@ Get help to setup graceful shutdown with our [tutorial](/runtime/production-best
 
 The `NODE_APP_INSTANCE` environment variable is used to make a difference between cluster.
 
-For example, if you want to run a cronjob only on one cluster, you can check if `process.env.NODE_APP_INSTANCE === 0`. 
+For example, if you want to run a cronjob only on one cluster, you can check if `process.env.NODE_APP_INSTANCE === 0`.
 
-This variable can be renamed in the ecosystem file: 
+This variable can be renamed in the ecosystem file:
 
 ```javascript
 module.exports = {
@@ -94,13 +94,13 @@ module.exports = {
 }
 ```
 
-?> This is useful with the `node-config` package where name conflicts have been reported, check the [issue](https://github.com/Unitech/pm2/issues/2045). 
+?> This is useful with the `node-config` package where name conflicts have been reported, check the [issue](https://github.com/Unitech/pm2/issues/2045).
 
 ---
 
 ## Next steps
 
-[Development tools](/runtime/guide/dev.md)
+[Development tools](/runtime/guide/development-tools/)
 
 ---
 

@@ -128,7 +128,7 @@ pm2 monit
 
 ## Next step
 
-[Log Management](/runtime/guide/log-management.md)
+[Log Management](/runtime/guide/log-management/)
 
 ---
 
