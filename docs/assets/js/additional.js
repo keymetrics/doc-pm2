@@ -2,6 +2,7 @@ $(function() {
     logoClick();
     pWarn();
     sidebarActive();
+    sidebarOpen();
 });
 
 function helper(className, content) {
@@ -52,5 +53,15 @@ function sidebarActive() {
             //for making parent of submenu active
             $(this).closest("li").parent().parent().addClass("active");
         }
+    });
+}
+
+function sidebarOpen() {
+    $('.accordion-menu a').each(function(){
+         var myHref = $(this).attr('href');
+         var pathname = window.location.pathname;
+         if(pathname.match(myHref)) {
+           $('.accordion-menu').foundation('down', $(this).parent().parent());
+         }
     });
 }
