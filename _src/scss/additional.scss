@@ -18,6 +18,10 @@
     -moz-appearance: none;
     appearance: none;
     border: 0;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 .accordion-menu .is-accordion-submenu-parent[aria-expanded='true'] > a::after {

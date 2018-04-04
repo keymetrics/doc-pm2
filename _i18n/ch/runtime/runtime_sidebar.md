@@ -1,25 +1,39 @@
-- [Overview](/ch/runtime/overview/)
-- [Quick Start](/ch/runtime/quickstart/)
-- [Guide](/ch/runtime/guide/)
-  - [Installation](/ch/runtime/guide/installation/)
-  - [Ecosystem File](/ch/runtime/guide/ecosystem-file/)
-  - [Process Management](/ch/runtime/guide/process-management/)
-  - [Log Management](/ch/runtime/guide/log-management/)
-  - [Startup Hook](/ch/runtime/guide/startup-hook/)
-  - [Load-Balancing (cluster mode)](/ch/runtime/guide/load-balancing/)
-  - [Development Tools](/ch/runtime/guide/development-tools/)
-  - [Easy Deploy with SSH](/ch/runtime/guide/easy-deploy-with-ssh/)
-- [Production Best Practices](/ch/runtime/production-best-practices/)
-  - [Environment Variables in Node.js](/ch/runtime/production-best-practices/environment-variables-in-nodejs/)
-  - [Graceful Shutdown](/ch/runtime/production-best-practices/graceful-shutdown/)
-  - [Stateless Application](/ch/runtime/production-best-practices/stateless-application/)
-- [Integration](/ch/runtime/integration/)
-  - [AWS Elastic Beanstalk](/ch/runtime/integration/elastic-beanstalk/)
-  - [Docker](/ch/runtime/integration/docker/)
-  - [Heroku](/ch/runtime/integration/heroku/)
-  - [Transpilers](/ch/runtime/integration/transpilers/)
-  - [With a Cloud Provider](/ch/runtime/integration/cloud-providers/)
-- [References](/ch/runtime/references/)
-  - [Ecosystem File](/ch/runtime/references/ecosystem-file/)
-  - [CLI](/ch/runtime/references/pm2-cli/)
-  - [Programmatic](/ch/runtime/references/pm2-programmatic/)
+<ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true">
+  <li><a href="/ch/runtime/overview/">Overview</a></li>
+  <li><a href="/ch/runtime/quickstart/">Quick Start</a></li>
+  <li><a href="/ch/runtime/guide/">Guide</a>
+    <ul class="menu nested vertical">
+      <li><a href="/ch/runtime/guide/installation/">Installation</a></li>
+      <li><a href="/ch/runtime/guide/ecosystem-file/">Ecosystem File</a></li>
+      <li><a href="/ch/runtime/guide/process-management/">Process Management</a></li>
+      <li><a href="/ch/runtime/guide/log-management/">Log Management</a></li>
+      <li><a href="/ch/runtime/guide/startup-hook/">Startup Hook</a></li>
+      <li><a href="/ch/runtime/guide/load-balancing/">Load-Balancing (cluster mode)</a></li>
+      <li><a href="/ch/runtime/guide/development-tools/">Development Tools</a></li>
+      <li><a href="/ch/runtime/guide/easy-deploy-with-ssh/">Easy Deploy with SSH</a></li>
+    </ul>
+</li>
+  <li><a href="/ch/runtime/production-best-practices/">Prod. Best Practices</a>
+    <ul class="menu nested vertical">
+      <li><a href="/ch/runtime/production-best-practices/environment-variables-in-nodejs/">Environment Variables in Node.js</a></li>
+      <li><a href="/ch/runtime/production-best-practices/graceful-shutdown/">Graceful Shutdown</a></li>
+      <li><a href="/ch/runtime/production-best-practices/stateless-application/">Stateless Application</a></li>
+    </ul>
+  </li>
+  <li><a href="/ch/runtime/integration/">Integration</a>
+    <ul class="menu nested vertical">
+      <li><a href="/ch/runtime/integration/elastic-beanstalk/">AWS Elastic Beanstalk</a></li>
+      <li><a href="/ch/runtime/integration/docker/">Docker</a></li>
+      <li><a href="/ch/runtime/integration/heroku/">Heroku</a></li>
+      <li><a href="/ch/runtime/integration/transpilers/">Transpilers</a></li>
+      <li><a href="/ch/runtime/integration/cloud-providers/">With a Cloud Provider</a></li>
+    </ul>
+  </li>
+  <li><a href="/ch/runtime/references/">References</a>
+    <ul class="menu nested vertical">
+      <li><a href="/ch/runtime/references/ecosystem-file/">Ecosystem File</a></li>
+      <li><a href="/ch/runtime/references/pm2-cli/">CLI</a></li>
+      <li><a href="/ch/runtime/references/pm2-programmatic/">Programmatic</a></li>
+    </ul>
+  </li>
+</ul>
