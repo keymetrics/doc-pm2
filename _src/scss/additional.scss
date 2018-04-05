@@ -88,12 +88,21 @@
 //   }
 // }
 
-.no-js {
-  display: none;
-}
+// .no-js {
+//   display: none;
+// }
 
 // .accordion-menu, .nested, .vertical, .is-accordion-submenu-item
 
 // .no-js [data-accordion-menu] {
 //   display: none;
 // }
+.no-js {
+ visibility: hidden;
+ opacity: 0;
+}
+
+.js {
+ visibility: visible;
+ opacity: 1;
+}
