@@ -2,7 +2,7 @@
   <li><a href="/runtime/overview/">Overview</a></li>
   <li><a href="/runtime/quickstart/">Quick Start</a></li>
   <li ><a href="/runtime/guide/">Guide</a>
-    <ul class="menu nested vertical">
+    <ul class="menu nested vertical is-active">
       <li><a href="/runtime/guide/installation/">Installation</a></li>
       <li><a href="/runtime/guide/ecosystem-file/">Ecosystem File</a></li>
       <li><a href="/runtime/guide/process-management/">Process Management</a></li>
@@ -13,7 +13,7 @@
       <li><a href="/runtime/guide/easy-deploy-with-ssh/">Easy Deploy with SSH</a></li>
     </ul>
 </li>
-  <li><a href="/runtime/production-best-practices/">Prod. Best Practices</a>
+  <li class="no-js"><a href="/runtime/production-best-practices/">Prod. Best Practices</a>
     <ul class="menu nested vertical">
       <li><a href="/runtime/production-best-practices/environment-variables-in-nodejs/">Environment Variables in Node.js</a></li>
       <li><a href="/runtime/production-best-practices/graceful-shutdown/">Graceful Shutdown</a></li>

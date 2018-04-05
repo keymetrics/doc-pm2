@@ -50,18 +50,33 @@ function sidebarActive() {
         // checks if its the same on the address bar
         if (url == (this.href)) {
             $(this).closest("li").addClass("active");
+            // $(this).closest("button").click();
             //for making parent of submenu active
-            $(this).closest("li").parent().parent().addClass("active");
+            $(this).closest("li").parent().parent().addClass("active is-active");
+            $(this).closest("lu").parent().parent().addClass("is-active");
         }
     });
 }
 
-function sidebarOpen() {
-    $('.accordion-menu a').each(function(){
-         var myHref = $(this).attr('href');
-         var pathname = window.location.pathname;
-         if(pathname.match(myHref)) {
-           $('.accordion-menu').foundation('down', $(this).parent().parent());
-         }
-    });
-}
+// function sidebarOpen() {
+//     $('.accordion-menu a').each(function(){
+//          var myHref = $(this).attr('href');
+//          var pathname = window.location.pathname;
+//          if(pathname.match(myHref)) {
+//            $('.accordion-menu').foundation('down', $(this).parent().parent());
+//          }
+//     });
+
+//     // // Allow opening sidebar submenu without clicking a button
+//     // $(".sidebar-nav li.is-accordion-submenu-parent > a").click(function() {
+//     //     var $this = $(this);
+//     //     event.preventDefault();
+//     //     var goTo = this.getAttribute("href");
+//     //     $this.next().click();
+//     //     setTimeout(function() {
+//     //     window.location = goTo;
+//     //     }, 200);
+//     //     // alert("A link was clicked!");
+//     //  });
+
+// }

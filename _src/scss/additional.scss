@@ -18,6 +18,7 @@
     -moz-appearance: none;
     appearance: none;
     border: 0;
+    display: none;
 
     &:focus {
       outline: none;
@@ -70,11 +71,17 @@
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   border: 0; }
+
+// .is-active {
+//   display: block;
+// }
 // ======== Accordion End ==========
 
 // Prevent FOUC
-.no-js {
-  .accordion-menu .nested {
-    display: none;
-  }
-}
+// .no-js {
+//   .nested {
+//     display: none;
+//   }
+// }
+
+// .accordion-menu, .nested, .vertical, .is-accordion-submenu-item
