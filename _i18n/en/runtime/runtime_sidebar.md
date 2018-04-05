@@ -1,4 +1,4 @@
-<ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true">
+<ul id="acc" class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true" data-multi-open="false">
   <li><a href="/runtime/overview/">Overview</a></li>
   <li><a href="/runtime/quickstart/">Quick Start</a></li>
   <li ><a href="/runtime/guide/">Guide</a>
@@ -13,7 +13,7 @@
       <li><a href="/runtime/guide/easy-deploy-with-ssh/">Easy Deploy with SSH</a></li>
     </ul>
 </li>
-  <li class="no-js"><a href="/runtime/production-best-practices/">Prod. Best Practices</a>
+  <li><a href="/runtime/production-best-practices/">Prod. Best Practices</a>
     <ul class="menu nested vertical">
       <li><a href="/runtime/production-best-practices/environment-variables-in-nodejs/">Environment Variables in Node.js</a></li>
       <li><a href="/runtime/production-best-practices/graceful-shutdown/">Graceful Shutdown</a></li>

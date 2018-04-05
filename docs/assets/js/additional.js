@@ -2,7 +2,7 @@ $(function() {
     logoClick();
     pWarn();
     sidebarActive();
-    sidebarOpen();
+    // sidebarOpen();
 });
 
 function helper(className, content) {

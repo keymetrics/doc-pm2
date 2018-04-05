@@ -8,74 +8,78 @@
   margin-top: 20px;
 }
 
-// Accordion Sidebar Menu Styling
-// ======== Accordion Start ==========
-.accordion-menu {
-  button {
-    background: 0 0;
-    padding: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 0;
-    display: none;
+// //Foundation 6 - Accordion Sidebar Menu Styling
+// // ======== Accordion Start ==========
+// .accordion-menu {
+//   button {
+//     background: 0 0;
+//     padding: 0;
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+//     border: 0;
+//     display: none;
 
-    &:focus {
-      outline: none;
-    }
-  }
-}
-.accordion-menu .is-accordion-submenu-parent[aria-expanded='true'] > a::after {
-  -ms-transform: rotate(180deg);
-      transform: rotate(180deg);
-  -ms-transform-origin: 50% 50%;
-      transform-origin: 50% 50%; }
+//     &:focus {
+//       outline: none;
+//     }
+//   }
+// }
+// .accordion-menu .is-accordion-submenu-parent[aria-expanded='true'] > a::after {
+//   -ms-transform: rotate(180deg);
+//       transform: rotate(180deg);
+//   -ms-transform-origin: 50% 50%;
+//       transform-origin: 50% 50%; }
 
-.is-accordion-submenu-parent {
-  position: relative; }
+// .is-accordion-submenu-parent {
+//   position: relative; }
 
-.submenu-toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  width: 40px;
-  height: 20px; }
-  .submenu-toggle::after {
-    display: block;
-    width: 0;
-    height: 0;
-    border: inset 6px;
-    content: '';
-    border-bottom-width: 0;
-    border-top-style: solid;
-    border-color: #2ba6cb transparent transparent;
-    top: 0;
-    bottom: 0;
-    margin: auto; }
+// .submenu-toggle {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   cursor: pointer;
+//   width: 40px;
+//   height: 20px; }
+//   .submenu-toggle::after {
+//     display: block;
+//     width: 0;
+//     height: 0;
+//     border: inset 6px;
+//     content: '';
+//     border-bottom-width: 0;
+//     border-top-style: solid;
+//     border-color: #2ba6cb transparent transparent;
+//     top: 0;
+//     bottom: 0;
+//     margin: auto; }
 
-.submenu-toggle[aria-expanded='true']::after {
-  -ms-transform: scaleY(-1);
-      transform: scaleY(-1);
-  -ms-transform-origin: 50% 50%;
-      transform-origin: 50% 50%; }
+// .submenu-toggle[aria-expanded='true']::after {
+//   -ms-transform: scaleY(-1);
+//       transform: scaleY(-1);
+//   -ms-transform-origin: 50% 50%;
+//       transform-origin: 50% 50%; }
 
-.submenu-toggle-text {
-  position: absolute !important;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  border: 0; }
+// .submenu-toggle-text {
+//   position: absolute !important;
+//   width: 1px;
+//   height: 1px;
+//   padding: 0;
+//   overflow: hidden;
+//   clip: rect(0, 0, 0, 0);
+//   white-space: nowrap;
+//   -webkit-clip-path: inset(50%);
+//           clip-path: inset(50%);
+//   border: 0; }
 
 // .is-active {
 //   display: block;
 // }
 // ======== Accordion End ==========
+
+// #acc li:not(.is-active) > ul {
+//   display: none;
+// }
 
 // Prevent FOUC
 // .no-js {
@@ -84,4 +88,12 @@
 //   }
 // }
 
+.no-js {
+  display: none;
+}
+
 // .accordion-menu, .nested, .vertical, .is-accordion-submenu-item
+
+// .no-js [data-accordion-menu] {
+//   display: none;
+// }
