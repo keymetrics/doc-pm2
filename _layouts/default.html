@@ -1,5 +1,8 @@
+{% if page.url contains "runtime" %}
+{% assign class = "runtime-page" %}
 <!DOCTYPE html>
-<html class="no-js">
+<html class = "{{class}}">
+{% endif %}
 
 {% include head.html %}
 

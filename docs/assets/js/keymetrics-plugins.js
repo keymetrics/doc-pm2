@@ -320,13 +320,13 @@ var KeymetricsPlugin = (function() {
 
     $(document).ready(function(event) {
         changePageClassBasedOnTheUrl();
-        configureSearchBar()
+        configureSearchBar();
         logoTogglesSidebarOnMobile();
         mountExtraSidebar(changePageClassWhenSidebarLinkClicked);
         setSidebarBreakpoints();
         createSidebarLinkClickHandler();
         insertFooter();
-        $('article#main.markdown-section').html(getEditPageBlock() + $('article#main.markdown-section').html())
+        $('article#main.markdown-section').html(getEditPageBlock() + $('article#main.markdown-section').html());
     });
 
     function fixLinks(html) {
