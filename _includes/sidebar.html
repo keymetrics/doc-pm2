@@ -46,14 +46,15 @@
 
     <ul id="acc">
     {% for item in site.data.sidebar.runtime %}
-    <!-- {% unless page.url contains "guide" %}{% assign visibility = "hide" %}{% endunless %} -->
-        <li>
+    {% assign slug_title = item.title | slugify %}
+    {% if page.url contains slug_title %}{% assign active = 'active' %}{% else %}{% assign active = '' %}{% endif %}
+        <li class="{{ active }}">
             <a href="{{ item.url }}">{{ item.title }}</a>
             {% if item.submenu  %}
                 {% if page.url contains item.url  %}
                     <ul>
                         {% for entry in item.submenu %}
-                        <li class ="{{ visibility }}"><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+                        <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
                         {% endfor %}
                     </ul>
                 {% endif %}

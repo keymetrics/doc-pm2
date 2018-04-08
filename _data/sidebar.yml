@@ -2,7 +2,7 @@ runtime:
   - title: Overview
     url: "/runtime/overview/"
   - title: Quick Start
-    url: "/runtime/quickstart/"
+    url: "/runtime/quick-start/"
   - title: Guide
     url: "/runtime/guide/"
     submenu:

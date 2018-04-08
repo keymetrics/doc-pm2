@@ -1,7 +1,7 @@
 $(function() {
     logoClick();
     pWarn();
-    sidebarActive();
+    // sidebarActive();
     // sidebarOpen();
 });
 
