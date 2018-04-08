@@ -44,7 +44,21 @@
     </div>
     <div class="sidebar-nav">
 
-    {% capture my_include %}{% tf runtime/runtime_sidebar.md %}{% endcapture %}
-    {{ my_include | markdownify }}
+    <ul id="acc">
+    {% for item in site.data.sidebar.runtime %}
+    {% if page.url contains "guide" %}{% assign visibility = "hide" %}{% endif %}
+        <li>
+            <a href="{{ item.url }}">{{ item.title }}</a>
+            {% if item.submenu  %}
+            <ul>
+                {% for entry in item.submenu %}
+                <li class ="{{ visibility }}"><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+
     </div>
 </aside>

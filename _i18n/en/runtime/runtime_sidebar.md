@@ -13,7 +13,7 @@
       <li><a href="/runtime/guide/easy-deploy-with-ssh/">Easy Deploy with SSH</a></li>
     </ul>
 </li>
-  <li><a href="/runtime/production-best-practices/">Prod. Best Practices</a>
+  <li><a href="/runtime/production-best-practices/">Production Best Practices</a>
     <ul class="hide menu nested vertical">
       <li><a href="/runtime/production-best-practices/environment-variables-in-nodejs/">Environment Variables in Node.js</a></li>
       <li><a href="/runtime/production-best-practices/graceful-shutdown/">Graceful Shutdown</a></li>
