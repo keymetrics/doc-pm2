@@ -46,16 +46,17 @@
 
     <ul id="acc">
     {% for item in site.data.sidebar.runtime %}
+    {% if site.lang == 'ch' %}{% assign ch_path = '/ch'  %}{% endif %}
     {% assign slug_title = item.title | slugify %}
     {% if page.url contains slug_title %}{% assign active = 'active' %}{% else %}{% assign active = '' %}{% endif %}
         <li class="{{ active }}">
-            <a href="{{ item.url }}">{{ item.title }}</a>
+            <a href="{{ ch_path }}{{ item.url }}">{{ item.title }}</a>
             {% if item.submenu  %}
                 {% if page.url contains item.url  %}
                     <ul>
                         {% for entry in item.submenu %}
                         {% if page.url contains entry.url %}{% assign active = 'active' %}{% else %}{% assign active = '' %}{% endif %}
-                        <li class="{{ active }}"><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+                        <li class="{{ active }}"><a href="{{ ch_path }}{{ entry.url }}">{{ entry.page }}</a></li>
                         {% endfor %}
                     </ul>
                 {% endif %}
