@@ -1,8 +1,8 @@
 $(function() {
     logoClick();
     pWarn();
-    // sidebarActive();
-    // sidebarOpen();
+    // sidebarActive(); // function removed, .active class added Jekyll on page built (server-side rendering)
+    // sidebarOpen(); // function removed, hide and show submenu by Jekyll on page built (server-side rendering)
 });
 
 function helper(className, content) {
@@ -42,6 +42,7 @@ function logoClick() {
     });
 }
 
+// function removed, .active class added Jekyll on page built (server-side rendering)
 function sidebarActive() {
     var url = window.location.href;
 
@@ -58,6 +59,7 @@ function sidebarActive() {
     });
 }
 
+// function removed, hide and show submenu by Jekyll on page built (server-side rendering)
 // function sidebarOpen() {
 //     $('.accordion-menu a').each(function(){
 //          var myHref = $(this).attr('href');

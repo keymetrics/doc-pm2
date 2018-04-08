@@ -54,7 +54,8 @@
                 {% if page.url contains item.url  %}
                     <ul>
                         {% for entry in item.submenu %}
-                        <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+                        {% if page.url contains entry.url %}{% assign active = 'active' %}{% else %}{% assign active = '' %}{% endif %}
+                        <li class="{{ active }}"><a href="{{ entry.url }}">{{ entry.page }}</a></li>
                         {% endfor %}
                     </ul>
                 {% endif %}
