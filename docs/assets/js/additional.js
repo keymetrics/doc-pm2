@@ -43,7 +43,7 @@ function pWarn() {
 
 function logoClick() {
     $('.PM2_logo').click(function() {
-        $('body').toggleClass('close');
+        $(this).toggleClass('close');
     });
 }
 
