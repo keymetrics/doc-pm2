@@ -24,9 +24,9 @@
           {% for lang in site.languages %}
             {% unless site.lang == lang %}
               {% if lang == site.default_lang %}
-                <a href="{{ site.baseurl_root }}{{ page.url }}" >lang: {% t langs.{{ lang }} %}</a>
+                <a href="{{ site.baseurl_root }}{{ page.url }}" >Language: {% t langs.{{ lang }} %}</a>
               {% else %}
-                <a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >lang: {% t langs.{{ lang }} %}</a>
+                <a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >Language: <br>{% t langs.{{ lang }} %}</a>
               {% endif %}
 
               {% assign next = forloop.index | plus: 1 %}

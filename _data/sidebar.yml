@@ -43,7 +43,7 @@ runtime:
       - page: Transpilers
         url: "/runtime/integration/transpilers/"
       - page: With a Cloud Provider
-        url: /runtime/integration/cloud-providers/"
+        url: "/runtime/integration/cloud-providers/"
   - title: References
     url: "/runtime/references/"
     submenu:
@@ -64,8 +64,30 @@ monitoring:
     submenu:
       - page: Installation
         url: "/monitoring/guide/installation/"
-      - page: Ecosystem File
-        url: "/monitoring/guide/ecosystem-file/"
-      - page: Process Management
-        url: "/monitoring/guide/process-management/"
-      - page: Log Management
+      - page: Configuration
+        url: "/monitoring/guide/configuration/"
+      - page: Notification
+        url: "/monitoring/guide/notifications/"
+      - page: Issue dashboard
+        url: "/monitoring/guide/issue-dashboard/"
+      - page: Transaction tracing
+        url: "/monitoring/guide/transaction-tracing/"
+      - page: Memory & CPU Profiling
+        url: "/monitoring/guide/memory-cpu-profiling/"
+  - title: Integration
+    url: "/monitoring/integration/"
+    submenu:
+      - page: AWS Elastic Beanstalk
+        url: "/monitoring/integration/elastic-beanstalk/"
+      - page: Docker
+        url: "/monitoring/integration/docker/"
+      - page: Heroku
+        url: "/monitoring/integration/heroku/"
+      - page: With a Cloud Provider
+        url: "/monitoring/integration/cloud-providers/"
+  - title: References
+    url: "/monitoring/reference/"
+
+enterprise:
+  - title: Overview
+    url: "/enterprise/overview/"

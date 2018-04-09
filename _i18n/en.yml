@@ -5,7 +5,7 @@ global:
   github: GitHub
 langs:
   en: English
-  ch: Chinese
+  ch: Chinese (中文版)
 pages:
   example: example
   includeexample: The following text is a Jekyll include liquid tag parameter
