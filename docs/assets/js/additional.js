@@ -25,12 +25,17 @@ function transformClass(text) {
 // render as p class=warn
 function pWarn() {
     var allPtag = document.getElementsByTagName("p");
+    var length = allPtag.length;
     var text = [];
 
-    for (var i = 0; i < allPtag.length; i++) {
+
+
+    for (var i = 0; i < length; i++) {
         // console.log(allPtag[i].outerHTML)
+        if(allPtag[i].innerHTML.indexOf("&gt") !== -1) {
         text[i] = transformClass(allPtag[i].innerHTML);
         allPtag[i].outerHTML = text[i];
+        }
         // console.log(text[i])
         // console.log(`${i+1}/${allPtag.length}`)
     }

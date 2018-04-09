@@ -1,6 +1,6 @@
-{% if page.url contains "runtime" %}{% assign class = "runtime-page" %}{% elsif page.url contains "monitoring" %}{% assign class = "monitoring-page" %}{% elsif page.url contains "enterprise" %}{% assign class = "enterprise-page" %}
+{% if page.url contains 'runtime' %}{% assign class ='runtime-page' %}{% elsif page.url contains "monitoring" %}{% assign class ="monitoring-page" %}{% elsif page.url contains "enterprise" %}{% assign class ="enterprise-page" %}
 <!DOCTYPE html>
-<html class="{{class}}">
+<html class={{class}}>
 {% endif %}
 
 {% include head.html %}
@@ -14,9 +14,7 @@
         {% include sidebar.html %}
 
         <section class="content">
-            {% if page.url contains 'runtime' %}
-            {% include runtime-topblock.html %}
-            {% endif %}
+            {% include topblock.html %}
             <article id="main" class="markdown-section">
                 {{ content }}
             </article>
