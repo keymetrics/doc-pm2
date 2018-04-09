@@ -53,3 +53,19 @@ runtime:
         url: "/runtime/references/pm2-cli/"
       - page: Programmatic
         url: "/runtime/references/pm2-programmatic/"
+
+monitoring:
+  - title: Overview
+    url: "/monitoring/overview/"
+  - title: Quick Start
+    url: "/monitoring/quick-start/"
+  - title: Guide
+    url: "/monitoring/guide/"
+    submenu:
+      - page: Installation
+        url: "/monitoring/guide/installation/"
+      - page: Ecosystem File
+        url: "/monitoring/guide/ecosystem-file/"
+      - page: Process Management
+        url: "/monitoring/guide/process-management/"
+      - page: Log Management

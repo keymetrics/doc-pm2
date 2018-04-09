@@ -45,7 +45,8 @@
     <div class="sidebar-nav">
 
     <ul id="acc">
-    {% for item in site.data.sidebar.runtime %}
+    {% if page.url contains 'runtime' %}{% assign category ='runtime' %}{% elsif page.url contains "monitoring" %}{% assign category ="monitoring" %}{% elsif page.url contains "enterprise" %}{% assign category ="enterprise" %}{% else %}{% assign category ='runtime' %}{% endif %}
+    {% for item in site.data.sidebar.[category] %}
     {% if site.lang == 'ch' %}{% assign ch_path = '/ch'  %}{% endif %}
     {% assign slug_title = item.title | slugify %}
     {% if page.url contains slug_title %}{% assign active = 'active' %}{% else %}{% assign active = '' %}{% endif %}
