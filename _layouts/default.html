@@ -1,5 +1,4 @@
-{% if page.url contains "runtime" %}
-{% assign class = "runtime-page" %}
+{% if page.url contains "runtime" %}{% assign class = "runtime-page" %}{% elsif page.url contains "monitoring" %}{% assign class = "monitoring-page" %}{% elsif page.url contains "enterprise" %}{% assign class = "enterprise-page" %}
 <!DOCTYPE html>
 <html class="{{class}}">
 {% endif %}
