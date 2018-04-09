@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="1115px" viewBox="0 0 1920 1115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>bg-blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#3391C8" offset="0%"></stop>
+            <stop stop-color="#3EB1F3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Runtime" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -1080.000000)">
+        <g id="quickstart" transform="translate(0.000000, 1080.000000)" fill="url(#linearGradient-1)">
+            <g id="bg-blue" transform="translate(-534.000000, -586.000000)">
+                <rect id="Mask-Copy-13" transform="translate(1058.170236, 1058.405779) scale(-1, 1) rotate(-315.000000) translate(-1058.170236, -1058.405779) " x="-24.3297637" y="645.216761" width="2165" height="826.378037"></rect>
+                <rect id="Mask-Copy-14" transform="translate(2193.735080, 1839.287927) scale(-1, 1) rotate(-315.000000) translate(-2193.735080, -1839.287927) " x="1111.23508" y="1499.03329" width="2165" height="680.509281"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

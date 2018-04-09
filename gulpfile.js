@@ -20,14 +20,14 @@ gulp.task('css', function () {
     .pipe(concat('bundle.css'))
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('docs/assets/css'))
-    .pipe(gulp.dest('_site/docs/assets/css'))
+    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest('_site/assets/css'))
     .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('js', function() {
-    return gulp.src(["docs/assets/js/**/*.js"])
-        .pipe(gulp.dest("_site/docs/assets/js"))
+    return gulp.src(["assets/js/**/*.js"])
+        .pipe(gulp.dest("_site/assets/js"))
         .pipe(browserSync.reload({stream:true}));
 });
 
@@ -55,7 +55,7 @@ gulp.task('browser-sync', ['css', 'js', 'jekyll-build'], function() {
         logPrefix: 'PM2',
         logFileChanges: true,
         server: {
-            baseDir: '_site'
+            baseDir: 'docs'
         }
     });
 });
@@ -68,7 +68,7 @@ gulp.task('browser-sync', ['css', 'js', 'jekyll-build'], function() {
 gulp.task('watch', function () {
     gulp.watch('_src/scss/**/*.scss', ['css']);
     gulp.watch(['_i18n/**/*','runtime/**/*','monitoring/**/*','enterprise/**/*'], ['jekyll-rebuild']);
-    gulp.watch('docs/assets/js/*.js', ['js']);
+    gulp.watch('assets/js/*.js', ['js']);
     gulp.watch(['*.md','*/*.md'], ['jekyll-rebuild']);
     gulp.watch(['*.yml','_data/*.yml'], ['jekyll-rebuild']);
     gulp.watch(['*.index.html', '_layouts/*.html', '_includes/*.html', '_includes/*.md',

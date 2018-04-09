@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="1055px" viewBox="0 0 1920 1055" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>bg-purple</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#7F86F5" offset="0%"></stop>
+            <stop stop-color="#21223A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Enterprise" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -1077.000000)" opacity="0.601845562">
+        <g id="benefits" transform="translate(0.000000, 1077.000000)" fill="url(#linearGradient-1)">
+            <g id="bg-purple" transform="translate(-326.000000, -303.000000)">
+                <circle id="Oval-2-Copy-2" cx="1993.5" cy="578.5" r="578.5"></circle>
+                <circle id="Oval-2" cx="1993" cy="1202" r="459"></circle>
+                <circle id="Oval-2" cx="590" cy="1108" r="459"></circle>
+                <circle id="Oval-2-Copy" cx="1264.5" cy="853.5" r="689.5"></circle>
+                <circle id="Oval-2" cx="459" cy="487" r="459"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

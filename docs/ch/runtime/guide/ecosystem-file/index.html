@@ -1,0 +1,379 @@
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
+    <link rel="stylesheet" href="https://unpkg.com/docsify-copy-code/styles.css">
+    <link rel=“prefetch” href="https://fonts.googleapis.com/css?family=Roboto:400,500">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/bundle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+</head>
+
+<body class="ready sticky">
+
+    <template id="sidebar2-template">
+    <div class="sidebar_2_wrapper">
+        <div class="sidebar_2">
+            <a href="/runtime/overview" data-page="runtime-page">
+                <div class="sidebar_2_item sidebar_2_item_runtime">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-r.png">
+                    <div class="sidebar_2_item__text">Runtime</div>
+                </div>
+            </a>
+            <a href="/monitoring/overview" data-page="monitoring-page">
+                <div class="sidebar_2_item sidebar_2_item_monitoring">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-m.png">
+                    <div class="sidebar_2_item__text">Monitoring</div>
+                </div>
+            </a>
+            <a href="/enterprise/overview" data-page="enterprise-page">
+                <div class="sidebar_2_item sidebar_2_item_enterprise">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-e.png">
+                    <div class="sidebar_2_item__text">Enterprise</div>
+                </div>
+            </a>
+        </div>
+        <div class="main_content">
+        </div>
+    </div>
+</template>
+<div class="footer-fixed-box"></div>
+<div class="section header-section">
+    <div class=" header-container">
+        <div class="PM2_logo_wrapper">
+            <a class="logo-container link">
+                <div class="PM2_logo"></div>
+            </a>
+        </div>
+        <div class="PM2_search search-wrapper">
+            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input class="search_input ds-input" placeholder="Search documentation..." autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Blender, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+            <div class="PM2_search_icon"><i class="fas fa-search"></i></div>
+            <div id="hits" class="algolia-results">
+                <!-- Hits widget will appear here -->
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="app-nav no-badge">
+    <!--navbar-->
+</nav>
+
+    <!-- MAIN-CONTENT AREA -->
+    <main>
+        <aside class="sidebar">
+    <div class="sidebar_2_wrapper">
+        <div class="sidebar_2">
+            <a href="/runtime/overview" data-page="runtime-page">
+                <div class="sidebar_2_item sidebar_2_item_runtime">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-r.png">
+                    <div class="sidebar_2_item__text">Runtime</div>
+                </div>
+            </a>
+            <a href="/monitoring/overview" data-page="monitoring-page">
+                <div class="sidebar_2_item sidebar_2_item_monitoring">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-m.png">
+                    <div class="sidebar_2_item__text">Monitoring</div>
+                </div>
+            </a>
+            <a href="/enterprise/overview" data-page="enterprise-page">
+                <div class="sidebar_2_item sidebar_2_item_enterprise">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-e.png">
+                    <div class="sidebar_2_item__text">Enterprise</div>
+                </div>
+            </a>
+        <div class="lang-selector">
+          <!-- Adds links to other languages on the post -->
+          
+            
+              
+                <a href="/runtime/guide/ecosystem-file/" >Language: English</a>
+              
+
+              
+
+              
+
+            
+          
+            
+          
+        </div>
+        </div>
+        <div class="main_content">
+        </div>
+    </div>
+    <div class="sidebar-nav">
+
+    <ul id="acc">
+    
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/overview/">Overview</a>
+            
+        </li>
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/quick-start/">Quick Start</a>
+            
+        </li>
+    
+    
+    
+    
+        <li class="active">
+            <a href="/ch/runtime/guide/">Guide</a>
+            
+                
+                    <ul>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/installation/">Installation</a></li>
+                        
+                        
+                        <li class="active"><a href="/ch/runtime/guide/ecosystem-file/">Ecosystem File</a></li>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/process-management/">Process Management</a></li>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/log-management/">Log Management</a></li>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/startup-hook/">Startup Hook</a></li>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/load-balancing/">Load-Balancing (cluster mode)</a></li>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/development-tools/">Development Tools</a></li>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/easy-deploy-with-ssh/">Easy Deploy with SSH</a></li>
+                        
+                    </ul>
+                
+            
+        </li>
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/production-best-practices/">Production Best Practices</a>
+            
+                
+            
+        </li>
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/integration/">Integration</a>
+            
+                
+            
+        </li>
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/references/">References</a>
+            
+                
+            
+        </li>
+    
+    </ul>
+
+    </div>
+</aside>
+
+        <section class="content">
+            <div class="markdown-section gettings_started_block topBlock">
+    <p style="display: initial;">Getting started with PM2<span class="runtime_block gettings_started_block_span">Runtime</span><span class="monitoring_block gettings_started_block_span">Monitoring</span><span class="enterprise_block gettings_started_block_span">Enterprise</span></p>
+</div>
+            <article id="main" class="markdown-section">
+                 <h1 id="ecosystem-file-生态系统文件">Ecosystem File 生态系统文件</h1>
+
+<p>When deploying on multiple server or when using multiple CLI arguments, an alternative to the command line become more conveninent for starting your apps.
+当在多个服务器上部署或使用多个CLI参数时，命令行的替代方式对于启动您的应用更加方便。</p>
+
+<p>The purpose of the ecosystem file is to gather options and environment variables of all your applications.
+生态系统文件的目的是收集您所有应用的选项和环境变量。</p>
+
+<hr />
+
+<h2 id="generate-a-template-生成一个模版">Generate a template 生成一个模版</h2>
+
+<p>Generate an <code class="highlighter-rouge">ecosystem.config.js</code> template with:
+生成一个 <code class="highlighter-rouge">ecosystem.config.js</code> 模版：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pm2 init
+</code></pre></div></div>
+
+<p>This will generate: 这会生成：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">apps</span> <span class="p">:</span> <span class="p">[{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="s2">"app"</span><span class="p">,</span>
+    <span class="na">script</span><span class="p">:</span> <span class="s2">"./app.js"</span><span class="p">,</span>
+    <span class="na">env</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">NODE_ENV</span><span class="p">:</span> <span class="s2">"development"</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="na">env_production</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">NODE_ENV</span><span class="p">:</span> <span class="s2">"production"</span><span class="p">,</span>
+    <span class="p">}</span>
+  <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>For more information about available properties, check the <a href="runtime/references/ecosystem-file.md">ecosystem file reference</a>.
+有关可用属性的更多信息，请查看<a href="runtime/references/ecosystem-file.md">生态系统文件参考</a>。</p>
+
+<hr />
+
+<h2 id="use-your-ecosystem-file-使用您的生态系统文件">Use your ecosystem file 使用您的生态系统文件</h2>
+
+<h3 id="routine-常规">Routine 常规</h3>
+
+<p>Start, stop, restart and reload all your applications at once:
+一次性启动，停止，重启并重载您的所有应用程序：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pm2 start ecosystem.config.js
+pm2 stop ecosystem.config.js
+pm2 restart ecosystem.config.js
+pm2 reload ecosystem.config.js
+</code></pre></div></div>
+
+<h3 id="action-on-a-specific-process-针对特定进程采取行动">Action on a specific process 针对特定进程采取行动</h3>
+
+<p>Perform an action on a specific application with the option <code class="highlighter-rouge">--only &lt;app_name&gt;</code>:
+使用该选项 <code class="highlighter-rouge">--only &lt;app_name&gt;</code> 对特定应用执行操作</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pm2 restart ecosystem.config.js <span class="nt">--only</span> app
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="environment-variables-环境变量">Environment variables 环境变量</h2>
+
+<p>You can declare multiple, each entry must be format according to <code class="highlighter-rouge">env_&lt;environment-name&gt;</code>.
+您可以多次进行申明,每个条目必须遵照此格式 <code class="highlighter-rouge">env_&lt;environment-name&gt;</code>。</p>
+
+<p>Here, the <code class="highlighter-rouge">app</code> process can be start with two environments: <code class="highlighter-rouge">development</code> and <code class="highlighter-rouge">production</code>.
+在这里，<code class="highlighter-rouge">app</code>流程可以从两个环境开始：<code class="highlighter-rouge">development</code> 和 <code class="highlighter-rouge">production</code>。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">apps</span> <span class="p">:</span> <span class="p">[{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="s2">"app"</span><span class="p">,</span>
+    <span class="na">script</span><span class="p">:</span> <span class="s2">"./app.js"</span><span class="p">,</span>
+    <span class="na">env</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">NODE_ENV</span><span class="p">:</span> <span class="s2">"development"</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="na">env_production</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">NODE_ENV</span><span class="p">:</span> <span class="s2">"production"</span><span class="p">,</span>
+    <span class="p">}</span>
+  <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Select one of them with the <code class="highlighter-rouge">--env</code> flag:
+用 <code class="highlighter-rouge">--env</code> 标志选择其中的一个</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pm2 start ecosystem.config.js
+pm2 start ecosystem.config.js <span class="nt">--env</span> production
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="immutable-environment-不可变环境">Immutable environment 不可变环境</h2>
+
+<p>Once added to your process list, the process environment is immutable.
+一旦添加到您的流程列表中，流程环境是不可变的。</p>
+
+<p>The process environment is generated when you add a process to your process list, using:</p>
+<ul>
+  <li>the current environment</li>
+  <li>the ecosystem file</li>
+</ul>
+
+<p>将流程添加到流程列表时生成流程环境，使用：</p>
+<ul>
+  <li>当前环境</li>
+  <li>生态系统文件</li>
+</ul>
+
+<p>Thus, if you restart your process list having a different current environment or having a new ecosystem file, the process environment doesn’t change.
+因此，如果您重启具有不同于当前环境或具有新生态系统文件的进程列表，进程环境不会更改。</p>
+
+<p>This behavior has been made to ensure consistency across restarts of your app.
+此行为是为了确保应用重启时的一致性。</p>
+
+<h3 id="updating-the-environment-更行环境">Updating the environment 更行环境</h3>
+
+<p>If you want to force an update, you must use <code class="highlighter-rouge">--update-env</code> : 
+如果您想强制更新，您必须使用 <code class="highlighter-rouge">--update-env</code> ：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># refresh the environment</span>
+pm2 restart ecosystem.config.js <span class="nt">--update-env</span>
+
+<span class="c"># switch the environment</span>
+pm2 restart ecosystem.config.js <span class="nt">--env</span> production <span class="nt">--update-env</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="next-step-下一步">Next step 下一步</h2>
+
+<p><a href="runtime/guide/process-management.md">Process Management 进程管理</a></p>
+
+<hr />
+
+<h2 id="questions--问题">Questions ? 问题？</h2>
+
+<p>We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.
+我们永远乐于帮您解决可能遇到的问题。搜索我们的文档或查看常见问题的答案。您也可以在我们的社区论坛发布问题或评论。</p>
+
+
+            </article>
+
+        </section>
+
+        
+    </main>
+</body>
+    <script>window.$docsify = {"basePath":"/docs","alias":{"/runtime/.*/_sidebar.md":"/runtime/_sidebar.md","/monitoring/.*/_sidebar.md":"/monitoring/_sidebar.md","/enterprise/.*/_sidebar.md":"/enterprise/_sidebar.md"},"auto2top":true,"coverpage":false,"executeScript":true,"loadSidebar":"_sidebar.md","loadNavbar":false,"mergeNavbar":false,"subMaxLevel":1,"name":"","search":false,"plugins":[],"routerMode":"history"}</script>
+<!-- <script src="//unpkg.com/docsify/lib/docsify.min.js"></script> -->
+<!-- <script src="/ch/assets/js/docsify.js"></script> -->
+<script src="/assets/js/scripts.js" type="text/javascript"></script>
+<script src="https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/prismjs@1.13.0/prism.js" type="text/javascript"></script>
+<script src="https://unpkg.com/prismjs/components/prism-bash.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/prismjs/components/prism-markdown.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/prismjs/components/prism-nginx.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/js/prism-clipboard.js" type="text/javascript"></script>
+<!-- <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> -->
+<!-- <script src="/ch/assets/js/gittalk.js"></script> -->
+<script src="/assets/js/keymetrics-plugins.js" type="text/javascript"></script>
+<script src="/assets/js/additional.js" type="text/javascript"></script>
+</html>

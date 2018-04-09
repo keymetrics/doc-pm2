@@ -1,0 +1,453 @@
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
+    <link rel="stylesheet" href="https://unpkg.com/docsify-copy-code/styles.css">
+    <link rel=“prefetch” href="https://fonts.googleapis.com/css?family=Roboto:400,500">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/bundle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+</head>
+
+<body class="ready sticky">
+
+    <template id="sidebar2-template">
+    <div class="sidebar_2_wrapper">
+        <div class="sidebar_2">
+            <a href="/runtime/overview" data-page="runtime-page">
+                <div class="sidebar_2_item sidebar_2_item_runtime">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-r.png">
+                    <div class="sidebar_2_item__text">Runtime</div>
+                </div>
+            </a>
+            <a href="/monitoring/overview" data-page="monitoring-page">
+                <div class="sidebar_2_item sidebar_2_item_monitoring">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-m.png">
+                    <div class="sidebar_2_item__text">Monitoring</div>
+                </div>
+            </a>
+            <a href="/enterprise/overview" data-page="enterprise-page">
+                <div class="sidebar_2_item sidebar_2_item_enterprise">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-e.png">
+                    <div class="sidebar_2_item__text">Enterprise</div>
+                </div>
+            </a>
+        </div>
+        <div class="main_content">
+        </div>
+    </div>
+</template>
+<div class="footer-fixed-box"></div>
+<div class="section header-section">
+    <div class=" header-container">
+        <div class="PM2_logo_wrapper">
+            <a class="logo-container link">
+                <div class="PM2_logo"></div>
+            </a>
+        </div>
+        <div class="PM2_search search-wrapper">
+            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input class="search_input ds-input" placeholder="Search documentation..." autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Blender, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+            <div class="PM2_search_icon"><i class="fas fa-search"></i></div>
+            <div id="hits" class="algolia-results">
+                <!-- Hits widget will appear here -->
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="app-nav no-badge">
+    <!--navbar-->
+</nav>
+
+    <!-- MAIN-CONTENT AREA -->
+    <main>
+        <aside class="sidebar">
+    <div class="sidebar_2_wrapper">
+        <div class="sidebar_2">
+            <a href="/runtime/overview" data-page="runtime-page">
+                <div class="sidebar_2_item sidebar_2_item_runtime">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-r.png">
+                    <div class="sidebar_2_item__text">Runtime</div>
+                </div>
+            </a>
+            <a href="/monitoring/overview" data-page="monitoring-page">
+                <div class="sidebar_2_item sidebar_2_item_monitoring">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-m.png">
+                    <div class="sidebar_2_item__text">Monitoring</div>
+                </div>
+            </a>
+            <a href="/enterprise/overview" data-page="enterprise-page">
+                <div class="sidebar_2_item sidebar_2_item_enterprise">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-e.png">
+                    <div class="sidebar_2_item__text">Enterprise</div>
+                </div>
+            </a>
+        <div class="lang-selector">
+          <!-- Adds links to other languages on the post -->
+          
+            
+              
+                <a href="/runtime/production-best-practices/graceful-shutdown/" >Language: English</a>
+              
+
+              
+
+              
+
+            
+          
+            
+          
+        </div>
+        </div>
+        <div class="main_content">
+        </div>
+    </div>
+    <div class="sidebar-nav">
+
+    <ul id="acc">
+    
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/overview/">Overview</a>
+            
+        </li>
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/quick-start/">Quick Start</a>
+            
+        </li>
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/guide/">Guide</a>
+            
+                
+            
+        </li>
+    
+    
+    
+    
+        <li class="active">
+            <a href="/ch/runtime/production-best-practices/">Production Best Practices</a>
+            
+                
+                    <ul>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/production-best-practices/environment-variables-in-nodejs/">Environment Variables in Node.js</a></li>
+                        
+                        
+                        <li class="active"><a href="/ch/runtime/production-best-practices/graceful-shutdown/">Graceful Shutdown</a></li>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/production-best-practices/stateless-application/">Stateless Application</a></li>
+                        
+                    </ul>
+                
+            
+        </li>
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/integration/">Integration</a>
+            
+                
+            
+        </li>
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/references/">References</a>
+            
+                
+            
+        </li>
+    
+    </ul>
+
+    </div>
+</aside>
+
+        <section class="content">
+            <div class="markdown-section gettings_started_block topBlock">
+    <p style="display: initial;">Getting started with PM2<span class="runtime_block gettings_started_block_span">Runtime</span><span class="monitoring_block gettings_started_block_span">Monitoring</span><span class="enterprise_block gettings_started_block_span">Enterprise</span></p>
+</div>
+            <article id="main" class="markdown-section">
+                 <h1 id="graceful-shutdown">Graceful Shutdown</h1>
+
+<p>Your applications will restart several times in its lifetime, be it on deployment or, more sadly, if your application crashes.</p>
+
+<p>But on a restart, a user can face two problems:</p>
+<ul>
+  <li>a <strong>downtime period</strong>, your server returning “503 Service Unavailable” responses</li>
+  <li>a <strong>failed request</strong>, if the request was in progress at the time of restart</li>
+</ul>
+
+<p><strong>Downtime periods</strong> can be avoided with the pm2 cluster mode and reload action.</p>
+
+<p><strong>Failed requests</strong> can be avoided with graceful shutdown and restart. This tutorial introduce you how to implement it.</p>
+
+<hr />
+
+<h2 id="graceful-shutdown-1">Graceful Shutdown</h2>
+
+<p>In a graceful shutdown, your app must go through 5 steps:</p>
+
+<ul>
+  <li>receives a notification to stop</li>
+  <li>asks the load balancer to stop receiving requests</li>
+  <li>finishes all ongoing requests</li>
+  <li>releases all resources (databases, queues…)</li>
+  <li>exits</li>
+</ul>
+
+<p>Let’s say we have the following express app:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
+<span class="kd">const</span> <span class="nx">port</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">port</span> <span class="o">||</span> <span class="mi">8000</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">'Hello world'</span><span class="p">)</span> <span class="p">})</span>
+
+<span class="kd">const</span> <span class="nx">server</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'http'</span><span class="p">).</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">app</span><span class="p">)</span>
+<span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Express server listening on port '</span> <span class="o">+</span> <span class="nx">server</span><span class="p">.</span><span class="nx">address</span><span class="p">().</span><span class="nx">port</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<p>We need first to intercept the <strong>SIGINT</strong> signal (emitted by <code class="highlighter-rouge">pm2 stop</code>):</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
+<span class="kd">const</span> <span class="nx">port</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">port</span> <span class="o">||</span> <span class="mi">8000</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">'Hello world'</span><span class="p">)</span> <span class="p">})</span>
+
+<span class="kd">const</span> <span class="nx">server</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'http'</span><span class="p">).</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">app</span><span class="p">)</span>
+<span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Express server listening on port '</span> <span class="o">+</span> <span class="nx">server</span><span class="p">.</span><span class="nx">address</span><span class="p">().</span><span class="nx">port</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="nx">process</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'SIGINT'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">'SIGINT signal received.'</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<p>We then ask HTTP server to stop receiving requests and finish ongoing ones:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
+<span class="kd">const</span> <span class="nx">port</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">port</span> <span class="o">||</span> <span class="mi">8000</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">'Hello world'</span><span class="p">)</span> <span class="p">})</span>
+
+<span class="kd">const</span> <span class="nx">server</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'http'</span><span class="p">).</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">app</span><span class="p">)</span>
+<span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Express server listening on port '</span> <span class="o">+</span> <span class="nx">server</span><span class="p">.</span><span class="nx">address</span><span class="p">().</span><span class="nx">port</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="nx">process</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'SIGINT'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">'SIGINT signal received.'</span><span class="p">)</span>
+
+  <span class="c1">// Stops the server from accepting new connections and finishes existing connections.</span>
+  <span class="nx">server</span><span class="p">.</span><span class="nx">close</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+      <span class="nx">process</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">})</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<p>At last, we close connection to all resources:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
+<span class="kd">const</span> <span class="nx">port</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">port</span> <span class="o">||</span> <span class="mi">8000</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">'Hello world'</span><span class="p">)</span> <span class="p">})</span>
+
+<span class="kd">const</span> <span class="nx">server</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'http'</span><span class="p">).</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">app</span><span class="p">)</span>
+<span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Express server listening on port '</span> <span class="o">+</span> <span class="nx">server</span><span class="p">.</span><span class="nx">address</span><span class="p">().</span><span class="nx">port</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="nx">process</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'SIGINT'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">'SIGINT signal received.'</span><span class="p">)</span>
+
+  <span class="c1">// Stops the server from accepting new connections and finishes existing connections.</span>
+  <span class="nx">server</span><span class="p">.</span><span class="nx">close</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// if error, log and exit with error (1 code)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+      <span class="nx">process</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="c1">// close your database connection and exit with success (0 code)</span>
+    <span class="c1">// for example with mongoose</span>
+    <span class="nx">mongoose</span><span class="p">.</span><span class="nx">connection</span><span class="p">.</span><span class="nx">close</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Mongoose connection disconnected'</span><span class="p">)</span>
+      <span class="nx">process</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="p">})</span>
+  <span class="p">})</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="timeout-for-kill">Timeout for kill</h2>
+
+<p>By default, pm2 waits 1600ms before sending SIGKILL signal if the applications doesn’t exit itself.</p>
+
+<p>You can change this value, in ms, in your ecosystem.config.js:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">apps</span><span class="p">:</span> <span class="p">[{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="s2">"app"</span><span class="p">,</span>
+    <span class="na">script</span><span class="p">:</span> <span class="s2">"./app.js"</span><span class="p">,</span>
+    <span class="na">kill_timeout</span><span class="p">:</span> <span class="mi">1600</span><span class="p">,</span>
+  <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="windows-graceful-stop">Windows graceful stop</h2>
+
+<p>When signals are not available your process gets killed. In that case, you need to listen for <code class="highlighter-rouge">shutdown</code> events:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">process</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'message'</span><span class="p">,</span> <span class="p">(</span><span class="nx">msg</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">msg</span> <span class="o">==</span> <span class="s1">'shutdown'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Closing all connections...'</span><span class="p">)</span>
+    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Finished closing connections'</span><span class="p">)</span>
+      <span class="nx">process</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="p">},</span> <span class="mi">1500</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="graceful-start">Graceful start</h2>
+
+<p>Your application often require to be connected to your database or other resources before serving HTTP requests.</p>
+
+<p>Your app must go through these 3 steps to avoid errors:</p>
+
+<ul>
+  <li>opens DB connections</li>
+  <li>starts listening to a port</li>
+  <li>notifies pm2 that the application is ready</li>
+</ul>
+
+<p>First, enable the <code class="highlighter-rouge">ready</code> signal in pm2 in your ecosystem.config.js:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">apps</span> <span class="p">:</span> <span class="p">[{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="s2">"api"</span><span class="p">,</span>
+    <span class="na">script</span><span class="p">:</span> <span class="s2">"./api.js"</span><span class="p">,</span>
+    <span class="na">wait_ready</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">listen_timeout</span><span class="p">:</span> <span class="mi">3000</span><span class="p">,</span>
+  <span class="p">}],</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>?&gt; By default, after 3000ms, pm2 will consider your app ready. Change this value with the <code class="highlighter-rouge">listen_timeout</code> value.</p>
+
+<p>Let’s keep using the previous express app:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
+<span class="kd">const</span> <span class="nx">port</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">port</span> <span class="o">||</span> <span class="mi">8000</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">'Hello world'</span><span class="p">)</span> <span class="p">})</span>
+
+<span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Express server listening on port '</span> <span class="o">+</span> <span class="nx">server</span><span class="p">.</span><span class="nx">address</span><span class="p">().</span><span class="nx">port</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="p">...</span>
+</code></pre></div></div>
+
+<p>First, wait for your database connection to be ready:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
+<span class="kd">const</span> <span class="nx">port</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">port</span> <span class="o">||</span> <span class="mi">8000</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">'Hello world'</span><span class="p">)</span> <span class="p">})</span>
+
+<span class="kd">const</span> <span class="nx">server</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'http'</span><span class="p">).</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">app</span><span class="p">)</span>
+<span class="nx">mongoose</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">'mongodb://mongosA:27501,mongosB:27501'</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Express server listening on port '</span> <span class="o">+</span> <span class="nx">server</span><span class="p">.</span><span class="nx">address</span><span class="p">().</span><span class="nx">port</span><span class="p">)</span>
+  <span class="p">})</span>
+<span class="p">})</span>
+
+<span class="p">...</span>
+</code></pre></div></div>
+
+<p>At last, notify pm2 that the application is ready with <code class="highlighter-rouge">process.send('ready')</code>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
+<span class="kd">const</span> <span class="nx">port</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">port</span> <span class="o">||</span> <span class="mi">8000</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">'Hello world'</span><span class="p">)</span> <span class="p">})</span>
+
+<span class="kd">const</span> <span class="nx">server</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'http'</span><span class="p">).</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">app</span><span class="p">)</span>
+<span class="nx">mongoose</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">'mongodb://mongosA:27501,mongosB:27501'</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Express server listening on port '</span> <span class="o">+</span> <span class="nx">server</span><span class="p">.</span><span class="nx">address</span><span class="p">().</span><span class="nx">port</span><span class="p">)</span>
+    <span class="nx">process</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">'ready'</span><span class="p">)</span>
+  <span class="p">})</span>
+<span class="p">})</span>
+
+<span class="p">...</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="graceful-start-in-cluster-mode">Graceful start in cluster mode</h2>
+
+<p>In cluster mode, there is a default system that sets each cluster ready when the app accepts a connection. There is also a time out, which default to 3000ms, that you can set with the <code class="highlighter-rouge">listen_timeout</code> property in your ecosystem file.</p>
+
+
+            </article>
+
+        </section>
+
+        
+    </main>
+</body>
+    <script>window.$docsify = {"basePath":"/docs","alias":{"/runtime/.*/_sidebar.md":"/runtime/_sidebar.md","/monitoring/.*/_sidebar.md":"/monitoring/_sidebar.md","/enterprise/.*/_sidebar.md":"/enterprise/_sidebar.md"},"auto2top":true,"coverpage":false,"executeScript":true,"loadSidebar":"_sidebar.md","loadNavbar":false,"mergeNavbar":false,"subMaxLevel":1,"name":"","search":false,"plugins":[],"routerMode":"history"}</script>
+<!-- <script src="//unpkg.com/docsify/lib/docsify.min.js"></script> -->
+<!-- <script src="/ch/assets/js/docsify.js"></script> -->
+<script src="/assets/js/scripts.js" type="text/javascript"></script>
+<script src="https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/prismjs@1.13.0/prism.js" type="text/javascript"></script>
+<script src="https://unpkg.com/prismjs/components/prism-bash.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/prismjs/components/prism-markdown.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/prismjs/components/prism-nginx.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/js/prism-clipboard.js" type="text/javascript"></script>
+<!-- <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> -->
+<!-- <script src="/ch/assets/js/gittalk.js"></script> -->
+<script src="/assets/js/keymetrics-plugins.js" type="text/javascript"></script>
+<script src="/assets/js/additional.js" type="text/javascript"></script>
+</html>

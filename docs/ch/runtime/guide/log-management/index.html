@@ -1,0 +1,409 @@
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
+    <link rel="stylesheet" href="https://unpkg.com/docsify-copy-code/styles.css">
+    <link rel=“prefetch” href="https://fonts.googleapis.com/css?family=Roboto:400,500">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/bundle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+</head>
+
+<body class="ready sticky">
+
+    <template id="sidebar2-template">
+    <div class="sidebar_2_wrapper">
+        <div class="sidebar_2">
+            <a href="/runtime/overview" data-page="runtime-page">
+                <div class="sidebar_2_item sidebar_2_item_runtime">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-r.png">
+                    <div class="sidebar_2_item__text">Runtime</div>
+                </div>
+            </a>
+            <a href="/monitoring/overview" data-page="monitoring-page">
+                <div class="sidebar_2_item sidebar_2_item_monitoring">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-m.png">
+                    <div class="sidebar_2_item__text">Monitoring</div>
+                </div>
+            </a>
+            <a href="/enterprise/overview" data-page="enterprise-page">
+                <div class="sidebar_2_item sidebar_2_item_enterprise">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-e.png">
+                    <div class="sidebar_2_item__text">Enterprise</div>
+                </div>
+            </a>
+        </div>
+        <div class="main_content">
+        </div>
+    </div>
+</template>
+<div class="footer-fixed-box"></div>
+<div class="section header-section">
+    <div class=" header-container">
+        <div class="PM2_logo_wrapper">
+            <a class="logo-container link">
+                <div class="PM2_logo"></div>
+            </a>
+        </div>
+        <div class="PM2_search search-wrapper">
+            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input class="search_input ds-input" placeholder="Search documentation..." autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Blender, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+            <div class="PM2_search_icon"><i class="fas fa-search"></i></div>
+            <div id="hits" class="algolia-results">
+                <!-- Hits widget will appear here -->
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="app-nav no-badge">
+    <!--navbar-->
+</nav>
+
+    <!-- MAIN-CONTENT AREA -->
+    <main>
+        <aside class="sidebar">
+    <div class="sidebar_2_wrapper">
+        <div class="sidebar_2">
+            <a href="/runtime/overview" data-page="runtime-page">
+                <div class="sidebar_2_item sidebar_2_item_runtime">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-r.png">
+                    <div class="sidebar_2_item__text">Runtime</div>
+                </div>
+            </a>
+            <a href="/monitoring/overview" data-page="monitoring-page">
+                <div class="sidebar_2_item sidebar_2_item_monitoring">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-m.png">
+                    <div class="sidebar_2_item__text">Monitoring</div>
+                </div>
+            </a>
+            <a href="/enterprise/overview" data-page="enterprise-page">
+                <div class="sidebar_2_item sidebar_2_item_enterprise">
+                    <img class="sidebar_2_item__image" src="/assets/static/pm2-logo-e.png">
+                    <div class="sidebar_2_item__text">Enterprise</div>
+                </div>
+            </a>
+        <div class="lang-selector">
+          <!-- Adds links to other languages on the post -->
+          
+            
+              
+                <a href="/runtime/guide/log-management/" >Language: English</a>
+              
+
+              
+
+              
+
+            
+          
+            
+          
+        </div>
+        </div>
+        <div class="main_content">
+        </div>
+    </div>
+    <div class="sidebar-nav">
+
+    <ul id="acc">
+    
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/overview/">Overview</a>
+            
+        </li>
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/quick-start/">Quick Start</a>
+            
+        </li>
+    
+    
+    
+    
+        <li class="active">
+            <a href="/ch/runtime/guide/">Guide</a>
+            
+                
+                    <ul>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/installation/">Installation</a></li>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/ecosystem-file/">Ecosystem File</a></li>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/process-management/">Process Management</a></li>
+                        
+                        
+                        <li class="active"><a href="/ch/runtime/guide/log-management/">Log Management</a></li>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/startup-hook/">Startup Hook</a></li>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/load-balancing/">Load-Balancing (cluster mode)</a></li>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/development-tools/">Development Tools</a></li>
+                        
+                        
+                        <li class=""><a href="/ch/runtime/guide/easy-deploy-with-ssh/">Easy Deploy with SSH</a></li>
+                        
+                    </ul>
+                
+            
+        </li>
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/production-best-practices/">Production Best Practices</a>
+            
+                
+            
+        </li>
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/integration/">Integration</a>
+            
+                
+            
+        </li>
+    
+    
+    
+    
+        <li class="">
+            <a href="/ch/runtime/references/">References</a>
+            
+                
+            
+        </li>
+    
+    </ul>
+
+    </div>
+</aside>
+
+        <section class="content">
+            <div class="markdown-section gettings_started_block topBlock">
+    <p style="display: initial;">Getting started with PM2<span class="runtime_block gettings_started_block_span">Runtime</span><span class="monitoring_block gettings_started_block_span">Monitoring</span><span class="enterprise_block gettings_started_block_span">Enterprise</span></p>
+</div>
+            <article id="main" class="markdown-section">
+                 <h1 id="log-management-日志管理">Log management 日志管理</h1>
+
+<p>Logs are available at realtime and are saved into your hard disk.
+日志可以实时获取并保存到您硬盘中。</p>
+
+<p>The way your logs are formatted, the way log files are created: everything can be customized.
+日志格式化的方式，创建日志文件的方式：所有内容都可以自定义。</p>
+
+<hr />
+
+<h2 id="access-the-logs-访问日志">Access the logs 访问日志</h2>
+
+<h3 id="real-time-logs-实时日志">Real-time logs 实时日志</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># all apps logs</span>
+pm2 logs
+
+<span class="c"># only app logs</span>
+pm2 logs app
+</code></pre></div></div>
+
+<h3 id="log-files-日志文件">Log files 日志文件</h3>
+
+<p>By default, all logs are saved into <code class="highlighter-rouge">$HOME/.pm2/logs</code>.
+默认情况下，所有日志都被保存到 <code class="highlighter-rouge">$HOME/.pm2/logs</code>。</p>
+
+<p>You can empty all application logs with:
+您可以以此清空所有应用日志：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pm2 flush
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="log-files-configuration-日志文件配置">Log files configuration 日志文件配置</h2>
+
+<p>You can specify a custom location for your logs.
+您可以为日志指定自定义位置。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">apps</span><span class="p">:</span> <span class="p">[{</span>
+      <span class="na">name</span><span class="p">:</span> <span class="s1">'app'</span><span class="p">,</span>
+      <span class="na">script</span><span class="p">:</span> <span class="s1">'app.js'</span><span class="p">,</span>
+      <span class="na">output</span><span class="p">:</span> <span class="s1">'./out.log'</span><span class="p">,</span>
+      <span class="na">error</span><span class="p">:</span> <span class="s1">'./error.log'</span><span class="p">,</span>
+	    <span class="na">log</span><span class="p">:</span> <span class="s1">'./combined.outerr.log'</span><span class="p">,</span>
+    <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="highlighter-rouge">output</code> is only standard output (console.log)</li>
+  <li><code class="highlighter-rouge">error</code> is only error output (console.error)</li>
+  <li><code class="highlighter-rouge">log</code> combines <code class="highlighter-rouge">output</code> and <code class="highlighter-rouge">error</code>, disabled by default</li>
+  <li><code class="highlighter-rouge">output</code> 只是标准输出 (console.log)</li>
+  <li><code class="highlighter-rouge">error</code> 只是错误输出 (console.error)</li>
+  <li><code class="highlighter-rouge">log</code> 结合了 <code class="highlighter-rouge">output</code> 和 <code class="highlighter-rouge">error</code>, 默认是关闭的</li>
+</ul>
+
+<h3 id="rotating-logs-循环日志">Rotating Logs 循环日志</h3>
+
+<p>If you want to split logs into multiple files instead of a big one, use the logrotate:
+如果您想将日志分成多个文件而不是大文件，请使用logrotate：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pm2 install pm2-logrotate
+</code></pre></div></div>
+
+<p>Learn how to configure the module <a href="https://github.com/keymetrics/pm2-logrotate">here</a>.
+在<a href="https://github.com/keymetrics/pm2-logrotate">这里</a>了解如何配置模块。</p>
+
+<hr />
+
+<h2 id="merging-logs-合并日志">Merging Logs 合并日志</h2>
+
+<p>In cluster mode, each cluster has his own log files. You can use the merge options to gather all logs into a single file:
+在群集模式下，每个群集都有自己的日志文件。 您可以使用合并选项将所有日志收集到单个文件中：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">apps</span><span class="p">:</span> <span class="p">[{</span>
+      <span class="na">name</span><span class="p">:</span> <span class="s1">'app'</span><span class="p">,</span>
+      <span class="na">script</span><span class="p">:</span> <span class="s1">'app.js'</span><span class="p">,</span>
+      <span class="na">output</span><span class="p">:</span> <span class="s1">'./out.log'</span><span class="p">,</span>
+      <span class="na">error</span><span class="p">:</span> <span class="s1">'./error.log'</span><span class="p">,</span>
+      <span class="na">merge_logs</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>?&gt; Logs are still splitted into output/error/log
+日志仍然分为output/error/log</p>
+
+<hr />
+
+<h2 id="disabling-logs-禁用日志">Disabling Logs 禁用日志</h2>
+
+<p>You can disable logs by sending them to /dev/null:
+您可以通过将日志发送到 /dev/null 来禁用日志：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">apps</span><span class="p">:</span> <span class="p">[{</span>
+      <span class="na">name</span><span class="p">:</span> <span class="s1">'app'</span><span class="p">,</span>
+      <span class="na">script</span><span class="p">:</span> <span class="s1">'app.js'</span><span class="p">,</span>
+      <span class="na">output</span><span class="p">:</span> <span class="s1">'/dev/null'</span><span class="p">,</span>
+      <span class="na">error</span><span class="p">:</span> <span class="s1">'/dev/null'</span><span class="p">,</span>
+    <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="log-formating-格式化日志">Log formating 格式化日志</h2>
+
+<h3 id="json">JSON</h3>
+
+<p>You can output the logs in JSON format:
+您可以以JSON格式输出日志：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span>
+</code></pre></div></div>
+
+<p>becomes: 变为：</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"echo</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-02-06T14:51:38.896Z"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"out"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"process_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"app_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"app"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Add this entry in your ecosystem file:
+在您的生态系统文件中添加此条目：</p>
+
+<p><code class="highlighter-rouge">ecosystem file: </code>“log_type”: “json”`</p>
+
+<h3 id="timestamp-format-时间戳格式">Timestamp format 时间戳格式</h3>
+
+<p>You can output the logs adding a timestamp:
+您可以输出日志以添加时间戳：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span>
+</code></pre></div></div>
+
+<p>becomes: 变为：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>12-02-2018: <span class="nb">echo</span>
+</code></pre></div></div>
+
+<p>Add this entry in your ecosystem file:
+在您的生态系统文件中添加此条目：</p>
+
+<p><code class="highlighter-rouge">"date_log_format": "JJ-MM-YYYY"</code></p>
+
+<p>The format must follow a moment.js format, list <a href="https://momentjs.com/docs/#/parsing/string-format/">here</a>.
+格式必须遵循moment.js格式，清单在 <a href="https://momentjs.com/docs/#/parsing/string-format/">此处</a>。</p>
+
+<hr />
+
+<h2 id="next-step-下一步">Next step 下一步</h2>
+
+<p><a href="runtime/guide/startup-hook.md">Startup Hook</a>
+<a href="runtime/guide/startup-hook.md">启动挂钩</a></p>
+
+<hr />
+
+<h2 id="questions--问题">Questions ? 问题？</h2>
+
+<p>We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.
+我们永远乐于帮您解决可能遇到的问题。搜索我们的文档或查看常见问题的答案。您也可以在我们的社区论坛发布问题或评论</p>
+
+
+            </article>
+
+        </section>
+
+        
+    </main>
+</body>
+    <script>window.$docsify = {"basePath":"/docs","alias":{"/runtime/.*/_sidebar.md":"/runtime/_sidebar.md","/monitoring/.*/_sidebar.md":"/monitoring/_sidebar.md","/enterprise/.*/_sidebar.md":"/enterprise/_sidebar.md"},"auto2top":true,"coverpage":false,"executeScript":true,"loadSidebar":"_sidebar.md","loadNavbar":false,"mergeNavbar":false,"subMaxLevel":1,"name":"","search":false,"plugins":[],"routerMode":"history"}</script>
+<!-- <script src="//unpkg.com/docsify/lib/docsify.min.js"></script> -->
+<!-- <script src="/ch/assets/js/docsify.js"></script> -->
+<script src="/assets/js/scripts.js" type="text/javascript"></script>
+<script src="https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/prismjs@1.13.0/prism.js" type="text/javascript"></script>
+<script src="https://unpkg.com/prismjs/components/prism-bash.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/prismjs/components/prism-markdown.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/prismjs/components/prism-nginx.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/js/prism-clipboard.js" type="text/javascript"></script>
+<!-- <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> -->
+<!-- <script src="/ch/assets/js/gittalk.js"></script> -->
+<script src="/assets/js/keymetrics-plugins.js" type="text/javascript"></script>
+<script src="/assets/js/additional.js" type="text/javascript"></script>
+</html>

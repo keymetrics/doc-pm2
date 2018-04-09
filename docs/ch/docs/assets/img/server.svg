@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="472px" height="524px" viewBox="0 0 472 524" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>server</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#7BDEFF" offset="0%"></stop>
+            <stop stop-color="#45BAFF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="452" height="504" rx="8"></rect>
+        <filter x="-4.4%" y="-2.0%" width="108.8%" height="107.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="27" y="28" width="397.76" height="62.6360153" rx="2"></rect>
+        <filter x="-5.0%" y="-16.0%" width="110.1%" height="163.9%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-6" x="27" y="105" width="397.76" height="62.6360153" rx="2"></rect>
+        <filter x="-5.0%" y="-16.0%" width="110.1%" height="163.9%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-8" x="27" y="182" width="397.76" height="62.6360153" rx="2"></rect>
+        <filter x="-5.0%" y="-16.0%" width="110.1%" height="163.9%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-10" x="27" y="259" width="397.76" height="62.6360153" rx="2"></rect>
+        <filter x="-5.0%" y="-16.0%" width="110.1%" height="163.9%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-12" x="27" y="336" width="397.76" height="62.6360153" rx="2"></rect>
+        <filter x="-5.0%" y="-16.0%" width="110.1%" height="163.9%" filterUnits="objectBoundingBox" id="filter-13">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-14" x="27" y="413" width="397.76" height="62.6360153" rx="2"></rect>
+        <filter x="-5.0%" y="-16.0%" width="110.1%" height="163.9%" filterUnits="objectBoundingBox" id="filter-15">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Monitoring" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-243.000000, -5021.000000)">
+        <g id="node.js-applications" transform="translate(-189.000000, 4904.000000)">
+            <g id="server" transform="translate(442.000000, 117.000000)">
+                <g id="Rectangle-6">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#171E27" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <g id="Rectangle-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    <use fill="#171E27" fill-rule="evenodd" xlink:href="#path-4"></use>
+                </g>
+                <ellipse id="Oval-2" fill="#202A37" cx="57.5264283" cy="58.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy" fill="#202A37" cx="81.447845" cy="58.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-2" fill="#01CEA2" cx="105.369262" cy="58.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-3" fill="#202A37" cx="129.290678" cy="58.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-4" fill="#202A37" cx="153.212095" cy="58.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-5" fill="#01CEA2" cx="177.133512" cy="58.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-6" fill="#01CEA2" cx="201.054928" cy="58.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-7" fill="#202A37" cx="224.976345" cy="58.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <rect id="Rectangle-4-Copy" fill="#01CEA2" x="391" y="38" width="20.4328767" height="3.36752771" rx="1.68376385"></rect>
+                <rect id="Rectangle-4-Copy-2" fill="#202A37" x="391" y="49" width="20.4328767" height="3.36752771" rx="1.68376385"></rect>
+                <g id="Rectangle-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                    <use fill="#171E27" fill-rule="evenodd" xlink:href="#path-6"></use>
+                </g>
+                <ellipse id="Oval-2" fill="#202A37" cx="57.5264283" cy="135.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy" fill="#202A37" cx="81.447845" cy="135.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-2" fill="#01CEA2" cx="105.369262" cy="135.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-3" fill="#202A37" cx="129.290678" cy="135.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-4" fill="#202A37" cx="153.212095" cy="135.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-5" fill="#01CEA2" cx="177.133512" cy="135.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-6" fill="#01CEA2" cx="201.054928" cy="135.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-7" fill="#202A37" cx="224.976345" cy="135.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <rect id="Rectangle-4-Copy" fill="#01CEA2" x="391" y="115" width="20.4328767" height="3.36752771" rx="1.68376385"></rect>
+                <rect id="Rectangle-4-Copy-2" fill="#202A37" x="391" y="126.367528" width="20.4328767" height="3.36752771" rx="1.68376385"></rect>
+                <g id="Rectangle-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                    <use fill="#171E27" fill-rule="evenodd" xlink:href="#path-8"></use>
+                </g>
+                <ellipse id="Oval-2" fill="#202A37" cx="57.5264283" cy="212.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy" fill="#202A37" cx="81.447845" cy="212.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-2" fill="#01CEA2" cx="105.369262" cy="212.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-3" fill="#202A37" cx="129.290678" cy="212.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-4" fill="#202A37" cx="153.212095" cy="212.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-5" fill="#01CEA2" cx="177.133512" cy="212.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-6" fill="#01CEA2" cx="201.054928" cy="212.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-7" fill="#202A37" cx="224.976345" cy="212.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <rect id="Rectangle-4-Copy" fill="#01CEA2" x="391" y="192" width="20.4328767" height="3.36752771" rx="1.68376385"></rect>
+                <rect id="Rectangle-4-Copy-2" fill="#202A37" x="391" y="203.367528" width="20.4328767" height="3.36752771" rx="1.68376385"></rect>
+                <g id="Rectangle-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                    <use fill="#171E27" fill-rule="evenodd" xlink:href="#path-10"></use>
+                </g>
+                <ellipse id="Oval-2" fill="#202A37" cx="57.5264283" cy="289.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy" fill="#202A37" cx="81.447845" cy="289.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-2" fill="#01CEA2" cx="105.369262" cy="289.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-3" fill="#202A37" cx="129.290678" cy="289.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-4" fill="#202A37" cx="153.212095" cy="289.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-5" fill="#01CEA2" cx="177.133512" cy="289.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-6" fill="#01CEA2" cx="201.054928" cy="289.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-7" fill="#202A37" cx="224.976345" cy="289.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <rect id="Rectangle-4-Copy" fill="#01CEA2" x="391" y="269" width="20.4328767" height="3.36752771" rx="1.68376385"></rect>
+                <rect id="Rectangle-4-Copy-2" fill="#202A37" x="391" y="280.367528" width="20.4328767" height="3.36752771" rx="1.68376385"></rect>
+                <g id="Rectangle-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
+                    <use fill="#171E27" fill-rule="evenodd" xlink:href="#path-12"></use>
+                </g>
+                <ellipse id="Oval-2" fill="#202A37" cx="57.5264283" cy="366.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy" fill="#202A37" cx="81.447845" cy="366.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-2" fill="#01CEA2" cx="105.369262" cy="366.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-3" fill="#202A37" cx="129.290678" cy="366.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-4" fill="#202A37" cx="153.212095" cy="366.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-5" fill="#01CEA2" cx="177.133512" cy="366.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-6" fill="#01CEA2" cx="201.054928" cy="366.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-7" fill="#202A37" cx="224.976345" cy="366.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <rect id="Rectangle-4-Copy" fill="#01CEA2" x="391" y="346" width="20.4328767" height="3.36752771" rx="1.68376385"></rect>
+                <rect id="Rectangle-4-Copy-2" fill="#202A37" x="391" y="357.367528" width="20.4328767" height="3.36752771" rx="1.68376385"></rect>
+                <g id="Rectangle-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-15)" xlink:href="#path-14"></use>
+                    <use fill="#171E27" fill-rule="evenodd" xlink:href="#path-14"></use>
+                </g>
+                <ellipse id="Oval-2" fill="#202A37" cx="57.5264283" cy="443.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy" fill="#202A37" cx="81.447845" cy="443.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-2" fill="#01CEA2" cx="105.369262" cy="443.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-3" fill="#202A37" cx="129.290678" cy="443.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-4" fill="#202A37" cx="153.212095" cy="443.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-5" fill="#01CEA2" cx="177.133512" cy="443.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-6" fill="#01CEA2" cx="201.054928" cy="443.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <ellipse id="Oval-2-Copy-7" fill="#202A37" cx="224.976345" cy="443.524648" rx="5.98035416" ry="5.91370719"></ellipse>
+                <rect id="Rectangle-4-Copy" fill="#01CEA2" x="391" y="423" width="20.4328767" height="3.36752771" rx="1.68376385"></rect>
+                <rect id="Rectangle-4-Copy-2" fill="#202A37" x="391" y="434.367528" width="20.4328767" height="3.36752771" rx="1.68376385"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
