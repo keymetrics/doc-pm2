@@ -1,0 +1,58 @@
+.sidebar_2_wrapper{
+    position: absolute;
+    left: 0px;
+}
+
+.sidebar_2 {
+    width: 145px;
+    background-color: #171e27;
+    display: block;
+    position: fixed;
+    display: block;
+    float: none;
+    margin: 0px;
+    height: 100%;
+    top: 0px;
+    margin-top:120px;
+    @media screen and (min-width: 768px) {
+        margin-top:76px;
+    }
+}
+
+.runtime-page .sidebar_2_item_runtime, .monitoring-page .sidebar_2_item_monitoring, .enterprise-page .sidebar_2_item_enterprise{
+    background-color:#202a37;
+}
+
+.sidebar_2_item {
+    position: relative;
+    width: 141px;
+    height: 83px;
+    background-color: transparent;
+    display: grid;
+}
+
+.sidebar_2_item__image {
+    position: absolute;
+    margin: 20px 21px 41px 19px;
+    width: 99px;
+    height: 19px;
+    object-fit: contain;
+}
+
+.sidebar_2_item__text {
+    position: absolute;
+    padding-top: 43px;
+    padding-right: 20px;
+    text-align: right;
+    width: 141px;
+    height: 20px;
+    font-family: Saira;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-align: right;
+    color: #ffffff;
+}

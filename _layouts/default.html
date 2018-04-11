@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% if page.url contains "runtime" %}
+<html class="runtime-page">
+{% elsif page.url contains "monitoring" %}
+<html class="monitoring-page">
+{% elsif page.url contains "enterprise" %}
+<html class="enterprise-page">
+{% endif %}
+  {% include head.html %}
+  <body class="test ready sticky">
+      {% include header.html %}
+      <main>
+          {% include sidebar.html %}
+          <section class="content">
+              {% include topblock.html %}
+              <article id="main" class="markdown-section">
+                  {% include edit_page.html %}
+                  {{ content }}
+              </article>
+              {% include footer.html %}
+          </section>
+
+      </main>
+  </body>
+  <script src="https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs@1.13.0/prism.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-bash.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-markdown.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-nginx.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{{ site.baseurl_root }}/assets/js/prism-clipboard.js" type="text/javascript"></script>
+  <!-- <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> -->
+  <!-- <script src="{{ site.baseurl_root }}/assets/js/gittalk.js"></script> -->
+  <script src="{{ site.baseurl_root }}/assets/js/keymetrics-plugins.js" type="text/javascript"></script>
+  <script src="{{ site.baseurl_root }}/assets/js/additional.js" type="text/javascript"></script>
+</html>
+

@@ -1,0 +1,42 @@
+@import './variables';
+
+.edit-page {
+    width: 116px;
+    height: 60px;
+    border-radius: 2px;
+    background-color: #3eb1f3;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+    float: right;
+}
+
+.runtime-page .edit-page{
+    background-color: $color_runtime;
+}
+.monitoring-page .edit-page{
+    background-color: $color_monitoring;
+}
+.enterprise-page .edit-page{
+    background-color: $color_enterprise;
+}
+
+.edit-page:hover {
+    cursor: pointer;
+}
+
+.edit-page__text {
+    font-family: Saira;
+    font-size: 14px!important;
+    font-weight: 500!important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #ffffff!important;
+    margin: 0px 20px;
+    padding: 0px;
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    left: 3px;
+}

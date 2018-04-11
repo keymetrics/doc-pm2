@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="monitoring-page">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <!-- <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="/doc-pm2/assets/img/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link rel=“prefetch” href="https://fonts.googleapis.com/css?family=Roboto:400,500">
+    <link rel="stylesheet" href="/doc-pm2/assets/css/styles.css">
+    <link rel="stylesheet" href="/doc-pm2/assets/css/normalize.css">
+    <link rel="stylesheet" href="/doc-pm2/assets/css/bundle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css">
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+</head>
+  <body class="test ready sticky">
+      <div class="section header-section">
+    <div class=" header-container">
+        <div class="PM2_logo_wrapper">
+            <a class="logo-container link">
+                <div class="PM2_logo"></div>
+            </a>
+        </div>
+        <div class="PM2_search search-wrapper">
+            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input class="search_input ds-input" placeholder="Search documentation..." autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Saira, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+            <div class="PM2_search_icon"><i class="fas fa-search"></i></div>
+            <div id="hits" class="algolia-results">
+                <!-- Hits widget will appear here -->
+            </div>
+        </div>
+    </div>
+</div>
+      <main>
+          <aside class="sidebar">
+    <div class="sidebar_2_wrapper">
+        <div class="sidebar_2">
+            <a href="/doc-pm2/ch/runtime/overview" data-page="runtime-page">
+                <div class="sidebar_2_item sidebar_2_item_runtime">
+                    <img class="sidebar_2_item__image" src="/doc-pm2/assets/static/pm2-logo-r.png">
+                    <div class="sidebar_2_item__text">Runtime</div>
+                </div>
+            </a>
+            <a href="/doc-pm2/ch/monitoring/overview" data-page="monitoring-page">
+                <div class="sidebar_2_item sidebar_2_item_monitoring">
+                    <img class="sidebar_2_item__image" src="/doc-pm2/assets/static/pm2-logo-m.png">
+                    <div class="sidebar_2_item__text">Monitoring</div>
+                </div>
+            </a>
+            <a href="/doc-pm2/ch/enterprise/overview" data-page="enterprise-page">
+                <div class="sidebar_2_item sidebar_2_item_enterprise">
+                    <img class="sidebar_2_item__image" src="/doc-pm2/assets/static/pm2-logo-e.png">
+                    <div class="sidebar_2_item__text">Enterprise</div>
+                </div>
+            </a>
+        </div>
+        <div class="main_content">
+        </div>
+    </div>
+    <div class="sidebar-nav">
+
+    <ul id="acc">
+    
+    
+    
+    
+        <li class="active">
+            <a href="/doc-pm2/ch/monitoring/overview/">Overview</a>
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/ch/monitoring/quick-start/">Quick Start</a>
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/ch/monitoring/guide/">Guide</a>
+            
+                
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/ch/monitoring/integration/">Integration</a>
+            
+                
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/ch/monitoring/reference/">Reference</a>
+            
+        </li>
+    
+    </ul>
+
+    </div>
+</aside>
+          <section class="content">
+              <div class="markdown-section gettings_started_block topBlock">
+    <p style="display: initial;">Getting started with PM2<span class="runtime_block gettings_started_block_span">Runtime</span><span class="monitoring_block gettings_started_block_span">Monitoring</span><span class="enterprise_block gettings_started_block_span">Enterprise</span></p>
+</div>
+              <article id="main" class="markdown-section">
+                  <div class="edit-page">
+  <a rel="noopener" class="edit-page__text" target="_blank" href="http://github.com/keymetrics/doc-pm2/blob/master/_i18n/ch/monitoring/overview.md">Edit Page</a>
+</div>
+                   <h1 id="overview">Overview</h1>
+
+<p>Why monitor your app with pm2 ? At the end of this pm2 monitoring overview, you’ll have a good understanding of the capabilities of pm2 monitoring.</p>
+
+<hr />
+
+<h2 id="global-dashboard">Global Dashboard</h2>
+
+<h3 id="unified-overview">Unified Overview</h3>
+
+<p>PM2 Monitoring allows you to have an extended view of all your apps and databases in one single place, at real-time or through history. <strong>Stop ssh in all your servers one by one</strong>, instead, save time by having a condensed infrastructure monitoring view.</p>
+
+<p><img src="/doc-pm2/ch/monitoring/overview/unified.png" alt="a unified overview" /></p>
+
+<h3 id="custom-metrics">Custom Metrics</h3>
+
+<p>Expose the important variables from your Node.js applications source code and display them as performance metrics on the pm2 monitoring dashboard. <strong>Monitor values that matter.</strong></p>
+
+<p><img src="/doc-pm2/ch/monitoring/overview/personalized.png" alt="custom metrics" /></p>
+
+<h3 id="notifications">Notifications</h3>
+
+<p>Know when a data reaches a threshold, when an error occurred in your application or when your production application is down.</p>
+
+<p>Even though pm2 runtime makes sure that your application have no downtime, be notified in these critical situation in order to react. <strong>Be notified and reactive in any critical situations.</strong></p>
+
+<p><img src="/doc-pm2/ch/monitoring/overview/notifications.png" alt="notifications" /></p>
+
+<hr />
+
+<h2 id="debug--optimize">Debug &amp; Optimize</h2>
+
+<h3 id="issue-dashboard">Issue Dashboard</h3>
+
+<p>PM2 Monitoring reports the list of all errors in the “Issue Dashboard” occurred in your Node.js and gets you notified.</p>
+
+<p>Stop spending time finding bugs or trying to replay them, we provide you an “Issue Dashboard” with everything in one place, to make debugging easier. <strong>Drill down in your code and get the answer.</strong></p>
+
+<p><img src="/doc-pm2/ch/monitoring/overview/issue.png" alt="issue dashboard" /></p>
+
+<h3 id="transaction-tracing">Transaction Tracing</h3>
+
+<p>Record and aggregate the database and external calls that your application makes on every http request.</p>
+
+<p>The “Transaction Tracing” helps you troubleshoot performance issues and to get detailed low-level insight into how your app is working (slowest routes, most consuming, number of calls). <strong>Provide a better user experience and make your app faster.</strong></p>
+
+<p><img src="/doc-pm2/ch/monitoring/overview/tracing.png" alt="transaction tracing" /></p>
+
+<h3 id="memory--cpu-profiling">Memory &amp; CPU profiling</h3>
+
+<p>Take memory dumps and CPU snapshots straight from your production servers.</p>
+
+<p><strong>Memory profiling lets you find any memory leaks in your application. CPU profiling helps you identify particular resource-heavy tasks.</strong></p>
+
+<p><img src="/doc-pm2/ch/monitoring/overview/profiling.png" alt="cpu and memory profiling" /></p>
+
+<hr />
+
+<h2 id="extra-features">Extra-features</h2>
+
+<h3 id="remote-control">Remote control</h3>
+
+<p>PM2 Monitoring makes possible to enhance custom functions in the source code of your application.</p>
+
+<p>For example, you can assign values to your application variables or just switch it to maintenance mode. In other words you can <strong>expose triggerable functions in your code</strong>.</p>
+
+<p><img src="/doc-pm2/ch/monitoring/overview/remote.png" alt="remote action" /></p>
+
+<h3 id="event-dashboard">Event Dashboard</h3>
+
+<p>This mechanism allows you to track important events that occurred in your code. You can gather large amounts of data for statistics or just log unusual event.</p>
+
+<p>For example your can track and be alerted when a new user has registered, a new email has been sent, a worker has finished its jobs. <strong>You can emit any event directly from your code and subscribe to some of these.</strong></p>
+
+<p><img src="/doc-pm2/ch/monitoring/overview/event.png" alt="event" /></p>
+
+<h3 id="third-party-modules">Third-party modules</h3>
+
+<p>Extend the capabilities of the PM2 dashboard by using external modules listed in our module page.</p>
+
+<p>A Pm2 module can be a log rotation module, database monitoring module, a standalone http proxy, a load balancer, a DNS server or any kind of utility. <strong>Anyone can create and publish its own module.</strong></p>
+
+<p><img src="/doc-pm2/ch/monitoring/overview/modules.png" alt="modules" /></p>
+
+<hr />
+
+<h3 id="next-steps">Next steps</h3>
+
+<p><a href="/doc-pm2/ch/monitoring/quickstart/">Quick Start</a></p>
+
+<hr />
+
+<h3 id="questions-">Questions ?</h3>
+
+<p>We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.</p>
+
+
+
+              </article>
+              <footer class="markdown-section copyright">
+    <p>© 2018 Keymetrics</p>
+    <ul id="footer">
+        <li><a href="javascript:void(0);">Terms of Use</a></li>
+        <li><a href="javascript:void(0);">Privacy Policy</a></li>
+
+        <!-- Adds links to other languages on the post -->
+        
+          
+            
+              <li><p class="footer-list">Language: <a href="/doc-pm2/monitoring/overview/" >English</a></p></li>
+            
+
+            
+
+            
+
+          
+        
+          
+        
+    </ul>
+  </footer>
+
+
+
+          </section>
+
+      </main>
+  </body>
+  <script src="https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs@1.13.0/prism.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-bash.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-markdown.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-nginx.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/doc-pm2/assets/js/prism-clipboard.js" type="text/javascript"></script>
+  <!-- <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> -->
+  <!-- <script src="/doc-pm2/assets/js/gittalk.js"></script> -->
+  <script src="/doc-pm2/assets/js/keymetrics-plugins.js" type="text/javascript"></script>
+  <script src="/doc-pm2/assets/js/additional.js" type="text/javascript"></script>
+</html>
+

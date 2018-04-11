@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html class="runtime-page">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <!-- <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="/doc-pm2/assets/img/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link rel=“prefetch” href="https://fonts.googleapis.com/css?family=Roboto:400,500">
+    <link rel="stylesheet" href="/doc-pm2/assets/css/styles.css">
+    <link rel="stylesheet" href="/doc-pm2/assets/css/normalize.css">
+    <link rel="stylesheet" href="/doc-pm2/assets/css/bundle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css">
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+</head>
+  <body class="test ready sticky">
+      <div class="section header-section">
+    <div class=" header-container">
+        <div class="PM2_logo_wrapper">
+            <a class="logo-container link">
+                <div class="PM2_logo"></div>
+            </a>
+        </div>
+        <div class="PM2_search search-wrapper">
+            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input class="search_input ds-input" placeholder="Search documentation..." autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Saira, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+            <div class="PM2_search_icon"><i class="fas fa-search"></i></div>
+            <div id="hits" class="algolia-results">
+                <!-- Hits widget will appear here -->
+            </div>
+        </div>
+    </div>
+</div>
+      <main>
+          <aside class="sidebar">
+    <div class="sidebar_2_wrapper">
+        <div class="sidebar_2">
+            <a href="/doc-pm2/runtime/overview" data-page="runtime-page">
+                <div class="sidebar_2_item sidebar_2_item_runtime">
+                    <img class="sidebar_2_item__image" src="/doc-pm2/assets/static/pm2-logo-r.png">
+                    <div class="sidebar_2_item__text">Runtime</div>
+                </div>
+            </a>
+            <a href="/doc-pm2/monitoring/overview" data-page="monitoring-page">
+                <div class="sidebar_2_item sidebar_2_item_monitoring">
+                    <img class="sidebar_2_item__image" src="/doc-pm2/assets/static/pm2-logo-m.png">
+                    <div class="sidebar_2_item__text">Monitoring</div>
+                </div>
+            </a>
+            <a href="/doc-pm2/enterprise/overview" data-page="enterprise-page">
+                <div class="sidebar_2_item sidebar_2_item_enterprise">
+                    <img class="sidebar_2_item__image" src="/doc-pm2/assets/static/pm2-logo-e.png">
+                    <div class="sidebar_2_item__text">Enterprise</div>
+                </div>
+            </a>
+        </div>
+        <div class="main_content">
+        </div>
+    </div>
+    <div class="sidebar-nav">
+
+    <ul id="acc">
+    
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/runtime/overview/">Overview</a>
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/runtime/quick-start/">Quick Start</a>
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/runtime/guide/">Guide</a>
+            
+                
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/runtime/production-best-practices/">Best Practices</a>
+            
+                
+            
+        </li>
+    
+    
+    
+        <li class="active">
+            <a href="/doc-pm2/runtime/integration/">Integration</a>
+            
+                
+                    <ul>
+                        
+                        
+                        <li class=""><a href="/doc-pm2/runtime/integration/elastic-beanstalk/">AWS Elastic Beanstalk</a></li>
+                        
+                        
+                        <li class="active"><a href="/doc-pm2/runtime/integration/docker/">Docker</a></li>
+                        
+                        
+                        <li class=""><a href="/doc-pm2/runtime/integration/heroku/">Heroku</a></li>
+                        
+                        
+                        <li class=""><a href="/doc-pm2/runtime/integration/transpilers/">Transpilers</a></li>
+                        
+                        
+                        <li class=""><a href="/doc-pm2/runtime/integration/cloud-providers/">With a Cloud Provider</a></li>
+                        
+                    </ul>
+                
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/runtime/references/">References</a>
+            
+                
+            
+        </li>
+    
+    </ul>
+
+    </div>
+</aside>
+          <section class="content">
+              <div class="markdown-section gettings_started_block topBlock">
+    <p style="display: initial;">Getting started with PM2<span class="runtime_block gettings_started_block_span">Runtime</span><span class="monitoring_block gettings_started_block_span">Monitoring</span><span class="enterprise_block gettings_started_block_span">Enterprise</span></p>
+</div>
+              <article id="main" class="markdown-section">
+                  <div class="edit-page">
+  <a rel="noopener" class="edit-page__text" target="_blank" href="http://github.com/keymetrics/doc-pm2/blob/master/_i18n/en/runtime/integration/docker.md">Edit Page</a>
+</div>
+                   <h1 id="using-pm2-with-docker">Using PM2 with Docker</h1>
+
+<p>Production ready Node.js Docker image including <a href="http://pm2.keymetrics.io/">PM2</a>.</p>
+
+<p>The goal of pm2-runtime is to wrap your applications into a proper Node.js production environment. It solves major issues when running Node.js applications inside a container like:</p>
+
+<ul>
+  <li>Second Process Fallback for High Application Reliability</li>
+  <li>Process Flow Control</li>
+  <li>Automatic Application Monitoring to keep it always sane and high performing</li>
+  <li>Automatic Source Map Discovery and Resolving Support</li>
+</ul>
+
+<p>Further than that, using PM2 as a layer between the container and the application brings PM2 powerful features like ecosystem file, custom log system and other features of pm2.</p>
+
+<hr />
+
+<h2 id="prepare-your-app">Prepare your app</h2>
+
+<h3 id="tags-available">Tags available</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Image Name</strong></th>
+      <th><strong>Operating system</strong></th>
+      <th><strong>Dockerfile</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">latest-alpine</code></td>
+      <td><a href="https://www.alpinelinux.org/about/">Alpine</a></td>
+      <td><a href="tags/latest/alpine/Dockerfile">latest-alpine</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">8-alpine</code></td>
+      <td><a href="https://www.alpinelinux.org/about/">Alpine</a></td>
+      <td><a href="tags/8/alpine/Dockerfile">8-alpine</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">6-alpine</code></td>
+      <td><a href="https://www.alpinelinux.org/about/">Alpine</a></td>
+      <td><a href="tags/6/alpine/Dockerfile">6-alpine</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">4-alpine</code></td>
+      <td><a href="https://www.alpinelinux.org/about/">Alpine</a></td>
+      <td><a href="tags/4/alpine/Dockerfile">4-alpine</a></td>
+    </tr>
+    <tr>
+      <td><strong>Image Name</strong></td>
+      <td><strong>Operating system</strong></td>
+      <td><strong>Dockerfile</strong></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">latest-stretch</code></td>
+      <td><a href="https://wiki.debian.org/DebianStretch">Debian Stretch</a></td>
+      <td><a href="tags/latest/stretch/Dockerfile">latest-stretch</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">8-stretch</code></td>
+      <td><a href="https://wiki.debian.org/DebianStretch">Debian Stretch</a></td>
+      <td><a href="tags/8/stretch/Dockerfile">8-stretch</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">6-stretch</code></td>
+      <td><a href="https://wiki.debian.org/DebianStretch">Debian Stretch</a></td>
+      <td><a href="tags/6/stretch/Dockerfile">6-stretch</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">4-stretch</code></td>
+      <td><a href="https://wiki.debian.org/DebianStretch">Debian Stretch</a></td>
+      <td><a href="tags/4/stretch/Dockerfile">4-stretch</a></td>
+    </tr>
+    <tr>
+      <td><strong>Image Name</strong></td>
+      <td><strong>Operating system</strong></td>
+      <td><strong>Dockerfile</strong></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">latest-jessie</code></td>
+      <td><a href="https://wiki.debian.org/DebianJessie">Debian Jessie</a></td>
+      <td><a href="tags/latest/jessie/Dockerfile">latest-jessie</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">8-jessie</code></td>
+      <td><a href="https://wiki.debian.org/DebianJessie">Debian Jessie</a></td>
+      <td><a href="tags/8/jessie/Dockerfile">8-jessie</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">6-jessie</code></td>
+      <td><a href="https://wiki.debian.org/DebianJessie">Debian Jessie</a></td>
+      <td><a href="tags/6/jessie/Dockerfile">6-jessie</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">4-jessie</code></td>
+      <td><a href="https://wiki.debian.org/DebianJessie">Debian Jessie</a></td>
+      <td><a href="tags/4/jessie/Dockerfile">4-jessie</a></td>
+    </tr>
+    <tr>
+      <td><strong>Image Name</strong></td>
+      <td><strong>Operating system</strong></td>
+      <td><strong>Dockerfile</strong></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">latest-slim</code></td>
+      <td><a href="https://wiki.debian.org/DebianJessie">Debian Jessie</a> (minimal packages)</td>
+      <td><a href="tags/latest/slim/Dockerfile">latest-slim</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">8-slim</code></td>
+      <td><a href="https://wiki.debian.org/DebianJessie">Debian Jessie</a> (minimal packages)</td>
+      <td><a href="tags/8/slim/Dockerfile">8-slim</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">6-slim</code></td>
+      <td><a href="https://wiki.debian.org/DebianJessie">Debian Jessie</a> (minimal packages)</td>
+      <td><a href="tags/6/slim/Dockerfile">6-slim</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">4-slim</code></td>
+      <td><a href="https://wiki.debian.org/DebianJessie">Debian Jessie</a> (minimal packages)</td>
+      <td><a href="tags/4/slim/Dockerfile">4-slim</a></td>
+    </tr>
+    <tr>
+      <td><strong>Image Name</strong></td>
+      <td><strong>Operating system</strong></td>
+      <td><strong>Dockerfile</strong></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">latest-wheezy</code></td>
+      <td><a href="https://wiki.debian.org/DebianWheezy">Debian Wheezy</a></td>
+      <td><a href="tags/latest/wheezy/Dockerfile">latest-wheezy</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">8-wheezy</code></td>
+      <td><a href="https://wiki.debian.org/DebianWheezy">Debian Wheezy</a></td>
+      <td><a href="tags/8/wheezy/Dockerfile">8-wheezy</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">6-wheezy</code></td>
+      <td><a href="https://wiki.debian.org/DebianWheezy">Debian Wheezy</a></td>
+      <td><a href="tags/6/wheezy/Dockerfile">6-wheezy</a></td>
+    </tr>
+    <tr>
+      <td>keymetrics/pm2:<code class="highlighter-rouge">4-wheezy</code></td>
+      <td><a href="https://wiki.debian.org/DebianWheezy">Debian Wheezy</a></td>
+      <td><a href="tags/4/wheezy/Dockerfile">4-wheezy</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>You can find more information about the image variants <a href="https://github.com/nodejs/docker-node#image-variants">here</a>.</p>
+
+<blockquote>
+  <p>The build process of these images is automatically triggered each time <a href="https://hub.docker.com/r/library/node/tags/">NodeJS’s Docker images</a> are built.<br />
+The build process of these images is automatically triggered each time <a href="https://github.com/keymetrics/docker-pm2">Docker PM2’s GitHub repo</a> master branch is pushed.<br />
+The build process of these images is automatically triggered each time <a href="https://github.com/Unitech/pm2">PM2’s GitHub repo</a> master branch is pushed.</p>
+</blockquote>
+
+<h3 id="usage">Usage</h3>
+
+<p>Let’s assume the following folder structure for your project.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>`-- your-app-name/
+    |-- src/
+        `-- app.js
+    |-- package.json
+    |-- ecosystem.config.js    (we will create this in the following steps)
+    `-- Dockerfile             (we will create this in the following steps)
+</code></pre></div></div>
+
+<h3 id="set-your-ecosystem-file">Set your ecosystem file</h3>
+
+<p>Generate an <code class="highlighter-rouge">ecosystem.config.js</code> template with:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pm2 init
+</code></pre></div></div>
+
+<p>Modify the ecosystem file to match your needs:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">apps</span> <span class="p">:</span> <span class="p">[{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="s2">"app"</span><span class="p">,</span>
+    <span class="na">script</span><span class="p">:</span> <span class="s2">"./app.js"</span><span class="p">,</span>
+    <span class="na">env</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">NODE_ENV</span><span class="p">:</span> <span class="s2">"development"</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="na">env_production</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">NODE_ENV</span><span class="p">:</span> <span class="s2">"production"</span><span class="p">,</span>
+    <span class="p">}</span>
+  <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>?&gt; Learn more about ecosystem file <a href="runtime/guide/ecosystem-file.md">here</a>.</p>
+
+<h3 id="set-a-dockerfile">Set a Dockerfile</h3>
+
+<p>Create a new file called <code class="highlighter-rouge">Dockerfile</code> with the following content:</p>
+
+<div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">FROM</span><span class="s"> keymetrics/pm2:latest-alpine</span>
+
+<span class="c"># Bundle APP files</span>
+<span class="k">COPY</span><span class="s"> src src/</span>
+<span class="k">COPY</span><span class="s"> package.json .</span>
+<span class="k">COPY</span><span class="s"> ecosystem.config.js .</span>
+
+<span class="c"># Install app dependencies</span>
+<span class="k">ENV</span><span class="s"> NPM_CONFIG_LOGLEVEL warn</span>
+<span class="k">RUN </span>npm install <span class="nt">--production</span>
+
+<span class="c"># Expose the listening port of your app</span>
+<span class="k">EXPOSE</span><span class="s"> 8000</span>
+
+<span class="c"># Show current folder structure in logs</span>
+<span class="k">RUN </span><span class="nb">ls</span> <span class="nt">-al</span> <span class="nt">-R</span>
+
+<span class="k">CMD</span><span class="s"> [ "pm2-runtime", "start", "ecosystem.config.js" ]</span>
+</code></pre></div></div>
+
+<h3 id="build-your-image">Build your image</h3>
+
+<p>From your Node.js app project folder launch those commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build <span class="nt">-t</span> your-app-name <span class="nb">.</span>
+</code></pre></div></div>
+
+<h3 id="run-your-image">Run your image</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-p</span> 80:8000 your-app-name
+</code></pre></div></div>
+
+<p>?&gt; <code class="highlighter-rouge">-p 80:8000</code> binds the port 8000 of your app to the port 80 of the localhost</p>
+
+<h3 id="pm2-commands">pm2 commands</h3>
+
+<p>pm2 commands can still be used insidea container with the <code class="highlighter-rouge">docker exec</code> command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Monitoring CPU/Usage of each process</span>
+docker <span class="nb">exec</span> <span class="nt">-it</span> &lt;container-id&gt; pm2 monit
+<span class="c"># Listing managed processes</span>
+docker <span class="nb">exec</span> <span class="nt">-it</span> &lt;container-id&gt; pm2 list
+<span class="c"># Get more information about a process</span>
+docker <span class="nb">exec</span> <span class="nt">-it</span> &lt;container-id&gt; pm2 show
+<span class="c"># 0sec downtime reload all applications</span>
+docker <span class="nb">exec</span> <span class="nt">-it</span> &lt;container-id&gt; pm2 reload all
+</code></pre></div></div>
+
+<h3 id="expose-health-endpoint">Expose health endpoint</h3>
+
+<pre><code class="language-Dockerfile">CMD ["pm2-runtime", "ecosystem.config.js", "--web"]
+</code></pre>
+
+<p>The <code class="highlighter-rouge">--web [port]</code> option allows to expose all vital signs (docker instance + application) via a JSON API.</p>
+
+<p>?&gt; After installing pm2 in your shell, run <code class="highlighter-rouge">pm2-runtime -h</code> to get all options available</p>
+
+<h3 id="you-are-ready">You are ready</h3>
+
+<p>That’s all! Your container is ready to be deployed.</p>
+
+<hr />
+
+<h2 id="next-step">Next step</h2>
+
+<p>Complete your configuration with the <a href="runtime/guide/ecosystem-file.md">Ecosystem File</a></p>
+
+<p>Monitor your app on a dashboard, with <a href="monitoring/integration/docker.md">PM2 Monitoring</a></p>
+
+<hr />
+
+<h2 id="questions-">Questions ?</h2>
+
+<p>We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.</p>
+
+
+              </article>
+              <footer class="markdown-section copyright">
+    <p>© 2018 Keymetrics</p>
+    <ul id="footer">
+        <li><a href="javascript:void(0);">Terms of Use</a></li>
+        <li><a href="javascript:void(0);">Privacy Policy</a></li>
+
+        <!-- Adds links to other languages on the post -->
+        
+          
+        
+          
+            
+              <li><p class="footer-list">Language: <a href="/doc-pm2/ch/runtime/integration/docker/" >Chinese (中文版)</a></p></li>
+            
+
+            
+
+            
+
+          
+        
+    </ul>
+  </footer>
+
+
+
+          </section>
+
+      </main>
+  </body>
+  <script src="https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs@1.13.0/prism.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-bash.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-markdown.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-nginx.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/doc-pm2/assets/js/prism-clipboard.js" type="text/javascript"></script>
+  <!-- <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> -->
+  <!-- <script src="/doc-pm2/assets/js/gittalk.js"></script> -->
+  <script src="/doc-pm2/assets/js/keymetrics-plugins.js" type="text/javascript"></script>
+  <script src="/doc-pm2/assets/js/additional.js" type="text/javascript"></script>
+</html>
+

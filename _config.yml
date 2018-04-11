@@ -1,0 +1,21 @@
+name: PM2 DOCS
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ parse_block_html: true
+ # syntax_highlighter: rouge
+repository: 'keymetrics/doc-pm2'
+permalink: pretty
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-multiple-languages-plugin
+# keep_files: [images]
+baseurl: "/doc-pm2"
+destination: docs
+exclude: ["node_modules","README.md", "gulpfile.js", "package.json", "package-lock.json", ".jekyll-metadata", "source-code","fonts","uru*","_site/assets/javascript/anchor-js/","assets/scss-temp/"]
+
+languages:  ["en", "ch"]
+exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico","assets", "CNAME", "node_modules", "package.json", "package-lock.json","_src","_docs","gulpfile.js"]

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="monitoring-page">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <!-- <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="/doc-pm2/assets/img/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link rel=“prefetch” href="https://fonts.googleapis.com/css?family=Roboto:400,500">
+    <link rel="stylesheet" href="/doc-pm2/assets/css/styles.css">
+    <link rel="stylesheet" href="/doc-pm2/assets/css/normalize.css">
+    <link rel="stylesheet" href="/doc-pm2/assets/css/bundle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css">
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+</head>
+  <body class="test ready sticky">
+      <div class="section header-section">
+    <div class=" header-container">
+        <div class="PM2_logo_wrapper">
+            <a class="logo-container link">
+                <div class="PM2_logo"></div>
+            </a>
+        </div>
+        <div class="PM2_search search-wrapper">
+            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input class="search_input ds-input" placeholder="Search documentation..." autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Saira, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+            <div class="PM2_search_icon"><i class="fas fa-search"></i></div>
+            <div id="hits" class="algolia-results">
+                <!-- Hits widget will appear here -->
+            </div>
+        </div>
+    </div>
+</div>
+      <main>
+          <aside class="sidebar">
+    <div class="sidebar_2_wrapper">
+        <div class="sidebar_2">
+            <a href="/doc-pm2/runtime/overview" data-page="runtime-page">
+                <div class="sidebar_2_item sidebar_2_item_runtime">
+                    <img class="sidebar_2_item__image" src="/doc-pm2/assets/static/pm2-logo-r.png">
+                    <div class="sidebar_2_item__text">Runtime</div>
+                </div>
+            </a>
+            <a href="/doc-pm2/monitoring/overview" data-page="monitoring-page">
+                <div class="sidebar_2_item sidebar_2_item_monitoring">
+                    <img class="sidebar_2_item__image" src="/doc-pm2/assets/static/pm2-logo-m.png">
+                    <div class="sidebar_2_item__text">Monitoring</div>
+                </div>
+            </a>
+            <a href="/doc-pm2/enterprise/overview" data-page="enterprise-page">
+                <div class="sidebar_2_item sidebar_2_item_enterprise">
+                    <img class="sidebar_2_item__image" src="/doc-pm2/assets/static/pm2-logo-e.png">
+                    <div class="sidebar_2_item__text">Enterprise</div>
+                </div>
+            </a>
+        </div>
+        <div class="main_content">
+        </div>
+    </div>
+    <div class="sidebar-nav">
+
+    <ul id="acc">
+    
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/monitoring/overview/">Overview</a>
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/monitoring/quick-start/">Quick Start</a>
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/monitoring/guide/">Guide</a>
+            
+                
+            
+        </li>
+    
+    
+    
+        <li class="active">
+            <a href="/doc-pm2/monitoring/integration/">Integration</a>
+            
+                
+                    <ul>
+                        
+                        
+                        <li class=""><a href="/doc-pm2/monitoring/integration/elastic-beanstalk/">AWS Elastic Beanstalk</a></li>
+                        
+                        
+                        <li class="active"><a href="/doc-pm2/monitoring/integration/docker/">Docker</a></li>
+                        
+                        
+                        <li class=""><a href="/doc-pm2/monitoring/integration/heroku/">Heroku</a></li>
+                        
+                        
+                        <li class=""><a href="/doc-pm2/monitoring/integration/cloud-providers/">With a Cloud Provider</a></li>
+                        
+                    </ul>
+                
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/monitoring/reference/">Reference</a>
+            
+        </li>
+    
+    </ul>
+
+    </div>
+</aside>
+          <section class="content">
+              <div class="markdown-section gettings_started_block topBlock">
+    <p style="display: initial;">Getting started with PM2<span class="runtime_block gettings_started_block_span">Runtime</span><span class="monitoring_block gettings_started_block_span">Monitoring</span><span class="enterprise_block gettings_started_block_span">Enterprise</span></p>
+</div>
+              <article id="main" class="markdown-section">
+                  <div class="edit-page">
+  <a rel="noopener" class="edit-page__text" target="_blank" href="http://github.com/keymetrics/doc-pm2/blob/master/_i18n/en/monitoring/integration/docker.md">Edit Page</a>
+</div>
+                   <h1 id="monitor-your-nodejs-app-in-a-docker-container">Monitor your Node.js app in a Docker container</h1>
+
+<p>In seconds, this tutorial will show you how to monitor a node.js application with <code class="highlighter-rouge">pm2</code> inside a container.</p>
+
+<p>We assume that your app has already been wrapped with pm2. If not, follow the <a href="/doc-pm2/runtime/integration/docker.md">docker tutorial</a>.</p>
+
+<hr />
+
+<h2 id="create-an-account">Create an account</h2>
+
+<p>Register <a href="https://app.keymetrics.io/api/oauth/register">here</a>.</p>
+
+<hr />
+
+<h2 id="install-the-profiler">Install the profiler</h2>
+
+<p>Add this to your Dockerfile to install the profiler:</p>
+
+<pre><code class="language-Dockerfile">RUN pm2 install profiler
+</code></pre>
+
+<hr />
+
+<h2 id="link-your-app-with-pm2-monitoring">Link your app with pm2 Monitoring</h2>
+
+<p>In order to connect pm2 to the dashboard, you need to add your public and private keys in the environment.</p>
+
+<p>Create a .env file with:</p>
+<pre><code class="language-.env">PM2_SECRET_KEY=XXXXX
+PM2_PUBLIC_KEY=YYYYY
+</code></pre>
+<p>and restart your container with <code class="highlighter-rouge">docker run</code>adding <code class="highlighter-rouge">--env-file .env</code> to load the environment variables.</p>
+
+<hr />
+
+<h2 id="set-the-server-name-in-pm2-monitoring">Set the server name in pm2 Monitoring</h2>
+
+<p>Set the <code class="highlighter-rouge">PM2_MACHINE_NAME</code> environment variable to specify a server nam. Add this to the .env file:</p>
+
+<pre><code class="language-.env">PM2_SECRET_KEY=XXXXX
+PM2_PUBLIC_KEY=YYYYY
+PM2_MACHINE_NAME=docker-server
+</code></pre>
+
+<p>?&gt; The default server name is the hostname (<code class="highlighter-rouge">HOST</code> environment variable) with a random string.</p>
+
+<p>?&gt; Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.</p>
+
+<hr />
+
+<h2 id="next-step">Next step</h2>
+
+<p>Complete your <a href="/doc-pm2/monitoring/guide/configuration.md">dashboard configuration</a></p>
+
+<hr />
+
+<h2 id="questions-">Questions ?</h2>
+
+<p>We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.</p>
+
+<h3 id="use-keymetricsio-dashboard">Use Keymetrics.io dashboard</h3>
+
+<p><a href="https://keymetrics.io/">Keymetrics.io</a> is a monitoring service built on top of PM2 that allows to monitor and manage applications easily (logs, restart, exceptions monitoring, etc…). Once you created a Bucket on Keymetrics you will get a public and a secret key.</p>
+
+<p>To enable Keymetrics monitoring with pm2-runtime, you can whether use the CLI option –public <code class="highlighter-rouge">XXXX</code> and –secret <code class="highlighter-rouge">YYYY</code> or you can pass the environment variables <code class="highlighter-rouge">KEYMETRICS_PUBLIC</code> and <code class="highlighter-rouge">KEYMETRICS_SECRET</code>.</p>
+
+<p>From your Node.js app project folder launch those commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker build <span class="nt">-t</span> your-app-name <span class="nb">.</span>
+<span class="nv">$ </span>docker run <span class="nt">-e</span> <span class="nv">KEYMETRICS_PUBLIC</span><span class="o">=</span>XXXX <span class="nt">-e</span> <span class="nv">KEYMETRICS_SECRET</span><span class="o">=</span>YYYY your-app-name
+</code></pre></div></div>
+
+<p>Make sure that the ports 80 (TCP outbound), 443 (HTTPS outbound) and 43554 (TCP outbound) are allowed on your firewall.</p>
+
+<p>See the <a href="http://docs.keymetrics.io/docs/pages/faq-troubleshooting/#troubleshooting-for-keymetrics-pm2">troubleshooting</a> in case you encounter any problem.</p>
+
+
+              </article>
+              <footer class="markdown-section copyright">
+    <p>© 2018 Keymetrics</p>
+    <ul id="footer">
+        <li><a href="javascript:void(0);">Terms of Use</a></li>
+        <li><a href="javascript:void(0);">Privacy Policy</a></li>
+
+        <!-- Adds links to other languages on the post -->
+        
+          
+        
+          
+            
+              <li><p class="footer-list">Language: <a href="/doc-pm2/ch/monitoring/integration/docker/" >Chinese (中文版)</a></p></li>
+            
+
+            
+
+            
+
+          
+        
+    </ul>
+  </footer>
+
+
+
+          </section>
+
+      </main>
+  </body>
+  <script src="https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs@1.13.0/prism.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-bash.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-markdown.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-nginx.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/doc-pm2/assets/js/prism-clipboard.js" type="text/javascript"></script>
+  <!-- <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> -->
+  <!-- <script src="/doc-pm2/assets/js/gittalk.js"></script> -->
+  <script src="/doc-pm2/assets/js/keymetrics-plugins.js" type="text/javascript"></script>
+  <script src="/doc-pm2/assets/js/additional.js" type="text/javascript"></script>
+</html>
+

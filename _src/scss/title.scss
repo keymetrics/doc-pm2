@@ -1,0 +1,63 @@
+@import './variables';
+
+//runtime-page
+//monitoring-page
+//enterprise-page
+
+
+.gettings_started_block{
+	margin-bottom: 30px!important;
+  border-radius: 2px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  @media screen and (min-width: 1200px) {
+    height: 113px;   
+  }
+}
+
+.gettings_started_block p {
+  width: 100%!important;
+  width: 771px;
+  height: 53px;
+  font-family: Saira;
+  font-weight: 100;
+  
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.3px;
+  text-align: left;
+  color: #ffffff;
+  font-size:32px;
+  margin: 0px;
+  height: 100%;
+   @media screen and (min-width: 992px) {
+      font-size: 36px;
+    }
+}
+
+.runtime-page .gettings_started_block{
+	background-color: $color_runtime;
+}
+.monitoring-page .gettings_started_block{
+	background-color: $color_monitoring;
+}
+.enterprise-page .gettings_started_block{
+	background-color: $color_enterprise;
+}
+
+
+
+
+.runtime_block,.monitoring_block,.enterprise_block{
+	display:none;
+}
+.runtime-page .runtime_block, .monitoring-page .monitoring_block, .enterprise-page .enterprise_block{
+	display:inline-block;
+}
+
+/*
+.runtime-page .gettings_started_block_span.runtime_block, .monitoring-page .gettings_started_block_span.monitoring_block, .enterprise-page .gettings_started_block_span.enterprise_block{
+	display:inline;
+}
+*/

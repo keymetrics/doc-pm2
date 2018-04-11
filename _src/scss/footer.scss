@@ -1,0 +1,21 @@
+
+.copyright {
+     width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: transparent;
+    box-shadow:none;
+}
+.copyright ul{
+	padding:0px;
+}
+
+.footer-fixed-box{
+	width: 100%;
+    bottom: -200px;
+    height: 200px;
+    background-color: #171e27;
+    position: fixed;
+    z-index: 99999;
+}

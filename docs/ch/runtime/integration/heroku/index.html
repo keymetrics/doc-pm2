@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="runtime-page">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <!-- <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="/doc-pm2/assets/img/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link rel=“prefetch” href="https://fonts.googleapis.com/css?family=Roboto:400,500">
+    <link rel="stylesheet" href="/doc-pm2/assets/css/styles.css">
+    <link rel="stylesheet" href="/doc-pm2/assets/css/normalize.css">
+    <link rel="stylesheet" href="/doc-pm2/assets/css/bundle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css">
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+</head>
+  <body class="test ready sticky">
+      <div class="section header-section">
+    <div class=" header-container">
+        <div class="PM2_logo_wrapper">
+            <a class="logo-container link">
+                <div class="PM2_logo"></div>
+            </a>
+        </div>
+        <div class="PM2_search search-wrapper">
+            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input class="search_input ds-input" placeholder="Search documentation..." autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Saira, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+            <div class="PM2_search_icon"><i class="fas fa-search"></i></div>
+            <div id="hits" class="algolia-results">
+                <!-- Hits widget will appear here -->
+            </div>
+        </div>
+    </div>
+</div>
+      <main>
+          <aside class="sidebar">
+    <div class="sidebar_2_wrapper">
+        <div class="sidebar_2">
+            <a href="/doc-pm2/ch/runtime/overview" data-page="runtime-page">
+                <div class="sidebar_2_item sidebar_2_item_runtime">
+                    <img class="sidebar_2_item__image" src="/doc-pm2/assets/static/pm2-logo-r.png">
+                    <div class="sidebar_2_item__text">Runtime</div>
+                </div>
+            </a>
+            <a href="/doc-pm2/ch/monitoring/overview" data-page="monitoring-page">
+                <div class="sidebar_2_item sidebar_2_item_monitoring">
+                    <img class="sidebar_2_item__image" src="/doc-pm2/assets/static/pm2-logo-m.png">
+                    <div class="sidebar_2_item__text">Monitoring</div>
+                </div>
+            </a>
+            <a href="/doc-pm2/ch/enterprise/overview" data-page="enterprise-page">
+                <div class="sidebar_2_item sidebar_2_item_enterprise">
+                    <img class="sidebar_2_item__image" src="/doc-pm2/assets/static/pm2-logo-e.png">
+                    <div class="sidebar_2_item__text">Enterprise</div>
+                </div>
+            </a>
+        </div>
+        <div class="main_content">
+        </div>
+    </div>
+    <div class="sidebar-nav">
+
+    <ul id="acc">
+    
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/ch/runtime/overview/">Overview</a>
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/ch/runtime/quick-start/">Quick Start</a>
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/ch/runtime/guide/">Guide</a>
+            
+                
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/ch/runtime/production-best-practices/">Best Practices</a>
+            
+                
+            
+        </li>
+    
+    
+    
+        <li class="active">
+            <a href="/doc-pm2/ch/runtime/integration/">Integration</a>
+            
+                
+                    <ul>
+                        
+                        
+                        <li class=""><a href="/doc-pm2/ch/runtime/integration/elastic-beanstalk/">AWS Elastic Beanstalk</a></li>
+                        
+                        
+                        <li class=""><a href="/doc-pm2/ch/runtime/integration/docker/">Docker</a></li>
+                        
+                        
+                        <li class="active"><a href="/doc-pm2/ch/runtime/integration/heroku/">Heroku</a></li>
+                        
+                        
+                        <li class=""><a href="/doc-pm2/ch/runtime/integration/transpilers/">Transpilers</a></li>
+                        
+                        
+                        <li class=""><a href="/doc-pm2/ch/runtime/integration/cloud-providers/">With a Cloud Provider</a></li>
+                        
+                    </ul>
+                
+            
+        </li>
+    
+    
+    
+        <li class="">
+            <a href="/doc-pm2/ch/runtime/references/">References</a>
+            
+                
+            
+        </li>
+    
+    </ul>
+
+    </div>
+</aside>
+          <section class="content">
+              <div class="markdown-section gettings_started_block topBlock">
+    <p style="display: initial;">Getting started with PM2<span class="runtime_block gettings_started_block_span">Runtime</span><span class="monitoring_block gettings_started_block_span">Monitoring</span><span class="enterprise_block gettings_started_block_span">Enterprise</span></p>
+</div>
+              <article id="main" class="markdown-section">
+                  <div class="edit-page">
+  <a rel="noopener" class="edit-page__text" target="_blank" href="http://github.com/keymetrics/doc-pm2/blob/master/_i18n/ch/runtime/integration/heroku.md">Edit Page</a>
+</div>
+                   <h1 id="using-pm2-with-heroku">Using PM2 with Heroku</h1>
+
+<p>This page will guide you step by step through the PM2 integration with Heroku.</p>
+
+<p>We will use Git and the Heroku CLI.</p>
+
+<hr />
+
+<h2 id="prepare-your-app">Prepare your app</h2>
+
+<h3 id="set-your-ecosystem-file">Set your ecosystem file</h3>
+
+<p>Generate an <code class="highlighter-rouge">ecosystem.config.js</code> template with:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pm2 init
+</code></pre></div></div>
+
+<p>Modify the ecosystem file to match your needs:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">apps</span> <span class="p">:</span> <span class="p">[{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="s2">"app"</span><span class="p">,</span>
+    <span class="na">script</span><span class="p">:</span> <span class="s2">"./app.js"</span><span class="p">,</span>
+    <span class="na">instances</span><span class="p">:</span> <span class="s2">"max"</span><span class="p">,</span>
+    <span class="na">env</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">NODE_ENV</span><span class="p">:</span> <span class="s2">"development"</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="na">env_production</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">NODE_ENV</span><span class="p">:</span> <span class="s2">"production"</span><span class="p">,</span>
+    <span class="p">}</span>
+  <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>?&gt; Learn more about ecosystem file <a href="runtime/guide/ecosystem-file.md">here</a>.</p>
+
+<p>We recommend to use the cluster mode with Heroku, as each dyno has multi-core CPU.</p>
+
+<p>?&gt; Learn more about the <a href="runtime/guide/cluster.md">cluster mode</a>.</p>
+
+<h3 id="add-pm2-as-a-module">Add PM2 as a module</h3>
+
+<p>Add pm2 as a dependency to your projet.</p>
+
+<p>With npm:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install <span class="nt">--save</span> pm2
+</code></pre></div></div>
+
+<p>With yarn:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yarn add pm2
+</code></pre></div></div>
+
+<h3 id="set-your-packagejson">Set your package.json</h3>
+
+<p>In your <code class="highlighter-rouge">package.json</code>, modify your <code class="highlighter-rouge">start</code> script like the following:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"node ./node_modules/.bin/pm2-runtime start ecosystem.config.js --env production"</span><span class="w">  </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<hr />
+
+<h2 id="deploy-with-heroku">Deploy with Heroku</h2>
+
+<h3 id="create-an-account-on-heroku">Create an account on Heroku</h3>
+
+<p>Sign up for an account on Heroku <a href="https://signup.heroku.com/">here</a>.</p>
+
+<h3 id="install-the-cli">Install the CLI</h3>
+
+<p>Follow the instructions to install <a href="https://devcenter.heroku.com/articles/heroku-cli">here</a>.</p>
+
+<p>Then, run <code class="highlighter-rouge">heroku login</code> to connect the CLI to your account.</p>
+
+<h3 id="init-your-heroku-app">Init your Heroku app</h3>
+
+<p>We will first create a new empty application on Heroku and an associated empty Git repository.</p>
+
+<p>Run this command from your app root folder:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>heroku create
+
+Creating app... <span class="k">done</span>, ⬢ guarded-island-32432
+https://guarded-island-32432.herokuapp.com/ | https://git.heroku.com/guarded-island-32432.git
+</code></pre></div></div>
+
+<p>You now have a new git remote named <code class="highlighter-rouge">heroku</code>. If you push to this repository, your code is automatically deployed at the given URL.</p>
+
+<h3 id="deploy-your-app-on-heroku">Deploy your app on Heroku</h3>
+
+<p>Add and commit all your changes, then run:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push heroku master
+Initializing repository, <span class="k">done</span><span class="nb">.</span>
+updating <span class="s1">'refs/heads/master'</span>
+remote: Compressing <span class="nb">source </span>files... <span class="k">done</span><span class="nb">.</span>
+remote: Building <span class="nb">source</span>:
+...
+remote:
+remote: Verifying deploy... <span class="k">done</span><span class="nb">.</span>
+To https://git.heroku.com/aqueous-temple-78487.git
+</code></pre></div></div>
+
+<h2 id="you-are-ready">You are ready</h2>
+
+<p>That’s all! The last line of the deployment will give you the URL where your app is available.</p>
+
+<hr />
+
+<h2 id="next-step">Next step</h2>
+
+<p>Complete your configuration with the <a href="runtime/guide/ecosystem-file.md">Ecosystem File</a></p>
+
+<p>Monitor your app on a dashboard, with <a href="monitoring/integration/heroku.md">PM2 Monitoring</a></p>
+
+<hr />
+
+<h3 id="questions-">Questions ?</h3>
+
+<p>We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.</p>
+
+
+              </article>
+              <footer class="markdown-section copyright">
+    <p>© 2018 Keymetrics</p>
+    <ul id="footer">
+        <li><a href="javascript:void(0);">Terms of Use</a></li>
+        <li><a href="javascript:void(0);">Privacy Policy</a></li>
+
+        <!-- Adds links to other languages on the post -->
+        
+          
+            
+              <li><p class="footer-list">Language: <a href="/doc-pm2/runtime/integration/heroku/" >English</a></p></li>
+            
+
+            
+
+            
+
+          
+        
+          
+        
+    </ul>
+  </footer>
+
+
+
+          </section>
+
+      </main>
+  </body>
+  <script src="https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs@1.13.0/prism.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-bash.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-markdown.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-nginx.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/doc-pm2/assets/js/prism-clipboard.js" type="text/javascript"></script>
+  <!-- <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> -->
+  <!-- <script src="/doc-pm2/assets/js/gittalk.js"></script> -->
+  <script src="/doc-pm2/assets/js/keymetrics-plugins.js" type="text/javascript"></script>
+  <script src="/doc-pm2/assets/js/additional.js" type="text/javascript"></script>
+</html>
+
