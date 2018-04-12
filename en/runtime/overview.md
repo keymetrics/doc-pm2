@@ -3,7 +3,7 @@ layout: page
 title: Overview of PM2
 menu: starter
 lang: en
-redirect_from: "/runtime/overview.html"
+redirect_from: "/runtime/overview"
 redirect_from: "/"
 ---
 
