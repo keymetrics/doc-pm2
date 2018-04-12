@@ -23,8 +23,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-body:not(.ready) {
-  overflow: hidden; }
+/* body:not(.ready) {
+  overflow: hidden; } */
 
 body:not(.ready) .app-nav, body:not(.ready) > nav, body:not(.ready) [data-cloak] {
   display: none; }
@@ -1062,7 +1062,7 @@ pre:hover .docsify-copy-code-button {
   /* background: yellowgreen;*/ }
 
 .PM2_logo {
-  background: url(/doc-pm2/assets/img/pm2-docs.svg);
+  background: url(/doc-pm2/img/pm2-docs.svg);
   background-repeat: no-repeat;
   -webkit-background-size: contain;
           background-size: contain;

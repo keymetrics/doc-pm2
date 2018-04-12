@@ -1,5 +1,11 @@
+# Site settings
 name: PM2 DOCS
+
+# Build settings
 markdown: kramdown
+gems:
+  - jekyll-redirect-from
+
 kramdown:
  input: GFM
  auto_ids: true

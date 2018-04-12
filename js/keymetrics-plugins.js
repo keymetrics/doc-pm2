@@ -197,20 +197,12 @@
         element.parentNode.removeChild(element);
     }
 
-    function fixLinks(html) {
-      var types = ['runtime', 'monitoring', 'enterprise'];
-      types.forEach(function(t) {
-          html = html.replace(new RegExp(t + '/' + t, 'g'), t);
-      });
-      return html;
-  }
-
     $(document).ready(function(event) {
         configureSearchBar();
         logoTogglesSidebarOnMobile();
         setSidebarBreakpoints();
         createSidebarLinkClickHandler();
     });
-    
+
 
 })();

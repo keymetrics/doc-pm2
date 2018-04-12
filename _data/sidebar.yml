@@ -1,58 +1,58 @@
 runtime:
   - title: Overview
-    url: "/runtime/overview/"
+    url: "/en/runtime/overview/"
   - title: Quick Start
-    url: "/runtime/quick-start/"
+    url: "/en/runtime/quick-start/"
   - title: Guide
-    url: "/runtime/guide/"
+    url: "/en/runtime/guide/"
     submenu:
       - page: Installation
-        url: "/runtime/guide/installation/"
+        url: "/en/runtime/guide/installation/"
       - page: Ecosystem File
-        url: "/runtime/guide/ecosystem-file/"
+        url: "/en/runtime/guide/ecosystem-file/"
       - page: Process Management
-        url: "/runtime/guide/process-management/"
+        url: "/en/runtime/guide/process-management/"
       - page: Log Management
-        url: "/runtime/guide/log-management/"
+        url: "/en/runtime/guide/log-management/"
       - page: Startup Hook
-        url: "/runtime/guide/startup-hook/"
+        url: "/en/runtime/guide/startup-hook/"
       - page: Load-Balancing (cluster mode)
-        url: "/runtime/guide/load-balancing/"
+        url: "/en/runtime/guide/load-balancing/"
       - page:  Development Tools
-        url: "/runtime/guide/development-tools/"
+        url: "/en/runtime/guide/development-tools/"
       - page: Easy Deploy with SSH
-        url: "/runtime/guide/easy-deploy-with-ssh/"
+        url: "/en/runtime/guide/easy-deploy-with-ssh/"
   - title: Best Practices
-    url: "/runtime/production-best-practices/"
+    url: "/en/runtime/production-best-practices/"
     submenu:
       - page: Environment Variables
-        url: "/runtime/production-best-practices/environment-variables-in-nodejs/"
+        url: "/en/runtime/production-best-practices/environment-variables-in-nodejs/"
       - page: Graceful Shutdown
-        url: "/runtime/production-best-practices/graceful-shutdown/"
+        url: "/en/runtime/production-best-practices/graceful-shutdown/"
       - page: Stateless Application
-        url: "/runtime/production-best-practices/stateless-application/"
+        url: "/en/runtime/production-best-practices/stateless-application/"
   - title: Integration
-    url: "/runtime/integration/"
+    url: "/en/runtime/integration/"
     submenu:
       - page: AWS Elastic Beanstalk
-        url: "/runtime/integration/elastic-beanstalk/"
+        url: "/en/runtime/integration/elastic-beanstalk/"
       - page: Docker
-        url: "/runtime/integration/docker/"
+        url: "/en/runtime/integration/docker/"
       - page: Heroku
-        url: "/runtime/integration/heroku/"
+        url: "/en/runtime/integration/heroku/"
       - page: Transpilers
-        url: "/runtime/integration/transpilers/"
+        url: "/en/runtime/integration/transpilers/"
       - page: With a Cloud Provider
-        url: "/runtime/integration/cloud-providers/"
+        url: "/en/runtime/integration/cloud-providers/"
   - title: References
-    url: "/runtime/references/"
+    url: "/en/runtime/references/"
     submenu:
       - page: Ecosystem File
-        url: "/runtime/references/ecosystem-file/"
+        url: "/en/runtime/references/ecosystem-file/"
       - page: CLI
-        url: "/runtime/references/pm2-cli/"
+        url: "/en/runtime/references/pm2-cli/"
       - page: Programmatic
-        url: "/runtime/references/pm2-programmatic/"
+        url: "/en/runtime/references/pm2-programmatic/"
 
 monitoring:
   - title: Overview
