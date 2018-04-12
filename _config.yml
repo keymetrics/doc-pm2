@@ -1,7 +1,11 @@
 # Site settings
-name: PM2 DOCS
+name: PM2 Documentation
+email: contact@keymetrics.io
 
 # Build settings
+sass:
+  style: compact
+
 markdown: kramdown
 gems:
   - jekyll-redirect-from
@@ -20,6 +24,6 @@ plugins:
 # keep_files: [images]
 baseurl: "/doc-pm2"
 destination: docs
-exclude: ["node_modules","README.md", "gulpfile.js", "package.json", "package-lock.json", ".jekyll-metadata", "source-code","fonts","uru*","_site/assets/javascript/anchor-js/","assets/scss-temp/"]
+exclude: ["node_modules","README.md", "gulpfile.js", "package.json", "package-lock.json", "yarn.lock"]
 
 exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico","assets", "CNAME", "node_modules", "package.json", "package-lock.json","_src","_docs","gulpfile.js"]
