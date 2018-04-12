@@ -130,7 +130,7 @@ The local monitoring tool get you insight about CPU usage, memory usage, loop de
 pm2 monit
 ```
 
-![local monitoring with pm2]({{site.baseurl}}/assets/img/runtime/monit.png)
+![local monitoring with pm2]({{site.baseurl}}/img/runtime/monit.png)
 
 ---
 

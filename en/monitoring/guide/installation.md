@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Installation
 
 We assume that your app have been started with pm2 Runtime. If not, follow the [Quick Start](runtime/quickstart.md) tutorial.
@@ -64,7 +72,7 @@ pm2 reload all
 
 Go back to the dashboard, you have now access to realtime metrics of your app.
 
-![a unified overview]({{site.baseurl}}/assets/img/monitoring/unified.png)
+![a unified overview]({{site.baseurl}}/img/monitoring/unified.png)
 
 ---
 

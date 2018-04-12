@@ -1,10 +1,18 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Transaction tracing
 
 The transaction tracing is useful to troubleshoot performance issues and get detailed low-level insight of how your app is working.
 
 Slow HTTP calls are identified and the database and external calls are aggregated to understand why.
 
-![transaction tracing]({{site.baseurl}}/assets/img/monitoring/tracing.png)
+![transaction tracing]({{site.baseurl}}/img/monitoring/tracing.png)
 
 ---
 

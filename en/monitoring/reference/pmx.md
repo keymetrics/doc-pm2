@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # The PMX Library
 
 PMX is a lightweight library that allows advanced interactions with your dashboards.

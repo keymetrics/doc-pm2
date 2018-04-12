@@ -1,10 +1,170 @@
 @import './variables';
 
-
-.link:hover{
-    cusor:pointer;
+// from pm2.io site marketing
+.header-section {
+  background-color: #171e27;
+  z-index: 100;
 }
 
+.header-section .header-container {
+  text-align: left;
+  padding: 1.111111111111111rem;
+}
+
+@media only screen and (min-width: 62em) {
+  .header-section .header-container {
+      text-align: right;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .header-section .header-container {
+      padding: 1.111111111111111rem 0;
+  }
+}
+
+.header-section .header-container .logo {
+  width: 8.333333333333333em;
+  height: 2.333333333333333rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 62em) {
+  .header-section .header-container .logo {
+      float: left;
+      margin-top: .5rem;
+  }
+}
+
+.header-section .header-container .toggle-nav {
+  display: none;
+}
+
+.header-section .header-container .btn-menu {
+  color: #ffffff;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+  position: absolute;
+  top: 1.111111111111111rem;
+  right: 1.111111111111111rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.header-section .header-container .btn-menu:after {
+  content: "\2630";
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.header-section .header-container .toggle-nav:checked+.menu-btn {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.header-section .header-container .header-nav {
+  display: none;
+  font-size: 1.333333333333333rem;
+  margin-top: 1.111111111111111rem;
+}
+
+.header-section .header-container .header-nav div,
+.header-section .header-container .header-nav a {
+  display: block;
+  text-align: center;
+  padding: .5rem 1rem;
+}
+
+.header-section .header-container .header-nav div:hover,
+.header-section .header-container .header-nav div:focus,
+.header-section .header-container .header-nav div:active,
+.header-section .header-container .header-nav a:hover,
+.header-section .header-container .header-nav a:focus,
+.header-section .header-container .header-nav a:active {
+  text-decoration: none;
+  background-color: #2a3747;
+}
+
+.header-section .header-container .header-nav .expander {
+  cursor: pointer;
+}
+
+.header-section .header-container .header-nav .expander .more-arrow {
+  display: none;
+}
+
+@media only screen and (min-width: 62em) {
+  .header-section .header-container .header-nav .expander .more-arrow {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: .65rem;
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+  }
+}
+
+.header-section .header-container .header-nav .menu .second-level a {
+  color: #6a6a6a;
+}
+
+@media only screen and (min-width: 62em) {
+  .header-section .header-container .header-nav {
+      display: inline-block;
+      vertical-align: bottom;
+      margin-top: 0;
+  }
+  .header-section .header-container .header-nav ul,
+  .header-section .header-container .header-nav ul li,
+  .header-section .header-container .header-nav ul li div,
+  .header-section .header-container .header-nav ul li a {
+      display: inline-block;
+      vertical-align: bottom;
+      position: relative;
+  }
+  .header-section .header-container .header-nav .menu .second-level {
+      display: none;
+  }
+  .header-section .header-container .header-nav .menu .second-level.active {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 2.5rem;
+      -webkit-box-shadow: 0 0.55556rem 0.55556rem 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0 0.55556rem 0.55556rem 0 rgba(0, 0, 0, 0.25);
+      text-align: left;
+  }
+  .header-section .header-container .header-nav .menu .second-level.active li:not(:last-child) {
+      border-bottom: 1px solid #202a37;
+  }
+  .header-section .header-container .header-nav .menu .second-level.active li {
+      display: block;
+  }
+  .header-section .header-container .header-nav .menu .second-level.active li a {
+      display: block;
+      text-align: left;
+      color: #ffffff;
+      font-size: 1.222222222222222rem;
+  }
+  .header-section .header-container .header-nav .user-nav {
+      margin-left: 2rem;
+  }
+  .header-section .header-container .header-nav .user-nav li:first-child {
+      border-right: 1px solid #ffffff;
+  }
+}
+
+.header-section .header-container .toggle-nav:checked~.header-nav {
+  display: block;
+}
+
+
+// custom
 .logo {
     font-size: 1.2em;
 }
@@ -50,7 +210,7 @@
 }
 
 .PM2_logo {
-    background: url(/doc-pm2/assets/img/pm2-docs.svg);
+    background: url(/doc-pm2/img/pm2-docs.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 140px;
@@ -64,7 +224,6 @@
 
 .user-nav a {
     font-size: 24px;
-    font-family: Saira, Sans-Serif;
     font-weight: 100;
 }
 
@@ -84,7 +243,6 @@
 }
 .algolia-results a, .algolia-results a:visited{
     color:white;
-    font-family: Roboto, sans-serif;
     font-weight: 400;
 }
 .algolia-results a em {
@@ -193,7 +351,6 @@
 .search-wrapper input {
     font-size: 18px!important;
     color: #979797;
-    font-family: Saira, Sans-Serif;
     font-weight: 400;
 
     margin: 0px!important;

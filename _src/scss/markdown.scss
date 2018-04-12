@@ -3,7 +3,6 @@
 /* Title: Quick Start */
 
 h1 a span {
-    font-family: Saira, sans-serif;
     font-weight: 500;
     color: #202a37;
     font-size: 36px;
@@ -15,7 +14,6 @@ h1 a span {
 
 
 p {
-    font-family: Roboto, sans-serif;
     font-weight: 400;
 }
 
@@ -23,7 +21,6 @@ p.warn{
     border-radius: 2px;
     background-color: rgba(206, 183, 1, 0.08)!important;
     border: solid 1px #ceb701;
-    font-family: Roboto;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
@@ -40,7 +37,6 @@ h2 {
 }
 
 h2 a span {
-    font-family: Saira, sans-serif;
     font-weight: 500;
     font-size: 32px;
 }
@@ -57,13 +53,13 @@ h2 a:before{
     margin-top: 13px;
 }
 .runtime-page h2 a:before{
-    background-image: url(/doc-pm2/assets/img/runtime/rect-r.png);
+    background-image: url(/doc-pm2/img/runtime/rect-r.png);
 }
 .monitoring-page h2 a:before{
-    background-image: url(/doc-pm2/assets/img/monitoring/rect-m.png);
+    background-image: url(/doc-pm2/img/monitoring/rect-m.png);
 }
 .enterprise-page h2 a:before{
-    background-image: url(/doc-pm2/assets/img/enterprise/rect-e.png);
+    background-image: url(/doc-pm2/img/enterprise/rect-e.png);
 }
 
 .runtime-page h2 a span {
@@ -84,7 +80,6 @@ h3 {
 }
 
 h3 a span {
-    font-family: Saira, sans-serif;
     font-weight: 500;
     font-size:28px;
 }
@@ -163,18 +158,3 @@ button.docsify-copy-code-button{
 .docsify-copy-code-button::after{
     display: none;
 }
-/*
-button.docsify-copy-code-button:before{
-    content: '';
-    display: absolute;
-    width: 20px;
-    height: 0;
-    position: absolute;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-right: 8px solid #3eb1f3;
-    left: 43px;
-    top: 38px;
-    z-index: 999;
-    transform: rotate(-90deg);
-}*/

@@ -1,3 +1,12 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+permalink: "/en/monitoring/guide/"
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Guide
 
 This guide will get your node.js app monitored by pm2 monitoring in minutes.

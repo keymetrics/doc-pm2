@@ -1,10 +1,18 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Memory & CPU profiling
 
 Profiling tools help you diagnose memory and CPU usage and other application-level issues.
 
 The profiling in pm2 monitoring allows you to take remote CPU/memory snapshots of your production servers. You get the associated files ready to be inspected with the chrome developer tools.
 
-![cpu and memory profiling]({{site.baseurl}}/assets/img/monitoring/profiling.png)
+![cpu and memory profiling]({{site.baseurl}}/img/monitoring/profiling.png)
 
 ---
 

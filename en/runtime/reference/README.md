@@ -3,13 +3,11 @@ layout: page
 title: Quick Start with PM2
 menu: starter
 lang: en
-permalink: "/en/runtime/references/"
+permalink: "/en/runtime/reference/"
 redirect_from: "/runtime/quick-start.html"
 ---
 
-# References
-
-Three references are available:
+# Reference
 
 - [Ecosystem File Reference]({{site.baseurl}}/runtime/references/ecosystem-file/)
 

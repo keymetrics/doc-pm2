@@ -82,19 +82,19 @@ In order to get access keys, you must create an IAM user. You can do that [here]
 
 Add a user:
 
-![create an IAM User]({{site.baseurl}}/assets/img/runtime/IAM-add.png)
+![create an IAM User]({{site.baseurl}}/img/runtime/IAM-add.png)
 
 Give it the programmatic access:
 
-![select programmatic access]({{site.baseurl}}/assets/img/runtime/IAM-prog.png)
+![select programmatic access]({{site.baseurl}}/img/runtime/IAM-prog.png)
 
 Select the `ElasticBeanstalkFullAccess` strategy:
 
-![select programmatic access]({{site.baseurl}}/assets/img/runtime/IAM-strat.png)
+![select programmatic access]({{site.baseurl}}/img/runtime/IAM-strat.png)
 
 Create the user and you will get your access keys:
 
-![access keys]({{site.baseurl}}/assets/img/runtime/IAM-creds.png)
+![access keys]({{site.baseurl}}/img/runtime/IAM-creds.png)
 
 Copy and paste your `access-id` and your `secret-key` in your AWS config file (`~/.aws/config`):
 

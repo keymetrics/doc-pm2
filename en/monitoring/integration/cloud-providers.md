@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Monitor your Node.js app in a cloud provider
 
 In seconds, this tutorial will show you how to monitor a node.js application with `pm2` and a cloud provider.

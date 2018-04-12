@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Quick Start
 
 In seconds, this Quick Start tutorial will show you how to start monitoring your node.js application with pm2.
@@ -56,7 +64,7 @@ pm2 reload all
 
 Go back to the dashboard, you have now access to realtime metrics of your app.
 
-![a unified overview]({{site.baseurl}}/assets/img/monitoring/unified.png)
+![a unified overview]({{site.baseurl}}/img/monitoring/unified.png)
 
 ---
 

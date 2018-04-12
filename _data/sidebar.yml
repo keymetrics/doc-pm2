@@ -16,21 +16,21 @@ runtime:
         url: "/en/runtime/guide/log-management/"
       - page: Startup Hook
         url: "/en/runtime/guide/startup-hook/"
-      - page: Load-Balancing (cluster mode)
+      - page: Load-Balancing
         url: "/en/runtime/guide/load-balancing/"
       - page:  Development Tools
         url: "/en/runtime/guide/development-tools/"
       - page: Easy Deploy with SSH
         url: "/en/runtime/guide/easy-deploy-with-ssh/"
   - title: Best Practices
-    url: "/en/runtime/production-best-practices/"
+    url: "/en/runtime/best-practices/"
     submenu:
       - page: Environment Variables
-        url: "/en/runtime/production-best-practices/environment-variables-in-nodejs/"
+        url: "/en/runtime/best-practices/environment-variables-in-nodejs/"
       - page: Graceful Shutdown
-        url: "/en/runtime/production-best-practices/graceful-shutdown/"
+        url: "/en/runtime/best-practices/graceful-shutdown/"
       - page: Stateless Application
-        url: "/en/runtime/production-best-practices/stateless-application/"
+        url: "/en/runtime/best-practices/stateless-application/"
   - title: Integration
     url: "/en/runtime/integration/"
     submenu:
@@ -44,50 +44,59 @@ runtime:
         url: "/en/runtime/integration/transpilers/"
       - page: With a Cloud Provider
         url: "/en/runtime/integration/cloud-providers/"
-  - title: References
-    url: "/en/runtime/references/"
+  - title: Reference
+    url: "/en/runtime/reference/"
     submenu:
       - page: Ecosystem File
-        url: "/en/runtime/references/ecosystem-file/"
+        url: "/en/runtime/reference/ecosystem-file/"
       - page: CLI
-        url: "/en/runtime/references/pm2-cli/"
+        url: "/en/runtime/reference/pm2-cli/"
       - page: Programmatic
-        url: "/en/runtime/references/pm2-programmatic/"
+        url: "/en/runtime/reference/pm2-programmatic/"
 
 monitoring:
   - title: Overview
-    url: "/monitoring/overview/"
+    url: "/en/monitoring/overview/"
   - title: Quick Start
-    url: "/monitoring/quick-start/"
+    url: "/en/monitoring/quick-start/"
   - title: Guide
-    url: "/monitoring/guide/"
+    url: "/en/monitoring/guide/"
     submenu:
       - page: Installation
-        url: "/monitoring/guide/installation/"
+        url: "/en/monitoring/guide/installation/"
       - page: Configuration
-        url: "/monitoring/guide/configuration/"
+        url: "/en/monitoring/guide/configuration/"
       - page: Notification
-        url: "/monitoring/guide/notifications/"
+        url: "/en/monitoring/guide/notifications/"
       - page: Issue dashboard
-        url: "/monitoring/guide/issue-dashboard/"
+        url: "/en/monitoring/guide/issue-dashboard/"
       - page: Transaction tracing
-        url: "/monitoring/guide/transaction-tracing/"
-      - page: Memory & CPU Profiling
-        url: "/monitoring/guide/memory-cpu-profiling/"
+        url: "/en/monitoring/guide/transaction-tracing/"
+      - page: Mem & CPU Profiling
+        url: "/en/monitoring/guide/memory-cpu-profiling/"
+  - title: Best Practices
+    url: "/en/monitoring/best-practices/"
+    submenu:
+      - page: CPU Profiling
+        url: "/en/monitoring/best-practices/cpu-profiling/"
+      - page: Memory Profiling
+        url: "/en/monitoring/best-practices/memory-profiling/"
+      - page: Transaction Tracing
+        url: "/en/monitoring/best-practices/transaction-tracing/"
   - title: Integration
-    url: "/monitoring/integration/"
+    url: "/en/monitoring/integration/"
     submenu:
       - page: AWS Elastic Beanstalk
-        url: "/monitoring/integration/elastic-beanstalk/"
+        url: "/en/monitoring/integration/elastic-beanstalk/"
       - page: Docker
-        url: "/monitoring/integration/docker/"
+        url: "/en/monitoring/integration/docker/"
       - page: Heroku
-        url: "/monitoring/integration/heroku/"
+        url: "/en/monitoring/integration/heroku/"
       - page: With a Cloud Provider
-        url: "/monitoring/integration/cloud-providers/"
+        url: "/en/monitoring/integration/cloud-providers/"
   - title: Reference
-    url: "/monitoring/reference/"
+    url: "/en/monitoring/reference/pmx"
 
 enterprise:
   - title: Overview
-    url: "/enterprise/overview/"
+    url: "/en/enterprise/overview/"

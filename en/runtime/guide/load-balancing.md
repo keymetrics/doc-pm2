@@ -10,7 +10,7 @@ redirect_from: "/runtime/quick-start.html"
 
 The built-in load-balancer provides networked Node.js applications (http(s)/tcp/udp server) to be scaled accross all CPUs available, without any code modifications.
 
-![scale across all cpu's available]({{site.baseurl}}/assets/img/runtime/cluster-mode.png)
+![scale across all cpu's available]({{site.baseurl}}/img/runtime/cluster-mode.png)
 
 ---
 

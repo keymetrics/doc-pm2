@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Monitor your Node.js app in AWS Elastic Beanstalk
 
 In seconds, this tutorial will show you how to monitor a Node.js application with `pm2` in an AWS Elastic Beanstalk environment.

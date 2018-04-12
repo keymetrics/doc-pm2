@@ -20,8 +20,7 @@ gulp.task('css', function () {
     .pipe(concat('bundle.css'))
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('assets/css'))
-    .pipe(gulp.dest('docs/assets/css'))
+    .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({stream:true}));
 });
 
@@ -67,12 +66,6 @@ gulp.task('browser-sync', ['css', 'js', 'jekyll-build'], function() {
  */
 gulp.task('watch', function () {
     gulp.watch('_src/scss/**/*.scss', ['css']);
-    gulp.watch(['_i18n/**/*','runtime/**/*','monitoring/**/*','enterprise/**/*'], ['jekyll-rebuild']);
-    gulp.watch('assets/js/*.js', ['js']);
-    gulp.watch(['*.md','*/*.md'], ['jekyll-rebuild']);
-    gulp.watch(['*.yml','_data/*.yml'], ['jekyll-rebuild']);
-    gulp.watch(['*.index.html', '_layouts/*.html', '_includes/*.html', '_includes/*.md',
-    '_posts/*'], ['jekyll-rebuild']);
 });
 
 
@@ -80,4 +73,4 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['css', 'watch']);
