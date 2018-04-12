@@ -1,3 +1,11 @@
+---
+layout: page
+title: Overview of PM2
+menu: starter
+lang: ch
+redirect_from: "/ch"
+---
+
 # Overview 概述
 
 Why use pm2 ? At the end of this overview, you will better understand the benefits of using pm2 as a process manager.

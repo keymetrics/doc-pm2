@@ -9,7 +9,7 @@
   {% if page.lang == 'en' %}
   <body class="en-doc sticky {{category}}-page">
   {% else %}
-  <body class="non-en-doc {{category}}-page">
+  <body class="non-en-doc sticky {{category}}-page">
   {% endif %}
   {% include header/header-{{ page.lang }}.html %}
   {% include sidebar.html %}
