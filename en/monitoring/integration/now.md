@@ -1,11 +1,3 @@
----
-layout: page
-title: Quick Start with PM2
-menu: starter
-lang: en
-redirect_from: "/runtime/quick-start.html"
----
-
 !> Now.sh is actually not supported by pm2
 
 # Monitor your Node.js app in Now.sh

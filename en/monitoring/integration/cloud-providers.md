@@ -3,7 +3,7 @@ layout: page
 title: Quick Start with PM2
 menu: starter
 lang: en
-redirect_from: "/runtime/quick-start.html"
+redirect_from: "/monitoring/integration/cloud-providers"
 ---
 
 # Monitor your Node.js app in a cloud provider

@@ -4,7 +4,7 @@ title: Monitoring Best Practices
 menu: starter
 lang: en
 permalink: "/en/monitoring/best-practices/"
-redirect_from: "/monitoring/quick-start.html"
+redirect_from: "/monitoring/best-practices/"
 ---
 
 # Monitoring Best Practices

@@ -3,7 +3,7 @@ layout: page
 title: CPU Profiling Guide
 menu: starter
 lang: en
-redirect_from: "/monitoring/cpu-profiling/"
+redirect_from: "/monitoring/best-practices/cpu-profiling"
 ---
 
 # CPU Profiling
