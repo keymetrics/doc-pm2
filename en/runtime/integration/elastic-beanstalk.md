@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Using PM2 with AWS Elastic Beanstalk
 
 This page will guide you step by step through the PM2 integration in an AWS Elastic Beanstalk environment.
@@ -185,4 +193,3 @@ Monitor your app on a dashboard, with [PM2 Monitoring]({{site.baseurl}}/monitori
 ## Questions ?
 
 We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.
-

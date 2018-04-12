@@ -1,3 +1,11 @@
+---
+layout: page
+title: Overview of PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/overview.html"
+---
+
 # Overview
 
 Why use pm2 ? At the end of this overview, you will better understand the benefits of using pm2 as a process manager.
@@ -85,6 +93,3 @@ pm2 deploy
 ## Questions ?
 
 We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.
-
-
-

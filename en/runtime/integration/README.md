@@ -1,3 +1,12 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+permalink: "/en/runtime/integration/"
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Integration
 
 This section will help you integrate pm2.

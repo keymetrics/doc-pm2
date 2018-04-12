@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Ecosystem File
 
 When deploying on multiple server or when using multiple CLI arguments, an alternative to the command line become more conveninent for starting your apps.

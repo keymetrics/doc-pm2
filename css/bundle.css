@@ -6,6 +6,9 @@
 .js {
   visibility: visible;
   opacity: 1; }
+  * {
+      font-family: Saira, sans-serif;
+    }
 
 .hide {
   display: none; }

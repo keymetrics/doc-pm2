@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Process management
 
 pm2 is a process kept in the background, a daemon, that takes care of all your running processes.

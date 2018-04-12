@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Environment Variables in Node.js
 
 Environment variables are special variables that can be set outside of your Node.js applications, particularly useful to make your application configurable externally. Let's say a cloud provider wants to change the listening port of your app or if you want to enable verbose logging without getting into the code.
@@ -6,7 +14,7 @@ This tutorial will give you an overview on how to use environment variables in N
 
 ---
 
-## Set environment 
+## Set environment
 
 When starting an app with Node.js, the current environment of your shell is injected into your app environment. These variables are available in `process.env.ENV_NAME`.
 

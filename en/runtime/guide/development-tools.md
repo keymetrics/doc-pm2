@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Development Tools
 
 pm2 comes with two development tools that will help you on the development stage: a watch and restart mode and a server for static files.

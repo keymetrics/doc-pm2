@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Using PM2 in a Cloud Provider
 
 You might find yourself in a situation in which you do not have access to the CLI to start your Node.js applications.

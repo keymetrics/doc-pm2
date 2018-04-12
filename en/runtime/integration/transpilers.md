@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Using PM2 with transpilers
 
 This tutorial will show you how to use pm2 with transpilers.

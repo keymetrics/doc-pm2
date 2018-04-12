@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Using PM2 with Heroku
 
 This page will guide you step by step through the PM2 integration with Heroku.

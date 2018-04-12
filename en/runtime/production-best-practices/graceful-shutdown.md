@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Graceful Shutdown
 
 Your applications will restart several times in its lifetime, be it on deployment or, more sadly, if your application crashes.

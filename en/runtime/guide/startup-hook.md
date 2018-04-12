@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Startup Hook
 
 The purpose of a startup hook is to save your process list and bring it back at machine restarts, even unexpected ones.

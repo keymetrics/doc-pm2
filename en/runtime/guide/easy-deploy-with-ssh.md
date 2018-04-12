@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Easy Deploy with SSH
 
 In many deployment workflow, the routine basically consists of connecting with SSH to multiple servers, git pull the latest version then reload the app.

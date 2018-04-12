@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Stateless Application
 
 A stateless application has no local data stored in the process. For example, sessions/websocket connections, session-memory and related.

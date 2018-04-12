@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # PM2 API
 
 pm2 can also be used programmatically, meaning that you can embed a process manager directly in your code, spawn processes, keep them alive even if the main script is exited.
@@ -21,7 +29,7 @@ pm2.connect(function(err) {
     console.error(err)
     process.exit(2)
   }
-  
+
   pm2.start({
     script: 'app.js',
   }, (err, apps) => {
@@ -64,10 +72,10 @@ Kills the pm2 daemon (same as `pm2 kill`). Note that when the daemon is killed, 
 * `jsonConfigFile` - The path to a JSON file that can contain the same options as the `options` parameter.
 * `errback(err,proc)` - An errback called when the `script` has been started. The `proc` parameter will be a [pm2 process object](https://github.com/soyuka/pm2-notify#templating).
 * `options` - An object with the following options (additional descriptions of these options are [here](http://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/#graceful-reload)):
- 
+
 
 **`pm2.stop(process, errback)`**
-**`pm2.restart(process, errback)`** 
+**`pm2.restart(process, errback)`**
 **`pm2.delete(process, errback)`**
 **`pm2.reload(process, errback)`**
 
@@ -77,14 +85,14 @@ Kills the pm2 daemon (same as `pm2 kill`). Note that when the daemon is killed, 
 
 **`pm2.list(errback)`**
 
-* `errback(err, processDescriptionList)` - The `processDescriptionList` parameter will contain a list of `processDescription` objects as defined under `pm2.describe`. 
+* `errback(err, processDescriptionList)` - The `processDescriptionList` parameter will contain a list of `processDescription` objects as defined under `pm2.describe`.
 
 
 **`pm2.describe(process,errback)`**
 
 * `errback(err, processDescription)`
 * `processDescription` - An object with information about the process. Contains the properties:
-  * `name` - The name given in the original `start` command. 
+  * `name` - The name given in the original `start` command.
   * `pid` - The pid of the process.
   * `pm_id` - The pid for the `pm2` God daemon process.
   * `monit` - An object containing:
@@ -113,7 +121,7 @@ Kills the pm2 daemon (same as `pm2 kill`). Note that when the daemon is killed, 
 * `errback(err, result)`
 
 
-**`pm2.flush(process, errback)`** 
+**`pm2.flush(process, errback)`**
 
 * `errback(err, result)`
 
@@ -171,4 +179,3 @@ process.on('message', (packet) => {
  })
 })
 ```
-

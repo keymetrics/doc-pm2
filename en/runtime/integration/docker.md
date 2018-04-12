@@ -1,3 +1,11 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Using PM2 with Docker
 
 Production ready Node.js Docker image including [PM2](http://pm2.keymetrics.io/).
@@ -7,7 +15,7 @@ The goal of pm2-runtime is to wrap your applications into a proper Node.js produ
 - Second Process Fallback for High Application Reliability
 - Process Flow Control
 - Automatic Application Monitoring to keep it always sane and high performing
-- Automatic Source Map Discovery and Resolving Support 
+- Automatic Source Map Discovery and Resolving Support
 
 Further than that, using PM2 as a layer between the container and the application brings PM2 powerful features like ecosystem file, custom log system and other features of pm2.
 

@@ -1,3 +1,12 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: en
+permalink: "/en/runtime/production-best-practices/"
+redirect_from: "/runtime/quick-start.html"
+---
+
 # Production Best Practices
 
 This section gathers production best practices to make your app scalable from the begining.
