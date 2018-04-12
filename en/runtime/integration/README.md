@@ -4,7 +4,7 @@ title: Quick Start with PM2
 menu: starter
 lang: en
 permalink: "/en/runtime/integration/"
-redirect_from: "/runtime/quick-start.html"
+redirect_from: "/runtime/integration"
 ---
 
 # Integration

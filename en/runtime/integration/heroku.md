@@ -3,7 +3,7 @@ layout: page
 title: Quick Start with PM2
 menu: starter
 lang: en
-redirect_from: "/runtime/quick-start.html"
+redirect_from: "/runtime/integration/heroku"
 ---
 
 # Using PM2 with Heroku

@@ -4,7 +4,7 @@ title: Quick Start with PM2
 menu: starter
 lang: en
 permalink: "/en/runtime/best-practices/"
-redirect_from: "/runtime/quick-start.html"
+redirect_from: "/runtime/best-practices/"
 ---
 
 # Production Best Practices
