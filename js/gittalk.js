@@ -1,7 +1,7 @@
 const gitalk = new Gitalk({
     clientID: '918c405abac62eacf227',
     clientSecret: '7c102fd9965dbe94ce2fb6006ccadcac8f2b9d44',
-    repo: 'pm2-doc',
+    repo: 'doc-pm2Ò',
     owner: 'keymetrics',
     admin: ['keymetrics'],
     id: md5(window.location.pathname),
