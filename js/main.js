@@ -3,7 +3,8 @@ const gitalk = new Gitalk({
   clientSecret: '7c102fd9965dbe94ce2fb6006ccadcac8f2b9d44',
   repo: 'doc-pm2',
   owner: 'keymetrics',
-  admin: ['keymetrics'],
+  admin: ['robin-monnier', 'vmarchaud', 'Unitech'],
+  language: 'en',
   id: md5(window.location.pathname),
   // facebook-like distraction free mode
   distractionFreeMode: false
