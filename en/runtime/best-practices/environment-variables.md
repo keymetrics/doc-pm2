@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: Environment Variables | Best Practices | PM2 Documentation
 menu: starter
 lang: en
 redirect_from: "/runtime/best-practices/environment-variables"

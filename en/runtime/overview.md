@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Overview of PM2
+title: Overview | PM2 Documentation
 menu: starter
 lang: en
 redirect_from:

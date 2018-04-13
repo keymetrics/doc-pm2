@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: Guide | PM2 Documentation
 menu: starter
 lang: en
 permalink: "/en/runtime/guide/"

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: Easy Deploy With SSH | Guide | PM2 Documentation
 menu: starter
 lang: en
 redirect_from: "/runtime/guide/easy-deploy-with-ssh"

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: Startup Hook | Guide | PM2 Documentation
 menu: starter
 lang: en
 redirect_from: "/runtime/guide/startup-hook"

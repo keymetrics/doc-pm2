@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: Quick Start | PM2 Documentation
 menu: starter
 lang: en
 redirect_from: "/runtime/quick-start"

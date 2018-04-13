@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: Elastic Beanstalk | Integration | PM2 Documentation
 menu: starter
 lang: en
 redirect_from: "/runtime/integration/elastic-beanstalk"
