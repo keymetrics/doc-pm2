@@ -1,37 +1,37 @@
 runtime:
-  - title: Overview
+  - title: 概述
     url: "/ch/runtime/overview/"
-  - title: Quick Start
+  - title: 快速开始
     url: "/ch/runtime/quick-start/"
-  - title: Guide
+  - title: 指南 
     url: "/ch/runtime/guide/"
     submenu:
-      - page: Installation
+      - page: 安装
         url: "/ch/runtime/guide/installation/"
-      - page: Ecosystem File
+      - page: 生态系统文件
         url: "/ch/runtime/guide/ecosystem-file/"
-      - page: Process Management
+      - page: 进程管理
         url: "/ch/runtime/guide/process-management/"
-      - page: Log Management
+      - page: 日志管理
         url: "/ch/runtime/guide/log-management/"
-      - page: Startup Hook
+      - page: 启动挂钩
         url: "/ch/runtime/guide/startup-hook/"
-      - page: Load-Balancing
+      - page: 负载平衡
         url: "/ch/runtime/guide/load-balancing/"
-      - page:  Development Tools
+      - page: 开发工具
         url: "/ch/runtime/guide/development-tools/"
-      - page: Easy Deploy with SSH
+      - page: 使用SSH轻松部署
         url: "/ch/runtime/guide/easy-deploy-with-ssh/"
-  - title: Best Practices
+  - title: 最佳实践
     url: "/ch/runtime/best-practices/"
     submenu:
-      - page: Environment Variables
+      - page: 中的环境变量
         url: "/ch/runtime/best-practices/environment-variables/"
-      - page: Graceful Shutdown
+      - page: 正常关机
         url: "/ch/runtime/best-practices/graceful-shutdown/"
-      - page: Stateless Application
+      - page: 无状态应用
         url: "/ch/runtime/best-practices/stateless-application/"
-  - title: Integration
+  - title: 综合
     url: "/ch/runtime/integration/"
     submenu:
       - page: AWS Elastic Beanstalk
@@ -42,48 +42,48 @@ runtime:
         url: "/ch/runtime/integration/heroku/"
       - page: Transpilers
         url: "/ch/runtime/integration/transpilers/"
-      - page: With a Cloud Provider
+      - page: 使用云供应商
         url: "/ch/runtime/integration/cloud-providers/"
-  - title: Reference
+  - title: 参考
     url: "/ch/runtime/reference/"
     submenu:
-      - page: Ecosystem File
+      - page: Ecosystem 文件
         url: "/ch/runtime/reference/ecosystem-file/"
       - page: CLI
         url: "/ch/runtime/reference/pm2-cli/"
-      - page: Programmatic
+      - page: 程序化
         url: "/ch/runtime/reference/pm2-programmatic/"
 
 monitoring:
-  - title: Overview
+  - title: 概述
     url: "/ch/monitoring/overview/"
-  - title: Quick Start
+  - title: 快速入门
     url: "/ch/monitoring/quick-start/"
-  - title: Guide
+  - title: 指南
     url: "/ch/monitoring/guide/"
     submenu:
-      - page: Installation
+      - page: 安装
         url: "/ch/monitoring/guide/installation/"
-      - page: Configuration
+      - page: 配置
         url: "/ch/monitoring/guide/configuration/"
-      - page: Notification
+      - page: 通知
         url: "/ch/monitoring/guide/notifications/"
-      - page: Issue dashboard
+      - page: 问题仪表板
         url: "/ch/monitoring/guide/issue-dashboard/"
-      - page: Transaction tracing
+      - page: 事物跟踪
         url: "/ch/monitoring/guide/transaction-tracing/"
-      - page: Mem & CPU Profiling
+      - page: 内存和CPU分析
         url: "/ch/monitoring/guide/memory-cpu-profiling/"
-  - title: Best Practices
+  - title: 最佳实践
     url: "/ch/monitoring/best-practices/"
     submenu:
-      - page: CPU Profiling
+      - page: CPU分析
         url: "/ch/monitoring/best-practices/cpu-profiling/"
-      - page: Memory Profiling
+      - page: 内存分析
         url: "/ch/monitoring/best-practices/memory-profiling/"
-      - page: Transaction Tracing
+      - page: 事物跟踪
         url: "/ch/monitoring/best-practices/transaction-tracing/"
-  - title: Integration
+  - title: 集成
     url: "/ch/monitoring/integration/"
     submenu:
       - page: AWS Elastic Beanstalk
@@ -92,11 +92,11 @@ monitoring:
         url: "/ch/monitoring/integration/docker/"
       - page: Heroku
         url: "/ch/monitoring/integration/heroku/"
-      - page: With a Cloud Provider
+      - page: 使用云供应商
         url: "/ch/monitoring/integration/cloud-providers/"
-  - title: Reference
+  - title: 参考
     url: "/ch/monitoring/reference/pmx"
 
 enterprise:
-  - title: Overview
+  - title: 概述
     url: "/ch/enterprise/overview/"
