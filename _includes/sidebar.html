@@ -4,19 +4,19 @@
             <a href={{ "/runtime/overview" | prepend: page.lang | prepend: "/" | relative_url }} data-page="runtime-page">
                 <div class="sidebar_2_item sidebar_2_item_runtime">
                     <img class="sidebar_2_item__image" src={{ "/static/pm2-logo-r.png" | relative_url }}>
-                    <div class="sidebar_2_item__text">Runtime</div>
+                    <div class="sidebar_2_item__text">{% if page.lang contains 'en' %}{{'Runtime'}}{% elsif page.lang contains 'ch' %}{{'运行'}}{% endif %}</div>
                 </div>
             </a>
             <a href={{ "/monitoring/overview" | prepend: page.lang | prepend: "/" | relative_url }} data-page="monitoring-page">
                 <div class="sidebar_2_item sidebar_2_item_monitoring">
                     <img class="sidebar_2_item__image" src={{ "/static/pm2-logo-m.png" | relative_url }}>
-                    <div class="sidebar_2_item__text">Monitoring</div>
+                    <div class="sidebar_2_item__text">{% if page.lang contains 'en' %}{{'Monitoring'}}{% elsif page.lang contains 'ch' %}{{'监控'}}{% endif %}</div>
                 </div>
             </a>
             <a href={{ "/enterprise/overview" | prepend: page.lang | prepend: "/" | relative_url }} data-page="enterprise-page">
                 <div class="sidebar_2_item sidebar_2_item_enterprise">
                     <img class="sidebar_2_item__image" src={{ "/static/pm2-logo-e.png" | relative_url }}>
-                    <div class="sidebar_2_item__text">Enterprise</div>
+                    <div class="sidebar_2_item__text">{% if page.lang contains 'en' %}{{'Enterprise'}}{% elsif page.lang contains 'ch' %}{{'企业'}}{% endif %}</div>
                 </div>
             </a>
         </div>
