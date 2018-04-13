@@ -1,19 +1,19 @@
 <aside class="sidebar">
     <div class="sidebar_2_wrapper">
         <div class="sidebar_2">
-            <a href={{ "/en/runtime/overview" | relative_url }} data-page="runtime-page">
+            <a href={{ "/runtime/overview" | prepend: page.lang | prepend: "/" | relative_url }} data-page="runtime-page">
                 <div class="sidebar_2_item sidebar_2_item_runtime">
                     <img class="sidebar_2_item__image" src={{ "/static/pm2-logo-r.png" | relative_url }}>
                     <div class="sidebar_2_item__text">Runtime</div>
                 </div>
             </a>
-            <a href={{ "/en/monitoring/overview" | relative_url }} data-page="monitoring-page">
+            <a href={{ "/monitoring/overview" | prepend: page.lang | prepend: "/" | relative_url }} data-page="monitoring-page">
                 <div class="sidebar_2_item sidebar_2_item_monitoring">
                     <img class="sidebar_2_item__image" src={{ "/static/pm2-logo-m.png" | relative_url }}>
                     <div class="sidebar_2_item__text">Monitoring</div>
                 </div>
             </a>
-            <a href={{ "/en/enterprise/overview" | relative_url }} data-page="enterprise-page">
+            <a href={{ "/enterprise/overview" | prepend: page.lang | prepend: "/" | relative_url }} data-page="enterprise-page">
                 <div class="sidebar_2_item sidebar_2_item_enterprise">
                     <img class="sidebar_2_item__image" src={{ "/static/pm2-logo-e.png" | relative_url }}>
                     <div class="sidebar_2_item__text">Enterprise</div>
@@ -27,7 +27,8 @@
 
     <ul id="acc">
     {% if page.url contains 'runtime' %}{% assign category ='runtime' %}{% elsif page.url contains "monitoring" %}{% assign category ="monitoring" %}{% elsif page.url contains "enterprise" %}{% assign category ="enterprise" %}{% else %}{% assign category ='runtime' %}{% endif %}
-    {% for item in site.data.sidebar.[category] %}
+    {% if page.lang contains 'en' %}{% assign sidebar = site.data.sidebar-en %}{% elsif page.lang contains 'ch' %}{% assign sidebar = site.data.sidebar-ch %}{% endif %}
+    {% for item in sidebar.[category] %}
     {% assign slug_title = item.title | slugify %}
     {% if page.url contains slug_title %}{% assign active = 'active' %}{% else %}{% assign active = '' %}{% endif %}
         <li class="{{ active }}">

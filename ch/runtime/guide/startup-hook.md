@@ -1,3 +1,10 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: ch
+---
+
 # Startup Hook 启动挂钩
 
 The purpose of a startup hook is to save your process list and bring it back at machine restarts, even unexpected ones.

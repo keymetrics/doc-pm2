@@ -1,3 +1,10 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: ch
+---
+
 # Log management 日志管理
 
 Logs are available at realtime and are saved into your hard disk.

@@ -1,3 +1,10 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: ch
+---
+
 # Process management 进程管理
 
 pm2 is a process kept in the background, a daemon, that takes care of all your running processes.

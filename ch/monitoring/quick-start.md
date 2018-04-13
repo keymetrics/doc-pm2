@@ -1,50 +1,63 @@
-# Quick Start
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: ch
+---
+
+# Quick Start 快速入门
 
 In seconds, this Quick Start tutorial will show you how to start monitoring your node.js application with pm2.
+只需几秒，本快速入门教程将向您展示如何开始使用pm2监控您的node.js应用。
 
 We assume that your app has been started or wrapped with pm2. If not, follow the [Quick Start](runtime/quickstart.md) tutorial.
+我们假设您的应用已启动或使用了pm2包装。 如果没有，请按照[快速入门](runtime/quickstart.md) 教程进行。
 
 ---
 
-## Create an account
+## Create an account 创建一个帐户
 
 Register [here](https://app.keymetrics.io/api/oauth/register).
+在 [此处](https://app.keymetrics.io/api/oauth/register)注册。
 
 ---
 
-## Connect your server to the dashboard
+## Connect your server to the dashboard 将您的服务器连接到仪表板
 
 Connect your server to your dashboard and start collecting metrics with:
+将您的服务器连接到仪表板并开始收集指标：
 
 ```bash
 pm2 link <secret> <public>
 ```
 
 Or, if you don't have access to the CLI, add `PM2_PUBLIC_KEY` and `PM2_SECRET_KEY` environment variables set with your public and private keys.
+或者，如果您无权访问CLI，请添加使用公钥和私钥设置的 `PM2_PUBLIC_KEY`和 `PM2_SECRET_KEY`环境变量。
 
 ?> The secret and public keys can be found at the top right of your dashboard
+您可以在仪表板的右上方找到密钥和公钥
 
 ---
 
-## Install CPU/Memory profiling
+## Install CPU/Memory profiling 安装CPU/内存分析
 
 ### g++
 
-You must have `g++` installed:
+You must have `g++` installed: 您必须安装 `g++`：
 
-On Linux, enter `sudo apt-get install build-essential`.
+On Linux, enter `sudo apt-get install build-essential`. 或Linux,输入 `sudo apt-get install build-essential`。
 
-On Mac, enter `g++` in terminal and then follow the instructions.
+On Mac, enter `g++` in terminal and then follow the instructions. 在Mac上，在终端中输入 `g++`，然后按照说明操作。
 
-### CPU/Memory profiler
+### CPU/Memory profiler CPU/内存分析器
 
-Use the pm2 installer:
+Use the pm2 installer: 使用pm2安装程序：
 
 ```bash
 pm2 install profiler
 ```
 
-Then reload your application to enable the profiler:
+Then reload your application to enable the profiler: 然后重载您的应用以启用分析器：
 
 ```bash
 pm2 reload all
@@ -52,23 +65,25 @@ pm2 reload all
 
 ---
 
-## You are done
+## You are done 您已完成
 
 Go back to the dashboard, you have now access to realtime metrics of your app.
+返回仪表板，您现在已可以访问您应用的实时指标。
 
-![a unified overview](overview/unified.png)
-
----
-
-## Next steps
-
-[Configuration](guide/configuration.md)
+![a unified overview 统一概述](overview/unified.png)
 
 ---
 
-## Questions ?
+## Next steps 下一步
+
+[Configuration 配置](guide/configuration.md)
+
+---
+
+## Questions ? 问题？
 
 We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum. You can also have a look at our support github https://github.com/keymetrics/keymetrics-support
+我们永远乐于帮您解决可能遇到的问题。搜索我们的文档或查看常见问题的答案。您也可以在我们的社区论坛发布问题或评论。您也可以看看我们在github中的帮助部分 https://github.com/keymetrics/keymetrics-support
 
 
 

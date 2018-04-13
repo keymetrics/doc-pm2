@@ -1,3 +1,10 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: ch
+---
+
 # Modules
 
 A pm2 module is a standalone software installed and managed by pm2. These softwares are pulled from the npm repository and are published as common Javascript libraries on npm.

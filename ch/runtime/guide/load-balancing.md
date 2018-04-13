@@ -1,3 +1,9 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: ch
+---
 
 # Load-Balancing (cluster mode) 负载平衡（群集模式）
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Overview of PM2
+title: Quick Start with PM2
 menu: starter
 lang: ch
 redirect_from: "/ch"
@@ -34,7 +34,7 @@ pm2 creates a list of processes, that you can access with:pm2会创建一个您�
 pm2 ls
 ```
 
-![pm2 listing pm2 列表]({{site.baseurl}}/runtime/overview/pm2ls.png)
+![pm2 listing pm2 列表](overview/pm2ls.png)
 
 Manage your process list with `pm2 start` and `pm2 delete`。
 用`pm2 start` 和 `pm2 delete` 管理您的进程列表。
@@ -46,7 +46,7 @@ Once added to your process list, manage a process with `pm2 start`, `pm2 stop`, 
 
 ## Logs Management 日志管理
 
-All app logs are saved into the hard disk of your servers into 所有的应用日志都会保存到您的服务器硬盘中`~/.pm2/logs/`.
+All app logs are saved into the hard disk of your servers into 所有的应用日志都会保存到您的服务器硬盘中`~/.pm2/logs/`. 
 
 ```bash
 pm2 logs
@@ -74,7 +74,7 @@ Monitor your app in the terminal to check your app health (CPU usage, memory use
 pm2 monit
 ```
 
-![local monitoring with pm2 用pm2进行本地监测]({{site.baseurl}}/runtime/overview/monit.png)
+![local monitoring with pm2 用pm2进行本地监测](overview/monit.png)
 
 ---
 
@@ -91,7 +91,7 @@ pm2 deploy
 
 ## Next steps 下一步
 
-[Quick Start 快速开始]({{site.baseurl}}/runtime/quick-start/)
+[Quick Start 快速开始](runtime/quickstart.md)
 
 ---
 

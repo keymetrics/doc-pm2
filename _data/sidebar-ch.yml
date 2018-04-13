@@ -1,0 +1,102 @@
+runtime:
+  - title: Overview
+    url: "/ch/runtime/overview/"
+  - title: Quick Start
+    url: "/ch/runtime/quick-start/"
+  - title: Guide
+    url: "/ch/runtime/guide/"
+    submenu:
+      - page: Installation
+        url: "/ch/runtime/guide/installation/"
+      - page: Ecosystem File
+        url: "/ch/runtime/guide/ecosystem-file/"
+      - page: Process Management
+        url: "/ch/runtime/guide/process-management/"
+      - page: Log Management
+        url: "/ch/runtime/guide/log-management/"
+      - page: Startup Hook
+        url: "/ch/runtime/guide/startup-hook/"
+      - page: Load-Balancing
+        url: "/ch/runtime/guide/load-balancing/"
+      - page:  Development Tools
+        url: "/ch/runtime/guide/development-tools/"
+      - page: Easy Deploy with SSH
+        url: "/ch/runtime/guide/easy-deploy-with-ssh/"
+  - title: Best Practices
+    url: "/ch/runtime/best-practices/"
+    submenu:
+      - page: Environment Variables
+        url: "/ch/runtime/best-practices/environment-variables-in-nodejs/"
+      - page: Graceful Shutdown
+        url: "/ch/runtime/best-practices/graceful-shutdown/"
+      - page: Stateless Application
+        url: "/ch/runtime/best-practices/stateless-application/"
+  - title: Integration
+    url: "/ch/runtime/integration/"
+    submenu:
+      - page: AWS Elastic Beanstalk
+        url: "/ch/runtime/integration/elastic-beanstalk/"
+      - page: Docker
+        url: "/ch/runtime/integration/docker/"
+      - page: Heroku
+        url: "/ch/runtime/integration/heroku/"
+      - page: Transpilers
+        url: "/ch/runtime/integration/transpilers/"
+      - page: With a Cloud Provider
+        url: "/ch/runtime/integration/cloud-providers/"
+  - title: Reference
+    url: "/ch/runtime/reference/"
+    submenu:
+      - page: Ecosystem File
+        url: "/ch/runtime/reference/ecosystem-file/"
+      - page: CLI
+        url: "/ch/runtime/reference/pm2-cli/"
+      - page: Programmatic
+        url: "/ch/runtime/reference/pm2-programmatic/"
+
+monitoring:
+  - title: Overview
+    url: "/ch/monitoring/overview/"
+  - title: Quick Start
+    url: "/ch/monitoring/quick-start/"
+  - title: Guide
+    url: "/ch/monitoring/guide/"
+    submenu:
+      - page: Installation
+        url: "/ch/monitoring/guide/installation/"
+      - page: Configuration
+        url: "/ch/monitoring/guide/configuration/"
+      - page: Notification
+        url: "/ch/monitoring/guide/notifications/"
+      - page: Issue dashboard
+        url: "/ch/monitoring/guide/issue-dashboard/"
+      - page: Transaction tracing
+        url: "/ch/monitoring/guide/transaction-tracing/"
+      - page: Mem & CPU Profiling
+        url: "/ch/monitoring/guide/memory-cpu-profiling/"
+  - title: Best Practices
+    url: "/ch/monitoring/best-practices/"
+    submenu:
+      - page: CPU Profiling
+        url: "/ch/monitoring/best-practices/cpu-profiling/"
+      - page: Memory Profiling
+        url: "/ch/monitoring/best-practices/memory-profiling/"
+      - page: Transaction Tracing
+        url: "/ch/monitoring/best-practices/transaction-tracing/"
+  - title: Integration
+    url: "/ch/monitoring/integration/"
+    submenu:
+      - page: AWS Elastic Beanstalk
+        url: "/ch/monitoring/integration/elastic-beanstalk/"
+      - page: Docker
+        url: "/ch/monitoring/integration/docker/"
+      - page: Heroku
+        url: "/ch/monitoring/integration/heroku/"
+      - page: With a Cloud Provider
+        url: "/ch/monitoring/integration/cloud-providers/"
+  - title: Reference
+    url: "/ch/monitoring/reference/pmx"
+
+enterprise:
+  - title: Overview
+    url: "/ch/enterprise/overview/"

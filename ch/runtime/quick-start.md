@@ -1,3 +1,10 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: ch
+---
+
 # Quick Start 快速开始
 
 In seconds, this Quick Start tutorial will show you how to set up to production a node.js application with pm2.

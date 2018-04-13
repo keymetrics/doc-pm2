@@ -1,3 +1,10 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: ch
+---
+
 # Ecosystem File 生态系统文件
 
 When deploying on multiple server or when using multiple CLI arguments, an alternative to the command line become more conveninent for starting your apps.

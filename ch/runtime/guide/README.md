@@ -1,3 +1,10 @@
+---
+layout: page
+title: Quick Start with PM2
+menu: starter
+lang: ch
+---
+
 # Guide 指南
 
 This guide will show you how to install and use pm2 to set up your application to production.
@@ -7,7 +14,7 @@ This guide will show you how to install and use pm2 to set up your application t
 
 ## Terminology 术语
 
-Before starting, some terminology we use across this guide:
+Before starting, some terminology we use across this guide: 
 开始之前，我们在本指南中使用了以下一些术语：
 
 A **daemon** is a program that is run as a background process. pm2 in essence is a daemon: always alive in the background, it takes care of all your processes, keeping them alive. Also, all your applications started with pm2 are daemonized.
@@ -16,6 +23,4 @@ A **daemon** is a program that is run as a background process. pm2 in essence is
 The **process list** is where all your applications along with options and environment are registered. This list simply contains all the processes pm2 has started.
 **process list** 即进程列表，是注册您所有应用以及选项和环境的地方。该列表仅包含pm2已启动的所有进程。
 
-<div>
-  <p align="center">[Let's start 即刻开始]({{site.baseurl}}/runtime/guide/installation/)</p>
-</div>
+<p align="center">[Let's start 即刻开始](runtime/guide/installation.md)</p>
