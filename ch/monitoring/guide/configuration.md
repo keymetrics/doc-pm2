@@ -144,7 +144,7 @@ pmx.emit('user:register', {
 
 ## Next steps 下一步
 
-[Notifications 通知](monitoring/guide/notifications.md)
+[Notifications 通知]({{site.baseurl}}/ch/monitoring/guide/notification)
 
 ---
 

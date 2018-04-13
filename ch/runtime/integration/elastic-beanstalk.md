@@ -92,22 +92,22 @@ In order to get access keys, you must create an IAM user. You can do that [here]
 
 Add a user:添加一个用户：
 
-![create an IAM User](IAM-add.png)
+![create an IAM User]({{site.baseurl}}/img/runtime/IAM-add.png)
 
 Give it the programmatic access:
 给予它编程访问：
 
-![select programmatic access](IAM-prog.png)
+![select programmatic access]({{site.baseurl}}/img/runtime/IAM-prog.png)
 
 Select the `ElasticBeanstalkFullAccess` strategy:
 选择 `ElasticBeanstalkFullAccess`策略：
 
-![select programmatic access](IAM-strat.png)
+![select programmatic access]({{site.baseurl}}/img/runtime/IAM-strat.png)
 
 Create the user and you will get your access keys:
 创建用户，您将获得您的访问密钥：
 
-![access keys](IAM-creds.png)
+![access keys]({{site.baseurl}}/img/runtime/IAM-creds.png)
 
 Copy and paste your `access-id` and your `secret-key` in your AWS config file (`~/.aws/config`):
 将您的 `access-id`和您的 `secret-key`复制并粘贴到您的AWS配置文件 (`~/.aws/config`)：

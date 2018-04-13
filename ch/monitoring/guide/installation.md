@@ -79,13 +79,13 @@ pm2 reload all
 Go back to the dashboard, you have now access to realtime metrics of your app.
 返回仪表板，您现在已可以访问您应用的实时指标。
 
-![a unified overview 统一概述](../overview/unified.png)
+![dashboard view]({{site.baseurl}}/img/monitoring/unified.png)
 
 ---
 
 ## Next steps 下一步
 
-[Configuration 配置](monitoring/guide/configuration.md)
+[Configuration 配置]({{site.baseurl}}/ch/monitoring/guide/configuration)
 
 ---
 

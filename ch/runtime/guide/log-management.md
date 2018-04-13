@@ -174,8 +174,7 @@ The format must follow a moment.js format, list [here](https://momentjs.com/docs
 
 ## Next step 下一步
 
-[Startup Hook](runtime/guide/startup-hook.md)
-[启动挂钩](runtime/guide/startup-hook.md)
+[Startup Hook 启动挂钩]({{site.baseurl}}/ch/runtime/guide/startup-hook)
 
 ---
 

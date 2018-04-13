@@ -26,7 +26,7 @@ runtime:
     url: "/ch/runtime/best-practices/"
     submenu:
       - page: Environment Variables
-        url: "/ch/runtime/best-practices/environment-variables-in-nodejs/"
+        url: "/ch/runtime/best-practices/environment-variables/"
       - page: Graceful Shutdown
         url: "/ch/runtime/best-practices/graceful-shutdown/"
       - page: Stateless Application

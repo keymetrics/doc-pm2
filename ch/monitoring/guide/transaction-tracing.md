@@ -13,7 +13,7 @@ The transaction tracing is useful to troubleshoot performance issues and get det
 Slow HTTP calls are identified and the database and external calls are aggregated to understand why.
 缓慢的HTTP调用被识别，并且数据库和外部调用都被聚合从而对其进行理解。
 
-![transaction tracing](../overview/tracing.png)
+![transaction tracing]({{site.baseurl}}/img/monitoring/tracing.png)
 
 ---
 

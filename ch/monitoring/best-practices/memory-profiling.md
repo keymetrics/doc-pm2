@@ -2,8 +2,7 @@
 layout: page
 title: Quick Start with PM2
 menu: starter
-lang: en
-redirect_from: "/monitoring/best-practices/memory-profiling"
+lang: ch
 ---
 
 # Memory Profiling

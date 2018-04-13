@@ -126,8 +126,7 @@ module.exports = {
 
 ## Next steps 下一步
 
-[Development tools](runtime/guide/dev.md)
-[开发工具](runtime/guide/dev.md)
+[Development Tools 开发工具]({{site.baseurl}}/ch/runtime/guide/development-tools)
 
 ---
 

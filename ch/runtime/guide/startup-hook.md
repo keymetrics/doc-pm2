@@ -137,8 +137,7 @@ There are some external libraries to generate a Windows compatible startup scrip
 
 ## Next step 下一步
 
-[Load-balancing (cluster mode)](runtime/guide/cluster.md)
-[负载平衡 (群集模式)](runtime/guide/cluster.md)
+[Load-balancing (cluster mode) 负载平衡 (群集模式)]({{site.baseurl}}/ch/runtime/guide/load-balancing)
 
 ---
 

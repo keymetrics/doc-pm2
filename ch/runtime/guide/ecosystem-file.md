@@ -140,7 +140,7 @@ pm2 restart ecosystem.config.js --env production --update-env
 
 ## Next step 下一步
 
-[Process Management 进程管理](runtime/guide/process-management.md)
+[Process Management 进程管理]({{site.baseurl}}/ch/runtime/guide/process-management)
 
 ---
 

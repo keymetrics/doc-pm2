@@ -13,10 +13,10 @@ This section will help you integrate pm2.
 
 Pick the tutorial that best matches your needs:
 
-- [AWS Elastic Beanstalk]({{site.baseurl}}/runtime/integration/elastic-beanstalk/)
-- [Docker]({{site.baseurl}}/runtime/integration/docker/)
-- [Heroku]({{site.baseurl}}/runtime/integration/heroku/)
-- [NGINX]({{site.baseurl}}/runtime/integration/nginx/)
-- [Now.sh]({{site.baseurl}}/runtime/integration/now/)
-- [Transpilers]({{site.baseurl}}/runtime/integration/transpilers/)
-- [With a Cloud Provider]({{site.baseurl}}/runtime/integration/cloud-providers/)
+- [AWS Elastic Beanstalk]({{site.baseurl}}/en/runtime/integration/elastic-beanstalk/)
+- [Docker]({{site.baseurl}}/en/runtime/integration/docker/)
+- [Heroku]({{site.baseurl}}/en/runtime/integration/heroku/)
+- [NGINX]({{site.baseurl}}/en/runtime/integration/nginx/)
+- [Now.sh]({{site.baseurl}}/en/runtime/integration/now/)
+- [Transpilers]({{site.baseurl}}/en/runtime/integration/transpilers/)
+- [With a Cloud Provider]({{site.baseurl}}/en/runtime/integration/cloud-providers/)

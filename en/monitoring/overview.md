@@ -98,7 +98,7 @@ A Pm2 module can be a log rotation module, database monitoring module, a standal
 
 ### Next steps
 
-[Quick Start]({{site.baseurl}}/monitoring/quick-start/)
+[Quick Start]({{site.baseurl}}/en/monitoring/quick-start/)
 
 ---
 

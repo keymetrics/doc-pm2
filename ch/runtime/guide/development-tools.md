@@ -116,8 +116,7 @@ pm2 start ecosystem.config.js
 
 ## Next step 下一步
 
-[Easy Deploy with SSH ](runtime/guide/deploy.md)
-[使用SSH轻松部署 ](runtime/guide/deploy.md)
+[Easy Deploy with SSH 使用SSH轻松部署 ]({{site.baseurl}}/ch/runtime/guide/easy-deploy-with-ssh)
 
 ---
 

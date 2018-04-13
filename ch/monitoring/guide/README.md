@@ -3,6 +3,7 @@ layout: page
 title: Quick Start with PM2
 menu: starter
 lang: ch
+permalink: "/ch/monitoring/guide/"
 ---
 
 # Guide 指南

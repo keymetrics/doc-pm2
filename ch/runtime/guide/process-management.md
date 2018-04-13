@@ -149,14 +149,13 @@ The local monitoring tool get you insight about CPU usage, memory usage, loop de
 pm2 monit
 ```
 
-![local monitoring with pm2](../overview/monit.png)
+![pm2 local monitoring]({{site.baseurl}}/img/runtime/monit.png)
 
 ---
 
 ## Next step 下一步
 
-[Log Management](runtime/guide/log-management.md)
-[日志管理](runtime/guide/log-management.md)
+[Log Management 日志管理]({{site.baseurl}}/ch/runtime/guide/log-management)
 
 ---
 

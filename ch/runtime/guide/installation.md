@@ -63,8 +63,7 @@ npm install pm2 -g && pm2 update
 
 ## Next step 下一步
 
-[Ecosystem File](runtime/guide/ecosystem-file.md)
-[生态系统文件](runtime/guide/ecosystem-file.md)
+[Ecosystem File 生态系统文件]({{site.baseurl}}/ch/runtime/guide/ecosystem-file)
 
 ---
 

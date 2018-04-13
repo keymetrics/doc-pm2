@@ -130,18 +130,18 @@ pm2 reload app
 Using tabulation, you can use the autocompletion:
 使用制表符，您可以使用自动完成功能：
 
-![pm2 listing](overview/autocomplete.png)
+![pm2 autocompletion]({{site.baseurl}}/img/runtime/autocomplete.png)
 
 Use `--help`to get more information on a command:
 使用 `--help`获得更多关于指令的信息：
 
-![pm2 listing](overview/help.png)
+![pm2 help]({{site.baseurl}}/img/runtime/help.png)
 
 ---
 
 ## Next steps 下一步
 
-[Ecosystem File 生态系统文件](runtime/guide/ecosystem-file.md) 
+[Ecosystem File 生态系统文件]({{site.baseurl}}/ch/runtime/guide/ecosystem-file) 
 
 ---
 

@@ -2,9 +2,8 @@
 layout: page
 title: Monitoring Best Practices
 menu: starter
-lang: en
-permalink: "/en/monitoring/best-practices/"
-redirect_from: "/monitoring/best-practices/"
+lang: ch
+permalink: "/ch/monitoring/best-practices/"
 ---
 
 # Monitoring Best Practices

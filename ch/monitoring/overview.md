@@ -10,7 +10,7 @@ lang: ch
 Why monitor your app with pm2 ? At the end of this pm2 monitoring overview, you'll have a good understanding of the capabilities of pm2 monitoring.
 为什么要用pm2监控您的应用？ 在pm2监控概述结束时，您将对pm2监测功能有很好的了解。
 
----
+--- 
 
 ## Global Dashboard 全球仪表板
 
@@ -19,14 +19,14 @@ Why monitor your app with pm2 ? At the end of this pm2 monitoring overview, you'
 PM2 Monitoring allows you to have an extended view of all your apps and databases in one single place, at real-time or through history. **Stop ssh in all your servers one by one**, instead, save time by having a condensed infrastructure monitoring view.
 通过PM2 Monitoring，您只需在一个界面即可实时或通过历史记录查看所有应用和数据库的详细信息。 **别再一对一的ssh服务器连接了**，您可以通过精简的基础架构集成式监控，以节省时间
 
-![a unified overview](overview/unified.png)
+![a unified overview]({{site.baseurl}}/img/monitoring/unified.png)
 
 ### Custom Metrics 自定义指标
 
 Expose the important variables from your Node.js applications source code and display them as performance metrics on the pm2 monitoring dashboard. **Monitor values that matter.**
 公开Node.js应用源代码中的重要变量，并将它们作为性能指标显示在pm2监视仪表板上。 **监视重要的值。**
 
-![custom metrics](overview/personalized.png)
+![custom metrics]({{site.baseurl}}/img/monitoring/personalized.png)
 
 ### Notifications 提醒
 
@@ -36,7 +36,7 @@ Know when a data reaches a threshold, when an error occurred in your application
 Even though pm2 runtime makes sure that your application have no downtime, be notified in these critical situation in order to react. **Be notified and reactive in any critical situations.**
 尽管pm2运行时确保您的应用没有停机时间，但在这些重要情况下要收到通知才能做出反应。 **在任何特殊情况下都得到通知并做出反应。**
 
-![notifications](overview/notifications.png)
+![notifications]({{site.baseurl}}/img/monitoring/notifications.png)
 
 ---
 
@@ -50,7 +50,7 @@ PM2 Monitoring会生成Node.js中“异常仪表板”中发生的所有错误�
 Stop spending time finding bugs or trying to replay them, we provide you an "Issue Dashboard" with everything in one place, to make debugging easier. **Drill down in your code and get the answer.**
 停止花时间查找错误或尝试重播它们，我们为您提供一个“异常仪表板”，将所有内容放在一个地方，以便更轻松地进行调试。 **深入解读您的代码并得到解决方案。**
 
-![issue dashboard](overview/issue.png)
+![issue dashboard]({{site.baseurl}}/img/monitoring/issue.png)
 
 ### Transaction Tracing 事物跟踪
 
@@ -61,7 +61,7 @@ The "Transaction Tracing" helps you troubleshoot performance issues and to get d
 “事务跟踪”可帮助您排查性能问题，并获得有关您的应用工作情况的详细信息（最慢的路线，最浪费的呼叫数量）。 **提供更好的用户体验，使您的应用更快。**
 
 
-![transaction tracing](overview/tracing.png)
+![transaction tracing]({{site.baseurl}}/img/monitoring/tracing.png)
 
 ### Memory & CPU profiling 内存和CPU分析
 
@@ -71,7 +71,7 @@ Take memory dumps and CPU snapshots straight from your production servers.
 **Memory profiling lets you find any memory leaks in your application. CPU profiling helps you identify particular resource-heavy tasks.**
 **内存分析可让您在应用中发现任何可能存在的内存泄漏问题。CPU分析可帮助您识别高度消耗资源的任务。**
 
-![cpu and memory profiling](overview/profiling.png)
+![cpu and memory profiling]({{site.baseurl}}/img/monitoring/profiling.png)
 
 ---
 
@@ -85,7 +85,7 @@ PM2 Monitoring使您可以在应用的源代码中增强自定义功能。
  For example, you can assign values to your application variables or just switch it to maintenance mode. In other words you can **expose triggerable functions in your code**.
  例如，您可以给应用变量赋值，或者切换到维护模式。换句话说，您可以在 **您的代码中公开可触发函数**。
 
-![remote action](overview/remote.png)
+![remote action]({{site.baseurl}}/img/monitoring/remote.png)
 
 ### Event Dashboard 事件仪表板
 
@@ -96,7 +96,7 @@ For example your can track and be alerted when a new user has registered, a new 
 例如，当新用户注册时，一封新邮件被发出时，一项工作进程完成式，您可以对它们跟进并收到提醒。 **您可以直接从您的代码发出任意事件，也可以订阅其中的一些事件**
 
 
-![event](overview/event.png)
+![event]({{site.baseurl}}/img/monitoring/event.png)
 
 ### Third-party modules 第三方模块
 
@@ -107,14 +107,14 @@ Extend the capabilities of the PM2 dashboard by using external modules listed in
 A Pm2 module can be a log rotation module, database monitoring module, a standalone http proxy, a load balancer, a DNS server or any kind of utility. **Anyone can create and publish its own module.**
 Pm2模块可以是日志轮换模块，数据库监控模块，一个独立的http代理，一个负载平衡器，一个DNS服务器或任意类型的实用工具。**任何人都可以创建和发布自己的模块。**
 
-![modules](overview/modules.png)
+![modules]({{site.baseurl}}/img/monitoring/modules.png)
 
 
 ---
 
 ### Next steps 下一步
 
-[Quick Start 快速入门](monitoring/quickstart.md)
+[Quick Start 快速入门]({{site.baseurl}}/ch/monitoring/quick-start/)
 
 ---
 
