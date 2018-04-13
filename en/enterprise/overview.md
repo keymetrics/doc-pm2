@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Overview - PM2 Enterprise Documentation
+title: Overview | PM2 Enterprise Documentation
 menu: starter
 lang: en
 redirect_from: "/enterprise/overview/"

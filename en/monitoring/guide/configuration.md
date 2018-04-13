@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: Configuration | Guide | PM2 Plus Documentation
 menu: starter
 lang: en
 redirect_from: "/monitoring/guide/configuration"

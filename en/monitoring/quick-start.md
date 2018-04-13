@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quick Start | PM2 Plus
+title: Quick Start | PM2 Plus Documentation
 menu: starter
 lang: en
 redirect_from: "/monitoring/quick-start"

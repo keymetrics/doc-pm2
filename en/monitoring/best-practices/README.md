@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Monitoring Best Practices
+title: Best Practices | PM2 Plus Documentation
 menu: starter
 lang: en
 permalink: "/en/monitoring/best-practices/"

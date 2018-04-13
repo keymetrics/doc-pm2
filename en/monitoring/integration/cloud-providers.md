@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: Cloud Providers | Integration | PM2 Plus Documentation
 menu: starter
 lang: en
 redirect_from: "/monitoring/integration/cloud-providers"

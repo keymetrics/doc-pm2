@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: Integration | PM2 Plus Documentation
 menu: starter
 lang: en
 permalink: "/en/monitoring/integration/"

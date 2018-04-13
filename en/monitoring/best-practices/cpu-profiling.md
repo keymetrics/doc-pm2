@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CPU Profiling Guide
+title: CPU Profiling | Best Practices | PM2 Plus Documentation
 menu: starter
 lang: en
 redirect_from: "/monitoring/best-practices/cpu-profiling"
