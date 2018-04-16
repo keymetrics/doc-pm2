@@ -11,6 +11,6 @@ redirect_from: "/monitoring/best-practices/"
 
 This section gathers best practices to make your app scalable from the beginning.
 
-- [CPU Profiling]({{site.baseurl}}/runtime/best-practices/cpu-profiling/)
-- [Memory Profiling]({{site.baseurl}}/runtime/best-practices/memory-profiling/)
-- [Transaction Tracing]({{site.baseurl}}/runtime/best-practices/transaction-tracing/)
+- [CPU Profiling]({{site.baseurl}}/monitoring/best-practices/cpu-profiling/)
+- [Memory Profiling]({{site.baseurl}}/monitoring/best-practices/memory-profiling/)
+- [Transaction Tracing]({{site.baseurl}}/monitoring/best-practices/transaction-tracing/)
