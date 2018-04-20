@@ -157,7 +157,7 @@ The format must follow a moment.js format, list [here](https://momentjs.com/docs
 
 ## Next step
 
-[Startup Hook]({{site.baseurl}}/runtime/guide/startup-hook/)
+[Startup Hook]({{ site.baseurl }}{% link en/runtime/guide/startup-hook.md %})
 
 ---
 

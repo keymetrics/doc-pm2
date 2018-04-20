@@ -133,7 +133,7 @@ pmx.emit('user:register', {
 
 ## Next steps
 
-[Notifications](monitoring/guide/notifications.md)
+[Notifications]({{ site.baseurl }}{% link en/monitoring/guide/notifications.md %})
 
 ---
 

@@ -130,7 +130,7 @@ Use `--help`to get more information on a command:
 
 ## Next steps
 
-[Ecosystem File]({{site.baseurl}}/runtime/guide/ecosystem-file/)
+[Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
 
 ---
 

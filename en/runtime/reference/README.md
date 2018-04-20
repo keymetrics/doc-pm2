@@ -9,14 +9,14 @@ redirect_from: "/runtime/reference/"
 
 # Reference
 
-- [Ecosystem File Reference]({{site.baseurl}}/en/runtime/references/ecosystem-file/)
+- [Ecosystem File Reference]({{ site.baseurl }}{% link en/runtime/reference/ecosystem-file.md %})
 
 A complete description of all options available in the ecosystem file.
 
-- [CLI Reference]({{site.baseurl}}/en/runtime/references/pm2-cli/)
+- [CLI Reference]({{ site.baseurl }}{% link en/runtime/reference/pm2-cli.md %})
 
 A complete description of CLI commands available.
 
-- [Programmatic Reference]({{site.baseurl}}/en/runtime/references/pm2-programmatic/)
+- [Programmatic Reference]({{ site.baseurl }}{% link en/runtime/reference/pm2-programmatic.md %})
 
 A complete description of all methods available when using pm2 programmatically.

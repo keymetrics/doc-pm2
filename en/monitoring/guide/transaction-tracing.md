@@ -146,7 +146,7 @@ The impact on performance should be low since there is no heavy logic done in yo
 
 ## Next steps
 
-[Profiling]({{site.baseurl}}/monitoring/guide/profiling.md)
+[Profiling]({{ site.baseurl }}{% link en/monitoring/guide/memory-cpu-profiling.md %})
 
 ---
 

@@ -70,7 +70,7 @@ Go back to the dashboard, you have now access to realtime metrics of your app.
 
 ## Next steps
 
-[Configuration]({{site.baseurl}}/en/monitoring/guide/configuration.md)
+[Configuration]({{ site.baseurl }}{% link en/monitoring/guide/configuration.md %})
 
 ---
 

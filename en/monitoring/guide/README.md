@@ -21,4 +21,4 @@ A **server** is an entity from which pm2 monitoring receive informations from on
 
 A **process** is an entity of the process list (`pm2 ls`).
 
-<p align="center">[Let's start](monitoring/guide/installation.md)</p>
+<p align="center">[Let's start]({{ site.baseurl }}{% link en/monitoring/guide/installation.md %})</p>

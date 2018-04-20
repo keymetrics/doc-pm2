@@ -145,7 +145,7 @@ Use case example: You can now setup an express server that can receive webhooks,
 
 ## Next steps
 
-[Issue Dashboard](monitoring/guide/issue-dashboard.md)
+[Issue Dashboard]({{ site.baseurl }}{% link en/monitoring/guide/issue-dashboard.md %})
 
 ---
 

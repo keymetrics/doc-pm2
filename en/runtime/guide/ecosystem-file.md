@@ -39,7 +39,7 @@ module.exports = {
 }
 ```
 
-For more information about available properties, check the [ecosystem file reference]({{site.baseurl}}/runtime/references/ecosystem-file/).
+For more information about available properties, check the [ecosystem file reference]({{ site.baseurl }}{% link en/runtime/reference/ecosystem-file.md %}).
 
 ---
 
@@ -127,7 +127,7 @@ pm2 restart ecosystem.config.js --env production --update-env
 
 ## Next step
 
-[Process Management]({{site.baseurl}}/runtime/guide/process-management/)
+[Process Management]({{ site.baseurl }}{% link en/runtime/guide/process-management.md %})
 
 ---
 

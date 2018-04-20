@@ -57,7 +57,7 @@ app.use(pmx.expressErrorHandler())
 
 ## Next steps
 
-[Transaction Tracing]({{site.baseurl}}/monitoring/guide/transaction-tracing.md)
+[Transaction Tracing]({{ site.baseurl }}{% link en/monitoring/guide/transaction-tracing.md %})
 
 ---
 
