@@ -6,10 +6,10 @@ lang: ch
 permalink: "/ch/monitoring/best-practices/"
 ---
 
-# Monitoring Best Practices
+# 监控最佳实践
 
-This section gathers best practices to make your app scalable from the beginning.
+本节收集了有关最佳实践的内容，以便从一开始就可以扩展您的应用。
 
-- [CPU Profiling]({{site.baseurl}}/runtime/best-practices/cpu-profiling/)
-- [Memory Profiling]({{site.baseurl}}/runtime/best-practices/memory-profiling/)
-- [Transaction Tracing]({{site.baseurl}}/runtime/best-practices/transaction-tracing/)
+- [CPU分析]({{site.baseurl}}/runtime/best-practices/cpu-profiling/)
+- [内存分析]({{site.baseurl}}/runtime/best-practices/memory-profiling/)
+- [事务跟踪]({{site.baseurl}}/runtime/best-practices/transaction-tracing/)
