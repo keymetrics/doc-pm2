@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 问题仪表板 | 指南 | PM2 Plus教程
+title-en: Issue Dashboard | Guide | PM2 Plus Documentation
 menu: starter
 lang: ch
 ---
@@ -56,8 +57,7 @@ app.use(pmx.expressErrorHandler())
 
 ## 下一步
 
-[事务跟踪]({{site.baseurl}}/ch/monitoring/guide/transaction-tracing)
-
+[事务跟踪]({{ site.baseurl }}{% link ch/monitoring/guide/transaction-tracing.md %})
 ---
 
 ## 疑问？

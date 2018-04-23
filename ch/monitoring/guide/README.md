@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 指南 | PM2 Plus教程
+title-en: Guide | PM2 Plus Documentation
 menu: starter
 lang: ch
 permalink: "/ch/monitoring/guide/"
@@ -20,4 +21,4 @@ permalink: "/ch/monitoring/guide/"
 
 **process** 是进程列表 (`pm2 ls`)的实体。
 
-<p align="center">[开始吧](monitoring/guide/installation.md)</p>
+<p align="center">[开始吧]({{ site.baseurl }}{% link ch/monitoring/guide/installation.md %})</p>

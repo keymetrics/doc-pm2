@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 事务跟踪 | 指南 | PM2 Plus教程
+title-en: Transaction Tracing | Guide | PM2 Plus Documentation
 menu: starter
 lang: ch
 ---
@@ -147,7 +148,7 @@ pm2 reload <app_name> --disable-trace
 
 ## 下一步
 
-[分析](monitoring/guide/profiling.md)
+[分析]({{ site.baseurl }}{% link ch/monitoring/guide/memory-cpu-profiling.md %})
 
 ---
 

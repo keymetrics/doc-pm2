@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 通知 | 指南 | PM2 Plus教程
+title-en: Notifications | Guide | PM2 Plus Documentation
 menu: starter
 lang: ch
 ---
@@ -144,7 +145,7 @@ Slack集成允许您在选定的Slack频道直接接收异常情况和事件通�
 
 ## 下一步
 
-[问题仪表板](monitoring/guide/issue-dashboard.md)
+[问题仪表板]({{ site.baseurl }}{% link ch/monitoring/guide/issue-dashboard.md %})
 
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 内存和CPU分析 | 指南 | PM2 Plus教程
+title-en: Memory & CPU Profiling | Guide | PM2 Plus Documentation
 menu: starter
 lang: ch
 ---
@@ -41,7 +42,7 @@ pm2 monitoring中的配置文件允许您获取生产服务器的远程CPU/内�
 
 感谢您读完本指南。
 
-您现在可以查看 [reference](../reference/pmx.md)来掌握pm2的所有功能。
+您现在可以查看 [reference]({{ site.baseurl }}{% link ch/monitoring/reference/pmx.md %})来掌握pm2的所有功能。
 
 ---
 

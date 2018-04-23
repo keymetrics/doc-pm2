@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 配置 | 指南 | PM2 Plus教程
+title-en: Configuration | Guide | PM2 Plus Documentation
 menu: starter
 lang: ch
 ---
@@ -132,7 +133,7 @@ pmx.emit('user:register', {
 
 ## 下一步
 
-[通知]({{site.baseurl}}/ch/monitoring/guide/notification)
+[通知]({{ site.baseurl }}{% link ch/monitoring/guide/notifications.md %})
 
 ---
 

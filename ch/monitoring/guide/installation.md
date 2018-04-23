@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 安装 | 指南 | PM2 Plus教程
+title-en: Installation | Guide | PM2 Plus Documentation
 menu: starter
 lang: ch
 ---
@@ -77,7 +78,7 @@ pm2 reload all
 
 ## 下一步
 
-[配置]({{site.baseurl}}/ch/monitoring/guide/configuration)
+[配置]({{ site.baseurl }}{% link ch/monitoring/guide/configuration.md %})
 
 ---
 
