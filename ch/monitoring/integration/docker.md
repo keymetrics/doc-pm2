@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: Docker | 集成 | PM2 Plus教程
+title: Docker | Integration | PM2 Plus Documentation
 menu: starter
 lang: ch
 ---

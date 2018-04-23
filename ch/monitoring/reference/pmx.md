@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 参考 | PM2 Plus教程
+title: Reference | PM2 Plus Documentation
 menu: starter
 lang: ch
 ---

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Monitoring Best Practices
+title: 监控最佳实践 | PM2 Plus教程
+title-en: Best Practices | PM2 Plus Documentation
 menu: starter
 lang: ch
 permalink: "/ch/monitoring/best-practices/"
@@ -10,6 +11,6 @@ permalink: "/ch/monitoring/best-practices/"
 
 本节收集了有关最佳实践的内容，以便从一开始就可以扩展您的应用。
 
-- [CPU分析]({{site.baseurl}}/runtime/best-practices/cpu-profiling/)
-- [内存分析]({{site.baseurl}}/runtime/best-practices/memory-profiling/)
-- [事务跟踪]({{site.baseurl}}/runtime/best-practices/transaction-tracing/)
+- [CPU分析]({{ site.baseurl }}{% link ch/monitoring/best-practices/cpu-profiling.md %})
+- [内存分析]({{ site.baseurl }}{% link ch/monitoring/best-practices/memory-profiling.md %})
+- [事务跟踪]({{ site.baseurl }}{% link ch/monitoring/best-practices/transaction-tracing.md %})

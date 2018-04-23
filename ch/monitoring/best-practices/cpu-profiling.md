@@ -1,6 +1,7 @@
 ---
 layout: page
-title: CPU Profiling Guide
+title: CPU分析 | 监控最佳实践 | PM2 Plus教程
+title-en: CPU Profiling | Best Practices | PM2 Plus Documentation
 menu: starter
 lang: ch
 ---

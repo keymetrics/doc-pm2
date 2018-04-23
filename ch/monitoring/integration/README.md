@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 集成 | PM2 Plus教程
+title-en: Integration | PM2 Plus Documentation
 menu: starter
 lang: ch
 permalink: "/ch/monitoring/integration/"
@@ -12,8 +13,7 @@ permalink: "/ch/monitoring/integration/"
 
 选择最符合您需求的教程：
 
-- [AWS Elastic Beanstalk](monitoring/integration/beanstalk.md)
-- [Docker](monitoring/integration/docker.md)
-- [Heroku](monitoring/integration/heroku.md)
-- [Now.sh](monitoring/integration/now.md)
-- [使用云供应商](monitoring/integration/cloud-providers.md)
+- [AWS Elastic Beanstalk]({{ site.baseurl }}{% link ch/monitoring/integration/elastic-beanstalk.md %})
+- [Docker]({{ site.baseurl }}{% link ch/monitoring/integration/docker.md %})
+- [Heroku]({{ site.baseurl }}{% link ch/monitoring/integration/heroku.md %})
+- [使用云供应商]({{ site.baseurl }}{% link ch/monitoring/integration/cloud-providers.md %})

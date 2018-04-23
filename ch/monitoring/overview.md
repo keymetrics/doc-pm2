@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 概述 | PM2 Plus教程
+title-en: Overview | PM2 Plus Documentation
 menu: starter
 lang: ch
 ---
@@ -98,8 +99,7 @@ Pm2模块可以是日志轮换模块，数据库监控模块，一个独立的ht
 
 ### 下一步
 
-[快速入门]({{site.baseurl}}/ch/monitoring/quick-start/)
-
+[快速入门]({{ site.baseurl }}{% link ch/monitoring/quick-start.md %})
 ---
 
 ### 疑问？

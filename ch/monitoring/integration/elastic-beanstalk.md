@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: Elastic Beanstalk | 集成 | PM2 Plus教程
+title-en: Elastic Beanstalk | Integration | PM2 Plus Documentation
 menu: starter
 lang: ch
 ---

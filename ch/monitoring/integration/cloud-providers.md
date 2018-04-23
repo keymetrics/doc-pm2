@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 使用云供应商 | 集成 | PM2 Plus教程
+title-en: Cloud Providers | Integration | PM2 Plus Documentation
 menu: starter
 lang: ch
 ---
