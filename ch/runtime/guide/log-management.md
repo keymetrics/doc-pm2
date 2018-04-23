@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 日志管理 | 指南 | PM2教程
+title-en: Log Management | Guide | PM2 Documentation
 menu: starter
 lang: ch
 ---
@@ -156,7 +157,7 @@ echo
 
 ## 下一步
 
-[启动挂钩]({{site.baseurl}}/ch/runtime/guide/startup-hook)
+[启动挂钩]({{ site.baseurl }}{% link ch/runtime/guide/startup-hook.md %})
 
 ---
 

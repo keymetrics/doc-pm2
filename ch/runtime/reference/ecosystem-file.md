@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 生态系统文件 | 参考 | PM2教程
+title-en: Ecosystem File | Reference | PM2 Documentation
 menu: starter
 lang: ch
 ---

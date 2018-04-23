@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 快速入门 | PM2教程
+title-en: Quick Start | PM2 Documentation
 menu: starter
 lang: ch
 ---
@@ -129,7 +130,7 @@ pm2 reload app
 
 ## 下一步
 
-[生态系统文件]({{site.baseurl}}/ch/runtime/guide/ecosystem-file) 
+[生态系统文件]({{ site.baseurl }}{% link ch/runtime/guide/ecosystem-file.md %})
 
 ---
 

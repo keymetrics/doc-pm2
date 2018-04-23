@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 转化器 | 综合 | PM2教程
+title-en: Transpilers | Integration | PM2 Documentation
 menu: starter
 lang: ch
 ---

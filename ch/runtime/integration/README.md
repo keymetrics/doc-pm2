@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 综合 | PM2教程
+title-en: Integration | PM2 Documentation
 menu: starter
 lang: ch
 permalink: "/ch/runtime/integration/"
@@ -12,10 +13,8 @@ permalink: "/ch/runtime/integration/"
 
 选择您需要的教程：
 
-- [AWS Elastic Beanstalk]({{site.baseurl}}/ch/runtime/integration/beanstalk)
-- [Docker]({{site.baseurl}}/ch/runtime/integration/docker)
-- [Heroku]({{site.baseurl}}/ch/runtime/integration/heroku)
-- [NGINX]({{site.baseurl}}/ch/runtime/integration/nginx)
-- [Now.sh]({{site.baseurl}}/ch/runtime/integration/now)
-- [转化器]({{site.baseurl}}/ch/runtime/integration/transpilers)
-- [使用云供应商]({{site.baseurl}}/ch/runtime/integration/cloud-providers)
+- [AWS Elastic Beanstalk]({{ site.baseurl }}{% link ch/runtime/integration/elastic-beanstalk.md %})
+- [Docker]({{ site.baseurl }}{% link ch/runtime/integration/docker.md %})
+- [Heroku]({{ site.baseurl }}{% link ch/runtime/integration/heroku.md %})
+- [转化器]({{ site.baseurl }}{% link ch/runtime/integration/transpilers.md %})
+- [使用云供应商]({{ site.baseurl }}{% link ch/runtime/integration/cloud-providers.md %})

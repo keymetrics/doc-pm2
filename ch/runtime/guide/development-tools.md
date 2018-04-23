@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 开发工具 | 指南 | PM2教程
+title-en: Development Tools | Guide | PM2 Documentation
 menu: starter
 lang: ch
 ---
@@ -102,7 +103,7 @@ pm2 start ecosystem.config.js
 
 ## 下一步
 
-[使用SSH轻松部署 ]({{site.baseurl}}/ch/runtime/guide/easy-deploy-with-ssh)
+[使用SSH轻松部署 ]({{ site.baseurl }}{% link en/runtime/guide/easy-deploy-with-ssh.md %})
 
 ---
 

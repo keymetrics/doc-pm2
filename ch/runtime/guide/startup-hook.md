@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 启动挂钩 | 指南 | PM2教程
+title-en: Startup Hook | Guide | PM2 Documentation
 menu: starter
 lang: ch
 ---
@@ -113,7 +114,7 @@ pm2 [startup | unstartup] [platform]
 
 ## 下一步
 
-[负载平衡 (群集模式)]({{site.baseurl}}/ch/runtime/guide/load-balancing)
+[负载平衡 (群集模式)]({{ site.baseurl }}{% link ch/runtime/guide/load-balancing.md %})
 
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 正常关机 | 生产最佳实践 | PM2教程
+title-en: Graceful Shutdown | Best Practices | PM2 Documentation
 menu: starter
 lang: ch
 ---

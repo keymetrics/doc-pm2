@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 中的环境变量 | 生产最佳实践 | PM2教程
+title-en: Environment Variables | Best Practices | PM2 Documentation
 menu: starter
 lang: ch
 ---
 
-# Node.js Node.js中的环境变量
+# Node.js中的环境变量
 
 环境变量是可以在您的Node.js应用之外设置的特殊变量，对于使应用可以在外部进行配置特别有用。 假设是在这样的情况下，云供应商想要更改您应用的侦听端口，或您希望启用详细日志记录而无需进入代码。
 

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 生态系统文件 | 指南 | PM2教程
+title-en: Ecosystem File | Guide | PM2 Documentation
 menu: starter
 lang: ch
 ---
@@ -123,7 +124,7 @@ pm2 restart ecosystem.config.js --env production --update-env
 
 ## 下一步
 
-[进程管理]({{site.baseurl}}/ch/runtime/guide/process-management)
+[进程管理]({{ site.baseurl }}{% link ch/runtime/guide/process-management.md %})
 
 ---
 

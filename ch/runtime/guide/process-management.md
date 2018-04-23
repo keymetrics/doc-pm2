@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 进程管理 | 指南 | PM2教程
+title-en: Process Management | Guide | PM2 Documentation
 menu: starter
 lang: ch
 ---
@@ -135,7 +136,7 @@ pm2 monit
 
 ## 下一步
 
-[日志管理]({{site.baseurl}}/ch/runtime/guide/log-management)
+[日志管理]({{ site.baseurl }}{% link ch/runtime/guide/log-management.md %})
 
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 概述 | PM2教程
+title-en: Overview | PM2 Documentation
 menu: starter
 lang: ch
 redirect_from: "/ch"
@@ -33,7 +34,7 @@ pm2会创建一个您可以访问的进程列表：
 pm2 ls
 ```
 
-![pm2 列表](overview/pm2ls.png)
+![pm2 listing]({{ site.baseurl }}/img/runtime/pm2ls.png)
 
 用`pm2 start` 和 `pm2 delete` 管理您的进程列表。
 
@@ -70,7 +71,7 @@ pm2 start -i max
 pm2 monit
 ```
 
-![用pm2进行本地监测]({{site.baseurl}}/img/runtime/monit.png)
+![local monitoring with pm2]({{ site.baseurl }}/img/runtime/monit.png)
 
 ---
 
@@ -86,7 +87,7 @@ pm2 deploy
 
 ## 下一步
 
-[快速开始]({{site.baseurl}}/ch/runtime/quick-start/)
+[快速开始]({{ site.baseurl }}{% link ch/runtime/quick-start.md %})
 
 ---
 

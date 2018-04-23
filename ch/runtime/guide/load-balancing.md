@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 负载平衡 | 指南 | PM2教程
+title-en: Load-Balancing | Guide | PM2 Documentation
 menu: starter
 lang: ch
 ---
@@ -106,7 +107,7 @@ module.exports = {
 
 ## 下一步
 
-[开发工具]({{site.baseurl}}/ch/runtime/guide/development-tools)
+[开发工具]({{ site.baseurl }}{% link ch/runtime/guide/development-tools.md %})
 
 ---
 

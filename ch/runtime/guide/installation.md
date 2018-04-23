@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 安装 | 指南 | PM2教程
+title-en: Installation | Guide | PM2 Documentation
 menu: starter
 lang: ch
 ---
@@ -58,7 +59,7 @@ npm install pm2 -g && pm2 update
 
 ## 下一步
 
-[生态系统文件]({{site.baseurl}}/ch/runtime/guide/ecosystem-file)
+[生态系统文件]({{ site.baseurl }}{% link ch/runtime/guide/ecosystem-file.md %})
 
 ---
 

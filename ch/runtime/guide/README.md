@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 指南 | PM2教程
+title-en: Guide | PM2 Documentation
 menu: starter
 lang: ch
 permalink: "/ch/runtime/guide/"
@@ -21,4 +22,6 @@ permalink: "/ch/runtime/guide/"
 
 **process list** 即进程列表，是注册您所有应用以及选项和环境的地方。该列表仅包含pm2已启动的所有进程。
 
-<p align="center">[即刻开始]({{site.baseurl}}/ch/runtime/guide/installation)</p>
+<div>
+  <p align="center">[即刻开始]({{ site.baseurl }}{% link ch/runtime/guide/installation.md %})</p>
+</div>

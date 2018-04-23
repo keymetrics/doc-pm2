@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Quick Start with PM2
+title: 编程 | 参考 | PM2教程
+title-en: Programmatic | Reference | PM2 Documentation
 menu: starter
 lang: ch
 ---
 
-# PM2 API PM2 API
+# PM2 API
 
 pm2也可以以编程方式使用，这意味着您可以直接在代码中嵌入流程管理器，产生流程，即使退出主脚本也能保持它们持续运行。
 
