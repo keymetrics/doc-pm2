@@ -31,6 +31,14 @@
     display: grid;
 }
 
+.sidebar_2_item__image-process-manager {
+    position: absolute;
+    margin: 20px 21px 41px 19px;
+    width: 99px;
+    height: 50px;
+    object-fit: contain;
+}
+
 .sidebar_2_item__image {
     position: absolute;
     margin: 20px 21px 41px 19px;
@@ -38,7 +46,6 @@
     height: 19px;
     object-fit: contain;
 }
-
 .sidebar_2_item__text {
     position: absolute;
     padding-top: 43px;
