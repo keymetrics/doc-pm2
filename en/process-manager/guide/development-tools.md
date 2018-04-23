@@ -1,0 +1,112 @@
+---
+layout: page
+title: Development Tools | Guide | PM2 Documentation
+menu: starter
+lang: en
+redirect_from: "/process-manager/guide/development-tools"
+---
+
+# Development Tools
+
+pm2 comes with two development tools that will help you on the development stage: a watch and restart mode and a server for static files.
+
+---
+
+## Watch and Restart
+
+The watch and restart mode watches the current directory to detect file changes and auto-start.
+
+This mode can be enable in your ecosystem.config.js:
+
+```javascript
+module.exports = {
+  apps : [{
+    name: "app",
+    script: "./app.js",
+    watch: true,
+  }]
+}
+```
+
+?> Beware that the watch and restart mode makes hard restart, without sending SIGINT.
+
+### Watch options
+
+You can use advanced options to specify path to watch or path to ignore.
+
+```javascript
+module.exports = {
+  apps : [{
+    name: "app",
+    script: "./app.js",
+    watch: ".",
+  }]
+}
+```
+
+- `watch` can also be a string or an array of paths to watch. Current directory is watched when set to `true`.
+- `ignore_watch` can be an array of paths or a string. It is used by the [chokidar](https://github.com/paulmillr/chokidar#path-filtering) dependency as a glob or a regular expression.
+- `watch_options` is an object that is given as options to [chokidar](https://github.com/paulmillr/chokidar#api) dependency (default options used by pm2 are persistent and ingoreInitial set to true)
+
+When working with NFS devices you'll need to set `usePolling: true` as stated in [this chokidar issue](https://github.com/paulmillr/chokidar/issues/242).
+
+### With CLI
+
+Watch mode can also be enabled via CLI with
+
+```bash
+pm2 start app.js --watch
+```
+
+However, please note that when `--watch` is enabled, you must use `pm2 stop --watch <app_name>` to stop the process, as simple stop won't stop the watching.
+
+---
+
+## Serve static file over HTTP
+
+pm2 can serve static files (like a frontend app) over HTTP with:
+
+```bash
+pm2 serve <path> <port>
+```
+
+As default values are `current folder` and `8080`, you can then just use:
+
+```bash
+pm2 serve
+```
+
+In the ecosystem file:
+
+```javascript
+module.exports = {
+  apps: [{
+    name: "static-file",
+    script: "serve",
+    env: {
+      PM2_SERVE_PATH: ".",
+      PM2_SERVE_PORT: 8080,
+    },
+  }]
+}
+```
+
+and start with:
+
+```bash
+pm2 start ecosystem.config.js
+```
+
+?> All other pm2 options are still available.
+
+---
+
+## Next step
+
+[Easy Deploy with SSH]({{ site.baseurl }}{% link en/process-manager/guide/easy-deploy-with-ssh.md %})
+
+---
+
+## Questions ?
+
+We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.

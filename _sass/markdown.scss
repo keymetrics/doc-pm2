@@ -52,21 +52,21 @@ h2 a:before{
     left: 0;
     margin-top: 13px;
 }
-.runtime-page h2 a:before{
-    background-image: url(/doc-pm2/img/runtime/rect-r.png);
+.process-manager-page h2 a:before{
+    background-image: url(/doc-pm2/img/process-manager/rect-r.png);
 }
-.monitoring-page h2 a:before{
-    background-image: url(/doc-pm2/img/monitoring/rect-m.png);
+.plus-page h2 a:before{
+    background-image: url(/doc-pm2/img/plus/rect-m.png);
 }
 .enterprise-page h2 a:before{
     background-image: url(/doc-pm2/img/enterprise/rect-e.png);
 }
 
-.runtime-page h2 a span {
+.process-manager-page h2 a span {
     color: #3eb1f3;
 }
 
-.monitoring-page h2 a span {
+.plus-page h2 a span {
     color: #01cea2;
 }
 
@@ -112,12 +112,12 @@ hr:before {
     margin-right: 10px;
 }
 
-.runtime-page hr:before {
-    background-color: $color_runtime;
+.process-manager-page hr:before {
+    background-color: $color_process-manager;
 }
 
-.monitoring-page hr:before {
-    background-color: $color_monitoring;
+.plus-page hr:before {
+    background-color: $color_plus;
 }
 
 .enterprise-page hr:before {

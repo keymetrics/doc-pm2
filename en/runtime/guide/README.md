@@ -3,13 +3,13 @@ layout: page
 title: Guide | PM2 Documentation
 menu: starter
 lang: en
-permalink: "/en/runtime/guide/"
-redirect_from: "/runtime/guide"
+permalink: "/en/process-manager/guide/"
+redirect_from: "/process-manager/guide"
 ---
 
 # Guide
 
-This guide will show you how to install and use pm2 to set up your application to production.
+This guide will show you how to install and use PM2 to set up your application to production.
 
 ---
 
@@ -17,10 +17,10 @@ This guide will show you how to install and use pm2 to set up your application t
 
 Before starting, some terminology we use across this guide:
 
-A **daemon** is a program that is run as a background process. pm2 in essence is a daemon: always alive in the background, it takes care of all your processes, keeping them alive. Also, all your applications started with pm2 are daemonized.
+A **daemon** is a program that is run as a background process. PM2 in essence is a daemon: always alive in the background, it takes care of all your processes, keeping them alive. Also, all your applications started with PM2 are daemonized.
 
-The **process list** is where all your applications along with options and environment are registered. This list simply contains all the processes pm2 has started.
+The **process list** is where all your applications along with options and environment are registered. This list simply contains all the processes PM2 has started.
 
 <div>
-  <p align="center">[Let's start]({{site.baseurl}}/runtime/guide/installation/)</p>
+  <p align="center">[Let's start]({{site.baseurl}}/process-manager/guide/installation/)</p>
 </div>
