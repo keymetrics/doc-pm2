@@ -3,7 +3,7 @@ layout: page
 title: Quick Start with PM2
 menu: starter
 lang: ch
-permalink: "/ch/runtime/reference"
+permalink: "/ch/runtime/reference/"
 ---
 
 # 参考
