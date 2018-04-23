@@ -8,7 +8,7 @@ redirect_from: "/runtime/best-practices/environment-variables"
 
 # Environment Variables in Node.js
 
-Environment variables are special variables that can be set outside of your Node.js applications, particularly useful to make your application configurable externally. Let's say a cloud provider wants to change the listening port of your app or if you want to enable verbose logging without getting into the code.
+Environment variables are special variables that can be set out of your Node.js applications, particularly useful to make your application configurable externally. Let's say a cloud provider wants to change the listening port of your app or if you want to enable verbose logging without getting into the code.
 
 This tutorial will give you an overview on how to use environment variables in Node.js.
 
