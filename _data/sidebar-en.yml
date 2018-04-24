@@ -77,6 +77,8 @@ plus:
   - title: Best Practices
     url: "/en/plus/best-practices/"
     submenu:
+      - page: Metrics Glossary
+        url: "/en/plus/best-practices/metrics-glossary/"
       - page: CPU Profiling
         url: "/en/plus/best-practices/cpu-profiling/"
       - page: Memory Profiling

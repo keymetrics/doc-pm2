@@ -8,83 +8,88 @@ redirect_from: "/plus/best-practices/metrics-glossary"
 
 # Metrics Glossary
 
-CPU Usage
+This glossary is an exhaustive list of all metrics recorded by PM2. Understand what a metric stands for and how it is computed will avoid you to draw conclusions too quickly.   
 
-Unit: %
+Note that each metric always describes the state of a specific application on a specific server. You may find some cross server metrics on the dashboard, to suggest on which application you could use the profiling for example, but in most cases, metrics are application and server specific.
+
+---
+
+## CPU Usage
+
+The CPU usage is the amount of time the CPU is busy. A CPU only can handle one operation at a time and so is either busy or idle. The CPU Usage is generally computed every 25 ms, for the last 25 ms.  
+
+Unit: %  
 Range of values: 0 - 100
 
-The CPU usage is the amount of time the CPU is busy (computed every 25 ms, for the last 25 ms).
+## Memory Usage
 
-Memory Usage
+The memory usage is the total amount of memory used by the application.  
 
-Unit: Megabytes (MB)
+Unit: Megabytes (MB)  
 Range of values: 0 - total memory of the server
 
-The memory usage is the total amount of memory used by the application.
+## Issues
 
-Issues
+The number of recorded issues not yet set as fixed in the issue dashboard.
 
-The number of issues recorded and not yet set as fixed in the issue dashboard.
+## Number of restarts
 
-Number of restarts
+The number of restarts of your application since added to the PM2 process list. PM2 automatically restarts your application whenever needed, for example after an uncaught exception has happened.
 
-The number of restarts of your application since added in your PM2 process list. PM2 automatically restarts your application whenever needed, for example after an uncaught exception has happened.
-
-Number of processes
+## Number of processes
 
 The number of cluster on which your app has been spread on the server. Only PM2 cluster appears. 
 
-HTTP Requests per Minutes
+## HTTP Requests per Minutes
 
 Unit: Number of requests / minutes
 
-Loop Delay
+## Loop Delay
 
 Unit: milliseconds (ms)
 Range: 0 - less than 100ms
 
 The time the Node.js event loop takes to complete a loop.
 
-
-Active Handles
+## Active Handles
 
 Handles represent long-lived objects capable of performing certain operations while active. Some examples:
 
 - A prepare handle gets its callback called once every loop iteration when active.
 - A TCP server handle that gets its connection callback called every time there is a new connection.
 
-Active Requests
+## Active Requests
 
 Requests represent (typically) short-lived operations. These operations can be performed over a handle: write requests are used to write data on a handle; or standalone: getaddrinfo requests don’t need a handle they run directly on the loop.
 
-Node.js Memory
+## Node.js Memory
 
-New space used size
+## New space used size
 
-Old space used size
+## Old space used size
 
-Map space used size
+## Map space used size
 
-Code space used size
+## Code space used size
 
-Large object space used suze
+## Large object space used suze
 
-Heap size
+## Heap size
 
-Heap size executable
+## Heap size executable
 
-Used heap size
+## Used heap size
 
-Heap size limit
+## Heap size limit
 
-Garbage Collector
+## Garbage Collector
 
-GC heap size
+## GC heap size
 
-GC executable heap size
+## GC executable heap size
 
-GC used heap size
+## GC used heap size
 
-GC type
+## GC type
 
-Gc Pause
+## Gc Pause

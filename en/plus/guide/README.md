@@ -11,7 +11,9 @@ redirect_from: "/plus/guide/"
 
 This guide will get your node.js app monitored by PM2 Plus in minutes.
 
-### Terminology
+---
+
+## Terminology
 
 Let's explain some terminology we use across this guide:
 
