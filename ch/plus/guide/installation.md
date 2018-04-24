@@ -8,7 +8,7 @@ lang: ch
 
 # 安装
 
-我们假设您的应用已开始使用PM2 process-manager。 如果没有，请参考 [快速入门](process-manager/quickstart.md) 教程。
+我们假设您的应用已开始使用PM2 process-manager。 如果没有，请参考 [快速入门]({{site.baseurl}}{% link en/process-manager/quick-start.md %}) 教程。
 
 ---
 
@@ -72,7 +72,7 @@ pm2 reload all
 
 返回仪表板，您现在已可以访问您应用的实时指标。
 
-![仪表板视图]({{site.baseurl}}/img/plus/unified.png)
+![仪表板视图]({{site.baseurl}}{% link img/plus/unified.png %})
 
 ---
 

@@ -50,7 +50,7 @@ const pmx = require('pmx').init({
   })
 ```
 
-?> 请参阅[参考](/plus/reference/pmx.md)中的其他初始化选项。
+?> 请参阅[参考]({{site.baseurl}}{% link ch/plus/reference/pmx.md %})中的其他初始化选项。
 
 ---
 
@@ -85,7 +85,7 @@ const metric = probe.metric({
 
 请注意，自定义度量标准值每秒发送一次，发生于您所提供的函数调用。
 
-?> 在[PMX参考](/plus/reference/pmx-api)中阅读更多关于显示自定义指标的信息。
+?> 在[PMX参考]({{site.baseurl}}{% link ch/plus/reference/pmx.md %})中阅读更多关于显示自定义指标的信息。
 
 ---
 
@@ -110,7 +110,7 @@ pmx.action('db:clean', function(reply) {
 });
 ```
 
-?> 在 [PMX参考](/plus/reference/pmx-api)中详细了解如何实现远程操作。
+?> 在 [PMX参考]({{site.baseurl}}{% link ch/plus/reference/pmx.md %})中详细了解如何实现远程操作。
 
 ---
 
@@ -127,7 +127,7 @@ pmx.emit('user:register', {
 })
 ```
 
-?> 在 [PMX 参考](/plus/reference/pmx-api)中详细了解触发事件。
+?> 在 [PMX 参考]({{site.baseurl}}{% link ch/plus/reference/pmx.md %})中详细了解触发事件。
 
 ---
 

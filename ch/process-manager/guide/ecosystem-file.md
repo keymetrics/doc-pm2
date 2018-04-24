@@ -39,7 +39,7 @@ module.exports = {
 }
 ```
 
-有关可用属性的更多信息，请查看[生态系统文件参考](process-manager/references/ecosystem-file.md)。
+有关可用属性的更多信息，请查看[生态系统文件参考]({{ site.baseurl }}{% link ch/process-manager/reference/ecosystem-file.md %})。
 
 ---
 

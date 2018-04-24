@@ -34,7 +34,7 @@ pm2会创建一个您可以访问的进程列表：
 pm2 ls
 ```
 
-![pm2 listing]({{ site.baseurl }}/img/process-manager/pm2ls.png)
+![pm2 listing]({{ site.baseurl }}{% link img/process-manager/pm2ls.png %})
 
 用`pm2 start` 和 `pm2 delete` 管理您的进程列表。
 
@@ -71,7 +71,7 @@ pm2 start -i max
 pm2 monit
 ```
 
-![local monitoring with pm2]({{ site.baseurl }}/img/process-manager/monit.png)
+![local monitoring with pm2]({{ site.baseurl }}{% link img/process-manager/monit.png %})
 
 ---
 

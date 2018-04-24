@@ -41,7 +41,7 @@ module.exports = {
 }
 ```
 
-?> 在[此处](process-manager/guide/ecosystem-file.md)了解更多有关生态系统文件的内容
+?> 在[此处]({{ site.baseurl }}{% link ch/process-manager/guide/ecosystem-file.md %})了解更多有关生态系统文件的内容
 
 ### 将PM2添加为模块
 
@@ -80,9 +80,9 @@ yarn add pm2
 
 ## 下一步
 
-使用[生态系统文件](process-manager/guide/ecosystem-file.md)完成您的配置
+使用[生态系统文件]({{ site.baseurl }}{% link ch/process-manager/guide/ecosystem-file.md %})完成您的配置
 
-使用 [PM2 Plus](plus/integration/docker.md)在仪表板上监控您的应用
+使用 [PM2 Plus]({{ site.baseurl }}{% link ch/plus/integration/docker.md %})在仪表板上监控您的应用
 
 ---
 

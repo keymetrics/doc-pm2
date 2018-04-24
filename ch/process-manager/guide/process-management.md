@@ -80,7 +80,7 @@ pm2 resurrect
 
 ?> 您的进程列表保存在 `$HOME/.pm2/dump.pm2`。
 
-接着您可以设置一个 [启动脚本](process-manager/guide/installation?id=install-a-startup-script)，通过机器重启来自启动您的进程列表。
+接着您可以设置一个 [启动脚本]({{ site.baseurl }}{% link ch/process-manager/guide/installation.md %})，通过机器重启来自启动您的进程列表。
 
 ---
 
@@ -130,7 +130,7 @@ module.exports = {
 pm2 monit
 ```
 
-![pm2本地监控]({{site.baseurl}}/img/process-manager/monit.png)
+![pm2本地监控]({{site.baseurl}}{% link img/process-manager/monit.png %})
 
 ---
 

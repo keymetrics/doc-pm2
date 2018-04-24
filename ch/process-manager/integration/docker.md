@@ -97,7 +97,7 @@ module.exports = {
 }
 ```
 
-?> 在[这里](process-manager/guide/ecosystem-file.md)了解更多关于生态系统文件的教程。
+?> 在[这里]({{ site.baseurl }}{% link ch/process-manager/guide/ecosystem-file.md %})了解更多关于生态系统文件的教程。
 
 ### 设置一个Docker文件
 
@@ -173,9 +173,9 @@ CMD ["pm2-process-manager", "ecosystem.config.js", "--web"]
 
 ## 下一步
 
-使用[生态系统文件](process-manager/guide/ecosystem-file.md)完成您的配置
+使用[生态系统文件]({{ site.baseurl }}{% link ch/process-manager/guide/ecosystem-file.md %})完成您的配置
 
-使用 [PM2 Plus](plus/integration/docker.md)在仪表板上监控您的应用
+使用 [PM2 Plus]({{ site.baseurl }}{% link ch/plus/integration/docker.md %})在仪表板上监控您的应用
 
 ---
 

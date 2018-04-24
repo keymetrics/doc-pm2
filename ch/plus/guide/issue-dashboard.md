@@ -15,7 +15,7 @@ lang: ch
 
 问题仪表板主要报告所有未捕获的异常。 发生时，node.js进程崩溃，PM2自动重启应用，同时提醒异常。
 
-![问题仪表板]({{site.baseurl}}/img/plus/issue.png)
+![问题仪表板]({{site.baseurl}}{% link img/plus/issue.png %})
 
 ---
 

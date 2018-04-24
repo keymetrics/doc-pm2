@@ -10,7 +10,7 @@ redirect_from: "/plus/integration/heroku"
 
 In seconds, this tutorial will show you how to monitor a node.js application with `pm2` and Heroku.
 
-We assume that your app has already been wrapped with pm2. If not, follow the [heroku tutorial]({{site.baseurl}}/process-manager/integration/heroku.md).
+We assume that your app has already been wrapped with pm2. If not, follow the [heroku tutorial]({{site.baseurl}}{% link en/process-manager/integration/heroku.md %}).
 
 ---
 
@@ -50,7 +50,7 @@ heroku config:set PM2_MACHINE_NAME=heroku-server
 
 ## Next step
 
-Complete your [dashboard configuration]({{site.baseurl}}/plus/guide/configuration.md)
+Complete your [dashboard configuration]({{site.baseurl}}{% link en/plus/guide/configuration.md %})
 
 ---
 

@@ -10,7 +10,7 @@ lang: ch
 
 只需几秒，本教程将向您展示如何使用`pm2`和Heroku监控node.js应用。
 
-我们假设您的应用已被PM2包装了。 如果没有，请按照[heroku教程](process-manager/integration/heroku.md)进行。
+我们假设您的应用已被PM2包装了。 如果没有，请按照[heroku教程]({{ site.baseurl }}{% link ch/process-manager/integration/heroku.md %})进行。
 
 ---
 
@@ -50,7 +50,7 @@ heroku config:set PM2_MACHINE_NAME=heroku-server
 
 ## 下一步
 
-完成您的[仪表板配置](plus/guide/configuration.md)
+完成您的[仪表板配置]({{ site.baseurl }}{% link ch/plus/guide/configuration.md %})
 
 ---
 

@@ -49,7 +49,7 @@ module.exports = {
 
 内部状态通常是存储在其进程中的一些本地数据。 例如，它可以是一组websocket连接或本地会话内存。 改用Redis或其他数据库来共享进程间的状态。 
 
-查看我们的 [教程](process-manager/production-best-practices/stateless-application.md)，建立您的无状态应用。
+查看我们的 [教程]({{ site.baseurl }}{% link ch/process-manager/best-practices/stateless-application.md %})，建立您的无状态应用。
 
 ---
 
@@ -79,7 +79,7 @@ pm2 reload ecosystem.config.js --only app
 
 正常关机确保在退出应用并关闭所有外部连接之前处理所有剩余的请求。
 
-通过我们的[教程](process-manager/production-best-practices/graceful.md)获得帮助，设置正常关机。
+通过我们的[教程]({{ site.baseurl }}{% link ch/process-manager/best-practices/graceful-shutdown.md %})获得帮助，设置正常关机。
 
 ---
 

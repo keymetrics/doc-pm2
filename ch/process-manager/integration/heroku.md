@@ -42,11 +42,11 @@ module.exports = {
 }
 ```
 
-?> 在[此处](process-manager/guide/ecosystem-file.md)了解更多有关生态系统文件的内容。
+?> 在[此处]({{ site.baseurl }}{% link ch/process-manager/guide/ecosystem-file.md %})了解更多有关生态系统文件的内容。
 
 我们建议在结合群集模式使用Heroku，因为每个dyno都有多核CPU。
 
-?> 详细了解 [群集模式](process-manager/guide/cluster.md)
+?> 详细了解 [群集模式]({{ site.baseurl }}{% link ch/process-manager/guide/load-balancing.md %})
 
 ### 将PM2添加为模块
 
@@ -126,9 +126,9 @@ To https://git.heroku.com/aqueous-temple-78487.git
 
 ## 下一步
 
-使用[生态系统文件](process-manager/guide/ecosystem-file.md)完成您的配置
+使用[生态系统文件]({{ site.baseurl }}{% link ch/process-manager/guide/ecosystem-file.md %})完成您的配置
 
-使用 [PM2 Plus](plus/integration/docker.md)在仪表板上监控您的应用
+使用 [PM2 Plus]({{ site.baseurl }}{% link ch/plus/integration/docker.md %})在仪表板上监控您的应用
 
 ---
 

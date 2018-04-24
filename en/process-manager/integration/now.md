@@ -31,7 +31,7 @@ module.exports = {
 }
 ```
 
-?> Learn more about ecosystem file [here](process-manager/guide/ecosystem-file.md).
+?> Learn more about ecosystem file [here]({{ site.baseurl }}{% link en/process-manager/guide/ecosystem-file.md %}).
 
 ### Add PM2 as a module
 
@@ -69,9 +69,9 @@ You can now deploy your application on Now.sh like you would have done for a reg
 
 ### Next step
 
-Complete your configuration with the [Ecosystem File](process-manager/guide/ecosystem-file.md)
+Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/process-manager/guide/ecosystem-file.md %})
 
-Monitor your app on a dashboard, with [PM2 Plus](plus/integration/now.md)
+Monitor your app on a dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/integration/now.md %})
 
 ---
 

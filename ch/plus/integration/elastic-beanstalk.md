@@ -10,7 +10,7 @@ lang: ch
 
 只需几秒，本教程将向您展示如何在AWS Elastic Beanstalk环境中使用`pm2`监控Node.js应用。
 
-我们假设您的应用已被PM2包装了。 如果没有，请参考我们的 [AWS Elastic Beanstalk 教程](process-manager/integration/beanstalk.md)进行。
+我们假设您的应用已被PM2包装了。 如果没有，请参考我们的 [AWS Elastic Beanstalk 教程]({{site.baseurl}}{% link ch/process-manager/integration/elastic-beanstalk.md %})进行。
 
 ---
 
@@ -51,7 +51,7 @@ eb setenv PM2_MACHINE_NAME=aws-eb-server
 
 ## 下一步
 
-完成您的 [仪表板配置](plus/guide/configuration.md)
+完成您的 [仪表板配置]({{site.baseurl}}{% link ch/plus/guide/configuration.md %})
 
 ---
 

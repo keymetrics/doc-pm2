@@ -41,7 +41,7 @@ module.exports = {
 }
 ```
 
-?> Learn more about ecosystem file [here]({{site.baseurl}}/process-manager/guide/ecosystem-file/).
+?> Learn more about ecosystem file [here]({{site.baseurl}}{% link en/process-manager/guide/ecosystem-file.md %}).
 
 ### Add PM2 as a module
 
@@ -82,19 +82,19 @@ In order to get access keys, you must create an IAM user. You can do that [here]
 
 Add a user:
 
-![create an IAM User]({{site.baseurl}}/img/process-manager/IAM-add.png)
+![create an IAM User]({{site.baseurl}}{% link img/process-manager/IAM-add.png %})
 
 Give it the programmatic access:
 
-![select programmatic access]({{site.baseurl}}/img/process-manager/IAM-prog.png)
+![select programmatic access]({{site.baseurl}}{% link img/process-manager/IAM-prog.png %})
 
 Select the `ElasticBeanstalkFullAccess` strategy:
 
-![select programmatic access]({{site.baseurl}}/img/process-manager/IAM-strat.png)
+![select programmatic access]({{site.baseurl}}{% link img/process-manager/IAM-strat.png %})
 
 Create the user and you will get your access keys:
 
-![access keys]({{site.baseurl}}/img/process-manager/IAM-creds.png)
+![access keys]({{site.baseurl}}{% link img/process-manager/IAM-creds.png %})
 
 Copy and paste your `access-id` and your `secret-key` in your AWS config file (`~/.aws/config`):
 
@@ -184,9 +184,9 @@ That's all! Run `eb open` to open your app in the browser.
 
 ## Next step
 
-Complete your configuration with the [Ecosystem File]({{site.baseurl}}/process-manager/guide/ecosystem-file/)
+Complete your configuration with the [Ecosystem File]({{site.baseurl}}{% link en/process-manager/guide/ecosystem-file.md %})
 
-Monitor your app on a dashboard, with [PM2 Plus]({{site.baseurl}}/plus/integration/elastic-beanstalk/)
+Monitor your app on a dashboard, with [PM2 Plus]({{site.baseurl}}{% link en/plus/integration/elastic-beanstalk.md %})
 
 ---
 

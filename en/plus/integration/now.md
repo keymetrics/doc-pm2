@@ -4,7 +4,7 @@
 
 In seconds, this tutorial will show you how to monitor a node.js application with `pm2` and Now.sh.
 
-We assume that your app has already been wrapped with pm2. If not, follow the [now.sh tutorial]({{site.baseurl}}/process-manager/integration/now.md).
+We assume that your app has already been wrapped with pm2. If not, follow the [now.sh tutorial]({{site.baseurl}}{% link en/process-manager/integration/now.md %}).
 
 ---
 
@@ -16,7 +16,7 @@ Register [here](https://app.keymetrics.io/api/oauth/register).
 
 ### Link with pm2 Plus
 
-You first need to use pm2 to wrap your app inside your Docker container. If not, follow the [now.sh tutorial]({{site.baseurl}}/process-manager/integration/now.md).
+You first need to use pm2 to wrap your app inside your Docker container. If not, follow the [now.sh tutorial]({{site.baseurl}}{% link en/process-manager/integration/now.md %}).
 
 ### Link with pm2 Plus
 
@@ -55,7 +55,7 @@ module.exports = {
 
 ### Next step
 
-Complete your [dashboard configuration]({{site.baseurl}}/plus/guide/configuration.md)
+Complete your [dashboard configuration]({{site.baseurl}}{% link en/plus/guide/configuration.md %})
 
 ---
 

@@ -27,7 +27,7 @@ npm install pm2 -g
 apt update && apt install sudo curl && curl -sL https://raw.githubusercontent.com/Unitech/pm2/master/packager/setup.deb.sh | sudo -E bash -
 ```
 
-使用docker，请遵循 [本教程](process-manager/integration/docker.md).
+使用docker，请遵循 [本教程]({{ site.baseurl }}{% link ch/process-manager/integration/docker.md %}).
 
 ### CLI autocompletion CLI自动完成
 

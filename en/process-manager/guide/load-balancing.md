@@ -10,7 +10,7 @@ redirect_from: "/process-manager/guide/load-balancing"
 
 The built-in load-balancer provides networked Node.js applications (http(s)/tcp/udp server) to be scaled accross all CPUs available, without any code modifications.
 
-![scale across all cpu's available]({{ site.baseurl }}/img/process-manager/cluster-mode.png)
+![scale across all cpu's available]({{ site.baseurl }}{% link img/process-manager/cluster-mode.png %})
 
 ---
 

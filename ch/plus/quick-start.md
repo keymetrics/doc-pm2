@@ -10,7 +10,7 @@ lang: ch
 
 只需几秒，本快速入门教程将向您展示如何开始使用PM2监控您的node.js应用。
 
-我们假设您的应用已启动或使用了PM2包装。 如果没有，请按照[快速入门](process-manager/quickstart.md) 教程进行。
+我们假设您的应用已启动或使用了PM2包装。 如果没有，请按照[快速入门]({{ site.baseurl }}{% link ch/process-manager/quick-start.md %}) 教程进行。
 
 ---
 
@@ -64,7 +64,7 @@ pm2 reload all
 
 返回仪表板，您现在已可以访问您应用的实时指标。
 
-![仪表板视图]({{site.baseurl}}/img/plus/unified.png)
+![仪表板视图]({{site.baseurl}}{% link img/plus/unified.png %})
 
 ---
 

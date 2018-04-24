@@ -12,7 +12,7 @@ lang: ch
 
 缓慢的HTTP调用被识别，并且数据库和外部调用都被聚合从而对其进行理解。
 
-![事物跟踪]({{site.baseurl}}/img/plus/tracing.png)
+![事物跟踪]({{site.baseurl}}{% link img/plus/tracing.png %})
 
 ---
 

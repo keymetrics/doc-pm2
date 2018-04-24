@@ -30,7 +30,7 @@ npm install pm2 -g
 apt update && apt install sudo curl && curl -sL https://raw.githubusercontent.com/Unitech/pm2/master/packager/setup.deb.sh | sudo -E bash -
 ```
 
-使用docker，请遵循[本教程](process-manager/integration/docker.md)。
+使用docker，请遵循[本教程]({{ site.baseurl }}{% link ch/process-manager/integration/docker.md %})。
 
 ### CLI自动完成
 
@@ -78,7 +78,7 @@ pm2 start app
 pm2 restart app
 ```
 
-您也可以设置一个 [启动脚本](process-manager/guide/installation?id=install-a-startup-script), 以便在机器重启时自启动您的进程列表。
+您也可以设置一个 [启动脚本]({{ site.baseurl }}{% link ch/process-manager/guide/installation.md %}), 以便在机器重启时自启动您的进程列表。
 
 ---
 
@@ -120,11 +120,11 @@ pm2 reload app
 
 使用制表符，您可以使用自动完成功能：
 
-![pm2自动完成]({{site.baseurl}}/img/process-manager/autocomplete.png)
+![pm2自动完成]({{site.baseurl}}{% link img/process-manager/autocomplete.png %})
 
 使用 `--help`获得更多关于指令的信息：
 
-![pm2帮助]({{site.baseurl}}/img/process-manager/help.png)
+![pm2帮助]({{site.baseurl}}{% link img/process-manager/help.png %})
 
 ---
 

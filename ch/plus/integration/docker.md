@@ -10,7 +10,7 @@ lang: ch
 
 只需几秒，本教程将向您展示如何在容器内使用`pm2`监控node.js应用。
 
-我们假设您的应用已被PM2包装了。 如果没有，请参考 [docker教程](process-manager/integration/docker.md)。
+我们假设您的应用已被PM2包装了。 如果没有，请参考 [docker教程]({{site.baseurl}}{% link ch/process-manager/integration/docker.md %})。
 
 ---
 
@@ -61,7 +61,7 @@ PM2_MACHINE_NAME=docker-server
 
 ## 下一步
 
-完成您的[仪表板配置](plus/guide/configuration.md)
+完成您的[仪表板配置]({{ site.baseurl }}{% link ch/plus/guide/configuration.md %})
 
 ---
 

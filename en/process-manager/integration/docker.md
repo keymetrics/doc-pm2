@@ -96,7 +96,7 @@ module.exports = {
 }
 ```
 
-?> Learn more about ecosystem file [here](process-manager/guide/ecosystem-file.md).
+?> Learn more about ecosystem file [here]({{ site.baseurl }}{% link en/process-manager/guide/ecosystem-file.md %}).
 
 ### Set a Dockerfile
 
@@ -172,9 +172,9 @@ That's all! Your container is ready to be deployed.
 
 ## Next step
 
-Complete your configuration with the [Ecosystem File](process-manager/guide/ecosystem-file.md)
+Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/process-manager/guide/ecosystem-file.md %})
 
-Monitor your app on a dashboard, with [PM2 Plus](plus/integration/docker.md)
+Monitor your app on a dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/integration/docker.md %})
 
 ---
 

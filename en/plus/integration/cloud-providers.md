@@ -10,7 +10,7 @@ redirect_from: "/plus/integration/cloud-providers"
 
 In seconds, this tutorial will show you how to monitor a node.js application with `pm2` and a cloud provider.
 
-We assume that your app has already been wrapped with pm2. If not, follow the [cloud provider tutorial]({{site.baseurl}}/process-manager/integration/cloud-providers.md).
+We assume that your app has already been wrapped with pm2. If not, follow the [cloud provider tutorial]({{site.baseurl}}{% link en/process-manager/integration/cloud-providers.md %}).
 
 ---
 
@@ -48,7 +48,7 @@ export PM2_MACHINE_NAME="my-cloud-provider-server"
 
 ## Next step
 
-Complete your [dashboard configuration]({{site.baseurl}}/plus/guide/configuration.md)
+Complete your [dashboard configuration]({{site.baseurl}}{% link en/plus/guide/configuration.md %})
 
 ---
 

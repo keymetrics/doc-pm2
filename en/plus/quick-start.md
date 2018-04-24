@@ -10,7 +10,7 @@ redirect_from: "/plus/quick-start"
 
 In seconds, this Quick Start tutorial will show you how to start monitoring your node.js application with pm2.
 
-We assume that your app has been started or wrapped with pm2. If not, follow the [Quick Start]({{site.baseurl}}/process-manager/quickstart.md) tutorial.
+We assume that your app has been started or wrapped with pm2. If not, follow the [Quick Start]({{site.baseurl}}{% link en/process-manager/quick-start.md %}) tutorial.
 
 ---
 
@@ -64,7 +64,7 @@ pm2 reload all
 
 Go back to the dashboard, you have now access to realtime metrics of your app.
 
-![dashboard view]({{site.baseurl}}/img/plus/unified.png)
+![dashboard view]({{site.baseurl}}{% link img/plus/unified.png %})
 
 ---
 

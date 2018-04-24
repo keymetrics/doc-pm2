@@ -8,7 +8,7 @@ redirect_from: "/plus/guide/installation"
 
 # Installation
 
-We assume that your app have been started with pm2 process-manager. If not, follow the [Quick Start](process-manager/quickstart.md) tutorial.
+We assume that your app have been started with pm2 process-manager. If not, follow the [Quick Start]({{site.baseurl}}{% link en/process-manager/quick-start.md %}) tutorial.
 
 ---
 
@@ -72,7 +72,7 @@ pm2 reload all
 
 Go back to the dashboard, you have now access to realtime metrics of your app.
 
-![dashboard view]({{site.baseurl}}/img/plus/unified.png)
+![dashboard view]({{site.baseurl}}{% link img/plus/unified.png %})
 
 ---
 

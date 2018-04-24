@@ -50,7 +50,7 @@ const pmx = require('pmx').init({
   })
 ```
 
-?> See additional intialisation options in the [reference]({{site.baseurl}}/plus/reference/pmx.md).
+?> See additional intialisation options in the [PMX reference]({{site.baseurl}}{% link en/plus/reference/pmx.md %}).
 
 ---
 
@@ -85,7 +85,7 @@ const metric = probe.metric({
 
 Note that the custom metric value is sent every second, occuring a call of the function you have given.
 
-?> Read more about exposing custom metrics in the [PMX reference]({{site.baseurl}}/plus/reference/pmx-api).
+?> Read more about exposing custom metrics in the [PMX reference]({{site.baseurl}}{% link en/plus/reference/pmx.md %}).
 
 ---
 
@@ -110,7 +110,7 @@ pmx.action('db:clean', function(reply) {
 });
 ```
 
-?> Read more about exposing remote actions in the [PMX reference]({{site.baseurl}}/plus/reference/pmx-api).
+?> Read more about exposing remote actions in the [PMX reference]({{site.baseurl}}{% link en/plus/reference/pmx.md %}).
 
 ---
 
@@ -127,7 +127,7 @@ pmx.emit('user:register', {
 })
 ```
 
-?> Read more about emitting events in the [PMX reference]({{site.baseurl}}/plus/reference/pmx-api).
+?> Read more about emitting events in the [PMX reference]({{site.baseurl}}{% link en/plus/reference/pmx.md %}).
 
 ---
 
