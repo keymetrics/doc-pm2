@@ -1,5 +1,28 @@
 @import './variables';
 
+.fa-link:before {
+  content: "#";
+}
+
+.header-link {
+  position: relative;
+  left: 0.5em;
+  opacity: 0;
+  font-size: 0.8em;
+
+  -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+  -moz-transition: opacity 0.2s ease-in-out 0.1s;
+  -ms-transition: opacity 0.2s ease-in-out 0.1s;
+}
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
+  opacity: 1;
+}
+
+
 /* Title: Quick Start */
 
 h1 a span {
@@ -36,7 +59,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-h2 a span {
+h2 {
     font-weight: 500;
     font-size: 32px;
 }
@@ -62,15 +85,15 @@ h2 a span {
     background-image: url(/doc-pm2/img/enterprise/rect-e.png);
 }
 
-.process-manager-page h2 a span {
+.process-manager-page h2 {
     color: #3eb1f3;
 }
 
-.plus-page h2 a span {
+.plus-page h2 {
     color: #01cea2;
 }
 
-.enterprise-page h2 a span {
+.enterprise-page h2 {
     color: #7f86f5;
 }
 
