@@ -1,8 +1,98 @@
 @import './variables';
 
-.fa-link:before {
-  content: "#";
+p {
+    font-weight: 400;
 }
+
+p.warn{
+    border-radius: 2px;
+    background-color: rgba(206, 183, 1, 0.08)!important;
+    border: solid 1px #ceb701;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    text-align: left;
+    color: #ceab01;
+}
+.markdown-section h1,.markdown-section h2,.markdown-section h3,.markdown-section h4,.markdown-section strong{
+  color: #202a37;
+  font-weight: 600;
+}
+.markdown-section a{
+  font-weight: 600;
+}
+.process-manager-page a {
+  color: $color_process-manager;
+}
+
+.plus-page a {
+  color: $color_plus;
+}
+
+.enterprise-page a {
+  color: $color_enterprise;
+}
+.markdown-section h1{
+  font-size:2rem;
+  margin:0 0 1rem;
+  font-weight: 500;
+  color: #202a37;
+}
+.markdown-section h2{
+  font-size:1.75rem;
+  margin:45px 0 .8rem;
+  font-weight: 500;
+}
+.markdown-section h3{
+  font-size:1.5rem;
+  margin:40px 0 .6rem;
+  font-weight: 500;
+}
+.markdown-section h4{
+  font-size:1.25rem
+}
+.markdown-section h5{
+  font-size:1rem
+}
+.markdown-section h6{
+  font-size:1rem
+}
+
+.process-manager-page h2 a:before{
+  background-image: url(/doc-pm2/img/process-manager/rect-r.png);
+}
+.plus-page h2 a:before{
+  background-image: url(/doc-pm2/img/plus/rect-m.png);
+}
+.enterprise-page h2 a:before{
+  background-image: url(/doc-pm2/img/enterprise/rect-e.png);
+}
+.process-manager-page h2 {
+  color: $color_process-manager;
+}
+
+.plus-page h2 {
+  color: $color_plus;
+}
+
+.enterprise-page h2 {
+  color: $color_enterprise;
+}
+
+// h2 a:before{
+//     content: '';
+//     background-repeat: no-repeat;
+//     height: 10px;
+//     width: 15px;
+//     background-size: contain;
+//     z-index: 3;
+//     position: absolute;
+//     left: 0;
+//     margin-top: 13px;
+// }
+
+// Anchors
 
 .header-link {
   position: relative;
@@ -20,91 +110,6 @@ h4:hover .header-link,
 h5:hover .header-link,
 h6:hover .header-link {
   opacity: 1;
-}
-
-
-/* Title: Quick Start */
-
-h1 a span {
-    font-weight: 500;
-    color: #202a37;
-    font-size: 36px;
-}
-
-
-
-/* Normal text: In seconds, this Quick Start tutorial */
-
-
-p {
-    font-weight: 400;
-}
-
-p.warn{
-    border-radius: 2px;
-    background-color: rgba(206, 183, 1, 0.08)!important;
-    border: solid 1px #ceb701;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 2.5px;
-    text-align: left;
-    color: #ceab01;
-}
-
-/* Colored subtitle: Installation*/
-
-h2 {
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-weight: 500;
-    font-size: 32px;
-}
-
-// h2 a:before{
-//     content: '';
-//     background-repeat: no-repeat;
-//     height: 10px;
-//     width: 15px;
-//     background-size: contain;
-//     z-index: 3;
-//     position: absolute;
-//     left: 0;
-//     margin-top: 13px;
-// }
-.process-manager-page h2 a:before{
-    background-image: url(/doc-pm2/img/process-manager/rect-r.png);
-}
-.plus-page h2 a:before{
-    background-image: url(/doc-pm2/img/plus/rect-m.png);
-}
-.enterprise-page h2 a:before{
-    background-image: url(/doc-pm2/img/enterprise/rect-e.png);
-}
-
-.process-manager-page h2 {
-    color: #3eb1f3;
-}
-
-.plus-page h2 {
-    color: #01cea2;
-}
-
-.enterprise-page h2 {
-    color: #7f86f5;
-}
-
-/**/
-h3 {
-
-}
-
-h3 a span {
-    font-weight: 500;
-    font-size:28px;
 }
 
 

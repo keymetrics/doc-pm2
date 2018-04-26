@@ -15,7 +15,7 @@
       var anchor = document.createElement("a");
       anchor.className = "header-link";
       anchor.href      = "#" + id;
-      anchor.innerHTML = "<i class=\"fa fa-link\"></i>";
+      anchor.innerHTML = "<i class=\"fa fa-link\">#</i>";
       return anchor;
     };
     
@@ -32,11 +32,11 @@
     
     document.onreadystatechange = function () {
       if (this.readyState === "complete") {
-        var contentBlock = document.getElementsByClassName("content")[0] || document.getElementsByClassName("news")[0];
+        var contentBlock = document.getElementsByClassName("content")[0];
         if (!contentBlock) {
           return;
         }
-        for (var level = 1; level <= 6; level++) {
+        for (var level = 2; level <= 6; level++) {
           linkifyAnchors(level, contentBlock);
         }
       }
