@@ -1,14 +1,6 @@
-.markdown-section pre>code {
-    background-color: #171e27;
-    color: #fff
+.markdown-section code,.markdown-section pre{
+  background-color:#f8f8f8
 }
-
-.highlight_word {
-    color: #01cea2;
-}
-
-// from docsify
-
 .markdown-section code{
   border-radius:2px;
   color:#e96900;
@@ -17,9 +9,7 @@
   padding:3px 5px;
   white-space:pre-wrap
 }
-.markdown-section code,.markdown-section pre{
-  background-color:#f8f8f8
-}
+
 .markdown-section pre{
   -moz-osx-font-smoothing:initial;
   -webkit-font-smoothing:initial;
@@ -30,6 +20,28 @@
   position:relative;
   word-wrap:normal
 }
+.markdown-section pre>code {
+    color: #fff;
+    -moz-osx-font-smoothing:initial;
+    -webkit-font-smoothing:initial;
+    background-color:#f8f8f8;
+    border-radius:2px;
+    display:block;
+    font-size:.8rem;
+    line-height:inherit;
+    margin:0 2px;
+    max-width:inherit;
+    overflow:inherit;
+    padding:2.2em 5px;
+    white-space:inherit
+}
+
+.highlight_word {
+    color: #01cea2;
+}
+
+// from docsify
+
 .token.cdata,.token.comment,.token.doctype,.token.prolog{
   color:#8e908c
 }
@@ -90,21 +102,6 @@
 }
 .token.entity{
   cursor:help
-}
-.markdown-section pre>code{
-  -moz-osx-font-smoothing:initial;
-  -webkit-font-smoothing:initial;
-  background-color:#f8f8f8;
-  border-radius:2px;
-  color:#525252;
-  display:block;
-  font-size:.8rem;
-  line-height:inherit;
-  margin:0 2px;
-  max-width:inherit;
-  overflow:inherit;
-  padding:2.2em 5px;
-  white-space:inherit
 }
 .markdown-section code:after,.markdown-section code:before{
   letter-spacing:.05rem
