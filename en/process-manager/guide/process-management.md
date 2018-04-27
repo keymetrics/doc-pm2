@@ -133,6 +133,8 @@ pm2 monit
 
 ![pm2 local monitoring]({{ site.baseurl }}{% link img/process-manager/monit.png %})
 
+Monitor your app on a web dashboard, with [Keymetrics]({{ site.baseurl }}{% link en/plus/quick-start.md %})
+
 ---
 
 ## Next step

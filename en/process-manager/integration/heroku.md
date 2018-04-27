@@ -129,7 +129,7 @@ That's all! The last line of the deployment will give you the URL where your app
 
 Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/process-manager/guide/ecosystem-file.md %})
 
-Monitor your app on a dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/integration/heroku.md %})
+Monitor your app on a web dashboard, with [Keymetrics]({{ site.baseurl }}{% link en/plus/integration/heroku.md %})
 
 ---
 

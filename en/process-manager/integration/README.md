@@ -10,7 +10,7 @@ redirect_from: "/process-manager/integration"
 
 # Integration
 
-This section will help you integrate pm2.
+This section will help you integrate PM2.
 
 Pick the tutorial that best matches your needs:
 
