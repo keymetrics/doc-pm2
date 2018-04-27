@@ -4,6 +4,8 @@ title: Elastic Beanstalk | 集成 | PM2 Plus教程
 title-en: Elastic Beanstalk | Integration | PM2 Plus Documentation
 menu: starter
 lang: ch
+section: process-manager
+section: plus
 ---
 
 # 在AWS Elastic Beanstalk中监控您的Node.js应用

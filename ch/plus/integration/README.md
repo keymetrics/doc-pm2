@@ -4,6 +4,8 @@ title: 集成 | PM2 Plus教程
 title-en: Integration | PM2 Plus Documentation
 menu: starter
 lang: ch
+section: process-manager
+section: plus
 permalink: "/ch/plus/integration/"
 ---
 

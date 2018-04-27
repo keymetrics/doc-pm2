@@ -4,6 +4,7 @@ title: 快速入门 | PM2教程
 title-en: Quick Start | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 快速入门

@@ -4,6 +4,8 @@ title: 问题仪表板 | 指南 | PM2 Plus教程
 title-en: Issue Dashboard | Guide | PM2 Plus Documentation
 menu: starter
 lang: ch
+section: process-manager
+section: plus
 ---
 
 # 问题仪表板

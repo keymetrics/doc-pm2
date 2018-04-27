@@ -4,6 +4,8 @@ title: Modules | 指南 | PM2 Plus教程
 title-en: Modules | Guide | PM2 Plus Documentation
 menu: starter
 lang: ch
+section: process-manager
+section: plus
 ---
 
 # Modules

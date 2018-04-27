@@ -3,6 +3,7 @@ layout: page
 title: CLI | Reference | PM2 Documentation
 menu: starter
 lang: en
+section: process-manager
 redirect_from: "/process-manager/reference/pm2-cli"
 ---
 

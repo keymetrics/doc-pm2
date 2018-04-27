@@ -4,6 +4,7 @@ title: 综合 | PM2教程
 title-en: Integration | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 permalink: "/ch/process-manager/integration/"
 ---
 

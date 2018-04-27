@@ -4,6 +4,7 @@ title: 中的环境变量 | 生产最佳实践 | PM2教程
 title-en: Environment Variables | Best Practices | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # Node.js中的环境变量

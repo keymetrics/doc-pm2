@@ -4,6 +4,7 @@ title: 无状态应用 | 生产最佳实践 | PM2教程
 title-en: Stateless Application | Best Practices | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 无状态应用

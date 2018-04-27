@@ -4,6 +4,8 @@ title: 指南 | PM2 Plus教程
 title-en: Guide | PM2 Plus Documentation
 menu: starter
 lang: ch
+section: process-manager
+section: plus
 permalink: "/ch/plus/guide/"
 ---
 

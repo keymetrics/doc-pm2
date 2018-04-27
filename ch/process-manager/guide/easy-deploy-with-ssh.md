@@ -4,6 +4,7 @@ title: 使用SSH轻松部署 | 指南 | PM2教程
 title-en: Easy Deploy With SSH | Guide | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 使用SSH轻松部署

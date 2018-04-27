@@ -4,6 +4,7 @@ title: Docker | 综合 | PM2教程
 title-en: Docker | Integration | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 与Docker一起使用PM2

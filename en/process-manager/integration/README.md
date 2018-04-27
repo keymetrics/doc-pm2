@@ -3,6 +3,7 @@ layout: page
 title: Integration | PM2 Documentation
 menu: starter
 lang: en
+section: process-manager
 permalink: "/en/process-manager/integration/"
 redirect_from: "/process-manager/integration"
 ---

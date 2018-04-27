@@ -4,6 +4,8 @@ title: CPU分析 | 监控最佳实践 | PM2 Plus教程
 title-en: CPU Profiling | Best Practices | PM2 Plus Documentation
 menu: starter
 lang: ch
+section: process-manager
+section: plus
 ---
 
 # CPU分析

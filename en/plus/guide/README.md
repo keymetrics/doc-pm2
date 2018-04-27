@@ -3,6 +3,8 @@ layout: page
 title: Guide | PM2 Plus Documentation
 menu: starter
 lang: en
+section: process-manager
+section: plus
 permalink: "/en/plus/guide/"
 redirect_from: "/plus/guide/"
 ---

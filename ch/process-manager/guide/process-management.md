@@ -4,6 +4,7 @@ title: 进程管理 | 指南 | PM2教程
 title-en: Process Management | Guide | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 进程管理

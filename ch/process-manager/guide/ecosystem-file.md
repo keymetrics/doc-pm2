@@ -4,6 +4,7 @@ title: 生态系统文件 | 指南 | PM2教程
 title-en: Ecosystem File | Guide | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 生态系统文件

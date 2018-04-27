@@ -4,6 +4,7 @@ title: Elastic Beanstalk | 综合 | PM2教程
 title-en: Elastic Beanstalk | Integration | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 与AWS Elastic Beanstalk一起使用PM2

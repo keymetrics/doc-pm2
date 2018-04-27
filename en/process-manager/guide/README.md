@@ -3,6 +3,7 @@ layout: page
 title: Guide | PM2 Documentation
 menu: starter
 lang: en
+section: process-manager
 permalink: "/en/process-manager/guide/"
 redirect_from: "/process-manager/guide"
 ---

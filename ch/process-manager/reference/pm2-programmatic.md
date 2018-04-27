@@ -4,6 +4,7 @@ title: 编程 | 参考 | PM2教程
 title-en: Programmatic | Reference | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # PM2 API
