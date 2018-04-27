@@ -39,11 +39,14 @@
         for (var level = 2; level <= 6; level++) {
           linkifyAnchors(level, contentBlock);
         }
+        var shiftWindow = function() { scrollBy(0, -100) };
+        if (location.hash) shiftWindow();
+        window.onhashchange = shiftWindow;
       }
       var urlHash = window.location.href.split("#")[1];
       if (urlHash &&  $('#' + urlHash).length )
             $('html,body').animate({
-                scrollTop: $('#' + urlHash).offset().top
+                scrollTop: $('#' + urlHash).offset().top - 100
             }, 1000);
     };
   }
