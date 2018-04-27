@@ -68,16 +68,16 @@ const metric = probe.metric({
 
 Available options are:
 
-- `mode`:
-  - `threshold`: trigger an alert directly when the value is above or below the threshold
-  - `threshold-avg`: trigger an alert when the value is above or below the threshold for *X* seconds
-  - `smart`: trigger an alert automatically when the value is unusual
-- `value`: Value that will be used for the exception check.
-- `msg`: String used for the exception.
-- `action`:  **optional**. Function triggered when the exception is reached.
-- `cmp`: **optional**. Function used for exception check taking 2 arguments.
-- `interval`: **optional**, `threshold-avg` mode. Sample length for monitored value (180 seconds default).
-- `timeout`: **optional**, `threshold-avg` mode. Time after which mean comparison starts (30 000 milliseconds default).
+- mode:
+  - threshold: trigger an alert directly when the value is above or below the threshold
+  - threshold-avg: trigger an alert when the value is above or below the threshold for *X* seconds
+  - smart: trigger an alert automatically when the value is unusual
+- value: Value that will be used for the exception check.
+- msg: String used for the exception.
+- action: Function triggered when the exception is reached. Optional.
+- cmp: Function used for exception check taking 2 arguments. Optional.
+- interval: For the threshold-avg mode. Sample length for monitored value (180 seconds default). Optional.
+- timeout: For the threshold-avg mode. Time after which mean comparison starts (30 000 milliseconds default). Optional.
 
 ### Custom event notifications
 
@@ -95,7 +95,7 @@ By default, notifications are sent by email. You can also receive them on slack 
 
 The Slack integration allows you to receive exceptions and event notifications straight into a selected Slack channel.
 
-First you need to get the Slack URL and to setup an incoming Webhook. More details on how to set this up can be found here: [https://my.slack.com/services/new/incoming-webhook/](https://my.slack.com/services/new/incoming-webhook/) or [https://api.slack.com/incoming-webhooks](https://api.slack.com/incoming-webhooks).
+First you need to get the Slack URL and to setup an incoming Webhook. More details on how to set this up can be found [here](https://my.slack.com/services/new/incoming-webhook/).
 
 Then go to the notification page and insert the webhook into the field. Enable and click on update.
 
