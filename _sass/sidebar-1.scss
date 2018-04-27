@@ -1,30 +1,20 @@
 //docsify
 
 .sidebar{
+  background: #202a37;
   border-right:1px solid rgba(0,0,0,.07);
   overflow-y:auto;
-  padding:40px 0 0;
+  padding:60px 0 0;
   position:absolute;
   top:0;
   bottom:0;
+  z-index: 4;
   left:0;
   transition:transform .25s ease-out;
-  width:300px;
-  z-index:3
-}
-.sidebar>h1{
-  margin:0 auto 1rem;
-  font-size:1.5rem;
-  font-weight:300;
-  text-align:center
-}
-.sidebar>h1 a{
-  color:inherit;
-  text-decoration:none
-}
-.sidebar>h1 .app-nav{
-  display:block;
-  position:static
+  width: 200px;
+  @media screen and (max-width: 768px) {
+      left: 0px;
+  }
 }
 .sidebar .sidebar-nav{
   line-height:2em;
@@ -98,7 +88,7 @@ body.close .sidebar {
 }
 
 .sidebar-nav > ul{
-    padding: 16px 24px 16px 20px !important
+    padding: 24px 24px 16px 30px !important
 }
 .sidebar ul li ul {
     padding-left: 12px!important;
@@ -111,19 +101,7 @@ body.close .sidebar {
     color:#3eb1f3!important;
 }
 
-.sidebar {
-    background: #202a37;
-    z-index: 4;
-    padding-top: 60px !important;
-    width: 345px;
-    padding-left: 145px;
 
-
-
-    @media screen and (max-width: 768px) {
-        left: 0px;
-    }
-}
 
 body.close .sidebar-toggle {
     @media screen and (max-width: 768px) {
