@@ -1,16 +1,15 @@
 ---
 layout: page
-title: Installation | Guide | PM2 Plus Documentation
+title: Installation | Guide | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/guide/installation"
 ---
 
 # Installation
 
-We assume that your app have been started with pm2 process-manager. If not, follow the [Quick Start]({{site.baseurl}}{% link en/process-manager/quick-start.md %}) tutorial.
+We assume that your app have been started with PM2. If not, follow the [Quick Start]({{site.baseurl}}{% link en/process-manager/quick-start.md %}) tutorial.
 
 ---
 

@@ -214,10 +214,18 @@
     /* background: yellowgreen;*/
 }
 
+.process-manager-page .PM2_logo {
+  background: url(/doc-pm2/img/process-manager-docs.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.plus-page .PM2_logo {
+  background: url(/doc-pm2/img/keymetrics-docs.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .PM2_logo {
-    background: url(/doc-pm2/img/pm2-docs.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 140px;
     min-height: 23px;
     margin: 20px auto;

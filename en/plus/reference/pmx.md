@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Reference | PM2 Plus Documentation
+title: Reference | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/reference/pmx"
 ---

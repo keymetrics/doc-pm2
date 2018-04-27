@@ -1,16 +1,15 @@
 ---
 layout: page
-title: Metrics Glossary | Best Practices | PM2 Plus Documentation
+title: Metrics Glossary | Best Practices | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/best-practices/metrics-glossary"
 ---
 
 # Metrics Glossary
 
-This glossary is an exhaustive list of all metrics recorded by PM2. Understand what a metric stands for and how it is computed will avoid you to draw conclusions too quickly.   
+This glossary is an exhaustive list of all metrics recorded by Keymetrics. Understand what a metric stands for and how it is computed will avoid you to draw conclusions too quickly.   
 
 Note that each metric always describes the state of a specific application on a specific server. You may find some cross server metrics on the dashboard, to suggest on which application you could use the profiling for example, but in most cases, metrics are application and server specific.
 

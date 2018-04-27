@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Memory Profiling | Best Practices | PM2 Plus Documentation
+title: Memory Profiling | Best Practices | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/best-practices/memory-profiling"
 ---

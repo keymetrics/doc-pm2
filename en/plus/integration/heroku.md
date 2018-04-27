@@ -1,18 +1,17 @@
 ---
 layout: page
-title: Heroku | Integration | PM2 Plus Documentation
+title: Heroku | Integration | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/integration/heroku"
 ---
 
 # Monitor your Node.js app in Heroku
 
-In seconds, this tutorial will show you how to monitor a node.js application with `pm2` and Heroku.
+In seconds, this tutorial will show you how to monitor a Node.js application with Keymetrics in Heroku.
 
-We assume that your app has already been wrapped with pm2. If not, follow the [heroku tutorial]({{site.baseurl}}{% link en/process-manager/integration/heroku.md %}).
+We assume that your app has already been wrapped with PM2. If not, follow the [heroku tutorial]({{site.baseurl}}{% link en/process-manager/integration/heroku.md %}).
 
 ---
 
@@ -22,9 +21,9 @@ Register [here](https://app.keymetrics.io/api/oauth/register).
 
 ---
 
-## Link with pm2 Plus
+## Link with Keymetrics
 
-In order to connect pm2 to the dashboard, you need to add your public and private keys in the environment.
+In order to connect PM2 to the dashboard, you need to add your public and private keys in the environment.
 
 To add your keys, run:
 
@@ -36,7 +35,7 @@ heroku config:set PM2_PUBLIC_KEY=XXXXXXXXXX PM2_SECRET_KEY=YYYYY
 
 ---
 
-## Set the server name in pm2 Plus
+## Set the server name in Keymetrics
 
 Set the `PM2_MACHINE_NAME` environment variable to specify a server name:
 

@@ -1,16 +1,15 @@
 ---
 layout: page
-title: Overview | PM2 Plus Documentation
+title: Overview | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/overview"
 ---
 
 # Overview
 
-Why monitor your app with pm2 ? At the end of this PM2 Plus overview, you'll have a good understanding of the capabilities of PM2 Plus.
+Why monitor your app with Keymetrics ? At the end of this overview, you'll have a better understanding of the capabilities of monitoring your app with Keymetrics.
 
 ---
 
@@ -18,13 +17,13 @@ Why monitor your app with pm2 ? At the end of this PM2 Plus overview, you'll hav
 
 ### Unified Overview
 
-PM2 Plus allows you to have an extended view of all your apps and databases in one single place, at real-time or through history. **Stop ssh in all your servers one by one**, instead, save time by having a condensed infrastructure plus view.
+Keymetrics allows you to have an extended view of all your apps and databases in one single place, at real-time or through history. **Stop ssh in all your servers one by one**, instead, save time by having a condensed infrastructure plus view.
 
 ![a unified overview]({{site.baseurl}}{% link img/plus/unified.png %})
 
 ### Custom Metrics
 
-Expose the important variables from your Node.js applications source code and display them as performance metrics on the pm2 plus dashboard. **Monitor values that matter.**
+Expose the important variables from your Node.js applications source code and display them as performance metrics on the Keymetrics dashboard. **Monitor values that matter.**
 
 ![custom metrics]({{site.baseurl}}{% link img/plus/personalized.png %})
 
@@ -32,7 +31,7 @@ Expose the important variables from your Node.js applications source code and di
 
 Know when a data reaches a threshold, when an error occurred in your application or when your production application is down.
 
-Even though pm2 process-manager makes sure that your application have no downtime, be notified in these critical situation in order to react. **Be notified and reactive in any critical situations.**
+Even though PM2 makes sure that your application have no downtime, be notified in these critical situation in order to react. **Be notified and reactive in any critical situations.**
 
 ![notifications]({{site.baseurl}}{% link img/plus/notifications.png %})
 
@@ -42,7 +41,7 @@ Even though pm2 process-manager makes sure that your application have no downtim
 
 ### Issue Dashboard
 
-PM2 Plus reports the list of all errors in the "Issue Dashboard" occurred in your Node.js and gets you notified.
+Keymetrics reports the list of all errors in the "Issue Dashboard" occurred in your Node.js and gets you notified.
 
 Stop spending time finding bugs or trying to replay them, we provide you an "Issue Dashboard" with everything in one place, to make debugging easier. **Drill down in your code and get the answer.**
 
@@ -70,7 +69,7 @@ Take memory dumps and CPU snapshots straight from your production servers.
 
 ### Remote control
 
-PM2 Plus makes possible to enhance custom functions in the source code of your application.
+Keymetrics makes possible to enhance custom functions in the source code of your application.
 
  For example, you can assign values to your application variables or just switch it to maintenance mode. In other words you can **expose triggerable functions in your code**.
 
@@ -87,9 +86,9 @@ For example your can track and be alerted when a new user has registered, a new 
 
 ### Third-party modules
 
-Extend the capabilities of the PM2 dashboard by using external modules listed in our module page.
+Extend the capabilities of the Keymetrics dashboard by using external modules listed in our module page.
 
-A Pm2 module can be a log rotation module, database monitoring module, a standalone http proxy, a load balancer, a DNS server or any kind of utility. **Anyone can create and publish its own module.**
+A module can be a log rotation module, database monitoring module, a standalone http proxy, a load balancer, a DNS server or any kind of utility. **Anyone can create and publish its own module.**
 
 ![modules]({{site.baseurl}}{% link img/plus/modules.png %})
 

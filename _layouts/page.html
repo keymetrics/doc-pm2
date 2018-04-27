@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 {% if page.lang %}
-{% if page.url contains 'process-manager' %}{% assign category ='process-manager' %}{% elsif page.url contains "plus" %}{% assign category ="plus" %}{% elsif page.url contains "enterprise" %}{% assign category ="enterprise" %}{% else %}{% assign category ='process-manager' %}{% endif %}
-
 <html lang="{{ page.lang }}">
 
   {% include head.html %}
 
   {% if page.lang == 'en' %}
-  <body class="en-doc sticky {{category}}-page">
+  <body class="en-doc sticky {{ page.section }}-page">
   {% else %}
-  <body class="non-en-doc sticky {{category}}-page">
+  <body class="non-en-doc sticky {{ page.section }}-page">
   {% endif %}
   {% include header/header-{{ page.lang }}.html %}
   {% include sidebar.html %}
@@ -17,13 +15,13 @@
 
   <section class="content">
       <div class="markdown-section gettings_started_block topBlock">
-        {% include getting-started/getting-started-{{ page.lang }}.html %}
+        {% include getting-started/getting-started-{{ page.lang }}-{{ page.section }}.html %}
       </div>
       <article id="main" class="markdown-section">
           {% include edit-page/edit-page-{{ page.lang }}.html %}
           {{ content }}
       </article>
-      {% include footer/footer-{{ page.lang }}.html %}
+      {% include footer/footer.html %}
   </section>
 
   </main>

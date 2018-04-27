@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Integration | PM2 Plus Documentation
+title: Integration | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 permalink: "/en/plus/integration/"
 redirect_from: "/plus/integration/"
@@ -11,7 +10,7 @@ redirect_from: "/plus/integration/"
 
 # Integration
 
-This section will help you integrate pm2.
+This section will help you integrate Keymetrics.
 
 Pick the tutorial that best matches your needs:
 

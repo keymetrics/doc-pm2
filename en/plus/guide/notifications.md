@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Notifications | Guide | PM2 Plus Documentation
+title: Notifications | Guide | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/guide/notifications"
 ---
@@ -23,7 +22,7 @@ This section will help you to setup custom notifications and to configure the ch
 
 ## Default notifications
 
-By default, pm2 sends few different kind of notifications:
+By default, Keymetrics sends few different kind of notifications:
 
 - When a new exception is thrown.
 
@@ -41,7 +40,7 @@ By default, pm2 sends few different kind of notifications:
 
 ### Custom metric notifications
 
-The main way to set custom notification with PM2 Plus is to use the custom metrics.
+The main way to set custom notification with Keymetrics is to use the custom metrics.
 
 When defining a custom metric, you can enable notifications on them when they reach a specific threshold.
 

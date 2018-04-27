@@ -1,4 +1,5 @@
-<div class="section header-section">
+{% if page.url contains 'process-manager' %}{% assign category ='process-manager' %}{% elsif page.url contains "plus" %}{% assign category ="plus" %}{% elsif page.url contains "enterprise" %}{% assign category ="enterprise" %}{% else %}{% assign category ='process-manager' %}{% endif %}
+<div class="section header-section {{category}}-page">
     <div class="header-container">
         <div class="sidebar-spacer">
 

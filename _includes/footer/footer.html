@@ -1,0 +1,23 @@
+<footer class="markdown-section copyright">
+    <p>© 2018 Keymetrics</p>
+    <ul id="footer">
+      {% if page.lang == 'en' %}
+        <li><a href="javascript:void(0);">Terms of Use</a></li>
+        <li><a href="javascript:void(0);">Privacy Policy</a></li>
+        {% if page.section == 'process-manager' %}
+          <li>Language: <a href="{{site.baseurl}}/ch/process-manager/overview" >Chinese</a></li>
+        {% else %}
+          <li>Language: <a href="{{site.baseurl}}/ch/plus/overview" >Chinese</a></li>
+        {% endif %}
+      {% else %}
+        <li><a href="javascript:void(0);">使用条款</a></li>
+        <li><a href="javascript:void(0);">隐私政策</a></li>
+        {% if page.section == 'process-manager' %}
+          <li>Language: <a href="{{site.baseurl}}/en/process-manager/overview" >English</a></li>
+        {% else %}
+          <li>Language: <a href="{{site.baseurl}}/en/plus/overview" >English</a></li>
+        {% endif %}
+      {% endif %}
+    </ul>
+</footer>
+

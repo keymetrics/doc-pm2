@@ -2,7 +2,7 @@
 
 # Monitor your Node.js app in Now.sh
 
-In seconds, this tutorial will show you how to monitor a node.js application with `pm2` and Now.sh.
+In seconds, this tutorial will show you how to monitor a node.js application with Keymetrics and Now.sh.
 
 We assume that your app has already been wrapped with pm2. If not, follow the [now.sh tutorial]({{site.baseurl}}{% link en/process-manager/integration/now.md %}).
 

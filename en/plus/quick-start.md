@@ -1,18 +1,17 @@
 ---
 layout: page
-title: Quick Start | PM2 Plus Documentation
+title: Quick Start | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/quick-start"
 ---
 
 # Quick Start
 
-In seconds, this Quick Start tutorial will show you how to start monitoring your node.js application with pm2.
+In seconds, this Quick Start tutorial will show you how to start monitoring your Node.js application with Keymetrics.
 
-We assume that your app has been started or wrapped with pm2. If not, follow the [Quick Start]({{site.baseurl}}{% link en/process-manager/quick-start.md %}) tutorial.
+We assume that your app has been started or wrapped with PM2. If not, follow the [Quick Start]({{site.baseurl}}{% link en/process-manager/quick-start.md %}) tutorial.
 
 ---
 
@@ -48,7 +47,7 @@ On Mac, enter `g++` in terminal and then follow the instructions.
 
 ### CPU/Memory profiler
 
-Use the pm2 installer:
+Use the PM2 installer:
 
 ```bash
 pm2 install profiler

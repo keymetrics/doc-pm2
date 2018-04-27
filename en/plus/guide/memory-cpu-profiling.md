@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Memory & CPU Profiling | Guide | PM2 Plus Documentation
+title: Memory & CPU Profiling | Guide | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/guide/memory-cpu-profiling"
 ---
@@ -12,7 +11,7 @@ redirect_from: "/plus/guide/memory-cpu-profiling"
 
 Profiling tools help you diagnose memory and CPU usage and other application-level issues.
 
-The profiling in pm2 monitoring allows you to take remote CPU/memory snapshots of your production servers. You get the associated files ready to be inspected with the chrome developer tools.
+The profiling in Keymetrics allows you to take remote CPU/memory snapshots of your production servers. You get the associated files ready to be inspected with the chrome developer tools.
 
 ![cpu and memory profiling]({{site.baseurl}}{% link img/plus/profiling.png %})
 
@@ -44,7 +43,7 @@ It gets you a visualisation of the stack and still offer the ability to download
 
 Thanks for finishing this guide.
 
-You can now take a look at the [reference]({{ site.baseurl }}{% link en/plus/reference/pmx.md %}) to master all the capabilities of pm2.
+You can now take a look at the [reference]({{ site.baseurl }}{% link en/plus/reference/pmx.md %}) to master all the capabilities of Keymetrics.
 
 ---
 

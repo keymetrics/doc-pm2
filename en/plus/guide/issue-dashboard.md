@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Issue Dashboard | Guide | PM2 Plus Documentation
+title: Issue Dashboard | Guide | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/guide/issue-dashboard"
 ---
@@ -15,7 +14,7 @@ You can track all exceptions that happens on your servers along with:
 - line code number
 - logs before exception
 
-The issue dashboard primarily reports all the uncaught exceptions. When happening, node.js process crashes and pm2 automatically restarts the application while emiting an exception.
+The issue dashboard primarily reports all the uncaught exceptions. When happening, Node.js process crashes and pm2 automatically restarts the application while emiting an exception.
 
 ![issue dashboard]({{site.baseurl}}{% link img/plus/issue.png %})
 

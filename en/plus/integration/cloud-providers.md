@@ -1,18 +1,17 @@
 ---
 layout: page
-title: Cloud Providers | Integration | PM2 Plus Documentation
+title: Cloud Providers | Integration | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/integration/cloud-providers"
 ---
 
 # Monitor your Node.js app in a cloud provider
 
-In seconds, this tutorial will show you how to monitor a node.js application with `pm2` and a cloud provider.
+In seconds, this tutorial will show you how to monitor a Node.js application with Keymetrics in a cloud provider.
 
-We assume that your app has already been wrapped with pm2. If not, follow the [cloud provider tutorial]({{site.baseurl}}{% link en/process-manager/integration/cloud-providers.md %}).
+We assume that your app has already been wrapped with PM2. If not, follow the [cloud provider tutorial]({{site.baseurl}}{% link en/process-manager/integration/cloud-providers.md %}).
 
 ---
 
@@ -22,9 +21,9 @@ Register [here](https://app.keymetrics.io/api/oauth/register).
 
 ---
 
-## Link your app with PM2 Plus
+## Link your app with Keymetrics
 
-In order to connect pm2 to the dashboard, you need to add your public and private keys in the environment.
+In order to connect PM2 to the dashboard, you need to add your public and private keys in the environment.
 
 ```bash
 export PM2_PUBLIC_KEY="YYYYY"
@@ -34,7 +33,7 @@ pm2 update
 
 ---
 
-## Set the server name in PM2 Plus
+## Set the server name in Keymetrics
 
 Set the `PM2_MACHINE_NAME` environment variable to specify a server name:
 

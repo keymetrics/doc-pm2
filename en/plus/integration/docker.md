@@ -1,18 +1,17 @@
 ---
 layout: page
-title: Docker | Integration | PM2 Plus Documentation
+title: Docker | Integration | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/integration/docker"
 ---
 
 # Monitor your Node.js app in a Docker container
 
-In seconds, this tutorial will show you how to monitor a node.js application with `pm2` inside a container.
+In seconds, this tutorial will show you how to monitor a Node.js application with Keymetrics inside a container.
 
-We assume that your app has already been wrapped with pm2. If not, follow the [docker tutorial]({{site.baseurl}}{% link en/process-manager/integration/docker.md %}).
+We assume that your app has already been wrapped with PM2. If not, follow the [docker tutorial]({{site.baseurl}}{% link en/process-manager/integration/docker.md %}).
 
 ---
 
@@ -32,9 +31,9 @@ RUN pm2 install profiler
 
 ---
 
-## Link your app with pm2 Plus
+## Link your app with Keymetrics
 
-In order to connect pm2 to the dashboard, you need to add your public and private keys in the environment.
+In order to connect PM2 to the dashboard, you need to add your public and private keys in the environment.
 
 Create a .env file with:
 ```.env
@@ -45,7 +44,7 @@ and restart your container with `docker run`adding `--env-file .env` to load the
 
 ---
 
-## Set the server name in pm2 Plus
+## Set the server name in Keymetrics
 
 Set the `PM2_MACHINE_NAME` environment variable to specify a server nam. Add this to the .env file:
 
@@ -63,29 +62,10 @@ PM2_MACHINE_NAME=docker-server
 
 ## Next step
 
-Complete your [dashboard configuration]({{site.baseurl}}{% link en/plus/guide/configuration.md %})
+Complete your dashboard [configuration]({{site.baseurl}}{% link en/plus/guide/configuration.md %})
 
 ---
 
 ## Questions ?
 
 We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.
-
-
-
-### Use Keymetrics.io dashboard
-
-[Keymetrics.io](https://keymetrics.io/) is a monitoring service built on top of PM2 that allows to monitor and manage applications easily (logs, restart, exceptions monitoring, etc...). Once you created a Bucket on Keymetrics you will get a public and a secret key.
-
-To enable Keymetrics monitoring with pm2-process-manager, you can whether use the CLI option –public `XXXX` and –secret `YYYY` or you can pass the environment variables `KEYMETRICS_PUBLIC` and `KEYMETRICS_SECRET`.
-
-From your Node.js app project folder launch those commands:
-
-```bash
-$ docker build -t your-app-name .
-$ docker run -e KEYMETRICS_PUBLIC=XXXX -e KEYMETRICS_SECRET=YYYY your-app-name
-```
-
-Make sure that the ports 80 (TCP outbound), 443 (HTTPS outbound) and 43554 (TCP outbound) are allowed on your firewall.
-
-See the [troubleshooting](http://docs.keymetrics.io/docs/pages/faq-troubleshooting/#troubleshooting-for-keymetrics-pm2) in case you encounter any problem.

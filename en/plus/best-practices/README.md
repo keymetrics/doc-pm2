@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Best Practices | PM2 Plus Documentation
+title: Best Practices | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 permalink: "/en/plus/best-practices/"
 redirect_from: "/plus/best-practices/"

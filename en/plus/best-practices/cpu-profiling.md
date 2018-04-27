@@ -1,16 +1,15 @@
 ---
 layout: page
-title: CPU Profiling | Best Practices | PM2 Plus Documentation
+title: CPU Profiling | Best Practices | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/best-practices/cpu-profiling"
 ---
 
 # CPU Profiling
 
-PM2 comes with a ready to use CPU profiling tool. All your servers can be profiled directly from your web dashboard. The visualisation tools then help you to visualize and interpret the results in order to improve your app's performance. The profiling files can also be downloaded to be inspected later in the chrome development tool.
+Keymetrics comes with a ready to use CPU profiling tool. All your servers can be profiled directly from your web dashboard. The visualisation tools then help you to visualize and interpret the results in order to improve your app's performance. The profiling files can also be downloaded to be inspected later in the chrome development tool.
 
 ---
 
@@ -36,7 +35,7 @@ An other approach is the "sampling". In this method, the profiler interrupts the
 
 Some profilers uses an hybrid approach. They instrument code only to count number of calls (a cheap operation) and use sampling to measure function execution time.
 
-The PM2 profiler uses the sampling approach.
+The Keymetrics profiler uses the sampling approach.
 
 ---
 

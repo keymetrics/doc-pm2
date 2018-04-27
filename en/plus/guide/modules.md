@@ -1,16 +1,15 @@
 ---
 layout: page
-title: Modules | Guide | PM2 Plus Documentation
+title: Modules | Guide | Keymetrics Documentation
 menu: starter
 lang: en
-section: process-manager
 section: plus
 redirect_from: "/plus/guide/modules"
 ---
 
 # Modules
 
-A pm2 module is a standalone software installed and managed by pm2. These softwares are pulled from the npm repository and are published as common Javascript libraries on npm.
+A module is a standalone software installed and managed by PM2. These softwares are pulled from the npm repository and are published as common Javascript libraries on npm.
 
 Anyone can create and publish a module. A module can be a [log rotation module](https://github.com/pm2-hive/pm2-logrotate), a [standalone http proxy](https://github.com/gridcontrol/proxy-only), a load balancer, a Node.js based wikipedia, a DNS server or any kind of utility. Your creativity is the limit!
 
