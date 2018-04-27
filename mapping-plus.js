@@ -1,4 +1,4 @@
-{
+var mapping = {
   "/": "/plus/overview/",
   "/docs/usage/introduction/": "/plus/overview/",
   "/docs/usage/setup/": "/plus/quick-start/",
@@ -23,3 +23,5 @@
   "/docs/pages/versioning-management/": "",
   "/docs/pages/http/": "/plus/guide/transaction-tracing/",
 }
+
+var newUrl = "pm2.io/doc/en" + mapping[document.location.pathname];

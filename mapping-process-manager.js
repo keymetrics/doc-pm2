@@ -1,4 +1,4 @@
-{
+var mapping = {
   "/": "/process-manager/overview/",
   "/docs/usage/quick-start/": "/process-manager/quick-start/",
   "/docs/usage/process-management/": "/process-manager/guide/process-management/",
@@ -33,3 +33,5 @@
   "/docs/usage/knowledge/": "/",
   "/docs/usage/auto-completion/": "/process-manager/guide/installation/",
 }
+
+var newUrl = "pm2.io/doc/en" + mapping[document.location.pathname];
