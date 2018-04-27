@@ -7,20 +7,28 @@
 }
 
 .header-section .header-container {
-  text-align: left;
-  padding: 1.111111111111111rem;
-}
+//   text-align: left;
+  display: flex;
+  align-items: center;
+  min-height: 76px;
+  padding-left: 16px;
+  padding-right: 16px;
 
-@media only screen and (min-width: 62em) {
-  .header-section .header-container {
-      text-align: right;
+  .sidebar-spacer {
+      background: red;
+      width: $sidebar-width;
+  }
+
+  .center-spacer {
+      flex: 1;
   }
 }
-
-@media only screen and (min-width: 90em) {
-  .header-section .header-container {
-      padding: 1.111111111111111rem 0;
-  }
+@media screen and (max-width: 768px) {
+    .header-section .header-container {
+        .sidebar-spacer {
+            width: 0px;
+        }
+    }
 }
 
 .header-section .header-container .logo {
@@ -32,7 +40,7 @@
 
 @media only screen and (min-width: 62em) {
   .header-section .header-container .logo {
-      float: left;
+    //   float: left;
       margin-top: .5rem;
   }
 }
@@ -169,11 +177,11 @@
     font-size: 1.2em;
 }
 
-.header-section .header-container,
-.header-container {
-    margin: 0px;
-    padding: 0px;
-}
+// .header-section .header-container,
+// .header-container {
+//     margin: 0px;
+//     padding: 0px;
+// }
 
 .app-nav,
 .app-nav.no-badge,
@@ -186,15 +194,12 @@
 
 
 .PM2_logo_wrapper {
-    margin-top: 15.5px;
-    margin-left: 35px;
     @media screen and (min-width: 480px) {
-        display: inline-block;
+        // display: inline-block;
         max-width: 200px;
-        float: left;
+        // float: left;
     }
     @media screen and (min-width: 768px) {
-        margin-left: 158px;
     }
 }
 
@@ -233,6 +238,13 @@
     display: none;
 }
 
+.algolia-autocomplete {
+    input {
+        max-width: 266px;
+        border: none;
+    }
+}
+
 .algolia-results {
     position: absolute;
     z-index: 5;
@@ -250,14 +262,14 @@
 }
 
 .PM2_search {
-    max-width: 280px;
-    margin: 20px auto;
+    // max-width: 280px;
+    // margin: 20px auto;
 
 
     @media screen and (min-width: 480px) {
-        display: inline-block;
-        float: right;
-        margin-right: 40px;
+        // display: inline-block;
+        // float: right;
+        // margin-right: 40px;
         position: relative;
     }
 }
@@ -276,8 +288,6 @@
     padding: 0 40px 0 39px;
     padding-left: 55px!important;
 
-
-  width: 310px;
   height: 47px;
   border-radius: 30px;
   background-color: #ffffff;
@@ -359,9 +369,6 @@
     margin: 20px;
     padding-left: 45px!important;
     padding-right: 40px!important;
-    @media screen and (min-width: 480px) {
-        min-width: 310px;
-    }
 }
 
 .search .clear-button {

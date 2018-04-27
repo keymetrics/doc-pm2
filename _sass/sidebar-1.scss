@@ -11,7 +11,7 @@
   z-index: 4;
   left:0;
   transition:transform .25s ease-out;
-  width: 200px;
+  width: $sidebar-width;
   @media screen and (max-width: 768px) {
       left: 0px;
   }
