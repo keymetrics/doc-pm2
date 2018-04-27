@@ -4,6 +4,7 @@ title: 启动挂钩 | 指南 | PM2教程
 title-en: Startup Hook | Guide | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 启动挂钩

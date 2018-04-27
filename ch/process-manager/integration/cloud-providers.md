@@ -4,6 +4,7 @@ title: 使用云供应商 | 综合 | PM2教程
 title-en: Cloud Providers | Integration | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 在云供应商中使用PM2

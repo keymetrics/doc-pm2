@@ -4,6 +4,7 @@ title: CLI | 参考 | PM2教程
 title-en: CLI | Reference | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # CLI参考

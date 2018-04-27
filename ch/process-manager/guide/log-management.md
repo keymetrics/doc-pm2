@@ -4,6 +4,7 @@ title: 日志管理 | 指南 | PM2教程
 title-en: Log Management | Guide | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 日志管理

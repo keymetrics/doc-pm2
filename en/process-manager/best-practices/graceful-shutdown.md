@@ -3,6 +3,7 @@ layout: page
 title: Graceful Shutdown | Best Practices | PM2 Documentation
 menu: starter
 lang: en
+section: process-manager
 redirect_from: "/process-manager/best-practices/graceful-shutdown"
 ---
 

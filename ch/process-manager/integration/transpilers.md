@@ -4,6 +4,7 @@ title: 转化器 | 综合 | PM2教程
 title-en: Transpilers | Integration | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 与转化器一起使用PM2

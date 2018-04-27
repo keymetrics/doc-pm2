@@ -4,6 +4,7 @@ title: 安装 | 指南 | PM2教程
 title-en: Installation | Guide | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 安装

@@ -3,6 +3,8 @@ layout: page
 title: Memory & CPU Profiling | Guide | PM2 Plus Documentation
 menu: starter
 lang: en
+section: process-manager
+section: plus
 redirect_from: "/plus/guide/memory-cpu-profiling"
 ---
 

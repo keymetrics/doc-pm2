@@ -4,6 +4,7 @@ title: 指南 | PM2教程
 title-en: Guide | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 permalink: "/ch/process-manager/guide/"
 ---
 

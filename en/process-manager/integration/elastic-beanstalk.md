@@ -3,6 +3,7 @@ layout: page
 title: Elastic Beanstalk | Integration | PM2 Documentation
 menu: starter
 lang: en
+section: process-manager
 redirect_from: "/process-manager/integration/elastic-beanstalk"
 ---
 

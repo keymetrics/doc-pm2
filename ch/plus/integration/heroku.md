@@ -4,6 +4,8 @@ title: Heroku | 集成 | PM2 Plus教程
 title-en: Heroku | Integration | PM2 Plus Documentation
 menu: starter
 lang: ch
+section: process-manager
+section: plus
 ---
 
 # 在Heroku中监控您的Node.js应用

@@ -4,6 +4,7 @@ title: 正常关机 | 生产最佳实践 | PM2教程
 title-en: Graceful Shutdown | Best Practices | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 正常关机

@@ -3,6 +3,7 @@ layout: page
 title: Ecosystem File | Reference | PM2 Documentation
 menu: starter
 lang: en
+section: process-manager
 redirect_from: "/process-manager/reference/ecosystem-file"
 ---
 

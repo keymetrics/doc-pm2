@@ -4,6 +4,7 @@ title: 概述 | PM2教程
 title-en: Overview | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 redirect_from: "/ch"
 ---
 

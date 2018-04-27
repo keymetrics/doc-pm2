@@ -4,6 +4,7 @@ title: 开发工具 | 指南 | PM2教程
 title-en: Development Tools | Guide | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 开发工具

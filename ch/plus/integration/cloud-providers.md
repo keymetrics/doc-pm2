@@ -4,6 +4,8 @@ title: 使用云供应商 | 集成 | PM2 Plus教程
 title-en: Cloud Providers | Integration | PM2 Plus Documentation
 menu: starter
 lang: ch
+section: process-manager
+section: plus
 ---
 
 # 在云供应商中监控您的Node.js应用

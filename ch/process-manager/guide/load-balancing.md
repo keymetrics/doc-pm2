@@ -4,6 +4,7 @@ title: 负载平衡 | 指南 | PM2教程
 title-en: Load-Balancing | Guide | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 ---
 
 # 负载平衡（群集模式）

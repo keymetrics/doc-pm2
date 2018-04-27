@@ -4,6 +4,8 @@ title: 事务跟踪 | 指南 | PM2 Plus教程
 title-en: Transaction Tracing | Guide | PM2 Plus Documentation
 menu: starter
 lang: ch
+section: process-manager
+section: plus
 ---
 
 # 事务跟踪

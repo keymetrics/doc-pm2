@@ -4,6 +4,8 @@ title: 参考 | PM2 Plus教程
 title: Reference | PM2 Plus Documentation
 menu: starter
 lang: ch
+section: process-manager
+section: plus
 ---
 
 # PMX文库

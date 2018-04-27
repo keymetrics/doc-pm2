@@ -3,6 +3,7 @@ layout: page
 title: Best Practices | PM2 Documentation
 menu: starter
 lang: en
+section: process-manager
 permalink: "/en/process-manager/best-practices/"
 redirect_from: "/process-manager/best-practices/"
 ---

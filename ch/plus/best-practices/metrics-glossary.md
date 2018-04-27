@@ -4,6 +4,8 @@ title: Metrics Glossary | Best Practices | PM2 Plus Documentation
 title-en: Metrics Glossary | Best Practices | PM2 Plus Documentation
 menu: starter
 lang: ch
+section: process-manager
+section: plus
 redirect_from: "/plus/best-practices/metrics-glossary"
 ---
 

@@ -4,6 +4,7 @@ title: 生产最佳实践 | PM2教程
 title-en: Best Practices | PM2 Documentation
 menu: starter
 lang: ch
+section: process-manager
 permalink: "/ch/process-manager/best-practices/"
 ---
 
