@@ -4,8 +4,6 @@
 // }
 
 .close .markdown-section {
-    float: unset;
-    margin: 0 auto;
     @media screen and (min-width: 768px) {
         border-radius:0px;
     }
@@ -27,12 +25,12 @@
 .markdown-section {
     padding:30px;
     float: left;
-    margin-left: 20px;
+    margin: 0 20px;
     border-radius: 2px;
     background-color: #ffffff;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
     max-width: 940px;
-    width:95%;
+    width:90%;
     
 
     @media screen and (min-width: 768px) {
