@@ -38,7 +38,7 @@
     apiKey: '65aa0e3b2df3e2c47669de31f26cc562',
     indexName: 'pm2docs',
     inputSelector: '.search_input',
-    algoliaOptions: { 'facetFilters': ["tags: {{ page.lang }}"] },
+    algoliaOptions: { 'facetFilters': ["tool:{{ page.section }}", "language:{{ page.lang }}"] },
     debug: false // Set debug to true if you want to inspect the dropdown
   });
   </script>
