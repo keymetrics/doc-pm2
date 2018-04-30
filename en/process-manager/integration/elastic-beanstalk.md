@@ -67,7 +67,7 @@ In your `package.json`, modify the start script to:
 ```json
 {
   "scripts": {
-    "start": "node ./node_modules/.bin/pm2-process-manager start ecosystem.config.js --env production"
+    "start": "node ./node_modules/.bin/pm2-runtime start ecosystem.config.js --env production"
   }
 ```
 

@@ -56,9 +56,9 @@ Follow our [tutorial]({{ site.baseurl }}{% link en/process-manager/best-practice
 
 ## 0 second downtime reload
 
-When you use `restart`, pm2 kills and restarts the process so there is a short period of time during which the service is unavailable.
+When you use `restart`, pm2 kills and restarts all the processes at the same time. There is a short period of time during which the service is unavailable.
 
-With reload, pm2 restarts all instances one by one always kepping at least one process running:
+With reload, pm2 restarts all processes one by one, always keeping at least one process running:
 ```bash
 pm2 reload <app_name>
 ```

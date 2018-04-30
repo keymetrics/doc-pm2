@@ -121,7 +121,7 @@ EXPOSE 8000
 # Show current folder structure in logs
 RUN ls -al -R
 
-CMD [ "pm2-process-manager", "start", "ecosystem.config.js" ]
+CMD [ "pm2-runtime", "start", "ecosystem.config.js" ]
 ```
 
 ### Build your image
@@ -158,12 +158,12 @@ docker exec -it <container-id> pm2 reload all
 ### Expose health endpoint
 
 ```Dockerfile
-CMD ["pm2-process-manager", "ecosystem.config.js", "--web"]
+CMD ["pm2-runtime", "ecosystem.config.js", "--web"]
 ```
 
 The `--web [port]` option allows to expose all vital signs (docker instance + application) via a JSON API.
 
-?> After installing pm2 in your shell, run `pm2-process-manager -h` to get all options available
+?> After installing pm2 in your shell, run `pm2-runtime -h` to get all options available
 
 ### You are ready
 
