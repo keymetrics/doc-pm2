@@ -1,4 +1,5 @@
 body.close .content {
+    left: 0;
     @media screen and (max-width: 768px) {
         -webkit-transform: translateX(0px);
         transform: translateX(0px);
@@ -6,14 +7,14 @@ body.close .content {
 }
 
 body .content {
-    left: $sidebar-width;
+    left: 230px;
     margin-top: 105px;
     padding-right: 110px;
     max-width: 1200px;
     padding-top:0px;
-    @media screen and (max-width: 768px) {
-      padding-right: 0px;
-  }
+}
+body.close .content {
+    padding-right: 0px;
 }
 
 body {
