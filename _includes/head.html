@@ -1,31 +1,41 @@
 {% assign description = "PM2, an advanced process manager for production Node.js applications associated to a monitoring solution." %}
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="copyright" content="Keymetrics Inc.">
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ description }}">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="copyright" content="Keymetrics Inc.">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ description }}">
+
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:url" content="https://pm2.io/doc/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://raw.githubusercontent.com/unitech/pm2/master/pres/pm2.20d3ef.png">
+
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@keymetrics_io">
+  <meta name="twitter:image:src" content="https://raw.githubusercontent.com/unitech/pm2/master/pres/pm2.20d3ef.png">
+  <meta name="twitter:url" content="http://docs.keymetrics.io/docs/usage/introduction/">
   
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{description}}">
-    <meta property="og:url" content="https://pm2.io/doc/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://raw.githubusercontent.com/unitech/pm2/master/pres/pm2.20d3ef.png">
+  <link rel="icon" type="image/png" href="{{ "favicon-96x96.png" | relative_url }}" sizes="96x96">
+  <link rel="icon" type="image/png" href="{{ "/favicon-16x16.png" | relative_url }}" sizes="16x16">
+  <link rel="icon" type="image/png" href="{{ "/favicon-32x32.png" | relative_url }}" sizes="32x32">
 
-    <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{{ description }}">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@keymetrics_io">
-    <meta name="twitter:image:src" content="https://raw.githubusercontent.com/unitech/pm2/master/pres/pm2.20d3ef.png">
-    <meta name="twitter:url" content="http://docs.keymetrics.io/docs/usage/introduction/">
-    
-    <link rel="icon" type="image/png" href="{{ "favicon-96x96.png" | relative_url }}" sizes="96x96">
-    <link rel="icon" type="image/png" href="{{ "/favicon-16x16.png" | relative_url }}" sizes="16x16">
-    <link rel="icon" type="image/png" href="{{ "/favicon-32x32.png" | relative_url }}" sizes="32x32">
+  <link rel="stylesheet" href="{{ "/css/normalize.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css">
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51734350-9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    <link rel="stylesheet" href="{{ "/css/normalize.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css">
-    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+    gtag('config', 'UA-51734350-9');
+  </script>
+
 </head>
