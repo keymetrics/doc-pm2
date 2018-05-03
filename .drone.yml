@@ -1,0 +1,34 @@
+pipeline:
+  publish:
+    image: plugins/docker
+    repo: keymetrics/pm2-docs
+    tags: latest
+    secrets: [ docker_username, docker_password ]
+    when:
+      event: push
+      branch: [ master ]
+  staging:
+    image: peloton/drone-rancher
+    url: https://rancher.keymetrics.io
+    service: pm2-io/docs
+    repo: keymetrics/pm2-docs
+    confirm: true
+    secrets: [ rancher_access_key, rancher_secret_key ]
+    when:
+      event: push
+      branch: [ master ]
+  slack:
+    image: plugins/slack
+    channel: ci
+    when:
+      event: push
+      branch: [ master ]
+      status: [ success, failure ]
+    template: |
+      {{#success build.status}}
+        {{repo.name}} : {{build.event}} with commit {{truncate build.commit 8}} on branch "{{build.branch}}" done by {{build.author}} succeeded in {{since build.started}}
+      {{else}}
+        {{repo.name}} : {{build.event}} with commit {{truncate build.commit 8}} on branch "{{build.branch}}" done by {{build.author}} failed in {{since build.started}}
+      {{/success}}
+      see {{ build.link }}
+    secrets: [ slack_webhook ]
