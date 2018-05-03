@@ -9,7 +9,7 @@ redirect_from: "/process-manager/quick-start"
 
 # Quick Start
 
-In seconds, this Quick Start tutorial will show you how to set up to production a node.js application with pm2.
+In seconds, this Quick Start tutorial will show you how to set up to production a node.js application with PM2.
 
 ---
 
