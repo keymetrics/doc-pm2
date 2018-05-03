@@ -1,5 +1,5 @@
 pipeline:
-  publish:
+  build:
     image: plugins/docker
     repo: keymetrics/pm2-docs
     tags: latest
@@ -7,11 +7,11 @@ pipeline:
     when:
       event: push
       branch: [ master ]
-  staging:
+  deploy:
     image: peloton/drone-rancher
     url: https://rancher.keymetrics.io
     service: pm2-io/docs
-    repo: keymetrics/pm2-docs
+    docker_image: keymetrics/pm2-docs
     confirm: true
     secrets: [ rancher_access_key, rancher_secret_key ]
     when:
