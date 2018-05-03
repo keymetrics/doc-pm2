@@ -11,7 +11,7 @@ redirect_from: "/process-manager/guide/startup-hook"
 
 The purpose of a startup hook is to save your process list and bring it back at machine restarts, even unexpected ones.
 
-Each OS has a specific tool to handle startup hooks: pm2 provides an easy way to generate and configure them.
+Each OS has a specific tool to handle startup hooks: PM2 provides an easy way to generate and configure them.
 
 ---
 

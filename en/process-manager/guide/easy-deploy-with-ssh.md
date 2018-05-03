@@ -11,7 +11,7 @@ redirect_from: "/process-manager/guide/easy-deploy-with-ssh"
 
 In many deployment workflow, the routine basically consists of connecting with SSH to multiple servers, git pull the latest version then reload the app.
 
-The pm2 deploy tool purpose is to automate this task.
+The PM2 deploy tool purpose is to automate this task.
 
 You set an array of distant hosts, a pre-deploy/post-deploy command line action and you are done.
 

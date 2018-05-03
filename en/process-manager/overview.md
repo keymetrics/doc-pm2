@@ -12,7 +12,7 @@ redirect_from:
 
 # Overview
 
-Why use pm2 ? At the end of this overview, you will better understand the benefits of using pm2 as a process manager.
+Why use PM2 ? At the end of this overview, you will better understand the benefits of using PM2 as a process manager.
 
 ---
 

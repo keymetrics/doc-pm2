@@ -9,7 +9,7 @@ redirect_from: "/process-manager/guide/development-tools"
 
 # Development Tools
 
-pm2 comes with two development tools that will help you on the development stage: a watch and restart mode and a server for static files.
+PM2 comes with two development tools that will help you on the development stage: a watch and restart mode and a server for static files.
 
 ---
 

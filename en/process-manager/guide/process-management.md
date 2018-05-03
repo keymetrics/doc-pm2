@@ -9,9 +9,9 @@ redirect_from: "/process-manager/guide/process-management"
 
 # Process management
 
-pm2 is a process kept in the background, a daemon, that takes care of all your running processes.
+PM2 is a process kept in the background, a daemon, that takes care of all your running processes.
 
-We'll learn how to manage process with pm2 and discover a key concept : the process list.
+We'll learn how to manage process with PM2 and discover a key concept : the process list.
 
 ---
 

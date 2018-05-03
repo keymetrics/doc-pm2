@@ -32,7 +32,7 @@ With docker, follow this [tutorial]({{ site.baseurl }}{% link en/process-manager
 
 ### CLI autocompletion
 
-By default, CLI autocompletion is not installed with pm2, we recommend it:
+By default, CLI autocompletion is not installed with PM2, we recommend it:
 
 ```bash
 pm2 completion install
@@ -54,7 +54,7 @@ Keep your pm2 up to date with:
 npm install pm2 -g && pm2 update
 ```
 
-?> `pm2 update` is necessary in order to refresh the pm2 daemon.
+?> `pm2 update` is necessary in order to refresh the PM2 daemon.
 
 ---
 
