@@ -131,7 +131,7 @@ module.exports = {
 pm2 monit
 ```
 
-![pm2本地监控]({{site.baseurl}}{% link img/process-manager/monit.png %})
+![pm2本地监控]({{ site.baseurl }}{% link img/process-manager/monit.png %})
 
 ---
 

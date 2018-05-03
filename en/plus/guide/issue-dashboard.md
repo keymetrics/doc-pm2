@@ -16,7 +16,7 @@ You can track all exceptions that happens on your servers along with:
 
 The issue dashboard primarily reports all the uncaught exceptions. When happening, Node.js process crashes and pm2 automatically restarts the application while emiting an exception.
 
-![issue dashboard]({{site.baseurl}}{% link img/plus/issue.png %})
+![issue dashboard]({{ site.baseurl }}{% link img/plus/issue.png %})
 
 ---
 

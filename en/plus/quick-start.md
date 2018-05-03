@@ -11,7 +11,7 @@ redirect_from: "/plus/quick-start"
 
 In seconds, this Quick Start tutorial will show you how to start monitoring your Node.js application with Keymetrics.
 
-We assume that your app has been started or wrapped with PM2. If not, follow the [PM2 Quick Start]({{site.baseurl}}{% link en/process-manager/quick-start.md %}) tutorial.
+We assume that your app has been started or wrapped with PM2. If not, follow the [PM2 Quick Start]({{ site.baseurl }}{% link en/process-manager/quick-start.md %}) tutorial.
 
 ---
 
@@ -65,7 +65,7 @@ pm2 reload all
 
 Go back to the dashboard, you have now access to realtime metrics of your app.
 
-![dashboard view]({{site.baseurl}}{% link img/plus/unified.png %})
+![dashboard view]({{ site.baseurl }}{% link img/plus/unified.png %})
 
 ---
 

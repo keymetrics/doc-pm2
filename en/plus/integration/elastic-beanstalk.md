@@ -11,7 +11,7 @@ redirect_from: "/plus/integration/elastic-beanstalk"
 
 In seconds, this tutorial will show you how to monitor a Node.js application with Keymetrics in AWS Elastic Beanstalk.
 
-We assume that your app has already been wrapped with PM2. If not, follow our [PM2 AWS Elastic Beanstalk Tutorial]({{site.baseurl}}{% link en/process-manager/integration/elastic-beanstalk.md %}).
+We assume that your app has already been wrapped with PM2. If not, follow our [PM2 AWS Elastic Beanstalk Tutorial]({{ site.baseurl }}{% link en/process-manager/integration/elastic-beanstalk.md %}).
 
 ---
 
@@ -52,7 +52,7 @@ eb setenv PM2_MACHINE_NAME=aws-eb-server
 
 ## Next step
 
-Complete your [dashboard configuration]({{site.baseurl}}{% link en/plus/guide/configuration.md %})
+Complete your [dashboard configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
 
 ---
 

@@ -11,7 +11,7 @@ redirect_from: "/plus/integration/cloud-providers"
 
 In seconds, this tutorial will show you how to monitor a Node.js application with Keymetrics in a cloud provider.
 
-We assume that your app has already been wrapped with PM2. If not, follow the [PM2 Cloud Provider Tutorial]({{site.baseurl}}{% link en/process-manager/integration/cloud-providers.md %}).
+We assume that your app has already been wrapped with PM2. If not, follow the [PM2 Cloud Provider Tutorial]({{ site.baseurl }}{% link en/process-manager/integration/cloud-providers.md %}).
 
 ---
 
@@ -49,7 +49,7 @@ export PM2_MACHINE_NAME="my-cloud-provider-server"
 
 ## Next step
 
-Complete your [dashboard configuration]({{site.baseurl}}{% link en/plus/guide/configuration.md %})
+Complete your [dashboard configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
 
 ---
 

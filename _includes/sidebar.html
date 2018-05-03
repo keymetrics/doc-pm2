@@ -32,13 +32,13 @@
     {% assign slug_title = item.title | slugify %}
     {% if page.url contains slug_title %}{% assign active = 'active' %}{% else %}{% assign active = '' %}{% endif %}
         <li class="{{ active }}">
-            <a href="{{site.baseurl}}{{ item.url }}">{{ item.title }}</a>
+            <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
             {% if item.submenu  %}
                 {% if page.url contains item.url  %}
                     <ul>
                         {% for entry in item.submenu %}
                         {% if page.url contains entry.url %}{% assign active = 'active' %}{% else %}{% assign active = '' %}{% endif %}
-                        <li class="{{ active }}"><a href="{{site.baseurl}}{{ entry.url }}">{{ entry.page }}</a></li>
+                        <li class="{{ active }}"><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a></li>
                         {% endfor %}
                     </ul>
                 {% endif %}

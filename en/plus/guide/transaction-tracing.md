@@ -13,7 +13,7 @@ The transaction tracing is useful to troubleshoot performance issues and get det
 
 Slow HTTP calls are identified and the database and external calls are aggregated to understand why.
 
-![transaction tracing]({{site.baseurl}}{% link img/plus/tracing.png %})
+![transaction tracing]({{ site.baseurl }}{% link img/plus/tracing.png %})
 
 ---
 

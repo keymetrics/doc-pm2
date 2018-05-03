@@ -121,11 +121,11 @@ pm2 reload app
 
 使用制表符，您可以使用自动完成功能：
 
-![pm2自动完成]({{site.baseurl}}{% link img/process-manager/autocomplete.png %})
+![pm2自动完成]({{ site.baseurl }}{% link img/process-manager/autocomplete.png %})
 
 使用 `--help`获得更多关于指令的信息：
 
-![pm2帮助]({{site.baseurl}}{% link img/process-manager/help.png %})
+![pm2帮助]({{ site.baseurl }}{% link img/process-manager/help.png %})
 
 ---
 

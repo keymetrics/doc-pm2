@@ -14,7 +14,7 @@ section: plus
 
 PM2 Plus中的配置文件允许您获取生产服务器的远程CPU/内存快照。 您可以使用chrome开发者工具以准备好相关文件进行检查。
 
-![cpu和内存分析]({{site.baseurl}}{% link img/plus/profiling.png %})
+![cpu和内存分析]({{ site.baseurl }}{% link img/plus/profiling.png %})
 
 ---
 

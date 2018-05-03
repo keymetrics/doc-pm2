@@ -66,7 +66,7 @@ pm2 reload all
 
 返回仪表板，您现在已可以访问您应用的实时指标。
 
-![仪表板视图]({{site.baseurl}}{% link img/plus/unified.png %})
+![仪表板视图]({{ site.baseurl }}{% link img/plus/unified.png %})
 
 ---
 

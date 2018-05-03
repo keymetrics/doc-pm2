@@ -12,7 +12,7 @@ section: plus
 
 只需几秒，本教程将向您展示如何在容器内使用`pm2`监控node.js应用。
 
-我们假设您的应用已被PM2包装了。 如果没有，请参考 [docker教程]({{site.baseurl}}{% link ch/process-manager/integration/docker.md %})。
+我们假设您的应用已被PM2包装了。 如果没有，请参考 [docker教程]({{ site.baseurl }}{% link ch/process-manager/integration/docker.md %})。
 
 ---
 

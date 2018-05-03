@@ -85,19 +85,19 @@ yarn add pm2
 
 添加一个用户：
 
-![创建一个IAM用户]({{site.baseurl}}{% link img/process-manager/IAM-add.png %})
+![创建一个IAM用户]({{ site.baseurl }}{% link img/process-manager/IAM-add.png %})
 
 给予它编程访问：
 
-![选择编程访问]({{site.baseurl}}{% link img/process-manager/IAM-prog.png %})
+![选择编程访问]({{ site.baseurl }}{% link img/process-manager/IAM-prog.png %})
 
 选择 `ElasticBeanstalkFullAccess`策略：
 
-![选择编程访问]({{site.baseurl}}{% link img/process-manager/IAM-strat.png %})
+![选择编程访问]({{ site.baseurl }}{% link img/process-manager/IAM-strat.png %})
 
 创建用户，您将获得您的访问密钥：
 
-![访问密钥]({{site.baseurl}}{% link img/process-manager/IAM-creds.png %})
+![访问密钥]({{ site.baseurl }}{% link img/process-manager/IAM-creds.png %})
 
 将您的 `access-id`和您的 `secret-key`复制粘贴到您的AWS配置文件 (`~/.aws/config`)：
 
