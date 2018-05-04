@@ -24,7 +24,7 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
 # keep_files: [images]
-baseurl: "/doc-pm2"
+baseurl: "/doc"
 destination: docs
 exclude: ["node_modules","README.md", "gulpfile.js", "package.json", "package-lock.json", "yarn.lock"]
 
