@@ -7,7 +7,6 @@
     setGitalk();
     logoTogglesSidebarOnMobile();
     setSidebarBreakpoints();
-    createSidebarLinkClickHandler();
   });
 
   function setAnchors() {
@@ -152,7 +151,7 @@
                 e.preventDefault();
             });
         } else {
-            console.warn('cannt find .PM2_logo')
+            console.warn('can\'t find .PM2_logo')
         }
     }
 
@@ -175,14 +174,6 @@
 
     function iterateSelectorResults(selector, handler) {
         return Array.prototype.slice.call(document.querySelectorAll(selector)).forEach(handler);
-    }
-
-    function createSidebarLinkClickHandler() {
-        iterateSelectorResults('.sidebar a', function(a) {
-            addEvent(a, 'click', function() {
-                anchorClickScrollFix();
-            });
-        });
     }
 
     // ok
