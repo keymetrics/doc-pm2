@@ -46,28 +46,28 @@ pm2.connect(function(err) {
 
 ## Programmatic API
 
-**`pm2.connect(errback)` or `pm2.connect(noDaemonMode, errback)`**
+`pm2.connect(errback)` or `pm2.connect(noDaemonMode, errback)`
 * `noDaemonMode` - (Default: false) If true is passed for the first argument, pm2 will not be run as a daemon and will die when the related script exits. If pm2 is already running, your script will link to the existing daemon but will die once your process exits.
 * `errback(error)` - Called when finished connecting to or launching the pm2 daemon process.
 
 Either connects to a running pm2 daemon ("God") or launches and daemonizes one. Once launched, the pm2 process will keep running after the script exits.
 
 
-**`pm2.disconnect()`**
+`pm2.disconnect()`
 
 Disconnects from the pm2 daemon.
 
 
-**`pm2.killDaemon(errback)`**
+`pm2.killDaemon(errback)`
 
 Kills the pm2 daemon (same as `pm2 kill`). Note that when the daemon is killed, all its processes are also killed. Also note that you still have to explicitly disconnect from the daemon even after you kill it.
 
 
-**`pm2.start(options, errback)`**
-**`pm2.start(jsonConfigFile, errback)`**
-**`pm2.start(script, errback)`**
-**`pm2.start(script, options, errback)`**
-**`pm2.start(script, jsonConfigFile, errback)`**
+`pm2.start(options, errback)`
+`pm2.start(jsonConfigFile, errback)`
+`pm2.start(script, errback)`
+`pm2.start(script, options, errback)`
+`pm2.start(script, jsonConfigFile, errback)`
 
 * `script` - The path of the script to run.
 * `jsonConfigFile` - The path to a JSON file that can contain the same options as the `options` parameter.
@@ -75,21 +75,21 @@ Kills the pm2 daemon (same as `pm2 kill`). Note that when the daemon is killed, 
 * `options` - An object with the following options (additional descriptions of these options are [here](http://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/#graceful-reload)):
 
 
-**`pm2.stop(process, errback)`**
-**`pm2.restart(process, errback)`**
-**`pm2.delete(process, errback)`**
-**`pm2.reload(process, errback)`**
+`pm2.stop(process, errback)`
+`pm2.restart(process, errback)`
+`pm2.delete(process, errback)`
+`pm2.reload(process, errback)`
 
 * `process` - Can either be the `name` as given in the `pm2.start` `options`, a process id, or the string "all" to indicate that all scripts should be restarted.
 * `errback(err, proc)`
 
 
-**`pm2.list(errback)`**
+`pm2.list(errback)`
 
 * `errback(err, processDescriptionList)` - The `processDescriptionList` parameter will contain a list of `processDescription` objects as defined under `pm2.describe`.
 
 
-**`pm2.describe(process,errback)`**
+`pm2.describe(process,errback)`
 
 * `errback(err, processDescription)`
 * `processDescription` - An object with information about the process. Contains the properties:
@@ -112,32 +112,32 @@ Kills the pm2 daemon (same as `pm2 kill`). Note that when the daemon is killed, 
     * `pm_exec_path` - The path of the script being run in this process.
 
 
-**`pm2.dump(errback)`**
+`pm2.dump(errback)`
 
 * `errback(err, result)`
 
 
-**`pm2.startup(platform, errback)`**
+`pm2.startup(platform, errback)`
 
 * `errback(err, result)`
 
 
-**`pm2.flush(process, errback)`**
+`pm2.flush(process, errback)`
 
 * `errback(err, result)`
 
 
-**`pm2.reloadLogs(errback)`** - *Rotates* the log files. The new log file will have a higher number in it (the default format being `${process.name}-${out|err}-${number}.log`).
+`pm2.reloadLogs(errback)` - *Rotates* the log files. The new log file will have a higher number in it (the default format being `${process.name}-${out|err}-${number}.log`).
 
 * `errback(err, result)`
 
 
-**`pm2.launchBus(errback)`** - Opens a message bus.
+`pm2.launchBus(errback)` - Opens a message bus.
 
 * `errback(err, bus)` - The `bus` will be an [Axon Sub Emitter](https://github.com/tj/axon#pubemitter--subemitter) object used to listen to and send events.
 
 
-**`pm2.sendSignalToProcessName(signal, process, errback)`**
+`pm2.sendSignalToProcessName(signal, process, errback)`
 
 * `errback(err, result)`
 
