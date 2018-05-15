@@ -11,8 +11,6 @@
 }
 
 .markdown-section pre{
-  -moz-osx-font-smoothing:initial;
-  -webkit-font-smoothing:initial;
   line-height:1.5rem;
   margin:1.2em 0;
   overflow:auto;
@@ -21,19 +19,13 @@
   word-wrap:normal
 }
 .markdown-section pre>code {
-    color: #fff;
-    -moz-osx-font-smoothing:initial;
-    -webkit-font-smoothing:initial;
-    background-color:#f8f8f8;
-    border-radius:2px;
-    display:block;
-    font-size:.8rem;
-    line-height:inherit;
-    margin:0 2px;
-    max-width:inherit;
-    overflow:inherit;
-    padding:2.2em 5px;
-    white-space:inherit
+  color: #fff;
+  background-color:#f8f8f8;
+  border-radius:2px;
+  display:block;
+  font-size:.8rem;
+  margin:0 2px;
+  padding:1.2em 20px;
 }
 
 .highlight_word {
