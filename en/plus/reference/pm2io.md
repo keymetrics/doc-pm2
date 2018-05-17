@@ -15,8 +15,8 @@ redirect_from: "/plus/reference/pm2io"
 
 ### Initialisation options
 
-Entry name|Description|Type|Default
----|---|---|---
+```javascript
+io.init({
   metrics: {
     eventLoopActive: true, // (default: true) Monitor active handles and active requests
     eventLoopDelay: true,  // (default: true) Get event loop's average delay
@@ -83,6 +83,7 @@ Entry name|Description|Type|Default
     profilingHeap: true   // (default: true) Enable Heap profiling actions
   }
 });
+```
 
 ---
 
