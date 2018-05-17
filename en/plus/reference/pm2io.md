@@ -20,6 +20,20 @@ io.init({
   metrics: {
     eventLoopActive: true, // (default: true) Monitor active handles and active requests
     eventLoopDelay: true,  // (default: true) Get event loop's average delay
+
+    network : {       // Network monitoring at the application level
+      traffic : true, // (default: true) Allow application level network monitoring
+      ports   : true  // (default: false) Shows which ports your app is listening on
+    },
+
+    // Transaction Tracing system configuration
+    transaction  : {
+      http : true,              // (default: true) HTTP routes logging
+      tracing: {                // (default: false) Enable transaction tracing
+        http_latency: 1,        // (default: 200) minimum latency in milliseconds to take into account
+        ignore_routes: ['/foo'] // (default: empty) exclude some routes
+      }
+    },
   
     deepMetrics: {
       mongo: true,     // (default: true) Mongo connections monitoring
@@ -59,20 +73,6 @@ io.init({
         peakMallocedMemory: false,        // (default: false) GC peak of allocated memory
         gcType: true,                     // (default: true)  Type of GC (scavenge, mark/sweep/compact, ...)
        gcPause: true                     // (default: true)  Duration of pause (in milliseconds)
-      }
-    },
-
-    network : {       // Network monitoring at the application level
-      traffic : true, // (default: true) Allow application level network monitoring
-      ports   : true  // (default: false) Shows which ports your app is listening on
-    },
-
-    // Transaction Tracing system configuration
-    transaction  : {
-      http : true,              // (default: true) HTTP routes logging
-      tracing: {                // (default: false) Enable transaction tracing
-        http_latency: 1,        // (default: 200) minimum latency in milliseconds to take into account
-        ignore_routes: ['/foo'] // (default: empty) exclude some routes
       }
     }
   },
