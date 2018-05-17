@@ -9,126 +9,244 @@ redirect_from: "/plus/guide/configuration"
 
 # Configuration
 
-Your dashboard comes with a lot of metrics without configuration.
+Your dashboard comes with a lot of metrics without configuration. You also have the possibility to add some predefined set of metrics or to create custom ones.
 
-However, a further configuration can be done using the **PMX library**. This is a lightweight library for advanced interaction between your server and the dashboard.
+PM2 comes with the [@pm2/io](https://github.com/keymetrics/pm2-io-apm/tree/master/test) module, which is its part in charge of gathering the metrics that are displayed in `pm2 monit` or in the web dashboard. By default, the module just wraps your app. You must require it in your code in order to refine the configuration and add custom metrics or custom actions.
 
-- **Expose custom metrics** to enrich your dashboard
-- **Expose custom actions** remotely triggerable from anywhere
-- **Emit events** to track anything you want
-- **Refine exception detection** to detect even caught
+You can check the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}).
 
 ---
 
-## PMX installation
+## Installation
 
 With npm:
 
 ```bash
-npm install pmx --save
+npm install @pm2/io --save
 ```
 
 With yarn:
 
 ```bash
-yarn add pmx
+yarn add @pm2/io
 ```
 
 ---
 
-## PMX intialisation
+## Intialisation
 
-Load and initialize pmx at the top level of your application, before any other `require`.
-
-```javascript
-const pmx = require('pmx').init({
-    // Enable the exception reporting, default true
-    errors: true,
-    // Enable the transaction tracing, default false
-    transactions: false,
-    // Enable the profiling, default true
-    profiling: true,
-  })
-```
-
-?> See additional intialisation options in the [PMX reference]({{ site.baseurl }}{% link en/plus/reference/pmx.md %}).
-
----
-
-## Expose custom metrics
-
-pmx gives you a probe constructor giving you the ability to expose variable value to the dashboard.
-
-Example:
+Load and initialize @pm2/io at the top level of your application, before any other `require`.
 
 ```javascript
-const probe = require('pmx').probe();
+const io = require('@pm2/io')
 
-let counter = 0;
-
-const metric = probe.metric({
-  name: 'Online users',
-  type: 'custom/users', // unique id that identify the metric
-  unit: null, // value of the metric that will be displayed on the dashboard
-  agg_type: 'avg', // This param is optionnal, it can be `sum`, `max`, `min`, `avg` (default) or `none`. It will impact the way the probe data are aggregated. Use `none` if this is irrelevant (eg: constant or string value).
-  value: () => {
-    return counter;
+io.init({
+  metrics: {
+    network: {
+      ports: true
+    }
   }
 })
+```
 
-const metric = probe.metric({
-  name    : 'Realtime user',
-  value   : () => {
+This first basic initialisation will add to the dashboard the port number your app is listening to.
+
+?> See additional intialisation options in the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}).
+
+---
+
+## Expose Custom Metrics
+
+@pm2/io allows you to gather metrics from your code to be reported in `pm2 monit` or in the Keymetrics dashboard.
+
+### Create a custom metrics
+
+You can create a new custom metrics with the method `metric()` of `@pm2/io`.
+
+```javascript
+const io = require('@pm2/io');
+
+io.metric({
+  type: 'metric',
+  name: 'Realtime user',
+});
+```
+
+You need to provide at least two arguments:
+
+- **name**: The metric name
+- **type**: The type of metric
+
+There are 4 different types of metrics:
+
+- **metric**: To expose a variable's value
+- **counter**: A discrete counter to be triggered manually to count a number of occurrence
+- **meter**: To measure a frequency, a number of occurrences of a repeating event per unit of time
+- **histogram**: To measure a statistic, a statistic on a metric over the last 5 minutes
+
+### Metric: Variable Exposition
+
+The first type of metric, called `metric`, allows to expose a variable's value. The variable can be exposed passively, with a function that gets called every second, or actively, with a method that you use to update the value.
+
+#### Passive Mode
+
+```javascript
+const io = require('@pm2/io');
+
+io.metric({
+  type: 'metric',
+  name: 'Realtime user',
+  value: function() {
     return Object.keys(users).length;
   }
-})
+});
 ```
 
-Note that the custom metric value is sent every second, occuring a call of the function you have given.
+#### Active Mode
 
-?> Read more about exposing custom metrics in the [PMX reference]({{ site.baseurl }}{% link en/plus/reference/pmx.md %}).
-
----
-
-## Expose remote action
-
-You can remotely trigger functions directly from your dashboard. After having been exposed from your code, action buttons can be found in the main dashboard page under in a dedicated section.
-
-The action command takes a function as a parameter that needs to be called once the job is finished.
-
-Example:
+In active mode, you need to create a probe and call the method `set()` to update the value.
 
 ```javascript
-const pmx = require('pmx');
+const { Realtime_Value } = io.metric({
+  type: 'metric',
+  name: 'Realtime Value'
+});
 
-pmx.action('db:clean', function(reply) {
-  clean.db(() => {
-    /**
-     * reply() must be called at the end of the action
-     */
-     reply({success : true});
+Realtime_Value.set(23);
+```
+
+### Counter: Discrete Counter
+
+The second type of metric, called `counter`, is a discrete counter that helps you count the number of occurrence of a particular event. The counter starts at 0 and can be incremented or decremented.
+
+```javascript
+const io = require('@pm2/io');
+
+const { Current_req_processed } = io.metric({
+  name: 'Current req processed',
+  type: 'counter',
+});
+
+http.createServer((req, res) => {
+  // Increment the counter, counter will eq 1
+  Current_req_processed.inc();
+  req.on('end', () => {
+    // Decrement the counter, counter will eq 0
+    Current_req_processed.dec();
   });
 });
 ```
 
-?> Read more about exposing remote actions in the [PMX reference]({{ site.baseurl }}{% link en/plus/reference/pmx.md %}).
+### Meter: Frequency
+
+The third type of metric, called `meter`, compute the frequency of an event. Each time the event happens, you need to call the `mark()` method. By default, the frequency is the number of events per second over the last minute.
+
+```javascript
+const io = require('@pm2/io');
+
+const { reqsec } = io.metric({
+  name: 'req/sec',
+  type: 'meter',
+});
+
+http.createServer((req, res) => {
+  reqsec.mark();
+  res.end({ success: true });
+});
+```
+
+Additional options:
+- **samples**: (optional)(default: 1) Rate unit. Defaults to **1** sec.
+- **timeframe**: (optional)(default: 60) Timeframe over which the events will be analyzed. Defaults to **60** sec.
+
+### Histogram: Statistics
+
+Collect values and provide statistic tools to explore their distribution over the last 5 minutes.
+
+```javascript
+const io = require('@pm2/io');
+
+const { latency } = io.metric({
+  name: 'latency',
+  type: 'histogram',
+  measurement: 'mean'
+});
+
+const latencyValue = 0;
+
+setInterval(() => {
+  latencyValue = Math.round(Math.random() * 100);
+  latency.update(latencyValue);
+}, 100);
+```
+
+Options is:
+- **measurement** : (optional)(default: avg) Can be `sum`, `max`, `min`, `avg` or `none`.
 
 ---
 
-## Emit Events
+## Expose Remote Actions: Trigger Functions remotely
 
-Emit events to get an history or statistics.
+You can remotely trigger functions directly from your dashboard. After having been exposed from your code, action buttons can be found in the main dashboard page under in a dedicated section.
+
+### Simple actions
+
+The function takes a function as a parameter that needs to be called once the job is finished.
+
+Example:
 
 ```javascript
-const pmx = require('pmx')
+const io = require('@pm2/io');
 
-pmx.emit('user:register', {
-  user: 'Alex registered',
-  email: 'thorustor@gmail.com'
-})
+io.action('db:clean', (reply) => {
+  clean.db(() => {
+     reply({ success: true });
+  });
+});
 ```
 
-?> Read more about emitting events in the [PMX reference]({{ site.baseurl }}{% link en/plus/reference/pmx.md %}).
+### Scoped actions (beta)
+
+Scoped Actions are advanced remote actions that can be also triggered from Keymetrics.
+
+Two arguments are passed to the function, data (optional data sent from Keymetrics) and res that allows to emit log data and to end the scoped action.
+
+Example:
+
+```javascript
+io.scopedAction('long running lsof', (data, res) => {
+  var child = spawn('lsof', []);
+
+  child.stdout.on('data', (chunk) => {
+    chunk.toString().split('\n').forEach(function(line) {
+      res.send(line); // This send log to Keymetrics to be saved (for tracking)
+    });
+  });
+
+  child.stdout.on('end', (chunk) => {
+    res.end('end'); // This end the scoped action
+  });
+
+  child.on('error', (e) => {
+    res.error(e);  // This report an error to Keymetrics
+  });
+
+});
+```
+
+## Report Caught Exceptions
+
+By default, in the Issue tab, you are only alerted for uncaught exceptions. Any exception that you catch is not reported. You can manually report them with the `notify()` method.
+
+```javascript
+const io = require('@pm2/io');
+
+io.notify({ success: false });
+
+io.notify('This is an error');
+
+io.notifyError(new Error('This is an error'));
+```
 
 ---
 

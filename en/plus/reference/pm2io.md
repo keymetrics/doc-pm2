@@ -4,110 +4,85 @@ title: Reference | Keymetrics Documentation
 menu: starter
 lang: en
 section: plus
-redirect_from: "/plus/reference/pmx"
+redirect_from: "/plus/reference/pm2io"
 ---
 
-# The PMX Library
+# The @pm2/io Library
 
-PMX is a lightweight library that allows advanced interactions with your dashboards.
-
-- **Expose metrics** to be displayed in realtime or through history
-- **Expose actions** remotely triggerable from the dashboard
-- **Emit exceptions** like exceptions or critical issues
-- **Emit events** to inform about anything
+[@pm2/io](https://github.com/keymetrics/pm2-io-apm/tree/master/test) is the library that comes with PM2 which is in charge of gathering the metrics that are displayed in `pm2 monit` or in the web dashboard. By default, the module just wraps your app but can be required in the code to refine the configuration or add custom metrics/actions.
 
 ---
 
-## Installation
+### Initialisation options
 
-With yarn:
+Entry name|Description|Type|Default
+---|---|---|---
+  metrics: {
+    eventLoopActive: true, // (default: true) Monitor active handles and active requests
+    eventLoopDelay: true,  // (default: true) Get event loop's average delay
+  
+    deepMetrics: {
+      mongo: true,     // (default: true) Mongo connections monitoring
+      mysql: true,     // (default: true) MySQL connections monitoring
+      mqtt: true,      // (default: true) Mqtt connections monitoring
+      socketio: true,  // (default: true) WebSocket monitoring
+      redis: true,     // (default: true) Redis monitoring
+      http: true,      // (default: true) Http incoming requests monitoring
+      https: true,     // (default: true) Https incoming requests monitoring
+      "http-outbound": true, // (default: true) Http outbound requests monitoring
+      "https-outbound": true // (default: true) Https outbound requests monitoring
+    },
+  
+    v8: {
+      new_space: true,                    // (default: true) New objects space size
+      old_space: true,                    // (default: true) Old objects space size
+      map_space: true,                    // (default: true) Map space size
+      code_space: true,                   // (default: true) Executable space size
+      large_object_space: true,           // (default: true) Large objects space size
+      total_physical_size: false,         // (default: false) Physical heap size
+      total_heap_size: true,              // (default: true)  Heap size
+      total_available_size: false,        // (default: false) Total available size for the heap
+      total_heap_size_executable: true,   // (default: true)  Executable heap size
+      used_heap_size: true,               // (default: true)  Used heap size
+      heap_size_limit: true,              // (default: true)  Heap size maximum size
+      malloced_memory: false,             // (default: false) Allocated memory
+      peak_malloced_memory: false,        // (default: false) Peak of allocated memory
+      does_zap_garbage: false,            // (default: false) Zap garbage enable/disable
+      GC: {
+        totalHeapSize: true,              // (default: true)  GC heap size
+        totalHeapExecutableSize: true,    // (default: true)  GC executable heap size
+        usedHeapSize: true,               // (default: true)  GC used heap size
+        heapSizeLimit: false,             // (default: false) GC heap size maximum size
+        totalPhysicalSize: false,         // (default: false) GC heap physical size
+        totalAvailableSize: false,        // (default: false) GC available size
+        mallocedMemory: false,            // (default: false) GC allocated memory
+        peakMallocedMemory: false,        // (default: false) GC peak of allocated memory
+        gcType: true,                     // (default: true)  Type of GC (scavenge, mark/sweep/compact, ...)
+       gcPause: true                     // (default: true)  Duration of pause (in milliseconds)
+      }
+    },
 
-```bash
-yarn add pmx
-```
+    network : {       // Network monitoring at the application level
+      traffic : true, // (default: true) Allow application level network monitoring
+      ports   : true  // (default: false) Shows which ports your app is listening on
+    },
 
-With npm:
-
-```bash
-npm install pmx --save
-```
-
-### PMX intialisation
-
-Load and initialize pmx at the top level of your application.
-
-```javascript
-const pmx = require('pmx').init({
-  errors: true,
-  transactions: false
-  profiling: true,
+    // Transaction Tracing system configuration
+    transaction  : {
+      http : true,              // (default: true) HTTP routes logging
+      tracing: {                // (default: false) Enable transaction tracing
+        http_latency: 1,        // (default: 200) minimum latency in milliseconds to take into account
+        ignore_routes: ['/foo'] // (default: empty) exclude some routes
+      }
+    }
+  },
+  
+  actions: {
+    eventLoopDump: false, // (default: false) Enable event loop dump action
+    profilingCpu: true,   // (default: true) Enable CPU profiling actions
+    profilingHeap: true   // (default: true) Enable Heap profiling actions
+  }
 });
-```
-
-### Possible issues with modules:
-
-To retrieve the http latency, pmx [wraps](https://github.com/keymetrics/pmx/blob/master/lib/wrapper/simple_http.js) the `http` module. If you require any module modifying the `http` module, the wrapper could be removed.
-
-* `request-promise`: This module clears the node cache and requires a new clean version of the `http` module. To solve this require `http` again after requiring `request-promise` to get the correctly wrapped `http` module.
-
-Options available are:
-
-Option|Description|Type|Default
----|---|---|---|---
-errors|Enable the Issue Dashboard|boolean|true
-transactions|Enable the Transaction Tracing|boolean|false
-profiling|Enable the Profiling|boolean|true
-http|Enable HTTP routes logging|boolean|true
-http_latency||integer|200
-http_code||integer|500
-ignore_routes|Ignore http routes with the given patterns|[Regexp]|[]
-alert_enabled|Enable or disable the alert subfield in custom metrics|boolean|true
-custom_probes|Auto expose JS Loop Latency and HTTP req/s as custom metrics|boolean|true
-network|Network monitoring at the application level,display inbound and outbound traffic|boolean|false
-ports| Shows which ports your app is listening on|boolean|false
-
-### Application level network traffic monitoring / Display used ports
-
-You can monitor the network usage of a specific application by adding the option `network: true` when initializing PMX. 
-If you enable the flag `ports: true` when you init pmx it will show which ports your application is listening on.
-
-You can find these metrics in the **Custom Metrics** section located in the Keymetrics Dashboard page.
-
-Example:
-
-```
-pmx.init({
-  [...]
-  network : true, // Allows application level network monitoring
-  ports   : true  // Displays ports used by the application
-});
-```
-
-### HTTP latency analysis
-
-This feature enables you to monitor routes, latency and codes while being REST compliant.
-
-```javascript
-pmx.http(); // You must do this BEFORE any require('http')
-```
-
-You can also ignore some routes by passing a list of regular expressions.
-
-```javascript
-pmx.http({
-  http          : true, // (Default: true)
-  ignore_routes : [/socket\.io/, /notFound/] // Ignore http routes with this pattern (Default: [])
-});
-```
-
-This can alternatively be done via pmx.init().
-
-```javascript
-pmx.init({
-  http          : true, // (Default: true)
-  ignore_routes : [/socket\.io/, /notFound/] // Ignore http routes with this pattern (Default: [])
-});
-```
 
 ---
 

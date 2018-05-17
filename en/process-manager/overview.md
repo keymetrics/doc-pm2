@@ -8,6 +8,7 @@ redirect_from:
 - "/process-manager/overview"
 - "/en"
 - "/"
+- ""
 ---
 
 # Overview

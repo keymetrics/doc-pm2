@@ -97,7 +97,7 @@ plus:
       - page: With a Cloud Provider
         url: "/en/plus/integration/cloud-providers/"
   - title: Reference
-    url: "/en/plus/reference/pmx"
+    url: "/en/plus/reference/pm2io/"
 
 enterprise:
   - title: Overview
