@@ -9,11 +9,9 @@ redirect_from: "/plus/guide/configuration"
 
 # Configuration
 
-Your dashboard comes with a lot of metrics without configuration. You also have the possibility to add some predefined set of metrics or to create custom ones.
+Your dashboard already comes with a lot of metrics without configuration but you have the possibility to add predefined set of metrics or even create custom ones.
 
-PM2 comes with the [@pm2/io](https://github.com/keymetrics/pm2-io-apm/tree/master/test) module, which is its part in charge of gathering the metrics that are displayed in `pm2 monit` or in the web dashboard. By default, the module just wraps your app. You must require it in your code in order to refine the configuration and add custom metrics or custom actions.
-
-You can check the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}).
+PM2 comes with the [@pm2/io](https://github.com/keymetrics/pm2-io-apm/tree/master/test) module, which is its part responsible of gathering metrics displayed in `pm2 monit` or in the web dashboard. By default, this module just wraps your app. If you however want to refine the configuration, add custom metrics or custom actions, you must require it in your code.
 
 ---
 
@@ -35,7 +33,7 @@ yarn add @pm2/io
 
 ## Intialisation
 
-Load and initialize @pm2/io at the top level of your application, before any other `require`.
+Load and initialize `@pm2/io` at the top level of your application, before any other `require`.
 
 ```javascript
 const io = require('@pm2/io')
@@ -51,17 +49,17 @@ io.init({
 
 This first basic initialisation will add to the dashboard the port number your app is listening to.
 
-?> See additional intialisation options in the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}).
+?> See all intialisation options in the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}).
 
 ---
 
 ## Expose Custom Metrics
 
-@pm2/io allows you to gather metrics from your code to be reported in `pm2 monit` or in the Keymetrics dashboard.
+As said earlier, `@pm2/io` allows you to gather custom metrics.
 
 ### Create a custom metrics
 
-You can create a new custom metrics with the method `metric()` of `@pm2/io`.
+You can create a custom metrics with the method `metric()` of `@pm2/io`.
 
 ```javascript
 const io = require('@pm2/io');
@@ -72,12 +70,12 @@ io.metric({
 });
 ```
 
-You need to provide at least two arguments:
+This method takes an object with at least two properties:
 
 - **name**: The metric name
 - **type**: The type of metric
 
-There are 4 different types of metrics:
+The type corresponds to one of the 4 ways to gather metrics:
 
 - **metric**: To expose a variable's value
 - **counter**: A discrete counter to be triggered manually to count a number of occurrence
@@ -86,7 +84,7 @@ There are 4 different types of metrics:
 
 ### Metric: Variable Exposition
 
-The first type of metric, called `metric`, allows to expose a variable's value. The variable can be exposed passively, with a function that gets called every second, or actively, with a method that you use to update the value.
+The first type of metric, called `metric`, is simply the exposition of a variable's value. The variable can be exposed passively, with a function that gets called every second, or actively, with a method that you use to update the value.
 
 #### Passive Mode
 
@@ -104,7 +102,7 @@ io.metric({
 
 #### Active Mode
 
-In active mode, you need to create a probe and call the method `set()` to update the value.
+In active mode, you need to save the return of the `metric` method. This will give you an object that has the method `set()`. Use this method to update the value of the metric.
 
 ```javascript
 const { Realtime_Value } = io.metric({
@@ -159,9 +157,9 @@ Additional options:
 - **samples**: (optional)(default: 1) Rate unit. Defaults to **1** sec.
 - **timeframe**: (optional)(default: 60) Timeframe over which the events will be analyzed. Defaults to **60** sec.
 
-### Histogram: Statistics
+### Histogram: Statistics over time
 
-Collect values and provide statistic tools to explore their distribution over the last 5 minutes.
+This last type of metric collect values and provide statistic tools to explore their distribution over the last 5 minutes.
 
 ```javascript
 const io = require('@pm2/io');
@@ -185,13 +183,13 @@ Options is:
 
 ---
 
-## Expose Remote Actions: Trigger Functions remotely
+## Expose Remote Actions
 
-You can remotely trigger functions directly from your dashboard. After having been exposed from your code, action buttons can be found in the main dashboard page under in a dedicated section.
+You can remotely trigger functions directly from your dashboard. After having been exposed from your code, action buttons can be found in the dedicated section.
 
 ### Simple actions
 
-The function takes a function as a parameter that needs to be called once the job is finished.
+The function takes a function as a parameter, which needs to be called once the job is finished.
 
 Example:
 
@@ -234,6 +232,8 @@ io.scopedAction('long running lsof', (data, res) => {
 });
 ```
 
+---
+
 ## Report Caught Exceptions
 
 By default, in the Issue tab, you are only alerted for uncaught exceptions. Any exception that you catch is not reported. You can manually report them with the `notify()` method.
@@ -251,6 +251,9 @@ io.notifyError(new Error('This is an error'));
 ---
 
 ## Next steps
+
+
+Check the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}).
 
 [Notifications]({{ site.baseurl }}{% link en/plus/guide/notifications.md %})
 
