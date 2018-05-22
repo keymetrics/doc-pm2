@@ -176,7 +176,8 @@ pm2 publish
 
 ?>  This increments the minor version of the module, runs `git add . ; git commit -m "VERSION"; git push origin master` then runs `npm publish`.
 
-### Super charged modules, with Keymetrics
+---
 
-The real power of the module system comes once PM2 is linked to Keymetrics.
-When using [the @pm2/io library](https://github.com/keymetrics/pm2-io-apm) you can build a dedicated interface displayed on Keymetrics as well as expose metrics, remotely trigger actions, alert about issues, notify about events or allow to configure the module remotely.
+## Questions ?
+
+We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum. You can also have a look at our support github https://github.com/keymetrics/keymetrics-support
