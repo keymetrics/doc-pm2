@@ -41,14 +41,6 @@ It gets you a visualisation of the stack and still offer the ability to download
 
 ## Next steps
 
-Thanks for finishing this guide.
-
-You can now take a look at the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}) to master all the capabilities of Keymetrics.
-
----
-
-## Next steps
-
 [Modules]({{ site.baseurl }}{% link en/plus/guide/modules.md %})
 
 ---
