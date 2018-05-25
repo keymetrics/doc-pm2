@@ -126,7 +126,7 @@
     function setSidebarBreakpoints() {
         var onResize = function() {
             var w = window.innerWidth;
-            if (w < 768) {
+            if (w < 990) {
                 toggleClass('body', 'close', true);
             } else {
                 toggleClass('body', 'close', false);
@@ -141,14 +141,12 @@
         var el = find('.PM2_logo');
         if (el) {
             addEvent(el, 'click', function(e) {
-                if (window.outerWidth < 1200) {
-                    if (find('body').className.indexOf('close') !== -1) {
-                        toggleClass('body', 'close', false);
-                    } else {
-                        toggleClass('body', 'close', true);
-                    }
-                }
-                e.preventDefault();
+              if (find('body').className.indexOf('close') !== -1) {
+                  toggleClass('body', 'close', false);
+              } else {
+                  toggleClass('body', 'close', true);
+              }
+              e.preventDefault();
             });
         } else {
             console.warn('can\'t find .PM2_logo')

@@ -15,12 +15,12 @@
   padding-right: 16px;
 
   .sidebar-spacer {
-      background: red;
-      width: 10px;
+    background: red;
+    width: 10px;
   }
 
   .center-spacer {
-      flex: 1;
+    flex: 1;
   }
 
   .header-links {
@@ -34,8 +34,9 @@
   .header-nav-links {
     display: flex;
     list-style: none;
-
+    
     a, a:focus, a:hover {
+      color: #fff;
       text-decoration: none;
     }
   }

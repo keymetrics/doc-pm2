@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Helm | PM2 Enterprise Documentation
+title: Deployment on Kubernetes with Helm | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise
 redirect_from: "/enterprise/helm"
 ---
 
-## Keymetrics deployment on Kubernetes with Helm
+## Deployment on Kubernetes with Helm
 
 Documentation about how to deploy the keymetrics on-premise version on Kubernetes using Helm
 

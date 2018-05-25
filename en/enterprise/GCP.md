@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Google Cloud Plateform | PM2 Enterprise Documentation
+title: Deployment on Google Cloud Plateform | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise
 redirect_from: "/enterprise/gcp"
 ---
 
-## Keymetrics deployment on GCP
+## Deployment on Google Cloud Plateform
 
 Documentation about how to deploy the keymetrics on-premise version on GCP
 

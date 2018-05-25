@@ -148,14 +148,24 @@ body.close .sidebar-toggle {
     font-size: 11px;
 }
 
-.sidebar ul li.active>a {
-    color: #3eb1f3;
+.process-manager-page .sidebar ul li.active>a {
+  color: $color_process-manager;
 }
 
+.plus-page .sidebar ul li.active>a {
+  color: $color_plus;
+}
+
+.enterprise-page .sidebar ul li.active>a {
+  color: $color_enterprise;
+}
+
+  
 .sidebar ul li.active>a {
-    border-right:0px;
-    border-left: 2px solid;
-    padding-left: 10px;
-    position: relative;
-    left: -10px;
+  font-weight:600;
+  border-right:0px;
+  border-left: 2px solid;
+  padding-left: 10px;
+  position: relative;
+  left: -10px;
 }

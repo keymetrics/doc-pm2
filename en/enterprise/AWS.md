@@ -1,17 +1,21 @@
 ---
 layout: page
-title: Amazon Web Service | PM2 Enterprise Documentation
+title: Deployment on Amazon Web Service | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise
 redirect_from: "/enterprise/aws"
 ---
 
-## PM2 EE deployment on AWS
+# Deployment on Amazon Web Service
 
-Documentation about how to deploy the PM2 EE on-premise version on AWS
+Documentation about how to deploy the PM2 Enterprise on-premise version on AWS
 
-### Requirements
+---
+
+## Before Starting
+
+## Requirements
 
 In the following examples, we assume that you already have a fully working Terraform project. You can follow the [`Getting Started`](https://www.terraform.io/intro/getting-started/install.html) guide.
 
@@ -26,6 +30,8 @@ By [default](https://github.com/keymetrics/on-premise/blob/master/terraform/keym
 
 These instances type can be changed via the [custom terraform variable file](https://github.com/keymetrics/on-premise/blob/master/docs/AWS.md#2-set-the-module-variables)
 
+---
+
 ## Setup steps
 
 ### 1. Adding the module to your terraform project
@@ -34,7 +40,7 @@ There's two options available in order to use our terraform module in your proje
 - Link the module's git repository address in your terraform module definition
 - Clone the repository and set the source variable of your module definiton to the correct path on your drive.
 
-##### Without cloning the repository
+#### Without cloning the repository
 
 When defining your module definition, use the following `source` value:
 - `git@github.com:keymetrics/on-premise.git/terraform/keymetrics_aio_aws`
@@ -48,7 +54,7 @@ module "keymetrics" {
 }
 ```
 
-##### By cloning the repository
+#### By cloning the repository
 
 Start by cloning the repository in your project directory using the git command:
 - `git clone git@github.com:keymetrics/on-premise.git keymetrics-on-premise`
@@ -112,6 +118,8 @@ For more informations, please check the [`variables.tf`](https://github.com/keym
 Run `terraform plan -target=module.example_keymetrics_setup -out tfout` and make sure no error shows up in the logs.
 
 You can then run `terraform apply tfout` in order to make terraform created the infrastructure on your AWS Account.
+
+---
 
 ## Extra configuration depending of your own existing infrastructure
 

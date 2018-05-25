@@ -7,11 +7,15 @@ section: enterprise
 redirect_from: "/enterprise/faq"
 ---
 
-#### The register hang or don't redirect me to the application
+# FAQ
+
+---
+
+## The register hang or don't redirect me to the application
 
 You need to verify that the `KM_SITE_URL` you configured is the endpoint you use to connect to the frontend. If you modify it, you need to delete the mongodb database afterwards because all the endpoints configurations are stored inside it.
 
-#### What are the services that are used ?
+## What are the services that are used ?
 
 - http API on port 3010 (access the data, configure bucket etc)
 - auth service on port 3100 (register/login etc)
@@ -19,7 +23,7 @@ You need to verify that the `KM_SITE_URL` you configured is the endpoint you use
 - interaction on port 3900 (listen for PM2 data)
 - reverse interaction on port 43554 (listen for a specific connection from PM2, used to send command to it like restart etc)
 
-#### What is exposed by default ?
+## What is exposed by default ?
 
 Depending on how you deployed the keymetrics enterprise product, there are different answers : 
  - **Docker** :
@@ -32,11 +36,11 @@ Depending on how you deployed the keymetrics enterprise product, there are diffe
      - Same as AWS, everything is running inside the km-core API
 
 
-#### I get a error about `Unknown modifier: $pushAll`, what did i miss ?
+## I get a error about `Unknown modifier: $pushAll`, what did i miss ?
 
 We only support mongodb up to version 3.4 for now, you need to downgrade.
 
-#### How do i configure my pm2 to connect to it ?
+## How do i configure my pm2 to connect to it ?
 
 When you first register, you should have a bucket created automatically, then you will have connection data in the middle in this format : 
 
@@ -54,7 +58,7 @@ You have two way to link your pm2 :
 
 Then it should all the instances in the keymetrics frontend in realtime.
 
-#### How should i run pm2 inside my containers to connect to it ? 
+## How should i run pm2 inside my containers to connect to it ? 
 
 We advise you to use `pm2-runtime`, it should be a dropin replacement for node inside your images : 
 
