@@ -1,3 +1,12 @@
+---
+layout: page
+title: Baremetal | PM2 Enterprise Documentation
+menu: starter
+lang: en
+section: enterprise
+redirect_from: "/enterprise/baremetal"
+---
+
 # PM2 EE Baremetal deployment
 
 ## Requirements

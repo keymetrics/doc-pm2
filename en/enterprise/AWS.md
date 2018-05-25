@@ -1,3 +1,12 @@
+---
+layout: page
+title: Amazon Web Service | PM2 Enterprise Documentation
+menu: starter
+lang: en
+section: enterprise
+redirect_from: "/enterprise/aws"
+---
+
 ## PM2 EE deployment on AWS
 
 Documentation about how to deploy the PM2 EE on-premise version on AWS

@@ -1,3 +1,13 @@
+---
+layout: page
+title: Backend | PM2 Enterprise Documentation
+menu: starter
+lang: en
+section: enterprise
+redirect_from: "/enterprise/backend"
+---
+
+
 ## Keymetrics Core Documentation
 
 To deploy keymetrics you first need to get access to one of the images that contains it, see the readme for this.

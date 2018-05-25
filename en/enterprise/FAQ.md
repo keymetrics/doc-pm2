@@ -1,3 +1,12 @@
+---
+layout: page
+title: FAQ | PM2 Enterprise Documentation
+menu: starter
+lang: en
+section: enterprise
+redirect_from: "/enterprise/faq"
+---
+
 #### The register hang or don't redirect me to the application
 
 You need to verify that the `KM_SITE_URL` you configured is the endpoint you use to connect to the frontend. If you modify it, you need to delete the mongodb database afterwards because all the endpoints configurations are stored inside it.

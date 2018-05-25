@@ -233,13 +233,8 @@
     /* background: yellowgreen;*/
 }
 
-.process-manager-page .PM2_logo {
-  background: url($baseurl + "/img/process-manager-docs.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.plus-page .PM2_logo {
-  background: url($baseurl + "/img/keymetrics-docs.svg");
+.PM2_logo {
+  background: url($baseurl + "/img/pm2-docs.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }

@@ -1,3 +1,12 @@
+---
+layout: page
+title: Google Cloud Plateform | PM2 Enterprise Documentation
+menu: starter
+lang: en
+section: enterprise
+redirect_from: "/enterprise/gcp"
+---
+
 ## Keymetrics deployment on GCP
 
 Documentation about how to deploy the keymetrics on-premise version on GCP

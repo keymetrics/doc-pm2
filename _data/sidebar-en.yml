@@ -104,3 +104,17 @@ plus:
 enterprise:
   - title: Overview
     url: "/en/enterprise/overview/"
+  - title: AWS
+    url: "/en/enterprise/aws/"
+  - title: Backend
+    url: "/en/enterprise/backend/"
+  - title: Baremetal
+    url: "/en/enterprise/baremetal/"
+  - title: GCP
+    url: "/en/enterprise/gcp/"
+  - title: Helm
+    url: "/en/enterprise/helm/"
+  - title: Providers
+    url: "/en/enterprise/providers/"
+  - title: FAQ
+    url: "/en/enterprise/faq/"

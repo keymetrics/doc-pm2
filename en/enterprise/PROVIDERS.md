@@ -1,3 +1,12 @@
+---
+layout: page
+title: Providers | PM2 Enterprise Documentation
+menu: starter
+lang: en
+section: enterprise
+redirect_from: "/enterprise/providers"
+---
+
 ### What is a provider?
 
 A 'provider' is simply the place from where you are retrieving the keymetrics software. For example if you are deploying our AMIs inside AWS, you'll retrieve them from AWS. You can also deploy them with docker and in this case you will get them from the docker hub.
