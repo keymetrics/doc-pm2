@@ -2,8 +2,9 @@
 
 ## Start locally
 
-1. `bundle install`
-2. `bundle exec jekyll serve`
+1. sudo apt install clang make ruby-dev libffi-dev
+2. `bundle install`
+3. `bundle exec jekyll serve`
 
 ## Configure Algolia Search
 
