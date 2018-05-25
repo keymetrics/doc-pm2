@@ -16,12 +16,31 @@
 
   .sidebar-spacer {
       background: red;
-      width: $sidebar-width;
+      width: 10px;
   }
 
   .center-spacer {
       flex: 1;
   }
+
+  .header-links {
+    max-width: 840px;
+  }
+
+  .header-nav-links li:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  .header-nav-links {
+    display: flex;
+    list-style: none;
+
+    a, a:focus, a:hover {
+      text-decoration: none;
+    }
+  }
+
+  
 }
 @media screen and (max-width: 768px) {
     .header-section .header-container {
