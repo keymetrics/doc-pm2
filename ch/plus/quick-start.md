@@ -4,7 +4,6 @@ title: 快速入门 | PM2 Plus教程
 title-en: Quick Start | PM2 Plus Documentation
 menu: starter
 lang: ch
-section: process-manager
 section: plus
 ---
 
@@ -12,7 +11,7 @@ section: plus
 
 只需几秒，本快速入门教程将向您展示如何开始使用PM2监控您的node.js应用。
 
-我们假设您的应用已启动或使用了PM2包装。 如果没有，请按照[快速入门]({{ site.baseurl }}{% link ch/process-manager/quick-start.md %}) 教程进行。
+我们假设您的应用已启动或使用了PM2包装。 如果没有，请按照[快速入门]({{ site.baseurl }}{% link ch/runtime/quick-start.md %}) 教程进行。
 
 ---
 

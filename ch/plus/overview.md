@@ -4,7 +4,6 @@ title: 概述 | PM2 Plus教程
 title-en: Overview | PM2 Plus Documentation
 menu: starter
 lang: ch
-section: process-manager
 section: plus
 ---
 

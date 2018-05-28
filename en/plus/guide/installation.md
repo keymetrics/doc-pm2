@@ -9,7 +9,7 @@ redirect_from: "/plus/guide/installation"
 
 # Installation
 
-We assume that your app have been started with PM2. If not, follow the [Quick Start]({{ site.baseurl }}{% link en/process-manager/quick-start.md %}) tutorial.
+We assume that your app have been started with PM2. If not, follow the [Quick Start]({{ site.baseurl }}{% link en/runtime/quick-start.md %}) tutorial.
 
 ---
 

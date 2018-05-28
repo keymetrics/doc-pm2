@@ -4,7 +4,6 @@ title: 内存和CPU分析 | 指南 | PM2 Plus教程
 title-en: Memory & CPU Profiling | Guide | PM2 Plus Documentation
 menu: starter
 lang: ch
-section: process-manager
 section: plus
 ---
 

@@ -4,7 +4,6 @@ title: Docker | 集成 | PM2 Plus教程
 title: Docker | Integration | PM2 Plus Documentation
 menu: starter
 lang: ch
-section: process-manager
 section: plus
 ---
 
@@ -12,7 +11,7 @@ section: plus
 
 只需几秒，本教程将向您展示如何在容器内使用`pm2`监控node.js应用。
 
-我们假设您的应用已被PM2包装了。 如果没有，请参考 [docker教程]({{ site.baseurl }}{% link ch/process-manager/integration/docker.md %})。
+我们假设您的应用已被PM2包装了。 如果没有，请参考 [docker教程]({{ site.baseurl }}{% link ch/runtime/integration/docker.md %})。
 
 ---
 
@@ -76,7 +75,7 @@ PM2_MACHINE_NAME=docker-server
 
 [Keymetrics.io](https://keymetrics.io/)是一个建立在PM2之上的监控服务，可以轻松监控和管理应用程序（日志，重启，异常监控等）。 您在Keymetrics上创建了一个Bucket后，您将得到一个公钥和一个密钥。
 
-要使用pm2-process-manager启用Keymetrics monitoring，您可以使用CLI选项–public `XXXX`和–secret `YYYY`，或您可以传递环境变量`KEYMETRICS_PUBLIC`和`KEYMETRICS_SECRET`。
+要使用pm2-runtime启用Keymetrics monitoring，您可以使用CLI选项–public `XXXX`和–secret `YYYY`，或您可以传递环境变量`KEYMETRICS_PUBLIC`和`KEYMETRICS_SECRET`。
 
 从您的Node.js应用项目文件夹启动这些命令：
 

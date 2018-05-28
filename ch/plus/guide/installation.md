@@ -4,13 +4,12 @@ title: 安装 | 指南 | PM2 Plus教程
 title-en: Installation | Guide | PM2 Plus Documentation
 menu: starter
 lang: ch
-section: process-manager
 section: plus
 ---
 
 # 安装
 
-我们假设您的应用已开始使用PM2 process-manager。 如果没有，请参考 [快速入门]({{ site.baseurl }}{% link en/process-manager/quick-start.md %}) 教程。
+我们假设您的应用已开始使用PM2 runtime。 如果没有，请参考 [快速入门]({{ site.baseurl }}{% link en/runtime/quick-start.md %}) 教程。
 
 ---
 

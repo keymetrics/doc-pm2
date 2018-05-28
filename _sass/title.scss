@@ -1,6 +1,6 @@
 @import './variables';
 
-//process-manager-page
+//runtime-page
 //plus-page
 //enterprise-page
 
@@ -35,8 +35,8 @@
     }
 }
 
-.process-manager-page .gettings_started_block{
-	background-color: $color_process-manager;
+.runtime-page .gettings_started_block{
+	background-color: $color_runtime;
 }
 .plus-page .gettings_started_block{
 	background-color: $color_plus;
@@ -48,15 +48,15 @@
 
 
 
-.process-manager_block,.plus_block,.enterprise_block{
+.runtime_block,.plus_block,.enterprise_block{
 	display:none;
 }
-.process-manager-page .process-manager_block, .plus-page .plus_block, .enterprise-page .enterprise_block{
+.runtime-page .runtime_block, .plus-page .plus_block, .enterprise-page .enterprise_block{
 	display:inline-block;
 }
 
 /*
-.process-manager-page .gettings_started_block_span.process-manager_block, .plus-page .gettings_started_block_span.plus_block, .enterprise-page .gettings_started_block_span.enterprise_block{
+.runtime-page .gettings_started_block_span.runtime_block, .plus-page .gettings_started_block_span.plus_block, .enterprise-page .gettings_started_block_span.enterprise_block{
 	display:inline;
 }
 */

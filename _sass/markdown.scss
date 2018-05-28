@@ -22,8 +22,8 @@ p.warn{
 .markdown-section a{
   font-weight: 600;
 }
-.process-manager-page main a {
-  color: $color_process-manager;
+.runtime-page main a {
+  color: $color_runtime;
 }
 
 .plus-page a {
@@ -59,8 +59,8 @@ p.warn{
   font-size:1rem
 }
 
-.process-manager-page h2 a:before{
-  background-image: url($baseurl + "/img/process-manager/rect-r.png");
+.runtime-page h2 a:before{
+  background-image: url($baseurl + "/img/runtime/rect-r.png");
 }
 .plus-page h2 a:before{
   background-image: url($baseurl + "/img/plus/rect-m.png");
@@ -68,8 +68,8 @@ p.warn{
 .enterprise-page h2 a:before{
   background-image: url($baseurl + "/img/enterprise/rect-e.png");
 }
-.process-manager-page h2 {
-  color: $color_process-manager;
+.runtime-page h2 {
+  color: $color_runtime;
 }
 
 .plus-page h2 {
@@ -140,8 +140,8 @@ hr:before {
     margin-right: 10px;
 }
 
-.process-manager-page hr:before {
-    background-color: $color_process-manager;
+.runtime-page hr:before {
+    background-color: $color_runtime;
 }
 
 .plus-page hr:before {

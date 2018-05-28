@@ -4,7 +4,6 @@ title: Heroku | 集成 | PM2 Plus教程
 title-en: Heroku | Integration | PM2 Plus Documentation
 menu: starter
 lang: ch
-section: process-manager
 section: plus
 ---
 
@@ -12,7 +11,7 @@ section: plus
 
 只需几秒，本教程将向您展示如何使用`pm2`和Heroku监控node.js应用。
 
-我们假设您的应用已被PM2包装了。 如果没有，请按照[heroku教程]({{ site.baseurl }}{% link ch/process-manager/integration/heroku.md %})进行。
+我们假设您的应用已被PM2包装了。 如果没有，请按照[heroku教程]({{ site.baseurl }}{% link ch/runtime/integration/heroku.md %})进行。
 
 ---
 

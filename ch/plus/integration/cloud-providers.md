@@ -4,7 +4,6 @@ title: 使用云供应商 | 集成 | PM2 Plus教程
 title-en: Cloud Providers | Integration | PM2 Plus Documentation
 menu: starter
 lang: ch
-section: process-manager
 section: plus
 ---
 
@@ -12,7 +11,7 @@ section: plus
 
 仅需几秒，本教程将向您展示如何使用`pm2`和云供应商监控node.js应用。
 
-我们假设您的应用已被PM2包装了。 如果没有，请按照[云供应商教程]({{ site.baseurl }}{% link ch/process-manager/integration/cloud-providers.md %})进行。
+我们假设您的应用已被PM2包装了。 如果没有，请按照[云供应商教程]({{ site.baseurl }}{% link ch/runtime/integration/cloud-providers.md %})进行。
 
 ---
 

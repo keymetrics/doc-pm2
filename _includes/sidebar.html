@@ -1,9 +1,9 @@
 <aside class="sidebar">
     <!-- <div class="sidebar_2_wrapper">
         <div class="sidebar_2">
-            <a href={{ "/process-manager/overview" | prepend: page.lang | prepend: "/" | relative_url }} data-page="process-manager-page">
-                <div class="sidebar_2_item sidebar_2_item_process-manager">
-                    <img class="sidebar_2_item__image-process-manager" src={{ "/static/pm2-logo-r.png" | relative_url }}>
+            <a href={{ "/runtime/overview" | prepend: page.lang | prepend: "/" | relative_url }} data-page="runtime-page">
+                <div class="sidebar_2_item sidebar_2_item_runtime">
+                    <img class="sidebar_2_item__image-runtime" src={{ "/static/pm2-logo-r.png" | relative_url }}>
                     <div class="sidebar_2_item__text"></div>
                 </div>
             </a>
@@ -26,7 +26,7 @@
     <div class="sidebar-nav">
 
     <ul id="acc">
-    {% if page.url contains 'process-manager' %}{% assign category ='process-manager' %}{% elsif page.url contains "plus" %}{% assign category ="plus" %}{% elsif page.url contains "enterprise" %}{% assign category ="enterprise" %}{% else %}{% assign category ='process-manager' %}{% endif %}
+    {% if page.url contains 'runtime' %}{% assign category ='runtime' %}{% elsif page.url contains "plus" %}{% assign category ="plus" %}{% elsif page.url contains "enterprise" %}{% assign category ="enterprise" %}{% else %}{% assign category ='runtime' %}{% endif %}
     {% if page.lang contains 'en' %}{% assign sidebar = site.data.sidebar-en %}{% elsif page.lang contains 'ch' %}{% assign sidebar = site.data.sidebar-ch %}{% endif %}
     {% for item in sidebar.[category] %}
     {% assign slug_title = item.title | slugify %}

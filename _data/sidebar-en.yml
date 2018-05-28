@@ -1,58 +1,58 @@
-process-manager:
+runtime:
   - title: Overview
-    url: "/en/process-manager/overview/"
+    url: "/en/runtime/overview/"
   - title: Quick Start
-    url: "/en/process-manager/quick-start/"
+    url: "/en/runtime/quick-start/"
   - title: Guide
-    url: "/en/process-manager/guide/"
+    url: "/en/runtime/guide/"
     submenu:
       - page: Installation
-        url: "/en/process-manager/guide/installation/"
+        url: "/en/runtime/guide/installation/"
       - page: Ecosystem File
-        url: "/en/process-manager/guide/ecosystem-file/"
+        url: "/en/runtime/guide/ecosystem-file/"
       - page: Process Management
-        url: "/en/process-manager/guide/process-management/"
+        url: "/en/runtime/guide/process-management/"
       - page: Log Management
-        url: "/en/process-manager/guide/log-management/"
+        url: "/en/runtime/guide/log-management/"
       - page: Startup Hook
-        url: "/en/process-manager/guide/startup-hook/"
+        url: "/en/runtime/guide/startup-hook/"
       - page: Load-Balancing
-        url: "/en/process-manager/guide/load-balancing/"
+        url: "/en/runtime/guide/load-balancing/"
       - page:  Development Tools
-        url: "/en/process-manager/guide/development-tools/"
+        url: "/en/runtime/guide/development-tools/"
       - page: Easy Deploy with SSH
-        url: "/en/process-manager/guide/easy-deploy-with-ssh/"
+        url: "/en/runtime/guide/easy-deploy-with-ssh/"
   - title: Best Practices
-    url: "/en/process-manager/best-practices/"
+    url: "/en/runtime/best-practices/"
     submenu:
       - page: Environment Variables
-        url: "/en/process-manager/best-practices/environment-variables/"
+        url: "/en/runtime/best-practices/environment-variables/"
       - page: Graceful Shutdown
-        url: "/en/process-manager/best-practices/graceful-shutdown/"
+        url: "/en/runtime/best-practices/graceful-shutdown/"
       - page: Stateless Application
-        url: "/en/process-manager/best-practices/stateless-application/"
+        url: "/en/runtime/best-practices/stateless-application/"
   - title: Integration
-    url: "/en/process-manager/integration/"
+    url: "/en/runtime/integration/"
     submenu:
       - page: AWS Elastic Beanstalk
-        url: "/en/process-manager/integration/elastic-beanstalk/"
+        url: "/en/runtime/integration/elastic-beanstalk/"
       - page: Docker
-        url: "/en/process-manager/integration/docker/"
+        url: "/en/runtime/integration/docker/"
       - page: Heroku
-        url: "/en/process-manager/integration/heroku/"
+        url: "/en/runtime/integration/heroku/"
       - page: Transpilers
-        url: "/en/process-manager/integration/transpilers/"
+        url: "/en/runtime/integration/transpilers/"
       - page: With a Cloud Provider
-        url: "/en/process-manager/integration/cloud-providers/"
+        url: "/en/runtime/integration/cloud-providers/"
   - title: Reference
-    url: "/en/process-manager/reference/"
+    url: "/en/runtime/reference/"
     submenu:
       - page: Ecosystem File
-        url: "/en/process-manager/reference/ecosystem-file/"
+        url: "/en/runtime/reference/ecosystem-file/"
       - page: CLI
-        url: "/en/process-manager/reference/pm2-cli/"
+        url: "/en/runtime/reference/pm2-cli/"
       - page: Programmatic
-        url: "/en/process-manager/reference/pm2-programmatic/"
+        url: "/en/runtime/reference/pm2-programmatic/"
 
 plus:
   - title: Overview

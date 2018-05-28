@@ -1,58 +1,58 @@
-process-manager:
+runtime:
   - title: 概述
-    url: "/ch/process-manager/overview/"
+    url: "/ch/runtime/overview/"
   - title: 快速开始
-    url: "/ch/process-manager/quick-start/"
+    url: "/ch/runtime/quick-start/"
   - title: 指南 
-    url: "/ch/process-manager/guide/"
+    url: "/ch/runtime/guide/"
     submenu:
       - page: 安装
-        url: "/ch/process-manager/guide/installation/"
+        url: "/ch/runtime/guide/installation/"
       - page: 生态系统文件
-        url: "/ch/process-manager/guide/ecosystem-file/"
+        url: "/ch/runtime/guide/ecosystem-file/"
       - page: 进程管理
-        url: "/ch/process-manager/guide/process-management/"
+        url: "/ch/runtime/guide/process-management/"
       - page: 日志管理
-        url: "/ch/process-manager/guide/log-management/"
+        url: "/ch/runtime/guide/log-management/"
       - page: 启动挂钩
-        url: "/ch/process-manager/guide/startup-hook/"
+        url: "/ch/runtime/guide/startup-hook/"
       - page: 负载平衡
-        url: "/ch/process-manager/guide/load-balancing/"
+        url: "/ch/runtime/guide/load-balancing/"
       - page: 开发工具
-        url: "/ch/process-manager/guide/development-tools/"
+        url: "/ch/runtime/guide/development-tools/"
       - page: 使用SSH轻松部署
-        url: "/ch/process-manager/guide/easy-deploy-with-ssh/"
+        url: "/ch/runtime/guide/easy-deploy-with-ssh/"
   - title: 最佳实践
-    url: "/ch/process-manager/best-practices/"
+    url: "/ch/runtime/best-practices/"
     submenu:
       - page: 中的环境变量
-        url: "/ch/process-manager/best-practices/environment-variables/"
+        url: "/ch/runtime/best-practices/environment-variables/"
       - page: 正常关机
-        url: "/ch/process-manager/best-practices/graceful-shutdown/"
+        url: "/ch/runtime/best-practices/graceful-shutdown/"
       - page: 无状态应用
-        url: "/ch/process-manager/best-practices/stateless-application/"
+        url: "/ch/runtime/best-practices/stateless-application/"
   - title: 综合
-    url: "/ch/process-manager/integration/"
+    url: "/ch/runtime/integration/"
     submenu:
       - page: AWS Elastic Beanstalk
-        url: "/ch/process-manager/integration/elastic-beanstalk/"
+        url: "/ch/runtime/integration/elastic-beanstalk/"
       - page: Docker
-        url: "/ch/process-manager/integration/docker/"
+        url: "/ch/runtime/integration/docker/"
       - page: Heroku
-        url: "/ch/process-manager/integration/heroku/"
+        url: "/ch/runtime/integration/heroku/"
       - page: Transpilers
-        url: "/ch/process-manager/integration/transpilers/"
+        url: "/ch/runtime/integration/transpilers/"
       - page: 使用云供应商
-        url: "/ch/process-manager/integration/cloud-providers/"
+        url: "/ch/runtime/integration/cloud-providers/"
   - title: 参考
-    url: "/ch/process-manager/reference/"
+    url: "/ch/runtime/reference/"
     submenu:
       - page: Ecosystem 文件
-        url: "/ch/process-manager/reference/ecosystem-file/"
+        url: "/ch/runtime/reference/ecosystem-file/"
       - page: CLI
-        url: "/ch/process-manager/reference/pm2-cli/"
+        url: "/ch/runtime/reference/pm2-cli/"
       - page: 程序化
-        url: "/ch/process-manager/reference/pm2-programmatic/"
+        url: "/ch/runtime/reference/pm2-programmatic/"
 
 plus:
   - title: 概述

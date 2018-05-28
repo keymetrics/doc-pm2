@@ -11,7 +11,7 @@ redirect_from: "/plus/integration/heroku"
 
 In seconds, this tutorial will show you how to monitor a Node.js application with Keymetrics in Heroku.
 
-We assume that your app has already been wrapped with PM2. If not, follow the [PM2 Heroku Tutorial]({{ site.baseurl }}{% link en/process-manager/integration/heroku.md %}).
+We assume that your app has already been wrapped with PM2. If not, follow the [PM2 Heroku Tutorial]({{ site.baseurl }}{% link en/runtime/integration/heroku.md %}).
 
 ---
 
