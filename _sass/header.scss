@@ -1,13 +1,10 @@
-@import './variables';
-
 // from pm2.io site marketing
 .header-section {
-  background-color: #171e27;
   z-index: 100;
 }
 
 .header-section .header-container {
-//   text-align: left;
+  background: linear-gradient(to bottom, #1b2329 0, #1a2935 100%);
   display: flex;
   align-items: center;
   min-height: 76px;
@@ -34,14 +31,14 @@
   .header-nav-links {
     display: flex;
     list-style: none;
-    
+
     a, a:focus, a:hover {
       color: #fff;
       text-decoration: none;
     }
   }
 
-  
+
 }
 @media screen and (max-width: 768px) {
     .header-section .header-container {
@@ -210,6 +207,7 @@
     position: fixed!important;
     width: 100%;
     min-height: 76px;
+    top: 0px;
 }
 
 

@@ -2,14 +2,14 @@
     <div class="header-container">
       <div class="sidebar-spacer"></div>
       <div class="PM2_logo_wrapper">
-          <a class="logo-container link">
+          <a class="logo-container link" href={{ "/" | relative_url}}>
               <div class="PM2_logo"></div>
           </a>
       </div>
       <div class="PM2_logo_wrapper header-links">
         <ul class="header-nav-links">
-          <li><a href={{ "/process-manager/overview" | prepend: page.lang | prepend: "/" | relative_url }}>PM2 Runtime</a></li>
-          <li><a href={{ "/plus/overview" | prepend: page.lang | prepend: "/" | relative_url }}>PM2 Plus</a></li> 
+          <li><a href={{ "/runtime/overview" | prepend: page.lang | prepend: "/" | relative_url }}>PM2 Runtime</a></li>
+          <li><a href={{ "/plus/overview" | prepend: page.lang | prepend: "/" | relative_url }}>PM2 Plus</a></li>
           <li><a href={{ "/enterprise/overview" | prepend: page.lang | prepend: "/" | relative_url }}>PM2 Enterprise</a></li>
         </ul>
       </div>

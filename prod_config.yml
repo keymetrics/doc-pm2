@@ -27,6 +27,19 @@ plugins:
 baseurl: "/doc"
 destination: dist
 
-exclude: ["node_modules","README.md", "gulpfile.js", "package.json", "package-lock.json", "yarn.lock"]
+exclude:
+  - node_modules
+  - README.md
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - _sass
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - mapping-plus.js
+  - prod_config.yml
+  - mapping-process-manager.js
 
 exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico","assets", "CNAME", "node_modules", "package.json", "package-lock.json","_src","_docs","gulpfile.js"]

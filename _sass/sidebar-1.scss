@@ -113,7 +113,7 @@ body.close .sidebar-toggle {
     background-color: transparent;
     left: -50px;
     @media screen and (min-width: 1200px) {
-        
+
     }
 }
 
@@ -134,18 +134,15 @@ body.close .sidebar-toggle {
 
 .sidebar ul li a {
     color: #fff;
-    
     font-weight: 500;
     text-align: left;
-    
     letter-spacing: 1px;
-
     line-height: 1.6;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .sidebar ul li ul li a {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .runtime-page .sidebar ul li.active>a {
@@ -160,7 +157,7 @@ body.close .sidebar-toggle {
   color: $color_enterprise;
 }
 
-  
+
 .sidebar ul li.active>a {
   font-weight:600;
   border-right:0px;

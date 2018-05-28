@@ -2,10 +2,6 @@
 name: PM2 Documentation
 email: contact@keymetrics.io
 
-# Build settings
-sass:
-  style: compact
-
 markdown: kramdown
 
 gems:
@@ -23,9 +19,24 @@ permalink: pretty
 plugins:
   - jekyll-paginate
   - jekyll-feed
-# keep_files: [images]
+
 baseurl: "/doc"
+
 destination: docs
-exclude: ["node_modules","README.md", "gulpfile.js", "package.json", "package-lock.json", "yarn.lock"]
+
+
+exclude:
+  - node_modules
+  - README.md
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - _sass
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - mapping-plus.js
+  - prod_config.yml
 
 exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico","assets", "CNAME", "node_modules", "package.json", "package-lock.json","_src","_docs","gulpfile.js"]

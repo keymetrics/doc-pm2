@@ -1,0 +1,47 @@
+.btn-stylized {
+  border: none;
+  font-family: inherit;
+  font-size: 13px;
+  color: inherit;
+  cursor: pointer;
+  padding: 8px 15px;
+  display: inline-block;
+  // margin: 15px 30px;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  transition: all 0.3s;
+  background: #3eb1f3 !important;
+
+
+
+  color: #fff;
+  box-shadow: 0 4px #05598a;
+  transition: none;
+  border-radius: 3px;
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s;
+  }
+}
+
+.btn-stylized:hover {
+  box-shadow: 0 2px #216349;
+  top: 2px;
+}
+
+.btn-stylized:active {
+  box-shadow: 0 0 #216349;
+  top: 4px;
+}
+
+.btn-stylized:disabled {
+  opacity: 0.2;
+  top: 2px;
+  box-shadow: 0 4px #216349;
+}
