@@ -14,7 +14,7 @@ ADD Gemfile /docs
 RUN bundle install
 
 ADD . /docs
-RUN jekyll build --config prod_config.yml
+RUN bundle exec jekyll build --config prod_config.yml
 
 FROM kyma/docker-nginx
 
