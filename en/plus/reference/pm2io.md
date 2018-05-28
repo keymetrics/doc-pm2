@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reference | Keymetrics Documentation
+title: Reference | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus

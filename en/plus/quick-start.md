@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quick Start | Keymetrics Documentation
+title: Quick Start | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
@@ -9,7 +9,7 @@ redirect_from: "/plus/quick-start"
 
 # Quick Start
 
-In seconds, this Quick Start tutorial will show you how to start monitoring your Node.js application with Keymetrics.
+In seconds, this Quick Start tutorial will show you how to start monitoring your Node.js application with PM2 Plus.
 
 We assume that your app has been started or wrapped with PM2. If not, follow the [PM2 Quick Start]({{ site.baseurl }}{% link en/runtime/quick-start.md %}) tutorial.
 

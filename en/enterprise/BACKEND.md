@@ -8,7 +8,7 @@ redirect_from: "/enterprise/backend"
 ---
 
 
-## Keymetrics Core Documentation
+## PM2 Plus Core Documentation
 
 To deploy keymetrics you first need to get access to one of the images that contains it, see the readme for this.
 
@@ -23,7 +23,7 @@ In all the case, the procedure to setup it is always the same, you need to injec
     - `mongodb://{mongodb_ip}/keymetrics` [docs](https://docs.mongodb.com/manual/reference/connection-string/)
 - `KM_REDIS_URL`: the URI used to connect to redis, example : 
     - `redis://{redis_ip}:6379` [exact format defined in **url** property](https://github.com/NodeRedis/node_redis#options-object-properties)
-- `KM_SITE_URL`: the hostname that will be used to connect to the Keymetrics instance, it need to be known for the frontend and PM2 to work correctly. Example : 
+- `KM_SITE_URL`: the hostname that will be used to connect to the PM2 Plus instance, it need to be known for the frontend and PM2 to work correctly. Example : 
     - `http://backend.production.keymetrics`, can be a IP however it **absolutly need** to `http://` at the begining
 - `SMTP_USER`: the username used to send email notifications via 3rd party email provider
 - `SMTP_PASSWORD`: the password used to send email notifications via 3rd party email provider

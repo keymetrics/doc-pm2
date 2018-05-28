@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Installation | Guide | Keymetrics Documentation
+title: Installation | Guide | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
@@ -33,7 +33,7 @@ or, if you don't have access to the CLI, add the `PM2_PUBLIC_KEY` and `PM2_SECRE
 
 ### If you are behind a company proxy/firewall
 
-In order to make Keymetrics works, ensure that this ports are open:
+In order to make PM2 Plus works, ensure that this ports are open:
 - 80 (TCP outbound)
 - 443 (HTTPS outbound)
 - 43554 (TCP outbound)

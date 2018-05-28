@@ -298,7 +298,7 @@ pmx.scopedAction('long running lsof', (data, res) => {
 
   child.stdout.on('data', (chunk) => {
     chunk.toString().split('\n').forEach((line) => {
-      res.send(line); // This sends log to Keymetrics to be saved (for tracking)
+      res.send(line); // This sends log to PM2 Plus to be saved (for tracking)
     })
   })
 
@@ -307,7 +307,7 @@ pmx.scopedAction('long running lsof', (data, res) => {
   })
 
   child.on('error', (e) => {
-    res.error(e);  // This reports an error to Keymetrics
+    res.error(e);  // This reports an error to PM2 Plus
   })
 
 })

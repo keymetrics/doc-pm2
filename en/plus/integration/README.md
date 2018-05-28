@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Integration | Keymetrics Documentation
+title: Integration | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
@@ -10,7 +10,7 @@ redirect_from: "/plus/integration/"
 
 # Integration
 
-This section will help you integrate Keymetrics.
+This section will help you integrate PM2 Plus.
 
 Pick the tutorial that best matches your needs:
 

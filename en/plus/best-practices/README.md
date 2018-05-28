@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Best Practices | Keymetrics Documentation
+title: Best Practices | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus

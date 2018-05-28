@@ -45,7 +45,7 @@ helm install keymetrics-aio --set km_license=<YOUR_LICENSE> \
                             --set km_smtp_sender=<SMTP_SENDER_ADDRESS>
 ```
 
-This will install Keymetrics and its requirements: 
+This will install PM2 Plus and its requirements: 
  - [Redis](https://github.com/kubernetes/charts/tree/master/stable/redis
 )
  - [ElasticSearch](https://github.com/kubernetes/charts/tree/master/incubator/elasticsearch)
@@ -53,8 +53,8 @@ This will install Keymetrics and its requirements:
 
 These settings are required:
 
-- `km_license`: You Keymetrics license key.
-- `km_public_dns`: The public dns record that will be pointing to your Keymetrics instance (needed for requirections).
+- `km_license`: You PM2 Plus license key.
+- `km_public_dns`: The public dns record that will be pointing to your PM2 Plus instance (needed for requirections).
 - `km_smtp_host`: SMTP Server address.
 - `km_smtp_user`: SMTP Server username.
 - `km_smtp_pass`: SMTP Server password.

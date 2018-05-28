@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Configuration | Guide | Keymetrics Documentation
+title: Configuration | Guide | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
@@ -205,9 +205,9 @@ io.action('db:clean', (reply) => {
 
 ### Scoped actions (beta)
 
-Scoped Actions are advanced remote actions that can be also triggered from Keymetrics.
+Scoped Actions are advanced remote actions that can be also triggered from PM2 Plus.
 
-Two arguments are passed to the function, data (optional data sent from Keymetrics) and res that allows to emit log data and to end the scoped action.
+Two arguments are passed to the function, data (optional data sent from PM2 Plus) and res that allows to emit log data and to end the scoped action.
 
 Example:
 
@@ -217,7 +217,7 @@ io.scopedAction('long running lsof', (data, res) => {
 
   child.stdout.on('data', (chunk) => {
     chunk.toString().split('\n').forEach(function(line) {
-      res.send(line); // This send log to Keymetrics to be saved (for tracking)
+      res.send(line); // This send log to PM2 Plus to be saved (for tracking)
     });
   });
 
@@ -226,7 +226,7 @@ io.scopedAction('long running lsof', (data, res) => {
   });
 
   child.on('error', (e) => {
-    res.error(e);  // This report an error to Keymetrics
+    res.error(e);  // This report an error to PM2 Plus
   });
 
 });

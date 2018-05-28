@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CPU Profiling | Best Practices | Keymetrics Documentation
+title: CPU Profiling | Best Practices | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
@@ -35,7 +35,7 @@ An other approach is the "sampling". In this method, the profiler interrupts the
 
 Some profilers uses an hybrid approach. They instrument code only to count number of calls (a cheap operation) and use sampling to measure function execution time.
 
-The Keymetrics profiler uses the sampling approach.
+The PM2 Plus profiler uses the sampling approach.
 
 ---
 

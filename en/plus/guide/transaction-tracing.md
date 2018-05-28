@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Transaction Tracing | Guide | Keymetrics Documentation
+title: Transaction Tracing | Guide | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
@@ -21,7 +21,7 @@ Slow HTTP calls are identified and the database and external calls are aggregate
 
 The transaction tracing is disabled by default. On big infrastructure, you should only use the transaction tracing for a few days to collect informations and then disable it because there is no sampling and all requests are treated.
 
-You'll have to wait 10min to let Keymetrics collects enough data.
+You'll have to wait 10min to let PM2 Plus collects enough data.
 
 ### PMX
 
@@ -122,18 +122,18 @@ PMX will wrap below modules if they exist in your application :
  - `mysql` version ^2.9
  - `pg` version ^6.x
 
-Then record all requests made or received by them then sended to Keymetrics to be aggregated.
+Then record all requests made or received by them then sended to PM2 Plus to be aggregated.
 The impact on performance should be low since there is no heavy logic done in your process except wrap modules and sending data.
 
 ---
 
 ## Things to know
 
-- When received by Keymetrics, transactions are aggregated depending on their path (so without the query), for example :
-  - `/api/users/1` and `/api/users/2` will be aggregated together because Keymetrics detected the `1` and `2` has identifier
+- When received by PM2 Plus, transactions are aggregated depending on their path (so without the query), for example :
+  - `/api/users/1` and `/api/users/2` will be aggregated together because PM2 Plus detected the `1` and `2` has identifier
   - `/api/users/search` and `/api/users/1` will not be aggregated together because `search` isnt a identifier
 
-- Keymetrics detect identifier with multiples regex :
+- PM2 Plus detect identifier with multiples regex :
   - UUID v1/v4 with or without dash (`/[0-9a-f]{8}-[0-9a-f]{4}-[14][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}|[0-9a-f]{12}[14][0-9a-f]{19}/`)
   - any number (`/\d+/`)
   - suit of number and letter (`/[0-9]+[a-z]+|[a-z]+[0-9]+/`) : this one is used by mongo for document id

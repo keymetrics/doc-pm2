@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Issue Dashboard | Guide | Keymetrics Documentation
+title: Issue Dashboard | Guide | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Overview | Keymetrics Documentation
+title: Overview | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
@@ -9,7 +9,7 @@ redirect_from: "/plus/overview"
 
 # Overview
 
-Why monitor your app with Keymetrics ? At the end of this overview, you'll have a better understanding of the capabilities of monitoring your app with Keymetrics.
+Why monitor your app with PM2 Plus ? At the end of this overview, you'll have a better understanding of the capabilities of monitoring your app with PM2 Plus.
 
 ---
 
@@ -23,7 +23,7 @@ Keymetrics allows you to have an extended view of all your apps and databases in
 
 ### Custom Metrics
 
-Expose the important variables from your Node.js applications source code and display them as performance metrics on the Keymetrics dashboard. **Monitor values that matter.**
+Expose the important variables from your Node.js applications source code and display them as performance metrics on the PM2 Plus dashboard. **Monitor values that matter.**
 
 ![custom metrics]({{ site.baseurl }}{% link img/plus/personalized.png %})
 
@@ -86,7 +86,7 @@ For example your can track and be alerted when a new user has registered, a new 
 
 ### Third-party modules
 
-Extend the capabilities of the Keymetrics dashboard by using external modules listed in our module page.
+Extend the capabilities of the PM2 Plus dashboard by using external modules listed in our module page.
 
 A module can be a log rotation module, database monitoring module, a standalone http proxy, a load balancer, a DNS server or any kind of utility. **Anyone can create and publish its own module.**
 

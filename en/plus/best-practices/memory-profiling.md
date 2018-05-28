@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Memory Profiling | Best Practices | Keymetrics Documentation
+title: Memory Profiling | Best Practices | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus

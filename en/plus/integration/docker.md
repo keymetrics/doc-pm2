@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Docker | Integration | Keymetrics Documentation
+title: Docker | Integration | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
@@ -9,7 +9,7 @@ redirect_from: "/plus/integration/docker"
 
 # Monitor your Node.js app in a Docker container
 
-In seconds, this tutorial will show you how to monitor a Node.js application with Keymetrics inside a container.
+In seconds, this tutorial will show you how to monitor a Node.js application with PM2 Plus inside a container.
 
 We assume that your app has already been wrapped with PM2. If not, follow the [PM2 Docker Tutorial]({{ site.baseurl }}{% link en/runtime/integration/docker.md %}).
 
@@ -31,7 +31,7 @@ RUN pm2 install profiler
 
 ---
 
-## Link your app with Keymetrics
+## Link your app with PM2 Plus
 
 In order to connect PM2 to the dashboard, you need to add your public and private keys in the environment.
 
@@ -44,7 +44,7 @@ and restart your container with `docker run`adding `--env-file .env` to load the
 
 ---
 
-## Set the server name in Keymetrics
+## Set the server name in PM2 Plus
 
 Set the `PM2_MACHINE_NAME` environment variable to specify a server nam. Add this to the .env file:
 

@@ -176,7 +176,7 @@ You will then be able to see this kind of table when the module is installed!
 
 ### Module configuration
 
-In the package.json you can declare default options accessible in the Module under the attribute `config`. These values can be overridden by pm2 or Keymetrics.
+In the package.json you can declare default options accessible in the Module under the attribute `config`. These values can be overridden by pm2 or PM2 Plus.
 
 ### Default values
 
@@ -286,7 +286,7 @@ var conf    = pmx.initModule({
 
 ### Wanna share your module?
 
-If you built a module, please send us an email, we will promote your module and add it to Keymetrics: [https://keymetrics.io/contact/](https://keymetrics.io/contact/)
+If you built a module, please send us an email, we will promote your module and add it to PM2 Plus: [https://keymetrics.io/contact/](https://keymetrics.io/contact/)
 
 Have fun!
 
@@ -302,10 +302,10 @@ Internally it embeds the NPM install procedure. So a PM2 module is published on 
 
 Your creativity is the limit. A PM2 module can do pretty anything. From a log rotation module, a load balancer, a private NPM repository, a Node.js based wikipedia, an antivirus for server... Your creativity is the limit! (*internal pub/sub mecanism in a ROS style = offer micro services that can be subscribed to (setup procedure = conf system!)*)
 
-### Super charged modules, with Keymetrics
+### Super charged modules, with PM2 Plus
 
-The real power of the module system comes once PM2 is linked to Keymetrics.
-When using [the keymetrics library](https://github.com/keymetrics/pmx) you can build a dedicated interface displayed on Keymetrics as well as [expose metrics](https://github.com/keymetrics/pmx#expose-metrics-measure-anything), [remotely trigger actions](https://github.com/keymetrics/pmx#expose-functions-trigger-functions-remotely), [alert about issues](https://github.com/keymetrics/pmx#report-alerts-errors--uncaught-exceptions), [notify about events](https://github.com/keymetrics/pmx#emit-events) or allow to configure the module remotely!
+The real power of the module system comes once PM2 is linked to PM2 Plus.
+When using [the keymetrics library](https://github.com/keymetrics/pmx) you can build a dedicated interface displayed on PM2 Plus as well as [expose metrics](https://github.com/keymetrics/pmx#expose-metrics-measure-anything), [remotely trigger actions](https://github.com/keymetrics/pmx#expose-functions-trigger-functions-remotely), [alert about issues](https://github.com/keymetrics/pmx#report-alerts-errors--uncaught-exceptions), [notify about events](https://github.com/keymetrics/pmx#emit-events) or allow to configure the module remotely!
 
 ### Managing a module
 
@@ -355,10 +355,10 @@ A package.json must be present with some extra fields like `config` for configur
   "description": "my desc", // Used as the module comment
   "dependencies": {
     "pm2": "latest",
-    "pmx": "latest"         // Common dependencies to communiate with Keymetrics
+    "pmx": "latest"         // Common dependencies to communiate with PM2 Plus
   },
   "config": {              // Default configuration value
-                           // These values can be modified via Keymetrics or PM2 configuration system
+                           // These values can be modified via PM2 Plus or PM2 configuration system
 
      "days_interval" : 7,  // -> this value is returned once you call pmx.initModule()
      "max_size" : 5242880
@@ -376,7 +376,7 @@ A package.json must be present with some extra fields like `config` for configur
 ### Module entry point
 
 This is the index.js file (declared in the package.json in the apps section):
-The pmx.initModule takes a range of options to configure the module display in Keymetrics or to override the PID monitored by PM2:
+The pmx.initModule takes a range of options to configure the module display in PM2 Plus or to override the PID monitored by PM2:
 
 ```javascript
 var pmx     = require('pmx');
@@ -443,7 +443,7 @@ console.log(conf);
 
 ### Configuring a module
 
-In the package.json you can declare default options accessible in the Module under the attribute `config`. These values can be overriden by PM2 or Keymetrics.
+In the package.json you can declare default options accessible in the Module under the attribute `config`. These values can be overriden by PM2 or PM2 Plus.
 
 ### Default values
 
@@ -492,9 +492,9 @@ $ pm2 set server-monitoring:days_interval 2
 **NOTE3** When you set a new value the target module is restarted
 **NOTE4** You have to typecast yourself values, it is always strings!
 
-### With Keymetrics
+### With PM2 Plus
 
-In the main Keymetrics Dashboard, the module will have a button called "Configure". Once you click on it you will be able to access / modify all configurations variable exposed on the package.json!
+In the main PM2 Plus Dashboard, the module will have a button called "Configure". Once you click on it you will be able to access / modify all configurations variable exposed on the package.json!
 
 # PMX Helpers methods for Modules
 
@@ -544,9 +544,9 @@ A module is published on NPM.
 $ npm install pm2 -g
 ```
 
-2- [Go to Keymetrics](https://app.keymetrics.io/#/) and create a new account
+2- [Go to PM2 Plus](https://app.keymetrics.io/#/) and create a new account
 
-3- Create a bucket and then follow the instructions to link your local PM2 to Keymetrics
+3- Create a bucket and then follow the instructions to link your local PM2 to PM2 Plus
 
 4- Install a simple module
 
@@ -555,7 +555,7 @@ $ npm install pm2 -g
 $ pm2 install pm2-server-monit
 ```
 
-Now you can see in the Keymetrics dashboard the module interface you just installed.
+Now you can see in the PM2 Plus dashboard the module interface you just installed.
 
 The source code of this pm2-server-monit module is [here](https://github.com/pm2-hive/pm2-server-monit).
 
@@ -603,10 +603,10 @@ A package.json must be present with some extra fields like `config` for configur
   "description": "my desc", // Used as the module comment
   "dependencies": {
     "pm2": "latest",
-    "pmx": "latest"         // Common dependencies to communiate with Keymetrics
+    "pmx": "latest"         // Common dependencies to communiate with PM2 Plus
   },
   "config": {              // Default configuration value
-                           // These values can be modified via Keymetrics or PM2 configuration system
+                           // These values can be modified via PM2 Plus or PM2 configuration system
 
      "days_interval" : 7,  // -> this value is returned once you call pmx.initModule()
      "max_size" : 5242880
@@ -624,7 +624,7 @@ A package.json must be present with some extra fields like `config` for configur
 ### Module entry point
 
 This is the index.js file (declared in the package.json in the apps section):
-The pmx.initModule takes a range of options to configure the module display in Keymetrics or to override the PID monitored by PM2:
+The pmx.initModule takes a range of options to configure the module display in PM2 Plus or to override the PID monitored by PM2:
 
 ```javascript
 var pmx     = require('pmx');
@@ -687,7 +687,7 @@ var conf    = pmx.initModule({
 
 ### Module configuration
 
-In the package.json you can declare default options accessible in the module under the attribute `config`. These values can be overriden by PM2 or Keymetrics.
+In the package.json you can declare default options accessible in the module under the attribute `config`. These values can be overriden by PM2 or PM2 Plus.
 
 #### Default values
 
@@ -736,9 +736,9 @@ $ pm2 set server-monitoring:days_interval 2
 - **NOTE3** When you set a new value the target module is restarted
 - **NOTE4** You have to typecast yourself values, it is always strings!
 
-#### With Keymetrics
+#### With PM2 Plus
 
-In the main Keymetrics Dashboard, the module will have a button called "Configure". Once you click on it you will be able to access/modify all configuration variables exposed on the package.json!
+In the main PM2 Plus Dashboard, the module will have a button called "Configure". Once you click on it you will be able to access/modify all configuration variables exposed on the package.json!
 
 ### Publishing a module
 

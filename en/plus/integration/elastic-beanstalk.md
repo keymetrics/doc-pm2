@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Elastic Beanstalk | Integration | Keymetrics Documentation
+title: Elastic Beanstalk | Integration | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
@@ -9,19 +9,19 @@ redirect_from: "/plus/integration/elastic-beanstalk"
 
 # Monitor your Node.js app in AWS Elastic Beanstalk
 
-In seconds, this tutorial will show you how to monitor a Node.js application with Keymetrics in AWS Elastic Beanstalk.
+In seconds, this tutorial will show you how to monitor a Node.js application with PM2 Plus in AWS Elastic Beanstalk.
 
 We assume that your app has already been wrapped with PM2. If not, follow our [PM2 AWS Elastic Beanstalk Tutorial]({{ site.baseurl }}{% link en/runtime/integration/elastic-beanstalk.md %}).
 
 ---
 
-## Create an account on Keymetrics
+## Create an account on PM2 Plus
 
 You can register [here](https://app.keymetrics.io/api/oauth/register).
 
 ---
 
-## Link your app with Keymetrics
+## Link your app with PM2 Plus
 
 In order to connect PM2 to the dashboard, you need to add your public and private keys in the environment.
 
@@ -36,7 +36,7 @@ eb setenv PM2_PUBLIC_KEY=YYYYY PM2_SECRET_KEY=XXXXXXXX
 
 ---
 
-## Set the server name in Keymetrics
+## Set the server name in PM2 Plus
 
 Set the `PM2_MACHINE_NAME` environment variable to specify a server name:
 

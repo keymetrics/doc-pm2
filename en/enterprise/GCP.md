@@ -78,14 +78,14 @@ module "example_keymetrics_setup" {
 ```
 
 The following variables are available:
-- **keymetrics_key**: [*Required*] Keymetrics License Key.
+- **keymetrics_key**: [*Required*] PM2 Plus License Key.
 - **environment**: [*Required*] The name of your environment (ex: `qa`, `prod`, `prod-1`, etc.).
 - **smtp_username**: [*Required*] Username used to connect to the SMTP server.
 - **smtp_password**: [*Required*] Password used to connect to the SMTP server.
 - **smtp_host**: [*Required*] Hostname of the SMTP server.
 - **smtp_sender**: [*Required*] Email address used to send emails.
 - **network_name**: [*Required*] Name of the GCP Network to use.
-- **public_host_address**: Public domain pointing to Keymetrics HTTP Server (if empty, the public IP will be used), need to be formatted with http or https, not just the host.
+- **public_host_address**: Public domain pointing to PM2 Plus HTTP Server (if empty, the public IP will be used), need to be formatted with http or https, not just the host.
 - **mongodb_instance_type**: GCP Instance type to use for MongoDB Instance.
 - **elasticsearch_instance_type**: GCP Instance type to use for ElasticSearch Instance.
 - **redis_instance_type**: GCP Instance type to use for Redis Instance.
@@ -102,15 +102,15 @@ You can then run `terraform apply tfout` in order to make terraform created the 
 
 ## Extra configuration depending of your own existing infrastructure
 
-### Add a sub-domain pointing to Keymetrics instance
+### Add a sub-domain pointing to PM2 Plus instance
 
-By default, Keymetrics instance is using an External IP addresses to be publicly available to its users. If you want to use it with a domain, you __first__ need to set `public_host_address` variable to the domain to use and then create a `A` record pointing to its public External IP addresses.
+By default, PM2 Plus instance is using an External IP addresses to be publicly available to its users. If you want to use it with a domain, you __first__ need to set `public_host_address` variable to the domain to use and then create a `A` record pointing to its public External IP addresses.
 
 *__Warning: Once deployed with either the public IP or a domain, it's not possible to change it without fully dropping the mongodb database.__*
 
-### Allow your apps to connect to Keymetrics APIs
+### Allow your apps to connect to PM2 Plus APIs
 
-By default, Keymetrics instance only accept connection on port `80/tcp` from `0.0.0.0/32`. In order to let your applications talk with the Keymetrics backend, you need to allow their security groups to connected to Keymetrics instance on port `3900/tcp`, `3010/tcp`, `4010/tcp` and `43554/tcp`.
+By default, PM2 Plus instance only accept connection on port `80/tcp` from `0.0.0.0/32`. In order to let your applications talk with the PM2 Plus backend, you need to allow their security groups to connected to PM2 Plus instance on port `3900/tcp`, `3010/tcp`, `4010/tcp` and `43554/tcp`.
 
 To do so, you can use the module output values as target or source of new [Firewall rules](https://www.terraform.io/docs/providers/google/r/compute_firewall.html) :
 - `redis_fw_tag_name`

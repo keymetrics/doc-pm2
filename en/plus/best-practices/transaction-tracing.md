@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Transaction Tracing | Best Practices | Keymetrics Documentation
+title: Transaction Tracing | Best Practices | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
