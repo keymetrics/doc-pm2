@@ -19,7 +19,7 @@ RUN bundle exec jekyll build
 FROM kyma/docker-nginx
 
 RUN mkdir -p /var/www/doc/
-COPY --from=0 /docs/dist /var/www/doc
+COPY --from=0 /docs/docs /var/www/doc
 EXPOSE 80
 
 CMD 'nginx'
