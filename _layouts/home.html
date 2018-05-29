@@ -1,21 +1,43 @@
 <!DOCTYPE html>
+{% if page.lang %}
 <html lang="{{ page.lang }}">
 
   {% include head.html %}
 
   {% if page.lang == 'en' %}
-  <body class="en-doc">
-  {% else %}
-  <body class="non-en-doc">
-    <div id="i18n-notice-box" class="doc-box doc-warn">
-      {% include i18n-notice.html %}
-    </div>
-  {% endif %}
+  <body class="en-doc homepage">
+    {% else %}
+  <body class="non-en-doc homepage">
+    {% endif %}
+    {% include header/header-{{ page.lang }}.html %}
 
-    {{ content }}
 
-    {% include footer/footer-{{ page.lang }}.html %}
+    <section class="content">
+      <a href={{ "/runtime/overview" | prepend: page.lang | prepend: "/" | relative_url }} title="Check out the PM2 Runtime Documentation">
+        <div class="product-line">
+          <img class="logo-img" alt="PM2 Runtime logo" src={{ "/img/logos-pm2/pm2-runtime_white.png" | relative_url}}/>
+          <h2>Open Source Process Manager</h2>
+        </div>
+      </a>
 
+      <a href={{ "/plus/overview" | prepend: page.lang | prepend: "/" | relative_url }} title="Check out the PM2 Plus Documentation">
+        <div class="product-line">
+          <img class="logo-img" alt="PM2 Plus logo" src={{ "/img/logos-pm2/pm2-plus_white.png" | relative_url}}/>
+          <h2>Monitoring & Advanced App Management</h2>
+        </div>
+      </a>
+
+      <a href={{ "/enterprise/overview" | prepend: page.lang | prepend: "/" | relative_url }} title="Check out the PM2 Enterprise Documentation">
+        <div class="product-line">
+          <img class="logo-img" alt="PM2 Enterprise logo" src={{ "/img/logos-pm2/pm2-enterprise_white.png" | relative_url}}/>
+          <h2>Industrial Monitoring System</h2>
+        </div>
+      </a>
+
+    </section>
+
+
+    {% include meta-footer.html %}
   </body>
-
 </html>
+{% endif %}

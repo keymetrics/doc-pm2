@@ -1,7 +1,6 @@
 # Site settings
 name: PM2 Documentation
 email: contact@keymetrics.io
-description: 'PM2 - Guide, References, Tutorials and Best Practices about PM2 and Node.js.'
 
 # Build settings
 sass:
@@ -26,7 +25,7 @@ plugins:
   - jekyll-feed
 
 baseurl: "/doc"
-destination: docs
+destination: dist
 
 exclude:
   - node_modules
@@ -35,8 +34,12 @@ exclude:
   - package.json
   - package-lock.json
   - yarn.lock
+  - _sass
   - Dockerfile
   - Gemfile
   - Gemfile.lock
   - mapping-plus.js
   - prod_config.yml
+  - mapping-process-manager.js
+
+exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico","assets", "CNAME", "node_modules", "package.json", "package-lock.json","_src","_docs","gulpfile.js"]

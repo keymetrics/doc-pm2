@@ -1,32 +1,3 @@
-.markdown-section code,.markdown-section pre{
-  background-color:#f8f8f8
-}
-.markdown-section code{
-  border-radius:2px;
-  color:#e96900;
-  font-size:.8rem;
-  margin:0 2px;
-  padding:3px 5px;
-  white-space:pre-wrap
-}
-
-.markdown-section pre{
-  line-height:1.5rem;
-  margin:1.2em 0;
-  overflow:auto;
-  padding:0 1.4rem;
-  position:relative;
-  word-wrap:normal
-}
-.markdown-section pre>code {
-  color: #fff;
-  background-color:#f8f8f8;
-  border-radius:2px;
-  display:block;
-  font-size:.8rem;
-  margin:0 2px;
-  padding:1.2em 20px;
-}
 
 .highlight_word {
     color: #01cea2;
@@ -95,9 +66,7 @@
 .token.entity{
   cursor:help
 }
-.markdown-section code:after,.markdown-section code:before{
-  letter-spacing:.05rem
-}
+
 code .token{
   -moz-osx-font-smoothing:initial;
   -webkit-font-smoothing:initial;

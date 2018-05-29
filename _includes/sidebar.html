@@ -26,24 +26,26 @@
     <div class="sidebar-nav">
 
     <ul id="acc">
-    {% if page.url contains 'runtime' %}{% assign category ='runtime' %}{% elsif page.url contains "plus" %}{% assign category ="plus" %}{% elsif page.url contains "enterprise" %}{% assign category ="enterprise" %}{% else %}{% assign category ='runtime' %}{% endif %}
-    {% if page.lang contains 'en' %}{% assign sidebar = site.data.sidebar-en %}{% elsif page.lang contains 'ch' %}{% assign sidebar = site.data.sidebar-ch %}{% endif %}
-    {% for item in sidebar.[category] %}
+    {% if page.lang contains 'en' %}{% assign sidebar = site.data.sidebar-en %}
+    {% elsif page.lang contains 'ch' %}{% assign sidebar = site.data.sidebar-ch %}{% endif %}
+    {% for item in sidebar.[page.section] %}
     {% assign slug_title = item.title | slugify %}
-    {% if page.url contains slug_title %}{% assign active = 'active' %}{% else %}{% assign active = '' %}{% endif %}
-        <li class="{{ active }}">
-            <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-            {% if item.submenu  %}
-                {% if page.url contains item.url  %}
-                    <ul>
-                        {% for entry in item.submenu %}
-                        {% if page.url contains entry.url %}{% assign active = 'active' %}{% else %}{% assign active = '' %}{% endif %}
-                        <li class="{{ active }}"><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a></li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-            {% endif %}
-        </li>
+    {% if page.url contains item.url %}{% assign active = 'class="active"' %}
+    {% else %}{% assign active = '' %}{% endif %}
+      <li {{ active }}>
+        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+        {% if item.submenu  %}
+          {% if page.url contains item.url  %}
+            <ul>
+              {% for entry in item.submenu %}
+              {% if page.url contains entry.url %}{% assign active = 'class="active"' %}
+              {% else %}{% assign active = '' %}{% endif %}
+              <li {{ active }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endif %}
+      </li>
     {% endfor %}
     </ul>
 

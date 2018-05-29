@@ -7,8 +7,6 @@ section: runtime
 redirect_from:
 - "/runtime/overview"
 - "/en"
-- "/"
-- ""
 ---
 
 # Overview
@@ -25,6 +23,9 @@ This as simple as running:
 ```bash
 pm2 start app.js
 ```
+
+[Quick Start]({{ site.baseurl }}{% link en/runtime/quick-start.md %})
+
 
 ---
 
@@ -44,15 +45,21 @@ Manage your process list with `pm2 start` and `pm2 delete`.
 
 Once added to your process list, manage a process with `pm2 start`, `pm2 stop`, `pm2 restart`.
 
+[Load Balancing]({{ site.baseurl }}{% link en/runtime/guide/process-management.md %})
+
+
 ---
 
-## Logs Management
+## Log Management
 
 All app logs are saved in the hard disk of your servers into `~/.pm2/logs/`.
 
 ```bash
 pm2 logs
 ```
+
+[Log Management]({{ site.baseurl }}{% link en/runtime/guide/log-management.md %})
+
 
 ---
 
@@ -65,6 +72,8 @@ Start clusterize your app with:
 pm2 start -i max
 ```
 
+[Load Balancing]({{ site.baseurl }}{% link en/runtime/guide/load-balancing.md %})
+
 ---
 
 ## In-terminal monitoring
@@ -75,7 +84,7 @@ Monitor your app in the terminal to check your app health (CPU usage, memory use
 pm2 monit
 ```
 
-![local monitoring with pm2]({{ site.baseurl }}{% link img/runtime/monit.png %})
+![Local monitoring with PM2]({{ site.baseurl }}{% link img/runtime/monit.png %})
 
 ---
 
@@ -86,6 +95,8 @@ Automate your deployment and don't ssh in all your servers one by one.
 ```bash
 pm2 deploy
 ```
+
+[Easy deploy with SSH]({{ site.baseurl }}{% link en/runtime/guide/easy-deploy-with-ssh.md %})
 
 ---
 

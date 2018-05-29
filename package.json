@@ -1,0 +1,32 @@
+{
+  "name": "doc-pm2",
+  "version": "1.0.0",
+  "description": "1. sudo apt install clang make ruby-dev libffi-dev\r 2. `bundle install`\r 3. `bundle exec jekyll serve`",
+  "main": "mapping-plus.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keymetrics/doc-pm2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keymetrics/doc-pm2/issues"
+  },
+  "homepage": "https://github.com/keymetrics/doc-pm2#readme",
+  "dependencies": {
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "ins": "0.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8"
+  }
+}
