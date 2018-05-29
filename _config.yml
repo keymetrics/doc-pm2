@@ -1,6 +1,7 @@
 # Site settings
 name: PM2 Documentation
 email: contact@keymetrics.io
+description: 'PM2 - Guide, References, Tutorials and Best Practices about PM2 and Node.js.'
 
 # Build settings
 sass:
@@ -39,5 +40,3 @@ exclude:
   - Gemfile.lock
   - mapping-plus.js
   - prod_config.yml
-
-exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico","assets", "CNAME", "node_modules", "package.json", "package-lock.json","_src","_docs","gulpfile.js"]
