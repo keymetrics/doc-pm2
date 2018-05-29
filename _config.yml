@@ -2,6 +2,10 @@
 name: PM2 Documentation
 email: contact@keymetrics.io
 
+# Build settings
+sass:
+  style: compact
+
 markdown: kramdown
 
 gems:
@@ -21,9 +25,7 @@ plugins:
   - jekyll-feed
 
 baseurl: "/doc"
-
 destination: docs
-
 
 exclude:
   - node_modules
@@ -32,7 +34,6 @@ exclude:
   - package.json
   - package-lock.json
   - yarn.lock
-  - _sass
   - Dockerfile
   - Gemfile
   - Gemfile.lock

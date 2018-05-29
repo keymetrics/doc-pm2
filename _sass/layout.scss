@@ -141,21 +141,3 @@ li input[type=checkbox]{
     display: block;
   }
 }
-/**
- * Algolia Search
- */
-.algolia-autocomplete {
-  .search_input {
-    text-align: left;
-    padding: 0px 0px 0px 10px!important;
-    border-radius: 4px;
-    height: 35px;
-  }
-}
-
-#hits{
-	display: none;
-}
-#hits.hide{
-	display:none!important;
-}

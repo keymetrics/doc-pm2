@@ -257,13 +257,6 @@
     display: none;
 }
 
-.algolia-autocomplete {
-    input {
-        max-width: 266px;
-        border: none;
-    }
-}
-
 .algolia-results {
     position: absolute;
     z-index: 5;
@@ -293,17 +286,6 @@
     }
 }
 
-.search-wrapper input {
-    text-align: center;
-    padding: 0 40px 0 39px;
-    padding-left: 55px!important;
-
-  height: 47px;
-  border-radius: 30px;
-  background-color: #ffffff;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
-
-}
 .search-wrapper input:hover,.search-wrapper input:active,.search-wrapper input:focus{
     outline:none;
 }
@@ -312,15 +294,29 @@
     position: relative;
 }
 
-.search-wrapper input {
-    font-size: 18px!important;
-    color: #979797;
-    font-weight: 400;
-
-    margin: 0px!important;
-    max-width: 100%;
-    border-radius: 20px;
-    margin: 20px;
-    padding-left: 45px!important;
-    padding-right: 40px!important;
+/**
+ * Algolia Search
+ */
+ .search-wrapper {
+    input {
+      background-color: #ffffff;
+      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      color: #979797;
+      font-weight: 400;
+      margin: 0px;
+      max-width: 266px;
+      border: none;
+      text-align: left;
+      padding-left: 35px;
+      padding-right: 35px;
+      border-radius: 15px;
+      height: 35px;
+  }
+}
+#hits{
+         display: none;
+}
+#hits.hide{
+         display:none!important;
 }
