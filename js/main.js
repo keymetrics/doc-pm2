@@ -23,10 +23,9 @@
         var header = headers[h];
 
         if (typeof header.id !== "undefined" && header.id !== "") {
-          header.innerHTML = '<a class="anchor-title" href="#' + header.id + '">' + header.innerHTML + '</a>'
+          header.appendChild(anchorForId(header.id));
         }
       }
-
     };
 
     document.onreadystatechange = function () {
@@ -40,28 +39,11 @@
         }
       }
 
-      setTimeout(function() {
-        if (window.location.hash) {
-          // smooth scroll to the anchor id
-          var pos = $(window.location.hash).offset().top -100;
-          console.log('asdsad')
-          $('html, body').animate({
-            scrollTop: pos + 'px'
-          }, 1000, 'swing');
-        }
-      }, 200);
-
-      $("a[href^='#']").click(function(e) {
-        // e.preventDefault();
-        // var hash = e.currentTarget.hash;
-        // window.location.hash = hash;
-        // var pos = $(hash).offset().top - 100;
-        // $('html, body').animate({
-        //   scrollTop: pos + 'px'
-        // }, 100, 'swing');
-      });
-
-
+      // var urlHash = window.location.href.split("#")[1];
+      // if (urlHash &&  $('#' + urlHash).length )
+      //   $('html,body').animate({
+      //     scrollTop: $('#' + urlHash).offset().top
+      //   }, 1000);
     };
   }
 
