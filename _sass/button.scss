@@ -1,3 +1,13 @@
+.runtime-page .btn-stylized {
+  background: $color_runtime !important;
+}
+.plus-page .btn-stylized {
+  background: $color_plus !important;
+}
+.enterprise-page .btn-stylized {
+  background: $color_enterprise !important;
+}
+
 .btn-stylized {
   border: none;
   font-family: inherit;
@@ -14,7 +24,6 @@
   outline: none;
   position: relative;
   transition: all 0.3s;
-  background: #3eb1f3 !important;
 
 
 

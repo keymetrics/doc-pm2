@@ -4,7 +4,7 @@
 $color_runtime: #3eb1f3;
 $color_plus: #01cea2;
 $color_enterprise: #7f86f5;
-$sidebar-width: 235px;
+$sidebar-width: 215px;
 $baseurl: "/doc";
 
 
@@ -17,5 +17,5 @@ $baseurl: "/doc";
 @import "footer";
 @import "header";
 @import "markdown";
-@import "sidebar-1";
+@import "sidebar";
 @import "homepage";
