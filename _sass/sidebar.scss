@@ -1,0 +1,168 @@
+//docsify
+
+.sidebar{
+  background: #202a37;
+  border-right:1px solid rgba(0,0,0,.07);
+  overflow-y:auto;
+  padding:60px 0 0;
+  position:absolute;
+  top:0;
+  bottom:0;
+  z-index: 4;
+  left:0;
+  transition:transform .25s ease-out;
+  width: $sidebar-width;
+  @media screen and (max-width: 768px) {
+      left: 0px;
+  }
+}
+.sidebar .sidebar-nav{
+  line-height:2em;
+  padding-bottom:40px
+}
+.sidebar li.collapse .app-sub-sidebar{
+  display:none
+}
+.sidebar ul{
+  margin:0;
+  padding:0
+}
+.sidebar li>p{
+  font-weight:700;
+  margin:0
+}
+.sidebar ul,.sidebar ul li{
+  list-style:none
+}
+.sidebar ul li a{
+  border-bottom:none;
+  display:block
+}
+.sidebar ul li ul{
+  padding-left:20px
+}
+.sidebar::-webkit-scrollbar{
+  width:4px
+}
+.sidebar::-webkit-scrollbar-thumb{
+  background:transparent;
+  border-radius:4px
+}
+.sidebar:hover::-webkit-scrollbar-thumb{
+  background:hsla(0,0%,53%,.4)
+}
+.sidebar:hover::-webkit-scrollbar-track{
+  background:hsla(0,0%,53%,.1)
+}
+.sidebar-toggle{
+  background-color:transparent;
+  background-color:hsla(0,0%,100%,.8);
+  border:0;
+  outline:none;
+  padding:10px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  text-align:center;
+  transition:opacity .3s;
+  width:284px;
+  z-index:4
+}
+.sidebar-toggle .sidebar-toggle-button:hover{
+  opacity:.4
+}
+.sidebar-toggle span{
+  background-color:var(--theme-color,#42b983);
+  display:block;
+  margin-bottom:4px;
+  width:16px;
+  height:2px
+}
+
+// custom
+
+
+body.close .sidebar {
+    -webkit-transform: translateX(-375px);
+    transform: translateX(-375px);
+}
+
+.sidebar-nav > ul{
+    padding: 24px 24px 16px 30px !important
+}
+.sidebar ul li ul {
+    padding-left: 12px!important;
+}
+.sidebar-nav ul li{
+        margin: 16px 0 0 0;
+}
+
+.sidebar-nav a.active{
+    color:#3eb1f3!important;
+}
+
+
+
+body.close .sidebar-toggle {
+    @media screen and (max-width: 768px) {
+        background-color: transparent;
+    }
+}
+
+.sidebar-toggle {
+    background-color: transparent;
+    left: -50px;
+    @media screen and (min-width: 1200px) {
+
+    }
+}
+
+.sidebar-toggle-button span {
+    background-color: white;
+}
+
+
+.sidebar-toggle {
+    z-index: 5;
+}
+
+
+
+.sidebar li {
+    margin: 6px 0 6px 20px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.sidebar ul li ul li a {
+    font-size: 14px;
+}
+
+.runtime-page .sidebar ul li.active>a {
+  color: $color_runtime;
+}
+
+.plus-page .sidebar ul li.active>a {
+  color: $color_plus;
+}
+
+.enterprise-page .sidebar ul li.active>a {
+  color: $color_enterprise;
+}
+
+
+.sidebar ul li.active>a {
+  font-weight:600;
+  border-right:0px;
+  border-left: 2px solid;
+  padding-left: 10px;
+  position: relative;
+  left: -10px;
+}
