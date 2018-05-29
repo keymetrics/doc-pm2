@@ -32,16 +32,18 @@ body,html{
 }
 
 body {
-  background-image: url($baseurl + "/img/backgrounds/bg-squares.png");
-  background-position: bottom left;
-  background-attachment: fixed;
+  background-color: #d3e0f0;
   -moz-osx-font-smoothing:grayscale;
   -webkit-font-smoothing:antialiased;
   font-size:18px;
   letter-spacing:0;
   margin:0;
   overflow-x:hidden;
-  background-color: #131d26;
+
+  //background-image: url($baseurl + "/img/backgrounds/bg-squares.png");
+  //background-position: bottom left;
+  //background-attachment: fixed;
+  //background-color: #131d26;
 }
 
 h1, h2, h3, h4 {
@@ -117,13 +119,16 @@ li input[type=checkbox]{
 }
 
 .runtime-page .gettings_started_block{
-  background: linear-gradient(to bottom, #3eb1f3 0, #084365 100%);
+  background-color: $color_runtime;
+  //background: linear-gradient(to bottom, #3eb1f3 0, #084365 100%);
 }
 .plus-page .gettings_started_block{
-  background: linear-gradient(to bottom, #01cea2 0, #024839 100%);
+  background-color: $color_plus;
+  //background: linear-gradient(to bottom, #01cea2 0, #024839 100%);
 }
 .enterprise-page .gettings_started_block{
-  background: linear-gradient(to bottom, #7f86f5 0, #2c2e44 100%);
+  background-color: $color_enterprise;
+  //background: linear-gradient(to bottom, #7f86f5 0, #2c2e44 100%);
 }
 
 .show-menu {
