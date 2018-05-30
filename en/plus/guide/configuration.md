@@ -65,15 +65,17 @@ You can create a custom metrics with the method `metric()` of `@pm2/io`.
 const io = require('@pm2/io');
 
 io.metric({
-  type: 'metric',
   name: 'Realtime user',
 });
 ```
 
-This method takes an object with at least two properties:
+This arguments are available:
 
-- **name**: The metric name
-- **type**: The type of metric
+- **name**: The metric name (required; string)
+- **type**: The type of metric (default 'metric', string)
+- **agg_type**: type of aggregation (default 'avg'; string: )
+- **unit**: unit of the measure (default ''; string)
+- **historic**: keep the history in PM2 Plus (default: true; boolean)
 
 The type corresponds to one of the 4 ways to gather metrics:
 
@@ -105,7 +107,7 @@ io.metric({
 In active mode, you need to save the return of the `metric` method. This will give you an object that has the method `set()`. Use this method to update the value of the metric.
 
 ```javascript
-const { Realtime_Value } = io.metric({
+const Realtime_Value = io.metric({
   type: 'metric',
   name: 'Realtime Value'
 });
@@ -120,7 +122,7 @@ The second type of metric, called `counter`, is a discrete counter that helps yo
 ```javascript
 const io = require('@pm2/io');
 
-const { Current_req_processed } = io.metric({
+const Current_req_processed = io.metric({
   name: 'Current req processed',
   type: 'counter',
 });
@@ -142,7 +144,7 @@ The third type of metric, called `meter`, compute the frequency of an event. Eac
 ```javascript
 const io = require('@pm2/io');
 
-const { reqsec } = io.metric({
+const reqsec = io.metric({
   name: 'req/sec',
   type: 'meter',
 });
@@ -164,7 +166,7 @@ This last type of metric collect values and provide statistic tools to explore t
 ```javascript
 const io = require('@pm2/io');
 
-const { latency } = io.metric({
+const latency = io.metric({
   name: 'latency',
   type: 'histogram',
   measurement: 'mean'
@@ -178,8 +180,8 @@ setInterval(() => {
 }, 100);
 ```
 
-Options is:
-- **measurement** : (optional)(default: avg) Can be `sum`, `max`, `min`, `avg` or `none`.
+Options are:
+- **measurement** : default: mean; min, max, sum, count, variance, mean, stddev, median, p75, p95, p99, p99.
 
 ---
 
@@ -196,9 +198,9 @@ Example:
 ```javascript
 const io = require('@pm2/io');
 
-io.action('db:clean', (reply) => {
+io.action('db:clean', (cb) => {
   clean.db(() => {
-     reply({ success: true });
+     cb({ success: true });
   });
 });
 ```
@@ -213,7 +215,7 @@ Example:
 
 ```javascript
 io.scopedAction('long running lsof', (data, res) => {
-  var child = spawn('lsof', []);
+  const child = spawn('lsof', []);
 
   child.stdout.on('data', (chunk) => {
     chunk.toString().split('\n').forEach(function(line) {
