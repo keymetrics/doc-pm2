@@ -8,7 +8,7 @@
   background: linear-gradient(to bottom, #1b2329 0, #1a2935 100%);
   display: flex;
   align-items: center;
-  min-height: 76px;
+  min-height: $header-height;
   padding-left: 16px;
   padding-right: 16px;
 
@@ -207,7 +207,7 @@
     margin: 0px;
     position: fixed!important;
     width: 100%;
-    min-height: 76px;
+    min-height: $header-height;
     top: 0px;
 }
 

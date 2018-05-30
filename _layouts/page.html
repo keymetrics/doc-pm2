@@ -9,21 +9,22 @@
   {% endif %}
   {% include header/header-{{ page.lang }}.html %}
   {% include sidebar.html %}
-
   <section class="content">
-    <button class="btn-stylized show-menu">↩ Show Menu</button>
-    <header class="gettings_started_block">
-      <h1>PM2 {{page.section | capitalize}} | {{ page.title | replace: "| PM2 Documentation", ""| replace: "| PM2 Plus Documentation", "" | replace: "| PM2 Enterprise Documentation", "" }}</h1>
-    </header>
-
-    <article id="main" class="markdown-section">
-      {% include edit-page/edit-page-{{ page.lang }}.html %}
-      {{ content }}
-
-      <div id="gittalk"></div>
-    </article>
-
-    {% include footer/footer-{{ page.lang }}.html %}
+    <div class="content-container">
+      <button class="btn-stylized show-menu">↩ Show Menu</button>
+      <header class="gettings_started_block">
+        <h1>PM2 {{page.section | capitalize}} | {{ page.title | replace: "| PM2 Documentation", ""| replace: "| PM2 Plus Documentation", "" | replace: "| PM2 Enterprise Documentation", "" }}</h1>
+      </header>
+  
+      <article id="main" class="markdown-section">
+        {% include edit-page/edit-page-{{ page.lang }}.html %}
+        {{ content }}
+  
+        <div id="gittalk"></div>
+      </article>
+  
+      {% include footer/footer-{{ page.lang }}.html %}
+    </div>
   </section>
 
 
