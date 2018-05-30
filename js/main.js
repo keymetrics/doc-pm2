@@ -121,7 +121,7 @@
   function setSidebarBreakpoints() {
     var onResize = function() {
       var w = window.innerWidth;
-      if (w < 990) {
+      if (w < 768) {
         toggleClass('body', 'close', true);
       } else {
         toggleClass('body', 'close', false);

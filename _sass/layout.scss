@@ -94,7 +94,7 @@ div.content-container {
   }
 }
 
-@media screen and (max-width:1650px) {
+@media screen and (max-width:768px) {
   .content {
     right: initial;
   }
@@ -151,7 +151,7 @@ li input[type=checkbox]{
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .show-menu {
     margin-bottom: 20px;
     display: block;
