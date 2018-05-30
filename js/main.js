@@ -133,7 +133,7 @@
 
   // ok
   function logoTogglesSidebarOnMobile() {
-    var el = find('.show-menu');
+    var el = find('.sidebar-toggle');
     if (el) {
       addEvent(el, 'click', function(e) {
         if (find('body').className.indexOf('close') !== -1) {
