@@ -1,53 +1,29 @@
 <aside class="sidebar">
-    <!-- <div class="sidebar_2_wrapper">
-        <div class="sidebar_2">
-            <a href={{ "/runtime/overview" | prepend: page.lang | prepend: "/" | relative_url }} data-page="runtime-page">
-                <div class="sidebar_2_item sidebar_2_item_runtime">
-                    <img class="sidebar_2_item__image-runtime" src={{ "/static/pm2-logo-r.png" | relative_url }}>
-                    <div class="sidebar_2_item__text"></div>
-                </div>
-            </a>
-            <a href={{ "/plus/overview" | prepend: page.lang | prepend: "/" | relative_url }} data-page="plus-page">
-                <div class="sidebar_2_item sidebar_2_item_plus">
-                    <img class="sidebar_2_item__image" src={{ "/static/pm2-logo-m.png" | relative_url }}>
-                    <div class="sidebar_2_item__text">Plus</div>
-                </div>
-            </a>
-            <a href={{ "/enterprise/overview" | prepend: page.lang | prepend: "/" | relative_url }} data-page="enterprise-page">
-                <div class="sidebar_2_item sidebar_2_item_enterprise">
-                    <img class="sidebar_2_item__image" src={{ "/static/pm2-logo-e.png" | relative_url }}>
-                    <div class="sidebar_2_item__text">Enterprise</div>
-                </div>
-            </a>
-        </div>
-        <div class="main_content">
-        </div>
-    </div> -->
-    <div class="sidebar-nav">
+  <div class="sidebar-nav">
 
-    <ul id="acc">
-    {% if page.lang contains 'en' %}{% assign sidebar = site.data.sidebar-en %}
-    {% elsif page.lang contains 'ch' %}{% assign sidebar = site.data.sidebar-ch %}{% endif %}
-    {% for item in sidebar.[page.section] %}
-    {% assign slug_title = item.title | slugify %}
-    {% if page.url contains item.url %}{% assign active = 'class="active"' %}
-    {% else %}{% assign active = '' %}{% endif %}
-      <li {{ active }}>
-        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-        {% if item.submenu  %}
-          {% if page.url contains item.url  %}
-            <ul>
-              {% for entry in item.submenu %}
-              {% if page.url contains entry.url %}{% assign active = 'class="active"' %}
-              {% else %}{% assign active = '' %}{% endif %}
-              <li {{ active }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a></li>
-              {% endfor %}
-            </ul>
-          {% endif %}
+  <ul id="acc">
+  {% if page.lang contains 'en' %}{% assign sidebar = site.data.sidebar-en %}
+  {% elsif page.lang contains 'ch' %}{% assign sidebar = site.data.sidebar-ch %}{% endif %}
+  {% for item in sidebar.[page.section] %}
+  {% assign slug_title = item.title | slugify %}
+  {% if page.url contains item.url %}{% assign active = 'class="active"' %}
+  {% else %}{% assign active = '' %}{% endif %}
+    <li {{ active }}>
+      <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+      {% if item.submenu  %}
+        {% if page.url contains item.url  %}
+          <ul>
+            {% for entry in item.submenu %}
+            {% if page.url contains entry.url %}{% assign active = 'class="active"' %}
+            {% else %}{% assign active = '' %}{% endif %}
+            <li {{ active }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a></li>
+            {% endfor %}
+          </ul>
         {% endif %}
-      </li>
-    {% endfor %}
-    </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
 
-    </div>
+  </div>
 </aside>
