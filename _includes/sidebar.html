@@ -1,5 +1,5 @@
 <aside class="sidebar">
-  <div class="sidebar-nav">
+  <nav class="sidebar-nav">
 
   <ul id="acc">
   {% if page.lang contains 'en' %}{% assign sidebar = site.data.sidebar-en %}
@@ -22,8 +22,16 @@
         {% endif %}
       {% endif %}
     </li>
-  {% endfor %}
+    {% endfor %}
   </ul>
-
-  </div>
+  
+</nav>
+{% if page.section contains 'runtime' %}
+<div class="li-github">
+  <a href="https://github.com/Unitech/PM2" style="color:white">
+    <iframe src="https://ghbtns.com/github-btn.html?user=Unitech&repo=PM2&type=star&count=true&size=medium" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+    <!-- <i class="fa fa-github fa-2"></i> -->
+  </a>
+</div>
+{% endif %}
 </aside>
