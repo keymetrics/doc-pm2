@@ -56,7 +56,7 @@ Add pm2 as a dependency to your projet.
 With npm:
 
 ```bash
-npm install --save pm2
+npm install pm2
 ```
 
 With yarn:
