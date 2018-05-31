@@ -1,11 +1,14 @@
 .runtime-page .btn-stylized {
   background: $color_runtime !important;
+  box-shadow: 0 4px #05598a;
 }
 .plus-page .btn-stylized {
   background: $color_plus !important;
+  box-shadow: 0 4px #058a17;
 }
 .enterprise-page .btn-stylized {
   background: $color_enterprise !important;
+  box-shadow: 0 4px #43058a;
 }
 
 .btn-stylized {
@@ -28,7 +31,6 @@
 
 
   color: #fff;
-  box-shadow: 0 4px #05598a;
   transition: none;
   border-radius: 3px;
   &:after {
