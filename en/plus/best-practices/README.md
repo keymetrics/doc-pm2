@@ -4,6 +4,7 @@ title: Best Practices | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
+hide_comments: true
 permalink: "/en/plus/best-practices/"
 redirect_from: "/plus/best-practices/"
 ---

@@ -4,6 +4,7 @@ title: Guide | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
+hide_comments: true
 permalink: "/en/plus/guide/"
 redirect_from: "/plus/guide/"
 ---

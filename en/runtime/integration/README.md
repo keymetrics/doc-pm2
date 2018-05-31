@@ -4,6 +4,7 @@ title: Integration | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
+hide_comments: true
 permalink: "/en/runtime/integration/"
 redirect_from: "/runtime/integration"
 ---

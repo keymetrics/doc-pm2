@@ -4,6 +4,7 @@ title: Reference | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
+hide_comments: true
 permalink: "/en/runtime/reference/"
 redirect_from: "/runtime/reference/"
 ---

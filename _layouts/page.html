@@ -23,7 +23,10 @@
         {% include edit-page/edit-page-{{ page.lang }}.html %}
         {{ content }}
   
-        <div id="gittalk"></div>
+        {% if page.hide_comments %}
+        {% else %}
+          <div id="gittalk"></div>
+        {% endif %}
       </article>
   
       {% include footer/footer-{{ page.lang }}.html %}

@@ -4,6 +4,7 @@ title: Overview | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise
+hide_comments: true
 redirect_from: "/enterprise/overview/"
 ---
 

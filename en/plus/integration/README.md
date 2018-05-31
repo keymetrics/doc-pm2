@@ -4,6 +4,7 @@ title: Integration | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
+hide_comments: true
 permalink: "/en/plus/integration/"
 redirect_from: "/plus/integration/"
 ---

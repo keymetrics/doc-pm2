@@ -4,6 +4,7 @@ title: Best Practices | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
+hide_comments: true
 permalink: "/en/runtime/best-practices/"
 redirect_from: "/runtime/best-practices/"
 ---
