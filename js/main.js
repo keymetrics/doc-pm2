@@ -6,7 +6,18 @@
     setGitalk();
     logoTogglesSidebarOnMobile();
     setSidebarBreakpoints();
+    addBtnClassToOrphanP();
   });
+
+  // Automatically add btn class to link that are alone (meaning transform to buttons)
+  function addBtnClassToOrphanP() {
+    $('.markdown-section p').each(function(el, obj) {
+      if ($(obj).clone().find('a').remove().end().html().trim().length == 0) {
+        $(obj).find('a').addClass('btn-stylized').append('<i class="material-icons">forward</i>')
+        $(obj).addClass('centerize')
+      }
+    });
+  }
 
   function setAnchors() {
     var anchorForId = function (id) {

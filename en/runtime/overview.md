@@ -45,7 +45,7 @@ Manage your process list with `pm2 start` and `pm2 delete`.
 
 Once added to your process list, manage a process with `pm2 start`, `pm2 stop`, `pm2 restart`.
 
-[Load Balancing]({{ site.baseurl }}{% link en/runtime/guide/process-management.md %})
+[Process Management]({{ site.baseurl }}{% link en/runtime/guide/process-management.md %})
 
 
 ---

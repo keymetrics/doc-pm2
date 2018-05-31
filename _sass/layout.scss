@@ -68,19 +68,19 @@ main {
 .content {
   display: flex;
   flex: 1;
-}
 
-.content-container {
-  overflow: auto;
-  position: relative;
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-bottom: 40px;
-  padding-left: 30px;
-  flex: 1;
-  .content-main {
-    max-width: 820px;
-    margin: 0 auto;
+  .content-container {
+    overflow: auto;
+    position: relative;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    flex: 1;
+    .content-main {
+      max-width: 820px;
+      margin: 0 auto;
+    }
   }
 }
 

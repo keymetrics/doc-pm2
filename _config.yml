@@ -40,3 +40,4 @@ exclude:
   - Gemfile.lock
   - mapping-plus.js
   - prod_config.yml
+  - _sass
