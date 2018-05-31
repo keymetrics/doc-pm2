@@ -51,7 +51,7 @@ Add pm2 as a dependency to your projet.
 With npm:
 
 ```bash
-npm install --save pm2
+npm install pm2
 ```
 
 With yarn:
@@ -67,8 +67,9 @@ In your `package.json`, modify your `start` script like the following:
 ```json
 {
   "scripts": {
-    "start": "node ./node_modules/.bin/pm2-runtime start ecosystem.config.js --env production"
+    "start": "pm2-runtime start ecosystem.config.js --env production"
   }
+}
 ```
 
 ---
