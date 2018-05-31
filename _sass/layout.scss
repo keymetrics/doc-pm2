@@ -9,7 +9,7 @@ body,html{
   -webkit-tap-highlight-color:rgba(0,0,0,0);
   -webkit-text-size-adjust:none;
   -webkit-touch-callout:none;
-  box-sizing:border-box
+  box-sizing:border-box;
 }
 
 // Scrollbar customization
@@ -40,6 +40,9 @@ body {
   margin:0;
   overflow-x:hidden;
 
+  display:flex;
+  flex-direction:column;
+
   //background-image: url($baseurl + "/img/backgrounds/bg-squares.png");
   //background-position: bottom left;
   //background-attachment: fixed;
@@ -49,10 +52,6 @@ body {
 h1, h2, h3, h4 {
   font-family: Saira, sans-serif;
   color: #202a37;
-}
-
-.sticky .sidebar {
-  position:fixed
 }
 
 main {
@@ -67,42 +66,21 @@ main {
 }
 
 .content {
-  position: absolute;
-  top: $header-height;
-  left: $sidebar-width;
-  right: 0px;
-  bottom: 0px;
+  display: flex;
+  flex: 1;
 }
 
-div.content-container {
-  max-width: 820px;
+.content-container {
+  overflow: auto;
   position: relative;
-  margin: 0 auto;
   padding-top: 30px;
   padding-right: 30px;
   padding-bottom: 40px;
   padding-left: 30px;
-}
-
-@media screen and (max-width:1650px) {
-  // .content {
-  //   padding-left: 245px;
-  // }
-
-  .close .content {
-    padding-left: 0px;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .content {
-    right: initial;
-  }
-}
-
-@media screen and (max-width:1100px) {
-  .content {
-    // width: 700px;
+  flex: 1;
+  .content-main {
+    max-width: 820px;
+    margin: 0 auto;
   }
 }
 
@@ -153,7 +131,8 @@ li input[type=checkbox]{
 
 @media screen and (max-width: 768px) {
   .show-menu {
-    margin-bottom: 20px;
     display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }

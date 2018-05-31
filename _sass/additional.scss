@@ -1,18 +1,4 @@
 
-body.close .sidebar{
-  transform:translateX(-300px)
-}
-body.close .sidebar-toggle{
-  width:auto
-}
-body.close .content{
-  left:0
-}
-@media print{
-  .app-nav,.github-corner,.sidebar,.sidebar-toggle{
-      display:none
-  }
-}
 @media screen and (max-width:768px){
   .github-corner,.sidebar,.sidebar-toggle{
       position:fixed;
@@ -29,15 +15,11 @@ body.close .content{
       overflow-x:hidden
   }
   .sidebar{
-      left:-300px;
-      transition:transform .25s ease-out
+    transition:transform .25s ease-out;
+
   }
   .content{
-      left:0;
-      max-width:100vw;
-      position:static;
-      padding-top:20px;
-      transition:transform .25s ease
+    transition:transform .25s ease
   }
   .app-nav,.github-corner{
       transition:transform .25s ease-out
@@ -126,4 +108,39 @@ h4:hover .header-link,
 h5:hover .header-link,
 h6:hover .header-link {
   opacity: 1;
+}
+
+
+@media print{
+  body {
+    overflow: visible !important;
+    display: block;
+    font-size: 14px !important;
+    background-color: white !important;
+  }
+  .footer {
+    display: none;
+  }
+  pre, code {
+    font-size: 13px !important;
+  }
+  #gittalk {
+    display: none;
+  }
+  .content-container{
+    padding: 0px !important;
+  }
+  .content {
+    display: block !important;
+    .content-main {
+      max-width: max-content !important;
+      width: max-content !important;
+    }
+  }
+  .app-nav,.github-corner,.sidebar,.sidebar-toggle, .PM2_search, .header-section{
+    display:none
+  }
+  .markdown-section {
+    box-shadow: none !important;
+  }
 }

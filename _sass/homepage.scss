@@ -1,11 +1,25 @@
 
 .homepage {
 
-  .content {
-    width : 500px;
-    margin: 0 auto;
-    margin-top: 180px;
-    padding-left: 0px !important;
+  .content-home {
+    //width : 500px;
+    //margin: 0 auto;
+    //margin-top: 180px;
+    //padding-left: 0px !important;
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url($baseurl + "/img/backgrounds/bg-squares.png");
+    background-position: bottom left;
+    background-attachment: fixed;
+    background-color: #131d26;
+    img {
+      width: 300px;
+    }
     a {
       text-decoration: none;
 
