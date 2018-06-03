@@ -1,4 +1,7 @@
 
+<link rel="stylesheet" href="{{ "/css/normalize.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src={{ "/js/lib/md5.min.js" | relative_url }} type="text/javascript"></script>
 <script src={{ "/js/lib/clipboard.min.js" | relative_url }} type="text/javascript"></script>
@@ -13,7 +16,6 @@
 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js" type="text/javascript"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script type="text/javascript"> docsearch({
   apiKey: '65aa0e3b2df3e2c47669de31f26cc562',
   indexName: 'pm2docs',
@@ -23,6 +25,8 @@
   });
 </script>
 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato|Saira" rel="stylesheet">
 
 <script>
   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(n,o);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";analytics.load("PsWubvfACfs74s9SPIOUSy9JSTrzTtjW");analytics.page();}}();</script>
