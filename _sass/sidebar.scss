@@ -1,50 +1,44 @@
 //docsify
 
 .sidebar{
+  color: white;
   background: #202a37;
   border-right:1px solid rgba(0,0,0,.07);
   overflow-y:auto;
+  overflow-x: hidden;
   min-width: $sidebar-width;
   z-index:9;
+
+  .sidebar-nav{
+    line-height:2em;
+    padding-bottom:40px
+  }
+
+  li.collapse .app-sub-sidebar {
+    display:none
+  }
+
+  ul {
+    list-style-type: none;
+    margin:0;
+    padding:0
+  }
+
+  li a {
+    text-decoration: none;
+    border-bottom:none;
+    display:block;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  ul li ul{
+    padding-left:20px
+  }
 }
-.sidebar .sidebar-nav{
-  line-height:2em;
-  padding-bottom:40px
-}
-.sidebar li.collapse .app-sub-sidebar{
-  display:none
-}
-.sidebar ul{
-  margin:0;
-  padding:0
-}
-.sidebar li>p{
-  font-weight:700;
-  margin:0
-}
-.sidebar ul,.sidebar ul li{
-  list-style:none
-}
-.sidebar ul li a{
-  border-bottom:none;
-  display:block
-}
-.sidebar ul li ul{
-  padding-left:20px
-}
-.sidebar::-webkit-scrollbar{
-  width:4px
-}
-.sidebar::-webkit-scrollbar-thumb{
-  background:transparent;
-  border-radius:4px
-}
-.sidebar:hover::-webkit-scrollbar-thumb{
-  background:hsla(0,0%,53%,.4)
-}
-.sidebar:hover::-webkit-scrollbar-track{
-  background:hsla(0,0%,53%,.1)
-}
+
 .sidebar-toggle{
   background-color:transparent;
   background-color:hsla(0,0%,100%,.8);
@@ -57,21 +51,20 @@
   text-align:center;
   transition:opacity .3s;
   width:284px;
-  z-index:4
-}
-.sidebar-toggle .sidebar-toggle-button:hover{
-  opacity:.4
-}
-.sidebar-toggle span{
-  background-color:var(--theme-color,#42b983);
-  display:block;
-  margin-bottom:4px;
-  width:16px;
-  height:2px
-}
+  z-index:4;
 
-// custom
+  .sidebar-toggle-button:hover{
+    opacity:.4
+  }
 
+  span{
+    background-color:var(--theme-color,#42b983);
+    display:block;
+    margin-bottom:4px;
+    width:16px;
+    height:2px
+  }
+}
 
 body.close .sidebar {
     -webkit-transform: translateX(-375px);
@@ -79,13 +72,16 @@ body.close .sidebar {
 }
 
 .sidebar-nav > ul{
-    padding: 24px 24px 16px 30px !important
+  padding: 14px 24px 16px 20px !important
 }
 .sidebar ul li ul {
     padding-left: 12px!important;
 }
 .sidebar-nav ul li{
-        margin: 14px 0 0 0;
+  margin: 14px 0 0 0;
+}
+.sidebar-nav > ul > li:first-child {
+  margin-top: 0px !important;
 }
 
 .sidebar-nav a.active{
@@ -101,11 +97,8 @@ body.close .sidebar-toggle {
 }
 
 .sidebar-toggle {
-    background-color: transparent;
-    left: -50px;
-    @media screen and (min-width: 1200px) {
-
-    }
+  background-color: transparent;
+  left: -50px;
 }
 
 .sidebar-toggle-button span {
@@ -147,7 +140,6 @@ body.close .sidebar-toggle {
 .enterprise-page .sidebar ul li.active>a {
   color: $color_enterprise;
 }
-
 
 .sidebar ul li.active>a {
   font-weight:600;

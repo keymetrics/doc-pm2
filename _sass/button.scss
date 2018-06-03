@@ -1,15 +1,3 @@
-.runtime-page .btn-stylized {
-  background: $color_runtime !important;
-  box-shadow: 0 4px #05598a;
-}
-.plus-page .btn-stylized {
-  background: $color_plus !important;
-  box-shadow: 0 4px #058a17;
-}
-.enterprise-page .btn-stylized {
-  background: $color_enterprise !important;
-  box-shadow: 0 4px #43058a;
-}
 
 .btn-stylized {
   border: none;
@@ -52,4 +40,17 @@
   opacity: 0.2;
   top: 2px;
   box-shadow: 0 4px #216349;
+}
+
+.runtime-page .btn-stylized {
+  background: $color_runtime;
+  box-shadow: 0 4px #05598a;
+}
+.plus-page .btn-stylized {
+  background: $color_plus;
+  box-shadow: 0 4px #00a280;
+}
+.enterprise-page .btn-stylized {
+  background: $color_enterprise;
+  box-shadow: 0 4px #43058a;
 }

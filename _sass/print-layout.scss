@@ -1,0 +1,33 @@
+@media print{
+  body {
+    overflow: visible !important;
+    display: block;
+    font-size: 14px !important;
+    background-color: white !important;
+  }
+  .footer {
+    display: none;
+  }
+  pre, code {
+    font-size: 13px !important;
+  }
+  #gittalk {
+    display: none;
+  }
+  .content-container{
+    padding: 0px !important;
+  }
+  .content {
+    display: block !important;
+    .content-main {
+      max-width: max-content !important;
+      width: max-content !important;
+    }
+  }
+  .app-nav,.github-corner,.sidebar,.sidebar-toggle, .PM2_search, .header-section{
+    display:none
+  }
+  .markdown-section {
+    box-shadow: none !important;
+  }
+}

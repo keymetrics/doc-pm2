@@ -5,7 +5,7 @@ $sidebar-width: 215px;
 $header-height: 76px;
 $baseurl: "/doc";
 
-@import "additional";
+@import "mobile";
 @import "button";
 @import "layout";
 @import "code";
@@ -16,3 +16,4 @@ $baseurl: "/doc";
 @import "markdown";
 @import "sidebar";
 @import "homepage";
+@import "print-layout";

@@ -33,14 +33,31 @@
     display: flex;
     list-style: none;
 
-    a, a:focus, a:hover {
+    a {
       color: #fff;
       text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
-
-
 }
+
+.runtime-page .header-nav-links .active {
+  color: $color_runtime !important;
+}
+
+.plus-page .header-container .active {
+  color: $color_plus  !important;
+}
+
+.enterprise-page .header-nav-links .active {
+  color: $color_enterprise  !important;
+}
+
+
 @media screen and (max-width: 768px) {
     .header-section .header-container {
         .sidebar-spacer {

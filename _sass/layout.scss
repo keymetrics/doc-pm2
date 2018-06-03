@@ -28,7 +28,7 @@ body,html{
   border: 1.5px solid darken(#252B37, 4%);
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  background-color: $color_enterprise;
+  background-color: $color_runtime;
 }
 
 body {
@@ -89,7 +89,44 @@ main {
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .content-container {
+      padding-left: 2px;
+      padding-right: 2px;
+      padding-top: 19px;
+    }
+    .edit-page {
+      display: none;
+    }
+  }
 }
+
+.header-link {
+  position: relative;
+  left: 0.5em;
+  opacity: 0;
+  font-size: 0.8em;
+
+  -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+  -moz-transition: opacity 0.2s ease-in-out 0.1s;
+  -ms-transition: opacity 0.2s ease-in-out 0.1s;
+}
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
+  opacity: 1;
+}
+
+
+.app-sub-sidebar li:before{
+  content:"-";
+  padding-right:4px;
+  float:left
+}
+
 
 img{
   max-width:100%

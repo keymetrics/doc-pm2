@@ -15,7 +15,7 @@ gulp.task('serve', () => {
     proxy: 'localhost:4000'
   });
 
-  gulp.watch('./_sass/**/*.scss', ['sass']);
+  gulp.watch('./_sass/**.scss', ['sass']);
 });
 
 // Start Jekyll
@@ -45,14 +45,6 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./docs/css'));
 });
 
-// Transpile scss
-gulp.task('sass-local', function () {
-  return gulp.src('./_sass/main.scss')
-    .pipe(prefix())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
-});
-
 gulp.task('jekyll-build', (cb) => {
   const jekyll = child.spawn('jekyll', [
     'build'
@@ -76,4 +68,4 @@ gulp.task('dist', ['jekyll-build'], function () {
     .pipe(gulp.dest('./docs/css'));
 });
 
-gulp.task('default', ['sass-local', 'jekyll', 'serve']);
+gulp.task('default', ['sass', 'jekyll', 'serve']);

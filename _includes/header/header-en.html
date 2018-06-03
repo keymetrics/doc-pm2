@@ -8,9 +8,9 @@
       </div>
       <div class="PM2_logo_wrapper header-links">
         <ul class="header-nav-links">
-          <li><a href={{ "/runtime/overview/" | prepend: page.lang | prepend: "/" | relative_url }}>PM2 Runtime</a></li>
-          <li><a href={{ "/plus/overview/" | prepend: page.lang | prepend: "/" | relative_url }}>PM2 Plus</a></li>
-          <li><a href={{ "/enterprise/overview/" | prepend: page.lang | prepend: "/" | relative_url }}>PM2 Enterprise</a></li>
+          <li><a {% if page.url contains "runtime" %}class="active"{% endif %} href={{ "/runtime/overview/" | prepend: page.lang | prepend: "/" | relative_url }}>PM2 Runtime</a></li>
+          <li><a {% if page.url contains "plus" %}class="active"{% endif %} href={{ "/plus/overview/" | prepend: page.lang | prepend: "/" | relative_url }}>PM2 Plus</a></li>
+          <li><a {% if page.url contains "enterprise" %}class="active"{% endif %} href={{ "/enterprise/overview/" | prepend: page.lang | prepend: "/" | relative_url }}>PM2 Enterprise</a></li>
         </ul>
       </div>
       <div class="center-spacer"></div>
