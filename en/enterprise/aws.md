@@ -15,11 +15,11 @@ Documentation about how to deploy the PM2 Enterprise on-premise version on AWS
 
 ## Before Starting
 
-## Requirements
+### Requirements
 
 In the following examples, we assume that you already have a fully working Terraform project. You can follow the [`Getting Started`](https://www.terraform.io/intro/getting-started/install.html) guide.
 
-## Reference Architecture
+### Reference Architecture
 
 By [default](https://github.com/keymetrics/on-premise/blob/master/terraform/keymetrics_aio_aws/variables.tf) the Terraform script will provision the following instances type:
 
