@@ -9,7 +9,7 @@
 <script src={{ "/js/lib/clipboard.min.js" | relative_url }} type="text/javascript"></script>
 <script src={{ "/js/main.js" | relative_url }} type="text/javascript"></script>
 <script src={{ "/js/lib/prism.js" | relative_url }} type="text/javascript"></script>
-<script src={{ "/js/prism-clipboard.js" | relative_url }} type="text/javascript"></script>
+<!-- <script src={{ "/js/prism-clipboard.js" | relative_url }} type="text/javascript"></script> -->
 
 <link rel="stylesheet" href="{{ "/css/prism.css" | relative_url }}">
 
@@ -22,6 +22,14 @@
   apiKey: '65aa0e3b2df3e2c47669de31f26cc562',
   indexName: 'pm2docs',
   inputSelector: '.search_input',
+  algoliaOptions: { 'facetFilters': ["tool:{{ page.section }}", "language:{{ page.lang }}"] },
+  debug: false // Set debug to true if you want to inspect the dropdown
+  });
+
+  docsearch({
+  apiKey: '65aa0e3b2df3e2c47669de31f26cc562',
+  indexName: 'pm2docs',
+  inputSelector: '.search_input_mobile',
   algoliaOptions: { 'facetFilters': ["tool:{{ page.section }}", "language:{{ page.lang }}"] },
   debug: false // Set debug to true if you want to inspect the dropdown
   });

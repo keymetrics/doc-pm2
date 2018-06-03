@@ -25,7 +25,7 @@
       var anchor = document.createElement("a");
       anchor.className = "header-link";
       anchor.href      = "#" + id;
-      anchor.innerHTML = "<i class=\"fa fa-link\">#</i>";
+      anchor.innerHTML = "<i class=\"material-icons\">link</i>";
       return anchor;
     };
 
@@ -34,6 +34,7 @@
       for (var h = 0; h < headers.length; h++) {
         var header = headers[h];
 
+        $(header).attr('onClick','location.hash="' + header.id + '"');
         if (typeof header.id !== "undefined" && header.id !== "") {
           header.appendChild(anchorForId(header.id));
         }
@@ -51,11 +52,11 @@
         }
       }
 
-      // var urlHash = window.location.href.split("#")[1];
-      // if (urlHash &&  $('#' + urlHash).length )
-      //   $('html,body').animate({
-      //     scrollTop: $('#' + urlHash).offset().top
-      //   }, 1000);
+      var urlHash = window.location.href.split("#")[1];
+      if (urlHash &&  $('#' + urlHash).length )
+        $('.content-container').animate({
+          scrollTop: $('#' + urlHash).offset().top
+        }, 1000);
     };
   }
 

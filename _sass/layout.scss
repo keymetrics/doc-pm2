@@ -79,16 +79,35 @@ main {
     .content-main {
       max-width: 70%;
       margin: 0 auto;
+      @media screen and (max-width: 1300px) {
+        max-width: 860px;
+      }
     }
 
-    @media screen and (max-width: 1300px) {
-      .content-main {
-        max-width: 860px;
+    .algolia-mobile-search {
+      width: 100%;
+      display: none;
+
+      @media screen and (max-width: $mobile_offset) {
+        display: block;
+      }
+
+      .algolia-autocomplete {
+        width: 100%;
+      }
+      input {
+        box-sizing: border-box;
+        border-radius: 5px !important;
+        width: 100%;
+        height: 40px;
+        box-shadow: none;
+        max-width: 100%;
+        margin-bottom: 25px;
       }
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $mobile_offset) {
     .content-container {
       padding-left: 2px;
       padding-right: 2px;
@@ -110,14 +129,6 @@ main {
   -moz-transition: opacity 0.2s ease-in-out 0.1s;
   -ms-transition: opacity 0.2s ease-in-out 0.1s;
 }
-h2:hover .header-link,
-h3:hover .header-link,
-h4:hover .header-link,
-h5:hover .header-link,
-h6:hover .header-link {
-  opacity: 1;
-}
-
 
 .app-sub-sidebar li:before{
   content:"-";
@@ -147,6 +158,12 @@ li input[type=checkbox]{
   border-radius: 2px;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
   padding:23px;
+
+  @media screen and (max-width: $mobile_offset) {
+    padding: 4px 10px;
+    text-align:center;
+  }
+
   h1 {
     font-weight: 200;
     font-size: 28px;
@@ -169,10 +186,7 @@ li input[type=checkbox]{
 
 .show-menu {
   display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .show-menu {
+  @media screen and (max-width: $mobile_offset) {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;

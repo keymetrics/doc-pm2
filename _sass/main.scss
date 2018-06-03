@@ -4,6 +4,7 @@ $color_enterprise: #7f86f5;
 $sidebar-width: 215px;
 $header-height: 76px;
 $baseurl: "/doc";
+$mobile_offset: 768px;
 
 @import "mobile";
 @import "button";

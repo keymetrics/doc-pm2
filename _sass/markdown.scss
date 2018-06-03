@@ -1,18 +1,22 @@
 .markdown-section{
-  margin:0 auto;
-  padding:30px 15px 40px;
   position:relative;
-
   padding:30px;
   border-radius: 2px;
   background-color: #ffffff;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
 
+  @media screen and (max-width: $mobile_offset) {
+    padding: 15px;
+  }
+
   h1, h2, h3, h4 {
     font-weight: 500;
-
-    margin-top: -80px !important;
-    padding-top: 80px !important;
+    &:hover {
+      cursor:pointer;
+      .header-link {
+        opacity: 1;
+      }
+    }
   }
 
   h1 {
@@ -97,8 +101,13 @@
   }
 
   code, pre {
-    background-color: #171e27 !important;
-    // box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
+    background-color: #272822 !important;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  .highlighter-rouge {
+    border-radius: 4px;
+    padding: 5px 9px;
   }
 
   .tip code {

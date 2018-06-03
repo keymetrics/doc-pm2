@@ -52,7 +52,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: $mobile_offset) {
   .burger-header {
     display: block !important;
     color: white;
