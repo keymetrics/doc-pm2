@@ -2,10 +2,6 @@
 .homepage {
 
   .content-home {
-    //width : 500px;
-    //margin: 0 auto;
-    //margin-top: 180px;
-    //padding-left: 0px !important;
     flex: 1;
     overflow: auto;
     display: flex;
@@ -17,9 +13,7 @@
     background-position: bottom left;
     background-attachment: fixed;
     background-color: #131d26;
-    img {
-      width: 300px;
-    }
+
     a {
       text-decoration: none;
 
@@ -43,5 +37,19 @@
         display: block;
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product-line {
+    margin-bottom: 30px !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+  }
+  .logo-img {
+    margin:0 auto;
+    width: 250px !important;
   }
 }

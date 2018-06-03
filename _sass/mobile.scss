@@ -14,35 +14,11 @@
     height:auto;
     overflow-x:hidden
   }
-  .sidebar{
-    transition:transform .25s ease-out;
-
-  }
   .content{
     transition:transform .25s ease
   }
   .app-nav,.github-corner{
     transition:transform .25s ease-out
-  }
-  .sidebar-toggle{
-    background-color:transparent;
-    width:auto;
-    padding:30px 30px 10px 10px
-  }
-  body.close .sidebar{
-    transform:translateX(300px)
-  }
-  body.close .sidebar-toggle{
-    background-color:hsla(0,0%,100%,.8);
-    transition:background-color 1s;
-    width:284px;
-    padding:10px
-  }
-  body.close .content{
-    //transform:translateX(300px)
-  }
-  body.close .app-nav,body.close .github-corner{
-    display:none
   }
   .github-corner:hover .octo-arm{
     animation:none

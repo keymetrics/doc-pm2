@@ -204,28 +204,6 @@
   }
 }
 
-
-.close .markdown-section {
-  float: unset;
-  margin: 0 auto;
-  @media screen and (min-width: 768px) {
-    border-radius:0px;
-  }
-  @media screen and (min-width: 992px) {
-  }
-  @media screen and (min-width: 1200px) {
-    border-radius: 0px;
-
-  }
-  @media screen and (min-width: 1400px) {
-    border-radius: 0px;
-
-  }
-  @media screen and (min-width: 1600px) {
-    border-radius: 0px;
-  }
-}
-
 .runtime-page {
 
   hr:before {

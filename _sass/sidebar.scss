@@ -1,6 +1,6 @@
-//docsify
 
 .sidebar{
+  transition:transform .25s ease-out;
   color: white;
   background: #202a37;
   border-right:1px solid rgba(0,0,0,.07);
@@ -28,6 +28,7 @@
     text-decoration: none;
     border-bottom:none;
     display:block;
+    margin: 6px 0 6px 20px;
 
     &:hover {
       opacity: 0.7;
@@ -39,36 +40,14 @@
   }
 }
 
-.sidebar-toggle{
-  background-color:transparent;
-  background-color:hsla(0,0%,100%,.8);
-  border:0;
-  outline:none;
-  padding:10px;
-  position:absolute;
-  bottom:0;
-  left:0;
-  text-align:center;
-  transition:opacity .3s;
-  width:284px;
-  z-index:4;
-
-  .sidebar-toggle-button:hover{
-    opacity:.4
-  }
-
-  span{
-    background-color:var(--theme-color,#42b983);
-    display:block;
-    margin-bottom:4px;
-    width:16px;
-    height:2px
+@media screen and (max-width: 780px) {
+  .sidebar {
+    transform:translateX(-250px)
   }
 }
 
-body.close .sidebar {
-    -webkit-transform: translateX(-375px);
-    transform: translateX(-375px);
+.sidebar.open {
+  transform:translateX(0px)
 }
 
 .sidebar-nav > ul{
@@ -86,34 +65,6 @@ body.close .sidebar {
 
 .sidebar-nav a.active{
     color:#3eb1f3!important;
-}
-
-
-
-body.close .sidebar-toggle {
-    @media screen and (max-width: 768px) {
-        background-color: transparent;
-    }
-}
-
-.sidebar-toggle {
-  background-color: transparent;
-  left: -50px;
-}
-
-.sidebar-toggle-button span {
-    background-color: white;
-}
-
-
-.sidebar-toggle {
-    z-index: 5;
-}
-
-
-
-.sidebar li {
-    margin: 6px 0 6px 20px;
 }
 
 .sidebar ul li a {

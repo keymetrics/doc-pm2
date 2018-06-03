@@ -5,7 +5,6 @@
     setAnchors();
     setGitalk();
     logoTogglesSidebarOnMobile();
-    setSidebarBreakpoints();
     addBtnClassToOrphanP();
   });
 
@@ -80,8 +79,6 @@
     });
   }
 
-
-
   function helper(className, content) {
     return ("<p class=\"" + className + "\">" + (content.slice(5).trim()) + "</p>");
   }
@@ -105,8 +102,6 @@
     var length = allPtag.length;
     var text = [];
 
-
-
     for (var i = 0; i < length; i++) {
       if(allPtag[i].innerHTML.indexOf("&gt") !== -1) {
         text[i] = transformClass(allPtag[i].innerHTML);
@@ -114,122 +109,9 @@
       }
     }
   }
-
-  // function logoClick() {
-  //   $('.PM2_logo').click(function() {
-  //     $(this).toggleClass('close');
-  //   });
-  // }
-
-  // from docsify.js
-  var hasOwn = Object.prototype.hasOwnProperty;
-  var cache$1 = {};
-  var re = /[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g;
-
-  function lower(string) {
-    return string.toLowerCase();
-  }
-
-  // ok
-  function setSidebarBreakpoints() {
-    var onResize = function() {
-      var w = window.innerWidth;
-      if (w < 768) {
-        toggleClass('body', 'close', true);
-      } else {
-        toggleClass('body', 'close', false);
-      }
-    };
-    addEvent(window, 'resize', onResize);
-    onResize();
-  }
-
-  // ok
   function logoTogglesSidebarOnMobile() {
-    var el = find('.show-menu');
-    if (el) {
-      addEvent(el, 'click', function(e) {
-        if (find('body').className.indexOf('close') !== -1) {
-          toggleClass('body', 'close', false);
-        } else {
-          toggleClass('body', 'close', true);
-        }
-        e.preventDefault();
-      });
-    } else {
-      console.warn('can\'t find .PM2_logo')
-    }
-  }
-
-  function attachBehaviourToElementsOnTheFly(opts, foundAny) {
-    if (!foundAny) foundAny = false;
-    var result = Array.prototype.slice.call(document.querySelectorAll(opts.target));
-    result.forEach(function(el) {
-      if (opts.handlerStopCondition(el)) {
-        return;
-      }
-      opts.handler(el);
-      foundAny = true;
-    });
-    if (foundAny || result.length === 0) {
-      setTimeout(function() {
-        attachBehaviourToElementsOnTheFly(opts);
-      }, opts.interval || 100);
-    }
-  }
-
-  function iterateSelectorResults(selector, handler) {
-    return Array.prototype.slice.call(document.querySelectorAll(selector)).forEach(handler);
-  }
-
-  // ok
-  function toggleClass(el, className, toggleValue) {
-    if (el && !el.tagName) {
-      el = find(el);
-    }
-    var cls_arr = el.className.split(' ');
-    if (toggleValue) {
-      add();
-    } else {
-      remove();
-    }
-
-    function remove() {
-      if (cls_arr.includes(className)) {
-        cls_arr.splice(cls_arr.indexOf(className), 1);
-        el.className = cls_arr.join(' ');
-      }
-    }
-
-    function add() {
-      if (!cls_arr.includes(className)) {
-        cls_arr.push(className)
-        el.className = cls_arr.join(' ');
-      }
-    }
-  }
-
-  function find(s) {
-    return window.document.querySelector(s);
-  }
-
-  function addEvent(object, type, callback) {
-    if (object == null || typeof(object) == 'undefined') return;
-    if (object.addEventListener) {
-      object.addEventListener(type, callback, false);
-    } else if (object.attachEvent) {
-      object.attachEvent("on" + type, callback);
-    } else {
-      object["on" + type] = callback;
-    }
-    return function() {
-      if (object.removeEventListener) {
-        object.removeEventListener(type, callback);
-      } else if (object.detachEvent) {
-        object.detachEvent("on" + type, callback);
-      } else {
-
-      }
-    }
+    $('.burger-header').click(function() {
+      $('.sidebar').toggleClass('open')
+    })
   }
 })();
