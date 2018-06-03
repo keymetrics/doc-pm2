@@ -55,7 +55,7 @@
       var urlHash = window.location.href.split("#")[1];
       if (urlHash &&  $('#' + urlHash).length )
         $('.content-container').animate({
-          scrollTop: $('#' + urlHash).offset().top
+          scrollTop: $('#' + urlHash).offset().top - 80
         }, 1000);
     };
   }
