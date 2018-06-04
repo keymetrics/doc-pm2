@@ -153,7 +153,7 @@ li input[type=checkbox]{
 }
 
 
-.gettings_started_block{
+.breadcrumbs{
 	margin-bottom: 30px!important;
   border-radius: 2px;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
@@ -164,22 +164,24 @@ li input[type=checkbox]{
     text-align:center;
   }
 
-  h1 {
+  p {
     font-weight: 200;
     font-size: 28px;
     color: white;
+    margin-top: 18px;
+    margin-bottom: 18px;
   }
 }
 
-.runtime-page .gettings_started_block{
+.runtime-page .breadcrumbs{
   background-color: $color_runtime;
   //background: linear-gradient(to bottom, #3eb1f3 0, #084365 100%);
 }
-.plus-page .gettings_started_block{
+.plus-page .breadcrumbs{
   background-color: $color_plus;
   //background: linear-gradient(to bottom, #01cea2 0, #024839 100%);
 }
-.enterprise-page .gettings_started_block{
+.enterprise-page .breadcrumbs{
   background-color: $color_enterprise;
   //background: linear-gradient(to bottom, #7f86f5 0, #2c2e44 100%);
 }
