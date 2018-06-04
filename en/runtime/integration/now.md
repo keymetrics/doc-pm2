@@ -75,6 +75,6 @@ Monitor your app on a dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/pl
 
 ---
 
-### Questions ?
+### Questions?
 
 We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.

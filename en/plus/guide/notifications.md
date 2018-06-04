@@ -150,6 +150,6 @@ Use case example: You can now setup an express server that can receive webhooks,
 
 ---
 
-## Questions ?
+## Questions?
 
 We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum. You can also have a look at our support github https://github.com/keymetrics/keymetrics-support

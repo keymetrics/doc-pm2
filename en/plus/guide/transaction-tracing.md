@@ -151,6 +151,6 @@ The impact on performance should be low since there is no heavy logic done in yo
 
 ---
 
-## Questions ?
+## Questions?
 
 We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum. You can also have a look at our support github https://github.com/keymetrics/keymetrics-support

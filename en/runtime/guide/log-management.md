@@ -162,6 +162,6 @@ The format must follow a moment.js format, list [here](https://momentjs.com/docs
 
 ---
 
-## Questions ?
+## Questions?
 
 We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.
