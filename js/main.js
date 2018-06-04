@@ -74,9 +74,9 @@
     })
 
     $(document).ready(function() {
-      try {
+      if (document.querySelector('#gitalk')) {
         gitalk.render('gitalk');
-      } catch(e) { console.error('Could not find comment thread')}
+      }
     });
   }
 
