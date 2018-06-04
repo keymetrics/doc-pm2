@@ -77,4 +77,4 @@ Monitor your app on a dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/pl
 
 ### Questions?
 
-We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.
+We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on the [PM2 github repository](https://github.com/Unitech/pm2/issues).

@@ -90,3 +90,9 @@ Sorting a flat view by total weight in decreasing order and secondary by self we
 A call graph view can actually be used in all of these cases, especially if it can be adjusted to highlight nodes and edges based on their weights. The only problem of a call graph, as I said, is that it can be big, so good scalable approach to viewing it is required.
 
 But a call graph really shines when one wants to find a repeatedly appearing sequence of function calls. As every program’s function has exactly one corresponding node (unlike a tree view), and edges have weights, it is relatively easy to detect expensive sequences. After finding them and looking through functions’ code it is often seems that data calculated by a function is often used only partially or even thrown away by a caller (this happens when programs are built from big reusable `universal’ functions). Crafting a specialized version of a function that doesn’t perform unneeded calculations can speed up a program dramatically. -->
+
+---
+
+### Questions?
+
+We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on our [support github](https://github.com/keymetrics/keymetrics-support/issues).

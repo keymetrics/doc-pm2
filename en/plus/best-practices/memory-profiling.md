@@ -9,7 +9,9 @@ redirect_from: "/plus/best-practices/memory-profiling"
 
 # Memory Profiling
 
-Profiling files can also be downloaded and inspected later in the chrome development tool.
+Article available soon.
+
+<!-- Profiling files can also be downloaded and inspected later in the chrome development tool.
 
 ---
 
@@ -28,4 +30,10 @@ How does Memory profiling work?
 
 ---
 
-## Data Representation
+## Data Representation -->
+
+---
+
+### Questions?
+
+We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on our [support github](https://github.com/keymetrics/keymetrics-support/issues).

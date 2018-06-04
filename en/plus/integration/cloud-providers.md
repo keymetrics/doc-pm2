@@ -55,4 +55,4 @@ Complete your [dashboard configuration]({{ site.baseurl }}{% link en/plus/guide/
 
 ## Questions?
 
-We are always happy to help with questions you might have. Search our documentation or check out answers to common questions. You can also post questions or comments to our community forum.
+We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on our [support github](https://github.com/keymetrics/keymetrics-support/issues).
