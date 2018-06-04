@@ -51,17 +51,6 @@ h1, h2, h3, h4 {
   color: #202a37;
 }
 
-main {
-  display:block;
-  position:relative;
-  width:100vw;
-  height:100%;
-  z-index:0;
-  &.hidden {
-    display:none
-  }
-}
-
 .content {
   display: flex;
   flex: 1;
