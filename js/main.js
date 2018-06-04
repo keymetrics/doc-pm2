@@ -75,7 +75,7 @@
 
     $(document).ready(function() {
       try {
-        gitalk.render('gittalk');
+        gitalk.render('gitalk');
       } catch(e) { console.error('Could not find comment thread')}
     });
   }
