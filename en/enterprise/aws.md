@@ -15,11 +15,11 @@ Documentation about how to deploy the PM2 Enterprise on-premise version on AWS
 
 ## Before Starting
 
-### Requirements
+## Requirements
 
 In the following examples, we assume that you already have a fully working Terraform project. You can follow the [`Getting Started`](https://www.terraform.io/intro/getting-started/install.html) guide.
 
-### Reference Architecture
+## Reference Architecture
 
 By [default](https://github.com/keymetrics/on-premise/blob/master/terraform/keymetrics_aio_aws/variables.tf) the Terraform script will provision the following instances type:
 
@@ -36,7 +36,7 @@ These instances type can be changed via the [custom terraform variable file](htt
 
 ### 1. Adding the module to your terraform project
 
-There's two options available in order to use our terraform module in your project. 
+There's two options available in order to use our terraform module in your project.
 - Link the module's git repository address in your terraform module definition
 - Clone the repository and set the source variable of your module definiton to the correct path on your drive.
 
@@ -45,7 +45,7 @@ There's two options available in order to use our terraform module in your proje
 When defining your module definition, use the following `source` value:
 - `git@github.com:keymetrics/on-premise.git/terraform/keymetrics_aio_aws`
 
-Example: 
+Example:
 
 ```
 module "keymetrics" {
@@ -89,7 +89,7 @@ module "example_keymetrics_setup" {
   smtp_username = "postmaster@example.com"
   smtp_password = "XXX"
   smtp_sender = "keymetrics@example.com"
-  
+
   public_host_address = "our-keymetrics-public-subdomain.example.com"
 }
 ```
@@ -135,23 +135,23 @@ By default, PM2 Plus instance only accept connection on port `80/tcp` from `0.0.
 
 To do so, you can use the module output value named `backend_securitygroup_name` as `security_group_id` of a Terraform [aws_security_group_rule](https://www.terraform.io/docs/providers/aws/r/security_group_rule.html)
 
-Example: 
+Example:
 ```
 module "example_keymetrics_setup" {
   source  = "keymetrics_aio_aws"
   ...
 }
 
-# Allow connection from 
+# Allow connection from
 resource "aws_security_group_rule" "allow_port_3900" {
   type                     = "ingress"
   from_port                = 3900
   to_port                  = 3900
   protocol                 = "tcp"
-  
+
   # Your application security group
-  source_security_group_id = "sg-123456" 
- 
+  source_security_group_id = "sg-123456"
+
   # PM2 Plus Backend Security Group
   security_group_id = "${module.example_keymetrics_setup.backend_securitygroup_name}"
 }
