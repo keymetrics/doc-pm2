@@ -76,15 +76,6 @@ PM2 Plus使您可以在应用的源代码中增强自定义功能。
 
 ![远程操作]({{ site.baseurl }}{% link img/plus/remote.png %})
 
-### 事件仪表板
-
-这个机制允许您跟踪您代码中发生的重要事件。您可以收集大量数据以进行统计或仅记录异常事件。
-
-例如，当新用户注册时，一封新邮件被发出时，一项工作进程完成时，您可以对它们跟进并收到提醒。 **您可以直接从您的代码发出任意事件，也可以订阅其中的一些事件**
-
-
-![事件]({{ site.baseurl }}{% link img/plus/event.png %})
-
 ### 第三方模块
 
 Extend the capabilities of the PM2 dashboard by using external modules listed in our module page.
