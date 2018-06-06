@@ -103,7 +103,7 @@ Some transactions have the same path but respond differently: a forbidden access
 Let's examine a specific variance:
 * median, slowest and fastest call response time
 * Metadata about the call
-* List of registered subcalls. If no call to an external [entity](http://docs.keymetrics.io/docs/pages/tracing/#under-the-hood) is made, nothing will appear here. The call display and information depends on the stack logged. For databases, you will for example see the database call made.
+* List of registered subcalls. If no call to an external entity is made, nothing will appear here. The call display and information depends on the stack logged. For databases, you will for example see the database call made.
 
 You can then click on another **variance** to examine why and how the behaviour was different.
 
