@@ -34,6 +34,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - gulpfile.js
+  - misc
   - node_modules
   - package.json
   - package-lock.json

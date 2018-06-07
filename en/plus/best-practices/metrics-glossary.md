@@ -17,7 +17,7 @@ Note that each metric always describes the state of a specific application on a 
 
 ## CPU Usage
 
-The CPU usage is the amount of time the CPU is busy. A CPU only can handle one operation at a time and so is either busy or idle. The CPU Usage is generally computed every 25 ms, for the last 25 ms.  
+The CPU usage is the amount of time the CPU is busy. A CPU only can handle one operation at a time and so is either busy or idle.
 
 Unit: %  
 Range of values: 0 - 100
@@ -31,15 +31,15 @@ Range of values: 0 - total memory of the server
 
 ## Issues
 
-The number of recorded issues not yet set as fixed in the issue dashboard.
+The number of new issues recorded in the app.
 
-## Number of restarts
+## Number of restart
 
-The number of restarts of your application since added to the PM2 process list. PM2 automatically restarts your application whenever needed, for example after an uncaught exception has happened.
+The number of restart of your application since added to the PM2 process list. PM2 automatically restarts your application whenever needed, for example after an uncaught exception has happened.
 
 ## Number of processes
 
-The number of cluster on which your app has been spread on the server. Only PM2 cluster appears. 
+The number of cluster on which your app has been spread on the server. Only PM2 clusters appear. 
 
 ## HTTP Requests per Minutes
 
@@ -61,7 +61,7 @@ Handles represent long-lived objects capable of performing certain operations wh
 
 ## Active Requests
 
-Requests represent (typically) short-lived operations. These operations can be performed over a handle: write requests are used to write data on a handle; or standalone: getaddrinfo requests don’t need a handle they run directly on the loop.
+Requests represent short-lived operations. These operations can be performed over a handle: write requests are used to write data on a handle; or standalone: getaddrinfo requests don’t need a handle they run directly on the loop.
 
 ## Node.js Memory
 
