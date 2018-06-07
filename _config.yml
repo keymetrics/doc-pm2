@@ -1,6 +1,6 @@
 # Site settings
 name: PM2 Documentation
-email: contact@keymetrics.io
+email: contact@pm2.io
 description: 'PM2 - Guide, References, Tutorials and Best Practices about PM2 and Node.js.'
 
 # Build settings
@@ -29,15 +29,13 @@ baseurl: "/doc"
 destination: docs
 
 exclude:
-  - node_modules
-  - README.md
-  - gulpfile.js
-  - package.json
-  - package-lock.json
-  - yarn.lock
+  - _sass
   - Dockerfile
   - Gemfile
   - Gemfile.lock
-  - mapping-plus.js
-  - prod_config.yml
-  - _sass
+  - gulpfile.js
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - yarn.lock
