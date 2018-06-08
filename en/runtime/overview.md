@@ -7,6 +7,7 @@ section: runtime
 redirect_from:
 - "/runtime/overview"
 - "/en"
+- "/"
 ---
 
 # Overview
