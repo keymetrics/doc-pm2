@@ -40,7 +40,7 @@ exec_mode|Must be set to cluster to enable the load-balancer.|string,|
 write||boolean|
 force|By default, pm2 will only start a script if that script isn't already running (a script is a path to an application, not the name of an application already running). If force is set to true, pm2 will start a new instance of that script.|boolean,|
 append_env_to_name||boolean|
-post_update|a list of commands which will be executed after you perform a Pull/Upgrade operation from PM2 Plus dashboard|array,|
+post_update|a list of commands which will be executed after you perform a Pull/Upgrade operation from Keymetrics dashboard|array,|
 trace|Enable the transaction tracing.|boolean|
 disable_trace|Enable the transaction tracing.|boolean|
 increment_var|Add environnement variable to be incremented for each application started|string,|

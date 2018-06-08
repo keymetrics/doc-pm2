@@ -50,7 +50,7 @@ max_restarts|Number of times a script is restarted when it exits in less than mi
 exec_mode|Set the execution mode, possible values: fork&#124;cluster|string|fork
 force|Start a script even if it is already running (only the script path is considered)|boolean|
 append_env_to_name|Append the environment name to the app name|boolean|
-post_update|List of commands executed after a pull/upgrade operation performed from PM2 Plus dashboard|array|
+post_update|List of commands executed after a pull/upgrade operation performed from Keymetrics dashboard|array|
 trace|Enable or disable the transaction tracing|boolean|
 disable_trace|Enable or disable the transaction tracing|boolean|true
 increment_var|Specify the name of an environnement variable to inject which increments for each cluster|string|
