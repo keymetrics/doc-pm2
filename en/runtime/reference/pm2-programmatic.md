@@ -72,7 +72,7 @@ Kills the pm2 daemon (same as `pm2 kill`). Note that when the daemon is killed, 
 * `script` - The path of the script to run.
 * `jsonConfigFile` - The path to a JSON file that can contain the same options as the `options` parameter.
 * `errback(err,proc)` - An errback called when the `script` has been started. The `proc` parameter will be a [pm2 process object](https://github.com/soyuka/pm2-notify#templating).
-* `options` - An object with the following options (additional descriptions of these options are [here](http://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/#graceful-reload)):
+* `options` - An object with the following options:
 
 
 `pm2.stop(process, errback)`

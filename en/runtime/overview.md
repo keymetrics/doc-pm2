@@ -19,7 +19,7 @@ Why use PM2 ? At the end of this overview, you will better understand the benefi
 
 Once started, your app is forever alive, auto-restarting across crashes and machine restarts.
 
-This as simple as running:
+This is as simple as running:
 ```bash
 pm2 start app.js
 ```
@@ -33,7 +33,7 @@ pm2 start app.js
 
 All your applications are run in the background and can be easily managed.
 
-pm2 creates a list of processes, that you can access with:
+PM2 creates a list of processes, that you can access with:
 
 ```bash
 pm2 ls
@@ -41,9 +41,9 @@ pm2 ls
 
 ![pm2 listing]({{ site.baseurl }}{% link img/runtime/pm2ls.png %})
 
-Manage your process list with `pm2 start` and `pm2 delete`.
+Add and delete processes to your process list with `pm2 start` and `pm2 delete`.
 
-Once added to your process list, manage a process with `pm2 start`, `pm2 stop`, `pm2 restart`.
+Manage your processes with `pm2 start`, `pm2 stop`, `pm2 restart`.
 
 [Process Management]({{ site.baseurl }}{% link en/runtime/guide/process-management.md %})
 
@@ -52,10 +52,12 @@ Once added to your process list, manage a process with `pm2 start`, `pm2 stop`, 
 
 ## Log Management
 
-All app logs are saved in the hard disk of your servers into `~/.pm2/logs/`.
+Application logs are saved in the hard disk of your servers into `~/.pm2/logs/`.
+
+Access your realtime logs with:
 
 ```bash
-pm2 logs
+pm2 logs <app_name>
 ```
 
 [Log Management]({{ site.baseurl }}{% link en/runtime/guide/log-management.md %})
@@ -65,20 +67,20 @@ pm2 logs
 
 ## Zero-config Load-Balancer
 
-pm2 scales up your app by creating multiple child processes that all share the same server ports. Doing this, you can restart your app with zero-seconds downtimes.
+PM2 can scale up your application by creating several child processes that share the same server port. Doing this also allow you to restart your app with zero-seconds downtimes.
 
-Start clusterize your app with:
+Start in cluster mode with:
 ```bash
 pm2 start -i max
 ```
 
-[Load Balancing]({{ site.baseurl }}{% link en/runtime/guide/load-balancing.md %})
+[Load-Balancing]({{ site.baseurl }}{% link en/runtime/guide/load-balancing.md %})
 
 ---
 
 ## In-terminal monitoring
 
-Monitor your app in the terminal to check your app health (CPU usage, memory used, request/min and more).
+You can monitor your app in the terminal and check app health (CPU usage, memory used, request/min and more).
 
 ```bash
 pm2 monit
@@ -90,7 +92,7 @@ pm2 monit
 
 ## Easy deploy with SSH
 
-Automate your deployment and don't ssh in all your servers one by one.
+Automate your deployment and avoid to ssh in all your servers one by one.
 
 ```bash
 pm2 deploy

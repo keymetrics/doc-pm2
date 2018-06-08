@@ -17,7 +17,7 @@ section: plus
 
 ## 在PM2上创建一个帐户
 
-您可以在 [这里](https://app.keymetrics.io/api/oauth/register)注册。
+您可以在 [这里](https://id.keymetrics.io/api/oauth/register)注册。
 
 ---
 

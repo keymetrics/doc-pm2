@@ -11,13 +11,13 @@ redirect_from: "/plus/quick-start"
 
 In seconds, this Quick Start tutorial will show you how to start monitoring your Node.js application with PM2 Plus.
 
-We assume that your app has been started or wrapped with PM2. If not, follow the [PM2 Quick Start]({{ site.baseurl }}{% link en/runtime/quick-start.md %}) tutorial.
+We will assume that your app is already started or wrapped by PM2. If not, follow the [PM2 Quick Start]({{ site.baseurl }}{% link en/runtime/quick-start.md %}) tutorial.
 
 ---
 
 ## Create an account
 
-Register [here](https://app.keymetrics.io/api/oauth/register).
+Register [here](https://id.keymetrics.io/api/oauth/register).
 
 ---
 
@@ -31,7 +31,7 @@ pm2 link <secret> <public>
 
 Or, if you don't have access to the CLI, add `PM2_PUBLIC_KEY` and `PM2_SECRET_KEY` environment variables set with your public and private keys.
 
-?> The secret and public keys can be found at the top right of your dashboard
+?> Use the `Link an app` help on the top left of your dashboard
 
 ---
 
@@ -63,7 +63,7 @@ pm2 reload all
 
 ## You are done
 
-Go back to the dashboard, you have now access to realtime metrics of your app.
+Go back to the dashboard, you will have access to realtime metrics of your app.
 
 ![dashboard view]({{ site.baseurl }}{% link img/plus/unified.png %})
 

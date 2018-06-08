@@ -9,7 +9,7 @@ redirect_from: "/plus/best-practices/cpu-profiling"
 
 # CPU Profiling
 
-Keymetrics comes with a ready to use CPU profiling tool. All your servers can be profiled directly from your web dashboard. The visualisation tools then help you to visualize and interpret the results in order to improve your app's performance. The profiling files can also be downloaded to be inspected later in the chrome development tool.
+PM2 Plus comes with a ready to use CPU profiling tool. All your servers can be profiled directly from your web dashboard. The visualisation tools then help you to visualize and interpret the results in order to improve your app's performance. The profiling files can also be downloaded to be inspected later in the chrome development tool.
 
 ---
 

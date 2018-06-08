@@ -17,7 +17,7 @@ Why monitor your app with PM2 Plus ? At the end of this overview, you'll have a 
 
 ### Unified Overview
 
-Keymetrics allows you to have an extended view of all your apps and databases in one single place, at real-time or through history. **Stop ssh in all your servers one by one**, instead, save time by having a condensed infrastructure plus view.
+PM2 Plus allows you to have an extended view of all your apps and databases in one single place, at real-time or through history. **Stop ssh in all your servers one by one**, instead, save time by having a condensed infrastructure plus view.
 
 [Quick Start]({{ site.baseurl }}{% link en/plus/quick-start.md %})
 
@@ -48,7 +48,7 @@ Even though PM2 makes sure that your application have no downtime, be notified i
 
 ### Issue Dashboard
 
-Keymetrics reports the list of all errors in the "Issue Dashboard" occurred in your Node.js and gets you notified.
+PM2 Plus reports the list of all errors in the "Issue Dashboard" occurred in your Node.js and gets you notified.
 
 Stop spending time finding bugs or trying to replay them, we provide you an "Issue Dashboard" with everything in one place, to make debugging easier. **Drill down in your code and get the answer.**
 
@@ -82,7 +82,7 @@ Take memory dumps and CPU snapshots straight from your production servers.
 
 ### Remote control
 
-Keymetrics makes possible to enhance custom functions in the source code of your application.
+PM2 Plus makes possible to enhance custom functions in the source code of your application.
 
 For example, you can assign values to your application variables or just switch it to maintenance mode. In other words you can **expose triggerable functions in your code**.
 

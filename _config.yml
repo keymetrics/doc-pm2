@@ -9,7 +9,7 @@ sass:
 
 markdown: kramdown
 
-gems:
+plugins:
   - jekyll-redirect-from
 
 kramdown:
@@ -18,7 +18,7 @@ kramdown:
  hard_wrap: false
  parse_block_html: true
 
- # syntax_highlighter: rouge
+# syntax_highlighter: rouge
 repository: 'keymetrics/doc-pm2'
 permalink: pretty
 plugins:

@@ -100,6 +100,8 @@ plus:
         url: "/en/plus/integration/cloud-providers/"
   - title: Reference
     url: "/en/plus/reference/pm2io/"
+  - title: FAQ
+    url: "/en/plus/faq/"
 
 enterprise:
   - title: Overview

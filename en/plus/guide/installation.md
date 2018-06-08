@@ -15,7 +15,7 @@ We assume that your app have been started with PM2. If not, follow the [Quick St
 
 ## Create an account
 
-Register [here](https://app.keymetrics.io/api/oauth/register).
+Register [here](https://id.keymetrics.io/api/oauth/register).
 
 ---
 

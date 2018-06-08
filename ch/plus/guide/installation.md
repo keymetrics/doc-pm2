@@ -15,7 +15,7 @@ section: plus
 
 ## 创建一个帐户
 
-在 [此处](https://app.keymetrics.io/api/oauth/register)注册。
+在 [此处](https://id.keymetrics.io/api/oauth/register)注册。
 
 ---
 

@@ -135,7 +135,7 @@ The format of the data is a json like the following:
       "commits":[
          "ac77098c5e1b10d74360b113da6e717fab8fe427"
       ],
-      "bucket_url":"https://app.keymetrics.io/#/bucket/YOUR_BUCKET_ID/exceptions"
+      "bucket_url":"https://app.pm2.io/.../"
    }
 }
 ```

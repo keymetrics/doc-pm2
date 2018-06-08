@@ -17,7 +17,7 @@ We assume that your app has already been wrapped with PM2. If not, follow our [P
 
 ## Create an account on PM2 Plus
 
-You can register [here](https://app.keymetrics.io/api/oauth/register).
+You can register [here](https://id.keymetrics.io/api/oauth/register).
 
 ---
 

@@ -9,7 +9,7 @@ redirect_from: "/runtime/quick-start"
 
 # Quick Start
 
-In seconds, this Quick Start tutorial will show you how to set up to production a node.js application with PM2.
+In seconds, this Quick Start tutorial will show you how to set up to production a Node.js application with PM2.
 
 ---
 
@@ -35,7 +35,7 @@ With docker, follow this [tutorial]({{ site.baseurl }}{% link en/runtime/integra
 
 ### CLI autocompletion
 
-We recommend you to install the CLI autocompletion:
+Complete your installation with the CLI autocompletion:
 
 ```bash
 pm2 completion install
@@ -45,11 +45,13 @@ pm2 completion install
 
 ## Manage multiple processes
 
-pm2 keeps a list of your processes to be able to start, restart and stop them easily.
+PM2 keeps a list of your processes to be able to start, restart and stop them easily.
+
+All your app are started in the background, letting you access to the command line. Use the PM2 CLI to interact with your apps.
 
 ### Process list
 
-Manage your process list with few commands:
+Add processes to your process list with the start and delete commands.
 
 ```bash
 # start and add a process to your list
@@ -66,7 +68,7 @@ pm2 delete app
 
 ### Routine
 
-Once setup your process list, every day actions only use the process name.
+Once in your process list, use the process name to interact with your application.
 
 ```bash
 # stop the process (kill the process but keep it in the process list)
@@ -79,7 +81,7 @@ pm2 start app
 pm2 restart app
 ```
 
-You can also setup a [startup script]({{ site.baseurl }}{% link en/runtime/guide/startup-hook.md %}), to automatically start your process list at machine restart.
+You can then setup a [startup script]({{ site.baseurl }}{% link en/runtime/guide/startup-hook.md %}), to automatically start your process list across machine restarts.
 
 ---
 
@@ -109,7 +111,7 @@ or, to automatically detect number of CPUs available:
 pm2 start app.js -i max
 ```
 
-Use reload instead of restart for 0-second-downtime reloads:
+Use reload instead of restart for 0-seconds downtime reloads:
 
 ```bash
 pm2 reload app
@@ -119,11 +121,11 @@ pm2 reload app
 
 ## Do more with the CLI
 
-Using tabulation, you can use the autocompletion:
+Use the tabulation to autocomplete and discover new commands:
 
 ![pm2 autocompletion]({{ site.baseurl }}{% link img/runtime/autocomplete.png %})
 
-Use `--help`to get more information on a command:
+Use the `--help` flag to get more informations:
 
 ![pm2 help]({{ site.baseurl }}{% link img/runtime/help.png %})
 
@@ -136,11 +138,5 @@ Use `--help`to get more information on a command:
 ---
 
 ## Questions?
-
-We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on the [PM2 github repository](https://github.com/Unitech/pm2/issues).
-
----
-
-### Questions?
 
 We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on the [PM2 github repository](https://github.com/Unitech/pm2/issues).

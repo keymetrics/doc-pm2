@@ -10,7 +10,7 @@ We assume that your app has already been wrapped with pm2. If not, follow the [P
 
 ### Create an account
 
-Register [here](https://app.keymetrics.io/api/oauth/register).
+Register [here](https://id.keymetrics.io/api/oauth/register).
 
 ---
 

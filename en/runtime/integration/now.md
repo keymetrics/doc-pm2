@@ -67,7 +67,7 @@ You can now deploy your application on Now.sh like you would have done for a reg
 
 ---
 
-### Next step
+## Next step
 
 Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
 
@@ -75,6 +75,6 @@ Monitor your app on a dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/pl
 
 ---
 
-### Questions?
+## Questions?
 
 We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on the [PM2 github repository](https://github.com/Unitech/pm2/issues).

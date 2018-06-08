@@ -9,7 +9,7 @@ redirect_from: "/runtime/integration/docker"
 
 # Using PM2 with Docker
 
-Production ready Node.js Docker image including [PM2](http://pm2.keymetrics.io/).
+Production ready Node.js Docker image including PM2.
 
 The goal of pm2-runtime is to wrap your applications into a proper Node.js production environment. It solves major issues when running Node.js applications inside a container like:
 
@@ -175,7 +175,7 @@ That's all! Your container is ready to be deployed.
 
 Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
 
-Monitor your app on a web dashboard, with [Keymetrics]({{ site.baseurl }}{% link en/plus/integration/docker.md %})
+Monitor your app on a web dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/integration/docker.md %})
 
 ---
 
