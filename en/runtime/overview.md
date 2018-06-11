@@ -103,7 +103,7 @@ pm2 deploy
 
 ---
 
-## Next steps
+## Next Steps
 
 [Quick Start]({{ site.baseurl }}{% link en/runtime/quick-start.md %})
 

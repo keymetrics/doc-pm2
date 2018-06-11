@@ -131,7 +131,7 @@ Use the `--help` flag to get more informations:
 
 ---
 
-## Next steps
+## Next Steps
 
 [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
 

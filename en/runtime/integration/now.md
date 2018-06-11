@@ -67,7 +67,7 @@ You can now deploy your application on Now.sh like you would have done for a reg
 
 ---
 
-## Next step
+## Next Steps
 
 Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
 

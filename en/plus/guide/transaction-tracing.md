@@ -145,7 +145,7 @@ The impact on performance should be low since there is no heavy logic done in yo
 
 ---
 
-## Next steps
+## Next Steps
 
 [Profiling]({{ site.baseurl }}{% link en/plus/guide/memory-cpu-profiling.md %})
 

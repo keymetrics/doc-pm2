@@ -183,7 +183,7 @@ That's all! Run `eb open` to open your app in the browser.
 
 ---
 
-## Next step
+## Next Steps
 
 Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
 

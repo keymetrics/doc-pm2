@@ -80,7 +80,7 @@ You can now deploy your application in your cloud providers like you would have 
 
 ---
 
-## Next step
+## Next Steps
 
 Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
 

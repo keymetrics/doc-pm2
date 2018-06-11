@@ -127,7 +127,7 @@ That's all! The last line of the deployment will give you the URL where your app
 
 ---
 
-## Next step
+## Next Steps
 
 Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
 

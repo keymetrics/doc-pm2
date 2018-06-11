@@ -106,7 +106,7 @@ module.exports = {
 
 ---
 
-## Next steps
+## Next Steps
 
 [Development tools]({{ site.baseurl }}{% link en/runtime/guide/development-tools.md %})
 

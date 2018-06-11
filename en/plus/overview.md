@@ -103,7 +103,7 @@ Extend the capabilities of the PM2 Plus dashboard by using external modules list
 
 ---
 
-### Next steps
+### Next Steps
 
 [Quick Start]({{ site.baseurl }}{% link en/plus/quick-start.md %})
 

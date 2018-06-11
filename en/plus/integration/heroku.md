@@ -49,7 +49,7 @@ heroku config:set PM2_MACHINE_NAME=heroku-server
 
 ---
 
-## Next step
+## Next Steps
 
 Complete your [dashboard configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
 

@@ -102,7 +102,7 @@ pm2 start ecosystem.config.js
 
 ---
 
-## Next step
+## Next Steps
 
 [Easy Deploy with SSH]({{ site.baseurl }}{% link en/runtime/guide/easy-deploy-with-ssh.md %})
 

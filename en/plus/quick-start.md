@@ -69,7 +69,7 @@ Go back to the dashboard, you will have access to realtime metrics of your app.
 
 ---
 
-## Next steps
+## Next Steps
 
 [Configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
 

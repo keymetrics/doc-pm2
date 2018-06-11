@@ -58,7 +58,7 @@ npm install pm2 -g && pm2 update
 
 ---
 
-## Next step
+## Next Steps
 
 [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
 

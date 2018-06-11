@@ -178,7 +178,7 @@ pm2 publish
 
 ---
 
-## Next steps
+## Next Steps
 
 Thanks for finishing this guide.
 

@@ -252,7 +252,7 @@ io.notifyError(new Error('This is an error'));
 
 ---
 
-## Next steps
+## Next Steps
 
 
 Check the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}).

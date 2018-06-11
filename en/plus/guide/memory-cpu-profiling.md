@@ -39,7 +39,7 @@ It gets you a visualisation of the stack and still offer the ability to download
 
 ---
 
-## Next steps
+## Next Steps
 
 [Modules]({{ site.baseurl }}{% link en/plus/guide/modules.md %})
 

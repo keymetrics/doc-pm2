@@ -137,7 +137,7 @@ pm2 monit
 
 ---
 
-## Next step
+## Next Steps
 
 [Log Management]({{ site.baseurl }}{% link en/runtime/guide/log-management.md %})
 
