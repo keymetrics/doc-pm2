@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Deployment on Amazon Web Service | PM2 Enterprise Documentation
+title: Deployment on Amazon Web Service | On-Premise | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Backend | PM2 Enterprise Documentation
+title: Backend | On-Premise | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise
@@ -51,3 +51,12 @@ You'll need three different databases for the backend to run :
 - **Redis**: Tested with Redis 3 and 4, no configuration needed too
 
 You are most likely to have problem with Elasticsearch which is the most heavy used datastores, you might wamt to monitor your cluster (depending on how much you push data into it).
+
+### What is a provider?
+
+A 'provider' is simply the place from where you are retrieving the keymetrics software. For example if you are deploying our AMIs inside AWS, you'll retrieve them from AWS. You can also deploy them with docker and in this case you will get them from the docker hub.
+
+### What do i need to give to get access to the keymetrics software from a provider?
+
+- AWS : you will need to provide your Amazon Account ID (so you can access the AMIs) and your Amazon Region
+- docker : you will need to provide the username of the hub.docker.com account that you'll use to pull the docker images

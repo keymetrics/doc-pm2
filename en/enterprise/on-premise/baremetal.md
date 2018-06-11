@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Deployment on Baremetal Servers | PM2 Enterprise Documentation
+title: Deployment on Baremetal Servers | On-Premise | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: FAQ | PM2 Enterprise Documentation
+title: FAQ | On-Premise | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise

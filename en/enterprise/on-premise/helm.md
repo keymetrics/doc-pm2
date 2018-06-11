@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Deployment on Kubernetes with Helm | PM2 Enterprise Documentation
+title: Deployment on Kubernetes with Helm | On-Premise | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise
