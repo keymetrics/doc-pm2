@@ -3,7 +3,7 @@
 
   <ul id="acc">
   {% if page.lang contains 'en' %}{% assign sidebar = site.data.sidebar-en %}
-  {% elsif page.lang contains 'ch' %}{% assign sidebar = site.data.sidebar-ch %}{% endif %}
+  {% elsif page.lang contains 'zh' %}{% assign sidebar = site.data.sidebar-zh %}{% endif %}
   {% for item in sidebar.[page.section] %}
   {% assign slug_title = item.title | slugify %}
   {% if page.url contains item.url %}{% assign active = 'class="active"' %}

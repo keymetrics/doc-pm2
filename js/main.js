@@ -67,7 +67,7 @@
       repo: 'doc-pm2',
       owner: 'keymetrics',
       admin: ['robin-monnier', 'vmarchaud', 'Unitech'],
-      language: document.documentElement.lang === 'ch' ? 'zh-CN' : 'en',
+      language: document.documentElement.lang === 'zh' ? 'zh-CN' : 'en',
       id: md5(window.location.pathname),
       // facebook-like distraction free mode
       distractionFreeMode: false

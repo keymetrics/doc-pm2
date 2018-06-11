@@ -1,0 +1,102 @@
+runtime:
+  - title: 概述
+    url: "/zh/runtime/overview/"
+  - title: 快速开始
+    url: "/zh/runtime/quick-start/"
+  - title: 指南 
+    url: "/zh/runtime/guide/"
+    submenu:
+      - page: 安装
+        url: "/zh/runtime/guide/installation/"
+      - page: 生态系统文件
+        url: "/zh/runtime/guide/ecosystem-file/"
+      - page: 进程管理
+        url: "/zh/runtime/guide/process-management/"
+      - page: 日志管理
+        url: "/zh/runtime/guide/log-management/"
+      - page: 启动挂钩
+        url: "/zh/runtime/guide/startup-hook/"
+      - page: 负载平衡
+        url: "/zh/runtime/guide/load-balancing/"
+      - page: 开发工具
+        url: "/zh/runtime/guide/development-tools/"
+      - page: 使用SSH轻松部署
+        url: "/zh/runtime/guide/easy-deploy-with-ssh/"
+  - title: 最佳实践
+    url: "/zh/runtime/best-practices/"
+    submenu:
+      - page: 中的环境变量
+        url: "/zh/runtime/best-practices/environment-variables/"
+      - page: 正常关机
+        url: "/zh/runtime/best-practices/graceful-shutdown/"
+      - page: 无状态应用
+        url: "/zh/runtime/best-practices/stateless-application/"
+  - title: 综合
+    url: "/zh/runtime/integration/"
+    submenu:
+      - page: AWS Elastic Beanstalk
+        url: "/zh/runtime/integration/elastic-beanstalk/"
+      - page: Docker
+        url: "/zh/runtime/integration/docker/"
+      - page: Heroku
+        url: "/zh/runtime/integration/heroku/"
+      - page: Transpilers
+        url: "/zh/runtime/integration/transpilers/"
+      - page: 使用云供应商
+        url: "/zh/runtime/integration/cloud-providers/"
+  - title: 参考
+    url: "/zh/runtime/reference/"
+    submenu:
+      - page: Ecosystem 文件
+        url: "/zh/runtime/reference/ecosystem-file/"
+      - page: CLI
+        url: "/zh/runtime/reference/pm2-cli/"
+      - page: 程序化
+        url: "/zh/runtime/reference/pm2-programmatic/"
+
+plus:
+  - title: 概述
+    url: "/zh/plus/overview/"
+  - title: 快速入门
+    url: "/zh/plus/quick-start/"
+  - title: 指南
+    url: "/zh/plus/guide/"
+    submenu:
+      - page: 安装
+        url: "/zh/plus/guide/installation/"
+      - page: 配置
+        url: "/zh/plus/guide/configuration/"
+      - page: 通知
+        url: "/zh/plus/guide/notifications/"
+      - page: 问题仪表板
+        url: "/zh/plus/guide/issue-dashboard/"
+      - page: 事物跟踪
+        url: "/zh/plus/guide/transaction-tracing/"
+      - page: 内存和CPU分析
+        url: "/zh/plus/guide/memory-cpu-profiling/"
+  - title: 最佳实践
+    url: "/zh/plus/best-practices/"
+    submenu:
+      - page: CPU分析
+        url: "/zh/plus/best-practices/cpu-profiling/"
+      - page: 内存分析
+        url: "/zh/plus/best-practices/memory-profiling/"
+      - page: 事物跟踪
+        url: "/zh/plus/best-practices/transaction-tracing/"
+  - title: 集成
+    url: "/zh/plus/integration/"
+    submenu:
+      - page: AWS Elastic Beanstalk
+        url: "/zh/plus/integration/elastic-beanstalk/"
+      - page: Docker
+        url: "/zh/plus/integration/docker/"
+      - page: Heroku
+        url: "/zh/plus/integration/heroku/"
+      - page: 使用云供应商
+        url: "/zh/plus/integration/cloud-providers/"
+  - title: 参考
+    url: "/zh/plus/reference/pmx"
+
+enterprise:
+  - title: 概述
+    url: "/zh/enterprise/overview/"
