@@ -9,11 +9,11 @@ redirect_from: "/runtime/guide/easy-deploy-with-ssh"
 
 # Easy Deploy with SSH
 
-In many deployment workflow, the routine basically consists of connecting with SSH to multiple servers, git pull the latest version then reload the app.
+In many deployment workflows, the routine basically consists of connecting with SSH to multiple servers, git pull the latest version, then reload the app.
 
-The PM2 deploy tool purpose is to automate this task.
+The PM2 deploy tool's purpose is to automate this task.
 
-You set an array of distant hosts, a pre-deploy/post-deploy command line action and you are done.
+You set an array of distant hosts, a pre-deploy/post-deploy command line action, and you are done.
 
 ---
 
@@ -30,7 +30,7 @@ ssh-copy-id node@myserver.com
 
 ### Ecosystem file
 
-You first need to configure your ecosystem.config.js with all necessary informations:
+You first need to configure your ecosystem.config.js with all the necessary information:
 
 ```javascript
 module.exports = {
@@ -84,7 +84,7 @@ pm2 deploy production setup
 
 ### Deploy
 
-Here are some usefull command:
+Here are some useful commands:
 
 ```bash
 # Setup deployment at remote location
