@@ -9,7 +9,7 @@ redirect_from: "/runtime/guide/ecosystem-file"
 
 # Ecosystem File
 
-When deploying on multiple server or when using multiple CLI arguments, an alternative to the command line become more conveninent for starting your apps.
+When deploying on multiple servers or when using multiple CLI arguments, an alternative to the command line becomes more conveninent for starting your apps.
 
 The purpose of the ecosystem file is to gather options and environment variables of all your applications.
 
@@ -48,16 +48,18 @@ For more information about available properties, check the [ecosystem file refer
 
 ### Routine
 
-Inside the folder, add all the applications to your process list with:
+Inside your source code working directory, you can add all of the applications to your process list with:
 
 ```bash
 pm2 start
 ```
 
-You can also load the ecosystem from an other folder with:
+This will run all of the `apps` defined within the `ecosystem.config.js` generated with `pm2 init`.
+
+You can also load an ecosystem from an other folder with:
 
 ```bash
-pm2 start ~/my-app/ecosystem.config.js
+pm2 start /path/to/ecosystem.config.js
 ```
 
 ### Only use a specific app
@@ -72,9 +74,9 @@ pm2 start --only app
 
 ## Environment variables
 
-You can declare multiple, each entry must be format according to `env_<environment-name>`.
+You can declare variables for multiple environments. Each enviroment key must have this format: `env_<environment-name>`.
 
-Here, the `app` process can be start with two environments: `development` and `production`.
+For example, the following `app` process can be started in two environments: `development` and `production`.
 
 ```javascript
 module.exports = {
@@ -91,11 +93,11 @@ module.exports = {
 }
 ```
 
-Select one of them with the `--env` flag:
+To start this `app` in a particular environment, use the `--env` flag:
 
 ```bash
-pm2 start ecosystem.config.js
-pm2 start ecosystem.config.js --env production
+pm2 start ecosystem.config.js # uses variables from `env`
+pm2 start ecosystem.config.js --env production # uses variables from `env_production`
 ```
 
 ---
