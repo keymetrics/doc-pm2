@@ -150,7 +150,7 @@ becomes:
 
 Add this entry in your ecosystem file:
 
-`"date_log_format": "JJ-MM-YYYY"`
+`"log_date_format": "DD-MM-YYYY"`
 
 The format must follow a moment.js format, list [here](https://momentjs.com/docs/#/parsing/string-format/).
 
