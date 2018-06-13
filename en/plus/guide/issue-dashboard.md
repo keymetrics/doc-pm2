@@ -9,12 +9,14 @@ redirect_from: "/plus/guide/issue-dashboard"
 
 # Issue dashboard
 
-You can track all exceptions that happens on your servers along with:
+PM2 always keep your application so you are not afraid anymore of the exception crashing you app.
+
+But wait, what if many exceptions are happening and you are not aware of it?
+
+With PM2 Plus, we've got your back. You can track all exceptions that happens on your servers along with:
 - stack trace
 - line code number
 - logs before exception
-
-The issue dashboard primarily reports all the uncaught exceptions. When happening, Node.js process crashes and pm2 automatically restarts the application while emiting an exception.
 
 ![issue dashboard]({{ site.baseurl }}{% link img/plus/issue.png %})
 

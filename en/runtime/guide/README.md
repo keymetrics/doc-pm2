@@ -11,7 +11,7 @@ redirect_from: "/runtime/guide"
 
 # Guide
 
-This guide will show you how to install and use pm2 to set up your application to production.
+This guide will show you how to install and use PM2 to set up your application to production.
 
 ---
 

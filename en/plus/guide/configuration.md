@@ -9,9 +9,9 @@ redirect_from: "/plus/guide/configuration"
 
 # Configuration
 
-Your dashboard already comes with a lot of metrics without configuration but you have the possibility to add predefined set of metrics or even create custom ones.
+Your dashboard already comes with a lot of metrics without any configuration. But don't worry, you also can add predefined set of metrics or - even better - to create custom ones.
 
-PM2 comes with the [@pm2/io](https://github.com/keymetrics/pm2-io-apm/tree/master/test) module, which is its part responsible of gathering metrics displayed in `pm2 monit` or in the web dashboard. By default, this module just wraps your app. If you however want to refine the configuration, add custom metrics or custom actions, you must require it in your code.
+PM2 comes with the [@pm2/io](https://github.com/keymetrics/pm2-io-apm/tree/master/test) module, which is a module that gathers the metrics displayed in `pm2 monit` or in the web dashboard. By default, it just wraps your app. If you however want to refine the configuration, add custom metrics or custom actions, you must require it in your code.
 
 ---
 

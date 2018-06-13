@@ -11,18 +11,18 @@ redirect_from: "/plus/guide/"
 
 # Guide
 
-This guide will get your node.js app monitored by PM2 Plus in minutes.
+Follow this guide and get your Node.js app monitored by PM2 Plus in minutes!
 
 ---
 
 ## Terminology
 
-Let's explain some terminology we use across this guide:
+Let's first explain some terminology we will use across this guide:
 
-A **bucket** is an entity that we use to gather multiple servers. A bucket is generally used to gather multiple server from a single project.
+A **bucket** is an entity related to PM2 Plus which is associated to a billing plan. Buckets are generally used to group and monitor multiple servers of a single project.
 
-A **server** is an entity from which PM2 Plus receive informations from one or more processes.
+A **server** is a container or a machine with a PM2 daemon managing one or more processes.
 
-A **process** is an entity of the process list (`pm2 ls`).
+A **process** is an entity of the process list (`pm2 ls`). This is one instance of an app which has been started by PM2.
 
 <p align="center">[Let's start]({{ site.baseurl }}{% link en/plus/guide/installation.md %})</p>
