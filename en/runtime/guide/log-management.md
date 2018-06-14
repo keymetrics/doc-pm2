@@ -87,7 +87,7 @@ module.exports = {
 }
 ```
 
-?> Logs are still splitted into into output/error/log
+?> Logs are still splitted into output/error/log
 
 ---
 
