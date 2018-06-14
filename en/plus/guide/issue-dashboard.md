@@ -11,7 +11,7 @@ redirect_from: "/plus/guide/issue-dashboard"
 
 PM2 always keep your application so you are not afraid anymore of the exception crashing you app.
 
-But wait, what if many exceptions are happening and you are not aware of it?
+But wait, what if many exceptions happen and you are now not aware of it?
 
 With PM2 Plus, we've got your back. You can track all exceptions that happens on your servers along with:
 - stack trace
@@ -39,22 +39,6 @@ catch(error) {
     pmx.notify(new Error('This is an error'))
 }
 ```
-
----
-
-## Express.js middleware
-
-By default, express catches all exceptions that happen.
-
-You need to add the PMX middleware if you want them to be reported:
-
-```javascript
-// all your routes here
-// app.get((req, res) => {})
-app.use(pmx.expressErrorHandler())
-```
-
-?> Use it after the routes declaration.
 
 ---
 

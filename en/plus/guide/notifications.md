@@ -9,20 +9,20 @@ redirect_from: "/plus/guide/notifications"
 
 # Notifications
 
-Notifications always gets you aware about critical events.
+Notifications are one of the most powerful feature of PM2 Plus, always getting you aware about critical events.
 
-By default, you receive emails only on critical events:
+By default, you receive notifications only by email and for critical events such as:
 - downtime
 - deployment
 - issues
 
-This section will help you to setup custom notifications and to configure the channels where you want to receive them.
+This section will help you to customize the notification systems, to setup other channels and specify your own kind of alerts through your code.
 
 ---
 
 ## Default notifications
 
-By default, PM2 Plus sends few different kind of notifications:
+By default, PM2 Plus sends three different kind of notification.
 
 - When a new exception is thrown.
 
@@ -40,9 +40,9 @@ By default, PM2 Plus sends few different kind of notifications:
 
 ### Custom metric notifications
 
-The main way to set custom notification with PM2 Plus is to use the custom metrics.
+The main way to set custom notification with PM2 Plus is with custom metrics.
 
-When defining a custom metric, you can enable notifications on them when they reach a specific threshold.
+When defining a custom metric, enable notifications on it if it reaches a specific threshold.
 
 Example :
 
@@ -89,7 +89,7 @@ After having defined a custom event, subscribe to it directly in the dashboard.
 
 ## Notification channels
 
-By default, notifications are sent by email. You can also receive them on slack or via a webhook.
+By default, notifications are only sent by email but they can be enabled with slack or via a webhook.
 
 ### Slack notifications
 

@@ -23,11 +23,27 @@ The transaction tracing is disabled by default. On big infrastructure, you shoul
 
 You'll have to wait 10min to let PM2 Plus collects enough data.
 
-### PMX
+### @pm2/io
 
-Add `trace: true` at the pmx initialisation.
+Enable the transaction tracing via the `@pm2/io` module.
 
-### Terminal
+```javascript
+const io = require('@pm2/io')
+
+io.init({
+  metrics: {
+    transaction: {
+      http: true,               // (default: true) HTTP routes logging
+      tracing: {                // (default: false) Enable transaction tracing
+        http_latency: 1,        // (default: 200) minimum latency in milliseconds to take into account
+        ignore_routes: ['/foo'] // (default: empty) exclude some routes
+      },
+    },
+  },
+})
+```
+
+### PM2 CLI
 
 When the transaction tracing is enabled, you'll see a clock on the side of the process in the process list (`pm2 ls`).
 
@@ -42,40 +58,6 @@ Disable with:
 ```bash
 pm2 reload <app_name> --disable-trace
 ```
-
----
-
-## Advanced options
-
-You must use the pmx initialisation to customize your transaction tracing.
-
-`--trace` enable transaction tracing with default settings, so run `--disable-trace` before using advanced options.
-
- ```javascript
- {
-    // Log levels: 0-disabled, 1-error, 2-warn, 3-info, 4-debug
-    logLevel: 1,
-
-    // Ignore request based on matching string/regex for each field
-    // Only one value need to match for the request to be ignored.
-    // Example :
-    // ignoreFilter: { path: [/v1/, '/'], ip: [/127.0.0.1/, '::1'] }
-    // will ignore request that contains v1 in their path or the index
-    // it will ignore request that has been made by localhost
-    ignoreFilter: {
-      'path': [],
-      'method': [],
-      'ip': []
-    },
-
-    // An upper bound on the number of traces to gather each second. If set to 0,
-    // sampling is disabled and all transactions are recorded. Sampling rates greater
-    // than 1000 are not supported and will result in at most 1000 samples per
-    // second.
-    samplingRate: 0
- }
- ```
-
 
 ---
 
