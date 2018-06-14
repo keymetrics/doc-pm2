@@ -168,3 +168,9 @@ li input[type=checkbox]{
     margin-bottom: 20px;
   }
 }
+
+div.content-container {
+  background-color: #171E27;
+  background-image: url($baseurl + "/img/backgrounds/bg-doc.png");
+  background-size: cover;
+}
