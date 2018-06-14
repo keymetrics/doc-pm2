@@ -5,7 +5,7 @@
 }
 
 .header-section .header-container {
-  background: linear-gradient(to bottom, #1b2329 0, #1a2935 100%);
+  background-color: #171E27;
   display: flex;
   align-items: center;
   min-height: $header-height;
@@ -15,6 +15,8 @@
   ul {
     padding: 0;
     margin: 0;
+    list-style-type: none;
+    padding-left: 0;
   }
 
   .logo-header {

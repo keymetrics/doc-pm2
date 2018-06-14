@@ -10,7 +10,7 @@
   }
 
   h1, h2, h3, h4 {
-    font-weight: 500;
+    font-weight: 400;
     &:hover {
       cursor:pointer;
       .header-link {
@@ -20,31 +20,33 @@
   }
 
   h1 {
-    margin: 0;
-  }
-
-  a {
-    color: #3f83b7;
+    font-size: 36px;
+    margin: 0 0 25px 0;
   }
 
   h2 {
-    margin-top: 32px;
-    border-bottom: 1px solid #bbb;
-    line-height: 40px;
+    font-size: 36px;
+    margin: 0 0 25px 0;
     a {
       text-decoration: none;
     }
   }
+  h2:not(:first-child) {
+    margin-top: 66px;
+}
 
   h3 {
-    margin-top: 32px;
-    border-bottom: 1px solid #bbb;
-    line-height: 40px;
+    font-size: 24px;
+    margin: 0 0 25px 0;
     a {
       color: #333;
       text-decoration: none;
     }
   }
+
+  h3:not(:first-child) {
+    margin-top: 66px;
+}
 
   .anchor-title:before {
     content:"";
@@ -53,8 +55,18 @@
     top: 200px;
   }
 
+  blockquote, ol, p, ul {
+    margin: 1em auto 0;
+    padding: 0;
+  }
+
   p {
     line-height: 28px;
+    font-size: 18px;
+  }
+
+  a {
+    color: #3f83b7;
   }
 
   // Customization of orphan link
@@ -101,27 +113,12 @@
   }
 
   code, pre {
-    background-color: #272822 !important;
+    background-color: #171E27 !important;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  }
-
-  .highlighter-rouge {
-    border-radius: 4px;
-    padding: 5px 9px;
   }
 
   .tip code {
     background-color: #222;
-  }
-
-  pre {
-    position:relative;
-    padding: 13px;
-    color:white;
-    font-size:16px;
-    border-radius: 2px;
-    white-space: pre-wrap;
-    line-height: 27px;
   }
 
   code {

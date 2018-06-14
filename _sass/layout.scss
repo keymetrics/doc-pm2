@@ -145,8 +145,6 @@ li input[type=checkbox]{
 .breadcrumbs{
 	margin-bottom: 30px!important;
   border-radius: 2px;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
-  padding:23px;
 
   @media screen and (max-width: $mobile_offset) {
     padding: 4px 10px;
@@ -160,19 +158,6 @@ li input[type=checkbox]{
     margin-top: 18px;
     margin-bottom: 18px;
   }
-}
-
-.runtime-page .breadcrumbs{
-  background-color: $color_runtime;
-  //background: linear-gradient(to bottom, #3eb1f3 0, #084365 100%);
-}
-.plus-page .breadcrumbs{
-  background-color: $color_plus;
-  //background: linear-gradient(to bottom, #01cea2 0, #024839 100%);
-}
-.enterprise-page .breadcrumbs{
-  background-color: $color_enterprise;
-  //background: linear-gradient(to bottom, #7f86f5 0, #2c2e44 100%);
 }
 
 .show-menu {
