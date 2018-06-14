@@ -1,19 +1,19 @@
 ---
 layout: page
-title: Memory & CPU Profiling | Guide | PM2 Plus Documentation
+title: Memory Profiling | Guide | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
-redirect_from: "/plus/guide/memory-cpu-profiling"
+redirect_from: "/plus/guide/memory-profiling"
 ---
 
-# Memory & CPU profiling
+# Memory profiling
 
-Profiling tools help you diagnose memory and CPU usage and other application-level issues.
+Profiling tools help you diagnose memory issues in your application.
 
-The profiling in PM2 Plus allows you to take remote CPU/memory snapshots of your production servers. You get the associated files ready to be inspected with the chrome developer tools.
+PM2 Plus allows you to take remote heap memory snapshots of your production servers and provide you visualization tools.
 
-![cpu and memory profiling]({{ site.baseurl }}{% link img/plus/profiling.png %})
+![memory profiling]({{ site.baseurl }}{% link img/plus/memory-profiling.png %})
 
 ---
 
@@ -31,17 +31,9 @@ To know more about memory analysis check the [google tutorial](https://developer
 
 ---
 
-## CPU profiling
-
-For CPU profiling, you decide how long you want to record.
-
-It gets you a visualisation of the stack and still offer the ability to download the CPU profiling file.
-
----
-
 ## Next Steps
 
-[Modules]({{ site.baseurl }}{% link en/plus/guide/modules.md %})
+[CPU Profiling]({{ site.baseurl }}{% link en/plus/guide/cpu-profiling.md %})
 
 ---
 

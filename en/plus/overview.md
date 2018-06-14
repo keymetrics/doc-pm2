@@ -66,15 +66,23 @@ The "Transaction Tracing" helps you troubleshoot performance issues and to get d
 
 ![transaction tracing]({{ site.baseurl }}{% link img/plus/tracing.png %})
 
-### Memory & CPU Profiling
+### Memory Profiling
 
-Take memory dumps and CPU snapshots straight from your production servers.
+Take memory heapdumps straight from your production servers.
 
-**Memory profiling lets you find any memory leaks in your application. CPU profiling helps you identify particular resource-heavy tasks.**
+**Memory profiling lets you find any memory leaks in your application.**
 
-[Memory & CPU Profiling]({{ site.baseurl }}{% link en/plus/guide/memory-cpu-profiling.md %})
+[Memory Profiling]({{ site.baseurl }}{% link en/plus/guide/memory-profiling.md %})
 
-![cpu and memory profiling]({{ site.baseurl }}{% link img/plus/profiling.png %})
+![memory profiling]({{ site.baseurl }}{% link img/plus/memory-profiling.png %})
+
+### CPU Profiling
+
+Take CPU snapshots straight from your production servers.
+
+**CPU profiling helps you identify particular resource-heavy tasks.**
+
+[CPU Profiling]({{ site.baseurl }}{% link en/plus/guide/cpu-profiling.md %})
 
 ---
 

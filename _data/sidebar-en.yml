@@ -72,8 +72,10 @@ plus:
         url: "/en/plus/guide/issue-dashboard/"
       - page: Transaction tracing
         url: "/en/plus/guide/transaction-tracing/"
-      - page: Mem & CPU Profiling
-        url: "/en/plus/guide/memory-cpu-profiling/"
+      - page: Memory Profiling
+        url: "/en/plus/guide/memory-profiling/"
+      - page: CPU Profiling
+        url: "/en/plus/guide/cpu-profiling/"
       - page: Modules
         url: "/en/plus/guide/modules/"
   - title: Best Practices

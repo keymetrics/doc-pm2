@@ -62,7 +62,7 @@ PM2 Plus会生成Node.js中“异常仪表板”中发生的所有错误列表�
 
 **内存分析可让您在应用中发现任何可能存在的内存泄漏问题。CPU分析可帮助您识别高度消耗资源的任务。**
 
-![内存和CPU分析]({{ site.baseurl }}{% link img/plus/profiling.png %})
+![内存和CPU分析]({{ site.baseurl }}{% link img/plus/memory-profiling.png %})
 
 ---
 
