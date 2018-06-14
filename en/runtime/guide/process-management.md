@@ -125,13 +125,13 @@ module.exports = {
 
 ## Local Monitoring
 
+![pm2 local monitoring]({{ site.baseurl }}{% link img/runtime/monit.png %})
+
 The local monitoring tool get you insight about CPU usage, memory usage, loop delay or request/min for each process:
 
 ```bash
 pm2 monit
 ```
-
-![pm2 local monitoring]({{ site.baseurl }}{% link img/runtime/monit.png %})
 
 <!-- Monitor your app on a web dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/quick-start.md %}) -->
 

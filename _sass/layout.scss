@@ -25,7 +25,21 @@ body,html{
   border: 1.5px solid darken(#252B37, 4%);
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  background-color: $color_runtime;
+}
+.runtime-page {
+  ::-webkit-scrollbar-thumb {
+    background-color: $color_runtime;
+  }
+}
+.plus-page {
+  ::-webkit-scrollbar-thumb {
+    background-color: $color_plus;
+  }
+}
+.enterprise-page {
+  ::-webkit-scrollbar-thumb {
+    background-color: $color_enterprise;
+  }
 }
 
 body {

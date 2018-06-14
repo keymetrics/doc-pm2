@@ -9,11 +9,11 @@ section: plus
 
 # 内存和CPU分析
 
+![cpu和内存分析]({{ site.baseurl }}{% link img/plus/memory-profiling.png %})
+
 分析工具可帮助您诊断内存和CPU使用情况以及其他应用级别的问题。
 
 PM2 Plus中的配置文件允许您获取生产服务器的远程CPU/内存快照。 您可以使用chrome开发者工具以准备好相关文件进行检查。
-
-![cpu和内存分析]({{ site.baseurl }}{% link img/plus/memory-profiling.png %})
 
 ---
 

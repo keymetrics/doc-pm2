@@ -9,11 +9,11 @@ section: plus
 
 # 事务跟踪
 
+![事物跟踪]({{ site.baseurl }}{% link img/plus/tracing.png %})
+
 事务跟踪对解决性能问题，获取您的应用如何工作的详细初级信息非常有用。
 
 缓慢的HTTP调用被识别，并且数据库和外部调用都被聚合从而对其进行理解。
-
-![事物跟踪]({{ site.baseurl }}{% link img/plus/tracing.png %})
 
 ---
 

@@ -8,6 +8,8 @@ section: plus
 ---
 
 # 问题仪表板
+
+![问题仪表板]({{ site.baseurl }}{% link img/plus/issue.png %})
  
 您可以跟踪服务器上发生的所有异常情况：
 - 堆栈轨迹
@@ -15,8 +17,6 @@ section: plus
 - 异常之前的日志
 
 问题仪表板主要报告所有未捕获的异常。 发生时，node.js进程崩溃，PM2自动重启应用，同时提醒异常。
-
-![问题仪表板]({{ site.baseurl }}{% link img/plus/issue.png %})
 
 ---
 

@@ -9,11 +9,11 @@ redirect_from: "/plus/guide/memory-profiling"
 
 # Memory profiling
 
+![memory profiling]({{ site.baseurl }}{% link img/plus/memory-profiling.png %})
+
 Profiling tools help you diagnose memory issues in your application.
 
 PM2 Plus allows you to take remote heap memory snapshots of your production servers and provide you visualization tools.
-
-![memory profiling]({{ site.baseurl }}{% link img/plus/memory-profiling.png %})
 
 ---
 

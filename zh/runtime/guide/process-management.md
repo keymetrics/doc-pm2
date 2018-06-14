@@ -125,13 +125,13 @@ module.exports = {
 
 ## 本地监控
 
+![pm2本地监控]({{ site.baseurl }}{% link img/runtime/monit.png %})
+
 本地监控工具可让您了解每个进程的CPU使用情况，内存使用情况，环路延迟或请求/分钟：
 
 ```bash
 pm2 monit
 ```
-
-![pm2本地监控]({{ site.baseurl }}{% link img/runtime/monit.png %})
 
 ---
 

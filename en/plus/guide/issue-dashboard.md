@@ -9,6 +9,8 @@ redirect_from: "/plus/guide/issue-dashboard"
 
 # Issue dashboard
 
+![issue dashboard]({{ site.baseurl }}{% link img/plus/issue.png %})
+
 PM2 always keep your application so you are not afraid anymore of the exception crashing you app.
 
 But wait, what if many exceptions happen and you are now not aware of it?
@@ -17,8 +19,6 @@ With PM2 Plus, we've got your back. You can track all exceptions that happens on
 - stack trace
 - line code number
 - logs before exception
-
-![issue dashboard]({{ site.baseurl }}{% link img/plus/issue.png %})
 
 ---
 

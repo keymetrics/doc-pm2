@@ -9,9 +9,9 @@ section: runtime
 
 # 负载平衡（群集模式）
 
-内置的负载平衡器提供联网的Node.js应用（http（s）/ tcp / udp服务器），可在所有可用的CPU上进行缩放，无需修改任何代码。
+![scale across all cpu's available]({{ site.baseurl }}{% link img/runtime/cluster-mode.png %})
 
-![http://i.imgur.com/kTAowsL.png](http://i.imgur.com/kTAowsL.png)
+内置的负载平衡器提供联网的Node.js应用（http（s）/ tcp / udp服务器），可在所有可用的CPU上进行缩放，无需修改任何代码。
 
 ---
 

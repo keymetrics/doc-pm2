@@ -9,9 +9,9 @@ redirect_from: "/runtime/guide/load-balancing"
 
 # Load-Balancing (cluster mode)
 
-The built-in load-balancer provides networked Node.js applications (http(s)/tcp/udp server) to be scaled accross all CPUs available, without any code modifications.
-
 ![scale across all cpu's available]({{ site.baseurl }}{% link img/runtime/cluster-mode.png %})
+
+The built-in load-balancer provides networked Node.js applications (http(s)/tcp/udp server) to be scaled accross all CPUs available, without any code modifications.
 
 ---
 
