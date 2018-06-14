@@ -13,7 +13,7 @@
     if ($('.markdown-section').length > 0) {
       $('.markdown-section p').each(function(el, obj) {
         if ($(obj).clone().find('a').remove().end().html().trim().length == 0) {
-          $(obj).find('a').addClass('btn-stylized').append('<i class="material-icons">forward</i>')
+          $(obj).find('a').addClass('btn-stylized')
           $(obj).addClass('centerize')
         }
       });

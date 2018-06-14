@@ -21,9 +21,10 @@
 
   h1 {
     font-size: 36px;
-    margin: 0 0 25px 0;
+    margin: 30px 0 25px 0;
   }
 
+  
   h2 {
     font-size: 36px;
     margin: 0 0 25px 0;
@@ -33,20 +34,24 @@
   }
   h2:not(:first-child) {
     margin-top: 66px;
-}
-
+  }
+  
   h3 {
-    font-size: 24px;
+    font-size: 28px;
     margin: 0 0 25px 0;
     a {
       color: #333;
       text-decoration: none;
     }
   }
-
+  
   h3:not(:first-child) {
     margin-top: 66px;
-}
+  }
+
+  h2 + h3 {
+    margin-top: 10px !important;
+  }
 
   .anchor-title:before {
     content:"";
@@ -73,25 +78,6 @@
   // Transform to button via JS
   .centerize {
     text-align: center;
-    a.btn-stylized {
-      min-width: 230px;
-      text-decoration: none;
-      color: white;
-      text-align: center;
-
-      .material-icons {
-        transition: all 0.4s;
-        position: absolute;
-        top: 10px;
-        right: 15px;
-      }
-
-      &:hover {
-        .material-icons {
-          right: 4px;
-        }
-      }
-    }
   }
 
   blockquote{

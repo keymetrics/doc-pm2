@@ -32,6 +32,8 @@ pm2 start app.js
 
 ## Process Management
 
+![pm2 listing]({{ site.baseurl }}{% link img/runtime/pm2ls.png %})
+
 All your applications are run in the background and can be easily managed.
 
 PM2 creates a list of processes, that you can access with:
@@ -39,8 +41,6 @@ PM2 creates a list of processes, that you can access with:
 ```bash
 pm2 ls
 ```
-
-![pm2 listing]({{ site.baseurl }}{% link img/runtime/pm2ls.png %})
 
 Add and delete processes to your process list with `pm2 start` and `pm2 delete`.
 
@@ -81,13 +81,13 @@ pm2 start -i max
 
 ## In-terminal monitoring
 
+![Local monitoring with PM2]({{ site.baseurl }}{% link img/runtime/monit.png %})
+
 You can monitor your app in the terminal and check app health (CPU usage, memory used, request/min and more).
 
 ```bash
 pm2 monit
 ```
-
-![Local monitoring with PM2]({{ site.baseurl }}{% link img/runtime/monit.png %})
 
 ---
 

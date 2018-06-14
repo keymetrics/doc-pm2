@@ -1,56 +1,109 @@
 
-.btn-stylized {
-  border: none;
-  font-family: inherit;
-  font-size: 13px;
-  color: inherit;
-  cursor: pointer;
-  padding: 8px 15px;
-  display: inline-block;
-  // margin: 15px 30px;
-  margin-bottom: 7px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  position: relative;
-  transition: all 0.3s;
-  color: #fff;
-  transition: none;
-  border-radius: 3px;
-  &:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    transition: all 0.3s;
+@mixin gradient($from, $to) {
+  background: -moz-linear-gradient(45deg, $from, $to);
+  background: -webkit-linear-gradient(45deg, $from, $to);
+  background: linear-gradient(45deg, $from, $to);
+}
+
+.runtime-page {
+  a.btn-stylized {
+    @include gradient(#3EB1F3, #72D9FA);
   }
 }
 
-.btn-stylized:hover {
-  box-shadow: 0 2px #216349;
-  top: 2px;
+.plus-page {
+  a.btn-stylized {
+    @include gradient(#01CEA2, #61E8CB);
+  }
+}
+.enterprise-page {
+  a.btn-stylized {
+    @include gradient(#7F86F5, #BABEFD);
+  }
 }
 
-.btn-stylized:active {
-  box-shadow: 0 0 #216349;
-  top: 4px;
+a.btn-stylized {
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 3px;
+  color: white !important;
+  text-decoration: none;
+  // box-shadow: 0px 2px 10px #999;
+  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px 20px 20px 0;
+  padding: 10px 20px;
+  
+  background-size: 250% 100% !important;  
+  background-position: 100% 0% !important; 
+  
+  &:hover {
+    background-position: 0% !important;
+    box-shadow: 0 0px 12px #BBB;
+    transition: all 0.3s ease;
+    transform: translateY(-1px);
+}
+  
+  &:active {
+    transform: translateY(0);
+    background-position: 50% !important;
+  }
+  
 }
 
-.btn-stylized:disabled {
-  opacity: 0.2;
-  top: 2px;
-  box-shadow: 0 4px #216349;
-}
+// .btn-stylized {
+//   border: none;
+//   font-family: inherit;
+//   font-size: 13px;
+//   color: inherit;
+//   cursor: pointer;
+//   padding: 8px 15px;
+//   display: inline-block;
+//   // margin: 15px 30px;
+//   margin-bottom: 7px;
+//   text-transform: uppercase;
+//   letter-spacing: 1px;
+//   font-weight: 700;
+//   outline: none;
+//   position: relative;
+//   transition: all 0.3s;
+//   color: #fff;
+//   transition: none;
+//   border-radius: 3px;
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     z-index: -1;
+//     transition: all 0.3s;
+//   }
+// }
 
-.runtime-page .btn-stylized {
-  background: $color_runtime;
-  box-shadow: 0 4px #05598a;
-}
-.plus-page .btn-stylized {
-  background: $color_plus;
-  box-shadow: 0 4px #00a280;
-}
-.enterprise-page .btn-stylized {
-  background: $color_enterprise;
-  box-shadow: 0 4px #43058a;
-}
+// .btn-stylized:hover {
+//   box-shadow: 0 2px #216349;
+//   top: 2px;
+// }
+
+// .btn-stylized:active {
+//   box-shadow: 0 0 #216349;
+//   top: 4px;
+// }
+
+// .btn-stylized:disabled {
+//   opacity: 0.2;
+//   top: 2px;
+//   box-shadow: 0 4px #216349;
+// }
+
+// .runtime-page .btn-stylized {
+//   background: $color_runtime;
+//   box-shadow: 0 4px #05598a;
+// }
+// .plus-page .btn-stylized {
+//   background: $color_plus;
+//   box-shadow: 0 4px #00a280;
+// }
+// .enterprise-page .btn-stylized {
+//   background: $color_enterprise;
+//   box-shadow: 0 4px #43058a;
+// }

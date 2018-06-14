@@ -40,10 +40,28 @@ body {
   display:flex;
   flex-direction:column;
 
-  //background-image: url($baseurl + "/img/backgrounds/bg-squares.png");
-  //background-position: bottom left;
-  //background-attachment: fixed;
-  //background-color: #131d26;
+  background-color: #171E27;
+  background-size: cover;
+}
+
+div.content-container {
+  background-size: cover;
+}
+
+.runtime-page {
+  div.content-container {
+    background-image: url($baseurl + "/img/backgrounds/bg-doc_runtime.png");
+  }
+}
+.plus-page {
+  div.content-container {
+    background-image: url($baseurl + "/img/backgrounds/bg-doc_plus.png");
+  }
+}
+.enterprise-page {
+  div.content-container {
+    background-image: url($baseurl + "/img/backgrounds/bg-doc_enterprise.png");
+  }
 }
 
 h1, h2, h3, h4 {
@@ -167,10 +185,4 @@ li input[type=checkbox]{
     margin: 0 auto;
     margin-bottom: 20px;
   }
-}
-
-div.content-container {
-  background-color: #171E27;
-  background-image: url($baseurl + "/img/backgrounds/bg-doc.png");
-  background-size: cover;
 }
