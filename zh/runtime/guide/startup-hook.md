@@ -20,7 +20,7 @@ section: runtime
 检测计算机上可用的init系统并生成配置，使用：
 
 ```bash
-pm2 启动
+pm2 startup
 $ [PM2] 您必须以root身份运行此命令。 执行以下命令:
 $ sudo su -c "env PATH=$PATH:/home/unitech/.nvm/versions/node/v4.3/bin pm2 startup <distribution> -u <user> --hp <home-path>
 ```
