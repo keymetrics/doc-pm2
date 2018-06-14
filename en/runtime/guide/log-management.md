@@ -115,14 +115,14 @@ module.exports = {
 You can output the logs in JSON format:
 
 ```bash
-echo
+Hello World!
 ```
 
 becomes:
 
 ```json
 {
-   "message": "echo\n",
+   "message": "Hello World!\n",
    "timestamp": "2017-02-06T14:51:38.896Z",
    "type": "out",
    "process_id": 0,
@@ -139,13 +139,13 @@ Add this entry in your ecosystem file:
 You can output the logs adding a timestamp:
 
 ```bash
-echo
+Hello World!
 ```
 
 becomes:
 
 ```bash
-12-02-2018: echo
+12-02-2018: Hello World!
 ```
 
 Add this entry in your ecosystem file:
