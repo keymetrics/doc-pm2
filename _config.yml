@@ -29,7 +29,6 @@ baseurl: "/doc"
 destination: docs
 
 exclude:
-  - _sass
   - Dockerfile
   - Gemfile
   - Gemfile.lock
