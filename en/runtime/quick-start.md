@@ -11,8 +11,6 @@ redirect_from: "/runtime/quick-start"
 
 In seconds, this Quick Start tutorial will show you how to set up to production a Node.js application with PM2.
 
----
-
 ## Installation
 
 With yarn:
@@ -40,8 +38,6 @@ Complete your installation with the CLI autocompletion:
 ```bash
 pm2 completion install
 ```
-
----
 
 ## Manage multiple processes
 
@@ -83,15 +79,11 @@ pm2 restart app
 
 You can then setup a [startup script]({{ site.baseurl }}{% link en/runtime/guide/startup-hook.md %}), to automatically start your process list across machine restarts.
 
----
-
 ## Access your logs
 
 Access your logs in **realtime** with `pm2 logs app`.
 
 Consult your logs **history** files in the `~/.pm2/logs` folder.
-
----
 
 ## Clusterize
 
@@ -117,8 +109,6 @@ Use reload instead of restart for 0-seconds downtime reloads:
 pm2 reload app
 ```
 
----
-
 ## Do more with the CLI
 
 Use the tabulation to autocomplete and discover new commands:
@@ -129,13 +119,9 @@ Use the `--help` flag to get more informations:
 
 ![pm2 help]({{ site.baseurl }}{% link img/runtime/help.png %})
 
----
-
 ## Next Steps
 
 [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
-
----
 
 ## Questions?
 

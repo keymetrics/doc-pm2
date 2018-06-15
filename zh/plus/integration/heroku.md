@@ -13,13 +13,9 @@ section: plus
 
 我们假设您的应用已被PM2包装了。 如果没有，请按照[heroku教程]({{ site.baseurl }}{% link zh/runtime/integration/heroku.md %})进行。
 
----
-
 ## 创建一个账户
 
 在[这里](https://id.keymetrics.io/api/oauth/register)注册。
-
----
 
 ## 与PM2 Plus关联
 
@@ -33,8 +29,6 @@ heroku config:set PM2_PUBLIC_KEY=XXXXXXXXXX PM2_SECRET_KEY=YYYYY
 
 ?> 您可以在仪表板的右上方访问您的密钥
 
----
-
 ## 在PM2 Plus中设置服务器名称
 
 设置 `PM2_MACHINE_NAME`环境变量以指定服务器名称:
@@ -47,13 +41,9 @@ heroku config:set PM2_MACHINE_NAME=heroku-server
 
 ?> 请注意，如果主机名重复，仪表板将接收来自两个实例和闪烁的数据.
 
----
-
 ## 下一步
 
 完成您的[仪表板配置]({{ site.baseurl }}{% link zh/plus/guide/configuration.md %})
-
----
 
 ## 疑问？
 

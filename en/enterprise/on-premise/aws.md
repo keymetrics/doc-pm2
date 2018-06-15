@@ -11,8 +11,6 @@ redirect_from: "/enterprise/aws"
 
 Documentation about how to deploy the PM2 Enterprise on-premise version on AWS
 
----
-
 ## Before Starting
 
 ## Requirements
@@ -29,8 +27,6 @@ By [default](https://github.com/keymetrics/on-premise/blob/master/terraform/keym
 - t2.micro for the MongoDB Database
 
 These instances type can be changed via the [custom terraform variable file](https://github.com/keymetrics/on-premise/blob/master/docs/AWS.md#2-set-the-module-variables)
-
----
 
 ## Setup steps
 
@@ -118,8 +114,6 @@ For more informations, please check the [`variables.tf`](https://github.com/keym
 Run `terraform plan -target=module.example_keymetrics_setup -out tfout` and make sure no error shows up in the logs.
 
 You can then run `terraform apply tfout` in order to make terraform created the infrastructure on your AWS Account.
-
----
 
 ## Extra configuration depending of your own existing infrastructure
 

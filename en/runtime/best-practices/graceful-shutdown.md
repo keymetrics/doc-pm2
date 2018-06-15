@@ -19,8 +19,6 @@ But on a restart, a user can face two problems:
 
 **Failed requests** can be avoided with graceful shutdown and restart. This tutorial introduce you how to implement it.
 
----
-
 ## Graceful Shutdown
 
 In a graceful shutdown, your app must go through 5 steps:
@@ -123,8 +121,6 @@ process.on('SIGINT', () => {
 })
 ```
 
----
-
 ## Timeout for kill
 
 By default, pm2 waits 1600ms before sending SIGKILL signal if the applications doesn't exit itself.
@@ -141,8 +137,6 @@ module.exports = {
 }
 ```
 
----
-
 ## Windows graceful stop
 
 When signals are not available your process gets killed. In that case, you need to listen for `shutdown` events:
@@ -158,8 +152,6 @@ process.on('message', (msg) => {
   }
 })
 ```
-
----
 
 ## Graceful start
 
@@ -235,13 +227,9 @@ mongoose.connect('mongodb://mongosA:27501,mongosB:27501', (err) => {
 ...
 ```
 
----
-
 ## Graceful start in cluster mode
 
 In cluster mode, there is a default system that sets each cluster ready when the app accepts a connection. There is also a time out, which default to 3000ms, that you can set with the `listen_timeout` property in your ecosystem file.
-
----
 
 ## Questions?
 

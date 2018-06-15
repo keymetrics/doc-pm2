@@ -9,7 +9,13 @@
     padding: 15px;
   }
 
+
+
   h1, h2, h3, h4 {
+    font-weight: 400;
+  }
+
+  h2, h3, h4 {
     font-weight: 400;
     &:hover {
       cursor:pointer;
@@ -24,9 +30,8 @@
     margin: 30px 0 25px 0;
   }
 
-  
   h2 {
-    font-size: 36px;
+    font-size: 32px;
     margin: 0 0 25px 0;
     a {
       text-decoration: none;
@@ -34,6 +39,10 @@
   }
   h2:not(:first-child) {
     margin-top: 66px;
+  }
+
+  h1 + h2 {
+    margin-top: 10px !important;
   }
   
   h3 {
@@ -202,7 +211,7 @@
     background-color: $color_runtime;
   }
 
-  main a {
+  main p a {
     color: $color_runtime;
   }
 
@@ -218,7 +227,7 @@
 }
 
 .plus-page {
-  main a {
+  main p a {
     color: $color_plus;
   }
 
@@ -238,7 +247,7 @@
   }
 }
 .enterprise-page {
-  main a {
+  main p a {
     color: $color_enterprise;
   }
   hr:before {

@@ -11,8 +11,6 @@ redirect_from: "/plus/best-practices/cpu-profiling"
 
 PM2 Plus comes with a ready to use CPU profiling tool. All your servers can be profiled directly from your web dashboard. The visualisation tools then help you to visualize and interpret the results in order to improve your app's performance. The profiling files can also be downloaded to be inspected later in the chrome development tool.
 
----
-
 ## Why CPU Profiling?
 
 The CPU profiling helps you diagnose the way your server's CPU is used. The CPU is a central part in every computer, responsible for interpreting and executing almost every command and sometimes compared as the computer's "brain".
@@ -20,8 +18,6 @@ The CPU profiling helps you diagnose the way your server's CPU is used. The CPU 
 The more a web server needs to execute backend code, the more it needs a consequent CPU power. In a static content web server, there is not much to compute: only few things are done in the backend. In the case of a web API, on the other way, there is only backend code: the CPU is thus a key factor to expect high performance.
 
 In term of CPU, beside getting the highest CPU power as possible, the only way to improve your API performance is by optimizing your code. The CPU profiling indeed offers the ability to investigate how CPU is used across functions in your code. Once the bottlenecks are identified, you are ready to take action.
-
----
 
 ## Data Collection
 
@@ -36,8 +32,6 @@ An other approach is the "sampling". In this method, the profiler interrupts the
 Some profilers uses an hybrid approach. They instrument code only to count number of calls (a cheap operation) and use sampling to measure function execution time.
 
 The PM2 Plus profiler uses the sampling approach.
-
----
 
 ## Data Representation
 
@@ -71,7 +65,7 @@ Each box in the flame graph represents a function in the stack.
 - The sample count can exceed elapsed time if multiple threads were running and sampled concurrently.
 - The colors aren't significant, and are usually picked at random to be warm colors (other meaningful palettes are supported). This visualization was called a "flame graph" as it was first used to show what is hot on-CPU, and, it looked like flames. It is also interactive: mouse over the SVGs to reveal details, and click to zoom.
 
-<!-- ---
+<!--
 
 ## How to interpret the results?
 
@@ -90,8 +84,6 @@ Sorting a flat view by total weight in decreasing order and secondary by self we
 A call graph view can actually be used in all of these cases, especially if it can be adjusted to highlight nodes and edges based on their weights. The only problem of a call graph, as I said, is that it can be big, so good scalable approach to viewing it is required.
 
 But a call graph really shines when one wants to find a repeatedly appearing sequence of function calls. As every program’s function has exactly one corresponding node (unlike a tree view), and edges have weights, it is relatively easy to detect expensive sequences. After finding them and looking through functions’ code it is often seems that data calculated by a function is often used only partially or even thrown away by a caller (this happens when programs are built from big reusable `universal’ functions). Crafting a specialized version of a function that doesn’t perform unneeded calculations can speed up a program dramatically. -->
-
----
 
 ### Questions?
 

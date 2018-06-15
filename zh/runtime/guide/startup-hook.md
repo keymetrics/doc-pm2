@@ -13,8 +13,6 @@ section: runtime
 
 每个操作系统都有一个特定的工具来处理启动挂钩：pm2提供了一种简单的方法来生成和配置它们。
 
----
-
 ## 安装
 
 检测计算机上可用的init系统并生成配置，使用：
@@ -31,8 +29,6 @@ $ sudo su -c "env PATH=$PATH:/home/unitech/.nvm/versions/node/v4.3/bin pm2 start
 
 ?> 您可以通过`--service-name <name>`选项自定义服务名称 ([#3213](https://github.com/Unitech/pm2/pull/3213))
 
----
-
 ## 保存您的进程列表
 
 启动挂钩会自动加载您之前保存的进程列表。
@@ -43,15 +39,11 @@ $ sudo su -c "env PATH=$PATH:/home/unitech/.nvm/versions/node/v4.3/bin pm2 start
 pm2 save
 ```
 
----
-
 ## 禁用启动系统
 
 ```bash
 pm2 unstartup
 ```
-
----
 
 ## 用户权限
 
@@ -61,8 +53,6 @@ pm2 unstartup
 pm2 startup ubuntu -u www --hp /home/ubuntu
 ```
 
----
-
 ## 更新启动挂钩
 
 要更新启动挂钩，请运行以下命令：
@@ -71,8 +61,6 @@ pm2 startup ubuntu -u www --hp /home/ubuntu
 pm2 unstartup
 pm2 startup
 ```
-
----
 
 ## 兼容性
 
@@ -95,8 +83,6 @@ pm2 [startup | unstartup] [platform]
 
 `[ubuntu | ubuntu14 | ubuntu12 | centos | centos6 | arch | oracle | amazon | macos | darwin | freebsd | systemd | systemv | upstart | launchd | rcd | openrc]`
 
----
-
 ## 在后台
 
 - **ubuntu** 使用 `updaterc.d` 和脚本 `lib/scripts/pm2-init.sh`
@@ -105,19 +91,13 @@ pm2 [startup | unstartup] [platform]
 - **systemd** 使用 `systemctl` 和脚本 `lib/scripts/pm2.service`
 - **darwin** 使用 `launchd` 来加载一个特定的 `plist` 以便在重启后复活进程.
 
----
-
 ## 关于windows
 
 有一些外部库可以生成一个与Windows兼容的启动脚本，请查看[pm2-windows-service](https://www.npmjs.com/package/pm2-windows-service) 或 [pm2-windows-startup](https://www.npmjs.com/package/pm2-windows-startup).
 
----
-
 ## 下一步
 
 [负载平衡 (群集模式)]({{ site.baseurl }}{% link zh/runtime/guide/load-balancing.md %})
-
----
 
 ## 疑问？
 

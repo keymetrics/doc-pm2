@@ -13,8 +13,6 @@ This page will guide you step by step through the PM2 integration with Heroku.
 
 We will use Git and the Heroku CLI.
 
----
-
 ## Prepare your app
 
 ### Set your ecosystem file
@@ -77,8 +75,6 @@ In your `package.json`, modify your `start` script like the following:
 }
 ```
 
----
-
 ## Deploy with Heroku
 
 ### Create an account on Heroku
@@ -125,15 +121,11 @@ To https://git.heroku.com/aqueous-temple-78487.git
 
 That's all! The last line of the deployment will give you the URL where your app is available.
 
----
-
 ## Next Steps
 
 Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
 
 <!-- Monitor your app on a web dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/integration/heroku.md %}) -->
-
----
 
 ## Questions?
 

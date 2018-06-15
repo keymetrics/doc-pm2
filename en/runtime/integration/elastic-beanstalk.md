@@ -13,8 +13,6 @@ This page will guide you step by step through the PM2 integration in an AWS Elas
 
 We will use Git and the Elastic Beanstalk CLI.
 
----
-
 ## Prepare your app
 
 ### Set your ecosystem file
@@ -70,8 +68,6 @@ In your `package.json`, modify the start script to:
     "start": "pm2-runtime start ecosystem.config.js --env production"
   }
 ```
-
----
 
 ## Deploy with Elastic Beanstalk CLI
 
@@ -175,21 +171,15 @@ Environment details for: eb-pm2-example-env
 
 ?> Later, to deploy latest changes, commit them and run `eb deploy <environment_name>` or just `eb deploy`.
 
----
-
 ## You are ready
 
 That's all! Run `eb open` to open your app in the browser.
-
----
 
 ## Next Steps
 
 Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
 
 <!-- Monitor your app on a web dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/integration/elastic-beanstalk.md %}) -->
-
----
 
 ## Questions?
 

@@ -13,13 +13,9 @@ In seconds, this tutorial will show you how to monitor a Node.js application wit
 
 We assume that your app has already been wrapped with PM2. If not, follow the [PM2 Cloud Provider Tutorial]({{ site.baseurl }}{% link en/runtime/integration/cloud-providers.md %}).
 
----
-
 ## Create an account
 
 Register [here](https://id.keymetrics.io/api/oauth/register).
-
----
 
 ## Link your app with PM2 Plus
 
@@ -30,8 +26,6 @@ export PM2_PUBLIC_KEY="YYYYY"
 export PM2_SECRET_KEY="XXXXXXXXX"
 pm2 update
 ```
-
----
 
 ## Set the server name in PM2 Plus
 
@@ -45,13 +39,9 @@ export PM2_MACHINE_NAME="my-cloud-provider-server"
 
 ?> Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
 
----
-
 ## Next Steps
 
 Complete your [dashboard configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
-
----
 
 ## Questions?
 

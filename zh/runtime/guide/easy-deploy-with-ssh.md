@@ -15,8 +15,6 @@ PM2部署工具的目的是自动执行此任务。
 
 设置一系列远程主机，一个预先部署/部署后命令行操作，然后你便可以完成。
 
----
-
 ## 安装
 
 ### SSH设置
@@ -100,8 +98,6 @@ pm2 deploy production revert 1
 pm2 deploy production exec "pm2 reload all"
 ```
 
----
-
 ## 部署选项
 
 通过 `pm2 deploy help`显示部署帮助：
@@ -119,8 +115,6 @@ pm2 deploy <configuration_file> <environment> <command>
     list                 list previous deploy commits
     [ref]                deploy to [ref], the "ref" setting, or latest tag
 ```
-
----
 
 ## 强制部署
 
@@ -141,8 +135,6 @@ Deploy failed
 pm2 deploy ecosystem.json production --force
 ```
 
----
-
 ## 注意事项
 
 - 您可以使用 `--force`选项跳过本地更改检测
@@ -152,8 +144,6 @@ pm2 deploy ecosystem.json production --force
 - 您可以根据要部署代码的环境，声明特定的环境变量。 例如，要为生产环境声明变量，请添加 "env_production": {} 并声明变量。
 
 - 您可以在package.json中嵌入 "apps"和 "deploy"分区
-
----
 
 ## 故障排除
 
@@ -209,19 +199,13 @@ Host deployment
 # This is for cloning any repo that uses that IdentityFile. This is a good way to make sure that your remote cloning commands use the appropriate key
 ```
 
----
-
 ## 关于Windows
 
 要在Windows下运行部署脚本，您需要使用像bash这样的unix外壳，所以我们建议安装[Git bash](https://git-scm.com/download/win)，[Babun](http://babun.github.io/)或 [Cygwin](https://cygwin.com/install.html)
 
----
-
 ## 贡献
 
 这个工具是PM2的一个单独模块。 您可以在[这里](https://github.com/Unitech/pm2-deploy">https://github.com/Unitech/pm2-deploy)为它做出贡献。
-
----
 
 ## 疑问？
 

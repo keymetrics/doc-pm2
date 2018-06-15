@@ -9,8 +9,6 @@ redirect_from: "/runtime/guide/installation"
 
 # Installation
 
----
-
 ## Install pm2
 
 With yarn:
@@ -44,8 +42,6 @@ Source map files are autodetected by default if they are present (`app.js.map` f
 
 ?> What are source map files ? If using Babel, Typescript or any other Javascript superset, you may have noticed that stacktraces are not meaningful, errors not pointing to the right line. Source map files can be used to solve this problem.
 
----
-
 ## Update
 
 Keep your pm2 up to date with:
@@ -56,13 +52,9 @@ npm install pm2 -g && pm2 update
 
 ?> `pm2 update` is necessary in order to refresh the PM2 daemon.
 
----
-
 ## Next Steps
 
 [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
-
----
 
 ## Questions?
 

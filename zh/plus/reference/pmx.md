@@ -16,8 +16,6 @@ PMX是一个轻量级库，允许与仪表板进行高级交互。
 - **发出异常** 比如异常或关键问题
 - **发送事件**以通知任何事项
 
----
-
 ## 安装
 
 使用yarn:
@@ -108,8 +106,6 @@ pmx.init({
   ignore_routes : [/socket\.io/, /notFound/] // Ignore http routes with this pattern (Default: [])
 });
 ```
-
----
 
 ## 自定义指标
 
@@ -259,8 +255,6 @@ const metric = probe.metric({
 - `interval` : **可选的**，`threshold-avg`模式。 监控值的采样长度（默认为180秒）。
 - `timeout` : **可选的**，`threshold-avg`模式。 平均值比较开始后的时间（默认30 000毫秒）。
 
----
-
 ## 远程操作
 
 直接从Keymetrics远程触发函数。 这些功能可以在自定义操作部分的主Keymetrics控制面板页面中找到。
@@ -314,8 +308,6 @@ pmx.scopedAction('long running lsof', (data, res) => {
 ```
 
 
----
-
 ## 发射事件
 
 发布活动并获得历史记录和统计数据。
@@ -329,8 +321,6 @@ pmx.emit('user:register', {
   email: 'thorustor@gmail.com'
 })
 ```
-
----
 
 ## 问题报告
 

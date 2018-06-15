@@ -11,8 +11,6 @@ redirect_from: "/plus/overview"
 
 Why monitor your app with PM2 Plus ? At the end of this overview, you'll have a better understanding of the capabilities of monitoring your app with PM2 Plus.
 
----
-
 ## Global Dashboard
 
 ### Unified Overview
@@ -40,8 +38,6 @@ Know when a data reaches a threshold, when an error occurred in your application
 Even though PM2 makes sure that your application have no downtime, be notified in these critical situation in order to react. **Be notified and reactive in any critical situations.**
 
 [Notifications]({{ site.baseurl }}{% link en/plus/guide/notifications.md %})
-
----
 
 ## Debug & Optimize
 
@@ -83,8 +79,6 @@ Take CPU snapshots straight from your production servers.
 
 [CPU Profiling]({{ site.baseurl }}{% link en/plus/guide/cpu-profiling.md %})
 
----
-
 ## Extra-features
 
 ### Remote control
@@ -108,13 +102,9 @@ Extend the capabilities of the PM2 Plus dashboard by using external modules list
 [Modules]({{ site.baseurl }}{% link en/plus/guide/modules.md %})
 
 
----
-
 ### Next Steps
 
 [Quick Start]({{ site.baseurl }}{% link en/plus/quick-start.md %})
-
----
 
 ### Questions?
 

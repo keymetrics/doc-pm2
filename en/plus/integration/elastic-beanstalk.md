@@ -13,13 +13,9 @@ In seconds, this tutorial will show you how to monitor a Node.js application wit
 
 We assume that your app has already been wrapped with PM2. If not, follow our [PM2 AWS Elastic Beanstalk Tutorial]({{ site.baseurl }}{% link en/runtime/integration/elastic-beanstalk.md %}).
 
----
-
 ## Create an account on PM2 Plus
 
 You can register [here](https://id.keymetrics.io/api/oauth/register).
-
----
 
 ## Link your app with PM2 Plus
 
@@ -34,8 +30,6 @@ eb setenv PM2_PUBLIC_KEY=YYYYY PM2_SECRET_KEY=XXXXXXXX
 
 !> We unadvise to use the ecosystem file to set your keys into your environment, doing so your ecosystem file can stay public
 
----
-
 ## Set the server name in PM2 Plus
 
 Set the `PM2_MACHINE_NAME` environment variable to specify a server name:
@@ -48,13 +42,9 @@ eb setenv PM2_MACHINE_NAME=aws-eb-server
 
 ?> Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
 
----
-
 ## Next Steps
 
 Complete your [dashboard configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
-
----
 
 ## Questions?
 

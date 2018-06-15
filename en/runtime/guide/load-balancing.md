@@ -13,8 +13,6 @@ redirect_from: "/runtime/guide/load-balancing"
 
 The built-in load-balancer provides networked Node.js applications (http(s)/tcp/udp server) to be scaled accross all CPUs available, without any code modifications.
 
----
-
 ## Usage
 
 To enable the cluster mode, just pass the `-i <number-instances>` option:
@@ -42,8 +40,6 @@ The *instances* option can be:
 
 ?> You can also use a negative integer. If 4 cores, `pm2 start -i -1` will spread 3 clusters (max - integer).
 
----
-
 ## Stateless Application
 
 In the context of clustering, you first need to be sure that your application has no internal state.
@@ -51,8 +47,6 @@ In the context of clustering, you first need to be sure that your application ha
 An internal state is typically some local data stored into its processes. It can be an array of websocket connections or a local session-memory for example. Use Redis or other databases instead to share the states between processes.
 
 Follow our [tutorial]({{ site.baseurl }}{% link en/runtime/best-practices/stateless-application.md %}) to make your app stateless.
-
----
 
 ## 0 second downtime reload
 
@@ -72,8 +66,6 @@ pm2 reload ecosystem.config.js --only app
 
 If the reload system hasn't managed to reload your application, a timeout will fallback to a classic restart.
 
----
-
 ## Graceful Start & Shutdown
 
 To be sure that all requests are properly handled in a reload, you need to be sure that your application shutdown, not leaving unanswered requests.
@@ -81,8 +73,6 @@ To be sure that all requests are properly handled in a reload, you need to be su
 A graceful shutdown makes sure to handle all remaining queries before exiting the application and closes all external connections.
 
 Get help to setup graceful shutdown with our [tutorial]({{ site.baseurl }}{% link en/runtime/best-practices/graceful-shutdown.md %}).
-
----
 
 ## Cluster environment variable
 
@@ -104,13 +94,9 @@ module.exports = {
 
 ?> This is useful with the `node-config` package where name conflicts have been reported, check the [issue](https://github.com/Unitech/pm2/issues/2045).
 
----
-
 ## Next Steps
 
 [Development tools]({{ site.baseurl }}{% link en/runtime/guide/development-tools.md %})
-
----
 
 ## Questions?
 

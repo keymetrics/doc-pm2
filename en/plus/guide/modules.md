@@ -13,8 +13,6 @@ Modules are open-source addons that are built and maintained thanks to the commu
 
 Anyone can create and publish a module. Send us an email to: contact@pm2.io if you want us to add your module to this list. Modules are published as common Javascript libraries on NPM.
 
----
-
 ## Use a module
 
 Module are designed to be easy to use and to refine your configuration according to your needs.
@@ -60,8 +58,6 @@ pm2 set module_name:option_name <new_value>
 ```
 
 These variables are written in `~/.pm2/module_conf.json`. All he configuration variables can be displayed with `pm2 conf [your-module-name]`. No restart is needed, the module is automatically restarted.
-
----
 
 ## Create a module
 
@@ -176,15 +172,11 @@ pm2 publish
 
 ?>  This increments the minor version of the module, runs `git add . ; git commit -m "VERSION"; git push origin master` then runs `npm publish`.
 
----
-
 ## Next Steps
 
 Thanks for finishing this guide.
 
 You can now take a look at the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}) to master all the capabilities of PM2 Plus.
-
----
 
 ## Questions?
 

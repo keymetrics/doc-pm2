@@ -18,8 +18,6 @@ section: plus
 
 问题仪表板主要报告所有未捕获的异常。 发生时，node.js进程崩溃，PM2自动重启应用，同时提醒异常。
 
----
-
 ## 手动发出一项问题
 
 如果您在代码中正确使用 `try ... catch`，则错误将被捕获，且永远不会在仪表板中报告。
@@ -38,8 +36,6 @@ catch(error) {
 }
 ```
 
----
-
 ## Express.js中间件
 
 默认情况下，express会捕获所有发生的异常。
@@ -54,12 +50,9 @@ app.use(pmx.expressErrorHandler())
 
 ?> 在路由声明之后使用它。
 
----
-
 ## 下一步
 
 [事务跟踪]({{ site.baseurl }}{% link zh/plus/guide/transaction-tracing.md %})
----
 
 ## 疑问？
 

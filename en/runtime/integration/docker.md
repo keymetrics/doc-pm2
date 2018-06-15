@@ -20,8 +20,6 @@ The goal of pm2-runtime is to wrap your applications into a proper Node.js produ
 
 Further than that, using PM2 as a layer between the container and the application brings PM2 powerful features like ecosystem file, custom log system and other features of pm2.
 
----
-
 ## Prepare your app
 
 ### Tags available
@@ -169,15 +167,11 @@ The `--web [port]` option allows to expose all vital signs (docker instance + ap
 
 That's all! Your container is ready to be deployed.
 
----
-
 ## Next Steps
 
 Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
 
 <!-- Monitor your app on a web dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/integration/docker.md %}) -->
-
----
 
 ## Questions?
 

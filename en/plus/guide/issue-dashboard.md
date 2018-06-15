@@ -20,8 +20,6 @@ With PM2 Plus, we've got your back. You can track all exceptions that happens on
 - line code number
 - logs before exception
 
----
-
 ## Manually emit an issue
 
 If you properly uses `try... catch` in your code, errors will be catch and will never be reported in the dashboard.
@@ -40,13 +38,9 @@ catch(error) {
 }
 ```
 
----
-
 ## Next Steps
 
 [Transaction Tracing]({{ site.baseurl }}{% link en/plus/guide/transaction-tracing.md %})
-
----
 
 ## Questions?
 

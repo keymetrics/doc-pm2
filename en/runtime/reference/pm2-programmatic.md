@@ -11,8 +11,6 @@ redirect_from: "/runtime/reference/pm2-programmatic"
 
 pm2 can also be used programmatically, meaning that you can embed a process manager directly in your code, spawn processes, keep them alive even if the main script is exited.
 
----
-
 ## Simple example
 
 This example shows you how to start app.js with some configuration attributes. Elements passed to start are the same than those you can declare in an ecosystem file:
@@ -41,8 +39,6 @@ pm2.connect(function(err) {
 ```
 
 ?> If your script does not exit by itself, make sure you call `pm2.disconnect()`.
-
----
 
 ## Programmatic API
 
@@ -141,8 +137,6 @@ Kills the pm2 daemon (same as `pm2 kill`). Note that when the daemon is killed, 
 
 * `errback(err, result)`
 
----
-
 ## Send message to processes
 
 ```javascript
@@ -180,8 +174,6 @@ process.on('message', (packet) => {
  })
 })
 ```
-
----
 
 ## Questions?
 

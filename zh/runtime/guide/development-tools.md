@@ -11,8 +11,6 @@ section: runtime
 
 PM2附带两个开发工具，可以帮助您在开发阶段的：观测和重启模式以及静态文件服务器。
 
----
-
 ## 观测和重启
 
 观测和重启模式可观测当前目录以检测文件更改和自启动。
@@ -61,8 +59,6 @@ pm2 start app.js --watch
 
 但是，请注意，启用 `--watch`时，您必须使用 `pm2 stop --watch <app_name>`来停止该进程，因为一般的停止不会使观测停止。
 
----
-
 ## 通过HTTP服务静态文件
 
 PM2可以通过HTTP服务静态文件（如前端应用）：
@@ -100,13 +96,9 @@ pm2 start ecosystem.config.js
 
 ?>所有其他PM2选项仍然可用。
 
----
-
 ## 下一步
 
 [使用SSH轻松部署 ]({{ site.baseurl }}{% link en/runtime/guide/easy-deploy-with-ssh.md %})
-
----
 
 ## 疑问？
 

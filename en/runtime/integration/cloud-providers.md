@@ -13,8 +13,6 @@ You might find yourself in a situation in which you do not have access to the CL
 
 In such a situation, pm2 must be added as a dependency and must be called with the start script.
 
----
-
 ## Prepare your app
 
 ### Set your ecosystem file
@@ -72,21 +70,15 @@ In your `package.json`, modify your `start` script like the following:
 }
 ```
 
----
-
 ## Deploy your app
 
 You can now deploy your application in your cloud providers like you would have done for a regular node.js app.
-
----
 
 ## Next Steps
 
 Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
 
 <!-- Monitor your app on a web dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/integration/cloud-providers.md %}) -->
-
----
 
 ## Questions?
 

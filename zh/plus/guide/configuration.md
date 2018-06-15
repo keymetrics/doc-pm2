@@ -18,8 +18,6 @@ section: plus
 - **发送事件**来跟踪任何你想的
 - **优化异常检测**以便检测及捕捉
 
----
-
 ## PMX安装
 
 使用npm:
@@ -33,8 +31,6 @@ npm install pmx --save
 ```bash
 yarn add pmx
 ```
-
----
 
 ## PMX初始化
 
@@ -52,8 +48,6 @@ const pmx = require('pmx').init({
 ```
 
 ?> 请参阅[参考]({{ site.baseurl }}{% link zh/plus/reference/pmx.md %})中的其他初始化选项。
-
----
 
 ## 显示自定义指标
 
@@ -88,8 +82,6 @@ const metric = probe.metric({
 
 ?> 在[PMX参考]({{ site.baseurl }}{% link zh/plus/reference/pmx.md %})中阅读更多关于显示自定义指标的信息。
 
----
-
 ## 实现远程操作
 
 您可以直接从仪表板远程触发功能。 从代码中实现后，可以在特定部分的主仪表板页面中找到操作按钮。
@@ -113,8 +105,6 @@ pmx.action('db:clean', function(reply) {
 
 ?> 在 [PMX参考]({{ site.baseurl }}{% link zh/plus/reference/pmx.md %})中详细了解如何实现远程操作。
 
----
-
 ## 触发事件
 
 触发事件以获取历史记录或统计数据。
@@ -130,13 +120,9 @@ pmx.emit('user:register', {
 
 ?> 在 [PMX 参考]({{ site.baseurl }}{% link zh/plus/reference/pmx.md %})中详细了解触发事件。
 
----
-
 ## 下一步
 
 [通知]({{ site.baseurl }}{% link zh/plus/guide/notifications.md %})
-
----
 
 ## 疑问？
 

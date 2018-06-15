@@ -11,8 +11,6 @@ redirect_from: "/plus/faq"
 
 If you have a suggestion or if you want to report an issue, please read the troubleshooting process below first. 
 
----
-
 ## Process-based pricing
 
 ### What is a process?
@@ -40,8 +38,6 @@ You can then use the command `pm2 unmonitor [APP_NAME|ID]` to stop monitoring a 
 
 If you want to monitor the process again use `pm2 monitor [APP_NAME|ID]`.
 
----
-
 ## My PM2 is not connected to the PM2 Plus dashboard
 
 ### Refresh all connections
@@ -64,8 +60,6 @@ If you are using PM2 > 2.0, Node.js is supported starting from 0.12 version.
 ### New servers can be link even if no server is already linked
 
 Go to the setting page of your bucket and delete servers in the server box.
-
----
 
 ## Dashboard issues
 
@@ -94,8 +88,6 @@ $ pm2 link <private_id> <public_id> server1
 # Server 2
 $ pm2 link <private_id> <public_id> server2
 ```
-
----
 
 ## Questions?
 

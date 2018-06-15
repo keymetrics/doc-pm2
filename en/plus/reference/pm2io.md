@@ -11,9 +11,7 @@ redirect_from: "/plus/reference/pm2io"
 
 [@pm2/io](https://github.com/keymetrics/pm2-io-apm/tree/master/test) is the library that comes with PM2 which is in charge of gathering the metrics that are displayed in `pm2 monit` or in the web dashboard. By default, the module just wraps your app but can be required in the code to refine the configuration or add custom metrics/actions.
 
----
-
-### Initialisation options
+## Initialisation options
 
 ```javascript
 io.init({
@@ -85,8 +83,6 @@ io.init({
 });
 ```
 
----
-
-### Questions?
+## Questions?
 
 We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on our [support github](https://github.com/keymetrics/keymetrics-support/issues).

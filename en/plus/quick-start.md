@@ -13,13 +13,9 @@ In seconds, this Quick Start tutorial will show you how to start monitoring your
 
 We will assume that your app is already started or wrapped by PM2. If not, follow the [PM2 Quick Start]({{ site.baseurl }}{% link en/runtime/quick-start.md %}) tutorial.
 
----
-
 ## Create an account
 
 Register [here](https://id.keymetrics.io/api/oauth/register).
-
----
 
 ## Connect your server to the dashboard
 
@@ -32,8 +28,6 @@ pm2 link <secret> <public>
 Or, if you don't have access to the CLI, add `PM2_PUBLIC_KEY` and `PM2_SECRET_KEY` environment variables set with your public and private keys.
 
 ?> Use the `Link an app` help on the top left of your dashboard
-
----
 
 ## Install CPU/Memory profiling
 
@@ -59,21 +53,15 @@ Then reload your application to enable the profiler:
 pm2 reload all
 ```
 
----
-
 ## You are done
 
 Go back to the dashboard, you will have access to realtime metrics of your app.
 
 ![dashboard view]({{ site.baseurl }}{% link img/plus/unified.png %})
 
----
-
 ## Next Steps
 
 [Configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
-
----
 
 ## Questions?
 

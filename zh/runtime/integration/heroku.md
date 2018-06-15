@@ -13,8 +13,6 @@ section: runtime
 
 我们将使用Git和Heroku CLI.
 
----
-
 ## 准备您的应用
 
 ### 设置您的生态系统文件
@@ -75,8 +73,6 @@ yarn add pm2
     "start": "node ./node_modules/.bin/pm2-runtime start ecosystem.config.js --env production"  }
 ```
 
----
-
 ## 用Heroku部署
 
 ### 在Heroku上创建一个帐户
@@ -123,15 +119,11 @@ To https://git.heroku.com/aqueous-temple-78487.git
 
 就是这样！ 部署的最后一行将为您提供应用程序可用的URL。
 
----
-
 ## 下一步
 
 使用[生态系统文件]({{ site.baseurl }}{% link zh/runtime/guide/ecosystem-file.md %})完成您的配置
 
 使用 [PM2 Plus]({{ site.baseurl }}{% link zh/plus/integration/docker.md %})在仪表板上监控您的应用
-
----
 
 ### 疑问？
 

@@ -18,8 +18,6 @@ By default, you receive notifications only by email and for critical events such
 
 This section will help you to customize the notification systems, to setup other channels and specify your own kind of alerts through your code.
 
----
-
 ## Default notifications
 
 By default, PM2 Plus sends three different kind of notification.
@@ -33,8 +31,6 @@ By default, PM2 Plus sends three different kind of notification.
 - After a deployment
 
 [App Malfunctioning] Application throws too many errors (*process_name*)
-
----
 
 ## Custom notifications
 
@@ -84,8 +80,6 @@ Available options are:
 An other way to set a custom notifications is to use a custom event.
 
 After having defined a custom event, subscribe to it directly in the dashboard.
-
----
 
 ## Notification channels
 
@@ -142,13 +136,9 @@ The format of the data is a json like the following:
  
 Use case example: You can now setup an express server that can receive webhooks, automatically send SMS or use any integration you want.
 
----
-
 ## Next Steps
 
 [Issue Dashboard]({{ site.baseurl }}{% link en/plus/guide/issue-dashboard.md %})
-
----
 
 ## Questions?
 

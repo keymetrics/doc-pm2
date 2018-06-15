@@ -13,13 +13,9 @@ In seconds, this tutorial will show you how to monitor a Node.js application wit
 
 We assume that your app has already been wrapped with PM2. If not, follow the [PM2 Heroku Tutorial]({{ site.baseurl }}{% link en/runtime/integration/heroku.md %}).
 
----
-
 ## Create an account
 
 Register [here](https://id.keymetrics.io/api/oauth/register).
-
----
 
 ## Link with PM2 Plus
 
@@ -33,8 +29,6 @@ heroku config:set PM2_PUBLIC_KEY=XXXXXXXXXX PM2_SECRET_KEY=YYYYY
 
 ?> You can access your keys at the top right of your dashboard
 
----
-
 ## Set the server name in PM2 Plus
 
 Set the `PM2_MACHINE_NAME` environment variable to specify a server name:
@@ -47,13 +41,9 @@ heroku config:set PM2_MACHINE_NAME=heroku-server
 
 ?> Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
 
----
-
 ## Next Steps
 
 Complete your [dashboard configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
-
----
 
 ## Questions?
 

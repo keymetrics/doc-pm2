@@ -13,13 +13,9 @@ section: plus
 
 我们假设您的应用已被PM2包装了。 如果没有，请参考 [docker教程]({{ site.baseurl }}{% link zh/runtime/integration/docker.md %})。
 
----
-
 ## 创建一个账户
 
 在 [此处](https://id.keymetrics.io/api/oauth/register)注册。
-
----
 
 ## 安装分析器
 
@@ -28,8 +24,6 @@ section: plus
 ```Dockerfile
 RUN pm2 install profiler
 ```
-
----
 
 ## 将您的应用与PM2 Plus关联
 
@@ -41,8 +35,6 @@ PM2_SECRET_KEY=XXXXX
 PM2_PUBLIC_KEY=YYYYY
 ```
 并用`docker run`重启您的容器，并添加`--env-file .env`来加载环境变量。
-
----
 
 ## 在PM2 Plus中设置服务器名称
 
@@ -58,13 +50,9 @@ PM2_MACHINE_NAME=docker-server
 
 ?> 请注意，如果主机名重复，仪表板将接收来自两个实例和闪烁的数据.
 
----
-
 ## 下一步
 
 完成您的[仪表板配置]({{ site.baseurl }}{% link zh/plus/guide/configuration.md %})
-
----
 
 ## 疑问？
 

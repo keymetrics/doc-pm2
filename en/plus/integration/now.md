@@ -51,13 +51,9 @@ module.exports = {
 
 ?> Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
 
----
-
 ### Next Steps
 
 Complete your [dashboard configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
-
----
 
 ### Questions?
 

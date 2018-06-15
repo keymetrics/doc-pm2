@@ -13,8 +13,6 @@ This glossary is an exhaustive list of all metrics recorded by PM2 Plus. Underst
 
 Note that each metric always describes the state of a specific application on a specific server. You may find some cross server metrics on the dashboard, to suggest on which application you could use the profiling for example, but in most cases, metrics are application and server specific.
 
----
-
 ## CPU Usage
 
 The CPU usage is the amount of time the CPU is busy. A CPU only can handle one operation at a time and so is either busy or idle.
@@ -94,8 +92,6 @@ Requests represent short-lived operations. These operations can be performed ove
 ## GC type
 
 ## Gc Pause
-
----
 
 ### Questions?
 

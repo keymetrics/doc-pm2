@@ -13,8 +13,6 @@ PM2 is a process kept in the background, a daemon, that takes care of all your r
 
 We'll learn how to manage process with PM2 and discover a key concept : the process list.
 
----
-
 ## The process list
 
 The process list is where all running applications are registered.
@@ -37,8 +35,6 @@ When you use `pm2 start app.js`, two actions are performed:
 - the app is started in the background.
 
 ?> Default name in the process list is the name of the script without his extension. Use `--name`or `-n` to change.
-
----
 
 ## Routine
 
@@ -65,8 +61,6 @@ Or, shorter with a regexp:
 pm2 restart /app/
 ```
 
----
-
 ## Save your process list
 
 You can save and resurrect your process list with:
@@ -82,8 +76,6 @@ pm2 resurrect
 ?> Your process list is saved into `$HOME/.pm2/dump.pm2`.
 
 You can then setup a [startup hook]({{ site.baseurl }}{% link en/runtime/guide/startup-hook.md %}), to automatically start your process list through machine restarts.
-
----
 
 ## Manage any application type
 
@@ -121,8 +113,6 @@ module.exports = {
 }
 ```
 
----
-
 ## Local Monitoring
 
 ![pm2 local monitoring]({{ site.baseurl }}{% link img/runtime/monit.png %})
@@ -135,13 +125,9 @@ pm2 monit
 
 <!-- Monitor your app on a web dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/quick-start.md %}) -->
 
----
-
 ## Next Steps
 
 [Log Management]({{ site.baseurl }}{% link en/runtime/guide/log-management.md %})
-
----
 
 ## Questions?
 

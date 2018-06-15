@@ -9,8 +9,6 @@ redirect_from: "/enterprise/baremetal"
 
 # Deployment on Baremetal Servers
 
----
-
 ## Requirements
 
 Install Docker & Docker compose (minimum required version is 1.19.0) in your host machine:
@@ -26,8 +24,6 @@ Then make sure you have logged-in on the hub to be able to pull the private imag
 ```bash
 $ docker login
 ```
-
----
 
 ## Steps to Install
 
@@ -59,8 +55,6 @@ $ docker-compose logs
 
 *In the beginning some connections errors might appears but it's not critical (elasticsearch take few seconds to boot so the backend will restart for few seconds then connect when his ready)*
 
----
-
 ## Update Procedure
 
 Just run docker-compose up again and it will pull the latest backend image:
@@ -71,8 +65,6 @@ $ docker-compose restart km-api km-front
 ```
 
 A downtime of around 30 seconds maximum will happen.
-
----
 
 ## FAQ
 

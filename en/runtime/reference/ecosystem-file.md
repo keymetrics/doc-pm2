@@ -9,8 +9,6 @@ redirect_from: "/runtime/reference/ecosystem-file"
 
 # Ecosystem file reference
 
----
-
 ## Options
 
 Entry name|Description|Type|Default
@@ -61,8 +59,6 @@ treekill|Only kill the main process, not detached children|boolean|true
 port|Shortcut to inject a PORT environment variable|number|
 uid|Set user id|string|Current user uid
 gid|Set group id|string|Current user gid
-
----
 
 ## Questions?
 

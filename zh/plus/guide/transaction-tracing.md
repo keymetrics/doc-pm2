@@ -15,8 +15,6 @@ section: plus
 
 缓慢的HTTP调用被识别，并且数据库和外部调用都被聚合从而对其进行理解。
 
----
-
 ## 启用事务跟踪
 
 事务跟踪在默认情况下是禁用的。 在大型基础架构上，您最好只在几天内使用事务跟踪来收集信息，然后禁用它，因为这其中没有抽样且所有请求都会被处理。
@@ -42,8 +40,6 @@ pm2 reload <app_name> --trace
 ```bash
 pm2 reload <app_name> --disable-trace
 ```
-
----
 
 ## 高级选项
 
@@ -77,8 +73,6 @@ pm2 reload <app_name> --disable-trace
  ```
  
 
----
-
 ## 事务跟踪仪表板
 
 ### 延迟图像
@@ -108,8 +102,6 @@ pm2 reload <app_name> --disable-trace
 
 然后，您可以点击另一个 **variance** （差异）来检查行为不同的原因和方式
 
----
-
 ## 在hood下
  
 如果存在于您的应用中，PMX将包装在模块之下
@@ -126,8 +118,6 @@ pm2 reload <app_name> --disable-trace
 然后记录他们发出或接收的所有请求，发送给PM2进行汇总。
 对性能的影响应该会很低，因为除了包装模块和发送数据之外，您的进程中没有大量逻辑语言需要完成。
 
----
-
 ## 须知
 
 - 当被PM2接收时，事务会根据其路径汇总（因此没有query）,例如：
@@ -143,15 +133,10 @@ pm2 reload <app_name> --disable-trace
 - 此功能与其他模块有一些已知的问题：
   - `request-promise`：清除节点缓存并请求一个新的干净版本的`http`模块。 为了解决这个问题，需要`request-promise`来获得正确包装的`http`模块后再次请求`http`。
   - `node-newrelic`：和我们一样工作，您可用此解决遇到的问题。
-  
-
----
 
 ## 下一步
 
 [分析]({{ site.baseurl }}{% link zh/plus/guide/memory-cpu-profiling.md %})
-
----
 
 ## 疑问？
 

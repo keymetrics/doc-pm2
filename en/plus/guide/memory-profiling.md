@@ -15,8 +15,6 @@ Profiling tools help you diagnose memory issues in your application.
 
 PM2 Plus allows you to take remote heap memory snapshots of your production servers and provide you visualization tools.
 
----
-
 ## Memory profiling
 
 Click to take a heapdump and download the file. It may take some time depending on the weight of the heap file.
@@ -29,13 +27,9 @@ To track memory leak you will need to compare multiple heapdump files to see whi
 
 To know more about memory analysis check the [google tutorial](https://developer.chrome.com/devtools/docs/heap-profiling).
 
----
-
 ## Next Steps
 
 [CPU Profiling]({{ site.baseurl }}{% link en/plus/guide/cpu-profiling.md %})
-
----
 
 ## Questions?
 

@@ -13,8 +13,6 @@ section: runtime
 
 在这种情况下，必须将pm2作为依赖项添加，且必须使用启动脚本调用。
 
----
-
 ## 准备您的应用
 
 ### 设置您的生态系统文件
@@ -71,21 +69,15 @@ yarn add pm2
   }
 ```
 
----
-
 ## 部署您的应用
 
 现在，您可以将应用部署到您的云供应商中，就像您对常规node.js应用所做的那样。
-
----
 
 ## 下一步
 
 使用[生态系统文件]({{ site.baseurl }}{% link zh/runtime/guide/ecosystem-file.md %})完成您的配置
 
 使用 [PM2 Plus]({{ site.baseurl }}{% link zh/plus/integration/docker.md %})在仪表板上监控您的应用
-
----
 
 ## 疑问？
 

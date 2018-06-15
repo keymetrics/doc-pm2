@@ -13,8 +13,6 @@ Your dashboard already comes with a lot of metrics without any configuration. Bu
 
 PM2 comes with the [@pm2/io](https://github.com/keymetrics/pm2-io-apm/tree/master/test) module, which is a module that gathers the metrics displayed in `pm2 monit` or in the web dashboard. By default, it just wraps your app. If you however want to refine the configuration, add custom metrics or custom actions, you must require it in your code.
 
----
-
 ## Installation
 
 With npm:
@@ -28,8 +26,6 @@ With yarn:
 ```bash
 yarn add @pm2/io
 ```
-
----
 
 ## Intialisation
 
@@ -50,8 +46,6 @@ io.init({
 This first basic initialisation will add to the dashboard the port number your app is listening to.
 
 ?> See all intialisation options in the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}).
-
----
 
 ## Expose Custom Metrics
 
@@ -183,8 +177,6 @@ setInterval(() => {
 Options are:
 - **measurement** : default: mean; min, max, sum, count, variance, mean, stddev, median, p75, p95, p99, p99.
 
----
-
 ## Expose Remote Actions
 
 You can remotely trigger functions directly from your dashboard. After having been exposed from your code, action buttons can be found in the dedicated section.
@@ -234,8 +226,6 @@ io.scopedAction('long running lsof', (data, res) => {
 });
 ```
 
----
-
 ## Report Caught Exceptions
 
 By default, in the Issue tab, you are only alerted for uncaught exceptions. Any exception that you catch is not reported. You can manually report them with the `notify()` method.
@@ -250,16 +240,12 @@ io.notify('This is an error');
 io.notifyError(new Error('This is an error'));
 ```
 
----
-
 ## Next Steps
 
 
 Check the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}).
 
 [Notifications]({{ site.baseurl }}{% link en/plus/guide/notifications.md %})
-
----
 
 ## Questions?
 

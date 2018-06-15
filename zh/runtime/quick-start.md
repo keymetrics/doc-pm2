@@ -11,8 +11,6 @@ section: runtime
 
 只需几秒，本快速入门教程将向您展示如何运用pm2来作用于node.js应用。
 
----
-
 ## 安装
 
 使用yarn:
@@ -40,8 +38,6 @@ apt update && apt install sudo curl && curl -sL https://raw.githubusercontent.co
 ```bash
 pm2 completion install
 ```
-
----
 
 ## 管理多个进程
 
@@ -81,15 +77,11 @@ pm2 restart app
 
 您也可以设置一个 [启动脚本]({{ site.baseurl }}{% link zh/runtime/guide/installation.md %}), 以便在机器重启时自启动您的进程列表。
 
----
-
 ## 访问您的日志
 
 使用`pm2 logs app`**实时**访问您的日志。
 
 在 `~/.pm2/logs`文件夹中查看日志**历史**文件。
-
----
 
 ## 群集化
 
@@ -115,8 +107,6 @@ pm2 start app.js -i max
 pm2 reload app
 ```
 
----
-
 ## 使用CLI进行更多操作
 
 使用制表符，您可以使用自动完成功能：
@@ -127,13 +117,9 @@ pm2 reload app
 
 ![pm2帮助]({{ site.baseurl }}{% link img/runtime/help.png %})
 
----
-
 ## 下一步
 
 [生态系统文件]({{ site.baseurl }}{% link zh/runtime/guide/ecosystem-file.md %})
-
----
 
 ## 疑问？
 

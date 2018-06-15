@@ -11,8 +11,6 @@ section: runtime
 
 pm2也可以以编程方式使用，这意味着您可以直接在代码中嵌入流程管理器，产生流程，即使退出主脚本也能保持它们持续运行。
 
----
-
 ## 简单范例
 
 这个例子展示了如何用一些配置属性来启动app.js。 传递给初始的元素与您可以在生态系统文件中声明的元素相同：
@@ -41,8 +39,6 @@ pm2.connect(function(err) {
 ```
 
 ?> 如果您的脚本不能自行退出，请确保您调用 `pm2.disconnect()`。
-
----
 
 ## 程序化API
 
@@ -140,8 +136,6 @@ pm2.connect(function(err) {
 **`pm2.sendSignalToProcessName(signal, process, errback)`**
 
 * `errback(err, result)`
-
----
 
 ## 发送消息给进程
 

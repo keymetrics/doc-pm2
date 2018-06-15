@@ -11,8 +11,6 @@ redirect_from: "/runtime/guide/development-tools"
 
 PM2 comes with two development tools that will help you on the development stage: a watch and restart mode and a server for static files.
 
----
-
 ## Watch and Restart
 
 The watch and restart mode watches the current directory to detect file changes and auto-start.
@@ -61,8 +59,6 @@ pm2 start app.js --watch
 
 However, please note that when `--watch` is enabled, you must use `pm2 stop --watch <app_name>` to stop the process, as simple stop won't stop the watching.
 
----
-
 ## Serve static file over HTTP
 
 pm2 can serve static files (like a frontend app) over HTTP with:
@@ -100,13 +96,9 @@ pm2 start ecosystem.config.js
 
 ?> All other pm2 options are still available.
 
----
-
 ## Next Steps
 
 [Easy Deploy with SSH]({{ site.baseurl }}{% link en/runtime/guide/easy-deploy-with-ssh.md %})
-
----
 
 ## Questions?
 

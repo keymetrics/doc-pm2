@@ -15,8 +15,6 @@ The PM2 deploy tool's purpose is to automate this task.
 
 You set an array of distant hosts, a pre-deploy/post-deploy command line action, and you are done.
 
----
-
 ## Installation
 
 ### SSH setup
@@ -100,8 +98,6 @@ pm2 deploy production revert 1
 pm2 deploy production exec "pm2 reload all"
 ```
 
----
-
 ## Deployment options
 
 Display deploy help via `pm2 deploy help`:
@@ -119,8 +115,6 @@ pm2 deploy <configuration_file> <environment> <command>
     list                 list previous deploy commits
     [ref]                deploy to [ref], the "ref" setting, or latest tag
 ```
-
----
 
 ## Force deployment
 
@@ -142,8 +136,6 @@ If you want to deploy without pushing any data, you can append the `--force` opt
 pm2 deploy ecosystem.json production --force
 ```
 
----
-
 ## Considerations
 
 - You can use the option `--force` to skip local change detection
@@ -153,8 +145,6 @@ pm2 deploy ecosystem.json production --force
 - You can declare specific environment variables depending on the environment you want to deploy the code to. For instance to declare variables for the production environment, add "env_production": {} and declare the variables.
 
 - You can embed the "apps" & "deploy" section in the package.json
-
----
 
 ## SSH clone errors
 In most cases, these errors will be caused by `pm2` not having the correct keys to clone your repository. You need to verify at every step that the keys are available.
@@ -208,19 +198,13 @@ Host deployment
 # This is for cloning any repo that uses that IdentityFile. This is a good way to make sure that your remote cloning commands use the appropriate key
 ```
 
----
-
 ## Windows Consideration
 
 To run the deploy script under Windows, you need to use a unix shell like bash, so we recommend to install either [Git bash](https://git-scm.com/download/win), [Babun](http://babun.github.io/) or  [Cygwin](https://cygwin.com/install.html)
 
----
-
 ## Contributing
 
 This tool is a separate module of pm2. You can contribute to it [here](https://github.com/Unitech/pm2-deploy).
-
----
 
 ## Questions?
 

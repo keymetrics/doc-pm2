@@ -13,8 +13,6 @@ The purpose of a startup hook is to save your process list and bring it back at 
 
 Each OS has a specific tool to handle startup hooks: PM2 provides an easy way to generate and configure them.
 
----
-
 ## Installation
 
 To detect available init systems on your machine and generate a configuration, use:
@@ -31,8 +29,6 @@ Copy and paste in the CLI the ouput of this command to set up your startup hook.
 
 ?> You can customize the service name via the `--service-name <name>` option ([#3213](https://github.com/Unitech/pm2/pull/3213))
 
----
-
 ## Save your process list
 
 The startup hook auto load the process list that you have previously saved.
@@ -43,15 +39,11 @@ Save your process list with:
 pm2 save
 ```
 
----
-
 ## Disabling startup system
 
 ```bash
 pm2 unstartup
 ```
-
----
 
 ## User permissions
 
@@ -61,8 +53,6 @@ If you want the startup hook to be executed under another user, use the `-u <use
 pm2 startup ubuntu -u www --hp /home/ubuntu
 ```
 
----
-
 ## Update startup hook
 
 To update the startup hook run the following commands:
@@ -71,8 +61,6 @@ To update the startup hook run the following commands:
 pm2 unstartup
 pm2 startup
 ```
-
----
 
 ## Compatibility
 
@@ -95,8 +83,6 @@ Platform can be either one of the cited below:
 
 `[ubuntu | ubuntu14 | ubuntu12 | centos | centos6 | arch | oracle | amazon | macos | darwin | freebsd | systemd | systemv | upstart | launchd | rcd | openrc]`
 
----
-
 ## Under the hood
 
 - **ubuntu** use `updaterc.d` and the script `lib/scripts/pm2-init.sh`
@@ -105,19 +91,13 @@ Platform can be either one of the cited below:
 - **systemd** use `systemctl` and the script `lib/scripts/pm2.service`
 - **darwin** use `launchd` to load a specific `plist` to resurrect processes after reboot.
 
----
-
 ## Windows consideration
 
 There are some external libraries to generate a Windows compatible startup script, please checkout [pm2-windows-service](https://www.npmjs.com/package/pm2-windows-service) or [pm2-windows-startup](https://www.npmjs.com/package/pm2-windows-startup).
 
----
-
 ## Next Steps
 
 [Load-balancing (cluster mode)]({{ site.baseurl }}{% link en/runtime/guide/load-balancing.md %})
-
----
 
 ## Questions?
 

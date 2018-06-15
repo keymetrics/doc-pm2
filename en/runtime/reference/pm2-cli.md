@@ -9,8 +9,6 @@ redirect_from: "/runtime/reference/pm2-cli"
 
 # CLI reference
 
----
-
 ## pm2 Flags
 
 Flag name|Description
@@ -72,8 +70,6 @@ Flag name|Description
 --event-loop-inspector|enable event-loop-inspector dump in pmx
 --deep-monitoring|enable all monitoring tools (equivalent to --v8 --event-loop-inspector --trace)
 -h, --help|output usage information
-
----
 
 ## pm2 Commands
 
@@ -151,8 +147,6 @@ backward &lt;name&gt;|downgrades repository to the previous commit for a given a
 gc|force PM2 to trigger garbage collection
 deepUpdate|performs a deep update of PM2
 serve&#124;expose [path] [port]|serve a directory over http via port
-
----
 
 ## Questions?
 

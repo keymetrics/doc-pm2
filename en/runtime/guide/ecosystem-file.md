@@ -13,8 +13,6 @@ When deploying on multiple servers or when using multiple CLI arguments, an alte
 
 The purpose of the ecosystem file is to gather options and environment variables of all your applications.
 
----
-
 ## Generate a template
 
 Generate an `ecosystem.config.js` template with:
@@ -42,8 +40,6 @@ module.exports = {
 
 For more information about available properties, check the [ecosystem file reference]({{ site.baseurl }}{% link en/runtime/reference/ecosystem-file.md %}).
 
----
-
 ## Use your ecosystem file
 
 ### Routine
@@ -69,8 +65,6 @@ Use your ecosystem file only on a specific application with the option `--only <
 ```bash
 pm2 start --only app
 ```
-
----
 
 ## Environment variables
 
@@ -100,8 +94,6 @@ pm2 start ecosystem.config.js # uses variables from `env`
 pm2 start ecosystem.config.js --env production # uses variables from `env_production`
 ```
 
----
-
 ## Immutable environment
 
 Once added to your process list, the process environment is immutable.
@@ -126,13 +118,9 @@ pm2 restart ecosystem.config.js --update-env
 pm2 restart ecosystem.config.js --env production --update-env
 ```
 
----
-
 ## Next Steps
 
 [Process Management]({{ site.baseurl }}{% link en/runtime/guide/process-management.md %})
-
----
 
 ## Questions?
 

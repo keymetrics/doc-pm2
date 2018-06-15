@@ -13,8 +13,6 @@ section: runtime
 
 !> 我们强烈建议不要在**production**中使用它，因为它会减慢您的应用运行。 在这种情况下，您的应用必须被捆绑，即从源代码转换来获取应用的预处理版本.
 
----
-
 ## Babel Babel
 
 ```bash
@@ -37,8 +35,6 @@ pm2 start --watch index.js
 ```
 
 ?> 群集模式仅在第二个选项中可用。
-
----
 
 ## Coffee-script
 

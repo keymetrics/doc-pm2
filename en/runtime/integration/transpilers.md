@@ -13,8 +13,6 @@ This tutorial will show you how to use pm2 with transpilers.
 
 !> We highly don't recommend to use this in **production** as it slows down your app. In that case, your app must be bundled i.e. transpiled from the source to get a pre-processed version of your app.
 
----
-
 ## Babel
 
 ```bash
@@ -38,8 +36,6 @@ pm2 start --watch index.js
 
 ?> The cluster mode is only available with the second option.
 
----
-
 ## Coffee-script
 
 ```bash
@@ -62,8 +58,6 @@ pm2 start --watch index.js
 ```
 
 ?> The cluster mode is only available with the second option.
-
----
 
 ## Questions?
 

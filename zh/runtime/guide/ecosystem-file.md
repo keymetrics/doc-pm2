@@ -13,8 +13,6 @@ section: runtime
 
 生态系统文件的目的是收集您所有应用的选项和环境变量。
 
----
-
 ## 生成一个模版
 
 生成一个 `ecosystem.config.js` 模版：
@@ -42,8 +40,6 @@ module.exports = {
 
 有关可用属性的更多信息，请查看[生态系统文件参考]({{ site.baseurl }}{% link zh/runtime/reference/ecosystem-file.md %})。
 
----
-
 ## 使用您的生态系统文件
 
 ### 常规
@@ -64,8 +60,6 @@ pm2 reload ecosystem.config.js
 ```bash
 pm2 restart ecosystem.config.js --only app
 ```
-
----
 
 ## 环境变量
 
@@ -95,8 +89,6 @@ pm2 start ecosystem.config.js
 pm2 start ecosystem.config.js --env production
 ```
 
----
-
 ## 不可变环境
 
 一旦添加到您的流程列表中，流程环境是不可变的。
@@ -121,13 +113,9 @@ pm2 restart ecosystem.config.js --update-env
 pm2 restart ecosystem.config.js --env production --update-env
 ```
 
----
-
 ## 下一步
 
 [进程管理]({{ site.baseurl }}{% link zh/runtime/guide/process-management.md %})
-
----
 
 ## 疑问？
 

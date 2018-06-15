@@ -9,8 +9,6 @@ section: runtime
 
 # CLI参考
 
----
-
 ## pm2 Flags
 
 Flag名称|描述
@@ -72,8 +70,6 @@ Flag名称|描述
 --event-loop-inspector|在pmx中启用事件循环检查器转储
 --deep-monitoring|启用所有监控工具（相当于--v8 --event-loop-inspector --trace）
 -h, --help|输出使用信息
-
----
 
 ## pm2命令
 

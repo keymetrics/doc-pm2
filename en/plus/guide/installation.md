@@ -11,13 +11,9 @@ redirect_from: "/plus/guide/installation"
 
 We assume that your app have been started with PM2. If not, follow the [Quick Start]({{ site.baseurl }}{% link en/runtime/quick-start.md %}) tutorial.
 
----
-
 ## Create an account
 
 Register [here](https://id.keymetrics.io/api/oauth/register).
-
----
 
 ## Connect your server to the dashboard
 
@@ -40,8 +36,6 @@ In order to make PM2 Plus works, ensure that this ports are open:
 
 If you also need to whitelist IP adresses, allow these ones:
 163.172.76.240, 62.210.94.153, 195.154.156.78, 62.210.100.99, 62.210.102.213, 62.4.21.42, 62.4.21.98 and 163.172.20.79.
-
----
 
 ## Install CPU/Memory profiling
 
@@ -67,21 +61,15 @@ Then reload your application to enable the profiler:
 pm2 reload all
 ```
 
----
-
 ## You are done
 
 Go back to the dashboard, you have now access to realtime metrics of your app.
 
 ![dashboard view]({{ site.baseurl }}{% link img/plus/unified.png %})
 
----
-
 ## Next Steps
 
 [Configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
-
----
 
 ## Questions?
 

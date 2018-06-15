@@ -13,13 +13,9 @@ Environment variables are special variables that can be set out of your Node.js 
 
 This tutorial will give you an overview on how to use environment variables in Node.js.
 
----
-
 ## Set environment
 
 When starting an app with Node.js, the current environment of your shell is injected into your app environment. These variables are available in `process.env.ENV_NAME`.
-
----
 
 ## The NODE_ENV environment variable
 
@@ -48,8 +44,6 @@ module.exports = {
 ```
 
 Start your application with `pm2 start app --env production` to start your app in production mode.
-
----
 
 ## Questions?
 

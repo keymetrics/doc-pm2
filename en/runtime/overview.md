@@ -14,8 +14,6 @@ redirect_from:
 
 Why use PM2 ? At the end of this overview, you will better understand the benefits of using PM2 as a process manager.
 
----
-
 ## Forever Alive
 
 Once started, your app is forever alive, auto-restarting across crashes and machine restarts.
@@ -27,8 +25,6 @@ pm2 start app.js
 
 [Quick Start]({{ site.baseurl }}{% link en/runtime/quick-start.md %})
 
-
----
 
 ## Process Management
 
@@ -49,8 +45,6 @@ Manage your processes with `pm2 start`, `pm2 stop`, `pm2 restart`.
 [Process Management]({{ site.baseurl }}{% link en/runtime/guide/process-management.md %})
 
 
----
-
 ## Log Management
 
 Application logs are saved in the hard disk of your servers into `~/.pm2/logs/`.
@@ -64,8 +58,6 @@ pm2 logs <app_name>
 [Log Management]({{ site.baseurl }}{% link en/runtime/guide/log-management.md %})
 
 
----
-
 ## Zero-config Load-Balancer
 
 PM2 can scale up your application by creating several child processes that share the same server port. Doing this also allow you to restart your app with zero-seconds downtimes.
@@ -77,8 +69,6 @@ pm2 start -i max
 
 [Load-Balancing]({{ site.baseurl }}{% link en/runtime/guide/load-balancing.md %})
 
----
-
 ## In-terminal monitoring
 
 ![Local monitoring with PM2]({{ site.baseurl }}{% link img/runtime/monit.png %})
@@ -88,8 +78,6 @@ You can monitor your app in the terminal and check app health (CPU usage, memory
 ```bash
 pm2 monit
 ```
-
----
 
 ## Easy deploy with SSH
 
@@ -101,13 +89,9 @@ pm2 deploy
 
 [Easy deploy with SSH]({{ site.baseurl }}{% link en/runtime/guide/easy-deploy-with-ssh.md %})
 
----
-
 ## Next Steps
 
 [Quick Start]({{ site.baseurl }}{% link en/runtime/quick-start.md %})
-
----
 
 ## Questions?
 

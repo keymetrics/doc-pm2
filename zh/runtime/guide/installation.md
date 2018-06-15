@@ -9,8 +9,6 @@ section: runtime
 
 # 安装
 
----
-
 ## 安装PM2
 
 使用yarn:
@@ -44,8 +42,6 @@ pm2 completion install
 
 ?> 什么是源地图文件？如果正使用Babel，Typescript或任何其他Javascript超集，您可能已经注意到堆栈跟踪没有意义，错误不会指向正确的行。源地图文件则可以用来解决这个问题。
 
----
-
 ## 更新
 
 让您的PM2保持最新状态：
@@ -56,13 +52,9 @@ npm install pm2 -g && pm2 update
 
 ?> `pm2 update` 是必要的，以便刷新pm2的守护进程。
 
----
-
 ## 下一步
 
 [生态系统文件]({{ site.baseurl }}{% link zh/runtime/guide/ecosystem-file.md %})
-
----
 
 ## 疑问？
 

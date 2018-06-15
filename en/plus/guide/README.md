@@ -13,8 +13,6 @@ redirect_from: "/plus/guide/"
 
 Follow this guide and get your Node.js app monitored by PM2 Plus in minutes!
 
----
-
 ## Terminology
 
 Let's first explain some terminology we will use across this guide:

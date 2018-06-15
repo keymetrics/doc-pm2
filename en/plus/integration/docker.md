@@ -13,13 +13,9 @@ In seconds, this tutorial will show you how to monitor a Node.js application wit
 
 We assume that your app has already been wrapped with PM2. If not, follow the [PM2 Docker Tutorial]({{ site.baseurl }}{% link en/runtime/integration/docker.md %}).
 
----
-
 ## Create an account
 
 Register [here](https://id.keymetrics.io/api/oauth/register).
-
----
 
 ## Install the profiler
 
@@ -28,8 +24,6 @@ Add this to your Dockerfile to install the profiler:
 ```Dockerfile
 RUN pm2 install profiler
 ```
-
----
 
 ## Link your app with PM2 Plus
 
@@ -41,8 +35,6 @@ PM2_SECRET_KEY=XXXXX
 PM2_PUBLIC_KEY=YYYYY
 ```
 and restart your container with `docker run`adding `--env-file .env` to load the environment variables.
-
----
 
 ## Set the server name in PM2 Plus
 
@@ -58,13 +50,9 @@ PM2_MACHINE_NAME=docker-server
 
 ?> Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
 
----
-
 ## Next Steps
 
 Complete your dashboard [configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
-
----
 
 ## Questions?
 

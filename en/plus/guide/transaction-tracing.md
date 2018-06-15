@@ -15,8 +15,6 @@ The transaction tracing is useful to troubleshoot performance issues and get det
 
 Slow HTTP calls are identified and the database and external calls are aggregated to understand why.
 
----
-
 ## Enable the transaction tracing
 
 The transaction tracing is disabled by default. On big infrastructure, you should only use the transaction tracing for a few days to collect informations and then disable it because there is no sampling and all requests are treated.
@@ -59,8 +57,6 @@ Disable with:
 pm2 reload <app_name> --disable-trace
 ```
 
----
-
 ## Transaction tracing dashboard
 
 ### Latency graph
@@ -89,8 +85,6 @@ Let's examine a specific variance:
 
 You can then click on another **variance** to examine why and how the behaviour was different.
 
----
-
 ## Under the hood
 
 PMX will wrap below modules if they exist in your application :
@@ -106,8 +100,6 @@ PMX will wrap below modules if they exist in your application :
 
 Then record all requests made or received by them then sended to PM2 Plus to be aggregated.
 The impact on performance should be low since there is no heavy logic done in your process except wrap modules and sending data.
-
----
 
 ## Things to know
 
@@ -125,13 +117,9 @@ The impact on performance should be low since there is no heavy logic done in yo
   - `request-promise`: clears the node cache and requires a new clean version of the `http` module. To solve this, require `http` again after requiring `request-promise` to get the correctly wrapped `http` module.
   - `node-newrelic`: works as we do, so you might encounter problems with it.
 
----
-
 ## Next Steps
 
 [Profiling]({{ site.baseurl }}{% link en/plus/guide/memory-profiling.md %})
-
----
 
 ## Questions?
 

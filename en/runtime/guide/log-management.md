@@ -13,8 +13,6 @@ Logs are available at realtime and are saved into your hard disk.
 
 The way your logs are formatted, the way log files are created: everything can be customized.
 
----
-
 ## Access the logs
 
 ### Real-time logs
@@ -36,8 +34,6 @@ You can empty all application logs with:
 ```bash
 pm2 flush
 ```
-
----
 
 ## Log files configuration
 
@@ -69,8 +65,6 @@ pm2 install pm2-logrotate
 
 Learn how to configure the module [here](https://github.com/keymetrics/pm2-logrotate).
 
----
-
 ## Merging Logs
 
 In cluster mode, each cluster has his own log files. You can use the merge options to gather all logs into a single file:
@@ -89,8 +83,6 @@ module.exports = {
 
 ?> Logs are still splitted into output/error/log
 
----
-
 ## Disabling Logs
 
 You can disable logs by sending them to /dev/null:
@@ -105,8 +97,6 @@ module.exports = {
     }]
 }
 ```
-
----
 
 ## Log formating
 
@@ -154,13 +144,9 @@ Add this entry in your ecosystem file:
 
 The format must follow a moment.js format, list [here](https://momentjs.com/docs/#/parsing/string-format/).
 
----
-
 ## Next Steps
 
 [Startup Hook]({{ site.baseurl }}{% link en/runtime/guide/startup-hook.md %})
-
----
 
 ## Questions?
 

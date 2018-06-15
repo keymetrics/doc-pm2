@@ -13,13 +13,9 @@ section: runtime
 
 本教程将向您介绍如何在Node.js中使用环境变量。
 
----
-
 ## 设置环境
 
 当使用Node.js启动应用时，您外壳的当前环境将被注入到您的应用环境中。 这些变量在 `process.env.ENV_NAME`中可用
-
----
 
 ## NODE_ENV环境变量
 

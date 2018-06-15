@@ -13,8 +13,6 @@ section: runtime
 
 日志格式化的方式，创建日志文件的方式：所有内容都可以自定义。
 
----
-
 ## 访问日志
 
 ### 实时日志
@@ -36,8 +34,6 @@ pm2 logs app
 ```bash
 pm2 flush
 ```
-
----
 
 ## 日志文件配置
 
@@ -69,8 +65,6 @@ pm2 install pm2-logrotate
 
 在[这里](https://github.com/keymetrics/pm2-logrotate)了解如何配置模块。
 
----
-
 ## 合并日志
 
 在群集模式下，每个群集都有自己的日志文件。 您可以使用合并选项将所有日志收集到单个文件中：
@@ -89,8 +83,6 @@ module.exports = {
 
 ?> 日志仍然分为output/error/log
 
----
-
 ## 禁用日志
 
 您可以通过将日志发送到 /dev/null 来禁用日志：
@@ -105,8 +97,6 @@ module.exports = {
     }]
 }
 ```
-
----
 
 ## 格式化日志
 
@@ -154,13 +144,9 @@ echo
 
 格式必须遵循moment.js格式，清单在 [此处](https://momentjs.com/docs/#/parsing/string-format/)。
 
----
-
 ## 下一步
 
 [启动挂钩]({{ site.baseurl }}{% link zh/runtime/guide/startup-hook.md %})
-
----
 
 ## 疑问？
 

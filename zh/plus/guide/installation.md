@@ -11,13 +11,9 @@ section: plus
 
 我们假设您的应用已开始使用PM2 runtime。 如果没有，请参考 [快速入门]({{ site.baseurl }}{% link en/runtime/quick-start.md %}) 教程。
 
----
-
 ## 创建一个帐户
 
 在 [此处](https://id.keymetrics.io/api/oauth/register)注册。
-
----
 
 ## 将您的服务器连接到仪表板
 
@@ -40,8 +36,6 @@ pm2 link <secret> <public>
 
 如果您还需要将IP地址列入白名单，请允许下列地址：
 163.172.76.240, 62.210.94.153, 195.154.156.78, 62.210.100.99, 62.210.102.213, 62.4.21.42, 62.4.21.98 and 163.172.20.79.
-
----
 
 ## 安装CPU/内存分析
 
@@ -67,21 +61,15 @@ pm2 install profiler
 pm2 reload all
 ```
 
----
-
 ## 您已完成
 
 返回仪表板，您现在已可以访问您应用的实时指标。
 
 ![仪表板视图]({{ site.baseurl }}{% link img/plus/unified.png %})
 
----
-
 ## 下一步
 
 [配置]({{ site.baseurl }}{% link zh/plus/guide/configuration.md %})
-
----
 
 ## 疑问？
 
