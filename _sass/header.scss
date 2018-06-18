@@ -5,13 +5,13 @@
 }
 
 .header-section .header-container {
-  background-color: #171E27;
+  background-color: #171e27;
   display: flex;
   align-items: center;
   min-height: $header-height;
   padding-left: 16px;
   padding-right: 16px;
-  box-shadow: 0px 13px 55px -28px rgba(0,0,0,0.82);
+  box-shadow: 0 13px 55px -28px rgba(0, 0, 0, 0.82);
 
   ul {
     padding: 0;
@@ -22,9 +22,6 @@
 
   .logo-header {
     margin: 0 30px;
-  }
-
-  .header-links {
   }
 
   .burger-header {
@@ -48,6 +45,7 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 17px;
+
       &:hover {
         opacity: 0.8;
       }
@@ -59,23 +57,28 @@
   .burger-header {
     display: block !important;
     color: white;
-    &:hover{
-      cursor:pointer;
+
+    &:hover {
+      cursor: pointer;
       opacity: 0.8;
     }
+
     .material-icons {
       font-size: 20px;
     }
   }
+
   .logo-header {
     display: none;
   }
+
   .search-header {
     display: none;
   }
 
   .header-links {
     width: 100%;
+
     .header-nav-links li {
       text-align: center;
       flex: 1;
@@ -107,10 +110,11 @@
 /**
  * Algolia Search
  */
-.search-wrapper input:hover,.search-wrapper input:active,.search-wrapper input:focus{
-  outline:none;
+.search-wrapper input:hover,
+.search-wrapper input:active,
+.search-wrapper input:focus {
+  outline: none;
 }
-
 
 .algolia-results {
   position: absolute;
@@ -120,8 +124,9 @@
   padding: 20px 20px;
   border-radius: 5px;
 }
+
 .algolia-results a,
-.algolia-results a:visited{
+.algolia-results a:visited {
   color:white;
   font-weight: 400;
 }
@@ -132,25 +137,25 @@
 .search-wrapper {
   position: relative;
 
-    input {
-      background-color: #ffffff;
-      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
-      font-size: 15px;
-      color: #979797;
-      font-weight: 400;
-      margin: 0px;
-      max-width: 266px;
-      border: none;
-      text-align: left;
-      padding-left: 35px;
-      padding-right: 35px;
-      border-radius: 20px;
-      height: 35px;
+  input {
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    color: #979797;
+    font-weight: 400;
+    margin: 0;
+    max-width: 266px;
+    border: none;
+    text-align: left;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 20px;
+    height: 35px;
   }
 }
-#hits{
-         display: none;
+#hits {
+  display: none;
 }
-#hits.hide{
-         display:none!important;
+#hits.hide {
+  display: none !important;
 }

@@ -1,6 +1,5 @@
 
 .homepage {
-
   .content-home {
     flex: 1;
     overflow: auto;
@@ -8,7 +7,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background-image: url($baseurl + "/img/backgrounds/bg-squares.png");
     background-position: bottom left;
     background-attachment: fixed;
@@ -19,22 +17,25 @@
       text-decoration: none;
 
       :hover {
-        transition: opacity .15s ease-in-out;
+        transition: opacity 0.15s ease-in-out;
         opacity: 0.6;
       }
     }
+
     .product-line {
-      text-align:center;
+      text-align: center;
       margin-bottom: 50px;
-      padding : 15px;
+      padding: 15px;
+
       h2 {
-        margin:0;
+        margin: 0;
         color: white;
         margin-top: 15px;
         font-size: 24px;
       }
+
       .logo-img {
-        width : 500px;
+        width: 500px;
         display: block;
       }
     }
@@ -49,8 +50,9 @@
   h2 {
     font-size: 22px !important;
   }
+
   .logo-img {
-    margin:0 auto;
+    margin: 0 auto;
     width: 250px !important;
   }
 }

@@ -1,19 +1,19 @@
-body,html{
+body,
+html {
   font-family: 'Lato', sans-serif;
-  height:100%;
-  -webkit-font-smoothing:antialiased;
-  -webkit-overflow-scrolling:touch;
-  -webkit-tap-highlight-color:rgba(0,0,0,0);
-  -webkit-text-size-adjust:none;
-  -webkit-touch-callout:none;
-  box-sizing:border-box;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  box-sizing: border-box;
 }
 
 // Scrollbar customization
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
   border-radius: 10px;
-  background-color: darken(#252B37, 4%);
+  background-color: darken(#252b37, 4%);
 }
 
 ::-webkit-scrollbar {
@@ -22,39 +22,20 @@ body,html{
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 1.5px solid darken(#252B37, 4%);
+  border: 1.5px solid darken(#252b37, 4%);
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-}
-.runtime-page {
-  ::-webkit-scrollbar-thumb {
-    background-color: $color_runtime;
-  }
-}
-.plus-page {
-  ::-webkit-scrollbar-thumb {
-    background-color: $color_plus;
-  }
-}
-.enterprise-page {
-  ::-webkit-scrollbar-thumb {
-    background-color: $color_enterprise;
-  }
 }
 
 body {
-  background-color: #d3e0f0;
-  -moz-osx-font-smoothing:grayscale;
-  -webkit-font-smoothing:antialiased;
-  font-size:18px;
-  letter-spacing:0;
-  margin:0;
-  overflow-x:hidden;
-
-  display:flex;
-  flex-direction:column;
-
-  background-color: #171E27;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  letter-spacing: 0;
+  margin: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #171e27;
   background-size: cover;
 }
 
@@ -66,19 +47,36 @@ div.content-container {
   div.content-container {
     background-image: url($baseurl + "/img/backgrounds/bg-doc_runtime.png");
   }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $color_runtime;
+  }
 }
+
 .plus-page {
   div.content-container {
     background-image: url($baseurl + "/img/backgrounds/bg-doc_plus.png");
   }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $color_plus;
+  }
 }
+
 .enterprise-page {
   div.content-container {
     background-image: url($baseurl + "/img/backgrounds/bg-doc_enterprise.png");
   }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $color_enterprise;
+  }
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: Saira, sans-serif;
   color: #202a37;
 }
@@ -100,6 +98,7 @@ h1, h2, h3, h4 {
     .content-main {
       max-width: 70%;
       margin: 0 auto;
+
       @media screen and (max-width: 1300px) {
         max-width: 860px;
       }
@@ -116,6 +115,7 @@ h1, h2, h3, h4 {
       .algolia-autocomplete {
         width: 100%;
       }
+
       input {
         box-sizing: border-box;
         border-radius: 5px !important;
@@ -134,6 +134,7 @@ h1, h2, h3, h4 {
       padding-right: 2px;
       padding-top: 19px;
     }
+
     .edit-page {
       display: none;
     }
@@ -145,42 +146,39 @@ h1, h2, h3, h4 {
   left: 0.5em;
   opacity: 0;
   font-size: 0.8em;
-
-  -webkit-transition: opacity 0.2s ease-in-out 0.1s;
-  -moz-transition: opacity 0.2s ease-in-out 0.1s;
-  -ms-transition: opacity 0.2s ease-in-out 0.1s;
 }
 
-.app-sub-sidebar li:before{
-  content:"-";
-  padding-right:4px;
-  float:left
+.app-sub-sidebar li:before {
+  content: "-";
+  padding-right: 4px;
+  float: left;
 }
 
-
-img{
-  max-width:100%
-}
-a[disabled]{
-  cursor:not-allowed;
-  opacity:.6
-}
-.task-list-item{
-  list-style-type:none
-}
-li input[type=checkbox]{
-  margin:0 .2em .25em -1.6em;
-  vertical-align:middle
+img {
+  max-width: 100%;
 }
 
+a[disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
 
-.breadcrumbs{
-	margin-bottom: 30px!important;
+.task-list-item {
+  list-style-type: none;
+}
+
+li input[type=checkbox] {
+  margin: 0 0.2em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.breadcrumbs {
+	margin-bottom: 30px !important;
   border-radius: 2px;
 
   @media screen and (max-width: $mobile_offset) {
     padding: 4px 10px;
-    text-align:center;
+    text-align: center;
   }
 
   p {
@@ -194,6 +192,7 @@ li input[type=checkbox]{
 
 .show-menu {
   display: none;
+
   @media screen and (max-width: $mobile_offset) {
     display: block;
     margin: 0 auto;

@@ -1,28 +1,23 @@
-.markdown-section{
-  position:relative;
-  padding:30px;
+.markdown-section {
+  position: relative;
+  padding: 30px;
   border-radius: 2px;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
 
   @media screen and (max-width: $mobile_offset) {
     padding: 15px;
   }
 
-
-
-  h1, h2, h3, h4 {
-    font-weight: 400;
+  a {
+    color: #3f83b7;
   }
 
-  h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-weight: 400;
-    &:hover {
-      cursor:pointer;
-      .header-link {
-        opacity: 1;
-      }
-    }
   }
 
   h1 {
@@ -32,44 +27,54 @@
 
   h2 {
     font-size: 32px;
-    margin: 0 0 25px 0;
+    margin: 25px 0;
+
     a {
       text-decoration: none;
     }
-  }
-  h2:not(:first-child) {
-    margin-top: 66px;
   }
 
   h1 + h2 {
     margin-top: 10px !important;
   }
-  
+
   h3 {
     font-size: 28px;
-    margin: 0 0 25px 0;
+    margin: 25px 0;
+
     a {
       color: #333;
       text-decoration: none;
     }
-  }
-  
-  h3:not(:first-child) {
-    margin-top: 66px;
   }
 
   h2 + h3 {
     margin-top: 10px !important;
   }
 
+  h2,
+  h3,
+  h4 {
+    &:hover {
+      cursor: pointer;
+
+      .header-link {
+        opacity: 1;
+      }
+    }
+  }
+
   .anchor-title:before {
-    content:"";
-    display:inline-block;
-    position:absolute;
+    content: "";
+    display: inline-block;
+    position: absolute;
     top: 200px;
   }
 
-  blockquote, ol, p, ul {
+  blockquote,
+  ol,
+  p,
+  ul {
     margin: 1em auto 0;
     padding: 0;
   }
@@ -77,10 +82,6 @@
   p {
     line-height: 28px;
     font-size: 18px;
-  }
-
-  a {
-    color: #3f83b7;
   }
 
   // Customization of orphan link
@@ -122,11 +123,11 @@
     color: white;
   }
 
-  em{
+  em {
     color:#7f8c8d
   }
 
-  .warn{
+  .warn {
     border-radius: 2px;
     background-color: rgba(206, 183, 1, 0.08)!important;
     border: solid 1px #ceb701;
@@ -142,7 +143,7 @@
     padding:1rem
   }
 
-  iframe{
+  iframe {
     border:1px solid #eee;
     margin:1em 0;
   }
@@ -291,20 +292,4 @@ hr {
 
 code.highlighter-rouge {
   background-color: #d0d0d0 !important;
-}
-
-/*Copy plugin*/
-button.docsify-copy-code-button{
-
-    height: 36px;
-    background-color: #3eb1f3;
-    border-radius: 5px;
-    z-index: 99999;
-    margin-right: 5px;
-    margin-top: 5px;
-    text-align: center;
-    padding: 5px;
-}
-.docsify-copy-code-button::after{
-    display: none;
 }
