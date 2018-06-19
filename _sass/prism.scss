@@ -6,8 +6,8 @@ https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clik
  * @author ocodia
  */
 
-code[class*="language-"],
-pre[class*="language-"] {
+div[class*="language-"] code,
+div[class*="language-"] pre {
 	color: #f8f8f2;
 	background: none;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
@@ -30,20 +30,20 @@ pre[class*="language-"] {
 }
 
 /* Code blocks */
-pre[class*="language-"] {
+div[class*="language-"] pre {
 	padding: 1em;
 	margin: 1em 0;
 	overflow: auto;
 	border-radius: 0.3em;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+div[class*="language-"] :not(pre) > code,
+div[class*="language-"] pre {
 	background: #272822;
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
+div[class*="language-"] :not(pre) > code {
 	padding: .1em;
 	border-radius: .3em;
 	white-space: normal;
