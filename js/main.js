@@ -10,14 +10,14 @@
 
   // Automatically add btn class to link that are alone (meaning transform to buttons)
   function addBtnClassToOrphanP() {
-    if ($('.markdown-section').length > 0) {
-      $('.markdown-section p').each(function(el, obj) {
-        if ($(obj).clone().find('a').remove().end().html().trim().length == 0) {
-          $(obj).find('a').addClass('btn-stylized')
-          $(obj).addClass('centerize')
-        }
-      });
-    }
+    // if ($('.markdown-section').length > 0) {
+    //   $('.markdown-section p').each(function(el, obj) {
+    //     if ($(obj).clone().find('a').remove().end().html().trim().length == 0) {
+    //       $(obj).find('a').addClass('btn-stylized')
+    //       $(obj).addClass('centerize')
+    //     }
+    //   });
+    // }
   }
 
   function setAnchors() {

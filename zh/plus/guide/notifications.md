@@ -139,6 +139,7 @@ Slack集成允许您在选定的Slack频道直接接收异常情况和事件通�
 ## 下一步
 
 [问题仪表板]({{ site.baseurl }}{% link zh/plus/guide/issue-dashboard.md %})
+{: .btn-stylized}
 
 ## 疑问？
 

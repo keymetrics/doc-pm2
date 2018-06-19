@@ -147,6 +147,7 @@ echo
 ## 下一步
 
 [启动挂钩]({{ site.baseurl }}{% link zh/runtime/guide/startup-hook.md %})
+{: .btn-stylized}
 
 ## 疑问？
 

@@ -20,6 +20,7 @@ Why monitor your app with PM2 Plus ? At the end of this overview, you'll have a 
 PM2 Plus allows you to have an extended view of all your apps and databases in one single place, at real-time or through history. **Stop ssh in all your servers one by one**, instead, save time by having a condensed infrastructure plus view.
 
 [Quick Start]({{ site.baseurl }}{% link en/plus/quick-start.md %})
+{: .btn-stylized}
 
 ### Custom Metrics
 
@@ -28,6 +29,7 @@ PM2 Plus allows you to have an extended view of all your apps and databases in o
 Expose the important variables from your Node.js applications source code and display them as performance metrics on the PM2 Plus dashboard. **Monitor values that matter.**
 
 [Configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
+{: .btn-stylized}
 
 ### Notifications
 
@@ -38,6 +40,7 @@ Know when a data reaches a threshold, when an error occurred in your application
 Even though PM2 makes sure that your application have no downtime, be notified in these critical situation in order to react. **Be notified and reactive in any critical situations.**
 
 [Notifications]({{ site.baseurl }}{% link en/plus/guide/notifications.md %})
+{: .btn-stylized}
 
 ## Debug & Optimize
 
@@ -50,6 +53,7 @@ PM2 Plus reports the list of all errors in the "Issue Dashboard" occurred in you
 Stop spending time finding bugs or trying to replay them, we provide you an "Issue Dashboard" with everything in one place, to make debugging easier. **Drill down in your code and get the answer.**
 
 [Issue Dashboard]({{ site.baseurl }}{% link en/plus/guide/issue-dashboard.md %})
+{: .btn-stylized}
 
 ### Transaction Tracing
 
@@ -60,6 +64,7 @@ Record and aggregate the database and external calls that your application makes
 The "Transaction Tracing" helps you troubleshoot performance issues and to get detailed low-level insight into how your app is working (slowest routes, most consuming, number of calls). **Provide a better user experience and make your app faster.**
 
 [Transaction Tracing]({{ site.baseurl }}{% link en/plus/guide/transaction-tracing.md %})
+{: .btn-stylized}
 
 ### Memory Profiling
 
@@ -70,6 +75,7 @@ Take memory heapdumps straight from your production servers.
 **Memory profiling lets you find any memory leaks in your application.**
 
 [Memory Profiling]({{ site.baseurl }}{% link en/plus/guide/memory-profiling.md %})
+{: .btn-stylized}
 
 ### CPU Profiling
 
@@ -78,6 +84,7 @@ Take CPU snapshots straight from your production servers.
 **CPU profiling helps you identify particular resource-heavy tasks.**
 
 [CPU Profiling]({{ site.baseurl }}{% link en/plus/guide/cpu-profiling.md %})
+{: .btn-stylized}
 
 ## Extra-features
 
@@ -90,6 +97,7 @@ PM2 Plus makes possible to enhance custom functions in the source code of your a
 For example, you can assign values to your application variables or just switch it to maintenance mode. In other words you can **expose triggerable functions in your code**.
 
 [Remote action]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
+{: .btn-stylized}
 
 ### Third-party modules
 
@@ -100,11 +108,13 @@ Extend the capabilities of the PM2 Plus dashboard by using external modules list
 **Anyone can create and publish its own module.**
 
 [Modules]({{ site.baseurl }}{% link en/plus/guide/modules.md %})
+{: .btn-stylized}
 
 
 ### Next Steps
 
 [Quick Start]({{ site.baseurl }}{% link en/plus/quick-start.md %})
+{: .btn-stylized}
 
 ### Questions?
 

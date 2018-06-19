@@ -53,6 +53,7 @@ app.use(pmx.expressErrorHandler())
 ## 下一步
 
 [事务跟踪]({{ site.baseurl }}{% link zh/plus/guide/transaction-tracing.md %})
+{: .btn-stylized}
 
 ## 疑问？
 

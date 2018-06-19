@@ -30,8 +30,8 @@
         </div>
 
         <main id="main" class="markdown-section">
+          {% include edit-page/edit-page-{{ page.lang }}.html %}
           <section>
-            {% include edit-page/edit-page-{{ page.lang }}.html %}
             {{ content }}
           </section>
           <aside>

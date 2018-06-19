@@ -70,6 +70,7 @@ Go back to the dashboard, you have now access to realtime metrics of your app.
 ## Next Steps
 
 [Configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
+{: .btn-stylized}
 
 ## Questions?
 

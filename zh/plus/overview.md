@@ -81,6 +81,7 @@ Pm2模块可以是日志轮换模块，数据库监控模块，一个独立的ht
 ### 下一步
 
 [快速入门]({{ site.baseurl }}{% link zh/plus/quick-start.md %})
+{: .btn-stylized}
 
 ### 疑问？
 

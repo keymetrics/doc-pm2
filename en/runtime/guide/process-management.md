@@ -128,6 +128,7 @@ pm2 monit
 ## Next Steps
 
 [Log Management]({{ site.baseurl }}{% link en/runtime/guide/log-management.md %})
+{: .btn-stylized}
 
 ## Questions?
 

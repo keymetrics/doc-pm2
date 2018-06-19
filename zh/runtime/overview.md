@@ -77,6 +77,7 @@ pm2 deploy
 ## 下一步
 
 [快速开始]({{ site.baseurl }}{% link zh/runtime/quick-start.md %})
+{: .btn-stylized}
 
 ## 疑问？
 

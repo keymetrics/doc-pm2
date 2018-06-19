@@ -55,6 +55,7 @@ npm install pm2 -g && pm2 update
 ## 下一步
 
 [生态系统文件]({{ site.baseurl }}{% link zh/runtime/guide/ecosystem-file.md %})
+{: .btn-stylized}
 
 ## 疑问？
 

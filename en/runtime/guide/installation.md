@@ -55,6 +55,7 @@ npm install pm2 -g && pm2 update
 ## Next Steps
 
 [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
+{: .btn-stylized}
 
 ## Questions?
 

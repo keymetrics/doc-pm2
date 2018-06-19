@@ -97,6 +97,7 @@ module.exports = {
 ## Next Steps
 
 [Development tools]({{ site.baseurl }}{% link en/runtime/guide/development-tools.md %})
+{: .btn-stylized}
 
 ## Questions?
 

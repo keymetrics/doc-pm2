@@ -98,6 +98,7 @@ pm2 [startup | unstartup] [platform]
 ## 下一步
 
 [负载平衡 (群集模式)]({{ site.baseurl }}{% link zh/runtime/guide/load-balancing.md %})
+{: .btn-stylized}
 
 ## 疑问？
 

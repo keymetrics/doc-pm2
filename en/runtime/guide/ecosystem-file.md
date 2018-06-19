@@ -121,6 +121,7 @@ pm2 restart ecosystem.config.js --env production --update-env
 ## Next Steps
 
 [Process Management]({{ site.baseurl }}{% link en/runtime/guide/process-management.md %})
+{: .btn-stylized}
 
 ## Questions?
 

@@ -137,6 +137,7 @@ pm2 reload <app_name> --disable-trace
 ## 下一步
 
 [分析]({{ site.baseurl }}{% link zh/plus/guide/memory-cpu-profiling.md %})
+{: .btn-stylized}
 
 ## 疑问？
 

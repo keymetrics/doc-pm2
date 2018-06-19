@@ -97,6 +97,7 @@ module.exports = {
 ## 下一步
 
 [开发工具]({{ site.baseurl }}{% link zh/runtime/guide/development-tools.md %})
+{: .btn-stylized}
 
 ## 疑问？
 

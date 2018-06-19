@@ -116,6 +116,7 @@ pm2 restart ecosystem.config.js --env production --update-env
 ## 下一步
 
 [进程管理]({{ site.baseurl }}{% link zh/runtime/guide/process-management.md %})
+{: .btn-stylized}
 
 ## 疑问？
 

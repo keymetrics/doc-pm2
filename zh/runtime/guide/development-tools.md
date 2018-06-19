@@ -99,6 +99,7 @@ pm2 start ecosystem.config.js
 ## 下一步
 
 [使用SSH轻松部署 ]({{ site.baseurl }}{% link en/runtime/guide/easy-deploy-with-ssh.md %})
+{: .btn-stylized}
 
 ## 疑问？
 

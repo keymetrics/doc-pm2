@@ -246,6 +246,7 @@ io.notifyError(new Error('This is an error'));
 Check the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}).
 
 [Notifications]({{ site.baseurl }}{% link en/plus/guide/notifications.md %})
+{: .btn-stylized}
 
 ## Questions?
 

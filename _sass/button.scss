@@ -4,25 +4,29 @@
   background: linear-gradient(45deg, $from, $to);
 }
 
+p.btn-stylized {
+  text-align: center;
+}
+
 .runtime-page {
-  a.btn-stylized {
+  p.btn-stylized a {
     @include gradient(#3EB1F3, #72D9FA);
   }
 }
 
 .plus-page {
-  a.btn-stylized {
+  p.btn-stylized a {
     @include gradient(#01CEA2, #61E8CB);
   }
 }
 
 .enterprise-page {
-  a.btn-stylized {
+  p.btn-stylized a {
     @include gradient(#7F86F5, #BABEFD);
   }
 }
 
-a.btn-stylized {
+p.btn-stylized a {
   display: inline-block;
   font-size: 18px;
   border-radius: 3px;
@@ -49,59 +53,3 @@ a.btn-stylized {
     background-position: 50% !important;
   }
 }
-
-// .btn-stylized {
-//   border: none;
-//   font-family: inherit;
-//   font-size: 13px;
-//   color: inherit;
-//   cursor: pointer;
-//   padding: 8px 15px;
-//   display: inline-block;
-//   // margin: 15px 30px;
-//   margin-bottom: 7px;
-//   text-transform: uppercase;
-//   letter-spacing: 1px;
-//   font-weight: 700;
-//   outline: none;
-//   position: relative;
-//   transition: all 0.3s;
-//   color: #fff;
-//   transition: none;
-//   border-radius: 3px;
-//   &:after {
-//     content: '';
-//     position: absolute;
-//     z-index: -1;
-//     transition: all 0.3s;
-//   }
-// }
-
-// .btn-stylized:hover {
-//   box-shadow: 0 2px #216349;
-//   top: 2px;
-// }
-
-// .btn-stylized:active {
-//   box-shadow: 0 0 #216349;
-//   top: 4px;
-// }
-
-// .btn-stylized:disabled {
-//   opacity: 0.2;
-//   top: 2px;
-//   box-shadow: 0 4px #216349;
-// }
-
-// .runtime-page .btn-stylized {
-//   background: $color_runtime;
-//   box-shadow: 0 4px #05598a;
-// }
-// .plus-page .btn-stylized {
-//   background: $color_plus;
-//   box-shadow: 0 4px #00a280;
-// }
-// .enterprise-page .btn-stylized {
-//   background: $color_enterprise;
-//   box-shadow: 0 4px #43058a;
-// }

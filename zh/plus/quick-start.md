@@ -62,6 +62,7 @@ pm2 reload all
 ## 下一步
 
 [配置]({{ site.baseurl }}{% link zh/plus/guide/configuration.md %})
+{: .btn-stylized}
 
 ## 疑问？
 

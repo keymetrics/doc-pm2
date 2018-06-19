@@ -22,7 +22,9 @@ Module are designed to be easy to use and to refine your configuration according
 Module Name|Description
 ---|---
 [pm2-server-monit](https://github.com/keymetrics/pm2-server-monit)|Monitor your server machine (maintained by us)
+{: .btn-stylized}
 [pm2-logrotate](https://github.com/keymetrics/pm2-logrotate)|Split your logs into multiple files (maintained by us)
+{: .btn-stylized}
 [pm2-elasticsearch](https://github.com/pm2-hive/pm2-elasticsearch)|Monitor your Elastic Search
 [pm2-redis](https://github.com/pm2-hive/pm2-redis)|Monitor your Redis
 [pm2-mysql](https://github.com/pm2-hive/pm2-mysql)|Monitor your MYSQL

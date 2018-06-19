@@ -30,6 +30,7 @@ To know more about memory analysis check the [google tutorial](https://developer
 ## Next Steps
 
 [CPU Profiling]({{ site.baseurl }}{% link en/plus/guide/cpu-profiling.md %})
+{: .btn-stylized}
 
 ## Questions?
 

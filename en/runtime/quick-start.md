@@ -122,6 +122,7 @@ Use the `--help` flag to get more informations:
 ## Next Steps
 
 [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
+{: .btn-stylized}
 
 ## Questions?
 

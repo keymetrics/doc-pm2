@@ -123,6 +123,7 @@ pmx.emit('user:register', {
 ## 下一步
 
 [通知]({{ site.baseurl }}{% link zh/plus/guide/notifications.md %})
+{: .btn-stylized}
 
 ## 疑问？
 

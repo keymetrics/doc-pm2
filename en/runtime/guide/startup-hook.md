@@ -98,6 +98,7 @@ There are some external libraries to generate a Windows compatible startup scrip
 ## Next Steps
 
 [Load-balancing (cluster mode)]({{ site.baseurl }}{% link en/runtime/guide/load-balancing.md %})
+{: .btn-stylized}
 
 ## Questions?
 

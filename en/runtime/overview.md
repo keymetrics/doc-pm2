@@ -24,7 +24,8 @@ pm2 start app.js
 ```
 
 [Quick Start]({{ site.baseurl }}{% link en/runtime/quick-start.md %})
-
+{: .btn-stylized}
+{: .btn-stylized}
 
 ## Process Management
 
@@ -43,6 +44,7 @@ Add and delete processes to your process list with `pm2 start` and `pm2 delete`.
 Manage your processes with `pm2 start`, `pm2 stop`, `pm2 restart`.
 
 [Process Management]({{ site.baseurl }}{% link en/runtime/guide/process-management.md %})
+{: .btn-stylized}
 
 
 ## Log Management
@@ -56,6 +58,7 @@ pm2 logs <app_name>
 ```
 
 [Log Management]({{ site.baseurl }}{% link en/runtime/guide/log-management.md %})
+{: .btn-stylized}
 
 
 ## Zero-config Load-Balancer
@@ -68,6 +71,7 @@ pm2 start -i max
 ```
 
 [Load-Balancing]({{ site.baseurl }}{% link en/runtime/guide/load-balancing.md %})
+{: .btn-stylized}
 
 ## In-terminal monitoring
 
@@ -88,10 +92,12 @@ pm2 deploy
 ```
 
 [Easy deploy with SSH]({{ site.baseurl }}{% link en/runtime/guide/easy-deploy-with-ssh.md %})
+{: .btn-stylized}
 
 ## Next Steps
 
 [Quick Start]({{ site.baseurl }}{% link en/runtime/quick-start.md %})
+{: .btn-stylized}
 
 ## Questions?
 

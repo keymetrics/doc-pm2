@@ -1,37 +1,41 @@
 
-.edit-page {
+#edit-page {
   position: absolute;
   right: 5px;
   top: 5px;
 }
 
-.runtime-page div.edit-page a {
-  color: $color_runtime;
+#edit-page p {
+  margin: 0;
 }
 
-.plus-page div.edit-page a {
-  color: $color_plus;
-}
+// .runtime-page div.edit-page a {
+//   color: $color_runtime;
+// }
 
-.enterprise-page div.edit-page a {
-  color: $color_enterprise;
-}
+// .plus-page div.edit-page a {
+//   color: $color_plus;
+// }
 
-.edit-page:hover {
-  cursor: pointer;
-}
+// .enterprise-page div.edit-page a {
+//   color: $color_enterprise;
+// }
 
-.edit-page__text {
-  font-size: 14px !important;
-  font-weight: 500 !important;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.8px;
-  text-align: left;
-  margin: 0 20px;
-  padding: 0;
-  display: block;
-  position: relative;
-  left: 3px;
-}
+// .edit-page:hover {
+//   cursor: pointer;
+// }
+
+// .edit-page__text {
+//   font-size: 14px !important;
+//   font-weight: 500 !important;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: normal;
+//   letter-spacing: 0.8px;
+//   text-align: left;
+//   margin: 0 20px;
+//   padding: 0;
+//   display: block;
+//   position: relative;
+//   left: 3px;
+// }

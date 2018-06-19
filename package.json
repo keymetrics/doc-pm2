@@ -27,6 +27,7 @@
   "devDependencies": {
     "browser-sync": "^2.24.4",
     "gulp": "^3.9.1",
-    "gulp-util": "^3.0.8"
+    "gulp-util": "^3.0.8",
+    "stylelint-config-standard": "^18.2.0"
   }
 }

@@ -126,6 +126,7 @@ pm2 monit
 ## 下一步
 
 [日志管理]({{ site.baseurl }}{% link zh/runtime/guide/log-management.md %})
+{: .btn-stylized}
 
 ## 疑问？
 
