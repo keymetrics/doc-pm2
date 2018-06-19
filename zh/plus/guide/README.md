@@ -22,4 +22,5 @@ permalink: "/zh/plus/guide/"
 
 **process** 是进程列表 (`pm2 ls`)的实体。
 
-<p align="center">[开始吧]({{ site.baseurl }}{% link zh/plus/guide/installation.md %})</p>
+[开始吧]({{ site.baseurl }}{% link zh/plus/guide/installation.md %})
+{: .btn-stylized}

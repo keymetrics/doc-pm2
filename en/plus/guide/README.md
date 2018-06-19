@@ -23,4 +23,5 @@ A **server** is a container or a machine with a PM2 daemon managing one or more 
 
 A **process** is an entity of the process list (`pm2 ls`). This is one instance of an app which has been started by PM2.
 
-<p align="center">[Let's start]({{ site.baseurl }}{% link en/plus/guide/installation.md %})</p>
+[Let's start]({{ site.baseurl }}{% link en/plus/guide/installation.md %})
+{: .btn-stylized}

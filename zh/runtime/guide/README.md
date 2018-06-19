@@ -21,6 +21,5 @@ permalink: "/zh/runtime/guide/"
 
 **process list** 即进程列表，是注册您所有应用以及选项和环境的地方。该列表仅包含pm2已启动的所有进程。
 
-<div>
-  <p align="center">[即刻开始]({{ site.baseurl }}{% link zh/runtime/guide/installation.md %})</p>
-</div>
+[即刻开始]({{ site.baseurl }}{% link zh/runtime/guide/installation.md %})
+{: .btn-stylized}
