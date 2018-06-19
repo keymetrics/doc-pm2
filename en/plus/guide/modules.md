@@ -43,9 +43,6 @@ pm2 install pm2-hive/pm2-docker
 
 # Install a module in dev mode from local folder
 pm2 install .
-
-# Uninstall module
-pm2 uninstall <module-name>
 ```
 
 ### Configuration
@@ -58,6 +55,16 @@ pm2 set module_name:option_name <new_value>
 ```
 
 These variables are written in `~/.pm2/module_conf.json`. All he configuration variables can be displayed with `pm2 conf [your-module-name]`. No restart is needed, the module is automatically restarted.
+
+### Manage a module
+
+```bash
+# List all modules
+pm2 ls
+
+# Uninstall a module
+pm2 uninstall <module-name>
+```
 
 ## Create a module
 
