@@ -21,5 +21,5 @@ A **daemon** is a program that is run as a background process. pm2 in essence is
 
 The **process list** is where all your applications along with options and environment are registered. This list simply contains all the processes pm2 has started.
 
-[Let's start]({{ site.baseurl }}{% link en/runtime/guide/installation.md %})</p>
+[Let's start]({{ site.baseurl }}{% link en/runtime/guide/installation.md %})
 {: .btn-stylized}
