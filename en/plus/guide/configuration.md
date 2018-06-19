@@ -45,7 +45,8 @@ io.init({
 
 This first basic initialisation will add to the dashboard the port number your app is listening to.
 
-?> See all intialisation options in the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}).
+ See all intialisation options in the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}).
+{: .tip}
 
 ## Expose Custom Metrics
 

@@ -27,7 +27,8 @@ To add your keys, run:
 heroku config:set PM2_PUBLIC_KEY=XXXXXXXXXX PM2_SECRET_KEY=YYYYY
 ```
 
-?> You can access your keys at the top right of your dashboard
+ You can access your keys at the top right of your dashboard
+{: .tip}
 
 ## Set the server name in PM2 Plus
 
@@ -37,9 +38,11 @@ Set the `PM2_MACHINE_NAME` environment variable to specify a server name:
 heroku config:set PM2_MACHINE_NAME=heroku-server
 ```
 
-?> The default server name is the hostname (`HOST` environment variable) with a few random characters.
+ The default server name is the hostname (`HOST` environment variable) with a few random characters.
+{: .tip}
 
-?> Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
+ Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
+{: .tip}
 
 ## Next Steps
 

@@ -34,7 +34,8 @@ When you use `pm2 start app.js`, two actions are performed:
 - the app is registered in the process list of pm2
 - the app is started in the background.
 
-?> Default name in the process list is the name of the script without his extension. Use `--name`or `-n` to change.
+ Default name in the process list is the name of the script without his extension. Use `--name`or `-n` to change.
+{: .tip}
 
 ## Routine
 
@@ -73,7 +74,8 @@ pm2 save
 pm2 resurrect
 ```
 
-?> Your process list is saved into `$HOME/.pm2/dump.pm2`.
+ Your process list is saved into `$HOME/.pm2/dump.pm2`.
+{: .tip}
 
 You can then setup a [startup hook]({{ site.baseurl }}{% link en/runtime/guide/startup-hook.md %}), to automatically start your process list through machine restarts.
 
@@ -93,7 +95,8 @@ pm2 is compatible with other programming languages, using this equivalence:
 }
 ```
 
-?> Without extension, the app is started as a binary file.
+ Without extension, the app is started as a binary file.
+{: .tip}
 
 To start a script in python for example, use:
 

@@ -1,4 +1,5 @@
-!> Now.sh is actually not supported by pm2
+ Now.sh is actually not supported by pm2
+{: .warn}
 
 # Monitor your Node.js app in Now.sh
 
@@ -24,7 +25,8 @@ In order to connect pm2 to your dashboard, you must add your public and private 
 
 Add a `KEYMETRICS_PUBLIC` and a `KEYMETRICS_SECRET` environment variables and fill their value with your keys.
 
-?> You can access your keys at the top right of your dashboard
+ You can access your keys at the top right of your dashboard
+{: .tip}
 
 ### Set the server name in pm2 Plus
 
@@ -47,9 +49,11 @@ module.exports = {
 }
 ```
 
-?> The default server name is the hostname (`HOST` variable) with a few random characters.
+ The default server name is the hostname (`HOST` variable) with a few random characters.
+{: .tip}
 
-?> Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
+ Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
+{: .tip}
 
 ### Next Steps
 

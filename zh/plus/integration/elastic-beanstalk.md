@@ -26,9 +26,11 @@ section: plus
 eb setenv PM2_PUBLIC_KEY=YYYYY PM2_SECRET_KEY=XXXXXXXX
 ```
 
-?> 您可以仪表板右上角访问您的密钥
+ 您可以仪表板右上角访问您的密钥
+{: .tip}
 
-!> 我们不建议使用生态系统文件将您的密钥设置到您的环境中，如果这样您的生态系统文件可能会被公开。
+ 我们不建议使用生态系统文件将您的密钥设置到您的环境中，如果这样您的生态系统文件可能会被公开。
+{: .warn}
 
 ## 在PM2 Plus中设置服务器名称
 
@@ -38,9 +40,11 @@ eb setenv PM2_PUBLIC_KEY=YYYYY PM2_SECRET_KEY=XXXXXXXX
 eb setenv PM2_MACHINE_NAME=aws-eb-server
 ```
 
-?> 默认的服务器名称是带有随机字符串的主机名（`HOST`环境变量）。
+ 默认的服务器名称是带有随机字符串的主机名（`HOST`环境变量）。
+{: .tip}
 
-?> 请注意，如果主机名重复，仪表板将接收来自两个实例和闪烁的数据。
+ 请注意，如果主机名重复，仪表板将接收来自两个实例和闪烁的数据。
+{: .tip}
 
 ## 下一步
 

@@ -40,7 +40,8 @@ module.exports = {
 }
 ```
 
-?> Learn more about ecosystem file [here]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %}).
+ Learn more about ecosystem file [here]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %}).
+{: .tip}
 
 ### Add PM2 as a module
 
@@ -109,7 +110,8 @@ The CLI is available with pip, the python package manager:
 pip3 install --upgrade --user awsebcli
 ```
 
-?> Further instructions to install [here](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html).
+ Further instructions to install [here](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html).
+{: .tip}
 
 ### Init your Elastic Beanstalk app
 
@@ -169,7 +171,8 @@ Environment details for: eb-pm2-example-env
 ```
 
 
-?> Later, to deploy latest changes, commit them and run `eb deploy <environment_name>` or just `eb deploy`.
+ Later, to deploy latest changes, commit them and run `eb deploy <environment_name>` or just `eb deploy`.
+{: .tip}
 
 ## You are ready
 

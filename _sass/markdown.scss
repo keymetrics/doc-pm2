@@ -152,7 +152,7 @@
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   }
 
-  .tip code {
+  .warn code {
     background-color: #222;
   }
 
@@ -166,7 +166,7 @@
     color:#7f8c8d;
   }
 
-  .warn {
+  .tip {
     border-radius: 2px;
     background-color: rgba(206, 183, 1, 0.08) !important;
     border: solid 1px #ceb701;
@@ -214,12 +214,12 @@
   }
 }
 
-.markdown-section p.tip,
+.markdown-section p.warn,
 .markdown-section tr:nth-child(2n) {
   background-color:#f8f8f8;
 }
 
-.markdown-section p.tip {
+.markdown-section p.warn {
   border-bottom-right-radius: 2px;
   border-left: 4px solid #f66;
   border-top-right-radius: 2px;

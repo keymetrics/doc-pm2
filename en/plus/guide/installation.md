@@ -25,7 +25,8 @@ pm2 link <secret> <public>
 
 or, if you don't have access to the CLI, add the `PM2_PUBLIC_KEY` and `PM2_SECRET_KEY` environment variables with your public and private keys.
 
-?> The secret and public keys can be found at the top right of your dashboard
+ The secret and public keys can be found at the top right of your dashboard
+{: .tip}
 
 ### If you are behind a company proxy/firewall
 

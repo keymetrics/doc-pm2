@@ -27,7 +27,8 @@ module.exports = {
 }
 ```
 
-?> Beware that the watch and restart mode makes hard restart, without sending SIGINT.
+ Beware that the watch and restart mode makes hard restart, without sending SIGINT.
+{: .tip}
 
 ### Watch options
 
@@ -94,7 +95,8 @@ and start with:
 pm2 start ecosystem.config.js
 ```
 
-?> All other pm2 options are still available.
+ All other pm2 options are still available.
+{: .tip}
 
 ## Next Steps
 

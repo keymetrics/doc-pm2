@@ -27,7 +27,8 @@ pm2 link <secret> <public>
 
 Or, if you don't have access to the CLI, add `PM2_PUBLIC_KEY` and `PM2_SECRET_KEY` environment variables set with your public and private keys.
 
-?> Use the `Link an app` help on the top left of your dashboard
+ Use the `Link an app` help on the top left of your dashboard
+{: .tip}
 
 ## Install CPU/Memory profiling
 

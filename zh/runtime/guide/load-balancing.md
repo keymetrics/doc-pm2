@@ -38,7 +38,8 @@ module.exports = {
 - 一个整数。 这会在特定数量的群集中展开应用。
 - 字符串'最大'。 这将应用分散到所有CPU内核中。
 
-?> 您也可以使用一个负整数。 如果有4个核心，`pm2 start -i -1` 将传播3个群集（最大整数）。
+ 您也可以使用一个负整数。 如果有4个核心，`pm2 start -i -1` 将传播3个群集（最大整数）。
+{: .tip}
 
 ## 无状态应用
 
@@ -92,7 +93,8 @@ module.exports = {
 }
 ```
 
-?> 这对报告名称冲突的 `node-config`软件包非常有用，查看此[问题](https://github.com/Unitech/pm2/issues/2045)。
+ 这对报告名称冲突的 `node-config`软件包非常有用，查看此[问题](https://github.com/Unitech/pm2/issues/2045)。
+{: .tip}
 
 ## 下一步
 

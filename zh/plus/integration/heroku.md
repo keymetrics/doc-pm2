@@ -27,7 +27,8 @@ section: plus
 heroku config:set PM2_PUBLIC_KEY=XXXXXXXXXX PM2_SECRET_KEY=YYYYY
 ```
 
-?> 您可以在仪表板的右上方访问您的密钥
+ 您可以在仪表板的右上方访问您的密钥
+{: .tip}
 
 ## 在PM2 Plus中设置服务器名称
 
@@ -37,9 +38,11 @@ heroku config:set PM2_PUBLIC_KEY=XXXXXXXXXX PM2_SECRET_KEY=YYYYY
 heroku config:set PM2_MACHINE_NAME=heroku-server
 ```
 
-?> 默认的服务器名称是带有几个随机字符的主机名（`HOST`环境变量）.
+ 默认的服务器名称是带有几个随机字符的主机名（`HOST`环境变量）.
+{: .tip}
 
-?> 请注意，如果主机名重复，仪表板将接收来自两个实例和闪烁的数据.
+ 请注意，如果主机名重复，仪表板将接收来自两个实例和闪烁的数据.
+{: .tip}
 
 ## 下一步
 

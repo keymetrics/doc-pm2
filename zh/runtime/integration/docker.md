@@ -96,7 +96,8 @@ module.exports = {
 }
 ```
 
-?> 在[这里]({{ site.baseurl }}{% link zh/runtime/guide/ecosystem-file.md %})了解更多关于生态系统文件的教程。
+ 在[这里]({{ site.baseurl }}{% link zh/runtime/guide/ecosystem-file.md %})了解更多关于生态系统文件的教程。
+{: .tip}
 
 ### 设置一个Docker文件
 
@@ -137,7 +138,8 @@ docker build -t your-app-name .
 docker run -p 80:8000 your-app-name
 ```
 
-?> `-p 80:8000`将您应用的端口8000绑定到本地主机的端口80
+ `-p 80:8000`将您应用的端口8000绑定到本地主机的端口80
+{: .tip}
 
 ### pm2命令
 
@@ -162,7 +164,8 @@ CMD ["pm2-runtime", "ecosystem.config.js", "--web"]
 
 `--web [port]`选项允许通过JSON API公开所有重要信号（docker实例+应用）.
 
-?> 在shell中安装pm2之后，运行 `pm2-runtime -h`获取所有可用选项.
+ 在shell中安装pm2之后，运行 `pm2-runtime -h`获取所有可用选项.
+{: .tip}
 
 ### 您准备好了
 

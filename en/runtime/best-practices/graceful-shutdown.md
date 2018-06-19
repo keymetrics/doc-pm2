@@ -175,7 +175,8 @@ module.exports = {
 }
 ```
 
-?> By default, after 3000ms, pm2 will consider your app ready. Change this value with the `listen_timeout` value.
+ By default, after 3000ms, pm2 will consider your app ready. Change this value with the `listen_timeout` value.
+{: .tip}
 
 Let's keep using the previous express app:
 ```javascript

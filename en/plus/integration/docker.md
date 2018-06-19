@@ -46,9 +46,11 @@ PM2_PUBLIC_KEY=YYYYY
 PM2_MACHINE_NAME=docker-server
 ```
 
-?> The default server name is the hostname (`HOST` environment variable) with a random string.
+ The default server name is the hostname (`HOST` environment variable) with a random string.
+{: .tip}
 
-?> Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
+ Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
+{: .tip}
 
 ## Next Steps
 

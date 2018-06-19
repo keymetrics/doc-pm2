@@ -81,7 +81,8 @@ module.exports = {
 }
 ```
 
-?> 日志仍然分为output/error/log
+ 日志仍然分为output/error/log
+{: .tip}
 
 ## 禁用日志
 

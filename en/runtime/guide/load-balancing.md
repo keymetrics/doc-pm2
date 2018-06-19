@@ -38,7 +38,8 @@ The *instances* option can be:
 - an Integer. This spreads the app across a specific number of clusters.
 - the String 'max'. This spreads the app across all CPU cores.
 
-?> You can also use a negative integer. If 4 cores, `pm2 start -i -1` will spread 3 clusters (max - integer).
+ You can also use a negative integer. If 4 cores, `pm2 start -i -1` will spread 3 clusters (max - integer).
+{: .tip}
 
 ## Stateless Application
 
@@ -92,7 +93,8 @@ module.exports = {
 }
 ```
 
-?> This is useful with the `node-config` package where name conflicts have been reported, check the [issue](https://github.com/Unitech/pm2/issues/2045).
+ This is useful with the `node-config` package where name conflicts have been reported, check the [issue](https://github.com/Unitech/pm2/issues/2045).
+{: .tip}
 
 ## Next Steps
 

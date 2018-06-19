@@ -38,7 +38,8 @@ pm2.connect(function(err) {
 })
 ```
 
-?> 如果您的脚本不能自行退出，请确保您调用 `pm2.disconnect()`。
+ 如果您的脚本不能自行退出，请确保您调用 `pm2.disconnect()`。
+{: .tip}
 
 ## 程序化API
 

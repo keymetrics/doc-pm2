@@ -35,9 +35,11 @@ Set the `PM2_MACHINE_NAME` environment variable to specify a server name:
 export PM2_MACHINE_NAME="my-cloud-provider-server"
 ```
 
-?> The default server name is the hostname (`HOST` environment variable) with a random string.
+ The default server name is the hostname (`HOST` environment variable) with a random string.
+{: .tip}
 
-?> Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
+ Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
+{: .tip}
 
 ## Next Steps
 

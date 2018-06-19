@@ -175,7 +175,8 @@ module.exports = {
 }
 ```
 
-?> 默认情况下，在3000毫秒后，PM2会考虑准备好您的应用。 使用 `listen_timeout`值更改此值。
+ 默认情况下，在3000毫秒后，PM2会考虑准备好您的应用。 使用 `listen_timeout`值更改此值。
+{: .tip}
 
 让我们继续使用之前的express app:
 ```javascript

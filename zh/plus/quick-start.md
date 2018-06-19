@@ -27,7 +27,8 @@ pm2 link <secret> <public>
 
 或者，如果您无权访问CLI，请添加使用公钥和私钥设置的 `PM2_PUBLIC_KEY`和 `PM2_SECRET_KEY`环境变量。
 
-?> 您可以在仪表板的右上方找到密钥和公钥
+ 您可以在仪表板的右上方找到密钥和公钥
+{: .tip}
 
 ## 安装CPU/内存分析
 

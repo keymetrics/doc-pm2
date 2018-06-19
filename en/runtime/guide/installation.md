@@ -40,7 +40,8 @@ pm2 completion install
 
 Source map files are autodetected by default if they are present (`app.js.map` for `app.js`).
 
-?> What are source map files ? If using Babel, Typescript or any other Javascript superset, you may have noticed that stacktraces are not meaningful, errors not pointing to the right line. Source map files can be used to solve this problem.
+ What are source map files ? If using Babel, Typescript or any other Javascript superset, you may have noticed that stacktraces are not meaningful, errors not pointing to the right line. Source map files can be used to solve this problem.
+{: .tip}
 
 ## Update
 
@@ -50,7 +51,8 @@ Keep your pm2 up to date with:
 npm install pm2 -g && pm2 update
 ```
 
-?> `pm2 update` is necessary in order to refresh the PM2 daemon.
+ `pm2 update` is necessary in order to refresh the PM2 daemon.
+{: .tip}
 
 ## Next Steps
 

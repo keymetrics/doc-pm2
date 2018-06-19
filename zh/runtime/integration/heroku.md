@@ -41,11 +41,13 @@ module.exports = {
 }
 ```
 
-?> 在[此处]({{ site.baseurl }}{% link zh/runtime/guide/ecosystem-file.md %})了解更多有关生态系统文件的内容。
+ 在[此处]({{ site.baseurl }}{% link zh/runtime/guide/ecosystem-file.md %})了解更多有关生态系统文件的内容。
+{: .tip}
 
 我们建议在结合群集模式使用Heroku，因为每个dyno都有多核CPU。
 
-?> 详细了解 [群集模式]({{ site.baseurl }}{% link zh/runtime/guide/load-balancing.md %})
+ 详细了解 [群集模式]({{ site.baseurl }}{% link zh/runtime/guide/load-balancing.md %})
+{: .tip}
 
 ### 将PM2添加为模块
 

@@ -60,7 +60,8 @@ pm2 ls
 pm2 delete app
 ```
 
-?> Default process name is the filename without `.js` (eg: `app` for `app.js`). Use `--name`or `-n` to change.
+ Default process name is the filename without `.js` (eg: `app` for `app.js`). Use `--name`or `-n` to change.
+{: .tip}
 
 ### Routine
 
@@ -89,7 +90,8 @@ Consult your logs **history** files in the `~/.pm2/logs` folder.
 
 The cluster mode scales your app accross all CPUs available, without any code modifications.
 
-?> Before using the load balancer, make sure your application is stateless, meaning that no local data is stored in the process (sessions/websocket connections, session-memory and related).
+ Before using the load balancer, make sure your application is stateless, meaning that no local data is stored in the process (sessions/websocket connections, session-memory and related).
+{: .tip}
 
 To start in cluster mode, pass the -i option followed by the number of clusters that you want:
 

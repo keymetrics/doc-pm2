@@ -48,7 +48,8 @@ catch(error) {
 app.use(pmx.expressErrorHandler())
 ```
 
-?> 在路由声明之后使用它。
+ 在路由声明之后使用它。
+{: .tip}
 
 ## 下一步
 

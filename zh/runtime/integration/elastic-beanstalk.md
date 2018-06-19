@@ -40,7 +40,8 @@ module.exports = {
 }
 ```
 
-?> 在[此处]({{ site.baseurl }}{% link zh/runtime/guide/ecosystem-file.md %})了解更多关于生态系统文件的教程。
+ 在[此处]({{ site.baseurl }}{% link zh/runtime/guide/ecosystem-file.md %})了解更多关于生态系统文件的教程。
+{: .tip}
 
 ### 将PM2添加为模块
 
@@ -111,7 +112,8 @@ CLI可用于python包管理器pip:
 pip3 install --upgrade --user awsebcli
 ```
 
-?> 进一步的安装说明在[这里](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html)
+ 进一步的安装说明在[这里](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html)
+{: .tip}
 
 ### 初始化您的Elastic Beanstalk应用
 
@@ -171,7 +173,8 @@ Environment details for: eb-pm2-example-env
 ```
 
 
-?> 稍后，要部署最新的更改，请提交它们并运行 `eb deploy <environment_name>`或 `eb deploy`。
+ 稍后，要部署最新的更改，请提交它们并运行 `eb deploy <environment_name>`或 `eb deploy`。
+{: .tip}
 
 ## 您准备好了
 

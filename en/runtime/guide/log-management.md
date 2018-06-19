@@ -81,7 +81,8 @@ module.exports = {
 }
 ```
 
-?> Logs are still splitted into output/error/log
+ Logs are still splitted into output/error/log
+{: .tip}
 
 ## Disabling Logs
 

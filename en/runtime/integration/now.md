@@ -1,4 +1,5 @@
-!> Now.sh is actually not supported
+ Now.sh is actually not supported
+{: .warn}
 
 # Using PM2 with Now.sh
 
@@ -31,7 +32,8 @@ module.exports = {
 }
 ```
 
-?> Learn more about ecosystem file [here]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %}).
+ Learn more about ecosystem file [here]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %}).
+{: .tip}
 
 ### Add PM2 as a module
 

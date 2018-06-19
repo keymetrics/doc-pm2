@@ -40,7 +40,8 @@ module.exports = {
 }
 ```
 
-?> 在[此处]({{ site.baseurl }}{% link zh/runtime/guide/ecosystem-file.md %})了解更多有关生态系统文件的内容
+ 在[此处]({{ site.baseurl }}{% link zh/runtime/guide/ecosystem-file.md %})了解更多有关生态系统文件的内容
+{: .tip}
 
 ### 将PM2添加为模块
 

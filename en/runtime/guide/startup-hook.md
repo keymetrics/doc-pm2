@@ -25,9 +25,11 @@ $ sudo su -c "env PATH=$PATH:/home/unitech/.nvm/versions/node/v4.3/bin pm2 start
 
 Copy and paste in the CLI the ouput of this command to set up your startup hook.
 
-!> With NVM, the `pm2` path change when updating nodejs. You need to run the `startup` command after every update.
+ With NVM, the `pm2` path change when updating nodejs. You need to run the `startup` command after every update.
+{: .warn}
 
-?> You can customize the service name via the `--service-name <name>` option ([#3213](https://github.com/Unitech/pm2/pull/3213))
+ You can customize the service name via the `--service-name <name>` option ([#3213](https://github.com/Unitech/pm2/pull/3213))
+{: .tip}
 
 ## Save your process list
 

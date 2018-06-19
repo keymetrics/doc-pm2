@@ -25,9 +25,11 @@ $ sudo su -c "env PATH=$PATH:/home/unitech/.nvm/versions/node/v4.3/bin pm2 start
 
 在CLI中复制并粘贴此命令的输出以设置启动挂钩。
 
-!> 使用NVM时，此`pm2`路径会在更新nodejs时改变。 每次更新后您都需要运行`startup`命令。
+ 使用NVM时，此`pm2`路径会在更新nodejs时改变。 每次更新后您都需要运行`startup`命令。
+{: .warn}
 
-?> 您可以通过`--service-name <name>`选项自定义服务名称 ([#3213](https://github.com/Unitech/pm2/pull/3213))
+ 您可以通过`--service-name <name>`选项自定义服务名称 ([#3213](https://github.com/Unitech/pm2/pull/3213))
+{: .tip}
 
 ## 保存您的进程列表
 

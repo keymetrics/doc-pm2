@@ -40,7 +40,8 @@ pm2 completion install
 
 如果存在的话，源地图文件在默认情况下会自动被检测 (`app.js.map` for `app.js`）。
 
-?> 什么是源地图文件？如果正使用Babel，Typescript或任何其他Javascript超集，您可能已经注意到堆栈跟踪没有意义，错误不会指向正确的行。源地图文件则可以用来解决这个问题。
+ 什么是源地图文件？如果正使用Babel，Typescript或任何其他Javascript超集，您可能已经注意到堆栈跟踪没有意义，错误不会指向正确的行。源地图文件则可以用来解决这个问题。
+{: .tip}
 
 ## 更新
 
@@ -50,7 +51,8 @@ pm2 completion install
 npm install pm2 -g && pm2 update
 ```
 
-?> `pm2 update` 是必要的，以便刷新pm2的守护进程。
+ `pm2 update` 是必要的，以便刷新pm2的守护进程。
+{: .tip}
 
 ## 下一步
 

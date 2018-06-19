@@ -87,7 +87,8 @@ cd <your-module-name>
 pm2 install .
 ```
 
-?> If you edit the source, PM2 automatically restarts the module (watch option is activated)
+ If you edit the source, PM2 automatically restarts the module (watch option is activated)
+{: .tip}
 
 Display module logs with:
 
@@ -179,7 +180,8 @@ Inside the module folder, deploy your module with:
 pm2 publish
 ```
 
-?>  This increments the minor version of the module, runs `git add . ; git commit -m "VERSION"; git push origin master` then runs `npm publish`.
+  This increments the minor version of the module, runs `git add . ; git commit -m "VERSION"; git push origin master` then runs `npm publish`.
+{: .tip}
 
 ## Next Steps
 

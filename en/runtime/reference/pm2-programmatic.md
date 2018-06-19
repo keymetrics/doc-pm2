@@ -38,7 +38,8 @@ pm2.connect(function(err) {
 })
 ```
 
-?> If your script does not exit by itself, make sure you call `pm2.disconnect()`.
+ If your script does not exit by itself, make sure you call `pm2.disconnect()`.
+{: .tip}
 
 ## Programmatic API
 

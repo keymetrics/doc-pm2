@@ -95,7 +95,8 @@ module.exports = {
 }
 ```
 
-?> Learn more about ecosystem file [here]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %}).
+ Learn more about ecosystem file [here]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %}).
+{: .tip}
 
 ### Set a Dockerfile
 
@@ -136,7 +137,8 @@ docker build -t your-app-name .
 docker run -p 80:8000 your-app-name
 ```
 
-?> `-p 80:8000` binds the port 8000 of your app to the port 80 of the localhost
+ `-p 80:8000` binds the port 8000 of your app to the port 80 of the localhost
+{: .tip}
 
 ### pm2 commands
 
@@ -161,7 +163,8 @@ CMD ["pm2-runtime", "ecosystem.config.js", "--web"]
 
 The `--web [port]` option allows to expose all vital signs (docker instance + application) via a JSON API.
 
-?> After installing pm2 in your shell, run `pm2-runtime -h` to get all options available
+ After installing pm2 in your shell, run `pm2-runtime -h` to get all options available
+{: .tip}
 
 ### You are ready
 

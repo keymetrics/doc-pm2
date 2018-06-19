@@ -27,7 +27,8 @@ module.exports = {
 }
 ```
 
-?> 请注意，观测和重启模式会导致硬重启，且不会发送SIGINT。
+ 请注意，观测和重启模式会导致硬重启，且不会发送SIGINT。
+{: .tip}
 
 ### 观测选项
  
@@ -94,7 +95,8 @@ module.exports = {
 pm2 start ecosystem.config.js
 ```
 
-?>所有其他PM2选项仍然可用。
+所有其他PM2选项仍然可用。
+{: .tip}
 
 ## 下一步
 

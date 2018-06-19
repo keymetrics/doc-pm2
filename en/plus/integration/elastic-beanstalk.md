@@ -26,9 +26,11 @@ Inject your keys into your eb environment:
 eb setenv PM2_PUBLIC_KEY=YYYYY PM2_SECRET_KEY=XXXXXXXX
 ```
 
-?> You can access your keys at the top right of your dashboard
+ You can access your keys at the top right of your dashboard
+{: .tip}
 
-!> We unadvise to use the ecosystem file to set your keys into your environment, doing so your ecosystem file can stay public
+ We unadvise to use the ecosystem file to set your keys into your environment, doing so your ecosystem file can stay public
+{: .warn}
 
 ## Set the server name in PM2 Plus
 
@@ -38,9 +40,11 @@ Set the `PM2_MACHINE_NAME` environment variable to specify a server name:
 eb setenv PM2_MACHINE_NAME=aws-eb-server
 ```
 
-?> The default server name is the hostname (`HOST` environment variable) with a random string.
+ The default server name is the hostname (`HOST` environment variable) with a random string.
+{: .tip}
 
-?> Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
+ Be careful, in case of duplicate hostnames the dashboard will receive data from both instances and flicker.
+{: .tip}
 
 ## Next Steps
 

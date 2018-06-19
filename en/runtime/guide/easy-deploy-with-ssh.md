@@ -68,9 +68,11 @@ module.exports = {
 }
 ```
 
-?> To get more information about the deploy options, check the ecosystem file reference.
+ To get more information about the deploy options, check the ecosystem file reference.
+{: .tip}
 
-?> Note that the distant path must be empty as it will be populated by pm2 deploy.
+ Note that the distant path must be empty as it will be populated by pm2 deploy.
+{: .tip}
 
 ### Setup
 
