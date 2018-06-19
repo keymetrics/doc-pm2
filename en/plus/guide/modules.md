@@ -28,7 +28,7 @@ Module Name|Description
 [pm2-mysql](https://github.com/pm2-hive/pm2-mysql)|Monitor your MYSQL
 [pm2-rabbitmq](https://github.com/pm2-hive/pm2-rabbitmq)|Monitoring module for RabbitMQ
 [pm2-mongodb](https://github.com/pm2-hive/pm2-mongodb)|Monitor your Mongo DB
-[pm2-postgres](https://github.com/pm2-hive/pm2-postgres)|Monitor your PostgreSQL 
+[pm2-postgres](https://github.com/pm2-hive/pm2-postgres)|Monitor your PostgreSQL
 [pm2-memcached](https://github.com/pm2-hive/pm2-memcached)|Monitor your Memcached
 [pm2-couchdb](https://github.com/pm2-hive/pm2-couchdb)|Monitor your CouchDB
 [pm2-php-fpm](https://github.com/pm2-hive/pm2-php-fpm)|Monitor your PHP server

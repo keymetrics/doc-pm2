@@ -5,7 +5,7 @@ description: 'PM2 - Guide, References, Tutorials and Best Practices about PM2 an
 
 # Build settings
 sass:
-  style: compact
+  style: compressed
 
 markdown: kramdown
 
