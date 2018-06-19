@@ -1,4 +1,4 @@
-.markdown-section {
+main.markdown-section {
   position: relative;
   padding: 30px;
   border-radius: 2px;
@@ -147,15 +147,6 @@
     padding-left:1.5rem
   }
 
-  code, pre {
-    background-color: #171E27 !important;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  }
-
-  .warn code {
-    background-color: #222;
-  }
-
   code {
     font-size: 16px;
     padding: 2px 6px;
@@ -168,16 +159,49 @@
 
   .tip {
     border-radius: 2px;
-    background-color: rgba(206, 183, 1, 0.08) !important;
+    background-color: rgba(206, 183, 1, 0.08);
     border: solid 1px #ceb701;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 1.5px;
-    font-family: 'Saira';
     text-align: left;
     color: #ceab01;
     padding: 1rem
+  }
+
+  p.warn,
+  tr:nth-child(2n) {
+    background-color:#f8f8f8;
+  }
+
+  p.warn {
+    border-bottom-right-radius: 2px;
+    border-left: 4px solid #f66;
+    border-top-right-radius: 2px;
+    margin: 2em 0;
+    padding: 12px 24px 12px 30px;
+    position: relative;
+
+    &:before{
+      background-color: #f66;
+      border-radius: 100%;
+      color: #fff;
+      content: "!";
+      font-size: 14px;
+      font-weight: 700;
+      left: -12px;
+      line-height: 20px;
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      text-align: center;
+      top: 14px;
+    }
+
+    em {
+      color: #34495e;
+    }
+  }
+
+  .highlighter-rouge {
+    background-color: #d0d0d0;
   }
 
   iframe {
@@ -212,46 +236,4 @@
       border-top: 1px solid #ccc;
     }
   }
-}
-
-.markdown-section p.warn,
-.markdown-section tr:nth-child(2n) {
-  background-color:#f8f8f8;
-}
-
-.markdown-section p.warn {
-  border-bottom-right-radius: 2px;
-  border-left: 4px solid #f66;
-  border-top-right-radius: 2px;
-  margin: 2em 0;
-  padding: 12px 24px 12px 30px;
-  position: relative;
-
-  &:before{
-    background-color: #f66;
-    border-radius: 100%;
-    color: #fff;
-    content: "!";
-    font-size: 14px;
-    font-weight: 700;
-    left: -12px;
-    line-height: 20px;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    text-align: center;
-    top: 14px;
-  }
-
-  code {
-    background-color: #666;
-  }
-
-  em {
-    color: #34495e;
-  }
-}
-
-code.highlighter-rouge {
-  background-color: #d0d0d0 !important;
 }
