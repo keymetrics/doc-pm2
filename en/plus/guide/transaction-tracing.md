@@ -119,7 +119,7 @@ The impact on performance should be low since there is no heavy logic done in yo
 
 ## Next Steps
 
-[Profiling]({{ site.baseurl }}{% link en/plus/guide/memory-profiling.md %})
+[Memory Profiling]({{ site.baseurl }}{% link en/plus/guide/memory-profiling.md %})
 {: .btn-stylized}
 
 ## Questions?

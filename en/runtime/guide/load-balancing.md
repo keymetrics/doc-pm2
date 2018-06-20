@@ -49,7 +49,7 @@ An internal state is typically some local data stored into its processes. It can
 
 Follow our [tutorial]({{ site.baseurl }}{% link en/runtime/best-practices/stateless-application.md %}) to make your app stateless.
 
-## 0 second downtime reload
+## 0-seconds downtime reload
 
 When you use `restart`, pm2 kills and restarts all the processes at the same time. There is a short period of time during which the service is unavailable.
 
@@ -98,7 +98,7 @@ module.exports = {
 
 ## Next Steps
 
-[Development tools]({{ site.baseurl }}{% link en/runtime/guide/development-tools.md %})
+[Development Tools]({{ site.baseurl }}{% link en/runtime/guide/development-tools.md %})
 {: .btn-stylized}
 
 ## Questions?

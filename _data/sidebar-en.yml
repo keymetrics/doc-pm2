@@ -68,9 +68,9 @@ plus:
         url: "/en/plus/guide/configuration/"
       - page: Notifications
         url: "/en/plus/guide/notifications/"
-      - page: Issue dashboard
+      - page: Issue Dashboard
         url: "/en/plus/guide/issue-dashboard/"
-      - page: Transaction tracing
+      - page: Transaction Tracing
         url: "/en/plus/guide/transaction-tracing/"
       - page: Memory Profiling
         url: "/en/plus/guide/memory-profiling/"

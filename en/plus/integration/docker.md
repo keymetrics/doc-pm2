@@ -54,7 +54,7 @@ PM2_MACHINE_NAME=docker-server
 
 ## Next Steps
 
-Complete your dashboard [configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
+Complete your dashboard [configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %}).
 
 ## Questions?
 

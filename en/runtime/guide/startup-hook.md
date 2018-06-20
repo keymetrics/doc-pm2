@@ -83,7 +83,7 @@ pm2 [startup | unstartup] [platform]
 
 Platform can be either one of the cited below:
 
-`[ubuntu | ubuntu14 | ubuntu12 | centos | centos6 | arch | oracle | amazon | macos | darwin | freebsd | systemd | systemv | upstart | launchd | rcd | openrc]`
+ubuntu, ubuntu14, ubuntu12, centos, centos6, arch, oracle, amazon, macos, darwin, freebsd, systemd, systemv, upstart, launchd, rcd, openrc
 
 ## Under the hood
 
@@ -99,7 +99,7 @@ There are some external libraries to generate a Windows compatible startup scrip
 
 ## Next Steps
 
-[Load-balancing (cluster mode)]({{ site.baseurl }}{% link en/runtime/guide/load-balancing.md %})
+[Load-Balancing (cluster mode)]({{ site.baseurl }}{% link en/runtime/guide/load-balancing.md %})
 {: .btn-stylized}
 
 ## Questions?

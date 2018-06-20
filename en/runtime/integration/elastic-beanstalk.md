@@ -180,9 +180,9 @@ That's all! Run `eb open` to open your app in the browser.
 
 ## Next Steps
 
-Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
+Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %}).
 
-<!-- Monitor your app on a web dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/integration/elastic-beanstalk.md %}) -->
+<!-- Monitor your app on a web dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/integration/elastic-beanstalk.md %}). -->
 
 ## Questions?
 
