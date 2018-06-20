@@ -44,45 +44,6 @@ main.markdown-section {
     }
   }
 
-  .runtime-page {
-    main p a {
-      color: $color_runtime;
-    }
-
-    h2 {
-      color: $color_runtime;
-      a {
-        color: $color_runtime;
-      }
-    }
-  }
-
-  .plus-page {
-    main p a {
-      color: $color_plus;
-    }
-
-    h2 {
-      color: $color_plus;
-      a {
-        color: $color_plus;
-      }
-    }
-  }
-
-  .enterprise-page {
-    main p a {
-      color: $color_enterprise;
-    }
-
-    h2 {
-      color: $color_enterprise;
-      a {
-        color: $color_enterprise;
-      }
-    }
-  }
-
   h1 + h2 {
     margin-top: 10px !important;
   }
@@ -237,6 +198,45 @@ main.markdown-section {
 
     tr {
       border-top: 1px solid #ccc;
+    }
+  }
+}
+
+.runtime-page {
+  main p a {
+    color: $color_runtime;
+  }
+
+  h2 {
+    color: $color_runtime;
+    a {
+      color: $color_runtime;
+    }
+  }
+}
+
+.plus-page {
+  main p a {
+    color: $color_plus;
+  }
+
+  h2 {
+    color: $color_plus;
+    a {
+      color: $color_plus;
+    }
+  }
+}
+
+.enterprise-page {
+  main p a {
+    color: $color_enterprise;
+  }
+
+  h2 {
+    color: $color_enterprise;
+    a {
+      color: $color_enterprise;
     }
   }
 }
