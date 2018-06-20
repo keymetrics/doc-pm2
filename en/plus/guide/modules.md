@@ -186,7 +186,3 @@ pm2 publish
 Thanks for finishing this guide.
 
 You can now take a look at the [@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %}) to master all the capabilities of PM2 Plus.
-
-## Questions?
-
-We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on our [support github](https://github.com/keymetrics/keymetrics-support/issues).

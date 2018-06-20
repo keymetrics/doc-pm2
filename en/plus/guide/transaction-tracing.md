@@ -121,7 +121,3 @@ The impact on performance should be low since there is no heavy logic done in yo
 
 [Memory Profiling]({{ site.baseurl }}{% link en/plus/guide/memory-profiling.md %})
 {: .btn-stylized}
-
-## Questions?
-
-We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on our [support github](https://github.com/keymetrics/keymetrics-support/issues).

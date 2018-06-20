@@ -89,8 +89,8 @@ $ pm2 link <private_id> <public_id> server1
 $ pm2 link <private_id> <public_id> server2
 ```
 
-## Questions?
 
-We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on our [support github](https://github.com/keymetrics/keymetrics-support/issues).
+
+
 
 

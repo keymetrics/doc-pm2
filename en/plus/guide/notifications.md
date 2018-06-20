@@ -140,7 +140,3 @@ Use case example: You can now setup an express server that can receive webhooks,
 
 [Issue Dashboard]({{ site.baseurl }}{% link en/plus/guide/issue-dashboard.md %})
 {: .btn-stylized}
-
-## Questions?
-
-We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on our [support github](https://github.com/keymetrics/keymetrics-support/issues).

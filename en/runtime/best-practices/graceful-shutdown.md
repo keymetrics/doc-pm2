@@ -232,6 +232,6 @@ mongoose.connect('mongodb://mongosA:27501,mongosB:27501', (err) => {
 
 In cluster mode, there is a default system that sets each cluster ready when the app accepts a connection. There is also a time out, which default to 3000ms, that you can set with the `listen_timeout` property in your ecosystem file.
 
-## Questions?
 
-We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on the [PM2 github repository](https://github.com/Unitech/pm2/issues).
+
+

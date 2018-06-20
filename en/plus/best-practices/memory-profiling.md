@@ -25,7 +25,3 @@ How does Memory profiling work?
 
 
 ## Data Representation -->
-
-### Questions?
-
-We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on our [support github](https://github.com/keymetrics/keymetrics-support/issues).

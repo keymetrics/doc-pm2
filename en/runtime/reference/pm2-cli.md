@@ -147,7 +147,3 @@ backward &lt;name&gt;|downgrades repository to the previous commit for a given a
 gc|force PM2 to trigger garbage collection
 deepUpdate|performs a deep update of PM2
 serve&#124;expose [path] [port]|serve a directory over http via port
-
-## Questions?
-
-We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on the [PM2 github repository](https://github.com/Unitech/pm2/issues).

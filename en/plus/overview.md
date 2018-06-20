@@ -116,8 +116,8 @@ Extend the capabilities of the PM2 Plus dashboard by using external modules list
 [Quick Start]({{ site.baseurl }}{% link en/plus/quick-start.md %})
 {: .btn-stylized}
 
-### Questions?
 
-We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on our [support github](https://github.com/keymetrics/keymetrics-support/issues).
+
+
 
 

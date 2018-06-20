@@ -213,7 +213,3 @@ This tool is a separate module of pm2. You can contribute to it [here](https://g
 Thanks for finishing this guide.
 
 You can now take a look at the [reference]({{ site.baseurl }}{% link en/runtime/reference/README.md %}) to master all the capabilities of PM2.
-
-## Questions?
-
-We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on the [PM2 github repository](https://github.com/Unitech/pm2/issues).

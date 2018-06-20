@@ -59,7 +59,3 @@ treekill|Only kill the main process, not detached children|boolean|true
 port|Shortcut to inject a PORT environment variable|number|
 uid|Set user id|string|Current user uid
 gid|Set group id|string|Current user gid
-
-## Questions?
-
-We are always happy to help with questions you might have. Use the search or check out the FAQ. You can also post questions or comments on the [PM2 github repository](https://github.com/Unitech/pm2/issues).
