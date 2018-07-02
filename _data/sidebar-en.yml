@@ -85,10 +85,6 @@ plus:
         url: "/en/plus/best-practices/metrics-glossary/"
       - page: CPU Profiling
         url: "/en/plus/best-practices/cpu-profiling/"
-      - page: Memory Profiling
-        url: "/en/plus/best-practices/memory-profiling/"
-      - page: Transaction Tracing
-        url: "/en/plus/best-practices/transaction-tracing/"
   - title: Integration
     url: "/en/plus/integration/"
     submenu:
