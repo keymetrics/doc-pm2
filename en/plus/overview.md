@@ -79,6 +79,8 @@ Take memory heapdumps straight from your production servers.
 
 ### CPU Profiling
 
+![cpu profiling]({{ site.baseurl }}{% link img/plus/cpu-profiling.png %})
+
 Take CPU snapshots straight from your production servers.
 
 **CPU profiling helps you identify particular resource-heavy tasks.**

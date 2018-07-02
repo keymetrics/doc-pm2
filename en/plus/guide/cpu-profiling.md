@@ -9,6 +9,8 @@ redirect_from: "/plus/guide/cpu-profiling"
 
 # CPU profiling
 
+![cpu profiling]({{ site.baseurl }}{% link img/plus/cpu-profiling.png %})
+
 The CPU profiling tool helps you better understand how CPU is used with your application.
 
 PM2 Plus makes remote CPU profiling of your production servers possible through the interface.
