@@ -57,6 +57,8 @@ The Bottom Up View is useful for sorting methods by those that consume the most 
 
 ### The Flame Graph
 
+![flame graph]({{ site.baseurl }}{% link img/plus/flame-graph.png %})
+
 Each box in the flame graph represents a function in the stack.
 
 - The y-axis shows stack depth. The top box shows the function that was on-CPU. Everything beneath that is ancestry. The function beneath a function is its parent, just like the stack traces shown earlier.
