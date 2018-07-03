@@ -7,6 +7,14 @@ section: plus
 redirect_from: "/plus/overview"
 ---
 
+<p align="center">
+    <img width="450px" src="{{ site.baseurl }}/img/plus/plus-black.png" alt="pm2 logo">
+</p>
+<p align="center">
+    <b>P</b>(rocess) <b>M</b>(anager) <b>2</b><br/>
+    <i>Plus</i>
+</p>
+
 # Overview
 
 Why monitor your app with PM2 Plus ? At the end of this overview, you'll have a better understanding of the capabilities of monitoring your app with PM2 Plus.

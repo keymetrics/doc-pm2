@@ -10,6 +10,14 @@ redirect_from:
 - "/"
 ---
 
+<p align="center">
+    <img width="450px" src="{{ site.baseurl }}/img/runtime/runtime-black.png" alt="pm2 logo">
+</p>
+<p align="center">
+    <b>P</b>(rocess) <b>M</b>(anager) <b>2</b><br/>
+    <i>Runtime</i>
+</p>
+
 # Overview
 
 Why use PM2 ? At the end of this overview, you will better understand the benefits of using PM2 as a process manager.
