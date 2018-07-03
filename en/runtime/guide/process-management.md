@@ -126,7 +126,7 @@ The local monitoring tool get you insight about CPU usage, memory usage, loop de
 pm2 monit
 ```
 
-<!-- Monitor your app on a web dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/quick-start.md %}) -->
+Monitor your app on a web dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/quick-start.md %})
 
 ## Next Steps
 

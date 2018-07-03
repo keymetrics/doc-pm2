@@ -71,4 +71,4 @@ You can now deploy your application on Now.sh like you would have done for a reg
 
 Complete your configuration with the [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %}).
 
-<!-- Monitor your app on a dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/integration/now.md %}). -->
+Monitor your app on a dashboard, with [PM2 Plus]({{ site.baseurl }}{% link en/plus/integration/now.md %}).
