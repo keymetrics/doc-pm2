@@ -9,9 +9,11 @@ redirect_from: "/plus/guide/modules"
 
 # Modules
 
-Modules are open-source addons that are built and maintained thanks to the community. A PM2 module is just a Node.js process run by PM2 and whose code can be pulled directly with PM2. Modules, when used with the [the @pm2/io library](https://github.com/keymetrics/pm2-io-apm), are great to monitor external databases: a process in charge of collecting the data from the database and reporting the metrics into the dashboard with `@pm2/io`.
+Modules are open-source addons built and maintained thanks to the community. A PM2 module is just a Node.js process run by PM2 and can be pulled directly with PM2.
 
-Anyone can create and publish a module. Send us an email to: contact@pm2.io if you want us to add your module to this list. Modules are published as common Javascript libraries on NPM.
+Modules are great to monitor external databases for example. The module process collects metrics with database calls and reports them into the dashboard with the [@pm2/io library](https://github.com/keymetrics/pm2-io-apm).
+
+Anyone can create and publish a module. Leave us an email at contact@pm2.io if you want us to add your module to this list.
 
 ## Use a module
 
@@ -47,14 +49,14 @@ pm2 install .
 
 ### Configuration
 
-Module sometimes offers the possibility to setup some values specified in the Readme file or in the package.json of the root folder.
+Module sometimes offers the possibility to setup some option values. They are generally specified in the README or in the package.json in their github repository.
 
-You can set a value with:
+Set a value with:
 ```bash
 pm2 set module_name:option_name <new_value>
 ```
 
-These variables are written in `~/.pm2/module_conf.json`. All he configuration variables can be displayed with `pm2 conf [your-module-name]`. No restart is needed, the module is automatically restarted.
+The variables are saved in `~/.pm2/module_conf.json`. Configuration variables can be displayed with `pm2 conf [your-module-name]`. No restart is needed, the module is automatically restarted.
 
 ### Manage a module
 
