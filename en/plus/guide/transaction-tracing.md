@@ -32,8 +32,7 @@ io.init({
   metrics: {
     transaction: {
       http: true,               // (default: true) HTTP routes logging
-      tracing: {                // (default: false) Enable transaction tracing
-        http_latency: 1,        // (default: 200) minimum latency in milliseconds to take into account
+      tracing: {                // (default: false) Enable transaction 
         ignore_routes: ['/foo'] // (default: empty) exclude some routes
       },
     },
