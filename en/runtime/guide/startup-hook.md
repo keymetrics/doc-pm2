@@ -41,6 +41,14 @@ Save your process list with:
 pm2 save
 ```
 
+**Warning** : if you delete all processes then reboot your system (or use pm2 update) it will ressurect all your processes (previously stored in dump file). It's to prevent "empty dump file" bug.
+
+If you want to create an empty dump file you should use :
+
+```bash
+pm2 cleardump
+```
+
 ## Disabling startup system
 
 ```bash
