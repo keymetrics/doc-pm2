@@ -11,7 +11,7 @@ redirect_from: "/runtime/guide/ecosystem-file"
 
 When deploying on multiple servers or when using multiple CLI arguments, an alternative to the command line becomes more conveninent for starting your apps.
 
-The purpose of the ecosystem file is to gather options and environment variables of all your applications.
+The purpose of the ecosystem file is to gather all options and environment variables for all your applications.
 
 ## Generate a template
 

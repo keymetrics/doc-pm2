@@ -9,7 +9,25 @@ redirect_from: "/runtime/reference/ecosystem-file"
 
 # Ecosystem file reference
 
-## Options
+The purpose of the ecosystem file is to gather all options and environment variables for all your applications.
+
+It is a javascript file which exports an object with all the configuration options.
+
+The object has two properties:
+- apps, an array that contains the configuration for each process
+- deploy, an object that contains the configuration for the deployments
+
+```javascript
+module.exports = {
+  apps: [{}, {}],
+  deploy: {}
+}
+```
+
+## Apps options
+
+The apps property is an array of object where each object contains the configuration for each process.
+
 
 Entry name|Description|Type|Default
 ---|---|---|---
@@ -59,3 +77,36 @@ treekill|Only kill the main process, not detached children|boolean|true
 port|Shortcut to inject a PORT environment variable|number|
 uid|Set user id|string|Current user uid
 gid|Set group id|string|Current user gid
+
+## Deploy options
+
+The deploy property is an object where each of its properties is an object which defines a deployment environment.
+
+The structure is the following:
+
+```javascript
+module.exports = {
+  apps: [{}, {}],
+  deploy: {
+    production: {},
+    staging: {},
+    development: {}
+  }
+}
+```
+
+The deployment environment object can have the following properties:
+
+Entry name|Description|Type|Default
+---|---|---|---
+key|SSH key path|String|$HOME/.ssh
+user|SSH user|String|
+host|SSH host|[String]|
+ssh_options|SSH options with no command-line flag, see 'man ssh'|String or [String]|
+ref|GIT remote/branch|String|
+repo|GIT remote|String|
+path|path in the server|String|
+pre-setup| Pre-setup command or path to a script on your local machine|String|
+post-setup|Post-setup commands or path to a script on the host machine|String
+pre-deploy-local|pre-deploy action|String|
+post-deploy|post-deploy action|String|
