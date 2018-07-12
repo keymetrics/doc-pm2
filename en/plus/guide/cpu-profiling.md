@@ -17,6 +17,8 @@ PM2 Plus makes remote CPU profiling of your production servers possible through 
 
 ## CPU profiling
 
+In order to use the CPU profiling, you must first [install the profiling tool]({{ site.baseurl }}{% link en/plus/guide/installation.md %}#install-cpumemory-profiling).
+
 For CPU profiling, you decide how long you want to record.
 
 It gets you a visualisation of the stack and still offer the ability to download the CPU profiling file.

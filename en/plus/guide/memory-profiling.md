@@ -17,6 +17,8 @@ PM2 Plus allows you to take remote heap memory snapshots of your production serv
 
 ## Memory profiling
 
+In order to use the memory profiling, you must first [install the profiling tool]({{ site.baseurl }}{% link en/plus/guide/installation.md %}#install-cpumemory-profiling).
+
 Click to take a heapdump and download the file. It may take some time depending on the weight of the heap file.
 
 Inspect with the Google Chrome developer tool into the Profiles tab (**Load** button).
