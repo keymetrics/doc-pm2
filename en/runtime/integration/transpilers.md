@@ -17,7 +17,7 @@ This tutorial will show you how to use pm2 with transpilers.
 ## Typescript
 
 ```bash
-# Add the new typescript dependency in PM2:
+## Add the new typescript dependency in PM2:
 pm2 install typescript
 
 ## Start app.ts in watch & restart:
