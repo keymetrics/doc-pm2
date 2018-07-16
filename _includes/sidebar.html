@@ -9,9 +9,9 @@
   {% if page.url contains item.url %}{% assign active = 'class="active"' %}
   {% else %}{% assign active = '' %}{% endif %}
     <li {{ active }}>
-      <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+      <a style="font-weight:bold" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
       {% if item.submenu  %}
-        {% if page.url contains item.url  %}
+
           <ul>
             {% for entry in item.submenu %}
             {% if page.url contains entry.url %}{% assign active = 'class="active"' %}
@@ -19,7 +19,7 @@
             <li {{ active }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a></li>
             {% endfor %}
           </ul>
-        {% endif %}
+
       {% endif %}
     </li>
     {% endfor %}
