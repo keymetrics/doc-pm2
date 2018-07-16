@@ -14,6 +14,16 @@ This tutorial will show you how to use pm2 with transpilers.
  We highly don't recommend to use this in **production** as it slows down your app. In that case, your app must be bundled i.e. transpiled from the source to get a pre-processed version of your app.
 {: .warn}
 
+## Typescript
+
+```bash
+# Add the new typescript dependency in PM2:
+pm2 install typescript
+
+## Start app.ts in watch & restart:
+pm2 start app.ts --watch
+```
+
 ## Babel
 
 ```bash
@@ -41,22 +51,24 @@ pm2 start --watch index.js
 ## Coffee-script
 
 ```bash
-## Install Coffee Script globally:
-npm install -g babel-cli
+## Install Coffee Script at PM2 level:
+pm2 install coffeescript
 
 ## Start pm2 with coffee binary in watch mode:
-pm2 start --watch --interpreter coffee app.coffee
+pm2 start app.coffee
 ```
 
-Or, you can create an other file, which requires the transpiler and your app:
+Or, you can install the coffeescript dependency via `npm install coffeescript` and require it in your code:
+
 ```javascript
 // index.js
 require('coffee/register');
 require('./app.coffee');
 ```
+
 Then, run:
 ```bash
-pm2 start --watch index.js
+pm2 start index.js
 ```
 
 The cluster mode is only available with the second option.
