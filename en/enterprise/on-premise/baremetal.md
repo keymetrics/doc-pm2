@@ -33,27 +33,19 @@ $ docker login
 $ wget https://raw.githubusercontent.com/keymetrics/on-premise/master/docker/docker-compose.yml
 ```
 
-2. Edit the docker-compose.yml:
-
-`KM_DEDICATED_KEY` with the license key provided<br/>
-`KM_SMTP_*` with the SMTP informations (for receiving email notification/alerts)<br/>
-`KM_SITE_URL` with the url that will be bound to the backend (or the ip address directly)<br/>
-
-*For full information about the configuration flag, check the related [documentation](https://github.com/keymetrics/on-premise/blob/master/docs/BACKEND.md#keymetrics-core-documentation)*
-
 Once you have configured the `docker-compose.yml` file start it:
 
 ```bash
 $ docker-compose up -d
 ```
 
-Check the logs via:
+Now connect to:
 
 ```bash
-$ docker-compose logs
+$ google-chrome http://server-ip/wizard
 ```
 
-*In the beginning some connections errors might appears but it's not critical (elasticsearch take few seconds to boot so the backend will restart for few seconds then connect when his ready)*
+Set your License Key and configuration and youre done
 
 ## Update Procedure
 
