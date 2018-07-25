@@ -42,49 +42,36 @@ If you want to monitor the process again use `pm2 monitor [APP_NAME|ID]`.
 
 ### Refresh all connections
 
-Run `pm2 link` on your server and refresh your browser.
+Re-Run `pm2 link` on your server and refresh your browser.
 
-### Are you behind a company proxy or firewall?
+### Make sure your firewall is properly configured
 
 Make sure that the ports 80 (TCP outbound), 443 (HTTPS outbound) and 43554 (TCP outbound) are allowed on your firewall.
 
 If you need to whitelist IPs, please allow these ones: 62.210.102.213, 163.172.76.240, 62.4.21.98, 163.172.253.187, 163.172.67.152, 195.154.79.25, 195.154.79.34
 
-### Are you using an old version of Node.js or PM2?
+### Make sure that you use the latest PM2 Runtime version
 
-With the last version of PM2 (> 3.0), Node.js is supported starting from 4.0 version.
-Upgrade to the last version of PM2 with `npm install -g pm2 && pm2 update`.
-
-If you are using PM2 > 2.0, Node.js is supported starting from 0.12 version.
-
-### New servers can be link even if no server is already linked
-
-Go to the setting page of your bucket and delete servers in the server box.
+[Updating PM2](https://pm2.io/doc/en/runtime/guide/installation/#update)
 
 ## Dashboard issues
 
-### Multiple PM2 sending data to the same bucket with an identical server name?
+### Servers are blinking
 
-Make sure you have only one PM2 instance launched `ps -ax | grep PM2`
+Make sure that each PM2 runtime has a different name when linking to PM2 plus via:
 
-### Dashboard says "Reverse connection not established"
+```
+$ pm2 plus xxxx yyyy [SERVER_NAME]
+````
 
-It means that PM2 have not managed to initialize the full duplex connection. Not any actions will work (restart, pull, module install...).
-
-Please make sure that the port 43554 (TCP outbound) is opened and check the logs in `~/.pm2/agent.log`.
-
-Run `pm2 link` to refresh the connection.
-
-### In the dashboard I've linked two servers and they are continuously flickering
-
-You made a `pm2 link <public_id> <private_id> [name]` without setting the name option. By default if the name is empty, it becomes the $HOSTNAME env variable.
+Also make sure you have only one PM2 instance launched `ps -ax | grep PM2`
 
 ## Security & Data Transfer
 
 ### What information is sent from PM2 runtime to PM2 plus?
 
-- Process: pm_id, pid, app name, restart_time, created_at, watch mode, uptime, cpu, memory, NODE_ENV, versioning informations, custom actions, custom metrics
-- Server: Hostname, internal ip, server_name, load average, free mem, used mem, cpu infos, username, platform, pm2_version, pm2_agent_version, node version
+- **Process**: pm_id, pid, app name, restart_time, created_at, watch mode, uptime, cpu, memory, NODE_ENV, versioning informations, custom actions, custom metrics
+- **Server**: Hostname, internal ip, server_name, load average, free mem, used mem, cpu infos, username, platform, pm2_version, pm2_agent_version, node version
 
 ### How is the data transfered from PM2 runtime to PM2 plus?
 
