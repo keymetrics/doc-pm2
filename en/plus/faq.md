@@ -79,6 +79,21 @@ Run `pm2 link` to refresh the connection.
 
 You made a `pm2 link <public_id> <private_id> [name]` without setting the name option. By default if the name is empty, it becomes the $HOSTNAME env variable.
 
+## Security & Data Transfer
+
+### What information is sent from PM2 runtime to PM2 plus?
+
+- Process: pm_id, pid, app name, restart_time, created_at, watch mode, uptime, cpu, memory, NODE_ENV, versioning informations, custom actions, custom metrics
+- Server: Hostname, internal ip, server_name, load average, free mem, used mem, cpu infos, username, platform, pm2_version, pm2_agent_version, node version
+
+### How is the data transfered from PM2 runtime to PM2 plus?
+
+Data is ciphered while transfered into network (HTTPS and AES256). Data stored in database is normalized but each bucket has his own database (with database name ciphered).
+
+### How do PM2 plus handle payments?
+
+We use Stripe as our payment system, we never store any informations about credit cards used on PM2 plus.
+
 ## Billing and settings Issues
 
 ### Transfer ownership
