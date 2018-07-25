@@ -79,6 +79,18 @@ Run `pm2 link` to refresh the connection.
 
 You made a `pm2 link <public_id> <private_id> [name]` without setting the name option. By default if the name is empty, it becomes the $HOSTNAME env variable.
 
+## Billing and settings Issues
+
+### Transfer ownership
+
+To Transfer ownership, you must create a free account with the next owner email and add credit card details.
+
+Then with the current owner email, you must connect to the concerned bucket and in the Settings menu, in General, you must click on the Action TRANSFER OWNERSHIP and enter the next owner email.
+
+The new owner will be notified by email and the bucket will be from now on locked to his email and credit card details as the owner.
+
+
+
 To fix this:
 
 ```
