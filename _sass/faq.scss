@@ -1,0 +1,18 @@
+.faq {
+  h2 {
+    margin-top: 20px !important;
+    font-size: 26px !important;
+  }
+  details {
+    margin: 10px 0;
+    padding: 3px;
+    border-radius: 4px;
+  }
+  summary {
+    //margin: 10px 0;
+    &:hover {
+      cursor:pointer;
+      opacity: 0.8;
+    }
+  }
+}

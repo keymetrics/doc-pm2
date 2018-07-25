@@ -3,7 +3,7 @@
 <html lang="{{ page.lang }}">
   {% include head.html %}
   {% if page.lang == 'en' %}
-  <body class="en-doc sticky {{ page.section }}-page">
+  <body class="en-doc sticky {{ page.section }}-page {{ page.name | replace:'.md', ''}}">
   {% else %}
   <body class="non-en-doc sticky {{ page.section }}-page">
   {% endif %}
