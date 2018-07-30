@@ -40,6 +40,11 @@ You can then use the command `pm2 unmonitor [APP_NAME|ID]` to stop monitoring a 
 If you want to monitor the process again use `pm2 monitor [APP_NAME|ID]`.
 </details>
 
+<details>
+<summary markdown="span">Do pm2-logrotate and pm2-auto-pull count has paying processes?</summary>
+No, these two modules are free and are not counted has paying processes.
+</details>
+
 ## Connectivity Issues
 
 <details>
