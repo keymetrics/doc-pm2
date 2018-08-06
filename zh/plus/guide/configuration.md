@@ -23,21 +23,21 @@ section: plus
 使用npm:
 
 ```bash
-npm install pmx --save
+npm install @pm2/io --save
 ```
 
 使用yarn:
 
 ```bash
-yarn add pmx
+yarn add @pm2/io
 ```
 
 ## PMX初始化
 
-在任何其他`require`之前加载并初始化您应用顶层的pmx。
+在任何其他`require`之前加载并初始化您应用顶层的io。
 
 ```javascript
-const pmx = require('pmx').init({
+const io = require('@pm2/io').init({
     // Enable the exception reporting, default true
     errors: true,
     // Enable the transaction tracing, default false
@@ -52,12 +52,12 @@ const pmx = require('pmx').init({
 
 ## 显示自定义指标
 
-pmx为您提供一个探针构造函数，使您能够将变量值显示在仪表板上。
+io为您提供一个探针构造函数，使您能够将变量值显示在仪表板上。
 
 例子：
 
 ```javascript
-const probe = require('pmx').probe();
+const probe = require('@pm2/io').probe();
 
 let counter = 0;
 
@@ -93,9 +93,9 @@ const metric = probe.metric({
 例子：
 
 ```javascript
-const pmx = require('pmx');
+const io = require('@pm2/io');
 
-pmx.action('db:clean', function(reply) {
+io.action('db:clean', function(reply) {
   clean.db(() => {
     /**
      * reply() must be called at the end of the action
@@ -113,9 +113,9 @@ pmx.action('db:clean', function(reply) {
 触发事件以获取历史记录或统计数据。
 
 ```javascript
-const pmx = require('pmx')
+const io = require('@pm2/io')
 
-pmx.emit('user:register', {
+io.emit('user:register', {
   user: 'Alex registered',
   email: 'thorustor@gmail.com'
 })

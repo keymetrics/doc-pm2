@@ -100,7 +100,7 @@ pm2 logs <your-module-name>
 
 Module configuration can be added into the `package.json` file.
 
-The `config` attribute gathers parameters that will be accessible in the module in the callback of `pmx.initModule()`.
+The `config` attribute gathers parameters that will be accessible in the module in the callback of `io.initModule()`.
 
 The `apps` attribute contains the same configuration as the ecosystem file. Don't forget that a module is a process like any other ones.
 
@@ -126,14 +126,14 @@ The `apps` attribute contains the same configuration as the ecosystem file. Don'
 
 ### Module entry point
 
-In your main module entry point, `pmx.initModule()` is called to initialize the module:
+In your main module entry point, `io.initModule()` is called to initialize the module:
 
 ```javascript
-const pmx = require('pmx')
+const io = require('@pm2/io')
 
-const conf = pmx.initModule({
+const conf = io.initModule({
   // Override PID to be monitored
-  pid: pmx.resolvePidPaths(['/var/run/redis.pid']),
+  pid: io.resolvePidPaths(['/var/run/redis.pid']),
 }, (err, conf) => {
   // Now the module is initialized
   require('./business_logic.js')(conf)
@@ -161,9 +161,9 @@ Once the module is installed, you can change the behavior to display a table con
 Then in your code:
 
 ```javascript
-const pmx = require('pmx')
+const io = require('@pm2/io')
 
-pmx.configureModule({
+io.configureModule({
   human_info: [
     ['Status', 'Module ready'],
     ['Comment', 'This is a superb comment the user should see'],

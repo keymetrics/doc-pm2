@@ -71,8 +71,8 @@ trace|Enable or disable the transaction tracing|boolean|
 disable_trace|Enable or disable the transaction tracing|boolean|true
 increment_var|Specify the name of an environnement variable to inject which increments for each cluster|string|
 instance_var|Rename the NODE_APP_INSTANCE environment variable|string|NODE_APP_INSTANCE
-pmx|Enable or disable pmx wrapping|boolean|true
-automation|Enable or disable pmx wrapping|boolean|true
+pmx|Enable or disable apm wrapping|boolean|true
+automation|Enable or disable apm wrapping|boolean|true
 treekill|Only kill the main process, not detached children|boolean|true
 port|Shortcut to inject a PORT environment variable|number|
 uid|Set user id|string|Current user uid

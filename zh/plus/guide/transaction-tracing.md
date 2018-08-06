@@ -23,7 +23,7 @@ section: plus
 
 ### PMX
 
-在pmx初始化时添加 `trace：true`
+在io初始化时添加 `trace：true`
 
 ### 终端
 
@@ -43,7 +43,7 @@ pm2 reload <app_name> --disable-trace
 
 ## 高级选项
 
-您必须使用pmx初始化来自定义您的事务跟踪。
+您必须使用io初始化来自定义您的事务跟踪。
 
 `--trace`使用默认设置启用事务跟踪，因此在使用高级选项之前运行 `--disable-trace`。
 

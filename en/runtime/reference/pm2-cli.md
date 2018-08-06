@@ -60,14 +60,14 @@ Flag name|Description
 --no-vizion|start an app without vizion feature (versioning control)
 --no-autorestart|start an app without automatic restart
 --no-treekill|Only kill the main process, not detached children
---no-pmx|start an app without pmx
---no-automation|start an app without pmx
+--no-pmx|start an app without apm
+--no-automation|start an app without apm
 --trace|enable transaction tracing with km
 --disable-trace|disable transaction tracing with km
 --attach|attach logging after your start/restart/stop/reload
 --sort &lt;field_name:sort&gt;|sort process according to field's name
 --v8|enable v8 data collecting
---event-loop-inspector|enable event-loop-inspector dump in pmx
+--event-loop-inspector|enable event-loop-inspector dump in apm
 --deep-monitoring|enable all monitoring tools (equivalent to --v8 --event-loop-inspector --trace)
 -h, --help|output usage information
 
