@@ -53,7 +53,7 @@ disable_source_map_support|Enable or disable the source map support|boolean|
 wait_ready|Make the process wait for a process.send('ready')|boolean|
 instances|Number of instances to be started in cluster mode|number|1
 kill_timeout|Time in ms before sending the final SIGKILL signal after SIGINT|number|1600
-listen_timeout|Time in ms before forcing a reload if app is still not listening/has still note sent ready|number|
+listen_timeout|Time in ms before forcing a reload if app is still not listening/has still not sent ready|number|
 cron_restart|A cron pattern to restart your app|string|
 merge_logs|In cluster mode, merge each type of logs into a single file (instead of having one for each cluster)|boolean|
 vizion|Enable or disable the versioning metadatas (vizion library)|boolean|true
