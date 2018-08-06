@@ -24,17 +24,17 @@ With PM2 Plus, we've got your back. You can track all exceptions that happens on
 
 If you properly uses `try... catch` in your code, errors will be catch and will never be reported in the dashboard.
 
-To reporte them anyway, emit yourself an exception with `pmx.notify()`:
+To reporte them anyway, emit yourself an exception with `io.notify()`:
 
 ```javascript
-const pmx = require('pmx')
+const io = require('@pm2/io')
 
 try {
     // Critical action to be tested
 }
 catch(error) {
     // Your code in case of an exception
-    pmx.notify(new Error('This is an error'))
+    io.notify(new Error('This is an error'))
 }
 ```
 

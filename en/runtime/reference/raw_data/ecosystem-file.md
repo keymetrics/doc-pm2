@@ -46,7 +46,7 @@ trace|Enable the transaction tracing.|boolean|
 disable_trace|Enable the transaction tracing.|boolean|
 increment_var|Add environnement variable to be incremented for each application started|string,|
 instance_var|Rename the NODE_APP_INSTANCE environement variable|string,|
-pmx|Does not inject pmx.|boolean,|
+pmx|Does not inject apm.|boolean,|
 automation|See --no-automation flag|boolean,|
 treekill|See --no-treekill flag  |boolean,|
 port||number|

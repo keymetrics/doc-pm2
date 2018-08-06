@@ -22,17 +22,17 @@ section: plus
 
 如果您在代码中正确使用 `try ... catch`，则错误将被捕获，且永远不会在仪表板中报告。
 
-如还是想收到报告，使用 `pmx.notify()`发出一个异常情况：
+如还是想收到报告，使用 `io.notify()`发出一个异常情况：
 
 ```javascript
-const pmx = require('pmx')
+const io = require('@pm2/io')
 
 try {
     // Critical action to be tested
 }
 catch(error) {
     // Your code in case of an exception
-    pmx.notify(new Error('This is an error'))
+    io.notify(new Error('This is an error'))
 }
 ```
 
@@ -45,7 +45,7 @@ catch(error) {
 ```javascript
 // all your routes here
 // app.get((req, res) => {})
-app.use(pmx.expressErrorHandler())
+app.use(io.expressErrorHandler())
 ```
 
  在路由声明之后使用它。

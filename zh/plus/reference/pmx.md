@@ -21,21 +21,21 @@ PMX是一个轻量级库，允许与仪表板进行高级交互。
 使用yarn:
 
 ```bash
-yarn add pmx
+yarn add @pm2/io
 ```
 
 使用npm:
 
 ```bash
-npm install pmx --save
+npm install @pm2/io --save
 ```
 
 ### PMX初始化
 
-加载并初始化应用顶层的pmx.
+加载并初始化应用顶层的io.
 
 ```javascript
-const pmx = require('pmx').init({
+const io = require('@pm2/io').init({
   errors: true,
   transactions: false
   profiling: true,
@@ -44,7 +44,7 @@ const pmx = require('pmx').init({
 
 ### 模块可能存在的问题：
 
-为了检索http延迟，pmx [包装了](https://github.com/keymetrics/pmx/blob/master/lib/wrapper/simple_http.js)`http`模块。 如果您需要任何模块以修改`http`模块，此包装可以被移除
+为了检索http延迟，io [包装了](https://github.com/keymetrics/pm2-io-apm/blob/master/src/wrapper/httpWrapper.ts)`http`模块。 如果您需要任何模块以修改`http`模块，此包装可以被移除
 
 * `request-promise`：该模块清除节点缓存并需要一个新的干净版本的`http`模块。 为了解决这个问题，在请求`request-promise`以获得正确包装的 `http`模块后再次请求`http`。
 
@@ -67,14 +67,14 @@ ports|显示您的应用正在侦听的端口|boolean|false
 ### 应用级网络流量监视/显示使用的端口
 
 初始化PMX时，您可以通过添加选项`network：true`来监控特定应用的网络使用情况。
-如果您启动pmx时启用了标志`ports：true`，它将显示您的应用正在侦听哪些端口。
+如果您启动io时启用了标志`ports：true`，它将显示您的应用正在侦听哪些端口。
 
 您可以在位于Keymetrics仪表板页面的**Custom Metrics**部分中找到这些指标。
 
 示例：
 
 ```
-pmx.init({
+io.init({
   [...]
   network : true, // Allows application level network monitoring
   ports   : true  // Displays ports used by the application
@@ -86,22 +86,22 @@ pmx.init({
 通过此功能，您可以在遵从REST的同时监控路由，延迟和代码。
 
 ```javascript
-pmx.http(); // You must do this BEFORE any require('http')
+io.http(); // You must do this BEFORE any require('http')
 ```
 
 您也可以通过传递正则表达式列表来忽略一些路由。
 
 ```javascript
-pmx.http({
+io.http({
   http          : true, // (Default: true)
   ignore_routes : [/socket\.io/, /notFound/] // Ignore http routes with this pattern (Default: [])
 });
 ```
 
-这可以选择性通过pmx.init（）来完成。
+这可以选择性通过io.init（）来完成。
 
 ```javascript
-pmx.init({
+io.init({
   http          : true, // (Default: true)
   ignore_routes : [/socket\.io/, /notFound/] // Ignore http routes with this pattern (Default: [])
 });
@@ -125,7 +125,7 @@ pmx.init({
 这允许暴露可以立即读取的值。
 
 ```javascript
-const probe = pmx.probe()
+const probe = io.probe()
 
 // Here the value function will be called each second to get the value
 const metric = probe.metric({
@@ -148,7 +148,7 @@ valvar.set(23)
 增加或减少的事项。
 
 ```javascript
-const probe = pmx.probe()
+const probe = io.probe()
 
 // The counter will start at 0
 const counter = probe.counter({
@@ -170,7 +170,7 @@ http.createServer((req, res) => {
 以事件/间隔来衡量的事物。
 
 ```javascript
-const probe = pmx.probe()
+const probe = io.probe()
 
 const meter = probe.meter({
   name: 'req/sec',
@@ -194,7 +194,7 @@ http.createServer((req, res) => {
 存储统计相关值的储存库，偏向最近5分钟以探索其分布。
 
 ```javascript
-const probe = pmx.probe()
+const probe = io.probe()
 
 const histogram = probe.histogram({
   name: 'latency',
@@ -266,9 +266,9 @@ const metric = probe.metric({
 示例：
 
 ```javascript
-const pmx = require('pmx')
+const io = require('@pm2/io')
 
-pmx.action('db:clean', (reply) => {
+io.action('db:clean', (reply) => {
   clean.db(function() {
     /**
      * reply() must be called at the end of the action
@@ -287,7 +287,7 @@ pmx.action('db:clean', (reply) => {
 示例：
 
 ```javascript
-pmx.scopedAction('long running lsof', (data, res) => {
+io.scopedAction('long running lsof', (data, res) => {
   const child = spawn('lsof', [])
 
   child.stdout.on('data', (chunk) => {
@@ -314,9 +314,9 @@ pmx.scopedAction('long running lsof', (data, res) => {
 这在Keymetrics **Events** 页面中可用。
 
 ```javascript
-const pmx = require('pmx')
+const io = require('@pm2/io')
 
-pmx.emit('user:register', {
+io.emit('user:register', {
   user: 'Alex registered',
   email: 'thorustor@gmail.com'
 })
@@ -332,22 +332,22 @@ PM2链接到Keymetrics后，默认情况下会提醒您任何未捕获的异常�
 如果您需要收到任意重要错误的提醒，您可以通过以下编程方式实现：
 
 ```javascript
-const pmx = require('pmx')
+const io = require('@pm2/io')
 
-pmx.notify({ success : false })
+io.notify({ success : false })
 
-pmx.notify('This is an error')
+io.notify('This is an error')
 
-pmx.notify(new Error('This is an error'))
+io.notify(new Error('This is an error'))
 ```
 
 ### 将赘言添加到提醒：加速错误处理
 
 当未捕获的异常发生时，您可以跟踪它被引发的路由。
-要做到这一点，您必须在路由安装结束时附加中间件 `pmx.expressErrorHandler`。
+要做到这一点，您必须在路由安装结束时附加中间件 `io.expressErrorHandler`。
 
 ```javascript
-const pmx = require('pmx')
+const io = require('@pm2/io')
 
 // All my routes
 app.get('/' ...)
@@ -355,5 +355,5 @@ app.post(...)
 // All my routes
 
 // Here I attach the middleware to get more verbosity on exception thrown
-app.use(pmx.expressErrorHandler())
+app.use(io.expressErrorHandler())
 ```

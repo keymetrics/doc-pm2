@@ -101,13 +101,13 @@ Example:
   "version": "1.0.0",       // Used as the module version
   "description": "my desc", // Used as the module comment
   "dependencies": {
-    "pmx": "latest"
+    "@pm2/io": "latest"
   },
   // Default configuration values
   // These values can be overriden with `pm2 set <module-name>:<attr> <val>`
   "config": {
     "days_interval" : 7,
-    // These value is returned once you call pmx.initModule()
+    // These value is returned once you call io.initModule()
     "max_size" : 5242880
   },
   // Module behavior options
@@ -123,14 +123,14 @@ Example:
 
 ### Module entry point
 
-In your main module entry point, call the `pmx.initModule(opts, fn(){});` to initialize your module:
+In your main module entry point, call the `io.initModule(opts, fn(){});` to initialize your module:
 
 ```javascript
-const pmx = require('pmx')
+const io = require('@pm2/io')
 
-const conf = pmx.initModule({
+const conf = io.initModule({
   // Override PID to be monitored
-  pid: pmx.resolvePidPaths(['/var/run/redis.pid']),
+  pid: io.resolvePidPaths(['/var/run/redis.pid']),
 }, (err, conf) => {
   // Now the module is initialized
   require('./business_logic.js')(conf)
@@ -161,9 +161,9 @@ package.json:
 Then in your code:
 
 ```javascript
-const pmx = require('pmx')
+const io = require('@pm2/io')
 
-pmx.configureModule({
+io.configureModule({
   human_info : [
     ['Status' , 'Module ready'],
     ['Comment', 'This is a superb comment the user should see'],
@@ -186,19 +186,19 @@ Add default configuration values in package.json under the "config" attribute:
 {
  [...]
  "config": {             // Default configuration value
-    "days_interval" : 7,  // -> returned from var ret = pmx.initModule()
+    "days_interval" : 7,  // -> returned from var ret = io.initModule()
     "max_size" : 5242880  // -> e.g. ret.max_size
  }
  [...]
 }
 ```
 
-These values are then accessible via the data returned by pmx.initModule().
+These values are then accessible via the data returned by io.initModule().
 
 Example:
 
 ```javascript
-const conf = pmx.initModule({[...]}, (err, conf) => {
+const conf = io.initModule({[...]}, (err, conf) => {
   // Now we can read these values
   console.log(conf.days_interval);
 });
@@ -232,12 +232,12 @@ cd my-module
 pm2 publish
 ```
 
-### Options with pmx.initModule
+### Options with io.initModule
 
 ```javascript
-var pmx     = require('pmx');
+var io     = require('@pm2/io');
 
-var conf    = pmx.initModule({
+var conf    = io.initModule({
 
     [...]
 
@@ -305,7 +305,7 @@ Your creativity is the limit. A PM2 module can do pretty anything. From a log ro
 ### Super charged modules, with PM2 Plus
 
 The real power of the module system comes once PM2 is linked to PM2 Plus.
-When using [the keymetrics library](https://github.com/keymetrics/pmx) you can build a dedicated interface displayed on PM2 Plus as well as [expose metrics](https://github.com/keymetrics/pmx#expose-metrics-measure-anything), [remotely trigger actions](https://github.com/keymetrics/pmx#expose-functions-trigger-functions-remotely), [alert about issues](https://github.com/keymetrics/pmx#report-alerts-errors--uncaught-exceptions), [notify about events](https://github.com/keymetrics/pmx#emit-events) or allow to configure the module remotely!
+When using [the keymetrics library](https://github.com/keymetrics/pm2-io-apm) you can build a dedicated interface displayed on PM2 Plus as well as [expose metrics](https://github.com/keymetrics/pm2-io-apm#expose-metrics-measure-anything), [remotely trigger actions](https://github.com/keymetrics/pm2-io-apm#expose-functions-trigger-functions-remotely), [alert about issues](https://github.com/keymetrics/pm2-io-apm#report-alerts-errors--uncaught-exceptions), [notify about events](https://github.com/keymetrics/pm2-io-apm#emit-events) or allow to configure the module remotely!
 
 ### Managing a module
 
@@ -355,12 +355,12 @@ A package.json must be present with some extra fields like `config` for configur
   "description": "my desc", // Used as the module comment
   "dependencies": {
     "pm2": "latest",
-    "pmx": "latest"         // Common dependencies to communiate with PM2 Plus
+    "@pm2/io": "latest"         // Common dependencies to communiate with PM2 Plus
   },
   "config": {              // Default configuration value
                            // These values can be modified via PM2 Plus or PM2 configuration system
 
-     "days_interval" : 7,  // -> this value is returned once you call pmx.initModule()
+     "days_interval" : 7,  // -> this value is returned once you call io.initModule()
      "max_size" : 5242880
   },
   "apps" : [{              // Application configuration
@@ -376,16 +376,16 @@ A package.json must be present with some extra fields like `config` for configur
 ### Module entry point
 
 This is the index.js file (declared in the package.json in the apps section):
-The pmx.initModule takes a range of options to configure the module display in PM2 Plus or to override the PID monitored by PM2:
+The io.initModule takes a range of options to configure the module display in PM2 Plus or to override the PID monitored by PM2:
 
 ```javascript
-var pmx     = require('pmx');
+var io     = require('@pm2/io');
 
 // Initialize the module
-var conf    = pmx.initModule({
+var conf    = io.initModule({
 
     // Override PID to be monitored (for CPU and Memory blocks)
-    pid              : pmx.resolvePidPaths(['/var/run/redis.pid', '/var/run/redis/redis-server.pid']),
+    pid              : io.resolvePidPaths(['/var/run/redis.pid', '/var/run/redis/redis-server.pid']),
 
     widget : {
 
@@ -453,19 +453,19 @@ Add default configuration values in package.json under the "config" attribute:
 {
  [...]
  "config": {             // Default configuration value
-    "days_interval" : 7,  // -> returned from var ret = pmx.initModule()
+    "days_interval" : 7,  // -> returned from var ret = io.initModule()
     "max_size" : 5242880  // -> e.g. ret.max_size
  }
  [...]
 }
 ```
 
-Then these values are accessible via the data returned by pmx.initModule().
+Then these values are accessible via the data returned by io.initModule().
 
 Example:
 
 ```javascript
-var conf = pmx.initModule({[...]});
+var conf = io.initModule({[...]});
 
 // Now we can read these values
 console.log(conf.days_interval);
@@ -498,24 +498,24 @@ In the main PM2 Plus Dashboard, the module will have a button called "Configure"
 
 # PMX Helpers methods for Modules
 
-### pmx.initModule(JSON)
+### io.initModule(JSON)
 
 This is the main method to be called to transform the current application into a PM2 Module. It is preferred that this method is called before any other required modules.
 
-### pmx.configureModule(JSON)
+### io.configureModule(JSON)
 
 Add/Override a variable to module option (.axm_options)
 
 ```javascript
-pmx.configureModule({
+io.configureModule({
   new_axm_option : true
 });
 ```
 
-### pmx.getConf()
+### io.getConf()
 
-Get configuration variables for modules (same object than what is returned by pmx.initModule())
+Get configuration variables for modules (same object than what is returned by io.initModule())
 
-### pmx.resolvePidPaths([])
+### io.resolvePidPaths([])
 
 Pass an array of possible pid file path location, open it and return the value.
