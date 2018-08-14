@@ -46,7 +46,7 @@ module.exports = {
 
 - `watch` can also be a string or an array of paths to watch. Current directory is watched when set to `true`.
 - `ignore_watch` can be an array of paths or a string. It is used by the [chokidar](https://github.com/paulmillr/chokidar#path-filtering) dependency as a glob or a regular expression.
-- `watch_options` is an object that is given as options to [chokidar](https://github.com/paulmillr/chokidar#api) dependency (default options used by pm2 are persistent and ingoreInitial set to true)
+- `watch_options` is an object that is given as options to [chokidar](https://github.com/paulmillr/chokidar#api) dependency (default options used by pm2 are persistent and ignoreInitial set to true)
 
 When working with NFS devices you'll need to set `usePolling: true` as stated in [this chokidar issue](https://github.com/paulmillr/chokidar/issues/242).
 
