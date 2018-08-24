@@ -39,7 +39,7 @@ When you use `pm2 start app.js`, two actions are performed:
 
 ## Routine
 
-Once setup your process list, every day actions are done with the process name.
+Once setup your process list, every actions are done with the process name.
 
 ```bash
 # kill the process but keep it in the process list
