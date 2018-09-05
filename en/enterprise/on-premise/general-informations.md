@@ -8,7 +8,7 @@ redirect_from: "/enterprise/backend"
 ---
 
 
-## PM2 Plus Core Documentation
+## PM2 Enterprise Core Documentation
 
 To deploy keymetrics you first need to get access to one of the images that contains it, see the readme for this.
 

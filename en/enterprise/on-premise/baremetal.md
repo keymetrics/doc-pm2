@@ -9,6 +9,8 @@ redirect_from: "/enterprise/baremetal"
 
 # Deployment on Baremetal Servers
 
+Note that this tutorial is only made if you decided to deploy PM2 Enterprise On-Premise. If you use the Cloud based one you can just use it straight from https://app.pm2.io
+
 ## Requirements
 
 Install Docker & Docker compose (minimum required version is 1.19.0) in your host machine:

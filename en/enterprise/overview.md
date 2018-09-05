@@ -15,3 +15,7 @@ redirect_from: "/enterprise/overview/"
     <b>P</b>(rocess) <b>M</b>(anager) <b>2</b><br/>
     <i>Enterprise</i>
 </p>
+
+## Notes
+
+This documentation is currently work in progress, if you have any feedback or issue with it, please don't hesitate to send us an email at tech@pm2.io

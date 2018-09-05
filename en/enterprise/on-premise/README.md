@@ -15,10 +15,7 @@ This section will help you setup your On-Premise PM2 Enterprise installation.
 
 Pick the tutorial that best matches your needs:
 
-- [Amazon Web Service]({{ site.baseurl }}{% link en/enterprise/on-premise/aws.md %})
 - [Baremetal Server]({{ site.baseurl }}{% link en/enterprise/on-premise/baremetal.md %})
-- [Google Cloud Plateform]({{ site.baseurl }}{% link en/enterprise/on-premise/gcp.md %})
-- [Deployment on Kubernetes with Helm]({{ site.baseurl }}{% link en/enterprise/on-premise/helm.md %})
 
 Once setup, read the general informations on how the PM2 backend works or read the FAQ to troubleshoot common problems.
 

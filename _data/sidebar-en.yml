@@ -104,18 +104,17 @@ plus:
 enterprise:
   - title: Overview
     url: "/en/enterprise/overview/"
+  - title: Guides
+    url: "/en/enterprise/overview/"
+    submenu:
+      - page: Log
+        url: "/en/enterprise/guides/log"
+      - page: Alerting
+        url: "/en/enterprise/guides/alerting"
   - title: On-Premise
     url: "/en/enterprise/on-premise/"
     submenu:
-      - page: AWS
-        url: "/en/enterprise/on-premise/aws/"
       - page: Baremetal
         url: "/en/enterprise/on-premise/baremetal/"
-      - page: GCP
-        url: "/en/enterprise/on-premise/gcp/"
-      - page: Helm
-        url: "/en/enterprise/on-premise/helm/"
-      - page: Backend
-        url: "/en/enterprise/on-premise/general-informations/"
       - page: FAQ
         url: "/en/enterprise/on-premise/faq/"
