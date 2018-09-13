@@ -5,6 +5,11 @@ main.markdown-section {
   background-color: #fff;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
 
+  .pm2-logo {
+    min-width: 350px;
+    width: 70%;
+  }
+
   @media screen and (max-width: $mobile_offset) {
     padding: 15px;
   }
@@ -30,7 +35,7 @@ main.markdown-section {
 
   h2 {
     font-size: 32px;
-    margin-top: 40px;
+    margin-top: 25px;
     margin-bottom: 15px;
     a {
       text-decoration: none;
@@ -76,7 +81,6 @@ main.markdown-section {
 
   blockquote,
   ol,
-  p,
   ul {
     margin: 1em auto 0;
     padding: 0;
@@ -85,6 +89,8 @@ main.markdown-section {
   p {
     line-height: 28px;
     font-size: 18px;
+    margin: 0;
+    margin-top: 13px;
   }
 
   // Customization of orphan link
@@ -112,7 +118,7 @@ main.markdown-section {
   }
 
   pre code {
-    font-size: 16px;
+    font-size: 19px;
     padding: 2px 6px;
     color: white;
   }

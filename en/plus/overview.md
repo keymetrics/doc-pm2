@@ -8,16 +8,38 @@ redirect_from: "/plus/overview"
 ---
 
 <p align="center">
-    <img width="450px" src="{{ site.baseurl }}/img/plus/plus-black.png" alt="pm2 logo">
+    <img class="pm2-logo" src="{{ site.baseurl }}/img/plus/plus-black.png" alt="pm2 logo">
 </p>
 <p align="center">
     <b>P</b>(rocess) <b>M</b>(anager) <b>2</b><br/>
     <i>Plus</i>
 </p>
 
-# Overview
+<br/>
+<center>
+Welcome to the Overview of PM2 Plus!
+</center>
 
-Why monitor your app with PM2 Plus ? At the end of this overview, you'll have a better understanding of the capabilities of monitoring your app with PM2 Plus.
+Once you go serious about production, you need to make sure that your application is running properly, without bugs, performance issues and without downtimes.
+
+That's why we created PM2 Plus. It's a set of advanced features for both hardening the PM2 Runtime and monitoring applications in production.
+
+With PM2 Plus you get:
+
+- A Real-time Monitoring Web Interface
+- Smart Exception Reporting
+- Production Profiling for Memory and CPU
+- PM2 Runtime High Availability Fallback
+
+And much more like realtime logs, custom metrics, remote actions...
+
+To start using PM2 Plus via CLI:
+
+```bash
+pm2 plus
+```
+
+Here are some of the features available in PM2 Plus:
 
 ## Global Dashboard
 
@@ -125,9 +147,3 @@ Extend the capabilities of the PM2 Plus dashboard by using external modules list
 
 [Quick Start]({{ site.baseurl }}{% link en/plus/quick-start.md %})
 {: .btn-stylized}
-
-
-
-
-
-

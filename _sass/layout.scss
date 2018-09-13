@@ -38,6 +38,11 @@ body {
   flex-direction: column;
   background-color: #171e27;
   background-size: cover;
+
+  background-image: url($baseurl + "/img/backgrounds/bg-squares.png");
+  background-position: bottom left;
+  background-attachment: fixed;
+  background-color: #131d26;
 }
 
 div.content-container {
@@ -45,33 +50,48 @@ div.content-container {
 }
 
 .runtime-page {
-  div.content-container {
-    background-image: url($baseurl + "/img/backgrounds/bg-doc_runtime.png");
-  }
-
   ::-webkit-scrollbar-thumb {
     background-color: $color_runtime;
   }
 }
 
 .plus-page {
-  div.content-container {
-    background-image: url($baseurl + "/img/backgrounds/bg-doc_plus.png");
-  }
-
   ::-webkit-scrollbar-thumb {
     background-color: $color_plus;
   }
 }
 
 .enterprise-page {
-  div.content-container {
-    background-image: url($baseurl + "/img/backgrounds/bg-doc_enterprise.png");
-  }
-
   ::-webkit-scrollbar-thumb {
     background-color: $color_enterprise;
   }
+}
+
+.cta-plus {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1000;
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  color: white;
+  line-height: 29px;
+  background-color: $color_plus;
+  border-top: 1px solid #1d212b;
+  a {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.li-github {
+  margin-left: 75px;
 }
 
 h1,
