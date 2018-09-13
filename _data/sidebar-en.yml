@@ -18,6 +18,8 @@ runtime:
         url: "/en/runtime/guide/startup-hook/"
       - page: Load-Balancing
         url: "/en/runtime/guide/load-balancing/"
+      - page: Entrypoint
+        url: "/en/runtime/guide/entrypoint/"
       - page:  Development Tools
         url: "/en/runtime/guide/development-tools/"
       - page: Easy Deploy with SSH
