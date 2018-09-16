@@ -9,7 +9,7 @@ redirect_from: "/runtime/guide/entrypoint"
 
 # Entrypoint
 
-The **entrypoint.js** makes you precisely contol your application flow and organize the link between the Node.js runtime and PM2.
+The **entrypoint.js** lets you precisely contol your application flow and organize the link between the Node.js runtime and PM2.
 
 ## Entrypoint base class
 
