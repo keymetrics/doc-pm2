@@ -111,16 +111,6 @@ Use reload instead of restart for 0-seconds downtime reloads:
 pm2 reload app
 ```
 
-## Do more with the CLI
-
-Use the tabulation to autocomplete and discover new commands:
-
-![pm2 autocompletion]({{ site.baseurl }}{% link img/runtime/autocomplete.png %})
-
-Use the `--help` flag to get more informations:
-
-![pm2 help]({{ site.baseurl }}{% link img/runtime/help.png %})
-
 ## Next Steps
 
 [Ecosystem File]({{ site.baseurl }}{% link en/runtime/guide/ecosystem-file.md %})
