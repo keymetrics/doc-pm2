@@ -60,7 +60,7 @@ module.exports = {
       // eg: placing configurations in the shared dir etc
       post-setup: "ls -la",
       // pre-deploy action
-      pre-deploy-local: "echo 'This is a local executed command'"
+      pre-deploy-local: "echo 'This is a local executed command'",
       // post-deploy action
       post-deploy: "npm install",
     },
