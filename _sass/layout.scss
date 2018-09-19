@@ -17,7 +17,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
   height: 8px;
   background-color: rgb(51, 51, 51);
 }
@@ -149,16 +149,14 @@ h4 {
     }
   }
 
-  @media screen and (max-width: $mobile_offset) {
-    .content-container {
-      padding-left: 2px;
-      padding-right: 2px;
-      padding-top: 19px;
-    }
+  #edit-page {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
 
-    .edit-page {
-      display: none;
-    }
+  #edit-page p {
+    margin: 0;
   }
 }
 
@@ -218,5 +216,28 @@ li input[type=checkbox] {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: $mobile_offset) {
+  .li-github {
+    display: none !important;
+  }
+
+  .content-container {
+    padding: 0px !important;
+    margin:0px !important;
+  }
+
+  .search-wrapper {
+    display: none !important;
+  }
+
+  .sidebar {
+    height: 90% !important;
+  }
+
+  #edit-page {
+    display: none;
   }
 }
