@@ -22,9 +22,9 @@ With PM2 Plus, we've got your back. You can track all exceptions that happens on
 
 ## Manually emit an issue
 
-If you properly uses `try... catch` in your code, errors will be catch and will never be reported in the dashboard.
+If you properly use `try... catch` in your code, errors will be caught and will never be reported in the dashboard.
 
-To reporte them anyway, emit yourself an exception with `io.notify()`:
+To report them anyway, emit an exception with `io.notify()`:
 
 ```javascript
 const io = require('@pm2/io')
