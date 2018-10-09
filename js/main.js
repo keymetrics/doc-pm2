@@ -36,13 +36,6 @@
         for (var level = 2; level <= 6; level++) {
           linkifyAnchors(level, contentBlock);
         }
-
-        var urlHash = window.location.href.split("#")[1];
-        if (urlHash &&  $('#' + urlHash).length )
-          $('.content-container').animate({
-            scrollTop: $('#' + urlHash).offset().top - 80
-          }, 100);
-
       }
     };
   }
