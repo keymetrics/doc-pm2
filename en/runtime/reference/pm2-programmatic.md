@@ -156,7 +156,7 @@ pm2.connect(() => {
 })
 
 pm2.launchBus((err, bus) => {
-  pm2_bus.on('process:msg', (packet) => {
+  bus.on('process:msg', (packet) => {
     packet.data.success.should.eql(true)
     packet.process.pm_id.should.eql(proc1.pm2_env.pm_id)
     done()
