@@ -30,28 +30,49 @@ or, if you don't have access to the CLI, add the `PM2_PUBLIC_KEY` and `PM2_SECRE
 
 ### If you are behind a company proxy/firewall
 
-In order to make PM2 Plus works, ensure that this ports are open:
-- 80 (TCP outbound)
-- 443 (HTTPS outbound)
-- 43554 (TCP outbound)
+Starting from PM2 3.2, we changed the networking connection by using a direct Websocket connection to our server on the port 443, so you only need OUTBOUND on port 443 TCP open. If you are using an older version, we of course advise to update but the ports that you need to open are 80 (TCP outbound), 443 (HTTPS outbound) and 43554 (TCP outbound), so verify everything is allowed on your firewall.
 
-If you also need to whitelist IP adresses, allow these ones:
-163.172.76.240, 62.210.94.153, 195.154.156.78, 62.210.100.99, 62.210.102.213, 62.4.21.42, 62.4.21.98 and 163.172.20.79.
+You also may need to whitelist IPs, please allow these ones: 62.210.102.213, 163.172.76.240, 62.4.21.98, 163.172.253.187, 163.172.67.152, 195.154.79.25, 195.154.79.34
 
-## Install CPU/Memory profiling
+## Install CPU/Memory snapshot
 
-### g++
+
+### Starting from Node 10
+
+When using Node 10, all profilers are available out of box without installing anything.
+
+### Node 8.X and 9.X
+
+The profilers are available but you need to explicity enable them using the environement variable `FORCE_INSPECTOR` set to `1`.
+You have different way to enable them : 
+
+```
+FORCE_INSPECTOR=1 pm2 reload app --update-env
+```
+```
+export FORCE_INSPECTOR=1
+pm2 reload app --update-env
+```
+
+In a persistent way:
+```
+echo "FORCE_INSPECTOR=1" >> /etc/environment
+source /etc/environment
+pm2 reload app --update-env
+```
+
+Or you can add it inside your `ecosystem.json` file.
+
+### For older version (Node 4, 6, 7)
+
+**NOTE:** We advise to use the latest version of nodejs to profile your applications since the profilers are native and a lot more stable.
 
 You must have `g++` installed:
 
-On Linux, enter `sudo apt-get install build-essential`.
+- For Linux, enter `sudo apt-get install build-essential`.
+- For macOS, enter `g++` in terminal and then follow the instructions.
 
-On Mac, enter `g++` in terminal and then follow the instructions.
-
-### CPU/Memory profiler
-
-Use the pm2 installer :
-
+Then you must install the addon used to profile your application :
 ```bash
 pm2 install profiler
 ```
@@ -62,7 +83,7 @@ Then reload your application to enable the profiler:
 pm2 reload all
 ```
 
-## You are done
+## You are all set
 
 Go back to the dashboard, you have now access to realtime metrics of your app.
 

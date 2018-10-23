@@ -30,7 +30,7 @@ Or, if you don't have access to the CLI, add `PM2_PUBLIC_KEY` and `PM2_SECRET_KE
  Use the `Link an app` help on the top left of your dashboard
 {: .tip}
 
-## Install CPU/Memory profiling
+## Install CPU/Memory snapshot
 
 ### g++
 

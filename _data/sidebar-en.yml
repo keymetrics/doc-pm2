@@ -74,8 +74,8 @@ plus:
         url: "/en/plus/guide/issue-dashboard/"
       - page: Transaction Tracing
         url: "/en/plus/guide/transaction-tracing/"
-      - page: Memory Profiling
-        url: "/en/plus/guide/memory-profiling/"
+      - page: Memory Snapshot
+        url: "/en/plus/guide/memory-snapshot/"
       - page: CPU Profiling
         url: "/en/plus/guide/cpu-profiling/"
       - page: Modules

@@ -96,15 +96,15 @@ The "Transaction Tracing" helps you troubleshoot performance issues and to get d
 [Transaction Tracing]({{ site.baseurl }}{% link en/plus/guide/transaction-tracing.md %})
 {: .btn-stylized}
 
-### Memory Profiling
+### Memory Snapshot
 
-![memory profiling]({{ site.baseurl }}{% link img/plus/memory-profiling.png %})
+![memory snapshot]({{ site.baseurl }}{% link img/plus/memory-profiling.png %})
 
-Take memory heapdumps straight from your production servers.
+Take memory snapshots straight from your production servers.
 
-**Memory profiling lets you find any memory leaks in your application.**
+**Memory snapshot lets you find any memory leaks in your application.**
 
-[Memory Profiling]({{ site.baseurl }}{% link en/plus/guide/memory-profiling.md %})
+[Memory snapshot]({{ site.baseurl }}{% link en/plus/guide/memory-snapshot.md %})
 {: .btn-stylized}
 
 ### CPU Profiling
