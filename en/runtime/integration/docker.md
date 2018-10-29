@@ -142,7 +142,7 @@ docker run -p 80:8000 your-app-name
 
 ### pm2 commands
 
-pm2 commands can still be used insidea container with the `docker exec` command:
+pm2 commands can still be used inside a container with the `docker exec` command:
 
 ```bash
 # Monitoring CPU/Usage of each process
