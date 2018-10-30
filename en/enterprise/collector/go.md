@@ -76,6 +76,71 @@ If you want to panic, you can use `pm2io.Panic(err)` which will panic after send
 pm2io.Notifier.Log("something about my application")
 ```
 
+You may want to integrate with your logger framework, it's actually pretty easy, here is a exemple with Logrus : 
+
+```go
+package main
+
+import (
+  pm2io "github.com/keymetrics/pm2-io-apm-go"
+  "github.com/sirupsen/logrus"
+)
+
+// HookLog will send logs to PM2 Plus
+type HookLog struct {
+  Pm2 *pm2io.Pm2Io
+}
+
+// HookErr will send all errors to PM2 Plus
+type HookErr struct {
+  Pm2 *pm2io.Pm2Io
+}
+
+// Fire event
+func (hook *HookLog) Fire(e *logrus.Entry) error {
+  str, err := e.String()
+  if err == nil {
+    hook.Pm2.Notifier.Log(str)
+  }
+  return err
+}
+
+// Levels for all possible logs
+func (*HookLog) Levels() []logrus.Level {
+  return logrus.AllLevels
+}
+
+// Fire an error and notify it as exception
+func (hook *HookErr) Fire(e *logrus.Entry) error {
+  if err, ok := e.Data["error"].(error); ok {
+    hook.Pm2.Notifier.Error(err)
+  }
+  return nil
+}
+
+// Levels only for errors
+func (*HookErr) Levels() []logrus.Level {
+  return []logrus.Level{logrus.ErrorLevel}
+}
+
+func main() {
+  pm2 := pm2io.Pm2Io{
+    Config: &structures.Config{
+      PublicKey: "myPublic",
+      PrivateKey: "myPrivate",
+      Name: "Golang app",
+    },
+  }
+
+  logrus.AddHook(&HookLog{
+    Pm2: pm2,
+  })
+  logrus.AddHook(&HookErr{
+    Pm2: pm2,
+  })
+}
+```
+
 ### Add a metrics
 
 ```go
@@ -94,7 +159,7 @@ go func() {
 }()
 ``` 
 
-## Add custom actions
+### Add custom actions
 
 An quick example would be to create an action, which when triggered, return the environment of the process :
 ```go
@@ -105,8 +170,6 @@ services.AddAction(&structures.Action{
   },
 })
 ```
-
-### 
 
 # Questions / Answers
 
