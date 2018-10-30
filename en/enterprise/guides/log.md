@@ -8,28 +8,18 @@ hide_comments: true
 redirect_from: "/enterprise/guides/log"
 ---
 
-# Log Storage Feature
+# Overview
 
-This document present the log feature and explain how to enable it on your applications
+This feature allow to store all of your application logs directly in PM2 Enterprise so you can retrieve them later to inspect them.
+It take the standard output / standard error and forward them to our backend to be stored.
+
+To use the feature, you need to configure that you want the logs of the application, **by default the logs aren't sended to our backend**
 
 ## Requirements
 
 In the following documention, we assume that you already have connected your application to PM2 Enterprise (either on-premise and cloud).
-We also assume that you know how the ecosystem file works.
 
-## Overview
-
-<br>
-<p align="center">
-    <img width="90%" src="{{ site.baseurl }}/img/enterprise/logs.png" alt="logs feature">
-</p>
-
-This feature allow to store all of your application logs directly in PM2 Enterprise so you can retrieve them later to inspect them.
-It take the standard output / standard error and forward them to the product to be stored.
-
-To use the feature, you need to configure that you want the logs of the application, **by default the logs aren't stored**
-
-## Installation
+# Configuration
 
 ### Using an ecosystem
 
@@ -74,29 +64,48 @@ CMD [ "pm2-runtime", "app.js" ]
 
 ```
 
-## Common Questions
+### Using the standalone agent
 
-* Can i forward my logger to PM2 Enterprise ? (in the case of winston for example)
+You only need to init `@pm2/io` with the `sendLogs` option set to `true` like this : 
+
+```js
+const io = require('@pm2/io').init({
+  standalone: true,
+  publicKey: process.env.KM_PUBLIC_KEY,
+  secretKey: process.env.KM_SECRET_KEY,
+  appName: process.env.KM_APP_NAME,
+  sendLogs: true
+})
+```
+
+# Best practices
+
+There not a lot of best practices for your logs since the feature is pretty basic, you cannot configure anything more than sending the logs or not.
+
+# Questions / Answers
+
+* Can i forward my logger to PM2 Enterprise ? (in the case of winston in nodejs for example)
   
   No, we currently only support sending the `stdout` and `stderr` of the process, in the winston case just tell him to output to the console
 
-* Do i need to use `pm2` or `pm2-runtime` to send the logs ?
+* Do all agent support sending logs ?
   
-  Currently yes, we only support sending the logs when the application is managed by `pm2`
+  We advise to check direclty in the documentation of each agent to verify if the logs are available or not.
 
 * Can i search in those logs ?
     
-  You cannot search in all your logs for a specific string for now, however if you fetch logs in the frontend application, you will be able to  search inside them via the filter at the top
+  You cannot search in all your logs for a specific string for now.
+  The only search possible is when you already fetched the logs in the frontend, you can search **ONLY** in them (those in your browser).
 
-* Is it aggregated by app or server ?
-  
-  You must first choose an application before going into the log feature so you only be able to get the log for one app at the same time. However we show you the log for all the servers, you can see the details at the left side (Date, Server, Process id)
-
-## Common Issues
+# Common Issues
 
 * I can't see any logs in PM2 Enterprise !
 
-  You first need to check if the connection is working between the agent and PM2 Enterprise, we advise to run `pm2 unlink` and then `pm2 plus <private> <public>` to make sure the connection is fine.
-  You also need to be sure that the environment variable is correctly set, you can restart your app with `--update-env` to make sure its correctly updated.
+  You need to check if the connection is working between the agent and PM2 Enterprise, we advise to check the documentation of the agent you are using.
 
-If you have any issue regarding the feature, please contact us at tech@pm2.io
+
+
+
+<center>
+Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
+</center>

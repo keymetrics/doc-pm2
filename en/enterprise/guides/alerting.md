@@ -8,21 +8,16 @@ hide_comments: true
 redirect_from: "/enterprise/guides/alerting"
 ---
 
-# Alerting Feature
+# Overview
 
 This document present the alerting feature and explain how to configure it.
 
-## Requirements
+# Requirements
 
 In the following documention, we assume that you already have connected your application to PM2 Enterprise (either on-premise and cloud).
 We also assume that you know how custom metrics and customs actions works.
 
-## Overview
-
-<br>
-<p align="center">
-    <img width="70%" src="{{ site.baseurl }}/img/enterprise/alert_global.png" alt="alert feature">
-</p>
+# Configuration
 
 This feature allow to get alerted when a metric goes above a specific treshold that you configured.
 You can configure different conditions to trigger the alert :
@@ -39,10 +34,13 @@ When a alert is triggered, you can choose different `Actions` to run :
   - Send a slack message: Set the webhook URL used to post the message
   - Send a webhook: Set the URL used to post the message
   - Run a custom action: Trigger a custom action inside the application that triggered the alert
+  - Run PM2 action: Trigger a PM2 action (restart, reload etc) on the process that triggered the alert
+  - Profile CPU: You can ask the alerting to profile your application cpu usage, it will store the result for you to be able to inspect it later.
+  - Profile Memory: You can ask the alerting to profile your application memory application, it will also be stored.
 
 Note: You can add actions as much as you want, they will all be run. Note that they are all launched in parralel and don't respect any order.
 
-## Common Questions
+# Common Questions
 
 * If i choose a custom action, where will it be run ?
   
@@ -52,10 +50,15 @@ Note: You can add actions as much as you want, they will all be run. Note that t
 
   If you have an application is on multiple server or even if the application is in cluster mode, you will receive an different alert for each process on every server that match the alert's condition.
 
-## Common Issues
+# Common Issues
 
 * It didn't trigger an alert when it should have done !
 
   The worker that check for metric that goes above a specific threshold use the `window` to compute the average, it may have been too big to get a average above the treshold, you should try lowering it. Note that the minimum window is `60` seconds.
 
-If you have any issue regarding the feature, please contact us at tech@pm2.io
+
+
+
+<center>
+Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
+</center>

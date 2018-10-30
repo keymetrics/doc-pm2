@@ -106,6 +106,17 @@ plus:
 enterprise:
   - title: Overview
     url: "/en/enterprise/overview/"
+  - title: Installation
+    url: "/en/enterprise/collector/overview"
+    submenu:
+      - page: NodeJS with PM2
+        url: "/en/enterprise/collector/pm2"
+      - page: NodeJS without PM2
+        url: "/en/enterprise/collector/standalone"
+      - page: Golang
+        url: "/en/enterprise/collector/go"
+      - page: Prometheus
+        url: "/en/enterprise/collector/prometheus"
   - title: Guides
     url: "/en/enterprise/overview/"
     submenu:
