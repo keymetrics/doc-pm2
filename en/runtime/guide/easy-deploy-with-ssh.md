@@ -68,7 +68,7 @@ module.exports = {
 }
 ```
 
- To get more information about the deploy options, check the ecosystem file reference.
+ To get more information about the deploy options, check the [ecosystem file reference]({{ site.baseurl }}{% link en/runtime/reference/ecosystem-file.md %}).
 {: .tip}
 
  Note that the distant path must be empty as it will be populated by pm2 deploy.
