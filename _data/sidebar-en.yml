@@ -120,10 +120,14 @@ enterprise:
   - title: Guides
     url: "/en/enterprise/overview/"
     submenu:
-      - page: Log
-        url: "/en/enterprise/guides/log"
+      - page: Profiling
+        url: "/en/enterprise/guides/profiling"
       - page: Alerting
         url: "/en/enterprise/guides/alerting"
+      - page: Dashboards
+        url: "/en/enterprise/guides/dashboard"
+      - page: Log
+        url: "/en/enterprise/guides/log"
   - title: On-Premise
     url: "/en/enterprise/on-premise/"
     submenu:

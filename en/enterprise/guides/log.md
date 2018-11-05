@@ -15,7 +15,13 @@ It take the standard output / standard error and forward them to our backend to 
 
 To use the feature, you need to configure that you want the logs of the application, **by default the logs aren't sended to our backend**
 
-## Requirements
+# Use cases
+
+This feature is actually specific to your case, we don't currently offer a lot of value for your logs because most people prefer to handle logs in their end, with a ELK stack for exemple.
+
+We advise mostly to use the log feature if you don't have a lot of requirements like parsing and extracting data from them. We only offer them to view them as string currently.
+
+# Requirements
 
 In the following documention, we assume that you already have connected your application to PM2 Enterprise (either on-premise and cloud).
 
@@ -76,6 +82,77 @@ const io = require('@pm2/io').init({
   appName: process.env.KM_APP_NAME,
   sendLogs: true
 })
+```
+
+### Using the Golang agent
+
+```go
+pm2io.Notifier.Log("something about my application")
+```
+
+You may want to integrate with your logger framework, it's actually pretty easy, here is a exemple with Logrus : 
+
+```go
+package main
+
+import (
+  pm2io "github.com/keymetrics/pm2-io-apm-go"
+  "github.com/sirupsen/logrus"
+)
+
+// HookLog will send logs to PM2 Plus
+type HookLog struct {
+  Pm2 *pm2io.Pm2Io
+}
+
+// HookErr will send all errors to PM2 Plus
+type HookErr struct {
+  Pm2 *pm2io.Pm2Io
+}
+
+// Fire event
+func (hook *HookLog) Fire(e *logrus.Entry) error {
+  str, err := e.String()
+  if err == nil {
+    hook.Pm2.Notifier.Log(str)
+  }
+  return err
+}
+
+// Levels for all possible logs
+func (*HookLog) Levels() []logrus.Level {
+  return logrus.AllLevels
+}
+
+// Fire an error and notify it as exception
+func (hook *HookErr) Fire(e *logrus.Entry) error {
+  if err, ok := e.Data["error"].(error); ok {
+    hook.Pm2.Notifier.Error(err)
+  }
+  return nil
+}
+
+// Levels only for errors
+func (*HookErr) Levels() []logrus.Level {
+  return []logrus.Level{logrus.ErrorLevel}
+}
+
+func main() {
+  pm2 := pm2io.Pm2Io{
+    Config: &structures.Config{
+      PublicKey: "myPublic",
+      PrivateKey: "myPrivate",
+      Name: "Golang app",
+    },
+  }
+
+  logrus.AddHook(&HookLog{
+    Pm2: pm2,
+  })
+  logrus.AddHook(&HookErr{
+    Pm2: pm2,
+  })
+}
 ```
 
 # Best practices
