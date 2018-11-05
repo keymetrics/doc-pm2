@@ -8,26 +8,26 @@ hide_comments: true
 redirect_from: "/enterprise/guides/log"
 ---
 
-# Overview
+## Overview
 
 This feature allow to store all of your application logs directly in PM2 Enterprise so you can retrieve them later to inspect them.
 It take the standard output / standard error and forward them to our backend to be stored.
 
 To use the feature, you need to configure that you want the logs of the application, **by default the logs aren't sended to our backend**
 
-# Use cases
+## Use cases
 
 This feature is actually specific to your case, we don't currently offer a lot of value for your logs because most people prefer to handle logs in their end, with a ELK stack for exemple.
 
 We advise mostly to use the log feature if you don't have a lot of requirements like parsing and extracting data from them. We only offer them to view them as string currently.
 
-# Requirements
+## Requirements
 
 In the following documention, we assume that you already have connected your application to PM2 Enterprise (either on-premise and cloud).
 
-# Configuration
+## Configuration
 
-### Using an ecosystem
+#### Using an ecosystem
 
 When using an ecosystem, you can tell to our Agent to forward all the logs using this configuration :
 
@@ -43,7 +43,7 @@ When using an ecosystem, you can tell to our Agent to forward all the logs using
 }
 ```
 
-### Using an environment variable
+#### Using an environment variable
 
 When launching your app with the CLI, you can add an environment variable to tell our agent to forward the logs : 
 
@@ -70,7 +70,7 @@ CMD [ "pm2-runtime", "app.js" ]
 
 ```
 
-### Using the standalone agent
+#### Using the standalone agent
 
 You only need to init `@pm2/io` with the `sendLogs` option set to `true` like this : 
 
@@ -84,7 +84,7 @@ const io = require('@pm2/io').init({
 })
 ```
 
-### Using the Golang agent
+#### Using the Golang agent
 
 ```go
 pm2io.Notifier.Log("something about my application")
@@ -155,11 +155,11 @@ func main() {
 }
 ```
 
-# Best practices
+## Best practices
 
 There not a lot of best practices for your logs since the feature is pretty basic, you cannot configure anything more than sending the logs or not.
 
-# Questions / Answers
+## Questions / Answers
 
 * Can i forward my logger to PM2 Enterprise ? (in the case of winston in nodejs for example)
   
@@ -174,7 +174,7 @@ There not a lot of best practices for your logs since the feature is pretty basi
   You cannot search in all your logs for a specific string for now.
   The only search possible is when you already fetched the logs in the frontend, you can search **ONLY** in them (those in your browser).
 
-# Common Issues
+## Common Issues
 
 * I can't see any logs in PM2 Enterprise !
 

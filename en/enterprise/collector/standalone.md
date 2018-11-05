@@ -8,7 +8,7 @@ hide_comments: true
 redirect_from: "/enterprise/collector/standalone"
 ---
 
-# Overview
+## Overview
 
 When monitoring your production environment, you might not see the point of using a process manager in your container when you already use orchestrator like Kubernetes or Cloud based Orchestration (App engine for Google, Beanstalk for AWS etc).
 And you are right, depending on your use case you might not need it.
@@ -19,11 +19,11 @@ That's why we built a standalone agent, that you can embed in your nodejs applic
 Exactly the same as other monitoring providers, you just add a library, give it some secrets and everything is working !
 
 
-# Requirements
+## Requirements
 
 **This agent require at least Node 8** to run (you will be able to install the library anyway but it will throw an error if you configure it with `standalone: true` )
 
-# Installation
+## Installation
 
 You need to install our library, called `@pm2/io`, that we use to add metrics into your code and enable other features like the tracing or profiling.
 Then you only need to `init` it like this : 
@@ -40,7 +40,7 @@ const io = require('@pm2/io').init({
 
 And that's it, your application will automatically connect to PM2 Enterprise when started, and all the metrics will be pushed.
 
-# Best Practices
+## Best Practices
 
 Since you might want to monitor your application in production or staging environment, we advise make a simple file at the root of your project, called `apm.js` :
 
@@ -70,7 +70,7 @@ CMD [ "node", "-r", "apm.js", "app.js" ]
 
 You can note the `-r apm.js` when launching `node`, which will require the `apm.js` file before your app (which is really advised to make all features works as expected).
 
-# Configuration
+## Configuration
 
 You might want to tweaks the configuration of `@pm2/io` to enable specific features, here you can see *most* the configuration possible (if you want all the list, [you should go there](https://github.com/keymetrics/pm2-io-apm#global-configuration-object)):
 
@@ -102,7 +102,7 @@ const io = require('@pm2/io').init({
 })
 ```
 
-# Questions / Answers
+## Questions / Answers
 
 * What are the performance cost of using the standalone agent ?
   
@@ -113,7 +113,7 @@ const io = require('@pm2/io').init({
 
   Currently it's not the case but we plan to implement it. . Ask our sales team if you really need it.
 
-# Common Issues
+## Common Issues
 
 * I doesn't work when i launch my application !
 

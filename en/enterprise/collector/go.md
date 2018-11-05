@@ -8,7 +8,7 @@ hide_comments: true
 redirect_from: "/enterprise/collector/go"
 ---
 
-# Overview
+## Overview
 
 All PM2 tools are mostly written to suit NodeJS applications, but sometimes you want to monitor other languages in your production environment.
 
@@ -21,11 +21,11 @@ Exactly the same as other monitoring providers, you just add a library, give it 
   - Transaction tracing
   - Memory Profiling (you should use Memory snapshot for Golang)
 
-# Requirements
+## Requirements
 
 We only tested our agent with Golang version above `1.10`, we might still be able to use with older versions but we will not support it.
 
-# Installation
+## Installation
 
 You need to import our library, called `pm2-io-apm-go`, that we use to add metrics into your code and enable other features.
 
@@ -54,11 +54,11 @@ func main() {
 
 And that's it, your application will automatically connect to PM2 Enterprise when started.
 
-# Best Practices
+## Best Practices
 
 As said above, we are not heavy user of Golang ourselves so we don't have specific best practices to have in those cases, but we will happily add them if you have any.
 
-# Configuration
+## Configuration
 
 You might want to tweaks the configuration of `pm2-io-apm-go` to add some metrics/actions or even broadcast the logs of your application.
 Here are some examples of what you can do :
@@ -171,7 +171,7 @@ services.AddAction(&structures.Action{
 })
 ```
 
-# Questions / Answers
+## Questions / Answers
 
 * What are the performance cost of using this agent ?
   
@@ -185,7 +185,7 @@ services.AddAction(&structures.Action{
 
   Currently it's not the case but we plan to implement it. . Ask our sales team if you really need it.
 
-# Common Issues
+## Common Issues
 
 * I doesn't work when i launch my application !
 

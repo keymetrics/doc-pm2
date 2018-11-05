@@ -8,7 +8,7 @@ hide_comments: true
 redirect_from: "/enterprise/collector/prometheus"
 ---
 
-# Overview
+## Overview
 
 When setting up the monitoring for your production environment, you might have already ran a Prometheus server and maybe a graphana dashboard.
 Even if it's possible to re-add everything on PM2 Enterprise, it would take a lot of time, that's why we developed a gateway between any prometheus and our backend.
@@ -17,12 +17,12 @@ It allows you to simply drop in your configuration a remote backend, and it will
 
 Note that currently only the alerting system works with it, you will be able to trigger alert in PM2 Enterprise from the values of your Prometheus metrics. However we plan to support them in the Dashboards in the near future.
 
-# Requirements
+## Requirements
 
 The Prometheus team built a feature called `adapter` that lets you push metrics from prometheus thought HTTP. We currently only support the version `0.1.0` of this feature is supported, if you need a specific version, ask to our sales team directly.
 We also currently support the `snappy` compression and the `protobuf` serialization, again ask us if you need something special.
 
-# Configuration
+## Configuration
 
 If all the versions are good, you simply need to add this snipet to your prometheus configuration: 
 ```
@@ -47,7 +47,7 @@ A part from that no specific action is required from you to ensure best practice
   
   Because prometheus is what is called `pull based` monitoring, that means it the server that request the metrics to the client. We however are `push based` which means that you receive data from our agents that collect the metrics for us. So basically it's by design really hard to do that in our case (it would be easier if we were `pull based`). Also from a security point, you would need to expose your metrics page to the internet so our servers can reach them which is a nightmare in a security point of view.
 
-# Common Issues
+## Common Issues
 
 * I doesn't work, i can't see any data on the dashboard !
 

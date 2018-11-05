@@ -8,7 +8,7 @@ hide_comments: true
 redirect_from: "/enterprise/collector/"
 ---
 
-# Overview
+## Overview
 
 When installing PM2 Enterprise, you need to choose how you want to fetch monitoring data. We have multiples way to "collect" the data :
 

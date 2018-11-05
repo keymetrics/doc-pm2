@@ -8,7 +8,7 @@ hide_comments: true
 redirect_from: "/enterprise/guides/alerting"
 ---
 
-# Overview
+## Overview
 
 The alerting engine of PM2 Enterprise allows you to set alerts on metrics and receive alerts, like it's possible with other monitoring solution.
 However we do a somethings more, which intregrating with our APMs : 
@@ -22,9 +22,9 @@ You currently support 3 ways to be alerted :
 - Email
 - Webhook
 
-# Use cases
+## Use cases
 
-### Be alerted when a metrics go above a threshold
+#### Be alerted when a metrics go above a threshold
 
 The main use case of the feature is of course to alert you when metrics aren't normal.
 A basic alert should looks like that : 
@@ -36,7 +36,7 @@ A basic alert should looks like that :
 - Select an action to alert you that the threshold has been crossed (slack or email for ex.)
 - Save it
 
-### Profile your application automatically
+#### Profile your application automatically
 
 Given an example where you have a cpu spike in the night hours but doesn't know why, you can explose your code base to try to understand it.
 You could also stay up late to run the profiling manually when the cpu spike.
@@ -50,7 +50,7 @@ You could also stay up late to run the profiling manually when the cpu spike.
 
 When you will receive a notification, just check in the CPU Profile panel, you should have your profile that have been stored for you. You can either download it or see it in the profiling inspector.
 
-### Restart your application if you know that somethings in wrong
+#### Restart your application if you know that somethings in wrong
 
 Given an example where your app leaks memory but you don't have the time to inspect it right now. You can just ask PM2 to restart it with the Alerting :
 
@@ -63,12 +63,12 @@ Given an example where your app leaks memory but you don't have the time to insp
 
 Your application will now be automatically restarted and you will receive an alert when it's done.
 
-# Requirements
+## Requirements
 
 In the following documention, we assume that you already have connected your application to PM2 Enterprise (either on-premise and cloud).
 We also assume that you know how custom metrics and customs actions works.
 
-# Configuration
+## Configuration
 
 This feature allow to get alerted when a metric goes above a specific treshold that you configured.
 You can configure different conditions to trigger the alert :
@@ -91,7 +91,7 @@ When a alert is triggered, you can choose different `Actions` to run :
 
 Note: You can add actions as much as you want, they will all be run. Note that they are all launched in parralel and don't respect any order.
 
-# Common Questions
+## Common Questions
 
 * If i choose a custom action, where will it be run ?
   
@@ -105,7 +105,7 @@ Note: You can add actions as much as you want, they will all be run. Note that t
 
   No and currently we don't plan to make our engine more customizable.
 
-# Common Issues
+## Common Issues
 
 * It didn't trigger an alert when it should have done !
 

@@ -8,7 +8,7 @@ hide_comments: true
 redirect_from: "/enterprise/collector/pm2"
 ---
 
-# Overview
+## Overview
 
 When you already use PM2 and you want to use PM2 Enterprise, it's really easy to launch our agent since it is directly embed as a dependency.
 
@@ -18,7 +18,7 @@ If you want to monitor your app within a docker container, we advise to use the 
 
 **This agent require at least Node 4** to run and we advise to use at least PM2 v3.2 to have better performances.
 
-# Installation
+## Installation
 
 You only need to tell PM2 to launch the agent :
 
@@ -33,14 +33,14 @@ Where :
 
 And that's it, PM2 will automatically launch his agent and manage it, every applications will start pushing data in PM2 Enterprise.
 
-# Best Practices
+## Best Practices
 
 We advise running the embed agent in pm2 when it's best suit your use case, that's why you advise it to use it when :
 
 - You already use PM2 to manage the applications in your servers.
 - If your application is inside a VM or on a bare metal server and you are not sure if you need to setup systemd service or similar, just use pm2.
 
-# Configuration
+## Configuration
 
 Most of the features (tracing, profiling etc)rely on PM2 adding `@pm2/io` library inside your application, so we advise to [checkout his configuration](https://github.com/keymetrics/pm2-io-apm#global-configuration-object) to manage it independently for each application.
 
@@ -62,7 +62,7 @@ pm2 unmonitor <name> # the agent will stop sending monitoring data to PM2 Enterp
 pm2 monitor <name> # when you disable monitoring, you can re-enable it with this command
 ```
 
-# Questions / Answers
+## Questions / Answers
 
 * What are the performance cost of using the agent embed in pm2 ?
   
@@ -73,7 +73,7 @@ pm2 monitor <name> # when you disable monitoring, you can re-enable it with this
 
   Currently it's not the case but we plan to implement it. Ask our sales team if you really need it.
 
-# Common Issues
+## Common Issues
 
 * I doesn't work, i can't see any data on the dashboard !
 

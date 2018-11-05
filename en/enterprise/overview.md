@@ -24,9 +24,6 @@ Here a quick description of each of the Enterprise feature currently available i
 - Dashboards: 
 If you have a lot of metrics that you want to track, you might have the problem to display a lot of them the way you want. Each dashboard is customizable, each component on it is configurable (apps/servers/metrics etc) and moveable anywhere on the dashboard.
 
-- Anomalies: 
-Sometimes there are variation in some metrics that clearly aren't normal but it would take you a lot of time to make custom alert of each metrics that you have, so we built a machine learning algorithm that alert you every time a value isn't behaving like it normally do. You can tell the algorithm if the alert wasn't helpful if you want it to be more precise.
-
 - Alerting:
 This feature is the opposite of the Anomalies, sometimes you want to create manual alert for specific metrics, with this feature you are able to configure the threshold and the actions that result, you can ask to receive an email, a slack message or trigger pm2 action (like a pm2 restart) directly on application. We also added the possibility to trigger directly profiling into the application if you want to collect cpu or memory profiling on your production environment, it will launch and save it for you to inspect it later.
 
