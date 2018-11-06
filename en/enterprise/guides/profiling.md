@@ -116,8 +116,8 @@ All profilers are availables by default for our golang agent.
   - Its blocking your whole application from running, since you don't want your heap to change while the snapshot is done. 
   - It will double the amount of memory used by your application (since you are doing a copy of the memory), so care with OOM killer.
   - In specific condition, its known to be instable (mean it can crash your app) : 
-    - If your application use more than 500M of RAM, the snapshot might crash the application (bug in V8)
-    - In specific NodeJS version, see this issue : 
+    - If your application use more than 500M of RAM, the snapshot might crash the application (see https://bugs.chromium.org/p/chromium/issues/detail?id=768355 and https://bugs.chromium.org/p/chromium/issues/detail?id=768355)
+    - In specific NodeJS version, see this issue : https://github.com/nodejs/node/issues/23877
 
 We are commited to fix the instability issue (note that the two first issue will always be there by design) but in the mean time we advise to only use the Heap Profiler in production.
 
