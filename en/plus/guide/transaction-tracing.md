@@ -29,14 +29,8 @@ Enable the transaction tracing via the `@pm2/io` module.
 const io = require('@pm2/io')
 
 io.init({
-  metrics: {
-    transaction: {
-      http: true,               // (default: true) HTTP routes logging
-      tracing: {                // (default: false) Enable transaction 
-        ignore_routes: ['/foo'] // (default: empty) exclude some routes
-      },
-    },
-  },
+  transactions: true // will enable the transaction tracing
+  http: true // will enable metrics about the http server (optional)
 })
 ```
 
