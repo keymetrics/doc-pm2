@@ -2,18 +2,22 @@ pipeline:
   build:
     image: plugins/docker
     repo: keymetrics/pm2-docs
-    tags: latest
+    tags: 
+      - latest
+      - "${DRONE_COMMIT_SHA}"
     secrets: [ docker_username, docker_password ]
     when:
       event: push
       branch: [ master ]
-  deploy:
-    image: peloton/drone-rancher
-    url: https://rancher.keymetrics.io
-    service: pm2-io/docs
-    docker_image: keymetrics/pm2-docs
-    confirm: true
-    secrets: [ rancher_access_key, rancher_secret_key ]
+  generate_pr:
+    image: keymetrics/drone-plugin-auto-pr
+    owner: keymetrics
+    repository: infrastructure
+    regex: 'keymetrics/pm2-docs:([A-Za-z0-9]+)'
+    files:
+      - 'jobs/frontend.nomad'
+    message: 'chore: update pm2 doc job'
+    secrets: [ github_oauth_token ]
     when:
       event: push
       branch: [ master ]
