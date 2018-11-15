@@ -100,7 +100,7 @@ const io = require('@pm2/io').init({
   // ... 
   // your configuration, either standalone or with pm2
   // and then with this option you can control if the profiling
-  profilings: true
+  profiling: true
 })
 ```
 
