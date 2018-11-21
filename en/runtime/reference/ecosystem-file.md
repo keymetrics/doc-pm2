@@ -63,7 +63,7 @@ ignore_watch|List of paths to ignore (regex)|array,string|
 watch_options|Object that will be used as an options with chokidar (refer to chokidar documentation)|object|
 min_uptime|Minimum uptime of the app to be considered started (format is /[0-9]+(h&#124;m&#124;s)?/, for hours, minutes, seconds, default to ms)|number,string|1000
 max_restarts|Number of times a script is restarted when it exits in less than min_uptime|number|16
-exec_mode|Set the execution mode, possible values: fork&#124;cluster|string|fork
+exec_mode|Set the execution mode, possible values: fork&#124;cluster_mode|string|fork
 force|Start a script even if it is already running (only the script path is considered)|boolean|
 append_env_to_name|Append the environment name to the app name|boolean|
 post_update|List of commands executed after a pull/upgrade operation performed from Keymetrics dashboard|array|
