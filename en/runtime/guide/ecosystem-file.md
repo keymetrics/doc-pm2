@@ -9,7 +9,7 @@ permalink: "/en/runtime/guide/ecosystem-file/"
 
 # Ecosystem File
 
-When deploying on multiple servers or when using multiple CLI arguments, an alternative to the command line becomes more conveninent for starting your apps.
+When deploying on multiple servers or when using multiple CLI arguments, an alternative to the command line becomes more convenient for starting your apps.
 
 The purpose of the ecosystem file is to gather all options and environment variables for all your applications.
 
