@@ -31,7 +31,7 @@ Where:
   - `<public>` is the public key that you can find on your dashboard
   - `<server>` (**optional**) is the name that will show as server name in the dashboard
 
-And that's it, PM2 will automatically launch his agent and manage it, every applications will start pushing data in PM2 Enterprise.
+And that's it, PM2 will automatically launch its agent and manage it, every applications will start pushing data in PM2 Enterprise.
 
 ## Best Practices
 
@@ -42,7 +42,7 @@ We advise running the embed agent in pm2 when it's best suit your use case, that
 
 ## Configuration
 
-Most of the features (tracing, profiling etc)rely on PM2 adding `@pm2/io` library inside your application, so we advise to [checkout his configuration](https://github.com/keymetrics/pm2-io-apm#global-configuration-object) to manage it independently for each application.
+Most of the features (tracing, profiling etc)rely on PM2 adding `@pm2/io` library inside your application, so we advise to [checkout its configuration](https://github.com/keymetrics/pm2-io-apm#global-configuration-object) to manage it independently for each application.
 
 Few things that you can do without relying on a configuration in your code:
 
