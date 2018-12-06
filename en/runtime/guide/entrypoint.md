@@ -88,4 +88,4 @@ pm2 start entrypoint.js
 
 ## Roadmap
 
-We plan to implement ecosystem file configuration straight into this entrypoint.js file, if you have any remarks, ideas or feedback feel to [post an issue](https://github.com/Unitech/pm2)
+We plan to implement ecosystem file configuration straight into this entrypoint.js file, if you have any remarks, ideas or feedback feel free to [post an issue](https://github.com/Unitech/pm2)
