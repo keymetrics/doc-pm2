@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Multiple PM2 Runtime | Features | PM2 Documentation
+title: Commands Cheatsheet | PM2 Documentation
 description: PM2 Inception
 lang: en
 section: runtime
@@ -8,6 +8,14 @@ permalink: "/en/runtime/features/commands-cheatsheet/"
 ---
 
 ## CheatSheet
+
+Here is a quick, pragmatic overview of a range of PM2 commands:
+
+### Install
+
+```bash
+$ npm install pm2 -g
+```
 
 ### Start an app
 
@@ -21,16 +29,16 @@ $ pm2 start app.js
 $ pm2 start app.js --watch [--watch-ignore /*/]
 ```
 
-### Show infos
-
-```bash
-$ pm2 show <app_name>
-```
-
 ### List apps
 
 ```bash
 pm2 list
+```
+
+### Show extended infos
+
+```bash
+$ pm2 show <app_name>
 ```
 
 ### Restart
@@ -67,6 +75,12 @@ $ pm2 logs
 
 ```bash
 $ pm2 env <pm_id>
+```
+
+### Start PM2 at boot
+
+```bash
+$ pm2 startup
 ```
 
 ### Set a name
