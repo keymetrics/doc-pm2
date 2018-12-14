@@ -118,6 +118,10 @@ pm2 restart ecosystem.config.js --update-env
 pm2 restart ecosystem.config.js --env production --update-env
 ```
 
+### Options Reference
+
+To know more about all the options available checkout [the complete option reference](https://pm2.io/doc/en/runtime/reference/ecosystem-file/)
+
 ## Next Steps
 
 [Process Management]({{ site.baseurl }}{% link en/runtime/guide/process-management.md %})
