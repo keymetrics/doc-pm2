@@ -4,7 +4,7 @@ title: Configuration | Guide | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
-redirect_from: "/plus/guide/configuration"
+permalink: "/en/plus/guide/configuration/"
 ---
 
 # Configuration

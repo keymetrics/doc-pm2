@@ -3,8 +3,7 @@ runtime:
     url: "/zh/runtime/overview/"
   - title: 快速开始
     url: "/zh/runtime/quick-start/"
-  - title: 指南 
-    url: "/zh/runtime/guide/"
+  - title: 指南
     submenu:
       - page: 安装
         url: "/zh/runtime/guide/installation/"
@@ -23,7 +22,6 @@ runtime:
       - page: 使用SSH轻松部署
         url: "/zh/runtime/guide/easy-deploy-with-ssh/"
   - title: 最佳实践
-    url: "/zh/runtime/best-practices/"
     submenu:
       - page: 中的环境变量
         url: "/zh/runtime/best-practices/environment-variables/"
@@ -32,7 +30,6 @@ runtime:
       - page: 无状态应用
         url: "/zh/runtime/best-practices/stateless-application/"
   - title: 综合
-    url: "/zh/runtime/integration/"
     submenu:
       - page: AWS Elastic Beanstalk
         url: "/zh/runtime/integration/elastic-beanstalk/"
@@ -45,7 +42,6 @@ runtime:
       - page: 使用云供应商
         url: "/zh/runtime/integration/cloud-providers/"
   - title: 参考
-    url: "/zh/runtime/reference/"
     submenu:
       - page: Ecosystem 文件
         url: "/zh/runtime/reference/ecosystem-file/"
@@ -60,7 +56,6 @@ plus:
   - title: 快速入门
     url: "/zh/plus/quick-start/"
   - title: 指南
-    url: "/zh/plus/guide/"
     submenu:
       - page: 安装
         url: "/zh/plus/guide/installation/"
@@ -99,4 +94,4 @@ plus:
 
 enterprise:
   - title: 概述
-    url: "/zh/enterprise/overview/"
+    url: "/en/enterprise/overview/"

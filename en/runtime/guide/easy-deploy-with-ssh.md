@@ -4,7 +4,7 @@ title: Easy Deploy With SSH | Guide | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
-redirect_from: "/runtime/guide/easy-deploy-with-ssh"
+permalink: "/en/runtime/guide/easy-deploy-with-ssh/"
 ---
 
 # Easy Deploy with SSH
@@ -211,5 +211,3 @@ This tool is a separate module of pm2. You can contribute to it [here](https://g
 ## Next Steps
 
 Thanks for finishing this guide.
-
-You can now take a look at the [reference]({{ site.baseurl }}{% link en/runtime/reference/README.md %}) to master all the capabilities of PM2.

@@ -4,7 +4,7 @@ title: Environment Variables | Best Practices | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
-redirect_from: "/runtime/best-practices/environment-variables"
+permalink: "/en/runtime/best-practices/environment-variables/"
 ---
 
 # Environment Variables in Node.js
@@ -44,7 +44,3 @@ module.exports = {
 ```
 
 Start your application with `pm2 start app --env production` to start your app in production mode.
-
-
-
-

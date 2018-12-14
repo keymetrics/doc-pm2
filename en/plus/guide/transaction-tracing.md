@@ -4,7 +4,7 @@ title: Transaction Tracing | Guide | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
-redirect_from: "/plus/guide/transaction-tracing"
+permalink: "/en/plus/guide/transaction-tracing/"
 ---
 
 # Transaction tracing

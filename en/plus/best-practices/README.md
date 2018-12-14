@@ -5,8 +5,7 @@ menu: starter
 lang: en
 section: plus
 hide_comments: true
-permalink: "/en/plus/best-practices/"
-redirect_from: "/plus/best-practices/"
+permalink: /en/plus/best-practices/
 ---
 
 # Monitoring Best Practices

@@ -5,7 +5,7 @@ title-en: Best Practices | PM2 Documentation
 menu: starter
 lang: zh
 section: runtime
-permalink: "/zh/runtime/best-practices/"
+permalink: "/zh/en/zh/runtime/best-practices/"
 ---
 
 # 生产最佳实践

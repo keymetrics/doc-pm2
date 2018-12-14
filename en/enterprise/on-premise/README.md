@@ -6,7 +6,6 @@ lang: en
 section: enterprise
 hide_comments: true
 permalink: "/en/enterprise/on-premise/"
-redirect_from: "/enterprise/on-premise/"
 ---
 
 # On-Premise

@@ -5,7 +5,7 @@ menu: starter
 lang: en
 section: enterprise
 hide_comments: true
-redirect_from: "/enterprise/guides/dashboard"
+permalink: "/en/enterprise/guides/dashboard/"
 ---
 
 ## Overview
@@ -37,7 +37,7 @@ Since the feature is really just customization for your needs, there a no specif
 ## Common Questions
 
 * Is there a way to show historic value of a metric ?
-  
+
   No, currently it's only in realtime but we are working towards a way to configure all components to show historical data.
 
 * I need to show a metric in a specific way (one that isn't covered by one of your component) ?

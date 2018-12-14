@@ -1,6 +1,6 @@
 FROM ruby:2.5-alpine
 
-RUN apk add --no-cache --virtual build-dependencies make gcc g++ python build-base git
+RUN apk add --no-cache --virtual build-dependencies make gcc g++ python build-base git cmake
 RUN gem install pygments.rb jekyll --no-rdoc --no-ri
 
 ENV LANGUAGE en_US.UTF-8
@@ -10,6 +10,7 @@ ENV LC_ALL en_US.UTF-8
 WORKDIR /docs
 
 ADD Gemfile /docs
+ADD Gemfile.lock /docs
 
 RUN bundle install
 

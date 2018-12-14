@@ -4,7 +4,7 @@ title: Deployment on Amazon Web Service | On-Premise | PM2 Enterprise Documentat
 menu: starter
 lang: en
 section: enterprise
-redirect_from: "/enterprise/aws"
+permalink: "/en/enterprise/aws/"
 ---
 
 # Deployment on Amazon Web Service

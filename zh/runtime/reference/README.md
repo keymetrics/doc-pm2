@@ -5,7 +5,7 @@ title-en: Reference | PM2 Documentation
 menu: starter
 lang: zh
 section: runtime
-permalink: "/zh/runtime/reference/"
+permalink: "/zh/en/zh/runtime/reference/"
 ---
 
 # 参考

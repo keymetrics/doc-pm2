@@ -4,7 +4,7 @@ title: Ecosystem File | Guide | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
-redirect_from: "/runtime/guide/ecosystem-file"
+permalink: "/en/runtime/guide/ecosystem-file/"
 ---
 
 # Ecosystem File

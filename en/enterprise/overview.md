@@ -5,7 +5,7 @@ menu: starter
 lang: en
 section: enterprise
 hide_comments: true
-redirect_from: "/enterprise/overview/"
+permalink: "/en/enterprise/overview//"
 ---
 
 <p align="center">

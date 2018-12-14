@@ -5,7 +5,7 @@ menu: starter
 lang: en
 section: enterprise
 hide_comments: true
-redirect_from: "/enterprise/collector/standalone"
+permalink: "/en/enterprise/collector/standalone/"
 ---
 
 ## Overview
@@ -26,7 +26,7 @@ Exactly the same as other monitoring providers, you just add a library, give it 
 ## Installation
 
 You need to install our library, called `@pm2/io`, that we use to add metrics into your code and enable other features like the tracing or profiling.
-Then you only need to `init` it like this : 
+Then you only need to `init` it like this :
 
 
 ```js
@@ -105,7 +105,7 @@ const io = require('@pm2/io').init({
 ## Questions / Answers
 
 * What are the performance cost of using the standalone agent ?
-  
+
   It's actually the same as with PM2, because the `@pm2/io` is embed via PM2 in your application anyway. At the end, it depend of which features/metrics you are enabling, most of them have a really low overhead (< 5%)
   The biggest impact in performance is the `transaction tracing` which modify some libraries (express, mongodb etc) to be able to "trace" them, which depending on your application is between 5 to 20%.
 

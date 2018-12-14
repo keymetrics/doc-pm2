@@ -4,7 +4,7 @@ title: Transpilers | Integration | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
-redirect_from: "/runtime/integration/transpilers"
+permalink: "/en/runtime/integration/transpilers/"
 ---
 
 # Using PM2 with transpilers

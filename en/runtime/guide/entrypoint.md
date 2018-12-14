@@ -4,7 +4,7 @@ title: Entrypoint | Guide | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
-redirect_from: "/runtime/guide/entrypoint"
+permalink: "/en/runtime/guide/entrypoint/"
 ---
 
 # Entrypoint

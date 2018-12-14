@@ -4,7 +4,7 @@ title: Load-Balancing | Guide | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
-redirect_from: "/runtime/guide/load-balancing"
+permalink: "/en/runtime/guide/load-balancing/"
 ---
 
 # Load-Balancing (cluster mode)

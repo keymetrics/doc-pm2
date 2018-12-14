@@ -4,7 +4,7 @@ title: Backend | On-Premise | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise
-redirect_from: "/enterprise/backend"
+permalink: "/en/enterprise/backend/"
 ---
 
 

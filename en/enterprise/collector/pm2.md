@@ -5,7 +5,7 @@ menu: starter
 lang: en
 section: enterprise
 hide_comments: true
-redirect_from: "/enterprise/collector/pm2"
+permalink: "/en/enterprise/collector/pm2/"
 ---
 
 ## Overview
@@ -26,7 +26,7 @@ You only need to tell PM2 to launch the agent :
 pm2 link <private> <public> <server>
 ```
 
-Where : 
+Where :
   - `<private>` is the private key that you can find on your dashboard
   - `<public>` is the public key that you can find on your dashboard
   - `<server>` (**optional**) is the name that will show as server name in the dashboard
@@ -44,7 +44,7 @@ We advise running the embed agent in pm2 when it's best suit your use case, that
 
 Most of the features (tracing, profiling etc)rely on PM2 adding `@pm2/io` library inside your application, so we advise to [checkout his configuration](https://github.com/keymetrics/pm2-io-apm#global-configuration-object) to manage it independently for each application.
 
-Few things that you can do without relying on a configuration in your code : 
+Few things that you can do without relying on a configuration in your code :
 
 ```bash
 pm2 reload <name> --trace --update-env # will enable the transaction tracing
@@ -53,7 +53,7 @@ pm2 reload <name> --trace --update-env # will enable the transaction tracing
 ```bash
 pm2 reload <name> --disable-trace --update-env # will disable the transaction tracing
 ```
- 
+
 ```bash
 pm2 unmonitor <name> # the agent will stop sending monitoring data to PM2 Enterprise about this process
 ```
@@ -65,7 +65,7 @@ pm2 monitor <name> # when you disable monitoring, you can re-enable it with this
 ## Questions / Answers
 
 * What are the performance cost of using the agent embed in pm2 ?
-  
+
   It depend of which features/metrics you are enabling, most of them have a really low overhead (< 5%)
   The biggest impact in performance is the `transaction tracing` which modify some libraries (express, mongodb etc) to be able to "trace" them, which depending on your application is between 5 to 20%.
 

@@ -4,7 +4,7 @@ title: FAQ | On-Premise | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise
-redirect_from: "/enterprise/faq"
+permalink: "/en/enterprise/on-premise/faq/"
 ---
 
 # FAQ
@@ -23,14 +23,14 @@ You need to verify that the `KM_SITE_URL` you configured is the endpoint you use
 
 ## What is exposed by default ?
 
-Depending on how you deployed the keymetrics enterprise product, there are different answers : 
+Depending on how you deployed the keymetrics enterprise product, there are different answers :
  - **Docker** :
      -  nginx is used to load balance depending on the path, to either the frontend or backend services
      - km-front expose the frontend on the port 80
      - km-api expose all the backend services
- - **AWS** : 
+ - **AWS** :
      - Everything is running inside the km-core AMI
- - **GCP** : 
+ - **GCP** :
      - Same as AWS, everything is running inside the km-core API
 
 
@@ -40,13 +40,13 @@ We only support mongodb up to version 3.4 for now, you need to downgrade.
 
 ## How do i configure my pm2 to connect to it ?
 
-When you first register, you should have a bucket created automatically, then you will have connection data in the middle in this format : 
+When you first register, you should have a bucket created automatically, then you will have connection data in the middle in this format :
 
 ```
 > KEYMETRICS_NODE=<your KM_SITE_URL> pm2 link <identifier_one> <identifier_two>
 ```
 
-You have two way to link your pm2 : 
+You have two way to link your pm2 :
   - Connect to the instance where pm2 is and run the command.
   - If you have container, just add these environements variables :
     - `KEYMETRICS_PUBLIC`: replace with `identifier_two>`
@@ -56,9 +56,9 @@ You have two way to link your pm2 :
 
 Then it should all the instances in the keymetrics frontend in realtime.
 
-## How should i run pm2 inside my containers to connect to it ? 
+## How should i run pm2 inside my containers to connect to it ?
 
-We advise you to use `pm2-runtime`, it should be a dropin replacement for node inside your images : 
+We advise you to use `pm2-runtime`, it should be a dropin replacement for node inside your images :
 
 ```
 FROM node:8-alpine
@@ -68,5 +68,4 @@ RUN npm install -g pm2 2> /dev/null
 CMD [ "pm2-runtime", "app.js" ] # note that you can use an ecosystem here too
 ```
 
-You can find the flags that you can use [here](https://github.com/Unitech/pm2/blob/master/lib/binaries/Runtime4Docker.js#L17) 
-
+You can find the flags that you can use [here](https://github.com/Unitech/pm2/blob/master/lib/binaries/Runtime4Docker.js#L17)

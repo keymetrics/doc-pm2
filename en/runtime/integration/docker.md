@@ -4,7 +4,7 @@ title: Docker | Integration | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
-redirect_from: "/runtime/integration/docker"
+permalink: "/en/runtime/integration/docker/"
 ---
 
 # Using PM2 with Docker

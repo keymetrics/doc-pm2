@@ -4,7 +4,7 @@ title: Stateless Application | Best Practices | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
-redirect_from: "/runtime/best-practices/stateless-application"
+permalink: "/en/runtime/best-practices/stateless-application/"
 ---
 
 # Stateless Application

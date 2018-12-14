@@ -5,7 +5,7 @@ menu: starter
 lang: en
 section: enterprise
 hide_comments: true
-redirect_from: "/enterprise/collector/"
+permalink: "/en/enterprise/collector/"
 ---
 
 ## Overview

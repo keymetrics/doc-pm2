@@ -4,9 +4,7 @@ title: Overview | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
-redirect_from:
-- "/runtime/overview"
-- "/en"
+permalink: "/en/runtime/overview/"
 ---
 
 <p align="center">

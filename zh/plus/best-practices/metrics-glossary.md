@@ -5,7 +5,7 @@ title-en: Metrics Glossary | Best Practices | PM2 Plus Documentation
 menu: starter
 lang: zh
 section: plus
-redirect_from: "/plus/best-practices/metrics-glossary"
+permalink: "/zh/en/plus/best-practices/metrics-glossary"
 ---
 
 # Metrics Glossary

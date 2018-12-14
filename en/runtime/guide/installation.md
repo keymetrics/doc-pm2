@@ -4,7 +4,7 @@ title: Installation | Guide | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
-redirect_from: "/runtime/guide/installation"
+permalink: "/en/runtime/guide/installation/"
 ---
 
 # Installation

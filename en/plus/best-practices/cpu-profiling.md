@@ -4,7 +4,7 @@ title: CPU Profiling | Best Practices | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
-redirect_from: "/plus/best-practices/cpu-profiling"
+permalink: /en/plus/best-practices/cpu-profiling/
 ---
 
 # CPU Profiling
@@ -25,7 +25,7 @@ How does CPU profiling work?
 
 The first thing to understand is that a CPU can only handle one operation at a time and is either busy or idle. The CPU usage (%) is the amount of time the CPU is busy for a period of time. The goal of the profiler is to record all invoked functions when the cpu is busy and how long CPU spends time for each.
 
-A first approach is the so called "instrumentation". This method inserts a piece of code that counts number of calls and records execution time of functions. The downside of this method is its heaviness. It affects a lot the code execution and even if it is precise, it's problematic in a live web server context. 
+A first approach is the so called "instrumentation". This method inserts a piece of code that counts number of calls and records execution time of functions. The downside of this method is its heaviness. It affects a lot the code execution and even if it is precise, it's problematic in a live web server context.
 
 An other approach is the "sampling". In this method, the profiler interrupts the code execution at specific intervals and records the stack trace each time. Not every call are thus recorded, but after enough time, results are relevant. The greatest benefit is that it almost doesn’t affect the code execution and can be used in a production environment.
 
@@ -53,7 +53,7 @@ The following information are often given to describe CPU time spent on each met
 
 The Bottom Up View displays a list of method calls where expanding a method’s node displays who has called it, its callers.
 
-The Bottom Up View is useful for sorting methods by those that consume the most (or least) CPU time. Each node can be inspected to determine which callers spend the most CPU time invoking those methods. Compared to the top down tree, timing info for each method in a bottom tree is in reference to the method at the top of each tree (top node). 
+The Bottom Up View is useful for sorting methods by those that consume the most (or least) CPU time. Each node can be inspected to determine which callers spend the most CPU time invoking those methods. Compared to the top down tree, timing info for each method in a bottom tree is in reference to the method at the top of each tree (top node).
 
 ### The Flame Graph
 

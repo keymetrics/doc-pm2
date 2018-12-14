@@ -5,12 +5,12 @@ menu: starter
 lang: en
 section: enterprise
 hide_comments: true
-redirect_from: "/enterprise/guides/profiling"
+permalink: "/en/enterprise/guides/profiling/"
 ---
 
 ## Overview
 
-The profiling feature is a key feature that allow you to profile your applications at runtime. By profiling, we mean recording what's your application is doing, either in term of cpu or memory, for that we have three profilers availables : 
+The profiling feature is a key feature that allow you to profile your applications at runtime. By profiling, we mean recording what's your application is doing, either in term of cpu or memory, for that we have three profilers availables :
  - CPU Profiler: Record how much time is spent in each function of your application
  - Heap Profiler: Track heap allocation made by each function of your application
  - Heap Snapshot (**not for production in nodejs, see Best Practices**): Allows to dump the content of the heap and see for each object why the GC didn't removed it.
@@ -56,7 +56,7 @@ When using Node 10, all profilers are available out of box without installing an
 #### Node 8.X and 9.X
 
 The profilers are available but you need to explicity enable them using the environement variable `FORCE_INSPECTOR` set to `1`.
-You have different way to enable them : 
+You have different way to enable them :
 
 ```
 FORCE_INSPECTOR=1 pm2 reload app --update-env
@@ -97,7 +97,7 @@ After installing everything needed, you can control if you want it available or 
 
 ```js
 const io = require('@pm2/io').init({
-  // ... 
+  // ...
   // your configuration, either standalone or with pm2
   // and then with this option you can control if the profiling
   profiling: true
@@ -112,10 +112,10 @@ All profilers are availables by default for our golang agent.
 
 ### Heap Snapshot for NodeJS
 
- Why is the Heap Snapshot not for production in nodejs ? : 
-  - Its blocking your whole application from running, since you don't want your heap to change while the snapshot is done. 
+ Why is the Heap Snapshot not for production in nodejs ? :
+  - Its blocking your whole application from running, since you don't want your heap to change while the snapshot is done.
   - It will double the amount of memory used by your application (since you are doing a copy of the memory), so care with OOM killer.
-  - In specific condition, its known to be instable (mean it can crash your app) : 
+  - In specific condition, its known to be instable (mean it can crash your app) :
     - If your application use more than 500M of RAM, the snapshot might crash the application (see https://bugs.chromium.org/p/chromium/issues/detail?id=768355 and https://bugs.chromium.org/p/chromium/issues/detail?id=768355)
     - In specific NodeJS version, see this issue : https://github.com/nodejs/node/issues/23877
 
@@ -134,8 +134,8 @@ Depending on the usage of the app, you might need to wait longer to see somethin
 
 ## Questions / Answers
 
-* Does it impact the performance of my application ? 
-  
+* Does it impact the performance of my application ?
+
   Apart from the Heap Snapshot (both go & nodejs), all profilers run in parralel of your application, so your application isn't impacted.
 
 * What is the Total and Self Time in the CPU Profile ?
@@ -147,7 +147,7 @@ Depending on the usage of the app, you might need to wait longer to see somethin
 * The Profiling returned an Timeout error !
 
   You need to check if the connection is working between the agent and PM2 Enterprise. Note that the profiling can sometimes fail for a number of reasons, please contact us if it's constantly failing for you.
-  
+
 
 
 

@@ -9,4 +9,3 @@ _site/
 docs
 package-lock.json
 dist
-Gemfile.lock

@@ -9,7 +9,7 @@
   {% if page.url contains item.url %}{% assign active = 'class="active"' %}
   {% else %}{% assign active = '' %}{% endif %}
     <li {{ active }}>
-      <a style="font-weight:bold" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+      <a style="font-weight:bold" {% if item.url %} href="{{ site.baseurl }}{{ item.url }}"{% endif %}>{{ item.title }}</a>
       {% if item.submenu  %}
 
           <ul>

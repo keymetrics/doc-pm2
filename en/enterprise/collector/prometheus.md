@@ -5,7 +5,7 @@ menu: starter
 lang: en
 section: enterprise
 hide_comments: true
-redirect_from: "/enterprise/collector/prometheus"
+permalink: "/en/enterprise/collector/prometheus/"
 ---
 
 ## Overview
@@ -24,7 +24,7 @@ We also currently support the `snappy` compression and the `protobuf` serializat
 
 ## Configuration
 
-If all the versions are good, you simply need to add this snipet to your prometheus configuration: 
+If all the versions are good, you simply need to add this snipet to your prometheus configuration:
 ```
 remote_write:
   - url: https://secret_endpoint/receive
@@ -44,7 +44,7 @@ A part from that no specific action is required from you to ensure best practice
 ## Questions / Answers
 
 * Why do we need to still host a prometheus instance ourselves ?
-  
+
   Because prometheus is what is called `pull based` monitoring, that means it the server that request the metrics to the client. We however are `push based` which means that you receive data from our agents that collect the metrics for us. So basically it's by design really hard to do that in our case (it would be easier if we were `pull based`). Also from a security point, you would need to expose your metrics page to the internet so our servers can reach them which is a nightmare in a security point of view.
 
 ## Common Issues

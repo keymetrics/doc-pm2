@@ -4,7 +4,7 @@ title: FAQ | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
-redirect_from: "/plus/faq"
+permalink: "/en/plus/faq/"
 ---
 
 # FAQ & Troubleshooting

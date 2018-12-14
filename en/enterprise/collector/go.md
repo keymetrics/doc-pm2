@@ -5,7 +5,7 @@ menu: starter
 lang: en
 section: enterprise
 hide_comments: true
-redirect_from: "/enterprise/collector/go"
+permalink: "/en/enterprise/collector/go/"
 ---
 
 ## Overview
@@ -17,7 +17,7 @@ Exactly the same as other monitoring providers, you just add a library, give it 
 
 **Disclamer**: This collector is in **BETA** which means there might still have some issues/bugs, so we strongly advise to test everything in a staging/development environment before pushing it into your production.
 
-**Disclamer**: The golang runtime is of course different that NodeJS so we didn't implement all the features availables for NodeJS in the Golang agent, here are the list of the missing features: 
+**Disclamer**: The golang runtime is of course different that NodeJS so we didn't implement all the features availables for NodeJS in the Golang agent, here are the list of the missing features:
   - Transaction tracing
   - Memory Profiling (you should use Memory snapshot for Golang)
 
@@ -76,7 +76,7 @@ If you want to panic, you can use `pm2io.Panic(err)` which will panic after send
 pm2io.Notifier.Log("something about my application")
 ```
 
-You may want to integrate with your logger framework, it's actually pretty easy, here is a exemple with Logrus : 
+You may want to integrate with your logger framework, it's actually pretty easy, here is a exemple with Logrus :
 
 ```go
 package main
@@ -157,7 +157,7 @@ go func() {
     nbreq.Value++
   }
 }()
-``` 
+```
 
 ### Add custom actions
 
@@ -174,7 +174,7 @@ services.AddAction(&structures.Action{
 ## Questions / Answers
 
 * What are the performance cost of using this agent ?
-  
+
   Apart from the cpu/memory usage of the agent iself (sending data to our backend), there are no specific overhead (in javascript, you have overhead because of the way we implement the transaction tracing or some metrics)
 
 * When will you support the transaction tracing in Golang ?

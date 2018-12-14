@@ -4,7 +4,7 @@ title: Graceful Shutdown | Best Practices | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
-redirect_from: "/runtime/best-practices/graceful-shutdown"
+permalink: "/en/runtime/best-practices/graceful-shutdown/"
 ---
 
 # Graceful Shutdown
@@ -231,7 +231,3 @@ mongoose.connect('mongodb://mongosA:27501,mongosB:27501', (err) => {
 ## Graceful start in cluster mode
 
 In cluster mode, there is a default system that sets each cluster ready when the app accepts a connection. There is also a time out, which default to 3000ms, that you can set with the `listen_timeout` property in your ecosystem file.
-
-
-
-

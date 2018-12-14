@@ -4,7 +4,6 @@ runtime:
   - title: Quick Start
     url: "/en/runtime/quick-start/"
   - title: Guide
-    url: "/en/runtime/guide/"
     submenu:
       - page: Installation
         url: "/en/runtime/guide/installation/"
@@ -18,23 +17,51 @@ runtime:
         url: "/en/runtime/guide/startup-hook/"
       - page: Load-Balancing
         url: "/en/runtime/guide/load-balancing/"
-      - page: Entrypoint
-        url: "/en/runtime/guide/entrypoint/"
       - page:  Development Tools
         url: "/en/runtime/guide/development-tools/"
       - page: Easy Deploy with SSH
         url: "/en/runtime/guide/easy-deploy-with-ssh/"
+  - title: Features
+    submenu:
+      - page: Commands CheatSheet
+        url: "/en/runtime/features/commands-cheatsheet/"
+      - page: Ecosystem File
+        url: "/en/runtime/guide/ecosystem-file/"
+      - page: Hot Reload & Cluster Mode
+        url: "/en/runtime/guide/load-balancing/"
+      - page: Watch & Restart
+        url: "/en/runtime/features/watch-restart/"
+      - page: Restart Strategies
+        url: "/en/runtime/features/restart-strategies/"
+      - page: Log
+        url: "/en/runtime/guide/log-management/"
+      - page: Startup Script
+        url: "/en/runtime/guide/startup-hook/"
+      - page: Entrypoint
+        url: "/en/runtime/guide/entrypoint/"
+      - page: Memory Threshold AutoReload
+        url: "/en/runtime/features/memory-limit/"
+      - page: Updating PM2
+        url: "/en/runtime/features/updating-pm2/"
+      - page: Source Map Support
+        url: "/en/runtime/features/javascript-source-maps/"
+      - page: Using PM2 Programmatically
+        url: "/en/runtime/reference/pm2-programmatic/"
+      - page: Transpilers
+        url: "/en/runtime/integration/transpilers/"
+      - page: Graceful Shutdown
+        url: "/en/runtime/best-practices/graceful-shutdown/"
+      - page: Multiple PM2
+        url: "/en/runtime/features/multiple-pm2/"
+
   - title: Best Practices
-    url: "/en/runtime/best-practices/"
     submenu:
       - page: Environment Variables
         url: "/en/runtime/best-practices/environment-variables/"
-      - page: Graceful Shutdown
-        url: "/en/runtime/best-practices/graceful-shutdown/"
       - page: Stateless Application
         url: "/en/runtime/best-practices/stateless-application/"
+
   - title: Integration
-    url: "/en/runtime/integration/"
     submenu:
       - page: AWS Elastic Beanstalk
         url: "/en/runtime/integration/elastic-beanstalk/"
@@ -42,19 +69,15 @@ runtime:
         url: "/en/runtime/integration/docker/"
       - page: Heroku
         url: "/en/runtime/integration/heroku/"
-      - page: Transpilers
-        url: "/en/runtime/integration/transpilers/"
       - page: With a Cloud Provider
         url: "/en/runtime/integration/cloud-providers/"
+
   - title: Reference
-    url: "/en/runtime/reference/"
     submenu:
       - page: Ecosystem File
         url: "/en/runtime/reference/ecosystem-file/"
       - page: CLI
         url: "/en/runtime/reference/pm2-cli/"
-      - page: Programmatic
-        url: "/en/runtime/reference/pm2-programmatic/"
 
 plus:
   - title: Overview

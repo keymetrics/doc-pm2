@@ -6,7 +6,6 @@ lang: en
 section: plus
 hide_comments: true
 permalink: "/en/plus/guide/"
-redirect_from: "/plus/guide/"
 ---
 
 # Guide

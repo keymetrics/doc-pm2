@@ -5,7 +5,7 @@ title-en: Overview | PM2 Documentation
 menu: starter
 lang: zh
 section: runtime
-redirect_from: "/ch"
+permalink: "/zh/runtime/overview/"
 ---
 
 # 概述

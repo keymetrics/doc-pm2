@@ -6,7 +6,6 @@ lang: en
 section: runtime
 hide_comments: true
 permalink: "/en/runtime/best-practices/"
-redirect_from: "/runtime/best-practices/"
 ---
 
 # Production Best Practices

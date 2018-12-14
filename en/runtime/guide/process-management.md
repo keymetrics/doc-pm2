@@ -4,7 +4,7 @@ title: Process Management | Guide | PM2 Documentation
 menu: starter
 lang: en
 section: runtime
-redirect_from: "/runtime/guide/process-management"
+permalink: "/en/runtime/guide/process-management/"
 ---
 
 # Process management

@@ -4,7 +4,7 @@ title: Quick Start | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
-redirect_from: "/plus/quick-start"
+permalink: "/en/plus/quick-start/"
 ---
 
 # Quick Start
