@@ -13,14 +13,14 @@ In seconds, this Quick Start tutorial will show you how to set up to production 
 
 ## Installation
 
-With yarn:
-```bash
-yarn global add pm2
-```
-
 With npm:
 ```bash
 npm install pm2 -g
+```
+
+With yarn:
+```bash
+yarn global add pm2
 ```
 
 With debian, use the install script:
@@ -43,7 +43,7 @@ pm2 completion install
 
 PM2 keeps a list of your processes to be able to start, restart and stop them easily.
 
-All your app are started in the background, letting you access to the command line. Use the PM2 CLI to interact with your apps.
+All your apps are started in the background, letting you access to the command line. Use the PM2 CLI to interact with your apps.
 
 ### Process list
 
