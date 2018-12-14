@@ -9,24 +9,22 @@ permalink: "/en/runtime/features/commands-cheatsheet/"
 
 ## CheatSheet
 
-### Start
+### Start an app
 
 ```bash
 $ pm2 start app.js
 ```
 
-### Start and restart on file change
+### Start and auto-restart on file change
 
 ```bash
-$ pm2 start app.js --watch
+$ pm2 start app.js --watch [--watch-ignore /*/]
 ```
 
-### Set a name
+### Show infos
 
 ```bash
-$ pm2 start app.js --name="name"
-# or update name
-$ pm2 restart app --name="new-name"
+$ pm2 show <app_name>
 ```
 
 ### List apps
@@ -39,6 +37,12 @@ pm2 list
 
 ```bash
 $ pm2 restart app
+```
+
+### Restart and update env
+
+```bash
+$ NODE_ENV=production pm2 restart app --update-env
 ```
 
 ### Stop
@@ -63,6 +67,14 @@ $ pm2 logs
 
 ```bash
 $ pm2 env <pm_id>
+```
+
+### Set a name
+
+```bash
+$ pm2 start app.js --name="name"
+# or update name
+$ pm2 restart app --name="new-name"
 ```
 
 ### Reset Restart Counters
