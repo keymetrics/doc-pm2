@@ -3,28 +3,12 @@ runtime:
     url: "/en/runtime/overview/"
   - title: Quick Start
     url: "/en/runtime/quick-start/"
-  - title: Guide
-    submenu:
-      - page: Installation
-        url: "/en/runtime/guide/installation/"
-      - page: Ecosystem File
-        url: "/en/runtime/guide/ecosystem-file/"
-      - page: Process Management
-        url: "/en/runtime/guide/process-management/"
-      - page: Log Management
-        url: "/en/runtime/guide/log-management/"
-      - page: Startup Hook
-        url: "/en/runtime/guide/startup-hook/"
-      - page: Load-Balancing
-        url: "/en/runtime/guide/load-balancing/"
-      - page:  Development Tools
-        url: "/en/runtime/guide/development-tools/"
-      - page: Easy Deploy with SSH
-        url: "/en/runtime/guide/easy-deploy-with-ssh/"
   - title: Features
     submenu:
-      - page: Commands CheatSheet
+      - page: Command Line Cheat Sheet
         url: "/en/runtime/features/commands-cheatsheet/"
+      - page: Process Management
+        url: "/en/runtime/guide/process-management/"
       - page: Ecosystem File
         url: "/en/runtime/guide/ecosystem-file/"
       - page: Hot Reload & Cluster Mode
@@ -45,15 +29,34 @@ runtime:
         url: "/en/runtime/features/updating-pm2/"
       - page: Source Map Support
         url: "/en/runtime/features/javascript-source-maps/"
-      - page: Using PM2 Programmatically
-        url: "/en/runtime/reference/pm2-programmatic/"
       - page: Transpilers
         url: "/en/runtime/integration/transpilers/"
+      - page: Using PM2 Programmatically
+        url: "/en/runtime/reference/pm2-programmatic/"
+      - page: Easy Deploy with SSH
+        url: "/en/runtime/guide/easy-deploy-with-ssh/"
       - page: Graceful Shutdown
         url: "/en/runtime/best-practices/graceful-shutdown/"
       - page: Multiple PM2
         url: "/en/runtime/features/multiple-pm2/"
-
+  - title: Guide
+    submenu:
+      - page: Installation
+        url: "/en/runtime/guide/installation/"
+      - page: Ecosystem File
+        url: "/en/runtime/guide/ecosystem-file/"
+      - page: Process Management
+        url: "/en/runtime/guide/process-management/"
+      - page: Log Management
+        url: "/en/runtime/guide/log-management/"
+      - page: Startup Hook
+        url: "/en/runtime/guide/startup-hook/"
+      - page: Load-Balancing
+        url: "/en/runtime/guide/load-balancing/"
+      - page:  Development Tools
+        url: "/en/runtime/guide/development-tools/"
+      - page: Easy Deploy with SSH
+        url: "/en/runtime/guide/easy-deploy-with-ssh/"
   - title: Best Practices
     submenu:
       - page: Environment Variables
