@@ -26,7 +26,7 @@ $ pm2 start app.js
 ### Start and auto-restart on file change
 
 ```bash
-$ pm2 start app.js --watch [--watch-ignore /*/]
+$ pm2 start app.js --watch [--ignore-watch /*/]
 ```
 
 ### List apps
