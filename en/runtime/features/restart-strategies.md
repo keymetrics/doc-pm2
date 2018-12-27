@@ -62,6 +62,10 @@ module.exports = [{
 }]
 ```
 
+## Memory based reload strategy
+
+Checkout [https://pm2.io/doc/en/runtime/features/memory-limit/](https://pm2.io/doc/en/runtime/features/memory-limit/)
+
 ## 0second Downtime Reload
 
 Checkout the cluster mode to get [this behavior](/doc/en/runtime/guide/load-balancing/#0-seconds-downtime-reload)
