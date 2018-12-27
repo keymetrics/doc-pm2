@@ -11,7 +11,7 @@ runtime:
         url: "/en/runtime/guide/process-management/"
       - page: Ecosystem File
         url: "/en/runtime/guide/ecosystem-file/"
-      - page: Hot Reload & Cluster Mode
+      - page: Cluster Mode & Hot Reload
         url: "/en/runtime/guide/load-balancing/"
       - page: Watch & Restart
         url: "/en/runtime/features/watch-restart/"
