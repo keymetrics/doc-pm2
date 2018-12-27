@@ -10,7 +10,7 @@ permalink: "/zh/runtime/overview/"
 
 # 概述
 
-为什么使用pm2? 看完这篇介绍，您将更好地理解使用pm2作为流程管理器的好处。
+为什么使用pm2? 看完这篇介绍，您将更好地理解使用pm2作为进程管理器的好处。
 
 ## 持久化
 
@@ -21,7 +21,7 @@ permalink: "/zh/runtime/overview/"
 pm2 start app.js
 ```
 
-## 流程管理
+## 进程管理
 
 您所有的应用都被守护进程，例如，在后台持续运行。
 
