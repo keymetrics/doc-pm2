@@ -67,7 +67,7 @@ If you click on the heatmap, you will directly go on the app dashboad which is d
 
 ## App Dashboard
 
-![Dashboard](https://github.com/keymetrics/branding/blob/master/screenshots/plus/dashboard/dashboard.png)
+![Dashboard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/dashboard/dashboard.png)
 
 This is an app centric dashboard, this will give you the infos you need about one app in particular.
 
