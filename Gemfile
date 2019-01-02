@@ -22,8 +22,6 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from'
 end
 
-gem "github-pages", "~>175", group: :jekyll_plugins
-
 gem "nokogiri", "~> 1.8.1"
 gem "wdm", "~> 0.1.1" if Gem.win_platform?
 # gem 'html-proofer'
