@@ -23,9 +23,9 @@ A server represents one linked PM2 instance. You can have as much server as you 
 
 <details>
 <summary markdown="span">How does the pricing works?</summary>
-If you have a pro_4 plan, you can have 4 processes monitored.
+If you have a pro_8 plan, you can have 8 processes monitored.
 
-You can have 4 servers with 1 process on each or 1 server with 4 processes. Only the sum of all processes monitored is taken into account.
+You can have 8 servers with 1 process on each or 1 server with 8 processes. Only the sum of all processes monitored is taken into account.
 </details>
 
 <details>

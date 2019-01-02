@@ -15,7 +15,11 @@ We will assume that your app is already started or wrapped by PM2. If not, follo
 
 ## Create an account
 
-Register [here](https://id.keymetrics.io/api/oauth/register).
+You can create a PM2 plus accoutn by registering [here](https://id.keymetrics.io/api/oauth/register) or juste by typing ```pm2 plus``` in your terminal.
+
+Then just simply follow the in-app tutorial
+![Wizard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/wizard/step1.png)
+
 
 ## Connect your server to the dashboard
 
@@ -27,38 +31,15 @@ pm2 link <secret> <public>
 
 Or, if you don't have access to the CLI, add `PM2_PUBLIC_KEY` and `PM2_SECRET_KEY` environment variables set with your public and private keys.
 
- Use the `Link an app` help on the top left of your dashboard
+Use the `conncet` button on the top right of your dashboard to find your `PM2_PUBLIC_KEY` and `PM2_SECRET_KEY`
 {: .tip}
 
-## Install CPU/Memory snapshot
-
-### g++
-
-You must have `g++` installed:
-
-On Linux, enter `sudo apt-get install build-essential`.
-
-On Mac, enter `g++` in terminal and then follow the instructions.
-
-### CPU/Memory profiler
-
-Use the PM2 installer:
-
-```bash
-pm2 install profiler
-```
-
-Then reload your application to enable the profiler:
-
-```bash
-pm2 reload all
-```
 
 ## You are done
 
 Go back to the dashboard, you will have access to realtime metrics of your app.
 
-![dashboard view]({{ site.baseurl }}{% link img/plus/unified.png %})
+![dashboard view](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/overview/servers_overview.png)
 
 ## Next Steps
 

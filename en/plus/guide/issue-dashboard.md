@@ -9,7 +9,7 @@ permalink: "/en/plus/guide/issue-dashboard/"
 
 # Issue dashboard
 
-![issue dashboard]({{ site.baseurl }}{% link img/plus/issue.png %})
+![issue dashboard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/issues/issues.png)
 
 PM2 always keep your application so you are not afraid anymore of the exception crashing you app.
 
@@ -40,5 +40,5 @@ catch(error) {
 
 ## Next Steps
 
-[Transaction Tracing]({{ site.baseurl }}{% link en/plus/guide/transaction-tracing.md %})
+[Notifications]({{ site.baseurl }}{% link en/plus/guide/notifications.md %})
 {: .btn-stylized}

@@ -17,21 +17,23 @@ permalink: "/en/plus/overview/"
 
 <br/>
 <center>
-Welcome to the Overview of PM2 Plus!
+Welcome to the Overview of <b>PM2 Plus</b>!
 </center>
 
-Once you go serious about production, you need to make sure that your application is running properly, without bugs, performance issues and without downtimes.
+Once you go serious about production, you need to make sure that your application is running properly, without bugs, without performance issues and without downtimes.
 
-That's why we created PM2 Plus. It's a set of advanced features for both hardening the PM2 Runtime and monitoring applications in production.
+That's why we created PM2 Plus. It's a set of advanced features for both hardening your current PM2 Runtime Process manager and monitoring applications in production.
 
 With PM2 Plus you get:
 
 - A Real-time Monitoring Web Interface
-- Smart Exception Reporting
-- Production Profiling for Memory and CPU
+- Issues & Exception Tracking
+- Deployment reporting
 - PM2 Runtime High Availability Fallback
-
-And much more like realtime logs, custom metrics, remote actions...
+- Realtime logs
+- Email & Slack notifications
+- Custom Metrics Monitoring
+- Custom Actions Center
 
 To start using PM2 Plus via CLI:
 
@@ -45,16 +47,16 @@ Here are some of the features available in PM2 Plus:
 
 ### Unified Overview
 
-![a unified overview]({{ site.baseurl }}{% link img/plus/unified.png %})
+![a unified overview](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/overview/servers_overview.png)
 
 PM2 Plus allows you to have an extended view of all your apps and databases in one single place, at real-time or through history. **Stop ssh in all your servers one by one**, instead, save time by having a condensed infrastructure plus view.
 
 [Quick Start]({{ site.baseurl }}{% link en/plus/quick-start.md %})
 {: .btn-stylized}
 
-### Custom Metrics
+### Custom Metrics Histogram
 
-![custom metrics]({{ site.baseurl }}{% link img/plus/personalized.png %})
+![custom metrics](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/histograms/histograms.png)
 
 Expose the important variables from your Node.js applications source code and display them as performance metrics on the PM2 Plus dashboard. **Monitor values that matter.**
 
@@ -76,7 +78,7 @@ Even though PM2 makes sure that your application have no downtime, be notified i
 
 ### Issue Dashboard
 
-![issue dashboard]({{ site.baseurl }}{% link img/plus/issue.png %})
+![issue dashboard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/issues/issues.png)
 
 PM2 Plus reports the list of all errors in the "Issue Dashboard" occurred in your Node.js and gets you notified.
 
@@ -85,48 +87,17 @@ Stop spending time finding bugs or trying to replay them, we provide you an "Iss
 [Issue Dashboard]({{ site.baseurl }}{% link en/plus/guide/issue-dashboard.md %})
 {: .btn-stylized}
 
-### Transaction Tracing
-
-![transaction tracing]({{ site.baseurl }}{% link img/plus/tracing.png %})
-
-Record and aggregate the database and external calls that your application makes on every http request.
-
-The "Transaction Tracing" helps you troubleshoot performance issues and to get detailed low-level insight into how your app is working (slowest routes, most consuming, number of calls). **Provide a better user experience and make your app faster.**
-
-[Transaction Tracing]({{ site.baseurl }}{% link en/plus/guide/transaction-tracing.md %})
-{: .btn-stylized}
-
-### Memory Snapshot
-
-![memory snapshot]({{ site.baseurl }}{% link img/plus/memory-profiling.png %})
-
-Take memory snapshots straight from your production servers.
-
-**Memory snapshot lets you find any memory leaks in your application.**
-
-[Memory snapshot]({{ site.baseurl }}{% link en/plus/guide/memory-snapshot.md %})
-{: .btn-stylized}
-
-### CPU Profiling
-
-![cpu profiling]({{ site.baseurl }}{% link img/plus/cpu-profiling.png %})
-
-Take CPU snapshots straight from your production servers.
-
-**CPU profiling helps you identify particular resource-heavy tasks.**
-
-[CPU Profiling]({{ site.baseurl }}{% link en/plus/guide/cpu-profiling.md %})
-{: .btn-stylized}
-
 ## Extra-features
 
 ### Remote control
 
-![remote action]({{ site.baseurl }}{% link img/plus/remote.png %})
+![remote action](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/actionCenter/actionCenter.png)
 
 PM2 Plus makes possible to enhance custom functions in the source code of your application.
 
 For example, you can assign values to your application variables or just switch it to maintenance mode. In other words you can **expose triggerable functions in your code**.
+
+You will to use the the [@pm2/io module](https://github.com/keymetrics/pm2-io-apm) comes along with PM2. It is the PM2 part responsible for gathering the metrics, reporting exceptions, exposing remote actions and every outside interaction with your application.
 
 [Remote action]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
 {: .btn-stylized}
@@ -141,7 +112,6 @@ Extend the capabilities of the PM2 Plus dashboard by using external modules list
 
 [Modules]({{ site.baseurl }}{% link en/plus/guide/modules.md %})
 {: .btn-stylized}
-
 
 ### Next Steps
 

@@ -9,9 +9,6 @@ sass:
 
 markdown: kramdown
 
-plugins:
-  - jekyll-redirect-from
-
 kramdown:
  input: GFM
  auto_ids: true
@@ -22,8 +19,7 @@ kramdown:
 repository: 'keymetrics/doc-pm2'
 permalink: pretty
 plugins:
-  - jekyll-paginate
-  - jekyll-feed
+  - jekyll-redirect-from
 
 baseurl: "/doc"
 destination: docs

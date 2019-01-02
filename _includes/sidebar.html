@@ -16,7 +16,7 @@
             {% for entry in item.submenu %}
             {% if page.url contains entry.url %}{% assign active = 'class="active"' %}
             {% else %}{% assign active = '' %}{% endif %}
-            <li {{ active }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a></li>
+            <li {{ active }}><a href="{{ site.baseurl }}{{ entry.url }}">{% if entry.page contains '\' %}<img width='70px' src='https://raw.githubusercontent.com/keymetrics/branding/master/logos/pm2ioAPM/io-black.png'> {% endif %}{{ entry.page }}</a></li>
             {% endfor %}
           </ul>
 

@@ -13,7 +13,10 @@ We assume that your app have been started with PM2. If not, follow the [Quick St
 
 ## Create an account
 
-Register [here](https://id.keymetrics.io/api/oauth/register).
+You can create a PM2 plus accoutn by registering [here](https://id.keymetrics.io/api/oauth/register) or juste by typing ```pm2 plus``` in your terminal.
+
+Then just simply follow the in-app tutorial
+![Wizard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/wizard/step1.png)
 
 ## Connect your server to the dashboard
 
@@ -23,9 +26,9 @@ Connect your server to your dashboard and start collecting metrics with:
 pm2 link <secret> <public>
 ```
 
-or, if you don't have access to the CLI, add the `PM2_PUBLIC_KEY` and `PM2_SECRET_KEY` environment variables with your public and private keys.
+Or, if you don't have access to the CLI, add `PM2_PUBLIC_KEY` and `PM2_SECRET_KEY` environment variables set with your public and private keys.
 
- The secret and public keys can be found at the top right of your dashboard
+Use the `conncet` button on the top right of your dashboard to find your `PM2_PUBLIC_KEY` and `PM2_SECRET_KEY`
 {: .tip}
 
 ### If you are behind a company proxy/firewall
@@ -34,62 +37,7 @@ Starting from PM2 3.2, we changed the networking connection by using a direct We
 
 You also may need to whitelist IPs, please allow these ones: 62.210.102.213, 163.172.76.240, 62.4.21.98, 163.172.253.187, 163.172.67.152, 195.154.79.25, 195.154.79.34
 
-## Install CPU/Memory snapshot
-
-
-### Starting from Node 10
-
-When using Node 10, all profilers are available out of box without installing anything.
-
-### Node 8.X and 9.X
-
-The profilers are available but you need to explicity enable them using the environement variable `FORCE_INSPECTOR` set to `1`.
-You have different way to enable them : 
-
-```
-FORCE_INSPECTOR=1 pm2 reload app --update-env
-```
-```
-export FORCE_INSPECTOR=1
-pm2 reload app --update-env
-```
-
-In a persistent way:
-```
-echo "FORCE_INSPECTOR=1" >> /etc/environment
-source /etc/environment
-pm2 reload app --update-env
-```
-
-Or you can add it inside your `ecosystem.json` file.
-
-### For older version (Node 4, 6, 7)
-
-**NOTE:** We advise to use the latest version of nodejs to profile your applications since the profilers are native and a lot more stable.
-
-You must have `g++` installed:
-
-- For Linux, enter `sudo apt-get install build-essential`.
-- For macOS, enter `g++` in terminal and then follow the instructions.
-
-Then you must install the addon used to profile your application :
-```bash
-pm2 install profiler
-```
-
-Then reload your application to enable the profiler:
-
-```bash
-pm2 reload all
-```
-
-## You are all set
-
-Go back to the dashboard, you have now access to realtime metrics of your app.
-
-![dashboard view]({{ site.baseurl }}{% link img/plus/unified.png %})
-
 ## Next Steps
 
-[Configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
+[Server Apps Overview]({{ site.baseurl }}{% link en/plus/guide/server-apps-overview.md %})
 {: .btn-stylized}

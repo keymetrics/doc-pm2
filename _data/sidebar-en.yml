@@ -92,27 +92,33 @@ plus:
     submenu:
       - page: Installation
         url: "/en/plus/guide/installation/"
-      - page: Configuration
-        url: "/en/plus/guide/configuration/"
+      - page: Server & Apps Overview
+        url: "/en/plus/guide/server-apps-overview/"
       - page: Notifications
         url: "/en/plus/guide/notifications/"
       - page: Issue Dashboard
         url: "/en/plus/guide/issue-dashboard/"
-      - page: Transaction Tracing
-        url: "/en/plus/guide/transaction-tracing/"
-      - page: Memory Snapshot
-        url: "/en/plus/guide/memory-snapshot/"
-      - page: CPU Profiling
-        url: "/en/plus/guide/cpu-profiling/"
+      - page: \ Configuration
+        url: "/en/plus/guide/configuration/"
+      - page: \ Custom Metrics
+        url: "/en/plus/guide/custom-metrics/"
+      - page: \ Custom Action Center
+        url: "/en/plus/guide/custom-actions/"
+      # - page: Transaction Tracing
+      #   url: "/en/plus/guide/transaction-tracing/"
+      # - page: Memory Snapshot
+      #   url: "/en/plus/guide/memory-snapshot/"
+      # - page: CPU Profiling
+      #   url: "/en/plus/guide/cpu-profiling/"
       - page: Modules
         url: "/en/plus/guide/modules/"
-  - title: Best Practices
-    url: "/en/plus/best-practices/"
-    submenu:
-      - page: Metrics Glossary
-        url: "/en/plus/best-practices/metrics-glossary/"
-      - page: CPU Profiling
-        url: "/en/plus/best-practices/cpu-profiling/"
+  # - title: Best Practices
+  #   url: "/en/plus/best-practices/"
+  #   submenu:
+  #     - page: Metrics Glossary
+  #       url: "/en/plus/best-practices/metrics-glossary/"
+  #     - page: CPU Profiling
+  #       url: "/en/plus/best-practices/cpu-profiling/"
   - title: Integration
     url: "/en/plus/integration/"
     submenu:
