@@ -104,6 +104,8 @@ plus:
         url: "/en/plus/guide/custom-metrics/"
       - page: Custom Actions
         url: "/en/plus/guide/custom-actions/"
+      - page: Realtime logs
+        url: "/en/plus/guide/realtime-logs/"
       # - page: Transaction Tracing
       #   url: "/en/plus/guide/transaction-tracing/"
       # - page: Memory Snapshot

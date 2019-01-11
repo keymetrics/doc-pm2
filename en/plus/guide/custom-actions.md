@@ -88,5 +88,5 @@ You will of course be able to see the output that your action sent in the callba
 
 ## Next Steps
 
-[Modules]({{ site.baseurl }}{% link en/plus/guide/modules.md %})
+[Realtime Logs]({{ site.baseurl }}{% link en/plus/guide/realtime-logs.md %})
 {: .btn-stylized}
