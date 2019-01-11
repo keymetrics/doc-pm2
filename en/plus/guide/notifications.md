@@ -15,71 +15,62 @@ By default, you receive notifications only by email and for critical events such
 - downtime
 - deployment
 - issues
+- restart
 
-This section will help you to customize the notification systems, to setup other channels and specify your own kind of alerts through your code.
+This section will help you to customize the notification systems to setup other channels and understand what you can receive as notifications.
 
-## Default notifications
+## Issues notifications
 
 By default, PM2 Plus sends three different kind of notification.
+Issues are simply errors that your application have, there two type : 
+- runtime errors: they made your application crash, pm2 automatically catch them and restart your application.
+- custom errors: with `@pm2/io` you can send custom error that you need to track in your application
 
-- When a new exception is thrown.
-
-[New Exception] Exception detected on *process_name*
-
-- When a server is offline for more than 90 seconds
-
-- After a deployment
-
-[App Malfunctioning] Application throws too many errors (*process_name*)
-
-## Custom notifications
-
-### Custom metric notifications
-
-The main way to set custom notification with PM2 Plus is with custom metrics.
-
-When defining a custom metric, enable notifications on it if it reaches a specific threshold.
-
-Example :
+Here is an example on how you can report custom errors : 
 
 ```javascript
-const metric = probe.metric({
-  name: 'CPU usage',
-  value: () => {
-    return cpu_usage;
+const io = require('@pm2/io')
+
+io.notifyError(new Error('This is an error'), {
+  // you can some http context that will be reported in the UI
+  http: {
+    url: req.url
   },
-  alert: {
-    mode: 'threshold',
-    value: 95,
-    msg: 'Detected over 95% CPU usage', // optional
-    action: () => { //optional
-      console.error('Detected over 95% CPU usage');
-    },
-    cmp: (value, threshold) => { //optional
-      return (parseFloat(value) > threshold); // default check
-    }
+  // or anything that you can like an user id
+  custom: {
+    user: req.user.id
   }
-});
+})
 ```
 
-Available options are:
+The first time we receive an error, we send you notifications by email.
+You can also configure to receive a slack message by going to `Settings > Alerts > 3rd Party Integration`
 
-- mode:
-  - threshold: trigger an alert directly when the value is above or below the threshold
-  - threshold-avg: trigger an alert when the value is above or below the threshold for *X* seconds
-  - smart: trigger an alert automatically when the value is unusual
-- value: Value that will be used for the exception check.
-- msg: String used for the exception.
-- action: Function triggered when the exception is reached. Optional.
-- cmp: Function used for exception check taking 2 arguments. Optional.
-- interval: For the threshold-avg mode. Sample length for monitored value (180 seconds default). Optional.
-- timeout: For the threshold-avg mode. Time after which mean comparison starts (30 000 milliseconds default). Optional.
+We will also send you notificatios in case of "bad behavior", which is when the same error happens more than 5 times in 60 seconds.
+Note that we will avoid sending a notification for each "bad behavior" that we detect.
 
-### Custom event notifications
+You can choose to not receive notifications for errors by going to `Settings > Alerts > Exceptions`
 
-An other way to set a custom notifications is to use a custom event.
+## Offline notifications
 
-After having defined a custom event, subscribe to it directly in the dashboard.
+**NOTE: The offline notification only works with PM2 version above 3.2.2** 
+
+When one of your servers isn't sending data to our servers for more than 2 minutes (can be configured), we tag him as "offline".
+You can choose to receive a notifications when it happens by going to `Settings > Alerts > Server offline`
+You can configure the threshold of how much time it need to be disconnected to send a notifications by going to `Settings > General > Your server is considered offline after`
+
+If your applications are in auto scaling environment, we advise to turn of the offline notifications and turn on "Auto delete a server when going offline" in `Settings > General` so it disappear from the dashboard automatically.
+
+## Restart notifications
+
+Sometimes you may want to be alerted when PM2 restart your application, we added a way for you to be alerted in this case, enable it in `Settings > Alerts > Automatic / Manual Restart`
+Automatic restart are the ones that are made by PM2 itself, because your app crashed for example.
+Manual restart are the ones that are done via the CLI using `pm2 restart myapp`
+
+## Deployment notifications
+
+If you use git with your application, we also allow you to receive an alert when the application is updated.
+You can turn it off or configure it by going to `Settings > Alerts > Deployment`
 
 ## Notification channels
 
@@ -91,7 +82,7 @@ The Slack integration allows you to receive exceptions and event notifications s
 
 First you need to get the Slack URL and to setup an incoming Webhook. More details on how to set this up can be found [here](https://my.slack.com/services/new/incoming-webhook/).
 
-Then go to the notification page and insert the webhook into the field. Enable and click on update.
+Then go to the notification page `Settings > Alerts` and insert the webhook into the field. Enable and click on update.
 
 Check if you successfully received a notification into your slack channel confirming that it has been configured.
 

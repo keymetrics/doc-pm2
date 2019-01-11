@@ -11,34 +11,38 @@ permalink: "/en/plus/guide/issue-dashboard/"
 
 ![issue dashboard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/issues/issues.png)
 
-PM2 always keep your application so you are not afraid anymore of the exception crashing you app.
+By default when one of your applications crash, pm2 will of course automatically restart it but it will also send the error to PM2 Plus.
+In the issue dashboard, you will be able to see for each error :
+- How much time the error happened ?
+- The servers that were impacted by this errors
+- The stack trace
+- The exact line of code that thrown the error
+- Few applications logs before the error happened
 
-But wait, what if many exceptions happen and you are now not aware of it?
-
-With PM2 Plus, we've got your back. You can track all exceptions that happens on your servers along with:
-- stack trace
-- line code number
-- logs before exception
+You can of course delete them if you think they are not relevant by click on `
 
 ## Manually emit an issue
 
-If you properly use `try... catch` in your code, errors will be caught and will never be reported in the dashboard.
-
-To report them anyway, emit an exception with `io.notify()`:
+It's possible that you need to report an error that isn't crashing your process.
+In this case you can use `io.notifyError` :
 
 ```javascript
 const io = require('@pm2/io')
 
 try {
-    // Critical action to be tested
-}
-catch(error) {
-    // Your code in case of an exception
-    io.notify(new Error('This is an error'))
+  // Critical action to be tested
+  user.sendNotifications()
+} catch (error) {
+  io.notifyError(new Error('Notification failed'), {
+    // or anything that you can like an user id
+    custom: {
+      user: user.id
+    }
+  })
 }
 ```
 
 ## Next Steps
 
-[Notifications]({{ site.baseurl }}{% link en/plus/guide/notifications.md %})
+[Notifications]({{ site.baseurl }}{% link en/plus/guide/custom-metrics.md %})
 {: .btn-stylized}
