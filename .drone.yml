@@ -23,7 +23,7 @@ pipeline:
       branch: [ master ]
   slack:
     image: plugins/slack
-    channel: ci
+    channel: dev-stream-ci
     when:
       event: push
       branch: [ master ]
