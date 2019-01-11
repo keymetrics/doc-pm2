@@ -87,11 +87,9 @@ plus:
     url: "/en/plus/overview/"
   - title: Quick Start
     url: "/en/plus/quick-start/"
-  - title: Guide
+  - title: Features
     url: "/en/plus/guide/"
     submenu:
-      - page: Installation
-        url: "/en/plus/guide/installation/"
       - page: Server & Apps Overview
         url: "/en/plus/guide/server-apps-overview/"
       - page: Application dashboard

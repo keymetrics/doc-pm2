@@ -22,61 +22,56 @@ Welcome to the Overview of <b>PM2 Plus</b>!
 
 Once you go serious about production, you need to make sure that your application is running properly, without bugs, without performance issues and without downtimes.
 
-That's why we created PM2 Plus. It's a set of advanced features for both hardening your current PM2 Runtime Process manager and monitoring applications in production.
+That's why we created PM2 Plus. It's a set of features for both hardening your current PM2 Runtime Process manager and monitoring applications in production.
 
 With PM2 Plus you get:
 
 - A Real-time Monitoring Web Interface
 - Issues & Exception Tracking
 - Deployment reporting
-- PM2 Runtime High Availability Fallback
 - Realtime logs
 - Email & Slack notifications
 - Custom Metrics Monitoring
 - Custom Actions Center
 
-To start using PM2 Plus via CLI:
+To start testing, you can either go to [app.pm2.io](https://app.pm2.io) or use the pm2 cli (pm2 above 3.2.7):
 
 ```bash
 pm2 plus
 ```
 
-Here are some of the features available in PM2 Plus:
+## Features available in PM2 Plus
 
-## Global Dashboard
+### Server overview
 
-### Unified Overview
-
-![a unified overview](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/overview/servers_overview.png)
+![server overview](https://cdn.jsdelivr.net/gh/keymetrics/branding/screenshots/plus/overview/server_overview.png)
 
 PM2 Plus allows you to have an extended view of all your apps and databases in one single place, at real-time or through history. **Stop ssh in all your servers one by one**, instead, save time by having a condensed infrastructure plus view.
 
-[Quick Start]({{ site.baseurl }}{% link en/plus/quick-start.md %})
+[Checkout the specific views]({{ site.baseurl }}{% link en/plus/guide/server-apps-overview.md %})
 {: .btn-stylized}
 
-### Custom Metrics Histogram
+### Metrics Histogram
 
 ![custom metrics](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/histograms/histograms.png)
 
 Expose the important variables from your Node.js applications source code and display them as performance metrics on the PM2 Plus dashboard. **Monitor values that matter.**
 
-[Configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
+[See custom metrics]({{ site.baseurl }}{% link en/plus/guide/custom-metrics.md %})
 {: .btn-stylized}
 
 ### Notifications
 
 ![notifications]({{ site.baseurl }}{% link img/plus/notifications.png %})
 
-Know when a data reaches a threshold, when an error occurred in your application or when your production application is down.
+Know when an error occurred in your application or when your production application is down.
 
 Even though PM2 makes sure that your application have no downtime, be notified in these critical situation in order to react. **Be notified and reactive in any critical situations.**
 
-[Notifications]({{ site.baseurl }}{% link en/plus/guide/notifications.md %})
+[Checkout notifications]({{ site.baseurl }}{% link en/plus/guide/notifications.md %})
 {: .btn-stylized}
 
-## Debug & Optimize
-
-### Issue Dashboard
+### Issues Dashboard
 
 ![issue dashboard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/issues/issues.png)
 
@@ -84,12 +79,10 @@ PM2 Plus reports the list of all errors in the "Issue Dashboard" occurred in you
 
 Stop spending time finding bugs or trying to replay them, we provide you an "Issue Dashboard" with everything in one place, to make debugging easier. **Drill down in your code and get the answer.**
 
-[Issue Dashboard]({{ site.baseurl }}{% link en/plus/guide/issue-dashboard.md %})
+[Checkout the Issue Dashboard]({{ site.baseurl }}{% link en/plus/guide/issue-dashboard.md %})
 {: .btn-stylized}
 
-## Extra-features
-
-### Remote control
+### Custom Actions
 
 ![remote action](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/actionCenter/actionCenter.png)
 
@@ -99,7 +92,17 @@ For example, you can assign values to your application variables or just switch 
 
 You will to use the the [@pm2/io module](https://github.com/keymetrics/pm2-io-apm) comes along with PM2. It is the PM2 part responsible for gathering the metrics, reporting exceptions, exposing remote actions and every outside interaction with your application.
 
-[Remote action]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
+[See how to use custom actions]({{ site.baseurl }}{% link en/plus/guide/custom-actions.md %})
+{: .btn-stylized}
+
+### Realtime logs
+
+![remote action](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/logs/logs.png)
+
+PM2 Plus allows you to see the logs of all of your applications managed by pm2 in one place in the cloud.
+No need to ssh into your servers and use `pm2 logs` anymore, everything is on the web interface.
+
+[Checkout the realtime logs]({{ site.baseurl }}{% link en/plus/guide/realtime-logs.md %})
 {: .btn-stylized}
 
 ### Third-party modules
@@ -107,8 +110,7 @@ You will to use the the [@pm2/io module](https://github.com/keymetrics/pm2-io-ap
 ![modules]({{ site.baseurl }}{% link img/plus/modules.png %})
 
 Extend the capabilities of the PM2 Plus dashboard by using external modules listed in our module page.
-
-**Anyone can create and publish its own module.**
+Monitor your databases metrics to know what going on in your infrastructure
 
 [Modules]({{ site.baseurl }}{% link en/plus/guide/modules.md %})
 {: .btn-stylized}
