@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Installation | Guide | PM2 Plus Documentation
+title: Overviews | Guide | PM2 Plus Documentation
 menu: starter
 lang: en
 section: plus
@@ -9,71 +9,56 @@ permalink: "/en/plus/guide/server-apps-overview/"
 
 # Presentation
 
-There are 2 main types of overview in PM2 Plus, one is server centric, the other one is App centric. You can jump from one to the other by using the ```"ctrl + K"``` shortcut or just by switching the view in the left sidebar menu.
-
-Let's take this example of architechure
-```
-└──[SERVER] demo-server-1
-    └── demo-application
-    └── demo-application
-    └── demo-application
-└──[SERVER] demo-server-2
-    └── demo-application
-    └── demo-application
-    └── demo-application
-```
-
-In the server overview you will see 2 servers and in the apps overview you will only see one app named "demo-application".
+There are 2 types of overview in PM2 Plus, the first one is the `Application overview` where you don't see any reference to a server in the overview, this one is mainly useful to containers or environment with a lot of applications.
+The other one is the `Server overview` which is the default with PM2 Plus, it's more detailed than the other one and show you every information by physical server.
 
 ## Server Overview
 
-![cpu profiling]({{ site.baseurl }}{% link img/plus/server.png %})
-This view is breakdown by server, in our example, we will have 2 servers in this view. 
+![server overview](https://cdn.jsdelivr.net/gh/keymetrics/branding/screenshots/plus/overview/server_overview.png)
+
+This view is breakdown by server, in the following example we have one server with 7 applications : 
+
+![detailed example]({{ site.baseurl }}{% link img/plus/server.png %})
 
 In the top bar of this section you will find infos about the actual server
 - The Server's Name
 - Number of cores and memory
 - Versions of Node.js & PM2
-- The interal and pulic IP
+- The public and private IP
 
-You are able to get realtime infos about a server such as
-- CPU
-- MEMORY
+You are able to get realtime infos about any application such as
+- cpu utilization
+- memory comsumption
 - HTTP Latency
-- Issues 
-- Event Loop Lag 
+- Issues
+- Event Loop Lag (the amount of time between two run of the event loop, should be less than 10 ms)
 - Number of restarts
-- Custom metrics
+- Versionning metadata (if your app is in a git repository)
 
-There also a small action pannel, from where you can enhance
-- Logs Display
-- Metadata Reset
-- Reload the app
-- Custom action 
+At the left of each application you can toggle more information for the application, it will show you :
+- All the metrics about the applications (both default and custom ones)
+- All the custom actions you added, you can trigger them for these buttons too.
 
 ## Apps Overview
 
-![cpu profiling]({{ site.baseurl }}{% link img/plus/apps.png %})
-This view is application centric view, in our previous exmaple you will get only one app : "demo-app"
-It contains a various of elements like
-- Health History Heatmap
-- Error history and error rate
-- Latency 
-- Request / minutes 
-- RAM
-- CPU
+![app overview](https://cdn.jsdelivr.net/gh/keymetrics/branding/screenshots/plus/overview/app_overview.png)
+
+It contains almost everything you need to see to understand the current health of your applications :
+
+- CPU Usage Heatmap
+    - Each cell represent a process in a server
+    - the color represent the cpu usage (varying from green to red where red is 100% of cpu usage)
+- Error history
+    - Last hour, last day and last week, it give you an idea if the application is instable for a long time or not.
+- Important metrics
+    - average cpu utilization
+    - average memory consumption
+    - average latency (only if you are using an http server) 
+    - average Request / minutes (only if you are using an http server)
 
 If you click on the heatmap, you will directly go on the app dashboad which is discribed in the following dashboard.
 
-## App Dashboard
-
-![Dashboard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/dashboard/dashboard.png)
-
-This is an app centric dashboard, this will give you the infos you need about one app in particular.
-
-If we take our initial example, you will find cross-servers information about "demo-application". This view will give you kind of a mix of metrics that are found previously in apps and server views.
-
 ## Next Steps
 
-[pm2/io Configuration]({{ site.baseurl }}{% link en/plus/guide/configuration.md %})
+[Application dashboard]({{ site.baseurl }}{% link en/plus/guide/app-dashboard.md %})
 {: .btn-stylized}

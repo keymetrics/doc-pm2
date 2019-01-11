@@ -94,6 +94,8 @@ plus:
         url: "/en/plus/guide/installation/"
       - page: Server & Apps Overview
         url: "/en/plus/guide/server-apps-overview/"
+      - page: Application dashboard
+        url: "/en/plus/guide/app-dashboard/"
       - page: Notifications
         url: "/en/plus/guide/notifications/"
       - page: Issue Dashboard
