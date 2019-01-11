@@ -1,7 +1,7 @@
 FROM ruby:2.5-alpine
 
 RUN apk add --no-cache --virtual build-dependencies make gcc g++ python build-base git cmake
-RUN gem install pygments.rb jekyll --no-rdoc --no-ri
+RUN gem install pygments.rb jekyll
 
 ENV LANGUAGE en_US.UTF-8
 ENV LANG en_US.UTF-8
