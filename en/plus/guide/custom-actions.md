@@ -11,78 +11,82 @@ permalink: "/en/plus/guide/custom-actions/"
 
 # Custom Actions
 
-![remote action](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/actionCenter/actionCenter.png)
+Custom actions are function that you expose to PM2 Plus with `@pm2/io` so you are able to launch them from the dashboard.
+A example use case that everyone should be familiar with is the following :
 
-To be able to use the action center you need to first configure the [@pm2/io](https://github.com/keymetrics/pm2-io-apm) module.
+```javascript
+const { createLogger, format, transports } = require('winston')
+
+const logger = createLogger({
+  level: 'info',
+  format: format.simple(),
+  transports: [new transports.Console()]
+})
+
+logger.info('Hello world')
+logger.debug('Debugging info')
+```
+
+Here i got a logger somewhere in my application, when putting it into production i don't want to get every `debug` log of it so by default i put the log level to `info`.
+However if i want to debug my application, i need to edit the source code, rebuild and redeploy to be able to see debug information.
+
+Here comes the custom actions :
+
+```javascript
+const { createLogger, format, transports } = require('winston')
+const io = require('@pm2/io')
+
+const logger = createLogger({
+  level: 'info',
+  format: format.simple(),
+  transports: [new transports.Console()]
+});
+
+logger.info('Hello world')
+logger.debug('Debugging info')
+
+io.action('set debug level', (cb) => {
+  // when running this action, we will be able to see all debug statement
+  logger.transports.Console.level = 'debug'
+  return cb({ level: 'debug' })
+})
+
+io.action('set info level', (cb) => {
+  // and when running this one, you get back to your normal log level
+  logger.transports.Console.level = 'info'
+  return cb({ level: 'info' })
+})
+```
+
+Custom actions are really powerful and only limited by your imagination, their usefulness really depend on your pains.
+But we believe that updating small configuration like the log level shouldn't take more than a few minutes.
 
 ## Expose Remote Actions
 
-You can remotely trigger functions directly from your dashboard. After having been exposed from your code, action buttons can be found in the dedicated section.
+You can remotely trigger functions directly from your dashboard. After having been exposed from your code, action buttons can be found in the `Action Center` section.
 
-### Simple actions
-
-The function takes a function as a parameter, which needs to be called once the job is finished.
-
-Example:
+The function takes a function as a parameter, which needs to be called once the action is finished.
 
 ```javascript
-const io = require('@pm2/io');
+const io = require('@pm2/io')
 
 io.action('db:clean', (cb) => {
-  clean.db(() => {
-     cb({ success: true });
-  });
-});
+  db.clean(() => {
+     return cb({ success: true })
+  })
+})
 ```
 
-### Scoped actions (beta)
+## How to use them in the dashboard
 
-Scoped Actions are advanced remote actions that can be also triggered from PM2 Plus.
+![remote action](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/actionCenter/actionCenter.png)
 
-Two arguments are passed to the function, data (optional data sent from PM2 Plus) and res that allows to emit log data and to end the scoped action.
+When you added all the actions in your code, you can go to the `Actions center` in the dashboard.
 
-Example:
-
-```javascript
-io.scopedAction('long running lsof', (data, res) => {
-  const child = spawn('lsof', []);
-
-  child.stdout.on('data', (chunk) => {
-    chunk.toString().split('\n').forEach(function(line) {
-      res.send(line); // This send log to PM2 Plus to be saved (for tracking)
-    });
-  });
-
-  child.stdout.on('end', (chunk) => {
-    res.end('end'); // This end the scoped action
-  });
-
-  child.on('error', (e) => {
-    res.error(e);  // This report an error to PM2 Plus
-  });
-
-});
-```
-
-## Report Caught Exceptions
-
-By default, in the Issue tab, you are only alerted for uncaught exceptions. Any exception that you catch is not reported. You can manually report them with the `notify()` method.
-
-```javascript
-const io = require('@pm2/io');
-
-io.notify({ success: false });
-
-io.notify('This is an error');
-
-io.notifyError(new Error('This is an error'));
-```
+From there you will see every actions that you have added. As soon as you click on them we will launch into your application.
+You will of course be able to see the output that your action sent in the callback.
 
 ## Next Steps
-
-
-[@pm2/io reference]({{ site.baseurl }}{% link en/plus/reference/pm2io.md %})
-{: .btn-stylized}
 
 [Modules]({{ site.baseurl }}{% link en/plus/guide/modules.md %})
 {: .btn-stylized}
