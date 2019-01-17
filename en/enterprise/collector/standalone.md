@@ -32,9 +32,11 @@ Then you only need to `init` it like this :
 ```js
 const io = require('@pm2/io').init({
   standalone: true,                       // mandatory
-  publicKey: process.env.KM_PUBLIC_KEY,   // define the public key given in the dashboard
-  secretKey: process.env.KM_SECRET_KEY,   // define the private key given in the dashboard
-  appName: process.env.KM_APP_NAME       // define an application name
+  apmOptions: {
+    publicKey: process.env.KM_PUBLIC_KEY,   // define the public key given in the dashboard
+    secretKey: process.env.KM_SECRET_KEY,   // define the private key given in the dashboard
+    appName: process.env.KM_APP_NAME       // define an application name
+  }
 })
 ```
 
@@ -49,9 +51,11 @@ Since you might want to monitor your application in production or staging enviro
 
 const io = require('@pm2/io').init({
   standalone: true,
-  publicKey: process.env.KM_PUBLIC_KEY,
-  secretKey: process.env.KM_SECRET_KEY,
-  appName: process.env.KM_APP_NAME
+  apmOptions: {
+    publicKey: process.env.KM_PUBLIC_KEY,
+    secretKey: process.env.KM_SECRET_KEY,
+    appName: process.env.KM_APP_NAME
+  }
   // ...
   // all custom configurations
   // ...
@@ -76,28 +80,95 @@ You might want to tweaks the configuration of `@pm2/io` to enable specific featu
 
 ```js
 const io = require('@pm2/io').init({
-  standalone: true,
-  publicKey: process.env.KM_PUBLIC_KEY, // the public key given in the dashboard
-  secretKey: process.env.KM_SECRET_KEY, // the private key given in the dashboard
-  appName: process.env.KM_APP_NAME, // the application name to recognize your process
-  profiling: true, // enable all profilings (cpu/memory)
-  sendLogs: true, // enable the broadcast of logs to PM2 Enterprise (so they can be saved),
-  transactions: true, // enable transaction tracing in your application (only recommend with APIs)
-  metrics: {
-    eventLoopActive: true, // (default: true) Monitor active handles and active requests
-    eventLoopDelay: true,  // (default: true) Get event loop's average delay
-    network: {
-      traffic: true, // (default: true) Allow application level network monitoring
-    },
-    transaction: {
-      http: true, // (default: true) Enable metrics from http server
-    },
-    v8: true, // default (false): enable V8 memory metrics
-    worker: true, // (default false) : get number of workers and threads
-  },
-
-  actions: {
-    eventLoopDump: false, // (default: false) Enable event loop dump action
+  /**
+   * Automatically catch unhandled errors
+   */
+  catchExceptions?: boolean = true
+  /**
+   * Configure the metrics to add automatically to your process
+   */
+  metrics?: {
+    eventLoop: boolean = true,
+    network: boolean = false,
+    http: boolean = true,
+    gc: boolean = true,
+    v8: boolean = true
+  }
+  /**
+   * Configure the default actions that you can run
+   */
+  actions?: {
+    eventLoopDump?: boolean = true
+  }
+  /**
+   * Configure availables profilers that will be exposed
+   */
+  profiling?: boolean = true
+  }
+  /**
+   * Configure the transaction tracing options
+   */
+  tracing?: {
+    /**
+     * Choose to enable the HTTP tracing system
+     *
+     * default is false
+     */
+    enabled: boolean = false
+    /**
+     * An upper bound on the number of traces to gather each second. If set to 0,
+     * sampling is disabled and all traces are recorded. Sampling rates greater
+     * than 1000 are not supported and will result in at most 1000 samples per
+     * second.
+     */
+    samplingRate?: number
+  }
+  /**
+   * If you want to connect to PM2 Enterprise without using PM2, you should enable
+   * the standalone mode
+   *
+   * default is false
+   */
+  standalone?: boolean = false
+  /**
+   * Define custom options for the standalone mode
+   */
+  apmOptions?: {
+    /**
+     * public key of the bucket to which the agent need to connect
+     */
+    publicKey: string
+    /**
+     * Secret key of the bucket to which the agent need to connect
+     */
+    secretKey: string
+    /**
+     * The name of the application/service that will be reported to PM2 Enterprise
+     */
+    appName: string
+    /**
+     * The name of the server as reported in PM2 Enterprise
+     *
+     * default is os.hostname()
+     */
+    serverName?: string
+    /**
+     * Broadcast all the logs from your application to our backend
+     */
+    sendLogs?: Boolean
+    /**
+     * Since logs can be forwared to our backend you may want to ignore specific
+     * logs (containing sensitive data for example)
+     */
+    logFilter?: string | RegExp
+    /**
+     * Proxy URI to use when reaching internet
+     * Supporting socks5,http,https,pac,socks4
+     * see https://github.com/TooTallNate/node-proxy-agent
+     *
+     * example: socks5://username:password@some-socks-proxy.com:9050
+     */
+    proxy?: string
   }
 })
 ```
