@@ -77,10 +77,12 @@ You only need to init `@pm2/io` with the `sendLogs` option set to `true` like th
 ```js
 const io = require('@pm2/io').init({
   standalone: true,
-  publicKey: process.env.KM_PUBLIC_KEY,
-  secretKey: process.env.KM_SECRET_KEY,
-  appName: process.env.KM_APP_NAME,
-  sendLogs: true
+  apmOptions: {
+    publicKey: process.env.KM_PUBLIC_KEY,
+    secretKey: process.env.KM_SECRET_KEY,
+    appName: process.env.KM_APP_NAME,
+    sendLogs: true
+  }
 })
 ```
 
