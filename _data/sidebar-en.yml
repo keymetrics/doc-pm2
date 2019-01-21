@@ -149,7 +149,7 @@ enterprise:
         url: "/en/enterprise/collector/go"
       - page: Prometheus
         url: "/en/enterprise/collector/prometheus"
-  - title: Guides
+  - title: Features
     url: "/en/enterprise/overview/"
     submenu:
       - page: Profiling
@@ -160,6 +160,8 @@ enterprise:
         url: "/en/enterprise/guides/dashboard"
       - page: Log
         url: "/en/enterprise/guides/log"
+      - page: Transaction Tracing
+        url: "/en/enterprise/guides/transaction-tracing/"
   - title: On-Premise
     url: "/en/enterprise/on-premise/"
     submenu:

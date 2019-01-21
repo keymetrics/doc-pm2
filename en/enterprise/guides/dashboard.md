@@ -11,9 +11,8 @@ permalink: "/en/enterprise/guides/dashboard/"
 ## Overview
 
 It's common in the devops culture to have a screen in your office that monitor the state your production apps.
-This feature is actually that. it allows you to see what's going on in realtime (max 5 sec delay), it can help you detect faster any wrong behavior of your application.
-
-**Note**: We are currently working on a version that can also show historic data, so you can both have realtime and historical data next to you.
+This feature is actually that. It allows you to see what's going on in realtime so you detect faster any wrong behavior of your application.
+We've recently added the possibility to add widget with historic data for any metrics.
 
 ## Use cases
 
@@ -28,7 +27,7 @@ The dashboards can also help you detect faster issue if you have a screen consta
 ## Requirements
 
 In the following documention, we assume that you already have connected your application to PM2 Enterprise (either on-premise and cloud).
-We also assume that you know how custom metrics and customs actions works.
+We also assume that you know how custom metrics works.
 
 ## Configuration
 
@@ -38,7 +37,7 @@ Since the feature is really just customization for your needs, there a no specif
 
 * Is there a way to show historic value of a metric ?
 
-  No, currently it's only in realtime but we are working towards a way to configure all components to show historical data.
+  Yes, you need to use the "Metric line chart" widget which allows you to specify a timerange. Other widget are only in realtime.
 
 * I need to show a metric in a specific way (one that isn't covered by one of your component) ?
 
@@ -49,9 +48,6 @@ Since the feature is really just customization for your needs, there a no specif
 * It's slow on my PC
 
   The realtime dashboard can cost a lot depending on how much process you want to monitor in realtime, we are constantly looking to optimize our frontend, we advise to contact us so we can inspect the problem and find a solution.
-
-
-
 
 <center>
 Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
