@@ -162,6 +162,8 @@ enterprise:
         url: "/en/enterprise/guides/log"
       - page: Transaction Tracing
         url: "/en/enterprise/guides/transaction-tracing/"
+      - page: Webchecks
+        url: "/en/enterprise/guides/webchecks/"
   - title: On-Premise
     url: "/en/enterprise/on-premise/"
     submenu:

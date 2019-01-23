@@ -21,7 +21,7 @@ Slow HTTP calls are identified and the database and external calls are aggregate
 
 The transaction tracing is disabled by default. On big infrastructure, you should only use the transaction tracing for a few days to collect informations and then disable it because there is no sampling and all requests are treated.
 
-You'll have to wait 10min to let PM2 Plus collects enough data.
+You'll have to wait 10min to let PM2 Enterprise collects enough data.
 
 ### @pm2/io
 
@@ -79,6 +79,10 @@ Let's examine a specific variance:
 
 You can then click on another **variance** to examine why and how the behaviour was different.
 
+As you can see in the UI, whe remove queries sensitive data by default. If you want to see the whole query :
+  - You need to use the standalone agent (without pm2)
+  - Add `PM2_APM_CENSOR_SPAMS=0` in your environment when launching your application.
+
 ## Under the hood
 
 PMX will wrap below modules if they exist in your application :
@@ -110,3 +114,8 @@ The impact on performance should be low since there is no heavy logic done in yo
 - This feature has some known problems with other modules :
   - `request-promise`: clears the node cache and requires a new clean version of the `http` module. To solve this, require `http` again after requiring `request-promise` to get the correctly wrapped `http` module.
   - `node-newrelic`: works as we do, so you might encounter problems with it.
+
+
+<center>
+Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
+</center>
