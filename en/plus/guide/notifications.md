@@ -51,6 +51,45 @@ Note that we will avoid sending a notification for each "bad behavior" that we d
 
 You can choose to not receive notifications for errors by going to `Settings > Alerts > Exceptions`
 
+For both following integration, you need to use at least `@pm2/io` version 3.0.0
+
+#### Report errors with Express
+
+If you want you can configure your express middleware to automatically send you an error with the error middleware of express :
+
+```js
+const io = require('@pm2/io')
+const express = require('express')
+const app = express()
+
+// add the routes that you want
+app.use('/toto', () => {
+  throw new Error('ajdoijerr')
+})
+
+// always add the middleware as the last one
+app.use(io.expressErrorHandler())
+```
+
+#### Report errors with Koa
+
+We also expose a custom koa middleware to report error with a specific koa middleware :
+
+```js
+const io = require('@pm2/io')
+const Koa = require('koa')
+const app = new Koa()
+
+// the order isn't important with koa
+app.use(pmx.koaErrorHandler())
+
+// add the routes that you want
+app.use(async ctx => {
+  ctx.throw(new Error('toto'))
+})
+```
+
+
 ## Offline notifications
 
 **NOTE: The offline notification only works with PM2 version above 3.2.2** 
