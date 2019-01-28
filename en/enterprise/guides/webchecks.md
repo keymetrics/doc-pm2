@@ -11,10 +11,10 @@ permalink: "/en/enterprise/guides/webchecks/"
 
 ![Webchecks](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/enterprise/webchecks/overview_multiple.png)
 
-When monitoring your infrastructure, two path exists : monitoring from the inside or from outside. The whole Enterprise product is mostly a monitoring tool to know what's happening inside. The Webcheck feature is the other side : monitoring your applications the outside.
+When monitoring your infrastructure, there are two paths : you can monitor from the inside or from the outside. The whole Enterprise product is mostly a monitoring tool that allows you to know what's happening inside. The Webcheck feature helps you monitor your applications from the outside.
 
 It allows you to configure any endpoint to be checked by our workers. It can be a http, https or tcp application.
-Of course like the alerting system, you are able to get alerted on few metrics like the latency of your application. You can also choose how and who will receive a notifications.
+Of course like the alerting system, you are able to get alerted on few metrics like the latency of your application. You can also choose how and who will receive a notification.
 
 You can get the details of a webcheck by clicking on the **zoom icon** at the top left of each webcheck, you will then be able to check all metrics value over time:
 
@@ -24,15 +24,15 @@ You can get the details of a webcheck by clicking on the **zoom icon** at the to
 
 ### Verify Availability of your APIs
 
-When providing API to your customers, you want to be sure that they are available and not too slow. You can add a webcheck on specific routes and get alerted if they cross a specific threshold.
+When providing API to your customers, you want to make sure they are available and not too slow. You can add a webcheck on specific routes and get alerted if they cross a specific threshold.
 
-### Know the time its take for your web app to load
+### Know how much time it takes for your web app to load
 
 When creating a webcheck, you can enable the toggle the `Retrieve frontend metrics` which will load your endpoint in a chromium browser to verify the time it takes to be interactive and few other key metrics for your users.
 
 ## Requirements
 
-In the following documention, there are no specific requirements except that your endpoint need to be exposed to internet.
+In the following documentation, there are no specific requirements except that your endpoint need to be exposed to internet.
 
 ## Configuration
 
