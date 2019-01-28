@@ -145,6 +145,54 @@ Add this entry in your ecosystem file:
 
 The format must follow a moment.js format, list [here](https://momentjs.com/docs/#/parsing/string-format/).
 
+## Send logs to log collectors
+
+You can send your logs in JSON format with tail plugins and using log collectoros. [Sample for fluentbit](https://docs.fluentbit.io/manual/input/tail)
+
+For error logs you can get node process errors and pass it to your log collectors.
+[Fluentbit sample input tcp](https://docs.fluentbit.io/manual/input/tcp)
+```
+[INPUT]
+    Name        tcp
+    Listen      0.0.0.0
+    Port        5170
+    Chunk_Size  32
+    Buffer_Size 64
+
+[OUTPUT]
+    Name   stdout
+    Match  *
+```
+
+```js
+// index.js
+const net = require('net');
+
+const client = new net.Socket();
+
+client.connect(5170, '127.0.0.1', () => {
+  log('Application connected to fluent bit');
+});
+
+process.setUncaughtExceptionCaptureCallback((err) => {
+  client.write(JSON.stringify({
+    type: 'error',
+    process_id: process.pid,
+    errno: err.errno,
+    code: err.code,
+    message: err.message,
+    trace: err.stack.split('\n').map((v) => {
+      const t = v.trim();
+      return t;
+    }),
+  }));
+  
+  client.destroy();
+  
+  process.exit(1);
+});
+```
+
 ## Next Steps
 
 [Startup Hook]({{ site.baseurl }}{% link en/runtime/guide/startup-hook.md %})
