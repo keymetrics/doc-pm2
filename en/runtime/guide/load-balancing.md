@@ -79,7 +79,7 @@ Get help to setup graceful shutdown with our [tutorial]({{ site.baseurl }}{% lin
 
 The `NODE_APP_INSTANCE` environment variable is used to make a difference between cluster.
 
-For example, if you want to run a cronjob only on one cluster, you can check if `process.env.NODE_APP_INSTANCE === 0`.
+For example, if you want to run a cronjob only on one cluster, you can check if `process.env.NODE_APP_INSTANCE === '0'`.
 
 This variable can be renamed in the ecosystem file:
 
