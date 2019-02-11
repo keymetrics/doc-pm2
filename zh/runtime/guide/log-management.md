@@ -141,7 +141,7 @@ echo
 
 在您的生态系统文件中添加此条目：
 
-`"date_log_format": "JJ-MM-YYYY"`
+`"log_date_format": "JJ-MM-YYYY"`
 
 格式必须遵循moment.js格式，清单在 [此处](https://momentjs.com/docs/#/parsing/string-format/)。
 
