@@ -35,11 +35,11 @@ Since the feature is really just customization for your needs, there a no specif
 
 ## Common Questions
 
-* Is there a way to show historic value of a metric ?
+* Is there a way to show historic value of a metric?
 
   Yes, you need to use the "Metric line chart" widget which allows you to specify a timerange. Other widget are only in realtime.
 
-* I need to show a metric in a specific way (one that isn't covered by one of your component) ?
+* I need to show a metric in a specific way (one that isn't covered by one of your component)?
 
   We are totally open to implement other components, please contact us so we can discuss that !
 

@@ -11,13 +11,13 @@ permalink: "/en/enterprise/guides/alerting/"
 ## Overview
 
 The alerting engine of PM2 Enterprise allows you to set alerts on metrics and receive alerts, like it's possible with other monitoring solution.
-However we do a somethings more, which intregrating with our APMs : 
+However we do a somethings more, which intregrating with our APMs: 
 
 - You can trigger a profiling of any application (either the cpu or memory) that allows you to continuously profile your application, across release to increase performance or detect regression.
 - You can run a function in your application (with the custom actions)
 - You can ask PM2 to restart your application (with you use the pm2 agent)
 
-You currently support 3 ways to be alerted : 
+You currently support 3 ways to be alerted: 
 - Slack
 - Email
 - Webhook
@@ -27,7 +27,7 @@ You currently support 3 ways to be alerted :
 #### Be alerted when a metrics go above a threshold
 
 The main use case of the feature is of course to alert you when metrics aren't normal.
-A basic alert should looks like that : 
+A basic alert should looks like that: 
 
 - Create an alert
 - Select the metric that you want to get alerted on
@@ -40,7 +40,7 @@ A basic alert should looks like that :
 
 Given an example where you have a cpu spike in the night hours but doesn't know why, you can explose your code base to try to understand it.
 You could also stay up late to run the profiling manually when the cpu spike.
- Or you could use the Alerting with the Profling to do that for you :
+ Or you could use the Alerting with the Profling to do that for you:
 
 - Create an alert when the cpu usage goes above 70%
 - Select as action the CPU Profile
@@ -52,7 +52,7 @@ When you will receive a notification, just check in the CPU Profile panel, you s
 
 #### Restart your application if you know that somethings in wrong
 
-Given an example where your app leaks memory but you don't have the time to inspect it right now. You can just ask PM2 to restart it with the Alerting :
+Given an example where your app leaks memory but you don't have the time to inspect it right now. You can just ask PM2 to restart it with the Alerting:
 
 - Create an alert when the memory usage goes above 500M
 - Filter the app/server depending on which app you want to restart
@@ -71,7 +71,7 @@ We also assume that you know how custom metrics and customs actions works.
 ## Configuration
 
 This feature allow to get alerted when a metric goes above a specific treshold that you configured.
-You can configure different conditions to trigger the alert :
+You can configure different conditions to trigger the alert:
   - Metric: Choose the metric value that will be watched
   - Operator: Choose the operator that the value will be checked against (available: > < = <= =>)
   - Treshold: Choose the value to not go above or under
@@ -79,7 +79,7 @@ You can configure different conditions to trigger the alert :
   - Application Name: only trigger for application with a specific name
   - Server Name: only trigger for application that are in a specific server
 
-When a alert is triggered, you can choose different `Actions` to run :
+When a alert is triggered, you can choose different `Actions` to run:
 
   - Send an email: Choose the people in your bucket to send the alert to
   - Send a slack message: Set the webhook URL used to post the message
@@ -93,15 +93,15 @@ Note: You can add actions as much as you want, they will all be run. Note that t
 
 ## Common Questions
 
-* If i choose a custom action, where will it be run ?
+* If I choose a custom action, where will it be run?
   
   The alerting engine will send the custom action do all processes that have gone above the treshold automatically, you can't configure which process will receive it or not.
 
-* I filter by the application name and i received multiples emails at the same time for the same name, how is that possible ?
+* I filter by the application name and i received multiples emails at the same time for the same name, how is that possible?
 
   If you have an application is on multiple server or even if the application is in cluster mode, you will receive an different alert for each process on every server that match the alert's condition.
 
-* Can i do a specific query like in Graphana for example ?
+* Can I do a specific query like in Graphana for example?
 
   No and currently we don't plan to make our engine more customizable.
 

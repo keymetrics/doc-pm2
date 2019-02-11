@@ -123,7 +123,7 @@ pip3 install --upgrade --user awsebcli
 eb init --profile eb-cli -p Node.js
 
 Select a default region
-2) us-west-1 : US West (N. California)
+2) us-west-1: US West (N. California)
 
 Select an application to use
 [ Create new Application ]
@@ -136,7 +136,7 @@ Do you want to set up SSH for your instances?
 (y/n): n
 ```
 
-有关每个选项的说明，请参阅[此处](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html)的AWS示例
+有关每个选项的说明，请参阅[此处](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Node.js_express.html)的AWS示例
 
 ### 创建一个Elastic Beanstalk环境
 

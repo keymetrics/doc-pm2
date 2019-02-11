@@ -11,7 +11,7 @@ permalink: "/en/enterprise/guides/webchecks/"
 
 ![Webchecks](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/enterprise/webchecks/overview_multiple.png)
 
-When monitoring your infrastructure, there are two paths : you can monitor from the inside or from the outside. The whole Enterprise product is mostly a monitoring tool that allows you to know what's happening inside. The Webcheck feature helps you monitor your applications from the outside.
+When monitoring your infrastructure, there are two paths: you can monitor from the inside or from the outside. The whole Enterprise product is mostly a monitoring tool that allows you to know what's happening inside. The Webcheck feature helps you monitor your applications from the outside.
 
 It allows you to configure any endpoint to be checked by our workers. It can be a http, https or tcp application.
 Of course like the alerting system, you are able to get alerted on few metrics like the latency of your application. You can also choose how and who will receive a notification.
@@ -36,13 +36,13 @@ In the following documentation, there are no specific requirements except that y
 
 ## Configuration
 
-When creating a webcheck, there are 3 main parts about the configuration :
+When creating a webcheck, there are 3 main parts about the configuration:
 
 ### General options
 
 ![Options](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/enterprise/webchecks/config_options.png)
 
-Those options are required to be able to schedule a webcheck, here a quick list of what you can configure :
+Those options are required to be able to schedule a webcheck, here a quick list of what you can configure:
   - `Region` where we will be checking your endpoint from (we only offer 3 regions for now: EU, NA and India)
   - `Target`: The endpoint to check (hostname,port etc)
   - `Type`: it can be either `https`, `http` or `tcp`
@@ -56,7 +56,7 @@ Those options are required to be able to schedule a webcheck, here a quick list 
 
 ![Alerts](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/enterprise/webchecks/config_alerts.png)
 
-When checking your endpoint, our system will produce few metrics on which you can add alert on, here a list : 
+When checking your endpoint, our system will produce few metrics on which you can add alert on, here a list: 
 
 **Note:** The `state` metric is the one thats representing the webcheck, if it's at 0, the webcheck failed, otherwise it's up.
 
@@ -91,7 +91,7 @@ If you insterested in more actions output (like Pagerduty), please contact us (s
 
 ## Common Questions
 
-* Can i send different actions depending on the alert ?
+* Can i send different actions depending on the alert?
 
   No, we don't currently aim to implement this possiblity to keep the feature relatively simple.
 

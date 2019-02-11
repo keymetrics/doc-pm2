@@ -134,7 +134,7 @@ Do you want to set up SSH for your instances?
 (y/n): n
 ```
 
-For a description of each option see the AWS example [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html)
+For a description of each option see the AWS example [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Node.js_express.html)
 
 ### Create an Elastic Beanstalk environment
 

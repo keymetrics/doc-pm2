@@ -29,7 +29,7 @@ In the following documention, we assume that you already have connected your app
 
 #### Using an ecosystem
 
-When using an ecosystem, you can tell to our Agent to forward all the logs using this configuration :
+When using an ecosystem, you can tell to our Agent to forward all the logs using this configuration:
 
 ```js
 {
@@ -45,13 +45,13 @@ When using an ecosystem, you can tell to our Agent to forward all the logs using
 
 #### Using an environment variable
 
-When launching your app with the CLI, you can add an environment variable to tell our agent to forward the logs : 
+When launching your app with the CLI, you can add an environment variable to tell our agent to forward the logs: 
 
 ```bash
 BROADCAST_LOGS=1 pm2 reload app --update-env
 ```
 
-You can also set it directly inside your dockerfile with the `ENV` instruction : 
+You can also set it directly inside your dockerfile with the `ENV` instruction: 
 
 ```docker
 FROM node:10-alpine
@@ -71,7 +71,7 @@ CMD [ "pm2-runtime", "app.js" ]
 
 #### Using the standalone agent
 
-You only need to init `@pm2/io` with the `sendLogs` option set to `true` like this : 
+You only need to init `@pm2/io` with the `sendLogs` option set to `true` like this: 
 
 ```js
 const io = require('@pm2/io').init({
@@ -91,7 +91,7 @@ const io = require('@pm2/io').init({
 pm2io.Notifier.Log("something about my application")
 ```
 
-You may want to integrate with your logger framework, it's actually pretty easy, here is a exemple with Logrus : 
+You may want to integrate with your logger framework, it's actually pretty easy, here is a exemple with Logrus: 
 
 ```go
 package main
@@ -162,22 +162,22 @@ There not a lot of best practices for your logs since the feature is pretty basi
 
 ## Questions / Answers
 
-* Can i forward my logger to PM2 Enterprise ? (in the case of winston in nodejs for example)
+* Can i forward my logger to PM2 Enterprise? (in the case of winston in Node.js for example)
   
   No, we currently only support sending the `stdout` and `stderr` of the process, in the winston case just tell him to output to the console
 
-* Do all agent support sending logs ?
+* Do all agent support sending logs?
   
   We advise to check direclty in the documentation of each agent to verify if the logs are available or not.
 
-* Can i search in those logs ?
+* Can i search in those logs?
     
   You cannot search in all your logs for a specific string for now.
   The only search possible is when you already fetched the logs in the frontend, you can search **ONLY** in them (those in your browser).
 
 ## Common Issues
 
-* I can't see any logs in PM2 Enterprise !
+* I can't see any logs in PM2 Enterprise!
 
   You need to check if the connection is working between the agent and PM2 Enterprise, we advise to check the documentation of the agent you are using.
 

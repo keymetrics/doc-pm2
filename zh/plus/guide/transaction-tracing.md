@@ -54,7 +54,7 @@ pm2 reload <app_name> --disable-trace
 
     // Ignore request based on matching string/regex for each field
     // Only one value need to match for the request to be ignored.
-    // Example :
+    // Example:
     // ignoreFilter: { path: [/v1/, '/'], ip: [/127.0.0.1/, '::1'] } 
     // will ignore request that contains v1 in their path or the index
     // it will ignore request that has been made by localhost
