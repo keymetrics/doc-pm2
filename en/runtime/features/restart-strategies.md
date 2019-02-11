@@ -69,3 +69,16 @@ Checkout [https://pm2.io/doc/en/runtime/features/memory-limit/](https://pm2.io/d
 ## 0second Downtime Reload
 
 Checkout the cluster mode to get [this behavior](/doc/en/runtime/guide/load-balancing/#0-seconds-downtime-reload)
+
+## No Auto Restart
+
+This is useful in case we wish to run 1-time scripts and don't want the process manager to restart our script in case it's completed running. 
+
+Simply running these scripts from bash would terminate the script in case the ssh-session is terminated and the script should not get restarted when it completes execution.
+
+PM2 is perfect for such cases, providing robust monitoring and logging
+
+CLI:
+```bash
+$ pm2 start app.js --no-autorestart
+```
