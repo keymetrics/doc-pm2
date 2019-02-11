@@ -10,14 +10,14 @@ permalink: "/en/enterprise/guides/profiling/"
 
 ## Overview
 
-The profiling feature is a key feature that allow you to profile your applications at runtime. By profiling, we mean recording what's your application is doing, either in term of cpu or memory, for that we have three profilers availables :
+The profiling feature is a key feature that allow you to profile your applications at runtime. By profiling, we mean recording what's your application is doing, either in term of cpu or memory, for that we have three profilers availables:
  - CPU Profiler: Record how much time is spent in each function of your application
  - Heap Profiler: Track heap allocation made by each function of your application
- - Heap Snapshot (**not for production in nodejs, see Best Practices**): Allows to dump the content of the heap and see for each object why the GC didn't removed it.
+ - Heap Snapshot (**not for production in Node.js, see Best Practices**): Allows to dump the content of the heap and see for each object why the GC didn't removed it.
 
 Note that the Heap Snapshot in Golang doesn't have instability.
 
-Otherwise the CPU and Heap profilers are stable, you can use them safely even in production : they both run in parallel of your application code (in another thread), put simply your application run while the profiling is done.
+Otherwise the CPU and Heap profilers are stable, you can use them safely even in production: they both run in parallel of your application code (in another thread), put simply your application run while the profiling is done.
 
 The power of both of the profilers are that you can profile your application remotely, without cost, in production. You don't need to reproduce the problem in development anymore to pinpoint a memory leak for exemple.
 
@@ -47,7 +47,7 @@ You will be able to read the summary of a profile (because it just a list of fun
 
 ## Configuration
 
-### NodeJS
+### Node.js
 
 #### Starting from Node 10
 
@@ -56,7 +56,7 @@ When using Node 10, all profilers are available out of box without installing an
 #### Node 8.X and 9.X
 
 The profilers are available but you need to explicity enable them using the environement variable `FORCE_INSPECTOR` set to `1`.
-You have different way to enable them :
+You have different way to enable them:
 
 ```
 FORCE_INSPECTOR=1 pm2 reload app --update-env
@@ -73,14 +73,14 @@ Or you can add it either inside your `ecosystem.json` file or your docker file.
 
 #### For older version (Node 4, 6, 7)
 
-**NOTE:** We advise to use the latest version of nodejs to profile your applications since the profilers are native and a lot more stable.
+**NOTE:** We advise to use the latest version of Node.js to profile your applications since the profilers are native and a lot more stable.
 
 You must have `g++` installed:
 
 - For Linux, enter `sudo apt-get install build-essential`.
 - For macOS, enter `g++` in terminal and then follow the instructions.
 
-Then you must install the addon used to profile your application :
+Then you must install the addon used to profile your application:
 ```bash
 pm2 install profiler
 ```
@@ -93,7 +93,7 @@ pm2 reload all
 
 #### Configure
 
-After installing everything needed, you can control if you want it available or not within your code using `@pm2/io` :
+After installing everything needed, you can control if you want it available or not within your code using `@pm2/io`:
 
 ```js
 const io = require('@pm2/io').init({
@@ -110,23 +110,23 @@ All profilers are availables by default for our golang agent.
 
 ## Best practices
 
-### Heap Snapshot for NodeJS
+### Heap Snapshot for Node.js
 
- Why is the Heap Snapshot not for production in nodejs ? :
+ Why is the Heap Snapshot not for production in Node.js?
   - Its blocking your whole application from running, since you don't want your heap to change while the snapshot is done.
   - It will double the amount of memory used by your application (since you are doing a copy of the memory), so care with OOM killer.
-  - In specific condition, its known to be instable (mean it can crash your app) :
+  - In specific condition, its known to be instable (mean it can crash your app):
     - If your application use more than 500M of RAM, the snapshot might crash the application (see https://bugs.chromium.org/p/chromium/issues/detail?id=768355 and https://bugs.chromium.org/p/chromium/issues/detail?id=768355)
-    - In specific NodeJS version, see this issue : https://github.com/nodejs/node/issues/23877
+    - In specific Node.js version, see this issue: https://github.com/Node.js/node/issues/23877
 
 We are commited to fix the instability issue (note that the two first issue will always be there by design) but in the mean time we advise to only use the Heap Profiler in production.
 
-### How to use ?
+### How to use?
 
 In the UI, you need to select the process you want to profile in the heatmap selector (a process color depend of this cpu usage for the cpu profiler and memory usage for the memory profiler).
 
 At this point you have two choices:
-  - Automatically stop the profiling with the `timeout` box (it require a version `@pm2/io` above 2.3 for nodejs)
+  - Automatically stop the profiling with the `timeout` box (it require a version `@pm2/io` above 2.3 for Node.js)
   - Start manually, wait yourself the amount of time and then stop manually the profiling.
 
 In either way, we advise to profile your application for more than 20-30 seconds depending if it's heavy used or not. Since the profiler are running in parralel, it does't track everything (which is call profile sampling), so you need to wait for your application to actually do different things to see them appear on the profile.
@@ -134,11 +134,11 @@ Depending on the usage of the app, you might need to wait longer to see somethin
 
 ## Questions / Answers
 
-* Does it impact the performance of my application ?
+* Does it impact the performance of my application?
 
-  Apart from the Heap Snapshot (both go & nodejs), all profilers run in parralel of your application, so your application isn't impacted.
+  Apart from the Heap Snapshot (both go & Node.js), all profilers run in parralel of your application, so your application isn't impacted.
 
-* What is the Total and Self Time in the CPU Profile ?
+* What is the Total and Self Time in the CPU Profile?
 
   The total time is the time spent in a specific function and all others functions that this function called. The self time is the opposite, only the time spent in a function without time spent by any functions that may have been called.
 

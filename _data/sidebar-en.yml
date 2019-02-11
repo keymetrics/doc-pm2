@@ -141,9 +141,9 @@ enterprise:
   - title: Installation
     url: "/en/enterprise/collector/overview"
     submenu:
-      - page: NodeJS with PM2
+      - page: Node.js with PM2
         url: "/en/enterprise/collector/pm2"
-      - page: NodeJS without PM2
+      - page: Node.js without PM2
         url: "/en/enterprise/collector/standalone"
       - page: Golang
         url: "/en/enterprise/collector/go"

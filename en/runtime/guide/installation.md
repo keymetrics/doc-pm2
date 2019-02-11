@@ -40,7 +40,7 @@ pm2 completion install
 
 Source map files are autodetected by default if they are present (`app.js.map` for `app.js`).
 
- What are source map files ? If using Babel, Typescript or any other Javascript superset, you may have noticed that stacktraces are not meaningful, errors not pointing to the right line. Source map files can be used to solve this problem.
+ What are source map files? If using Babel, Typescript or any other Javascript superset, you may have noticed that stacktraces are not meaningful, errors not pointing to the right line. Source map files can be used to solve this problem.
 {: .tip}
 
 ## Update

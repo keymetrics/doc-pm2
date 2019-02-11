@@ -52,9 +52,9 @@ keymetrics/pm2:`8-wheezy`|[Debian Wheezy](https://wiki.debian.org/DebianWheezy)|
 keymetrics/pm2:`6-wheezy`|[Debian Wheezy](https://wiki.debian.org/DebianWheezy)|[6-wheezy](tags/6/wheezy/Dockerfile)
 keymetrics/pm2:`4-wheezy`|[Debian Wheezy](https://wiki.debian.org/DebianWheezy)|[4-wheezy](tags/4/wheezy/Dockerfile)
 
-您可以在[这里](https://github.com/nodejs/docker-node#image-variants)找到更多关于镜像变体的信息。
+您可以在[这里](https://github.com/Node.js/docker-node#image-variants)找到更多关于镜像变体的信息。
 
-> 每次构建这些图像的过程都会自动触发 [NodeJS's Docker images](https://hub.docker.com/r/library/node/tags/)的构建。
+> 每次构建这些图像的过程都会自动触发 [Node.js's Docker images](https://hub.docker.com/r/library/node/tags/)的构建。
   每次 [Docker PM2's GitHub repo](https://github.com/keymetrics/docker-pm2)主分支被推送时，这些镜像的构建过程都会自动触发。
   每次 [PM2's GitHub repo](https://github.com/Unitech/pm2)主分支被推送时，这些镜像的构建过程都会自动触发。 
 

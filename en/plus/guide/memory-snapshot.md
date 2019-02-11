@@ -15,7 +15,7 @@ This feature help you diagnose memory issues in your application.
 
 PM2 Plus allows you to take remote heap memory snapshots of your applications and provide you visualization tools.
 
-**WARNING**: There are few bugs in V8 (the engine that runs the javascript in NodeJS) that can impact your applications when you are doing a memory snapshot. Specially if you use it in applications with large memory (>800MB of RAM). You should avoid running it in those cases.
+**WARNING**: There are few bugs in V8 (the engine that runs the javascript in Node.js) that can impact your applications when you are doing a memory snapshot. Specially if you use it in applications with large memory (>800MB of RAM). You should avoid running it in those cases.
 
 ## How to use
 

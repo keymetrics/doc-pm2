@@ -20,13 +20,13 @@ If you want to monitor your app within a docker container, we advise to use the 
 
 ## Installation
 
-You only need to tell PM2 to launch the agent :
+You only need to tell PM2 to launch the agent:
 
 ```bash
 pm2 link <private> <public> <server>
 ```
 
-Where :
+Where:
   - `<private>` is the private key that you can find on your dashboard
   - `<public>` is the public key that you can find on your dashboard
   - `<server>` (**optional**) is the name that will show as server name in the dashboard
@@ -35,7 +35,7 @@ And that's it, PM2 will automatically launch his agent and manage it, every appl
 
 ## Best Practices
 
-We advise running the embed agent in pm2 when it's best suit your use case, that's why you advise it to use it when :
+We advise running the embed agent in pm2 when it's best suit your use case, that's why you advise it to use it when:
 
 - You already use PM2 to manage the applications in your servers.
 - If your application is inside a VM or on a bare metal server and you are not sure if you need to setup systemd service or similar, just use pm2.
@@ -44,7 +44,7 @@ We advise running the embed agent in pm2 when it's best suit your use case, that
 
 Most of the features (tracing, profiling etc)rely on PM2 adding `@pm2/io` library inside your application, so we advise to [checkout his configuration](https://github.com/keymetrics/pm2-io-apm#global-configuration-object) to manage it independently for each application.
 
-Few things that you can do without relying on a configuration in your code :
+Few things that you can do without relying on a configuration in your code:
 
 ```bash
 pm2 reload <name> --trace --update-env # will enable the transaction tracing
@@ -64,12 +64,12 @@ pm2 monitor <name> # when you disable monitoring, you can re-enable it with this
 
 ## Questions / Answers
 
-* What are the performance cost of using the agent embed in pm2 ?
+* What are the performance cost of using the agent embed in pm2?
 
   It depend of which features/metrics you are enabling, most of them have a really low overhead (< 5%)
   The biggest impact in performance is the `transaction tracing` which modify some libraries (express, mongodb etc) to be able to "trace" them, which depending on your application is between 5 to 20%.
 
-* Do you support routing the traffic from the agent thought a network gateway (or proxy) ?
+* Do you support routing the traffic from the agent thought a network gateway (or proxy)?
 
   Currently it's not the case but we plan to implement it. Ask our sales team if you really need it.
 

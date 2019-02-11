@@ -79,13 +79,13 @@ Let's examine a specific variance:
 
 You can then click on another **variance** to examine why and how the behaviour was different.
 
-As you can see in the UI, whe remove queries sensitive data by default. If you want to see the whole query :
+As you can see in the UI, whe remove queries sensitive data by default. If you want to see the whole query:
   - You need to use the standalone agent (without pm2)
   - Add `PM2_APM_CENSOR_SPAMS=0` in your environment when launching your application.
 
 ## Under the hood
 
-PMX will wrap below modules if they exist in your application :
+PMX will wrap below modules if they exist in your application:
  - `express` version 4
  - `hapi` versions 8 - 13
  - `restify` versions 3 - 4
@@ -101,17 +101,17 @@ The impact on performance should be low since there is no heavy logic done in yo
 
 ## Things to know
 
-- When received by PM2 Plus, transactions are aggregated depending on their path (so without the query), for example :
+- When received by PM2 Plus, transactions are aggregated depending on their path (so without the query), for example:
   - `/api/users/1` and `/api/users/2` will be aggregated together because PM2 Plus detected the `1` and `2` has identifier
   - `/api/users/search` and `/api/users/1` will not be aggregated together because `search` isnt a identifier
 
-- PM2 Plus detect identifier with multiples regex :
+- PM2 Plus detect identifier with multiples regex:
   - UUID v1/v4 with or without dash (`/[0-9a-f]{8}-[0-9a-f]{4}-[14][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}|[0-9a-f]{12}[14][0-9a-f]{19}/`)
   - any number (`/\d+/`)
-  - suit of number and letter (`/[0-9]+[a-z]+|[a-z]+[0-9]+/`) : this one is used by mongo for document id
+  - suit of number and letter (`/[0-9]+[a-z]+|[a-z]+[0-9]+/`): this one is used by mongo for document id
   - most SEO optimized webpages (articles, blog posts...): `/((?:[0-9a-zA-Z]+[@\-_.][0-9a-zA-Z]+|[0-9a-zA-Z]+[@\-_.]|[@\-_.][0-9a-zA-Z]+)+)/`
 
-- This feature has some known problems with other modules :
+- This feature has some known problems with other modules:
   - `request-promise`: clears the node cache and requires a new clean version of the `http` module. To solve this, require `http` again after requiring `request-promise` to get the correctly wrapped `http` module.
   - `node-newrelic`: works as we do, so you might encounter problems with it.
 

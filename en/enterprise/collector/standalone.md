@@ -15,7 +15,7 @@ And you are right, depending on your use case you might not need it.
 
 But you still need the monitoring of PM2 Enterprise.
 
-That's why we built a standalone agent, that you can embed in your nodejs application, without installing anything else in your container.
+That's why we built a standalone agent, that you can embed in your Node.js application, without installing anything else in your container.
 Exactly the same as other monitoring providers, you just add a library, give it some secrets and everything is working !
 
 
@@ -26,7 +26,7 @@ Exactly the same as other monitoring providers, you just add a library, give it 
 ## Installation
 
 You need to install our library, called `@pm2/io`, that we use to add metrics into your code and enable other features like the tracing or profiling.
-Then you only need to `init` it like this :
+Then you only need to `init` it like this:
 
 
 ```js
@@ -44,7 +44,7 @@ And that's it, your application will automatically connect to PM2 Enterprise whe
 
 ## Best Practices
 
-Since you might want to monitor your application in production or staging environment, we advise make a simple file at the root of your project, called `apm.js` :
+Since you might want to monitor your application in production or staging environment, we advise make a simple file at the root of your project, called `apm.js`:
 
 ```js
 'use strict'
@@ -62,7 +62,7 @@ const io = require('@pm2/io').init({
 })
 ```
 
-And only used when your are building your container image like this :
+And only used when your are building your container image like this:
 
 ```docker
 FROM node:10-alpine
@@ -175,12 +175,12 @@ const io = require('@pm2/io').init({
 
 ## Questions / Answers
 
-* What are the performance cost of using the standalone agent ?
+* What are the performance cost of using the standalone agent?
 
   It's actually the same as with PM2, because the `@pm2/io` is embed via PM2 in your application anyway. At the end, it depend of which features/metrics you are enabling, most of them have a really low overhead (< 5%)
   The biggest impact in performance is the `transaction tracing` which modify some libraries (express, mongodb etc) to be able to "trace" them, which depending on your application is between 5 to 20%.
 
-* Do you support routing the traffic from the agent thought a network gateway (or proxy) ?
+* Do you support routing the traffic from the agent thought a network gateway (or proxy)?
 
   Currently it's not the case but we plan to implement it. . Ask our sales team if you really need it.
 

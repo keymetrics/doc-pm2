@@ -16,7 +16,7 @@ The other one is the `Server overview` which is the default with PM2 Plus, it's 
 
 ![server overview](https://cdn.jsdelivr.net/gh/keymetrics/branding/screenshots/plus/overview/server_overview.png)
 
-This view is breakdown by server, in the following example we have one server with 7 applications : 
+This view is breakdown by server, in the following example we have one server with 7 applications: 
 
 ![detailed example]({{ site.baseurl }}{% link img/plus/server.png %})
 
@@ -35,7 +35,7 @@ You are able to get realtime infos about any application such as
 - Number of restarts
 - Versionning metadata (if your app is in a git repository)
 
-At the left of each application you can toggle more information for the application, it will show you :
+At the left of each application you can toggle more information for the application, it will show you:
 - All the metrics about the applications (both default and custom ones)
 - All the custom actions you added, you can trigger them for these buttons too.
 
@@ -43,7 +43,7 @@ At the left of each application you can toggle more information for the applicat
 
 ![app overview](https://cdn.jsdelivr.net/gh/keymetrics/branding/screenshots/plus/overview/app_overview.png)
 
-It contains almost everything you need to see to understand the current health of your applications :
+It contains almost everything you need to see to understand the current health of your applications:
 
 - CPU Usage Heatmap
     - Each cell represent a process in a server

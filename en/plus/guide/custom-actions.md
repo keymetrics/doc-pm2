@@ -12,7 +12,7 @@ permalink: "/en/plus/guide/custom-actions/"
 # Custom Actions
 
 Custom actions are function that you expose to PM2 Plus with `@pm2/io` so you are able to launch them from the dashboard.
-A example use case that everyone should be familiar with is the following :
+A example use case that everyone should be familiar with is the following:
 
 ```javascript
 const { createLogger, format, transports } = require('winston')
@@ -30,7 +30,7 @@ logger.debug('Debugging info')
 Here i got a logger somewhere in my application, when putting it into production i don't want to get every `debug` log of it so by default i put the log level to `info`.
 However if i want to debug my application, i need to edit the source code, rebuild and redeploy to be able to see debug information.
 
-Here comes the custom actions :
+Here comes the custom actions:
 
 ```javascript
 const { createLogger, format, transports } = require('winston')

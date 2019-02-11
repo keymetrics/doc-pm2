@@ -99,7 +99,7 @@ http.createServer((req, res) => {
 ## Histogram
 
 This last type of metric collect values and provide statistic tools to explore their distribution over the last hour.
-By default it will use the `mean` (`percentile 50`) of the last hour but you can choose between : 
+By default it will use the `mean` (`percentile 50`) of the last hour but you can choose between: 
 - min, max, sum, count, variance, mean, stddev, median, p75, p95, p99, p99.
 
 ```javascript

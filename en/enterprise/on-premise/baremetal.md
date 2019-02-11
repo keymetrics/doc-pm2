@@ -68,4 +68,4 @@ A downtime of around 30 seconds maximum will happen.
 
 - *Do I loose the ES/Mongo data on restart?* No, by default, there are local volumes bound to the
 
-- *I want to use specific version of mongodb/redis/elasticsearch, is this possible ?* No, we currently support mongodb up to 3.4, redis 2/3/4 and elasticsearch 5.5.
+- *I want to use specific version of mongodb/redis/elasticsearch, is this possible?* No, we currently support mongodb up to 3.4, redis 2/3/4 and elasticsearch 5.5.

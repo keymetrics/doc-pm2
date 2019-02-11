@@ -12,8 +12,8 @@ permalink: "/en/plus/guide/issue-dashboard/"
 ![issue dashboard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/issues/issues.png)
 
 By default when one of your applications crash, pm2 will of course automatically restart it but it will also send the error to PM2 Plus.
-In the issue dashboard, you will be able to see for each error :
-- How much time the error happened ?
+In the issue dashboard, you will be able to see for each error:
+- How much time the error happened?
 - The servers that were impacted by this errors
 - The stack trace
 - The exact line of code that thrown the error
@@ -24,7 +24,7 @@ You can of course delete them if you think they are not relevant by click on `
 ## Manually emit an issue
 
 It's possible that you need to report an error that isn't crashing your process.
-In this case you can use `io.notifyError` :
+In this case you can use `io.notifyError`:
 
 ```javascript
 const io = require('@pm2/io')

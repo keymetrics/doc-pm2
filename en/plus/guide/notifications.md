@@ -22,11 +22,11 @@ This section will help you to customize the notification systems to setup other 
 ## Issues notifications
 
 By default, PM2 Plus sends three different kind of notification.
-Issues are simply errors that your application have, there two type : 
+Issues are simply errors that your application have, there two type: 
 - runtime errors: they made your application crash, pm2 automatically catch them and restart your application.
 - custom errors: with `@pm2/io` you can send custom error that you need to track in your application
 
-Here is an example on how you can report custom errors : 
+Here is an example on how you can report custom errors: 
 
 ```javascript
 const io = require('@pm2/io')
@@ -55,7 +55,7 @@ For both following integration, you need to use at least `@pm2/io` version 3.0.0
 
 #### Report errors with Express
 
-If you want you can configure your express middleware to automatically send you an error with the error middleware of express :
+If you want you can configure your express middleware to automatically send you an error with the error middleware of express:
 
 ```js
 const io = require('@pm2/io')
@@ -73,7 +73,7 @@ app.use(io.expressErrorHandler())
 
 #### Report errors with Koa
 
-We also expose a custom koa middleware to report error with a specific koa middleware :
+We also expose a custom koa middleware to report error with a specific koa middleware:
 
 ```js
 const io = require('@pm2/io')
