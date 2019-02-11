@@ -108,7 +108,7 @@ If you want to specify the path of an interpreter, specify it in your ecosystem 
 
 ```javascript
 module.exports = {
-  "apps" : [{
+  apps: [{
     name: "script",
     script: "./script.py",
     interpreter: "/usr/bin/python",

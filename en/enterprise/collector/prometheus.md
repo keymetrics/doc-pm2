@@ -25,7 +25,7 @@ We also currently support the `snappy` compression and the `protobuf` serializat
 ## Configuration
 
 If all the versions are good, you simply need to add this snipet to your prometheus configuration:
-```
+```yaml
 remote_write:
   - url: https://secret_endpoint/receive
     basic_auth:

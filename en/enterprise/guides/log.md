@@ -67,7 +67,6 @@ ENV BROADCAST_LOGS 1
 # ....
 
 CMD [ "pm2-runtime", "app.js" ]
-
 ```
 
 #### Using the standalone agent

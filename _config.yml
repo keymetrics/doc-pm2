@@ -8,14 +8,15 @@ sass:
   style: compressed
 
 markdown: kramdown
+highlighter: rouge
 
 kramdown:
- input: GFM
- auto_ids: true
- hard_wrap: false
- parse_block_html: true
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  parse_block_html: true
+  syntax_highlighter: rouge
 
-# syntax_highlighter: rouge
 repository: 'keymetrics/doc-pm2'
 permalink: pretty
 plugins:
