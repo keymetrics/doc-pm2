@@ -5,7 +5,7 @@ title-en: Integration | PM2 Plus Documentation
 menu: starter
 lang: zh
 section: plus
-permalink: "/zh/en/zh/plus/integration/"
+permalink: "/zh/plus/integration/"
 ---
 
 # 集成

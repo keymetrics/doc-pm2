@@ -5,7 +5,7 @@ title-en: Guide | PM2 Plus Documentation
 menu: starter
 lang: zh
 section: plus
-permalink: "/zh/en/zh/plus/guide/"
+permalink: "/zh/plus/guide/"
 ---
 
 # 指南

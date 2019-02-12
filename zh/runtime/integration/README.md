@@ -5,7 +5,7 @@ title-en: Integration | PM2 Documentation
 menu: starter
 lang: zh
 section: runtime
-permalink: "/zh/en/zh/runtime/integration/"
+permalink: "/zh/runtime/integration/"
 ---
 
 # 综合

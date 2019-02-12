@@ -5,7 +5,7 @@ title-en: Guide | PM2 Documentation
 menu: starter
 lang: zh
 section: runtime
-permalink: "/zh/en/zh/runtime/guide/"
+permalink: "/zh/runtime/guide/"
 ---
 
 # 指南

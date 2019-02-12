@@ -5,7 +5,7 @@ menu: starter
 lang: en
 section: plus
 hide_comments: true
-permalink: "/en/en/plus/integration//"
+permalink: "/en/plus/integration/"
 ---
 
 # Integration

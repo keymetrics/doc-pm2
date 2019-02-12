@@ -5,7 +5,7 @@ title-en: Best Practices | PM2 Plus Documentation
 menu: starter
 lang: zh
 section: plus
-permalink: "/zh/en/zh/plus/best-practices/"
+permalink: "/zh/plus/best-practices/"
 ---
 
 # 监控最佳实践
