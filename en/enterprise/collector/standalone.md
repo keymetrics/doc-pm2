@@ -153,9 +153,13 @@ const io = require('@pm2/io').init({
      */
     serverName?: string
     /**
-     * Broadcast all the logs from your application to our backend
+     * Broadcast all logs from your application to our backend
      */
     sendLogs?: Boolean
+    /**
+     * Avoid to broadcast any logs from your application to our backend
+     */
+    disableLogs?: Boolean
     /**
      * Since logs can be forwared to our backend you may want to ignore specific
      * logs (containing sensitive data for example)
