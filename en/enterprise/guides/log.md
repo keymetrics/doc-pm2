@@ -180,10 +180,3 @@ There not a lot of best practices for your logs since the feature is pretty basi
 * I can't see any logs in PM2 Enterprise!
 
   You need to check if the connection is working between the agent and PM2 Enterprise, we advise to check the documentation of the agent you are using.
-
-
-
-
-<center>
-Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
-</center>

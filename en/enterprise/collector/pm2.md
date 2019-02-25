@@ -4,7 +4,6 @@ title: PM2 Agent | Guides | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise
-hide_comments: true
 permalink: "/en/enterprise/collector/pm2/"
 ---
 
@@ -80,10 +79,3 @@ pm2 monitor <name> # when you disable monitoring, you can re-enable it with this
   You might have some networking problem, first we of course advise to retry from a different environment to pinpoint where the problem come from.
   Next you should verify that you allow traffic to our servers, we only use the port 443 in OUTBOUND.
   Note that this rule is only available for PM2 > 3.2, if you are using an older version you should upgrade.
-
-
-
-
-<center>
-Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
-</center>

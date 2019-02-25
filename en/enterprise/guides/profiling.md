@@ -147,11 +147,3 @@ Depending on the usage of the app, you might need to wait longer to see somethin
 * The Profiling returned an Timeout error !
 
   You need to check if the connection is working between the agent and PM2 Enterprise. Note that the profiling can sometimes fail for a number of reasons, please contact us if it's constantly failing for you.
-
-
-
-
-
-<center>
-Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
-</center>

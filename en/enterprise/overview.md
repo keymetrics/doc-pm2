@@ -41,9 +41,5 @@ In the Enterprise product, we also added the possibility to store all the profil
 
 We offer different way of delivering PM2 Enterprise via easily installable on-premise system or dedicated/managed instances.
 
-
-
-
-<center>
-Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
-</center>
+[Checkout the on-premise documentation](https://github.com/keymetrics/on-premise)
+{: .btn-stylized}

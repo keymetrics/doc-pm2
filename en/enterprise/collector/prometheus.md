@@ -4,7 +4,6 @@ title: Prometheus Integration | Guides | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise
-hide_comments: true
 permalink: "/en/enterprise/collector/prometheus/"
 ---
 
@@ -52,10 +51,3 @@ A part from that no specific action is required from you to ensure best practice
 * I doesn't work, i can't see any data on the dashboard !
 
   Check the prometheus server logs for any errors, check the authentication details. Also please note that our system need few minutes for data to show up in the metrics list when you start pushing a new one.
-
-
-
-
-<center>
-Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
-</center>

@@ -9,13 +9,11 @@ permalink: "/en/enterprise/guides/transaction-tracing/"
 
 # Transaction tracing
 
-![transaction tracing]({{ site.baseurl }}{% link img/plus/tracing.png %})
+**Note : We have finished our new tracing solution which is now called the Distributed Tracing, we are now deprecating the old Transaction Tracing.**
 
-The transaction tracing is useful to troubleshoot performance issues and get detailed low-level insight of how your app is working.
+[See the new Distributed Tracing]({{ site.baseurl }}{% link en/enterprise/guides/distributed-tracing.md %})
+{: .btn-stylized}
 
-Slow HTTP calls are identified and the database and external calls are aggregated to understand why.
-
-**Note: We are currently working on a new version that allows custom tracing and tracing across microservices. It should be available in early February** 
 
 ## Enable the transaction tracing
 
@@ -115,7 +113,3 @@ The impact on performance should be low since there is no heavy logic done in yo
   - `request-promise`: clears the node cache and requires a new clean version of the `http` module. To solve this, require `http` again after requiring `request-promise` to get the correctly wrapped `http` module.
   - `node-newrelic`: works as we do, so you might encounter problems with it.
 
-
-<center>
-Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
-</center>

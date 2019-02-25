@@ -104,8 +104,3 @@ If you insterested in more actions output (like Pagerduty), please contact us (s
 * The overview is slow to load
 
   We are currently working on optimizing the fetching of metrics so it can be faster.
-
-
-<center>
-Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
-</center>

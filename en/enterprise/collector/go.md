@@ -4,7 +4,6 @@ title: Golang Agent | Guides | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise
-hide_comments: true
 permalink: "/en/enterprise/collector/go/"
 ---
 
@@ -191,10 +190,3 @@ services.AddAction(&structures.Action{
 
   You might have some networking problem, first we of course advise to retry from a different environment to pinpoint where the problem come from.
   Next you should verify that you allow traffic to our servers, we only use the port 443 in OUTBOUND (which is simply a secure websocket connection).
-
-
-
-
-<center>
-Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
-</center>

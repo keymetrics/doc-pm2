@@ -48,7 +48,3 @@ Since the feature is really just customization for your needs, there a no specif
 * It's slow on my PC
 
   The realtime dashboard can cost a lot depending on how much process you want to monitor in realtime, we are constantly looking to optimize our frontend, we advise to contact us so we can inspect the problem and find a solution.
-
-<center>
-Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
-</center>

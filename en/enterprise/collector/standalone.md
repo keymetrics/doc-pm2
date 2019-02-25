@@ -4,7 +4,6 @@ title: Standalone Agent | Guides | PM2 Enterprise Documentation
 menu: starter
 lang: en
 section: enterprise
-hide_comments: true
 permalink: "/en/enterprise/collector/standalone/"
 ---
 
@@ -110,19 +109,37 @@ const io = require('@pm2/io').init({
    */
   tracing?: {
     /**
-     * Choose to enable the HTTP tracing system
-     *
-     * default is false
-     */
-    enabled: boolean = false
+    * Enabled the distributed tracing feature.
+    */
+    enabled: boolean
     /**
-     * An upper bound on the number of traces to gather each second. If set to 0,
-     * sampling is disabled and all traces are recorded. Sampling rates greater
-     * than 1000 are not supported and will result in at most 1000 samples per
-     * second.
-     */
-    samplingRate?: number
-  }
+    * If you want to report a specific service name
+    * the default is the same as in apmOptions
+    */
+    serviceName?: string
+    /**
+    * Generate trace for outgoing request that aren't connected to a incoming one
+    * default is false
+    */
+    outbound?: boolean
+    /**
+    * Determines the probability of a request to be traced. Ranges from 0.0 to 1.0
+    * default is 0.5
+    */
+    samplingRate?: number,
+    /**
+    * Add details about databases calls (redis, mongodb)
+    */
+    detailedDatabasesCalls?: boolean,
+    /**
+    * Ignore specific incoming request depending on their path
+    */
+    ignoreIncomingPaths?: Array<IgnoreMatcher<httpModule.IncomingMessage>>
+    /**
+    * Ignore specific outgoing request depending on their url
+    */
+    ignoreOutgoingUrls?: Array<IgnoreMatcher<httpModule.ClientRequest>>
+  },
   /**
    * If you want to connect to PM2 Enterprise without using PM2, you should enable
    * the standalone mode
@@ -194,10 +211,3 @@ const io = require('@pm2/io').init({
 
   You might have some networking problem, first we of course advise to retry from a different environment to pinpoint where the problem come from.
   Next you should verify that you allow traffic to our servers, we only use the port 443 in OUTBOUND (which is simply a secure websocket connection).
-
-
-
-
-<center>
-Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
-</center>

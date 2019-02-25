@@ -160,14 +160,11 @@ enterprise:
         url: "/en/enterprise/guides/dashboard"
       - page: Log
         url: "/en/enterprise/guides/log"
+      - page: Distributed Tracing
+        url: "/en/enterprise/guides/distributed-tracing/"
       - page: Transaction Tracing
         url: "/en/enterprise/guides/transaction-tracing/"
       - page: Webchecks
         url: "/en/enterprise/guides/webchecks/"
   - title: On-Premise
     url: "/en/enterprise/on-premise/"
-    submenu:
-      - page: Baremetal
-        url: "/en/enterprise/on-premise/baremetal/"
-      - page: FAQ
-        url: "/en/enterprise/on-premise/faq/"

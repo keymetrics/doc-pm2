@@ -110,10 +110,3 @@ Note: You can add actions as much as you want, they will all be run. Note that t
 * It didn't trigger an alert when it should have done !
 
   The worker that check for metric that goes above a specific threshold use the `window` to compute the average, it may have been too big to get a average above the treshold, you should try lowering it. Note that the minimum window is `60` seconds.
-
-
-
-
-<center>
-Contact our team at <a href="mailto:tech@keymetrics.io">tech@keymetrics.io</a> if you have any questions/issues
-</center>
