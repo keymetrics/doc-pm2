@@ -20,7 +20,7 @@ Exactly the same as other monitoring providers, you just add a library, give it 
 
 ## Requirements
 
-**This agent require at least Node 8** to run (you will be able to install the library anyway but it will throw an error if you configure it with `standalone: true` )
+**This agent require at least Node 6** to run (you will be able to install the library anyway but it will throw an error if you configure it with `standalone: true` )
 
 ## Installation
 
@@ -175,6 +175,8 @@ const io = require('@pm2/io').init({
     sendLogs?: Boolean
     /**
      * Avoid to broadcast any logs from your application to our backend
+     * Even if the sendLogs option set to false, you can still see some logs
+     * when going to the log interface (it automatically trigger broacasting log)
      */
     disableLogs?: Boolean
     /**
