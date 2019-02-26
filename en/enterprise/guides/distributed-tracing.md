@@ -66,17 +66,34 @@ const io = require('@pm2/io').init({
   tracing: {
     enabled: true,
     // will add the actual queries made to database, false by default
-    detailedDatabasesCalls: true
+    detailedDatabasesCalls: true,
+    // if you want you can ignore some endpoint based on their path
+    ignoreIncomingPaths: [
+      // can be a regex
+      /misc/,
+      // or a exact string
+      '/api/bucket'
+      // or a function with the request
+      (url, request) => {
+        return true
+      }
+    ],
+    // same as above but used to match entire URLs
+    ignoreOutgoingUrls: [],
+    // by default we only trace half of your request
+    // but you may want to trace all of them
+    samplingRate: 1
   }
 })
 ```
 
-#### How it works
+#### What's get traced
 
-To make the tracing out of the box, our APM will patch some popular modules if they exist in your application:
- - `http`
- - `https`
- - `http2`
+When your application will receive a request from either `http`, `https` or `http2` it will start a trace. After that, we will trace the following modules:
+
+ - `http` outgoing requests
+ - `https` outgoing requests
+ - `http2` outgoing requests
  - `mongodb-core` version 1 - 3
  - `redis` versions > 2.6
  - `ioredis` versions > 2.6
@@ -84,15 +101,15 @@ To make the tracing out of the box, our APM will patch some popular modules if t
  - `mysql2` version 1 - 3
  - `pg` version > 6
 
-If you use a module to interact with your database and it isn't in the list, the tracing will not work.
-Please contact us so we can implement if possible a patch for the module you want to trace (tech@keymetrics.io)
+ #### Custom Tracing API
 
-You are also able to trace any operation yourself using the Tracing API exposed through the apm:
+The custom tracing API can be used to create custom trace spans. A span is a particular unit of work within a trace, such as an RPC request. Spans may be nested; the outermost span is called a root span, even if there are no nested child spans. Root spans typically correspond to incoming requests, while child spans typically correspond to outgoing requests, or other work that is triggered in response to incoming requests. This means that root spans shouldn't be created in a context where a root span already exists; a child span is more suitable here. Instead, root spans should be created to track work that happens outside of the request lifecycle entirely, such as periodically scheduled work. To illustrate:
+
 ```js
-// note that you must have enabled the tracing before to be able to use the tracing API
+const io = require('@pm2/io').init({ tracing: true })
 const tracer = io.getTracer()
+// ...
 
-// imagine you want to trace a specific function when receiving a request
 app.get('/:token', function (req, res) {
   const token = req.params.token
   // the '2' correspond to the type of operation you want to trace
@@ -108,11 +125,25 @@ app.get('/:token', function (req, res) {
       return res.status(500).send('error')
     }
     customSpan.addAttribute('result', result)
+    // be sure to always .end() the spans
     customSpan.end()
     // redirect the user if the token is valid
     res.send('/user/me')
   })
 })
+
+// For any significant work done _outside_ of the request lifecycle, use
+// runInRootSpan.
+const startRootSpan = {
+    name: 'my custom trace',
+    // the '1' correspond to the type of operation you want to trace
+    // can be 0 (UNKNOWN), 1 (SERVER) or 2 (CLIENT)
+    kind: '1'
+  }
+plugin.tracer.startRootSpan(traceOptions, rootSpan => {
+  // ...
+  // Be sure to call rootSpan.end().
+});
 ```
 
 #### Options for the tracing
