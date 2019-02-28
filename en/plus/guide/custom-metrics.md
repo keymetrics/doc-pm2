@@ -115,7 +115,7 @@ const latencyValue = 0;
 
 setInterval(() => {
   latencyValue = Math.round(Math.random() * 100);
-  latency.update(latencyValue);
+  latency.set(latencyValue);
 }, 100);
 ```
 

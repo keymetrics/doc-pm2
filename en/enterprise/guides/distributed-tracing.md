@@ -39,6 +39,8 @@ Of course in any cases, we advise to use the latest version since they improved 
 
 ### NodeJS
 
+**Note: Please note that you can't use multiples APMs at the same time with the Tracing system (ex: you can't use Newrelic while using PM2 Enterprise, there will be conflict)**
+
 #### When using PM2
 
 Currently the method to start the distributed tracing with PM2 isn't easy because we must support Node 4 with PM2, and the nodejs implementation need Node 6. Where what you'll need to do:
@@ -101,7 +103,7 @@ When your application will receive a request from either `http`, `https` or `htt
  - `mysql2` version 1 - 3
  - `pg` version > 6
 
- #### Custom Tracing API
+#### Custom Tracing API
 
 The custom tracing API can be used to create custom trace spans. A span is a particular unit of work within a trace, such as an RPC request. Spans may be nested; the outermost span is called a root span, even if there are no nested child spans. Root spans typically correspond to incoming requests, while child spans typically correspond to outgoing requests, or other work that is triggered in response to incoming requests. This means that root spans shouldn't be created in a context where a root span already exists; a child span is more suitable here. Instead, root spans should be created to track work that happens outside of the request lifecycle entirely, such as periodically scheduled work. To illustrate:
 
