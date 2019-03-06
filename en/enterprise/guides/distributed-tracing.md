@@ -30,8 +30,12 @@ A span may or may not have a parent span:
 
 In the following documention, we assume that you already have connected your application to PM2 Enterprise (either on-premise or cloud).
 Also there are different requirements depending on the runtime you are using:
-  - NodeJS: You must at least use node 6.
-  - Golang: You must at least Golang 1.8
+  - NodeJS: 
+    - You must at least use node `6.0.0`.
+    - If you use PM2, be sure that its version is above `3.4.0`
+    - If you use the standalone agent, the `@pm2/io` version should be above `4.1.1`
+  - Golang: 
+    - You must at least Golang `1.8`
 
 Of course in any cases, we advise to use the latest version since they improved the suppot for tracing a lot recently.
 
@@ -89,6 +93,10 @@ const io = require('@pm2/io').init({
 })
 ```
 
+By default we ignore specific incoming requests (you can override this by setting `ignoreIncomingPaths: []`):
+- Request with the OPTIONS or HEAD method
+- Request fetching a static ressources (`*.js`, `*.css`, `*.ico`, `*.svg`, `.png` or `*webpack*`)
+
 #### What's get traced
 
 When your application will receive a request from either `http`, `https` or `http2` it will start a trace. After that, we will trace the following modules:
@@ -140,7 +148,7 @@ const startRootSpan = {
     name: 'my custom trace',
     // the '1' correspond to the type of operation you want to trace
     // can be 0 (UNKNOWN), 1 (SERVER) or 2 (CLIENT)
-    kind: '1'
+    kind: 1
   }
 plugin.tracer.startRootSpan(traceOptions, rootSpan => {
   // ...
