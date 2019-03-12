@@ -47,7 +47,14 @@ Of course in any cases, we advise to use the latest version since they improved 
 
 #### When using PM2
 
-Currently the method to start the distributed tracing with PM2 isn't easy because we must support Node 4 with PM2, and the nodejs implementation need Node 6. Where what you'll need to do:
+As stated above, please make sure you are using pm2 version `3.4.0` or newer (check with `pm2 --version`)
+Then you can just run the following command to enable the tracing :
+
+```bash
+pm2 reload myapp --trace
+```
+
+If you want to customize the configuration, you will need to following those steps:
 
 - Add the `@pm2/io` module in your application
 - Add this snippet at the very first line of your application:
@@ -55,13 +62,11 @@ Currently the method to start the distributed tracing with PM2 isn't easy becaus
 const io = require('@pm2/io').init({
   tracing: {
     enabled: true,
-    // will add the actual queries made to database, false by default
+    // then you can customize your configuration as you wish
     detailedDatabasesCalls: true
   }
 })
 ```
-When lauching your application with pm2, you will need to add the `--no-pmx` flag and if you are restarting an app, please both the `--no-pmx` and `--update-env` flag.
-Note that in the case of using an ecosystem, you will need to add `"no_pmx": true` in the ecosystem file of your application.
 
 #### When using the standalone agent (without PM2)
 
@@ -110,6 +115,7 @@ When your application will receive a request from either `http`, `https` or `htt
  - `mysql` version 1 - 3
  - `mysql2` version 1 - 3
  - `pg` version > 6
+ - `vue-server-renderer` version 2
 
 #### Custom Tracing API
 
