@@ -23,7 +23,7 @@ runtime:
         url: "/en/runtime/guide/startup-hook/"
       - page: Entrypoint
         url: "/en/runtime/guide/entrypoint/"
-      - page: Memory Threshold AutoReload
+      - page: Memory Limit Reload
         url: "/en/runtime/features/memory-limit/"
       - page: Updating PM2
         url: "/en/runtime/features/updating-pm2/"
@@ -31,7 +31,7 @@ runtime:
         url: "/en/runtime/features/javascript-source-maps/"
       - page: Transpilers
         url: "/en/runtime/integration/transpilers/"
-      - page: Using PM2 Programmatically
+      - page: Using PM2 API
         url: "/en/runtime/reference/pm2-programmatic/"
       - page: Easy Deploy with SSH
         url: "/en/runtime/guide/easy-deploy-with-ssh/"
