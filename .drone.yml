@@ -1,38 +1,73 @@
-pipeline:
-  build:
-    image: plugins/docker
+---
+kind: pipeline
+name: default
+trigger:
+  branch:
+    - master
+  event:
+    - push
+
+steps:
+- name: publish
+  image: plugins/docker
+  settings:
     repo: keymetrics/pm2-docs
-    tags: 
+    tags:
       - latest
       - "${DRONE_COMMIT_SHA}"
-    secrets: [ docker_username, docker_password ]
-    when:
-      event: push
-      branch: [ master ]
-  generate_pr:
-    image: keymetrics/drone-plugin-auto-pr
+    password:
+      from_secret: docker_password
+    username:
+      from_secret: docker_username
+- name: Generate infrastructure PR
+  image: keymetrics/drone-plugin-auto-pr
+  pull: true
+  environment:
+    GITHUB_OAUTH_TOKEN:
+      from_secret: github_token
+  settings:
     owner: keymetrics
     repository: infrastructure
     regex: 'keymetrics/pm2-docs:([A-Za-z0-9]+)'
+    release: true
     files:
       - 'jobs/frontend.nomad'
-    message: 'chore: update pm2 doc job'
-    secrets: [ github_oauth_token ]
-    when:
-      event: push
-      branch: [ master ]
-  slack:
-    image: plugins/slack
+    message: 'chore: update pm2 doc jobs'
+- name: slack
+  image: plugins/slack
+  settings:
     channel: dev-stream-ci
-    when:
-      event: push
-      branch: [ master ]
-      status: [ success, failure ]
-    template: |
-      {{#success build.status}}
-        {{repo.name}} : {{build.event}} with commit {{truncate build.commit 8}} on branch "{{build.branch}}" done by {{build.author}} succeeded in {{since build.started}}
-      {{else}}
-        {{repo.name}} : {{build.event}} with commit {{truncate build.commit 8}} on branch "{{build.branch}}" done by {{build.author}} failed in {{since build.started}}
-      {{/success}}
-      see {{ build.link }}
-    secrets: [ slack_webhook ]
+    status:
+      - success
+      - failure
+    template: "{{#success build.status}}\n  {{repo.name}} : {{build.event}} with commit {{truncate build.commit 8}} on branch \"{{build.branch}}\" done by {{build.author}} succeeded in {{since build.started}}\n{{else}}\n  {{repo.name}} : {{build.event}} with commit {{truncate build.commit 8}} on branch \"{{build.branch}}\" done by {{build.author}} failed in {{since build.started}}\n{{/success}}\nsee {{ build.link }}\n"
+    webhook:
+      from_secret: slack_webhook
+
+---
+kind: secret
+name: slack_webhook
+get:
+  path: secret/drone/slack
+  name: url
+
+---
+kind: secret
+name: docker_username
+get:
+  path: secret/drone/docker
+  name: username
+
+---
+kind: secret
+name: docker_password
+get:
+  path: secret/drone/docker
+  name: password
+
+---
+kind: secret
+name: github_token
+get:
+  path: secret/drone/github
+  name: token
