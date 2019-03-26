@@ -45,7 +45,7 @@ Of course in any cases, we advise to use the latest version since they improved 
 
 **Note: Please note that you can't use multiples APMs at the same time with the Tracing system (ex: you can't use Newrelic while using PM2 Enterprise, there will be conflict)**
 
-#### When using PM2
+### When using PM2
 
 As stated above, please make sure you are using pm2 version `3.4.0` or newer (check with `pm2 --version`)
 Then you can just run the following command to enable the tracing :
@@ -60,28 +60,17 @@ To disabled the tracing:
 pm2 reload myapp --disable-trace
 ```
 
-If you want to customize the configuration, you will need to following those steps:
+If you want to customize the configuration, you can install `@pm2/io` module in your package.json and see bellow about the configuration.
 
-- Add the `@pm2/io` module in your application
-- Add this snippet at the very first line of your application:
-```js
-const io = require('@pm2/io').init({
-  tracing: {
-    enabled: true,
-    // then you can customize your configuration as you wish
-    detailedDatabasesCalls: true
-  }
-})
-```
+### When using the standalone agent
 
-#### When using the standalone agent (without PM2)
-
-If you are only using the `@pm2/io` module to connect your apps to PM2 Enterprise, you will need to modify your call to `io.init` to include the tracing options.
+You can use the `@pm2/io` module to customize the transaction tracing configuration:
 
 ```javascript
 const io = require('@pm2/io').init({
   tracing: {
     enabled: true,
+    
     // will add the actual queries made to database, false by default
     detailedDatabasesCalls: true,
     // if you want you can ignore some endpoint based on their path
@@ -96,10 +85,7 @@ const io = require('@pm2/io').init({
       }
     ],
     // same as above but used to match entire URLs
-    ignoreOutgoingUrls: [],
-    // by default we only trace half of your request
-    // but you may want to trace all of them
-    samplingRate: 1
+    ignoreOutgoingUrls: []
   }
 })
 ```
@@ -108,7 +94,7 @@ By default we ignore specific incoming requests (you can override this by settin
 - Request with the OPTIONS or HEAD method
 - Request fetching a static ressources (`*.js`, `*.css`, `*.ico`, `*.svg`, `.png` or `*webpack*`)
 
-#### What's get traced
+### What's get traced
 
 When your application will receive a request from either `http`, `https` or `http2` it will start a trace. After that, we will trace the following modules:
 
@@ -123,52 +109,87 @@ When your application will receive a request from either `http`, `https` or `htt
  - `pg` version > 6
  - `vue-server-renderer` version 2
 
-#### Custom Tracing API
+### Custom Tracing API
 
-The custom tracing API can be used to create custom trace spans. A span is a particular unit of work within a trace, such as an RPC request. Spans may be nested; the outermost span is called a root span, even if there are no nested child spans. Root spans typically correspond to incoming requests, while child spans typically correspond to outgoing requests, or other work that is triggered in response to incoming requests. This means that root spans shouldn't be created in a context where a root span already exists; a child span is more suitable here. Instead, root spans should be created to track work that happens outside of the request lifecycle entirely, such as periodically scheduled work. To illustrate:
+The custom tracing API can be used to create custom trace spans. A span is a particular unit of work within a trace, such as an RPC request. Spans may be nested; the outermost span is called a root span, even if there are no nested child spans. Root spans typically correspond to incoming requests, while child spans typically correspond to outgoing requests, or other work that is triggered in response to incoming requests.
+
+#### How does it work?
+Here is a simple example to create a custom trace:
 
 ```js
 const io = require('@pm2/io').init({ tracing: true })
 const tracer = io.getTracer()
-// ...
 
-app.get('/:token', function (req, res) {
-  const token = req.params.token
-  // the '2' correspond to the type of operation you want to trace
-  // can be 0 (UNKNOWN), 1 (SERVER) or 2 (CLIENT)
-  // 'verifyToken' here will be the name of the operation
-  const customSpan = tracer.startChildSpan('verifyToken', 2)
-  // note that customSpan can be null if you are not inside a request
-  req.Token.verifyToken(token, (err, result) => {
-    if (err) {
-      // you can add tags to the span to attach more details to the span
-      customSpan.addAttribute('error', err.message)
-      customSpan.end()
-      return res.status(500).send('error')
+function main() {
+  // 4. Create a scoped span, a scoped span will automatically end when closed.
+  tracer.startRootSpan({name: 'main'}, rootSpan => {
+    for (let i = 0; i < 10; i++) {
+      doWork(i);
     }
-    customSpan.addAttribute('result', result)
-    // be sure to always .end() the spans
-    customSpan.end()
-    // redirect the user if the token is valid
-    res.send('/user/me')
-  })
-})
 
-// For any significant work done _outside_ of the request lifecycle, use
-// runInRootSpan.
-const startRootSpan = {
-    name: 'my custom trace',
-    // the '1' correspond to the type of operation you want to trace
-    // can be 0 (UNKNOWN), 1 (SERVER) or 2 (CLIENT)
-    kind: 1
+    // 6b. End the spans
+    rootSpan.end();
+  });
+}
+```
+
+#### Using the Tracer
+To start a trace, you first need to get a reference to the `Tracer` (3). It can be retrieved as a global singleton.
+```js
+const tracer = io.getTracer()
+```
+
+#### Create a span
+To create a span in a trace, we used the `Tracer` to start a new span (4). A span must be closed in order to mark the end of the span.
+```js
+// 4. Create a scoped span, a scoped span will automatically end when closed.
+tracer.startRootSpan({name: 'main'}, rootSpan => {
+  for (let i = 0; i < 10; i++) {
+    doWork(i);
   }
-plugin.tracer.startRootSpan(traceOptions, rootSpan => {
-  // ...
-  // Be sure to call rootSpan.end().
+
+  rootSpan.end();
 });
 ```
 
-#### Options for the tracing
+#### Create a child span
+The `main` method calls `doWork` a number of times. Each invocation also generates a child span. Take a look at the `doWork` method.
+```js
+function doWork() {
+  // 5. Start another span. In this example, the main method already started a span,
+  // so that'll be the parent span, and this will be a child span.
+  const span = tracer.startChildSpan('doWork');
+  span.start();
+
+  console.log('doing busy work');
+  for (let i = 0; i <= 40000000; i++) {} // short delay
+
+  // 6. Annotate our span to capture metadata about our operation
+  span.addAnnotation('invoking doWork')
+  for (let i = 0; i <= 20000000; i++) {} // short delay
+
+  span.end();
+}
+```
+
+#### End the spans
+We must end the spans so they becomes available for exporting.
+```js
+// 6a. End the spans
+span.end();
+
+// 6b. End the spans
+rootSpan.end();
+```
+
+#### Create an Annotation
+An [annotation](https://opencensus.io/tracing/span/time_events/annotation/) tells a descriptive story in text of an event that occurred during a span’s lifetime.
+```js
+// 6. Annotate our span to capture metadata about our operation
+span.addAnnotation('invoking doWork')
+```
+
+#### Tracing Instance Options
 
 ```javascript
 io.init({
