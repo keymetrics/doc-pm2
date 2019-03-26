@@ -13,19 +13,18 @@ permalink: "/en/enterprise/guides/profiling/"
 The profiling feature is a key feature that allow you to profile your applications at runtime. By profiling, we mean recording what's your application is doing, either in term of cpu or memory, for that we have three profilers availables:
  - CPU Profiler: Record how much time is spent in each function of your application
  - Heap Profiler: Track heap allocation made by each function of your application
- - Heap Snapshot (**not for production in Node.js, see Best Practices**): Allows to dump the content of the heap and see for each object why the GC didn't removed it.
 
-Note that the Heap Snapshot in Golang doesn't have instability.
+The power of both of the profilers are that **you can profile your application remotely, without cost, straight in production. You don't need to reproduce the problem in development anymore to pinpoint a memory leak for exemple.**
 
-Otherwise the CPU and Heap profilers are stable, you can use them safely even in production: they both run in parallel of your application code (in another thread), put simply your application run while the profiling is done.
+All profiles are stored on our sides so you can easily access to them.
 
-The power of both of the profilers are that you can profile your application remotely, without cost, in production. You don't need to reproduce the problem in development anymore to pinpoint a memory leak for exemple.
+## CPU Profiling
 
-Note that every profile you will do will also be stored so you can retrieve them later (the same way as automatic profiling done through the alerting)
+Interface to select which process to monitor:
+![Dashboard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/enterprise/cpu_profiling/ready.png)
 
-## Use cases
-
-### CPU Profiling
+Debugging interface to detect slow functions:
+![Dashboard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/enterprise/cpu_profiling/view.png)
 
 Your application is using a lot of CPU in production but you don't know why. You could try to modify your code in production but you don't want to do that because it's production. You could also try to replicate the issue in development but it's really difficult to get the same traffic as in production.
 
@@ -33,7 +32,13 @@ Here the CPU profile comes in and allows to know which function is using the CPU
 
 Note that if the CPU Profile report a large amount of usage is done in the `garbage collection`, you might want to use the heap profiling to know what's being allocated (and so what's need to be GC'd a lot)
 
-### Heap Profiling
+## Heap Profiling
+
+Interface to select which process to monitor:
+![Dashboard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/enterprise/heap_profiling/heap_profiling.png)
+
+Debugging interface to inspect memory usage:
+![Dashboard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/enterprise/heap_profiling/view.png)
 
 Almost the same case as the CPU profiler, you have a memory leak in production but it's hard to replicate in development.
 You can rely on the heap profiler to tell you which function is allocating object.
