@@ -13,56 +13,37 @@ permalink: "/en/enterprise/guides/distributed-tracing/"
 
 The Distributed Tracing allows to captures and propagates distributed traces through your system, allowing you to visualize how customer requests flow across services, rapidly perform deep root cause analysis, and better analyze latency across a highly distributed set of services.
 
-## Vocabulary
+## Modules Traced Automatically
 
-A trace is a tree of spans. It is a collective of observable signals showing the path of requests through a system.
-This is an example of what a trace looks like:
+ - HTTP `http` outgoing requests
+ - HTTPS `https` outgoing requests
+ - HTTP2 `http2` outgoing requests
+ - MongoDB with `mongodb-core` version 1 - 3
+ - Redis with `ioredis` versions > 2.6 or `redis` versions > 2.6
+ - Mysql with `mysql2` version 1 - 3 or `mysql` version 1 - 3
+ - PostgreSQL with `pg` version > 6
+ - Vue.js with `vue-server-renderer` version 2
+ 
+# How to use it
 
-<img src="https://opencensus.io/img/trace-trace.png" alt="Trace" width="700">
+## Using PM2
 
-Above, you can see a trace with various spans. In order to respond to /messages, several other internal requests are made. Firstly, we check if the user is authenticated. Next we check if their messages were cached. Since their message wasn’t cached, that’s a cache miss and we then fetch their content from MySQL, cache it and then provide the response containing their messages.
-
-A span may or may not have a parent span:
- - A span without a parent is called a “root span” for example, span “/messages”
- - A span with a parent is called a “child span” for example, spans “auth”, “cache.Get”, “mysql.Query”, “cache.Put”
-
-## Requirements
-
-In the following documention, we assume that you already have connected your application to PM2 Enterprise (either on-premise or cloud).
-Also there are different requirements depending on the runtime you are using:
-  - NodeJS: 
-    - You must at least use node `6.0.0`.
-    - If you use PM2, be sure that its version is above `3.4.0`
-    - If you use the standalone agent, the `@pm2/io` version should be above `4.1.1`
-  - Golang: 
-    - You must at least Golang `1.8`
-
-Of course in any cases, we advise to use the latest version since they improved the suppot for tracing a lot recently.
-
-## Configuration
-
-### NodeJS
-
-**Note: Please note that you can't use multiples APMs at the same time with the Tracing system (ex: you can't use Newrelic while using PM2 Enterprise, there will be conflict)**
-
-### When using PM2
-
-As stated above, please make sure you are using pm2 version `3.4.0` or newer (check with `pm2 --version`)
-Then you can just run the following command to enable the tracing :
+First make sure you are using an up-to-date version of pm2 (version > `3.4.0`).
+Then you can just run the following command to enable the tracing:
 
 ```bash
-pm2 reload myapp --trace
+$ pm2 reload myapp --trace
 ```
 
 To disabled the tracing:
 
 ```bash
-pm2 reload myapp --disable-trace
+$ pm2 reload myapp --disable-trace
 ```
 
-If you want to customize the configuration, you can install `@pm2/io` module in your package.json and see bellow about the configuration.
+If you want to customize the configuration, you can install `@pm2/io` module in your package.json. See bellow.
 
-### When using the standalone agent
+## Using the @pm2/io module
 
 You can use the `@pm2/io` module to customize the transaction tracing configuration:
 
@@ -94,26 +75,11 @@ By default we ignore specific incoming requests (you can override this by settin
 - Request with the OPTIONS or HEAD method
 - Request fetching a static ressources (`*.js`, `*.css`, `*.ico`, `*.svg`, `.png` or `*webpack*`)
 
-### What's get traced
-
-When your application will receive a request from either `http`, `https` or `http2` it will start a trace. After that, we will trace the following modules:
-
- - `http` outgoing requests
- - `https` outgoing requests
- - `http2` outgoing requests
- - `mongodb-core` version 1 - 3
- - `redis` versions > 2.6
- - `ioredis` versions > 2.6
- - `mysql` version 1 - 3
- - `mysql2` version 1 - 3
- - `pg` version > 6
- - `vue-server-renderer` version 2
-
-### Custom Tracing API
+## Custom Tracing API
 
 The custom tracing API can be used to create custom trace spans. A span is a particular unit of work within a trace, such as an RPC request. Spans may be nested; the outermost span is called a root span, even if there are no nested child spans. Root spans typically correspond to incoming requests, while child spans typically correspond to outgoing requests, or other work that is triggered in response to incoming requests.
 
-#### How does it work?
+### How does it work?
 Here is a simple example to create a custom trace:
 
 ```js
@@ -133,13 +99,13 @@ function main() {
 }
 ```
 
-#### Using the Tracer
+### Using the Tracer
 To start a trace, you first need to get a reference to the `Tracer` (3). It can be retrieved as a global singleton.
 ```js
 const tracer = io.getTracer()
 ```
 
-#### Create a span
+### Create a span
 To create a span in a trace, we used the `Tracer` to start a new span (4). A span must be closed in order to mark the end of the span.
 ```js
 // 4. Create a scoped span, a scoped span will automatically end when closed.
@@ -152,7 +118,7 @@ tracer.startRootSpan({name: 'main'}, rootSpan => {
 });
 ```
 
-#### Create a child span
+### Create a child span
 The `main` method calls `doWork` a number of times. Each invocation also generates a child span. Take a look at the `doWork` method.
 ```js
 function doWork() {
@@ -172,7 +138,7 @@ function doWork() {
 }
 ```
 
-#### End the spans
+### End the spans
 We must end the spans so they becomes available for exporting.
 ```js
 // 6a. End the spans
@@ -182,14 +148,14 @@ span.end();
 rootSpan.end();
 ```
 
-#### Create an Annotation
+### Create an Annotation
 An [annotation](https://opencensus.io/tracing/span/time_events/annotation/) tells a descriptive story in text of an event that occurred during a span’s lifetime.
 ```js
 // 6. Annotate our span to capture metadata about our operation
 span.addAnnotation('invoking doWork')
 ```
 
-#### Tracing Instance Options
+### Tracing Instance Options
 
 ```javascript
 io.init({
@@ -228,6 +194,32 @@ io.init({
   }
 })
 ```
+
+## Vocabulary
+
+A trace is a tree of spans. It is a collective of observable signals showing the path of requests through a system.
+This is an example of what a trace looks like:
+
+<img src="https://opencensus.io/img/trace-trace.png" alt="Trace" width="700">
+
+Above, you can see a trace with various spans. In order to respond to /messages, several other internal requests are made. Firstly, we check if the user is authenticated. Next we check if their messages were cached. Since their message wasn’t cached, that’s a cache miss and we then fetch their content from MySQL, cache it and then provide the response containing their messages.
+
+A span may or may not have a parent span:
+ - A span without a parent is called a “root span” for example, span “/messages”
+ - A span with a parent is called a “child span” for example, spans “auth”, “cache.Get”, “mysql.Query”, “cache.Put”
+
+## Requirements
+
+In the following documention, we assume that you already have connected your application to PM2 Enterprise (either on-premise or cloud).
+Also there are different requirements depending on the runtime you are using:
+  - NodeJS: 
+    - You must at least use node `6.0.0`.
+    - If you use PM2, be sure that its version is above `3.4.0`
+    - If you use the standalone agent, the `@pm2/io` version should be above `4.1.1`
+  - Golang: 
+    - You must at least Golang `1.8`
+
+Of course in any cases, we advise to use the latest version since they improved the suppot for tracing a lot recently.
 
 If you are interested, there are more documentation in the NodeJS APM readme there:
 
