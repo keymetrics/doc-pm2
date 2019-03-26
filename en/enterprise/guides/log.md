@@ -8,7 +8,7 @@ hide_comments: true
 permalink: "/en/enterprise/guides/log/"
 ---
 
-## Overview
+# Overview
 
 This feature allow to store all of your application logs directly in PM2 Enterprise so you can retrieve them later to inspect them.
 It take the standard output / standard error and forward them to our backend to be stored.
