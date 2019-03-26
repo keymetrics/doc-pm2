@@ -54,6 +54,12 @@ Then you can just run the following command to enable the tracing :
 pm2 reload myapp --trace
 ```
 
+To disabled the tracing:
+
+```bash
+pm2 reload myapp --disable-trace
+```
+
 If you want to customize the configuration, you will need to following those steps:
 
 - Add the `@pm2/io` module in your application
