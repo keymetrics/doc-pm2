@@ -8,7 +8,7 @@ hide_comments: true
 permalink: "/en/enterprise/guides/profiling/"
 ---
 
-## Overview
+# Overview
 
 The profiling feature is a key feature that allow you to profile your applications at runtime. By profiling, we mean recording what's your application is doing, either in term of cpu or memory, for that we have three profilers availables:
  - CPU Profiler: Record how much time is spent in each function of your application
