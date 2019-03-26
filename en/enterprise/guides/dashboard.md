@@ -8,7 +8,7 @@ hide_comments: true
 permalink: "/en/enterprise/guides/dashboard/"
 ---
 
-## Overview
+# Overview
 
 It's common in the devops culture to have a screen in your office that monitor the state your production apps.
 This feature is actually that. It allows you to see what's going on in realtime so you detect faster any wrong behavior of your application.
