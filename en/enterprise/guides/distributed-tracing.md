@@ -15,6 +15,8 @@ The Distributed Tracing allows to captures and propagates distributed traces thr
 
 ## Modules Traced Automatically
 
+These modules are automatically traced:
+
  - HTTP `http` outgoing requests
  - HTTPS `https` outgoing requests
  - HTTP2 `http2` outgoing requests
