@@ -145,13 +145,13 @@ enterprise:
         url: "/en/enterprise/collector/pm2"
       - page: Node.js without PM2
         url: "/en/enterprise/collector/standalone"
-      - page: Golang
-        url: "/en/enterprise/collector/go"
       - page: Prometheus
         url: "/en/enterprise/collector/prometheus"
   - title: Features
     url: "/en/enterprise/overview/"
     submenu:
+      - page: Distributed Tracing
+        url: "/en/enterprise/guides/distributed-tracing/"
       - page: Profiling
         url: "/en/enterprise/guides/profiling"
       - page: Alerting
@@ -160,9 +160,9 @@ enterprise:
         url: "/en/enterprise/guides/dashboard"
       - page: Log
         url: "/en/enterprise/guides/log"
-      - page: Distributed Tracing
-        url: "/en/enterprise/guides/distributed-tracing/"
       - page: Webchecks
         url: "/en/enterprise/guides/webchecks/"
+      - page: Golang
+        url: "/en/enterprise/collector/go"
   - title: On-Premise
     url: "/en/enterprise/on-premise/"
