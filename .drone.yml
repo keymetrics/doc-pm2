@@ -29,7 +29,6 @@ steps:
     owner: keymetrics
     repository: infrastructure
     regex: 'keymetrics/pm2-docs:([A-Za-z0-9]+)'
-    release: true
     files:
       - 'jobs/frontend.nomad'
     message: 'chore: update pm2 doc jobs'
