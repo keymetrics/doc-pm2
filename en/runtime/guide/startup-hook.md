@@ -20,7 +20,7 @@ To detect available init systems on your machine and generate a configuration, u
 ```bash
 pm2 startup
 $ [PM2] You have to run this command as root. Execute the following command:
-$ sudo su -c "env PATH=$PATH:/home/unitech/.nvm/versions/node/v4.3/bin pm2 startup <distribution> -u <user> --hp <home-path>
+$ sudo su -c env PATH=$PATH:/home/unitech/.nvm/versions/node/v4.3/bin pm2 startup <distribution> -u <user> --hp <home-path>
 ```
 
 Copy and paste in the CLI the ouput of this command to set up your startup hook.
