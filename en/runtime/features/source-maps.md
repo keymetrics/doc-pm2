@@ -29,6 +29,6 @@ Or use PM2+ to get emailed and get exceptions analysis when it happens
 
 ### Disable source map support
 
-If you do not want PM2 to automatically support javascript source map you can use the option `--disable-source-map`.
+If you do not want PM2 to automatically support javascript source map you can use the option `--disable-source-map-support`.
 
 It can be done both via CLI and via JSON file.
