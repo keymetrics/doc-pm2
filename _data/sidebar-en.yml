@@ -5,13 +5,13 @@ runtime:
     url: "/en/runtime/quick-start/"
   - title: Features
     submenu:
-      - page: Command Line Cheat Sheet
+      - page: CLI Cheat Sheet
         url: "/en/runtime/features/commands-cheatsheet/"
       - page: Process Management
         url: "/en/runtime/guide/process-management/"
       - page: Ecosystem File
         url: "/en/runtime/guide/ecosystem-file/"
-      - page: Cluster Mode & Hot Reload
+      - page: Cluster Mode & Reload
         url: "/en/runtime/guide/load-balancing/"
       - page: Watch & Restart
         url: "/en/runtime/features/watch-restart/"
