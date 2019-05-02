@@ -164,5 +164,12 @@ enterprise:
         url: "/en/enterprise/guides/webchecks/"
       - page: Golang
         url: "/en/enterprise/collector/go"
+  - title: Frontend Monitoring
+    url: "/en/enterprise/frontend-monitoring/overview/"
+    submenu:
+      - page: Installation
+        url: "/en/enterprise/frontend-monitoring/install/"
+      - page: Snippet API
+        url: "/en/enterprise/frontend-monitoring/snippet-api/"
   - title: On-Premise
     url: "/en/enterprise/on-premise/"

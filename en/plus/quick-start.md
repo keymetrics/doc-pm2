@@ -13,7 +13,7 @@ In seconds, this Installation tutorial will show you how to start monitoring you
 
 ## Create an account
 
-You can create a PM2 plus accoutn by registering [here](https://id.keymetrics.io/api/oauth/register) or juste by typing ```pm2 plus``` in your terminal.
+You can create a PM2 plus account by registering [here](https://id.keymetrics.io/api/oauth/register) or juste by typing ```pm2 plus``` in your terminal.
 
 Then just simply follow the in-app tutorial
 ![Wizard](https://raw.githubusercontent.com/keymetrics/branding/master/screenshots/plus/wizard/step1.png)
