@@ -23,6 +23,9 @@ main.markdown-section {
   h3,
   h4 {
     font-weight: 400;
+    code {
+      font-size: 0.8em !important;
+    }
   }
 
   h1 {
