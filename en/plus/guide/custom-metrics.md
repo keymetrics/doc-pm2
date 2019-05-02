@@ -39,9 +39,9 @@ This arguments are available:
 The type corresponds to one of the 4 ways to gather metrics:
 
 - **metric**: To expose a variable's value
-- **counter**: A discrete counter to be triggered manually to increase or decreas a number
+- **counter**: A discrete counter to be triggered manually to increase or decrease a number
 - **meter**: To measure a frequency, a number of occurrences of a repeating event per unit of time
-- **histogram**: To measure a statistic, a statistic on a metric over the last hour.
+- **histogram**: To measure a statistic, a statistic on a metric over the last hour
 
 ## Metric
 
@@ -80,7 +80,7 @@ http.createServer((req, res) => {
 
 ## Meter
 
-The third type of metric, called `meter`, compute the frequency of an event. Each time the event happens, you need to call the `mark()` method. By default, the frequency is the number of events per second over the last minute.
+The third type of metric, called `meter`, computes the frequency of an event. Each time the event happens, you need to call the `mark()` method. By default, the frequency is the number of events per second over the last minute.
 
 ```javascript
 const io = require('@pm2/io')
@@ -98,7 +98,7 @@ http.createServer((req, res) => {
 
 ## Histogram
 
-This last type of metric collect values and provide statistic tools to explore their distribution over the last hour.
+This last type of metric collects values and provides statistic tools to explore their distribution over the last hour.
 By default it will use the `mean` (`percentile 50`) of the last hour but you can choose between: 
 - min, max, sum, count, variance, mean, stddev, median, p75, p95, p99, p99.
 
