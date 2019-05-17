@@ -46,15 +46,62 @@ apm.setMeta('user', user.email)
 
 Remove a meta from future data packets.
 
+### `apm.addIgnoreURLRule(rule)`
+
+Add a rule to ignore some URLs.  The `rule` parameter should be a function taking the string URL as
+argument, and returning a boolean reflcting whether this URL should be ignored or not.
+
+This is used in multiple ways:
+
+* If the current page location is ignored, no data will be collected at all.
+* If an issue is caused by a script loaded from an ignored location, the issue won't be reported.
+* This rule also applies to slow HTTP queries warnings.
+
+Example:
+```js
+apm.addIgnoreURLRule(url => {
+  // Ignores anything coming from Google Analytics
+  return url.startsWith("https://www.google-analytics.com/")
+})
+```
+
 ### `apm.reportTimings()`
 
 Automatically report various metrics from the current page.  It will track the time your page takes
 to load, among other performance metrics.
 
-### `apm.reportIssues()`
+### `apm.reportIssues(options)`
 
 Automatically report unexpected issues triggered during the users sessions.  It will capture
 uncaught JS exceptions to help you improve your user experience.
+
+#### `options.recordSessions`
+
+By default, the user session will be recorded to add some context to issues.  You will be able to
+replay the last actions done by the user in your PM2 Enterprise dashboard.  To desactivate this
+feature, pass `recordeSessions: false`.
+
+You can configure how the session is recorded by passing an object to this option.  To prevent some
+information from being recorded, you have two options:
+
+* By default, an element with the class name `.pm2-block` will not be recorded. Instead, it will
+  be seen as a placeholder with the same dimension.  You can change this class name by passing
+  another one or a `RegExp` to `recordSessions.blockClass`.
+
+* By default, an element with the class name `.pm2-ignore` will not record its input events.
+  Password inputs will be ignored as default. You can change this class name by passing another
+  one to `recordSessions.ignoreClass`.
+
+Example:
+
+```js
+apm.reportIssues({
+  recordSessions: {
+    blockClass: 'my-block-class',
+    ignoreClass: 'my-ignore-class'
+  }
+})
+```
 
 ### `new apm.ZipkinLogger()`
 
