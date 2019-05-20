@@ -68,6 +68,15 @@ You also may need to whitelist IPs, please allow those listed here: [https://ips
 ## Dashboard Issues
 
 <details>
+<summary markdown="span">Can I trigger a deployment report with my CI?</summary>
+  
+Yes! You only need to send a POST request to `api.cloud.pm2.io` like this:
+```
+curl https://proxy.cloud.pm2.io -H 'X-KM-PUBLIC: <public key>' -H 'X-KM-SECRET: <secret key>' -H 'X-KM-SERVER: <server name>' -d '{"channel":"process:event","payload":[{"event":"online","manually":false,"process":{"pm_id":0,"name":"<app name>","rev":"<version>","server":"<server name>"},"at":"2019-05-17T12:59:34.075Z"}]}'
+```
+</details>
+
+<details>
 <summary markdown="span">Servers are blinking/flickering?</summary>
 Make sure that each PM2 runtime has a different name when linking to PM2 plus via:
 
