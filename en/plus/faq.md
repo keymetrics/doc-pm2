@@ -55,7 +55,7 @@ Re-Run `pm2 link` on your server and refresh your browser.
 <details>
 <summary markdown="span">How to pass through firewall? (IP whitelisting & Ports)</summary>
   
-Starting from PM2 3.2, we changed the networking connection by using a direct Websocket connection to our server on the port 443, so you only need OUTBOUND on port 443 TCP open. If you are using an older version, we of course advise to update but the ports that you need to open are 3900 (TCP outbound), 443 (HTTPS outbound) and 43554 (TCP outbound), so verify everything is allowed on your firewall.
+Starting from PM2 3.2, we changed the networking connection by using a direct Websocket connection to our server on the port 443, so you only need OUTBOUND on port 443 TCP open. If you are using an older version, we of course advise to update but the port that you need to open is 443 (HTTPS outbound) so verify everything is allowed on your firewall.
 
 You also may need to whitelist IPs, please allow those listed here: [https://ips.cloud.pm2.io](https://ips.cloud.pm2.io)
 </details>
