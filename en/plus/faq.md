@@ -13,7 +13,7 @@ permalink: "/en/plus/faq/"
 
 <details>
 <summary markdown="span">What is a process?</summary>
-A process is an entry in the process list. Display all your process on a server with `pm2 ls`.
+A process represent one Node.js application instance. For example let's say you have one API application that is scaled across 4 servers, if there is only one instance running on each server it will count as 4 servers * 1 process = 4 processes.
 </details>
 
 <details>
