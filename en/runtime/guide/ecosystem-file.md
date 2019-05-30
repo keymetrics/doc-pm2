@@ -58,6 +58,8 @@ You can also load an ecosystem from an other folder with:
 pm2 start /path/to/ecosystem.config.js
 ```
 
+> Note: You can change the name of the exosystem.config.js file, however, it must always end with `.config.js`, ie: `pm2.development.config.js` or `pm2.production.config.js`
+
 ### Only use a specific app
 
 Use your ecosystem file only on a specific application with the option `--only <app_name>`:
