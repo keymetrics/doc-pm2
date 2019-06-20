@@ -18,7 +18,7 @@ The purpose of the ecosystem file is to gather all options and environment varia
 Generate an `ecosystem.config.js` template with:
 
 ```bash
-pm2 init
+pm2 ecosystem
 ```
 
 This will generate:
