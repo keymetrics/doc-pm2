@@ -22,7 +22,6 @@ permalink: pretty
 plugins:
   - jekyll-redirect-from
 
-baseurl: "/doc"
 destination: docs
 
 exclude:
