@@ -16,7 +16,7 @@ permalink: "/en/enterprise/overview//"
     <i>Enterprise</i>
 </p>
 
-PM2 Enterprise is an advanced Node.js toolset that is convenient for high scale or critical Node.js services.
+**PM2 Enterprise** is an advanced Node.js toolset that is convenient for high scale or critical Node.js services.
 It answers to the need of companies willing to bet a lot on Node.js and be confident on their technology switch.
 
 Here a quick description of each of the Enterprise feature currently available in the PM2 Enterprise product:
