@@ -1,2 +1,2 @@
 
-Offical PM2 Documentation [https://pm2.io/doc](https://pm2.io/doc)
+Offical PM2 Documentation [https://doc.pm2.io/](https://doc.pm2.io/)
