@@ -70,7 +70,18 @@ Kills the pm2 daemon (same as `pm2 kill`). Note that when the daemon is killed, 
 * `jsonConfigFile` - The path to a JSON file that can contain the same options as the `options` parameter.
 * `errback(err,proc)` - An errback called when the `script` has been started. The `proc` parameter will be a [pm2 process object](https://github.com/soyuka/pm2-notify#templating).
 * `options` - An object with the following options:
-
+  * `name` - The name you want to give to the process
+  * `script` - The path of the script to run
+  * `args` - The arguments to call the interpreter process with.
+  * `interpreter_args` - The working directory to start the process with.
+  * `cwd` - The working directory to start the process with.
+  * `output` - The path to a file to append stdout output to.
+  * `error` - The path to a file to append stderr output to.
+  * `log_date_format` - The path to a file to write the pid of the started process.
+  * `pid` - The pid of the process. 
+  * `min_uptime` - The minimum uptime of the script before it’s considered successfully started.
+  * `max_restarts` - The maximum number of times in a row a script will be restarted if it exits in less than min_uptime.
+  * `max_memory_restart` - The script’s memory usage goes about the configured number, pm2 restarts the script.
 
 `pm2.stop(process, errback)`
 `pm2.restart(process, errback)`
