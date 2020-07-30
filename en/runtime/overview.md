@@ -169,7 +169,7 @@ pm2 monit
 
 ## Deployment System
 
-PM2 includes a simple but powerful deployment system that can update your application accross several machines
+PM2 includes a simple but powerful deployment system that can update your application across several machines
 
 ```bash
 pm2 deploy production
