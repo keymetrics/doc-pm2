@@ -37,7 +37,7 @@ Flag name|Description
 -u --user &lt;username&gt;|define user when generating startup script
 --uid &lt;uid&gt;|run target script with &lt;uid&gt; rights
 --gid &lt;gid&gt;|run target script with &lt;gid&gt; rights
---cwd &lt;path&gt;|run target script as &lt;username&gt;
+--cwd &lt;path&gt;|run target script in &lt;path&gt;
 --hp &lt;home path&gt;|define home path when generating startup script
 --wait-ip|override systemd script to wait for full internet connectivity to launch pm2
 --service-name &lt;name&gt;|define service name when generating startup script
